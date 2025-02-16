@@ -1745,6 +1745,7 @@ traditional.desc_ci_scan = "輕收容D級人員數量: "
 traditional.desc_ci_scan_1 = "重收容D級人員數量: "
 traditional.desc_ci_scan_2 = "辦公區D級人員數量: "
 traditional.desc_ci_scan_3 = "設施地表D級人員數量: "
+traditional.gru_hacking_time = "駭入時間: "
 --O4壁纸名字
 traditional.wallpaper_apply = "應用壁紙"
 traditional.wallpaperup = "上一頁"

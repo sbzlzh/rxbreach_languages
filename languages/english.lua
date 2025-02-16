@@ -1745,6 +1745,7 @@ english.desc_ci_scan = "Light containment Class-D personnel count: "
 english.desc_ci_scan_1 = "Heavy containment Class-D personnel count: "
 english.desc_ci_scan_2 = "Class-D personnel in office area: "
 english.desc_ci_scan_3 = "Class-D personnel on facility surface: "
+english.gru_hacking_time = "Hack Time: "
 --O4壁纸名字
 english.wallpaper_apply = "Apply Wallpaper"
 english.wallpaperup = "Previous Page"
