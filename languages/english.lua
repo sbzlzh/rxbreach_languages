@@ -375,30 +375,6 @@ english.weaponry["battery_2"] = "Improved Battery"
 english.weaponry["battery_3"] = "Battery"
 english.weaponry["cw_kk_ins2_deagle_ntf"] = "妖狐之舞"
 english.role.Spectator = "Spectator"
---Let the great translation be well and mighty.
---[[
-How to create a message with translation in code
-
-The function BREACH.TranslateString searches for phrases and translates them in the text
-and returns the entire translated text.
-
-The function L is equivalent to the function above.
-For example: L"l:already_have_the_bag"
-
-The function BREACH.TranslateNonPrefixedString searches for the whole text without the l: prefix and translates it based on this table.
-
-To mark a phrase for translation in the text, add l: before the phrase.
-For example: l:already_have_the_bag
-
-Then, add it to the table here:
-For example: kazakh.already_have_the_bag = "You already have a bag on you!"
-
-This is how it should be in the code:
-BREACH.TranslateString"l:already_have_the_bag"
-or
-str = BREACH.TranslateString(str)
-or L"l:already_have_the_bag"
---]]
 --BREACH TIPS
 english.already_have_the_bag = "You already have bag!"
 english.took_on_the_bag = "You successfully equipped bag!"
@@ -1676,61 +1652,6 @@ english.light_armor = "Light Armor"
 english.small_bag = "Pocket"
 english.big_bag = "Backpack"
 english.no_admins = "No admins are currently online"
---[[
-
-
-	local min = "Minute"
-	local day = "Day"
-	local year = "Year"
-	local month = "Month"
-	local second = "Second"
-	local hour = "Hour"
-	local week = "Week"
-
-	local str = ""
-
-	for t, v in pairs(list) do
-
-		if v == 0 then continue end
-
-		local strtime = tostring(v)
-
-		if v > 1 then
-
-			if t == "m" then
-
-				month = "Months"
-
-			elseif t == "y" then
-
-				year = "Years"
-
-			elseif t == "d" then
-
-				day = "Days"
-
-			elseif t == "h" then
-
-				hour = "Hours"
-
-			elseif t == "min" then
-
-				min = "Minutes"
-
-			elseif t == "w" then
-
-				week = "Weeks"
-
-			elseif t == "s" then
-
-				second = "Seconds"
-
-			end
-		end
-
-	end
-
-]]
 english.nt_min = "Minutes"
 english.nt_d = "Days"
 english.nt_y = "Years"

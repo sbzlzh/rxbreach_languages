@@ -367,30 +367,6 @@ russian.weaponry["battery_2"] = "Улучшенная батарейка"
 russian.weaponry["battery_3"] = "Батарейка"
 russian.weaponry["cw_kk_ins2_deagle_ntf"] = "妖狐之舞"
 russian.role.Spectator = "Наблюдатель"
--- Сделаем великий перевод совершенным и мощным.
---[[
-Как сделать перевод сообщений в коде
-
-Функция BREACH.TranslateString используется для поиска фраз и их перевода в текст,
-и возвращает весь переведенный текст.
-
-Функция L эквивалентна вышеупомянутой функции.
-Например: L"l:already_have_the_bag"
-
-Функция BREACH.TranslateNonPrefixedString используется для поиска текста без префикса l: и его перевода согласно таблице.
-
-Чтобы пометить фразу для перевода в тексте, мы добавляем префикс l: перед фразой.
-Например: l:already_have_the_bag
-
-Затем мы добавляем это в таблицу:
-Например: kazakh.already_have_the_bag = "Ты уже взял рюкзак!"
-
-В коде это будет выглядеть так:
-BREACH.TranslateString"l:already_have_the_bag"
-или
-str = BREACH.TranslateString(str)
-или L"l:already_have_the_bag"
---]]
 --提示
 russian.already_have_the_bag = "У тебя уже есть рюкзак!"
 russian.took_on_the_bag = "Ты успешно надел рюкзак!"
@@ -1668,61 +1644,6 @@ russian.light_armor = "Легкая броня"
 russian.small_bag = "Маленькая сумка"
 russian.big_bag = "Большая сумка"
 russian.no_admins = "В данный момент нет администраторов онлайн"
---[[
-
-
-	local min = "Minute"
-	local day = "Day"
-	local year = "Year"
-	local month = "Month"
-	local second = "Second"
-	local hour = "Hour"
-	local week = "Week"
-
-	local str = ""
-
-	for t, v in pairs(list) do
-
-		if v == 0 then continue end
-
-		local strtime = tostring(v)
-
-		if v > 1 then
-
-			if t == "m" then
-
-				month = "Months"
-
-			elseif t == "y" then
-
-				year = "Years"
-
-			elseif t == "d" then
-
-				day = "Days"
-
-			elseif t == "h" then
-
-				hour = "Hours"
-
-			elseif t == "min" then
-
-				min = "Minutes"
-
-			elseif t == "w" then
-
-				week = "Weeks"
-
-			elseif t == "s" then
-
-				second = "Seconds"
-
-			end
-		end
-
-	end
-
-]]
 russian.nt_min = "Минуты"
 russian.nt_d = "День"
 russian.nt_y = "Год"

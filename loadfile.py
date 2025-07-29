@@ -55,13 +55,18 @@ def loadfile(path):
             continue  # 未找到语言变量前缀则跳过
 
         # 动态构造正则
-        prefix = re.escape(lang_var) + r'\.'  # 如 english\.lang_xx
+        prefix_dot = re.escape(lang_var) + r'\\.'
+        prefix_any = re.escape(lang_var) + r''
+        singleline_text_pattern = re.compile(rf'{prefix_dot}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
+        alt_singleline_text_pattern = re.compile(rf'{prefix_any}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
         singleline_text_pattern = singleline_text_pattern_fmt.format(prefix=prefix)
         multiline_text_pattern_open = multiline_text_pattern_open_fmt.format(prefix=prefix)
         multiline_single_line = multiline_single_line_fmt.format(prefix=prefix)
 
         # 单行字符串
-        singleline_text_match = re.search(singleline_text_pattern, line)
+        singleline_text_match = singleline_text_pattern.search(line)
+        if not singleline_text_match:
+            singleline_text_match = alt_singleline_text_pattern.search(line)
         if singleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "single",

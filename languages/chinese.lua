@@ -415,30 +415,6 @@ chinese.weaponry["item_medishot"] = "医疗注射器"
 chinese.weaponry["hand_key"] = "断手"
 chinese.weaponry["item_pos9_protector"] = "PoS-9单兵伤害吸收装置"
 chinese.role.Spectator = "观察者"
---让伟大的翻译变得完美强大.
---[[
-如何在代码中制作翻译消息
-
-函数 BREACH.TranslateString 用于搜索短语并将它们翻译成文本,
-并返回整个翻译后的文本.
-
-函数 L 等效于上述函数.
-例如:L"l:already_have_the_bag"
-
-函数 BREACH.TranslateNonPrefixedString 用于搜索没有 l:前缀的整个文本,并根据该表进行翻译.
-
-要在文本中标记一个短语进行翻译,我们在短语前面加上 l:.
-例如:l:already_have_the_bag
-
-然后,我们将其添加到表格中:
-例如:kazakh.already_have_the_bag = "你已经带上了背包!"
-
-在代码中应该是这样的:
-BREACH.TranslateString"l:already_have_the_bag"
-或者
-str = BREACH.TranslateString(str)
-或者 L"l:already_have_the_bag"
---]]
 --提示
 chinese.already_have_the_bag = "你已经有背包了!"
 chinese.took_on_the_bag = "你穿上了背包!"
@@ -1983,61 +1959,6 @@ chinese.light_armor = "轻型防弹衣"
 chinese.small_bag = "口袋"
 chinese.big_bag = "背包"
 chinese.no_admins = "目前没有管理员在线"
---[[
-
-
-	local min = "Minute"
-	local day = "Day"
-	local year = "Year"
-	local month = "Month"
-	local second = "Second"
-	local hour = "Hour"
-	local week = "Week"
-
-	local str = ""
-
-	for t,v in pairs(list) do
-
-		if v == 0 then continue end
-
-		local strtime = tostring(v)
-
-		if v > 1 then
-
-			if t == "m" then
-
-				month = "Months"
-
-			elseif t == "y" then
-
-				year = "Years"
-
-			elseif t == "d" then
-
-				day = "Days"
-
-			elseif t == "h" then
-
-				hour = "Hours"
-
-			elseif t == "min" then
-
-				min = "Minutes"
-
-			elseif t == "w" then
-
-				week = "Weeks"
-
-			elseif t == "s" then
-
-				second = "Seconds"
-
-			end
-		end
-
-	end
-
-]]
 chinese.nt_min = "分钟"
 chinese.nt_d = "天"
 chinese.nt_y = "年"
