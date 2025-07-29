@@ -37,20 +37,8 @@ jobs:
         git fetch origin
         git checkout -B ci-update-language-files
 
-    - name: Commit language updates
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: '[bot] Auto-sync missing translations using chinese.lua'
-        branch: ci-update-language-files
-        file_pattern: 'languages/*.lua'
-        push_options: '--force'  # 可选：强制推送
-        commit_user_name: LangBot
-        commit_user_email: bot@example.com
-        commit_author: LangBot <bot@example.com>
-        token: ${{ steps.generate-token.outputs.token }}
-
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         token: ${{ steps.generate-token.outputs.token }}
         commit-message: '[bot] Auto-sync missing translations using chinese.lua'
