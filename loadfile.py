@@ -3,11 +3,10 @@ import re
 # Define regular expressions to match different components
 comment_pattern = r'--\s(.+)'
 lang_pattern = r'local L = LANG\.CreateLanguage\("([^"]+)"\)'
-prefix_pattern = r'([a-zA-Z_][a-zA-Z_0-9]*)'
-singleline_text_pattern = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
-multiline_text_pattern_open = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
+singleline_text_pattern = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
+multiline_text_pattern_open = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
 multiline_text_pattern_close = r'(.*?)\]\]'
-multiline_single_line = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
+multiline_single_line = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
 text_param_pattern = r'{([^{}]+)}'
 
 def loadfile(path):
@@ -60,7 +59,6 @@ def loadfile(path):
 		if singleline_text_match and line[0:2] != "--":
 			data.append({
 				"type" : "single",
-				"prefix": singleline_text_match.group(1),
 				"identifier": singleline_text_match.group(1),
 				"content" : singleline_text_match.group(2)
 			})
@@ -93,19 +91,21 @@ def loadfile(path):
 				"identifier": multiline_text_match_open.group(1),
 				"content" : multiline_text_match_open.group(2)
 			})
-			line_counter += 1
+
 			is_multiline = True
 
 			continue
 
 		multiline_text_match_close = re.search(multiline_text_pattern_close, line)
 		if multiline_text_match_close and line[0:2] != "--":
-			target_index = line_counter - 1 if line_counter > 0 else 0
-			if target_index < len(data):
-				data[target_index]["content"] += "\n" + multiline_text_match_close.group(1)
-				data[target_index]["params"] = re.findall(text_param_pattern, data[target_index]["content"])
+			data[line_counter]["content"] += "\n" + multiline_text_match_close.group(1)
+
+			data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
+
+			line_counter += 1
 
 			is_multiline = False
+
 			continue
 
 		if is_multiline and line[0:2] != "--":
