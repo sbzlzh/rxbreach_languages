@@ -41,17 +41,17 @@ jobs:
       with:
         commit_message: '[bot] Auto-sync missing translations using chinese.lua'
         file_pattern: 'languages/*.lua'
-        token: ${{ steps.generate-token.outputs.token }}
 
-    - name: Push branch and set upstream   # 新增此步
-      run: git push --set-upstream origin ci-update-language-files
+    - name: Push branch and set upstream
+      run: |
+        git push --set-upstream origin ci-update-language-files
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
         token: ${{ steps.generate-token.outputs.token }}
         branch: ci-update-language-files
-        base: main   # 请确认仓库默认分支是 main 或 master
+        base: master
         commit-message: '[bot] Auto-sync missing translations using chinese.lua'
         title: '[LangBot] Auto-update language files'
         body: |
