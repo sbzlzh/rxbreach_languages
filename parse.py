@@ -35,10 +35,7 @@ for lang_file in lang_file_list:
 		continue
 
 	new_lang = updatelang.updatelang(baselang, lang, lang_file)
-
-	f = open(args.output + "/" + lang_file, "a", encoding="utf-8")
-
-	f.truncate(0)
+	f = open(args.output + "/" + lang_file, "w", encoding="utf-8")
 
 	for line in new_lang:
 		f.write(line)
