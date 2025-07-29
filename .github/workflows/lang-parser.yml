@@ -48,8 +48,3 @@ jobs:
             This PR auto-syncs translations based on `chinese.lua`.
             Missing keys are marked as comments.
           labels: skip-changelog
-
-      - name: Setup PR automerge and squash
-        run: gh pr merge ci-update-language-files --auto --squash
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
