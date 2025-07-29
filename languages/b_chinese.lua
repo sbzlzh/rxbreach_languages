@@ -1,4 +1,3 @@
---B站特供版中文
 b_chinese = {}
 b_chinese.LangName = "Bilili Chinese"
 b_chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
