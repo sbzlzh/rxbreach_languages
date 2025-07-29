@@ -1,5 +1,4 @@
 traditional = {}
-traditional.__alias = "Traditional Chinese"
 traditional.LangName = "Traditional Chinese"
 traditional.lang_pldied = "{num} 玩家(-們) 死亡(-了)"
 traditional.lang_descaped = "{num} 等級(-們) D級人員逃脫了(-了)"

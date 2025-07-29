@@ -1,5 +1,4 @@
 russian = {}
-russian.__alias = "Русский"
 russian.LangName = "Русский"
 russian.lang_pldied = "{num} игрока(-ов) умер(-ло)"
 russian.lang_descaped = "{num} класса(-ов) Д сбежал(-о)"

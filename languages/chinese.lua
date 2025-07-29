@@ -1,5 +1,4 @@
 chinese = {}
-chinese.__alias = "Chinese"
 chinese.LangName = "Chinese"
 chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
 chinese.lang_descaped = "{num} 等级(-ов) D级人员逃脱了(-о)"
@@ -24,8 +23,8 @@ chinese.credits = "特别鸣谢"
 chinese.class_unknown = "未知"
 chinese.select_weapon = "选择武器"
 chinese.NRegistry = {
-    scpready = "你能在下一回合被选为SCP",
-    scpwait = "你还要等待 %s 回合才能被选为SCP"
+	scpready = "你能在下一回合被选为SCP",
+	scpwait = "你还要等待 %s 回合才能被选为SCP"
 }
 
 chinese.NFailed = "无法使用此钥匙卡进行访问:%s"
@@ -36,30 +35,30 @@ chinese.lang_end1 = "游戏结束"
 chinese.lang_end2 = "时不我待"
 chinese.lang_end3 = "游戏无法进行"
 chinese.escapemessages = {
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "如果你被机动特遣队疏散,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "如果你被混沌分裂者俘获,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你已经被疏散",
-        txt = "你花费了 {t} 分钟从设施被疏散,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
+	{
+		main = "你逃出去了",
+		txt = "你花费了 {t} 分钟从设施逃离,干得好!",
+		txt2 = "如果你被机动特遣队疏散,你将会获得更多的经验.",
+		clr = Color(237, 28, 63),
+	},
+	{
+		main = "你逃出去了",
+		txt = "你花费了 {t} 分钟从设施逃离,干得好!",
+		txt2 = "如果你被混沌分裂者俘获,你将会获得更多的经验.",
+		clr = Color(237, 28, 63),
+	},
+	{
+		main = "你已经被疏散",
+		txt = "你花费了 {t} 分钟从设施被疏散,干得好!",
+		txt2 = "",
+		clr = Color(237, 28, 63),
+	},
+	{
+		main = "你逃出去了",
+		txt = "你花费了 {t} 分钟从设施逃离,干得好!",
+		txt2 = "",
+		clr = Color(237, 28, 63),
+	}
 }
 
 chinese.role = {}

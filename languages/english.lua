@@ -1,5 +1,4 @@
 english = {}
-english.__alias = "English"
 english.LangName = "English"
 english.lang_pldied = "{num} player(s) died"
 english.lang_descaped = "{num} Class D(s) escaped"

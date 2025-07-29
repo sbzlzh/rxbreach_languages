@@ -1,6 +1,5 @@
 --B站特供版中文
 b_chinese = {}
-b_chinese.__alias = "Bilili Chinese"
 b_chinese.LangName = "Bilili Chinese"
 b_chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
 b_chinese.lang_descaped = "{num} 等级(-ов) 囚犯人员逃脱了(-о)"
@@ -941,7 +940,7 @@ BREACH.Descriptions.b_chinese[role.ClassD_Hack] = "你是囚犯 - 黑客\n\n你�
 BREACH.Descriptions.b_chinese[role.ClassD_Cannibal] = "你是囚犯 - 食人魔\n\n曾经痛苦的家庭生活让你精神状态极其糟糕,久而久之,你对人表现得极其冷漠\n\n你依稀记得那个晚上,父亲和母亲做成的[数据删除]很美味\n\n与其他囚犯人员合作,逃离设施"
 BREACH.Descriptions.b_chinese[role.ClassD_Probitiy] = "你是囚犯 - 大兜哥\n\n看起来你的口袋比别人的大\n\n与其他囚犯人员合作,逃离设施"
 BREACH.Descriptions.b_chinese[role.ClassD_Fast] = "你是囚犯 - 运动员\n\n作为前省级一级运动员,你能够轻易超越其他人\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Killer] = "你是囚犯 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法有效地使用这么多把刀,因此分给了一些有杀人经验的囚犯人员\n\n与其他囚犯人员合作,逃离设施"
+BREACH.Descriptions.b_chinese[role.ClassD_Killer] = "你是囚犯 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法��效地使用这么多把刀,因此分给了一些有杀人经验的囚犯人员\n\n与其他囚犯人员合作,逃离设施"
 BREACH.Descriptions.b_chinese[role.ClassD_Hitman] = "你是囚犯 - 职业杀手\n\n你以前是职业杀手,看起来你没有失去你的旧习惯..\n\n与其他囚犯人员合作,逃离设施"
 BREACH.Descriptions.b_chinese[role.ClassD_Soldier] = "你是囚犯 - 老兵\n\n你曾是一名久经沙场的特种部队士兵,但是因为被指控犯下了\"反人类\"的罪行而被判无期徒刑,而事情的真相只有你知道...\n\n你并未忘记战场上磨砺出来的技能,好好利用这种能力逃离设施"
 BREACH.Descriptions.b_chinese[role.MTF_Guard] = "你是黑山基地特遣队 - 士兵\n\n执行指挥官的命令,完成任务"
