@@ -1,5 +1,6 @@
 --B站特供版中文
 b_chinese = {}
+b_chinese.__alias = "Bilili Chinese"
 b_chinese.LangName = "Bilili Chinese"
 b_chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
 b_chinese.lang_descaped = "{num} 等级(-ов) 囚犯人员逃脱了(-о)"

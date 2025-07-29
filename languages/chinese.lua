@@ -1,4 +1,5 @@
 chinese = {}
+chinese.__alias = "Chinese"
 chinese.LangName = "Chinese"
 chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
 chinese.lang_descaped = "{num} 等级(-ов) D级人员逃脱了(-о)"
