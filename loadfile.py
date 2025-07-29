@@ -4,12 +4,14 @@ import re
 comment_pattern = r'--\s(.+)'  # 注释
 lang_pattern = r'([a-zA-Z0-9_]+)\s*=\s*\{'  # 语言声明，如 english = {
 
-# 后续正则动态替换 {prefix} 为当前语言变量名
 singleline_text_pattern_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
 multiline_text_pattern_open_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
 multiline_text_pattern_close = r'(.*?)\]\]'
 multiline_single_line_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
 text_param_pattern = r'{([^{}]+)}'
+
+array_index_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*"((?:\\"|[^"])*)"')
+array_index_multi_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*\[\[(.*?)\]\]', re.DOTALL)
 
 def loadfile(path):
     lines = []
@@ -51,17 +53,41 @@ def loadfile(path):
             line_counter += 1
             continue
 
+        # 数组式赋值解析
+        array_index_match = array_index_pattern.match(line)
+        if array_index_match:
+            _, table, index, value = array_index_match.groups()
+            data.append({
+                'type': 'single',
+                'identifier': f'{table}[{index}]',
+                'content': value
+            })
+            data[line_counter]['params'] = re.findall(text_param_pattern, value)
+            line_counter += 1
+            continue
+
+        array_multi_match = array_index_multi_pattern.match(line)
+        if array_multi_match:
+            _, table, index, value = array_multi_match.groups()
+            data.append({
+                'type': 'multi',
+                'identifier': f'{table}[{index}]',
+                'content': value
+            })
+            data[line_counter]['params'] = re.findall(text_param_pattern, value)
+            line_counter += 1
+            continue
+
         if not lang_var:
             continue  # 未找到语言变量前缀则跳过
 
         # 动态构造正则
-        prefix_dot = re.escape(lang_var) + r'\\.'
+        prefix_dot = re.escape(lang_var) + r'\.'
         prefix_any = re.escape(lang_var) + r''
         singleline_text_pattern = re.compile(rf'{prefix_dot}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
         alt_singleline_text_pattern = re.compile(rf'{prefix_any}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        singleline_text_pattern = singleline_text_pattern_fmt.format(prefix=prefix)
-        multiline_text_pattern_open = multiline_text_pattern_open_fmt.format(prefix=prefix)
-        multiline_single_line = multiline_single_line_fmt.format(prefix=prefix)
+        multiline_text_pattern_open = re.compile(multiline_text_pattern_open_fmt.format(prefix=prefix_dot))
+        multiline_single_line = re.compile(multiline_single_line_fmt.format(prefix=prefix_dot))
 
         # 单行字符串
         singleline_text_match = singleline_text_pattern.search(line)
