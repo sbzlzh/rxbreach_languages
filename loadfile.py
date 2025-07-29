@@ -91,20 +91,20 @@ def loadfile(path):
 				"identifier": multiline_text_match_open.group(1),
 				"content" : multiline_text_match_open.group(2)
 			})
-            line_counter += 1
+			line_counter += 1
 			is_multiline = True
 
 			continue
 
 		multiline_text_match_close = re.search(multiline_text_pattern_close, line)
 		if multiline_text_match_close and line[0:2] != "--":
-            target_index = line_counter - 1 if line_counter > 0 else 0
-            if target_index < len(data):
-                data[target_index]["content"] += "\n" + multiline_text_match_close.group(1)
-                data[target_index]["params"] = re.findall(text_param_pattern, data[target_index]["content"])
+			target_index = line_counter - 1 if line_counter > 0 else 0
+			if target_index < len(data):
+				data[target_index]["content"] += "\n" + multiline_text_match_close.group(1)
+				data[target_index]["params"] = re.findall(text_param_pattern, data[target_index]["content"])
 
-            is_multiline = False
-            continue
+			is_multiline = False
+			continue
 
 		if is_multiline and line[0:2] != "--":
 			data[line_counter]["content"] += "\n" + line
