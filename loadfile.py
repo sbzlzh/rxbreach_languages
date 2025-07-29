@@ -98,9 +98,12 @@ def loadfile(path):
         # 多行字符串结束
         multiline_text_match_close = re.search(multiline_text_pattern_close, line)
         if multiline_text_match_close and line[0:2] != "--":
-            data[line_counter]["content"] += "\n" + multiline_text_match_close.group(1)
-            data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
-            line_counter += 1
+            if line_counter < len(data):
+                data[line_counter]["content"] += "\n" + multiline_text_match_close.group(1)
+                data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
+                line_counter += 1
+            else:
+                print(f"警告：line_counter {line_counter} 超出 data 长度 {len(data)}")
             is_multiline = False
             continue
 
