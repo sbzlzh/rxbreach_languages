@@ -75,11 +75,10 @@ def updatelang(base, update, lang_file):
 				newlang.append(f"{lang_var}.{transline['identifier']} = [[{transline['content']}]]\n")
 
 		else:
-			# not yet translated — write as commented out
+			# not yet translated — copy from base language
 			if line["type"] == "single":
-				newlang.append(f"--{lang_var}.{line['identifier']} = \"{line['content']}\"\n")
+				newlang.append(f"{lang_var}.{line['identifier']} = \"{line['content']}\"\n")
 			else:
-				sanitized = line["content"].replace("\n", "\n--")
-				newlang.append(f"--{lang_var}.{line['identifier']} = [[{sanitized}]]\n")
+				newlang.append(f"{lang_var}.{line['identifier']} = [[{line['content']}]]\n")
 
 	return newlang
