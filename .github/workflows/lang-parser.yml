@@ -30,6 +30,13 @@ jobs:
       run: |
         python3 parse.py --in ./languages --out ./languages --base chinese --ignore chinese
 
+    - name: 创建并切换分支
+      run: |
+        git config user.name "LangBot"
+        git config user.email "bot@example.com"
+        git fetch origin
+        git checkout -B ci-update-language-files
+
     - name: Commit language updates
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
