@@ -41,6 +41,8 @@ jobs:
       with:
         commit_message: '[bot] Auto-sync missing translations using chinese.lua'
         file_pattern: 'languages/*.lua'
+        branch: ci-update-language-files
+        push_options: '--set-upstream'
 
     - name: Push branch and set upstream
       run: |
