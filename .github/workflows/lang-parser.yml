@@ -1,0 +1,53 @@
+name: LangParser
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update-language-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run language parser
+        run: python3 parse.py --in ./languages --out ./languages --base chinese --ignore chinese
+
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v1
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Create Pull Request
+        id: ci-update-language-files
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          add-paths: "languages/*.lua"
+          commit-message: "chore: sync language files from chinese.lua"
+          branch: ci-update-language-files
+          title: "Language: Update language files"
+          body: |
+            This PR auto-syncs translations based on `chinese.lua`.
+            Missing keys are marked as comments.
+          labels: skip-changelog
+
+      - name: Setup PR automerge and squash
+        run: gh pr merge ci-update-language-files --auto --squash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
