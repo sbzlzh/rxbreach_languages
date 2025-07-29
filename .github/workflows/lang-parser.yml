@@ -3,7 +3,7 @@ name: Lang Parser Auto PR
 on:
   push:
     paths:
-      - 'languages/*.lua'   # 仅当语言文件被更改时触发
+      - 'languages/*.lua'
   workflow_dispatch:
 
 jobs:
@@ -43,12 +43,15 @@ jobs:
         file_pattern: 'languages/*.lua'
         token: ${{ steps.generate-token.outputs.token }}
 
+    - name: Push branch and set upstream   # 新增此步
+      run: git push --set-upstream origin ci-update-language-files
+
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
         token: ${{ steps.generate-token.outputs.token }}
         branch: ci-update-language-files
-        base: master  # 或 main，确保与实际默认分支一致
+        base: main   # 请确认仓库默认分支是 main 或 master
         commit-message: '[bot] Auto-sync missing translations using chinese.lua'
         title: '[LangBot] Auto-update language files'
         body: |
