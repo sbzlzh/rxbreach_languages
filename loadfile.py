@@ -3,10 +3,11 @@ import re
 # Define regular expressions to match different components
 comment_pattern = r'--\s(.+)'
 lang_pattern = r'local L = LANG\.CreateLanguage\("([^"]+)"\)'
-singleline_text_pattern = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
-multiline_text_pattern_open = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
+prefix_pattern = r'([a-zA-Z_][a-zA-Z_0-9]*)'
+singleline_text_pattern = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
+multiline_text_pattern_open = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
 multiline_text_pattern_close = r'(.*?)\]\]'
-multiline_single_line = r'L\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
+multiline_single_line = rf'{prefix_pattern}\.([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
 text_param_pattern = r'{([^{}]+)}'
 
 def loadfile(path):
@@ -59,6 +60,7 @@ def loadfile(path):
 		if singleline_text_match and line[0:2] != "--":
 			data.append({
 				"type" : "single",
+				"prefix": singleline_text_match.group(1),
 				"identifier": singleline_text_match.group(1),
 				"content" : singleline_text_match.group(2)
 			})

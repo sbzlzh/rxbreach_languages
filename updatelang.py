@@ -7,9 +7,10 @@ def getelement(haystack, needle):
 			continue
 
 def getaliasline(array):
-	for i, line in enumerate(array):
-		if line["type"] == "single" and line["identifier"] == "__alias":
-			return i
+    for i, line in enumerate(array):
+        if line["type"] == "single" and line.get("identifier") == "__alias":
+            return i
+
 
 def updatelang(base, update, lang_file):
 	newlang = []
@@ -64,8 +65,7 @@ def updatelang(base, update, lang_file):
 			if line["type"] == "single":
 				newlang.append("L." + transline["identifier"] + " = \"" + transline["content"] + "\"\n")
 			else:
-				newlang.append("L." + transline["identifier"] + " = \"" + transline["content"].replace('\n', ' ') + "\"\n")
-
+				newlang.append("L." + transline["identifier"] + " = [[" + transline["content"] + "]]\n")
 		else:
 			if line["type"] == "single":
 				newlang.append("--L." + line["identifier"] + " = \"" + line["content"] + "\"\n")
