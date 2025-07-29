@@ -1,0 +1,36 @@
+name: Update Language Files
+
+on:
+  push:
+    paths:
+      - 'lang/*.lua'
+      - 'parse.py'
+      - 'loadfile.py'
+      - 'updatelang.py'
+
+jobs:
+  update-lang:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install requirements (if needed)
+      run: pip install -r requirements.txt || true
+
+    - name: Run parse script to update languages
+      run: |
+        mkdir -p updated
+        python3 parse.py --in lang --out updated --base chinese
+
+    - name: Commit and push changes if any
+      run: |
+        git config user.name "LangBot"
+        git config user.email "langbot@users.noreply.github.com"
+        git add updated/*.lua
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update missing translations"
+        git push
