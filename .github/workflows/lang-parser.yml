@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'languages/*.lua'   # 仅当语言文件被更改时触发
+  workflow_dispatch:
 
 jobs:
   update_languages:
