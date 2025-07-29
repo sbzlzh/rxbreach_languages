@@ -8,9 +8,9 @@ def getelement(haystack, needle):
 
 def getaliasline(array):
     for i, line in enumerate(array):
-        if line["type"] == "single" and line.get("identifier") == "__alias":
+        if line["type"] == "single" and line["identifier"] == "__alias":
             return i
-
+    return 0  # 或者 return len(array)
 
 def updatelang(base, update, lang_file):
 	newlang = []
