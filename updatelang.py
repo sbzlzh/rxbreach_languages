@@ -64,7 +64,8 @@ def updatelang(base, update, lang_file):
 			if line["type"] == "single":
 				newlang.append("L." + transline["identifier"] + " = \"" + transline["content"] + "\"\n")
 			else:
-				newlang.append("L." + transline["identifier"] + " = [[" + transline["content"] + "]]\n")
+				newlang.append("L." + transline["identifier"] + " = \"" + transline["content"].replace('\n', ' ') + "\"\n")
+
 		else:
 			if line["type"] == "single":
 				newlang.append("--L." + line["identifier"] + " = \"" + line["content"] + "\"\n")
