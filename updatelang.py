@@ -76,13 +76,9 @@ def updatelang(base, update, lang_file):
             if found:
                 newlang.append(found + "\n")
             else:
-                # default: copy from base but replace prefix
-                content = line["content"]
-                if content.startswith(base_var):
-                    content = lang_var + content[len(base_var):]
-                else:
-                    content = content.replace(f".{base_var}", f".{lang_var}", 1)
-                newlang.append(content + "\n")
+                # untranslated code line - comment it out preserving indentation
+                indent = line.get("indent", "") if isinstance(line, dict) else ""
+                newlang.append(f"-- {indent}{line['content']}\n")
             continue
 
         transline = getelement(update, line["identifier"])
