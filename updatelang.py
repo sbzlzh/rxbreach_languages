@@ -59,14 +59,18 @@ def updatelang(base, update, lang_file):
         if line["type"] == "code":
             # try to find matching code line in update
             found = None
-            norm_base = normalize_code_line(line["content"], base_var)
-            lhs_base = norm_base.split("=")[0].strip().replace(f".{base_var}", "")
+            lhs_base_full = line["content"].split("=")[0].strip()
+            if f".{base_var}" in lhs_base_full:
+                expected_lhs = lhs_base_full.replace(f".{base_var}", f".{lang_var}", 1)
+            elif lhs_base_full.startswith(base_var):
+                expected_lhs = lang_var + lhs_base_full[len(base_var):]
+            else:
+                expected_lhs = lhs_base_full
             for uline in update:
                 if uline["type"] != "code":
                     continue
-                norm_update = normalize_code_line(uline["content"], lang_var)
-                lhs_update = norm_update.split("=")[0].strip().replace(f".{lang_var}", "")
-                if lhs_update == lhs_base:
+                lhs_update_full = uline["content"].split("=")[0].strip()
+                if lhs_update_full == expected_lhs:
                     found = uline["content"]
                     break
             if found:
@@ -103,18 +107,22 @@ def updatelang(base, update, lang_file):
 
             use_prefix = transline.get("prefixed", True)
             prefix = f"{lang_var}." if use_prefix else ""
+            indent = transline.get("indent", "")
+            comma = transline.get("comma", "")
             if line["type"] == "single":
-                newlang.append(f"{prefix}{transline['identifier']} = \"{transline['content']}\"\n")
+                newlang.append(f"{indent}{prefix}{transline['identifier']} = \"{transline['content']}\"{comma}\n")
             else:
-                newlang.append(f"{prefix}{transline['identifier']} = [[{transline['content']}]]\n")
+                newlang.append(f"{indent}{prefix}{transline['identifier']} = [[{transline['content']}]]{comma}\n")
 
         else:
             # not yet translated — keep original text as commented line
             use_prefix = line.get("prefixed", True)
             prefix = f"{lang_var}." if use_prefix else ""
+            indent = line.get("indent", "")
+            comma = line.get("comma", "")
             if line["type"] == "single":
-                newlang.append(f"-- {prefix}{line['identifier']} = \"{line['content']}\"\n")
+                newlang.append(f"-- {indent}{prefix}{line['identifier']} = \"{line['content']}\"{comma}\n")
             else:
-                newlang.append(f"-- {prefix}{line['identifier']} = [[{line['content']}]]\n")
+                newlang.append(f"-- {indent}{prefix}{line['identifier']} = [[{line['content']}]]{comma}\n")
 
     return newlang

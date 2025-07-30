@@ -29,7 +29,7 @@ def loadfile(path):
     is_multiline = False
 
     for line in lines:
-        line = line.strip()
+        line = line.rstrip("\n")
 
         # 匹配 language 名称，如 english = {
         lang_match = re.match(lang_pattern, line)
@@ -83,14 +83,14 @@ def loadfile(path):
 
         # 动态构造正则
         prefix_dot = re.escape(lang_var) + r'\.'
-        prefix_any = re.escape(lang_var) + r''
-        singleline_text_pattern = re.compile(rf'{prefix_dot}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        alt_singleline_text_pattern = re.compile(rf'{prefix_any}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        multiline_text_pattern_open = re.compile(multiline_text_pattern_open_fmt.format(prefix=prefix_dot))
-        multiline_single_line = re.compile(multiline_single_line_fmt.format(prefix=prefix_dot))
-        unpref_singleline = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        unpref_multiline_single = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]')
-        unpref_multiline_open = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*)')
+        prefix_any = re.escape(lang_var)
+        singleline_text_pattern = re.compile(rf'^(\s*){prefix_dot}([^\s=]+)\s*=\s*"((?:\\"|[^"])*)"(\s*,?)')
+        alt_singleline_text_pattern = re.compile(rf'^(\s*){prefix_any}([^\s=]+)\s*=\s*"((?:\\"|[^"])*)"(\s*,?)')
+        multiline_text_pattern_open = re.compile(r'^(\s*)' + multiline_text_pattern_open_fmt.format(prefix=prefix_dot) + r'(\s*,?)')
+        multiline_single_line = re.compile(r'^(\s*)' + multiline_single_line_fmt.format(prefix=prefix_dot) + r'(\s*,?)')
+        unpref_singleline = re.compile(r'^(\s*)([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"(\s*,?)')
+        unpref_multiline_single = re.compile(r'^(\s*)([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\](\s*,?)')
+        unpref_multiline_open = re.compile(r'^(\s*)([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*)')
 
         # 单行字符串
         singleline_text_match = singleline_text_pattern.search(line)
@@ -103,8 +103,10 @@ def loadfile(path):
         if singleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "single",
-                "identifier": singleline_text_match.group(1),
-                "content": singleline_text_match.group(2),
+                "indent": singleline_text_match.group(1),
+                "identifier": singleline_text_match.group(2),
+                "content": singleline_text_match.group(3),
+                "comma": singleline_text_match.group(4),
                 "prefixed": matched_prefixed
             })
             data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
@@ -120,8 +122,10 @@ def loadfile(path):
         if multisingleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "multi",
-                "identifier": multisingleline_text_match.group(1),
-                "content": multisingleline_text_match.group(2),
+                "indent": multisingleline_text_match.group(1),
+                "identifier": multisingleline_text_match.group(2),
+                "content": multisingleline_text_match.group(3),
+                "comma": multisingleline_text_match.group(4),
                 "prefixed": matched_prefixed
             })
             data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
@@ -137,8 +141,10 @@ def loadfile(path):
         if multiline_text_match_open and line[0:2] != "--":
             data.append({
                 "type": "multi",
-                "identifier": multiline_text_match_open.group(1),
-                "content": multiline_text_match_open.group(2),
+                "indent": multiline_text_match_open.group(1),
+                "identifier": multiline_text_match_open.group(2),
+                "content": multiline_text_match_open.group(3),
+                "comma": multiline_text_match_open.group(4),
                 "prefixed": matched_prefixed
             })
             is_multiline = True
