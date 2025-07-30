@@ -1,159 +1,170 @@
 import re
 
-# Define regular expressions to match different components
-comment_pattern = r'--\s(.+)'  # 注释
-lang_pattern = r'([a-zA-Z0-9_]+)\s*=\s*\{'  # 语言声明，如 english = {
+comment_pattern = r'--\s(.+)'
+lang_pattern = r'([a-zA-Z0-9_]+)\s*=\s*\{'
+empty_line_pattern = r'^\s*$'
 
-singleline_text_pattern_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"'
-multiline_text_pattern_open_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[([^\]]*)'
-multiline_text_pattern_close = r'(.*?)\]\]'
-multiline_single_line_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
+# 匹配各种赋值形式
+assignment_patterns = [
+    # 简单赋值: english.field = "value"
+    r'([a-zA-Z0-9_\.]+)\s*=\s*"((?:\\"|[^"])*)"',
+    # 简单赋值(多行): english.field = [[value]]
+    r'([a-zA-Z0-9_\.]+)\s*=\s*\[\[(.*?)\]\]',
+    # 索引赋值: english["field"] = "value"
+    r'([a-zA-Z0-9_]+)\["([^"]+)"\]\s*=\s*"((?:\\"|[^"])*)"',
+    # 索引赋值(多行): english["field"] = [[value]]
+    r'([a-zA-Z0-9_]+)\["([^"]+)"\]\s*=\s*\[\[(.*?)\]\]',
+    # 点索引赋值: table.field.subfield = "value"
+    r'([a-zA-Z0-9_\.]+)\["([^"]+)"\]\s*=\s*"((?:\\"|[^"])*)"',
+    # 点索引赋值(多行): table.field.subfield["key"] = [[value]]
+    r'([a-zA-Z0-9_\.]+)\["([^"]+)"\]\s*=\s*\[\[(.*?)\]\]',
+    # 全局表赋值: BREACH.Descriptions.english[role.SCI] = "value"
+    r'([a-zA-Z0-9_\.]+)\[([^\]]+)\]\s*=\s*"((?:\\"|[^"])*)"',
+    # 全局表赋值(多行): BREACH.Descriptions.english[role.SCI] = [[value]]
+    r'([a-zA-Z0-9_\.]+)\[([^\]]+)\]\s*=\s*\[\[(.*?)\]\]',
+    # 完整表赋值: english = { ... }
+    r'([a-zA-Z0-9_]+)\s*=\s*\{'
+]
+
 text_param_pattern = r'{([^{}]+)}'
 
-array_index_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*"((?:\\"|[^"])*)"')
-array_index_multi_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*\[\[(.*?)\]\]', re.DOTALL)
-
 def loadfile(path):
-    lines = []
     data = []
-    lang_var = None  # 比如 english 或 chinese
+    lang_var = None
+    current_table = None
+    table_stack = []
+    in_multiline = False
+    multiline_content = []
+    multiline_identifier = None
+    multiline_type = None
 
-    with open(path, "r", encoding="utf-8") as file:
-        try:
+    try:
+        with open(path, "r", encoding="utf-8") as file:
             lines = file.readlines()
-        except UnicodeDecodeError:
-            print("ERROR: " + path)
-            return
+    except Exception as e:
+        print(f"ERROR loading {path}: {str(e)}")
+        return None
 
-    line_counter = 0
-    is_multiline = False
-
-    for line in lines:
+    for line_num, line in enumerate(lines):
+        raw_line = line
         line = line.strip()
-
-        # 匹配 language 名称，如 english = {
-        lang_match = re.match(lang_pattern, line)
-        if lang_match:
-            lang_var = lang_match.group(1)
-            data.append({
-                "type": "code",
-                "identifier": "local",
-                "content": line
-            })
-            line_counter += 1
+        
+        # 跳过空行
+        if re.match(empty_line_pattern, line):
+            data.append({"type": "empty", "content": ""})
             continue
-
-        # 注释
+            
+        # 处理注释
         comment_match = re.match(comment_pattern, line)
         if comment_match:
-            data.append({
-                "type": "comment",
-                "content": comment_match.group(1)
-            })
-            line_counter += 1
+            data.append({"type": "comment", "content": comment_match.group(1)})
             continue
 
-        # 数组式赋值解析
-        array_index_match = array_index_pattern.match(line)
-        if array_index_match:
-            _, table, index, value = array_index_match.groups()
-            data.append({
-                'type': 'single',
-                'identifier': f'{table}[{index}]',
-                'content': value
-            })
-            data[line_counter]['params'] = re.findall(text_param_pattern, value)
-            line_counter += 1
+        # 处理多行字符串结束
+        if in_multiline:
+            end_match = re.search(r'(.*?)\]\]', line)
+            if end_match:
+                in_multiline = False
+                multiline_content.append(end_match.group(1))
+                content = "\n".join(multiline_content)
+                
+                # 创建多行条目
+                entry = {
+                    "type": "multi",
+                    "identifier": multiline_identifier,
+                    "content": content,
+                    "params": re.findall(text_param_pattern, content)
+                }
+                data.append(entry)
+                multiline_content = []
+                multiline_identifier = None
+            else:
+                multiline_content.append(line)
             continue
 
-        array_multi_match = array_index_multi_pattern.match(line)
-        if array_multi_match:
-            _, table, index, value = array_multi_match.groups()
-            data.append({
-                'type': 'multi',
-                'identifier': f'{table}[{index}]',
-                'content': value
-            })
-            data[line_counter]['params'] = re.findall(text_param_pattern, value)
-            line_counter += 1
-            continue
-
-        if not lang_var:
-            continue  # 未找到语言变量前缀则跳过
-
-        # 动态构造正则
-        prefix_dot = re.escape(lang_var) + r'\.'
-        prefix_any = re.escape(lang_var) + r''
-        singleline_text_pattern = re.compile(rf'{prefix_dot}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        alt_singleline_text_pattern = re.compile(rf'{prefix_any}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
-        multiline_text_pattern_open = re.compile(multiline_text_pattern_open_fmt.format(prefix=prefix_dot))
-        multiline_single_line = re.compile(multiline_single_line_fmt.format(prefix=prefix_dot))
-
-        # 单行字符串
-        singleline_text_match = singleline_text_pattern.search(line)
-        if not singleline_text_match:
-            singleline_text_match = alt_singleline_text_pattern.search(line)
-        if singleline_text_match and line[0:2] != "--":
-            data.append({
-                "type": "single",
-                "identifier": singleline_text_match.group(1),
-                "content": singleline_text_match.group(2)
-            })
-            data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
-            line_counter += 1
-            continue
-
-        # 多行但在一行内
-        multisingleline_text_match = re.search(multiline_single_line, line)
-        if multisingleline_text_match and line[0:2] != "--":
-            data.append({
-                "type": "multi",
-                "identifier": multisingleline_text_match.group(1),
-                "content": multisingleline_text_match.group(2)
-            })
-            data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
-            line_counter += 1
-            continue
-
-        # 多行字符串开始
-        multiline_text_match_open = re.search(multiline_text_pattern_open, line)
-        if multiline_text_match_open and line[0:2] != "--":
-            data.append({
-                "type": "multi",
-                "identifier": multiline_text_match_open.group(1),
-                "content": multiline_text_match_open.group(2)
-            })
-            is_multiline = True
-            continue
-
-        # 多行字符串结束
-        multiline_text_match_close = re.search(multiline_text_pattern_close, line)
-        if multiline_text_match_close and line[0:2] != "--":
-            if line_counter < len(data):
-                data[line_counter]["content"] += "\n" + multiline_text_match_close.group(1)
-                data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
-                line_counter += 1
-
-            is_multiline = False
-            continue
-
-        # 正在处理多行内容中间部分
-        if is_multiline and line[0:2] != "--":
-            data[line_counter]["content"] += "\n" + line
-            continue
-
-        # 其余内容处理
-        if line == "":
-            data.append({
-                "type": "empty",
-                "content": ""
-            })
-        else:
-            # treat unrecognized assignments or other code as literal code lines
+        # 尝试匹配各种赋值模式
+        matched = False
+        for pattern in assignment_patterns:
+            match = re.search(pattern, raw_line)
+            if match:
+                groups = match.groups()
+                identifier = None
+                value = None
+                assign_type = "single"
+                
+                # 根据不同模式提取标识符和值
+                if pattern == assignment_patterns[0]:  # 简单赋值
+                    identifier = groups[0]
+                    value = groups[1]
+                elif pattern == assignment_patterns[1]:  # 多行简单赋值
+                    identifier = groups[0]
+                    value = groups[1]
+                    assign_type = "multi"
+                elif pattern in (assignment_patterns[2], assignment_patterns[4], assignment_patterns[6]):  # 索引赋值
+                    identifier = f"{groups[0]}['{groups[1]}']"
+                    value = groups[2]
+                elif pattern in (assignment_patterns[3], assignment_patterns[5], assignment_patterns[7]):  # 多行索引赋值
+                    identifier = f"{groups[0]}['{groups[1]}']"
+                    value = groups[2]
+                    assign_type = "multi"
+                elif pattern == assignment_patterns[8]:  # 完整表赋值
+                    identifier = groups[0]
+                    value = None
+                    assign_type = "table_start"
+                
+                # 处理多行字符串开始
+                if assign_type == "multi" and not value.endswith("]]"):
+                    in_multiline = True
+                    multiline_identifier = identifier
+                    multiline_content = [value]
+                    matched = True
+                    break
+                
+                # 创建条目
+                if assign_type == "table_start":
+                    data.append({
+                        "type": "code",
+                        "identifier": identifier,
+                        "content": raw_line.strip()
+                    })
+                    # 开始新表
+                    current_table = identifier
+                    table_stack.append(current_table)
+                elif value is not None:
+                    data.append({
+                        "type": assign_type,
+                        "identifier": identifier,
+                        "content": value,
+                        "params": re.findall(text_param_pattern, value)
+                    })
+                matched = True
+                break
+        
+        # 表结束检测
+        if not matched and "}" in line and table_stack:
+            current_table = table_stack.pop()
             data.append({
                 "type": "code",
-                "content": line
+                "identifier": current_table,
+                "content": raw_line.strip()
             })
-        line_counter += 1
-
+            matched = True
+        
+        # 未匹配任何模式，视为代码行
+        if not matched and line:
+            data.append({
+                "type": "code",
+                "content": raw_line.strip()
+            })
+    
+    # 处理未结束的多行字符串
+    if in_multiline:
+        content = "\n".join(multiline_content)
+        data.append({
+            "type": "multi",
+            "identifier": multiline_identifier,
+            "content": content,
+            "params": re.findall(text_param_pattern, content)
+        })
+    
     return data
