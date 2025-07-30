@@ -88,11 +88,16 @@ def loadfile(path):
         alt_singleline_text_pattern = re.compile(rf'{prefix_any}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
         multiline_text_pattern_open = re.compile(multiline_text_pattern_open_fmt.format(prefix=prefix_dot))
         multiline_single_line = re.compile(multiline_single_line_fmt.format(prefix=prefix_dot))
+        unpref_singleline = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*"((?:\\"|[^"])*)"')
+        unpref_multiline_single = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]')
+        unpref_multiline_open = re.compile(r'^([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*)')
 
         # 单行字符串
         singleline_text_match = singleline_text_pattern.search(line)
         if not singleline_text_match:
             singleline_text_match = alt_singleline_text_pattern.search(line)
+        if not singleline_text_match:
+            singleline_text_match = unpref_singleline.search(line)
         if singleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "single",
@@ -105,6 +110,8 @@ def loadfile(path):
 
         # 多行但在一行内
         multisingleline_text_match = re.search(multiline_single_line, line)
+        if not multisingleline_text_match:
+            multisingleline_text_match = re.search(unpref_multiline_single, line)
         if multisingleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "multi",
@@ -117,6 +124,8 @@ def loadfile(path):
 
         # 多行字符串开始
         multiline_text_match_open = re.search(multiline_text_pattern_open, line)
+        if not multiline_text_match_open:
+            multiline_text_match_open = re.search(unpref_multiline_open, line)
         if multiline_text_match_open and line[0:2] != "--":
             data.append({
                 "type": "multi",
