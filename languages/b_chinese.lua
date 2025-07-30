@@ -1,1866 +1,2207 @@
 b_chinese = {}
-b_chinese.LangName = "Bilili Chinese"
-b_chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
-b_chinese.lang_descaped = "{num} 等级(-ов) 囚犯人员逃脱了(-о)"
-b_chinese.lang_sescaped = "{num} Xen 逃脱了(-о)"
-b_chinese.lang_rescaped = "{num} 科研人员(-х) 逃脱了(-о)"
-b_chinese.lang_dcaptured = "俄罗斯武装部队俘获了 {num} 等级(-ов)囚犯人员"
-b_chinese.lang_rescorted = "黑山特遣队疏散了 {num} 科研人员(-х)"
-b_chinese.lang_teleported = "Xen - 106 吃了 {num} 玩家(-ов) 在老头空间"
-b_chinese.lang_snapped = "{num} 人类(-м) 被扭断了脖子 xen - 173"
-b_chinese.lang_zombies = "Xen - 049 '治愈' {num} 患者(-а)"
-b_chinese.lang_secret_found = "秘密被发现"
-b_chinese.lang_secret_nfound = "秘密没有被发现"
-b_chinese.unknown = "未知"
-b_chinese.waiting_for_players = "正在等待玩家......"
-b_chinese.waiting_for_players_pt2 = "需要"
-b_chinese.waiting_for_players_pt3 = " 人才能开始"
-b_chinese.play = "开始游戏"
-b_chinese.resume = "继续游戏"
-b_chinese.settings = "设置"
-b_chinese.leave = "离开游戏"
-b_chinese.credits = "特别鸣谢"
-b_chinese.class_unknown = "未知"
-b_chinese.select_weapon = "选择武器"
+-- b_chinese.chinese.LangName = "Chinese"
+-- b_chinese.chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
+-- b_chinese.chinese.lang_descaped = "{num} 等级(-ов) D级人员逃脱了(-о)"
+-- b_chinese.chinese.lang_sescaped = "{num} SCP 逃脱了(-о)"
+-- b_chinese.chinese.lang_rescaped = "{num} 科研人员(-х) 逃脱了(-о)"
+-- b_chinese.chinese.lang_dcaptured = "混沌分裂者俘获了 {num} 等级(-ов)D级人员"
+-- b_chinese.chinese.lang_rescorted = "机动特遣队疏散了 {num} 科研人员(-х)"
+-- b_chinese.chinese.lang_teleported = "SCP - 106 吃了 {num} 玩家(-ов) 在老头空间"
+-- b_chinese.chinese.lang_snapped = "{num} 人类(-м) 被扭断了脖子 SCP - 173"
+-- b_chinese.chinese.lang_zombies = "SCP - 049 '治愈' {num} 患者(-а)"
+-- b_chinese.chinese.lang_secret_found = "秘密被发现"
+-- b_chinese.chinese.lang_secret_nfound = "秘密没有被发现"
+-- b_chinese.chinese.unknown = "未知"
+-- b_chinese.chinese.waiting_for_players = "正在等待玩家......"
+-- b_chinese.chinese.waiting_for_players_pt2 = "需要"
+-- b_chinese.chinese.waiting_for_players_pt3 = " 人才能开始"
+-- b_chinese.chinese.play = "开始游戏"
+-- b_chinese.chinese.resume = "继续游戏"
+-- b_chinese.chinese.settings = "设置"
+-- b_chinese.chinese.leave = "离开游戏"
+-- b_chinese.chinese.credits = "特别鸣谢"
+-- b_chinese.chinese.class_unknown = "未知"
+-- b_chinese.chinese.select_weapon = "选择武器"
 b_chinese.NRegistry = {
-    scpready = "你能在下一回合被选为Xen生物",
-    scpwait = "你还要等待 %s 回合才能被选为Xen生物"
+你能在下一回合被选为SCP
+你还要等待 %s 回合才能被选为SCP
 }
 
-b_chinese.NFailed = "无法使用此钥匙卡进行访问:%s"
-b_chinese.version_title = "[CN]r-XEN Breach 2.6.0"
-b_chinese.version = "测试服"
-b_chinese.bugs = "如果遇到BUG请报告BUG!"
-b_chinese.lang_end1 = "游戏结束"
-b_chinese.lang_end2 = "时不我待"
-b_chinese.lang_end3 = "游戏无法进行"
+-- b_chinese.chinese.NFailed = "无法使用此钥匙卡进行访问:%s"
+-- b_chinese.chinese.version_title = "[CN]RXSEND Breach 2.6.0"
+-- b_chinese.chinese.version = "测试服"
+-- b_chinese.chinese.bugs = "如果遇到BUG请报告BUG!"
+-- b_chinese.chinese.lang_end1 = "游戏结束"
+-- b_chinese.chinese.lang_end2 = "时不我待"
+-- b_chinese.chinese.lang_end3 = "游戏无法进行"
 b_chinese.escapemessages = {
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被黑山特遣部队疏散,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被俄罗斯武装部队俘获,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你已经被疏散",
-        txt = "你花费了 {t} 分钟从基地被疏散,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被机动特遣队疏散,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被混沌分裂者俘获,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你已经被疏散
+你花费了 {t} 分钟从设施被疏散,干得好!
+
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+
+clr = Color(237, 28, 63),
+}
 }
 
 b_chinese.role = {}
 --SCP
-b_chinese.SCP = "Xen生物"
-b_chinese.role.SCP106 = "Xen生物-106"
-b_chinese.role.SCP049 = "Xen生物-049"
-b_chinese.role.SCP638 = "Xen生物-638"
-b_chinese.role.SCP076 = "Xen生物-076-2"
-b_chinese.role.SCP062DE = "Xen生物-062-DE"
-b_chinese.role.SCP8602 = "Xen生物-860-2"
-b_chinese.role.SCP062FR = "Xen生物-062-FR"
-b_chinese.role.SCP096 = "Xen生物-096"
-b_chinese.role.SCP542 = "Xen生物-542"
-b_chinese.role.SCP1903 = "Xen生物-1903"
-b_chinese.role.SCP973 = "Xen生物-973"
-b_chinese.role.SCP457 = "Xen生物-457"
-b_chinese.role.SCP173 = "Xen生物-173"
-b_chinese.role.SCP2012 = "Xen生物-2012"
-b_chinese.role.SCP082 = "Xen生物-082"
-b_chinese.role.SCP999 = "Xen生物-999-2"
-b_chinese.role.SCP939 = "Xen生物-939"
-b_chinese.role.SCP811 = "Xen生物-811"
-b_chinese.role.SCP682 = "Xen生物-682"
-b_chinese.role.SCP912 = "Xen生物-912"
-b_chinese.role.SCP3114 = "Xen生物-3114-Temp"
+SCP
+SCP-106
+SCP-049
+SCP-638
+SCP-076-2
+SCP-062-DE
+SCP-860-2
+SCP-062-FR
+SCP-096
+SCP-542
+SCP-1903
+SCP-973
+SCP-457
+SCP-173
+SCP-2012
+SCP-082
+SCP-999-2
+SCP-939
+SCP-811
+SCP-682
+SCP-912
+SCP-3114
 --研究员
-b_chinese.SCI = "黑山科研部门"
-b_chinese.role.SCI_Assistant = "科研助手"
-b_chinese.role.SCI_Grunt = "科研人员"
-b_chinese.role.SCI_Recruiter = "道德伦理检察官"
-b_chinese.role.SCI_Tester = "高级研究员"
-b_chinese.role.SCI_Medic = "医生"
-b_chinese.role.SCI_Cleaner = "清洁工"
-b_chinese.role.SCI_Head = "人事主管"
-b_chinese.role.SCI_SpyUSA = "FBI 间谍"
+科研部门
+科研助手
+科研人员
+道德伦理检察官
+高级研究员
+医生
+清洁工
+人事主管
+UIU 间谍
 --安保部门
-b_chinese.SECURITY = "黑山安保部门"
-b_chinese.role.SECURITY_Recruit = "黑山安保部门 菜鸟"
-b_chinese.role.SECURITY_Sergeant = "黑山安保部门 中士"
-b_chinese.role.SECURITY_OFFICER = "黑山安保部门 警员"
-b_chinese.role.SECURITY_Shocktrooper = "黑山安保部门 突击队员"
-b_chinese.role.SECURITY_Heavy = "黑山安保部门 镇暴队员"
-b_chinese.role.SECURITY_Warden = "黑山安保部门 典狱长"
-b_chinese.role.SECURITY_IMVSOLDIER = "黑山安保部门 特别专员"
-b_chinese.role.SECURITY_Chief = "黑山安保部门 上尉"
-b_chinese.role.SECURITY_Spy = "ELS武装部队 间谍"
-b_chinese.role.SECURITY_Corporal = "黑山安保部门 下士"
+安保部门
+安保部门 菜鸟
+安保部门 中士
+安保部门 警员
+安保部门 突击队员
+安保部门 镇暴队员
+安保部门 典狱长
+安保部门 特别专员
+安保部门 上尉
+混沌分裂者 间谍
+安保部门 下士
 --格鲁乌P部门
-b_chinese.GRU = "格鲁乌A部门(后时代)"
-b_chinese.role.GRU_Soldier = "格鲁乌A 士兵"
-b_chinese.role.GRU_Specialist = "格鲁乌A 作战专家"
-b_chinese.role.GRU_Jugg = "格鲁乌A 重装"
-b_chinese.role.GRU_Sapper = "格鲁乌A 战斗工兵"
-b_chinese.role.GRU_Commander = "格鲁乌A 指挥官"
-b_chinese.role.GRU_Political = "格鲁乌A 少尉"
-b_chinese.GRU_Guard = "格鲁乌A部门 近卫小组"
-b_chinese.role.GRU_Grunt = "格鲁乌A 近卫小组组员"
-b_chinese.role.GRU_Machinegunner = "格鲁乌A 近卫小组机枪手"
-b_chinese.role.GRU_Marksman = "格鲁乌A 近卫小组精确射手"
+格鲁乌P部门(后时代)
+格鲁乌P 士兵
+格鲁乌P 作战专家
+格鲁乌P 重装
+格鲁乌P 战斗工兵
+格鲁乌P 指挥官
+格鲁乌P 少尉
+格鲁乌P部门 近卫小组
+格鲁乌P 近卫小组组员
+格鲁乌P 近卫小组机枪手
+格鲁乌P 近卫小组精确射手
 --这个不知道是什么反正服务器没有
-b_chinese.MINIGAMES = "Other"
-b_chinese.role.USA = "USA Soldier"
-b_chinese.role.Nazi = "Reich Soldier"
-b_chinese.role.CTFCI = "CI Raider"
-b_chinese.role.CTFQRT = "QRT Defender"
-b_chinese.role.ArenaParticipant = "Arena Participant"
+Other
+CI Raider
+QRT Defender
+Arena Participant
 --老UIU
-b_chinese.UIU = "FBI特遣部队"
-b_chinese.role.UIU_Soldier = "FBI特遣部队 士兵"
-b_chinese.role.UIU_Commander = "FBI特遣部队 指挥官"
-b_chinese.role.UIU_Specialist = "FBI特遣部队 战斗专家"
-b_chinese.role.UIU_Clocker = "FBI特遣部队 渗透者"
-b_chinese.role.UIU_Informator = "FBI特遣部队 情报人员"
+FBI特异事故处
+特异事故处 士兵
+特异事故处 指挥官
+特异事故处 战斗专家
+特异事故处 渗透者
+特异事故处 情报人员
 --新UIU
-b_chinese.UIU_Agents = "FBI金鹰小组"
-b_chinese.role.UIU_Agent = "FBI金鹰小组 干员"
-b_chinese.role.UIU_Agent_Commander = "FBI金鹰小组 组长"
---b_chinese.role.UIU_Agent_Sniper = "FBI金鹰小组 狙击手"
-b_chinese.role.UIU_Agent_Specialist = "FBI金鹰小组 特种干员"
-b_chinese.role.UIU_Agent_Thunder = "FBI金鹰小组 雷击"
+UIU特工小组
+UIU特工小组 干员
+UIU特工小组 组长
+UIU特工小组 狙击手
+UIU特工小组 特种干员
+UIU特工小组 雷击
+--UIU收容小组
+UIU收容小组
+UIU收容小组 组员
+UIU收容小组 机枪手
+UIU收容小组 组长
+UIU收容小组 收容专家
+UIU收容小组 暗面
 --这个不知道是什么反正服务器没有
-b_chinese.SKP = "Sonderkommando für Paranormales"
-b_chinese.role.SKP_Soldat = "SKP Soldat"
-b_chinese.role.SKP_Jager = "SKP Jäger"
-b_chinese.role.SKP_Machinegunner = "SKP Machinegunner"
-b_chinese.role.SKP_Offizier = "SKP Offizier"
+Sonderkommando für Paranormales
+SKP Soldat
+SKP Jäger
+SKP Machinegunner
+SKP Offizier
 --蛇之手
-b_chinese.DZ = "图书爱好者"
-b_chinese.role.DZ_Grunt = "图书爱好者 士兵"
-b_chinese.role.SCI_SpyDZ = "图书爱好者 间谍"
-b_chinese.role.DZ_Gas = "图书爱好者 特种探员"
-b_chinese.role.DZ_Psycho = "图书爱好者 疯子"
-b_chinese.role.DZ_Commander = "图书爱好者 指挥官"
+蛇之手
+蛇之手 士兵
+蛇之手 间谍
+蛇之手 特种探员
+蛇之手 疯子
+蛇之手 指挥官
 --GOC
-b_chinese.Goc = "联合国特战部队"
-b_chinese.role.Goc_Grunt = "联合国特战部队 士兵"
-b_chinese.role.Goc_Liq = "联合国特战部队 中尉"
-b_chinese.role.Goc_Commander = "联合国特战部队 指挥官"
-b_chinese.role.Goc_Jag = "联合国特战部队 无畏勇士"
-b_chinese.role.Goc_Special = "联合国特战部队 战斗专家"
+全球超自然联盟
+全球超自然联盟 士兵
+全球超自然联盟 中尉
+全球超自然联盟 指挥官
+全球超自然联盟 无畏勇士
+全球超自然联盟 战斗专家
 --快反
-b_chinese.QRT = "快速反应部队"
-b_chinese.role.QRT_Soldier = "快速反应部队 士兵"
-b_chinese.role.QRT_Medic = "快速反应部队 医疗兵"
-b_chinese.role.QRT_ShockTrooper = "快速反应部队 突击队员"
-b_chinese.role.QRT_Commander = "快速反应部队 指挥官"
-b_chinese.role.QRT_Machinegunner = "快速反应部队 机枪手"
-b_chinese.role.QRT_Shield = "快速反应部队 盾牌手"
-b_chinese.role.QRT_Marksmen = "快速反应部队 精准射手"
---这个不知道是什么反正服务器没有
-b_chinese.STS = "特别行动队"
-b_chinese.role.STS_Soldier = "STS Soldier"
-b_chinese.role.STS_Shock = "STS Shocktrooper"
-b_chinese.role.STS_Special = "STS Specialist"
-b_chinese.role.STS_Officer = "STS Officer"
-b_chinese.role.STS_Left = "STS Lieutenant"
---这个不知道是什么反正服务器没有
-b_chinese.OSN = "Spec. Task Squad"
-b_chinese.role.OSN_Soldier = "STS Soldier"
-b_chinese.role.OSN_Specialist = "STS Specialist"
-b_chinese.role.OSN_Commander = "STS Commander"
+快速反应部队
+快速反应部队 士兵
+快速反应部队 医疗兵
+快速反应部队 突击队员
+快速反应部队 指挥官
+快速反应部队 机枪手
+快速反应部队 盾牌手
+快速反应部队 精准射手
 --D级
-b_chinese.ClassD = "囚犯"
-b_chinese.role.ClassD_Default = "囚犯"
-b_chinese.role.ClassD_Pron = "囚犯 盗贼"
-b_chinese.role.ClassD_Hack = "囚犯 黑客"
-b_chinese.role.ClassD_Bor = "囚犯 摔角手"
-b_chinese.role.ClassD_Fat = "囚犯 胖逼"
-b_chinese.role.ClassD_Probitiy = "囚犯 大兜哥"
-b_chinese.role.ClassD_Thief = "囚犯 小偷"
-b_chinese.role.ClassD_Cannibal = "囚犯 食人魔"
-b_chinese.role.ClassD_Fast = "囚犯 运动员"
-b_chinese.role.ClassD_Killer = "囚犯 杀手"
-b_chinese.role.ClassD_Hitman = "囚犯 职业杀手"
-b_chinese.role.ClassD_FartInhaler = "囚犯 哥布林"
-b_chinese.role.ClassD_Survivor = "囚犯 生存者"
-b_chinese.role.ClassD_Soldier = "囚犯 老兵"
-b_chinese.role.ClassD_GOCSpy = "联合国特战部队 特工"
-b_chinese.role.ClassD_Banned = "囚犯 低信誉人员"
-b_chinese.role.ClassD_Mio = "MIO"
-b_chinese.role.ClassD_Mio_NaiLong = "奶龙 MIO"
+D级人员
+D级人员
+D级人员 盗贼
+D级人员 黑客
+D级人员 摔角手
+D级人员 胖逼
+D级人员 大兜哥
+D级人员 小偷
+D级人员 食人魔
+D级人员 运动员
+D级人员 杀手
+D级人员 职业杀手
+D级人员 哥布林
+D级人员 生存者
+D级人员 老兵
+全球超自然联盟 特工
+D级人员 低信誉人员
+MIO
+奶龙 MIO
 --MTF
-b_chinese.MTF = "黑山特遣部队"
-b_chinese.role.MTF_Security = "黑山基地安全特工"
-b_chinese.role.MTF_Shock = "黑山特遣部队 突击队员"
-b_chinese.role.MTF_Guard = "黑山特遣部队 士兵"
-b_chinese.role.MTF_Medic = "黑山特遣部队 医疗兵"
-b_chinese.role.MTF_Left = "黑山特遣部队 中尉"
-b_chinese.role.MEG_Chem = "黑山特遣部队 生化专家"
-b_chinese.role.MTF_Specialist = "黑山特遣部队 战斗专家"
-b_chinese.role.MTF_Com = "黑山特遣部队 指挥官"
-b_chinese.role.MTF_HOF = "黑山基地 总管"
-b_chinese.role.MTF_Engi = "黑山特遣部队 工程师"
-b_chinese.role.MTF_Jag = "黑山特遣部队 重装"
-b_chinese.role.O4Commander = "O4指挥官"
+机动特遣队
+内部安全代理
+机动特遣队 突击队员
+机动特遣队 士兵
+机动特遣队 医疗兵
+机动特遣队 中尉
+机动特遣队 战斗专家
+安全主管
+设施主管
+机动特遣队 工程师
+机动特遣队 重装
+O4指挥官
+MTF 专家组
+MEG 生化专家
+MEG 九尾狐收容专家
+MEG 落锤特战教官
 --九尾狐
-b_chinese.NTF = "黑山特遣部队 - 皎洁之狐"
-b_chinese.role.NTF_Soldier = "皎洁之狐 士兵"
-b_chinese.role.NTF_Commander = "皎洁之狐 指挥官"
-b_chinese.role.NTF_Specialist = "皎洁之狐 战斗专家"
-b_chinese.role.NTF_Sniper = "皎洁之狐 狙击手"
-b_chinese.role.NTF_Pilot = "皎洁之狐 飞行员"
+机动特遣队 Epsilon-11 ''Nine Tailed Fox 九尾狐''
+九尾狐 士兵
+九尾狐 指挥官
+九尾狐 战斗专家
+九尾狐 狙击手
+九尾狐 飞行员
 --NU7 落锤
-b_chinese.NU7 = "黑山特遣部队 - 战锤"
-b_chinese.role.NU7_Soldier = "战锤 士兵"
-b_chinese.role.NU7_Commander = "战锤 指挥官"
-b_chinese.role.NU7_Specialist = "战锤 作战专家"
-b_chinese.role.NU7_Vanguard = "战锤 先锋"
-b_chinese.role.NU7_Juggernaut = "战锤 无畏战士"
+机动特遣队 NU-7 '落锤' 肃杀营A连 
+落锤肃杀A连 士兵
+落锤肃杀A连 指挥官
+落锤肃杀A连 作战专家
+落锤肃杀A连 先锋
+落锤肃杀A连 无畏战士
 --CI
-b_chinese.Chaos = "俄罗斯武装部队"
-b_chinese.role.Chaos_Grunt = "俄罗斯武装部队 士兵"
-b_chinese.role.Chaos_Commander = "俄罗斯武装部队 指挥官"
-b_chinese.role.Chaos_Jugg = "俄罗斯武装部队 重装"
-b_chinese.role.Chaos_Demo = "俄罗斯武装部队 恶魔"
-b_chinese.role.Chaos_Claymore = "俄罗斯武装部队 猎人"
-b_chinese.role.Chaos_Recruit = "俄罗斯武装部队 新兵"
+Chaos Insurgency 混沌分裂者
+混沌分裂者 士兵
+混沌分裂者 指挥官
+混沌分裂者 重装
+混沌分裂者 恶魔
+混沌分裂者 猎人
+混沌分裂者 新兵
 --特殊科研感觉不用汉化他们的名字
-b_chinese.SCI_SPECIAL = "VIP人员"
-b_chinese.role.SCI_SPECIAL_DAMAGE = "Kelen"
-b_chinese.role.SCI_SPECIAL_HEALER = "Matilda"
-b_chinese.role.SCI_SPECIAL_SLOWER = "Speedwone"
-b_chinese.role.SCI_SPECIAL_SPEED = "Lomao"
-b_chinese.role.SCI_SPECIAL_MINE = "Feelon"
-b_chinese.role.SCI_SPECIAL_BOOSTER = "Georg"
-b_chinese.role.SCI_SPECIAL_SHIELD = "Shieldmeh"
-b_chinese.role.SCI_SPECIAL_INVISIBLE = "Ruprecht"
-b_chinese.role.SCI_SPECIAL_VISION = "Hedwig"
+特殊科研人员
+Kelen
+Matilda
+Speedwone
+Lomao
+Feelon
+Georg
+Shieldmeh
+Ruprecht
+Hedwig
 --猩红之子
-b_chinese.Cult = "废土拾荒者"
-b_chinese.role.Cult_Commander = "废土拾荒者 首领"
-b_chinese.role.Cult_Grunt = "废土拾荒者 战士"
-b_chinese.role.Cult_Psycho = "废土拾荒者 战将"
-b_chinese.role.Cult_Specialist = "废土拾荒者 二把手"
---子模式和随机事件的角色
+Children of The Scarlet King 猩红之子
+猩红之子 祭祀
+猩红之子 教众
+猩红之子 狂信徒
+猩红之子 助祭
+--事件专属角色
+事件特殊角色
+UIU 联络专员
+混沌分裂者 特工
+--5K区域
+--奇术打击
+GOC奇术打击二组 护卫
+GOC奇术打击二组 指挥官
+GOC奇术打击二组 专家
+GOC奇术打击二组 学者
+--STS 5队
+STS-5队 士兵
+STS-5队 队长
+STS-5队 精英
+STS-5队 特种干员
+STS-5队 压制者
+--GRU-CI 突袭部队
+GRU-CI突袭部队 士兵
+GRU-CI突袭部队 医疗兵
+GRU-CI突袭部队 骇客
+GRU-CI突袭部队 副指挥
+GRU-CI突袭部队 指挥官
+GRU-CI突袭部队 机枪手
+--Nu-22
+Nu-22 \"火箭侠\" 士兵
+Nu-22 \"火箭侠\" 医疗兵
+Nu-22 \"火箭侠\" 指挥官
+SCP-1440
+--NU-7 Buck
+落锤肃杀B连 士兵
+落锤肃杀B连 医疗兵
+落锤肃杀B连 毒气专家
+落锤肃杀B连 技术员
+落锤肃杀B连 副指挥
+落锤肃杀B连 指挥官
+落锤肃杀B连 机枪手
+--子模式的角色
 ------------------------------------------------kongshu
 --facility
-b_chinese.role.ClassD_Rioter = "暴动人员"
-b_chinese.role.ClassD_Psycho = "精神病"
-b_chinese.role.ClassD_Executor = "处刑者"
-b_chinese.role.ChaosAgentRioter = "外勤特工" --leader
-b_chinese.role.Security_grunt = "镇压队员"
-b_chinese.role.Security_faster = "冲锋队员"
-b_chinese.role.Security_jugg = "镇暴精英"
-b_chinese.role.Security_protector = "保卫者" --leader
+D级 暴动人员
+D级 精神病
+D级 处刑者
+CI 外勤特工
+安保 镇压队员
+安保 冲锋队员
+安保 镇暴精英
+安保 保卫者
 --support
-b_chinese.role.chaos_vdv_grunt = "空输 士兵"
-b_chinese.role.chaos_vdv_marksman = "空输 精确射手"
-b_chinese.role.chaos_vdv_machinegunner = "空输 压制者"
-b_chinese.role.chaos_vdv_commander = "空输 指挥官"
-b_chinese.role.nu7_squad_grunt = "战锤 士兵"
-b_chinese.role.nu7_squad_shield = "战锤 盾兵"
-b_chinese.role.nu7_squad_sniper = "战锤 狙击手"
-b_chinese.role.nu7_squad_machineunner = "战锤 压制者"
-b_chinese.role.nu7_squad_commander = "战锤 指挥官"
+CI空输 士兵
+CI空输 精确射手
+CI空输 压制者
+CI空输 指挥官
+落锤特战分队 士兵
+落锤特战分队 盾兵
+落锤特战分队 狙击手
+落锤特战分队 压制者
+落锤特战分队 指挥官
+------------------------------------------------
+------------------------------------------------ww2
+--nazi
+纳粹德国 士兵
+纳粹德国 指挥官
+纳粹德国 机枪手
+--american
+美军 士兵
+美军 指挥官
+美军 机枪手
 ------------------------------------------------
 b_chinese.weaponry = {}
-b_chinese.weaponry["breach_keycard_1"] = "一级权限卡"
-b_chinese.weaponry["breach_keycard_2"] = "二级权限卡"
-b_chinese.weaponry["breach_keycard_3"] = "三级权限卡"
-b_chinese.weaponry["breach_keycard_4"] = "四级权限卡"
-b_chinese.weaponry["breach_keycard_5"] = "五级权限卡"
-b_chinese.weaponry["breach_keycard_6"] = "Omni权限卡"
-b_chinese.weaponry["breach_keycard_7"] = "O5权限卡"
-b_chinese.weaponry["breach_keycard_crack"] = "?级权限卡"
-b_chinese.weaponry["breach_keycard_support"] = "?级权限卡"
-b_chinese.weaponry["breach_keycard_sci_1"] = "一级科研权限卡"
-b_chinese.weaponry["breach_keycard_sci_2"] = "二级科研权限卡"
-b_chinese.weaponry["breach_keycard_sci_3"] = "三级科研权限卡"
-b_chinese.weaponry["breach_keycard_sci_4"] = "四级科研权限卡"
-b_chinese.weaponry["breach_keycard_security_1"] = "一级安保权限卡"
-b_chinese.weaponry["breach_keycard_security_2"] = "二级安保权限卡"
-b_chinese.weaponry["breach_keycard_security_3"] = "三级安保权限卡"
-b_chinese.weaponry["breach_keycard_security_4"] = "四级安保权限卡"
-b_chinese.weaponry["breach_keycard_guard_1"] = "一级警卫权限卡"
-b_chinese.weaponry["breach_keycard_guard_2"] = "二级警卫权限卡"
-b_chinese.weaponry["breach_keycard_guard_3"] = "三级警卫权限卡"
-b_chinese.weaponry["breach_keycard_guard_4"] = "四级警卫权限卡"
-b_chinese.weaponry["breach_keycard_ntf"] = "狐狸-权限卡"
-b_chinese.weaponry["breach_keycard_nu7"] = "战锤-权限卡"
-b_chinese.weaponry["item_drink_dado_fire"] = "紫苞果汁 «小心点,烫嘴»" --爆炸饮料
-b_chinese.weaponry["item_drink_dado_radioactive"] = "蝮蛇果汁 «尝起来像辐射»" --辐射饮料
-b_chinese.weaponry["item_drink_energy"] = "能量饮料"
-b_chinese.weaponry["item_drink_soda"] = "苏打水"
-b_chinese.weaponry["item_drink_water"] = "饮用水"
-b_chinese.weaponry["item_drink_coffee"] = "咖啡"
-b_chinese.weaponry["item_eyedrops_1"] = "眼药水"
-b_chinese.weaponry["item_eyedrops_2"] = "改进型眼药水"
-b_chinese.weaponry["item_eyedrops_3"] = "实验型眼药水"
-b_chinese.weaponry["item_hamburger"] = "蟹黄堡" --什么东西？
-b_chinese.weaponry["item_keys"] = "大G车钥匙" --好好好开心就好
-b_chinese.weaponry["item_knife"] = "自制小刀"
-b_chinese.weaponry["item_medkit_1"] = "医疗包"
-b_chinese.weaponry["item_medkit_2"] = "办公用医疗包"
-b_chinese.weaponry["item_medkit_3"] = "特殊护理医疗包"
-b_chinese.weaponry["item_medkit_4"] = "通用医疗包"
-b_chinese.weaponry["item_pills"] = "止痛药"
-b_chinese.weaponry["item_nightvision_green"] = "夜视仪"
-b_chinese.weaponry["item_nightvision_blue"] = "蓝色夜视仪"
-b_chinese.weaponry["item_nightvision_red"] = "\"杀意感知\""
-b_chinese.weaponry["item_nightvision_goc"] = "原型夜视仪"
-b_chinese.weaponry["item_nightvision_white"] = "原型夜视仪"
-b_chinese.weaponry["item_radio"] = "对讲机"
-b_chinese.weaponry["item_chaos_radio"] = "未知对讲机"
-b_chinese.weaponry["item_adrenaline"] = "肾上腺素注射器"
-b_chinese.weaponry["item_syringe"] = "机能强化注射器"
-b_chinese.weaponry["item_deffib_medic"] = "便携式除颤仪"
-b_chinese.weaponry["item_shield"] = "防弹盾牌"
-b_chinese.weaponry["item_special_document"] = "特殊访问代码"
-b_chinese.weaponry["item_screwdriver"] = "螺丝刀"
-b_chinese.weaponry["item_tazer"] = "电击器"
-b_chinese.weaponry["item_toolkit"] = "工具箱"
-b_chinese.weaponry["copper_coin"] = "铜币"
-b_chinese.weaponry["silver_coin"] = "银币"
-b_chinese.weaponry["gold_coin"] = "金币"
-b_chinese.weaponry["weapon_special_gaus"] = "电磁炮"
-b_chinese.weaponry["br_holster"] = "空手"
-b_chinese.weaponry["weapon_flashlight"] = "手电筒"
-b_chinese.weaponry["weapon_pass_guard"] = "ID卡 \"军事人员\""
-b_chinese.weaponry["weapon_pass_medic"] = "ID卡 \"医疗人员\""
-b_chinese.weaponry["weapon_pass_sci"] = "ID卡 \"科研人员\""
-b_chinese.weaponry["weapon_breachmelee_crowbar"] = "撬棍"
-b_chinese.weaponry["weapon_breachmelee_pipe"] = "扳手"
-b_chinese.weaponry["weapon_breachmelee_hammer"] = "锤子"
-b_chinese.weaponry["weapon_breachmelee_fireaxe"] = "消防斧"
-b_chinese.weaponry["weapon_breachmelee_axe"] = "斧头"
-b_chinese.weaponry["weapon_breachmelee_tonfa"] = "警棍"
-b_chinese.weaponry["weapon_breachmelee_stick"] = "甩棍"
-b_chinese.weaponry["weapon_cannibal"] = "动作:吃尸体"
-b_chinese.weaponry["weapon_checker"] = "动作:检查身份"
-b_chinese.weaponry["weapon_cqc"] = "战术动作"
-b_chinese.weaponry["weapon_goggles"] = "动作:操作目镜"
-b_chinese.weaponry["breach_keycard_usa_spy"] = "内部权限卡"
-b_chinese.weaponry["weapon_usa_instruction"] = "教诲"
-b_chinese.weaponry["ritual_paper"] = "一张破纸"
-b_chinese.weaponry["cw_rubber_shotgun"] = "豆弹枪"
-b_chinese.weaponry["cw_kk_ins2_deagle_ntf"] = "妖狐之舞"
-b_chinese.weaponry["hacking_doors"] = "黑客设备"
-b_chinese.weaponry["item_ci_scan"] = "简易扫描设备"
-b_chinese.weaponry["item_cheemer"] = "Cheemes"
-b_chinese.weaponry["weapon_nu7_goggles"] = "特种夜视仪"
-b_chinese.weaponry["item_top_document"] = "特别文件"
-b_chinese.weaponry["cw_kk_ins2_toz66_sawed"] = "土质霰弹枪"
-b_chinese.role.Spectator = "观察者"
+一级权限卡
+二级权限卡
+三级权限卡
+四级权限卡
+五级权限卡
+Omni权限卡
+O5权限卡
+?级权限卡
+?级权限卡
+一级科研权限卡
+二级科研权限卡
+三级科研权限卡
+四级科研权限卡
+一级安保权限卡
+二级安保权限卡
+三级安保权限卡
+四级安保权限卡
+一级警卫权限卡
+二级警卫权限卡
+三级警卫权限卡
+四级警卫权限卡
+九尾狐权限卡
+落锤权限卡
+紫苞果汁 «小心点,烫嘴»
+蝮蛇果汁 «尝起来像辐射»
+能量饮料
+苏打水
+饮用水
+咖啡
+眼药水
+改进型眼药水
+实验型眼药水
+蟹黄堡
+大G车钥匙
+自制小刀
+医疗包
+办公用医疗包
+特殊护理医疗包
+通用医疗包
+止痛药
+夜视仪
+蓝色夜视仪
+\"杀意感知\"
+GOC原型夜视仪
+原型夜视仪
+对讲机
+CI对讲机
+肾上腺素注射器
+机能强化注射器
+便携式除颤仪
+防弹盾牌
+特殊访问代码
+螺丝刀
+电击器
+工具箱
+铜币
+银币
+金币
+电磁炮
+空手
+手电筒
+ID卡 \"军事人员\"
+ID卡 \"医疗人员\"
+ID卡 \"科研人员\"
+撬棍
+扳手
+锤子
+消防斧
+斧头
+警棍
+甩棍
+动作:吃尸体
+动作:检查身份
+战术动作
+动作:操作目镜
+内部权限卡
+教诲
+王的福音
+豆弹枪
+妖狐之舞
+黑客设备
+简易扫描设备
+Cheemes
+特种夜视仪
+特别文件
+土质霰弹枪
+防毒面具
+微小电池
+改良电池
+电池
+一次性钥匙卡
+手铐
+医疗注射器
+断手
+PoS-9单兵伤害吸收装置
+观察者
 --提示
-b_chinese.already_have_the_bag = "你已经有背包了!"
-b_chinese.took_on_the_bag = "你穿上了背包!"
-b_chinese.you_cant_wear_the_bag = "你不能穿背包!"
-b_chinese.has_uniform_already = "你已经有衣服了."
-b_chinese.take_off_armor_to_wear_uniform = "脱掉你的护甲才能穿上这件衣服!"
-b_chinese.your_uniform_is = "你穿上了:"
-b_chinese.has_helmet_already = "你已经有头盔了."
-b_chinese.take_off_uniform_to_wear_helmet = "脱下你的衣服才能戴上这个头盔!"
-b_chinese.put_on_helmet = "你戴上了头盔!"
-b_chinese.you_cant_wear_helmet = "你不能戴头盔!"
-b_chinese.take_off_vest_to_wear_vest = "你已经有防弹衣了."
-b_chinese.take_off_uniform_to_wear_vest = "脱下你的衣服才能传上这个防弹衣!"
-b_chinese.put_on_vest = "你穿上了防弹衣!"
-b_chinese.you_cant_wear_vest = "你不能穿防弹衣!"
-b_chinese.goc_nuke_start = "Alpha核弹已被非法激活 所有战斗人员 - 立刻阻止!"
-b_chinese.repaired_generators_count = "已被维修的发电机数量:"
-b_chinese.you_ate_burger = "你吃了个蟹黄堡,恢复了生命值."
-b_chinese.you_ate_burger_hp_regenerated_pt1 = "你吃饱了 "
-b_chinese.you_ate_burger_hp_regenerated_pt2 = " 你变健康了."
-b_chinese.dont_go_far_away_from_body = "你不能离尸体太远了"
-b_chinese.scp427_regenerates_health = "Xen-427 缓慢地恢复了你的生命值."
-b_chinese.you_took_off_scp427 = "你卸下了 Xen-427. 治疗停止了."
-b_chinese.you_feel_healthy = "你感觉很健康"
-b_chinese.exp = "经验"
-b_chinese.evac_start = "警告!Alpha核弹已被激活!"
-b_chinese.ntf_enter = "黑山特遣部队 皎洁之狐 进入了设施"
-b_chinese.nu7_enter = "黑山特遣部队 战锤 进入了设施"
-b_chinese.evac_15min = "注意!距离Alpha核弹头起爆:15 分钟!"
-b_chinese.decont_5min = "注意!距离轻收容净化:5 分钟."
-b_chinese.decont_1min = "注意!距离轻收容净化:1 分钟!"
-b_chinese.evac_10min = "注意!距离Alpha核弹头起爆:10 分钟!"
-b_chinese.evac_5min = "注意!距离Alpha核弹头起爆:5 分钟!"
-b_chinese.scp_cant_skill = "你无法使用你的技能"
-b_chinese.gru_start_hacking = "检测到未知权限正在强制更改设施内的权限,安全系统最后一次报告的位置在:中央控制室"
-b_chinese.gru_faild_hacking = "已阻断未知权限的强制修改,所有系统正在重新启动"
-b_chinese.gru_start_warhead = "警告!Alpha核弹头被[数据删除]权限强制激活!"
-b_chinese.gru_evac_warhead = "警告!设施多处数据遭到修改,[数据删除]权限正在启动Alpha核弹头"
+你已经有背包了!
+你穿上了背包!
+你不能穿背包!
+你已经有衣服了.
+脱掉你的护甲才能穿上这件衣服!
+你穿上了:
+你已经有头盔了.
+脱下你的衣服才能戴上这个头盔!
+你戴上了头盔!
+你不能戴头盔!
+你已经有防弹衣了.
+脱下你的衣服才能传上这个防弹衣!
+你穿上了防弹衣!
+你不能穿防弹衣!
+Alpha核弹已被非法激活 所有战斗人员 - 立刻阻止!
+已被维修的发电机数量:
+你吃了个蟹黄堡,恢复了生命值.
+你吃饱了 
+ 你变健康了.
+你不能离尸体太远了
+SCP-427 缓慢地恢复了你的生命值.
+你卸下了 SCP-427. 治疗停止了.
+你感觉很健康
+经验
+警告!Alpha核弹已被激活!
+Mobile Task Force Epsilon-11 机动特遣队九尾狐进入了设施
+Mobile Task Force Nu-7 落锤特种部队进入了设施
+注意!距离Alpha核弹头起爆:15 分钟!
+注意!距离轻收容净化:5 分钟.
+注意!距离轻收容净化:1 分钟!
+注意!距离Alpha核弹头起爆:10 分钟!
+注意!距离Alpha核弹头起爆:5 分钟!
+你无法使用你的技能
+检测到未知权限正在强制更改设施内的权限,安全系统最后一次报告的位置在:中央控制室
+已阻断未知权限的强制修改,所有系统正在重新启动
+警告!Alpha核弹头被[数据删除]权限强制激活!
+警告!设施多处数据遭到修改,[数据删除]权限正在启动Alpha核弹头
+已被收容
 --进度条
-b_chinese.progress_wait = "等待中..."
-b_chinese.bismillah = "读书中..."
-b_chinese.stopscarletinvsion = "撕书中..."
-b_chinese.repairing_generator = "维修发电机中..."
-b_chinese.picking_up_docs = "收集文件中..."
-b_chinese.medkit_healing = "治疗中"
-b_chinese.hacking_door = "骇入中..."
-b_chinese.ressurecting_someone = "复活中..."
-b_chinese.opening_car_door = "开门中..."
-b_chinese.progress_using = "使用中..."
-b_chinese.hacking_cell = "破坏挡板中..."
-b_chinese.cannibal = "享受盛宴中..."
-b_chinese.checking_class = "检查身份中..."
-b_chinese.disarming = "缴械中..."
-b_chinese.creating_zombie = "治愈中..."
-b_chinese.drinking_blood = "饮血中..."
-b_chinese.sprint = "冲刺"
-b_chinese.ragemode = "狂暴"
-b_chinese.throwing_grenade = "投掷手榴弹"
-b_chinese.scp939_eating_body = "享用美味中..."
-b_chinese.scp999_healing = "治疗中 "
-b_chinese.stealing = "偷窃中..."
-b_chinese.giving_uniform = "给予制服中..."
-b_chinese.changing_identity = "更改身份中..."
-b_chinese.becoming_invisible = "消失不见中..."
-b_chinese.giving_equipment = "给予装备中..."
-b_chinese.blocking_door = "锁门中..."
-b_chinese.planting_trap = "设置陷阱中..."
-b_chinese.interrogation = "审讯中..."
-b_chinese.breaking_door = "破门中..."
-b_chinese.looting_trash_can = "搜索垃圾桶中..."
-b_chinese.progress_stopped = "停止!"
-b_chinese.looting_body = "搜索中..."
-b_chinese.nu7pickarmorbox = "拾取防弹插板盒子中..."
-b_chinese.nu7pickarmor = "拾取防弹插板中..."
-b_chinese.putupstability = "部署猫猫中..."
-b_chinese.pickupstability = "收起猫猫中..."
-b_chinese.putup_gru_shield = "放置机动护盾中..."
-b_chinese.pickup_gru_shield = "收起机动护盾中..."
-b_chinese.destroy_gru_shield = "摧毁机动护盾中..."
-b_chinese.scp3114_disguise = "正在进行伪装中..."
-b_chinese.progress_done = "完成!"
+等待中...
+阅读祷文中...
+合上猩红之书中...
+维修发电机中...
+收集文件中...
+治疗中
+骇入中...
+复活中...
+开门中...
+使用中...
+破坏挡板中...
+吃尸体中...
+检查身份中...
+缴械中...
+给目标戴手铐中...
+破坏手铐中...
+治愈中...
+饮血中...
+冲刺
+狂暴
+投掷手榴弹
+享用美味中...
+治疗中 
+偷窃中...
+给予制服中...
+更改身份中...
+消失不见中...
+给予装备中...
+锁门中...
+设置陷阱中...
+审讯中...
+破门中...
+搜索垃圾桶中...
+停止!
+搜索中...
+拾取防弹插板盒子中...
+拾取防弹插板中...
+部署现实稳定锚中...
+收起现实稳定锚中...
+放置机动护盾中...
+收起机动护盾中...
+摧毁机动护盾中...
+正在进行伪装中...
+完成!
 --ARMORS
 --вы переоделись во что? в кого?
-b_chinese.armor_medic = "医护人员制服"
-b_chinese.armor_mtf = "特遣人员 制服"
-b_chinese.armor_sci = "科研 制服"
-b_chinese.armor_goc = "特战部队 装甲"
-b_chinese.armor_uiu = "FBI 陆军装甲"
-b_chinese.armor_hazmat_blue = "蓝色防化服"
-b_chinese.armor_hazmat_orange = "橘色防化服"
-b_chinese.armor_hazmat_white = "白色防化服"
-b_chinese.armor_hazmat_yellow = "黄色防化服"
-b_chinese.armor_hazmat_black = "黑色防化服"
-b_chinese.armor_lighthazmat_white = "白色轻型防化服"
-b_chinese.armor_lighthazmat_yellow = "黄色轻型防化服"
+医护人员制服
+MTF 制服
+科研 制服
+GOC 装甲
+UIU 陆军装甲
+蓝色防化服
+橘色防化服
+白色防化服
+黄色防化服
+黑色防化服
+白色轻型防化服
+黄色轻型防化服
 --DISEASES
-b_chinese.diseases_appendicitis = "急性阑尾炎"
-b_chinese.diseases_lungcancer = "肺癌"
-b_chinese.diseases_asthma = "哮喘"
-b_chinese.diseases_cardiacarrest = "心脏骤停"
-b_chinese.diseases_spontaneouscombustion = "自燃"
-b_chinese.diseases_chickenpox = "水痘"
-b_chinese.diseases_cold = "感冒"
-b_chinese.diseases_musclemutation = "肌肉突变"
-b_chinese.diseases_mitosis = "超细胞有丝分裂"
+急性阑尾炎
+肺癌
+哮喘
+心脏骤停
+自燃
+水痘
+感冒
+肌肉突变
+超细胞有丝分裂
 --聊天通知
-b_chinese.you_cant_wear_this_uniform = "你无法穿上这个衣服!"
-b_chinese.your_current_exp = "你目前的经验为:"
-b_chinese.scp914_change_mode = "你更改Xen-914的模式为:"
-b_chinese.quran_needed = "你需要拿出破纸."
-b_chinese.you_cant_repair_generator = "你无法修理发电机."
-b_chinese.you_need_toolkit = "你需要一个工具箱."
-b_chinese.scp294_sex = "就连我也没办法给你找个女朋友." --这是个什么
-b_chinese.scp294_fanta = "这尝起来真棒!"
-b_chinese.scp294_water = "这尝起来像水,没什么特别的"
-b_chinese.scp294_out_of_order = "Xen-294 无法制造出这种饮料 \""
-b_chinese.weaponry_cant_use = "你无法与此对象交互!"
-b_chinese.weaponry_took_ammo_already = "你已经拿过弹药了!"
-b_chinese.weaponry_took_uniform_already = "你已经有装备了!"
-b_chinese.weaponry_need_slots_pt1 = "你需要有"
-b_chinese.weaponry_need_slots_pt2 = "空着的物品栏!"
-b_chinese.weaponry_mtf_armor_pt1 = "你穿上了这套装备"
-b_chinese.weaponry_mtf_armor_pt2 = "\"黑山特遣部队\""
-b_chinese.ci_choppa_down = "你因为摧毁了直升机而被奖励,现在快跑.!"
-b_chinese.ctf_docs_to_base = "将文档交付到你的基地."
-b_chinese.scp1025_you_read_about = "你读到了关于 \""
-b_chinese.scp294_nothing = "杯子里什么都没有."
-b_chinese.scp294_bleach = "你喝了一杯漂白剂. 你的体内在燃烧,尝起来像游泳池里的水. 现在只能祈祷你的身体能够承受住这种毒药."
-b_chinese.scp294_refreshing_drink = "清凉的饮料."
-b_chinese.deffib_body_decayed_pt1 = "这具尸体已经完全腐烂了,"
-b_chinese.deffib_body_decayed_pt2 = "没有复活的可能."
-b_chinese.deffib_body_decayed_pt3 = "你疯了? 你在尝试救一副骨架!"
-b_chinese.deffib_body_too_late_pt1 = "这具尸体已经躺了一会了,"
-b_chinese.deffib_body_too_late_pt2 = "没有复活的可能."
-b_chinese.deffib_headshot_pt1 = "这具尸体受到的伤害太过严重,"
-b_chinese.deffib_headshot_pt2 = "没有复活的可能."
-b_chinese.scp049_too_late = "这具尸体已经躺了一会了无法被治愈"
-b_chinese.scp049_time_out_pt1 = "可惜的是,你已经躺了一会了"
-b_chinese.scp049_time_out_pt2 = "你无法被治愈"
-b_chinese.scp062_new_stage_pt1 = "恭喜."
-b_chinese.scp062_new_stage_pt2 = "你进化了,并获得了新能力!"
-b_chinese.scp173_bad_zone = "你无法在此区域中使用能力."
-b_chinese.scp939_look_on_body = "你需要看着尸体才能进食!"
-b_chinese.scp999_healthy = "他非常健康."
-b_chinese.thief_look_on_them = "你需要看着目标才能进行偷窃."
-b_chinese.thief_cant_steal = "你无法从这个玩家身上偷窃这个物品!"
-b_chinese.thief_need_slot = "你需要给你的背包腾出空间才能行窃."
-b_chinese.thief_has_already = "你已经有这个物品了!"
-b_chinese.uiuspy_doc_dist_pt1 = "距离\'心上人\'有:"
-b_chinese.uiuspy_doc_dist_pt2 = "大概"
-b_chinese.uiu_locationunknown = "位置未知"
-b_chinese.uiu_locationlcz = "在轻收容"
-b_chinese.uiu_locationhcz = "在重收容"
-b_chinese.uiu_locationentrance = "在办公区"
-b_chinese.uiu_locationoutside = "在设施地表"
-b_chinese.uiu_trap_forbidden = "你不能在这里放置闪电门"
-b_chinese.cicommander_conscripted_already = "目标已经有装备了."
-b_chinese.cicommander_need_to_take_off_smth = "目标需要脱下装备."
-b_chinese.cicommander_no_slots = "该玩家的装备库存中必须有空闲格."
-b_chinese.dectector_no_right = "你无法在空中放置此设备"
-b_chinese.stayon_the_ground = "你必须在地面上才能释放"
-b_chinese.MTF_Special_Goggles_Hint = "按R键开启或关闭目镜,左右键切换目镜模式"
-b_chinese.feelon_no_ground = "地雷应该放在地上!"
-b_chinese.heal_should_on_ground = "医疗站应该被放在地上!"
-b_chinese.armorbox_should_on_ground = "防弹插板盒子应该被放在地上!"
-b_chinese.stability_should_on_ground = "现实稳定锚应该被部署在地面上!"
-b_chinese.nu7_juggernaut_hint = "这是给你队友的,你无法使用"
-b_chinese.armorbox_hint_already = "你已经有了防弹插板"
-b_chinese.armorbox_hint_cant = "你无法使用防弹插板"
-b_chinese.o4monitor_quit_hint = "退出的时候,请按BackSpace"
-b_chinese.grushield_should_on_ground = "机动护盾应该被放在地面上!"
-b_chinese.feelon_too_far = "看起来,你离你想放地雷的地方太远了."
-b_chinese.teleport_device_destroyed = "你的传送装置被摧毁了"
-b_chinese.goc_cant_start_nuke = "因为某些原因,核弹系统被强制关闭了"
-b_chinese.engi_no_ground = "炮台应该被放在地上!"
-b_chinese.hitman_take_off_helmet = "脱下头盔."
-b_chinese.hitman_take_off_vest = "脱下防弹衣!"
-b_chinese.hitman_disguised = "你成功更换了你的服装!"
-b_chinese.strong_no_ground = "你需要站在地上."
-b_chinese.strong_look_on_them = "你需要看着目标才能擒拿."
-b_chinese.became_invisible = "光学迷彩启动."
-b_chinese.visibility_lost_due_to_shooting = "光学迷彩失效"
-b_chinese.commitee_look_on_them = "看着目标!"
-b_chinese.commitee_cant_conscript = "你不能给这个玩家装备!"
-b_chinese.commitee_no_slots = "该玩家的装备库存中必须有空闲格!"
-b_chinese.commitee_active_weapon = "该玩家必须将物品从手中拿开!"
-b_chinese.scp3114_disguised = "完成伪装,开始找点乐子吧!"
-b_chinese.scp3114_confusion = "你对这具尸体感到困惑"
-b_chinese.scp3114_hating_bodies = "你对这具尸体感到恶心"
-b_chinese.scp3114_tooboney = "这具尸体太过'骨感',并不适合伪装"
-b_chinese.ulx_still_alive = " 还活着"
-b_chinese.arena_participating = "你参加了竞技场"
-b_chinese.arena_left = "你离开了竞技场"
-b_chinese.ulx_ability_not_found_pt1 = "能力"
-b_chinese.ulx_ability_not_found_pt2 = "未被找到."
-b_chinese.ulx_family_sharing_pt1 = "玩家"
-b_chinese.ulx_family_sharing_pt2 = "不在使用Steam Sharing."
-b_chinese.ulx_family_sharing_pt3 = "使用Steam Sharing,SteamID64 owner"
-b_chinese.ulx_never = "永不."
-b_chinese.ulx_after = "之后"
-b_chinese.ulx_not_gagged = "这个玩家没有被抵押."
-b_chinese.ulx_gagged_by = "被管理员惩罚"
-b_chinese.ulx_gag_reason = "理由"
-b_chinese.ulx_gag_expires = "抵押结束"
-b_chinese.ulx_not_muted = "这个玩家没有被禁言."
-b_chinese.ulx_muted_by = "被管理员禁言"
-b_chinese.ulx_mute_reason = "理由"
-b_chinese.ulx_mute_expires = "禁言结束"
-b_chinese.ulx_global_banned = "成功封禁."
-b_chinese.ulx_global_unbanned = "解禁 玩家"
-b_chinese.ulx_has_been_muted = "文字聊天被封禁:"
-b_chinese.ulx_has_been_muted_for = "对文字聊天的被限制为" --здесь время,а не причина
-b_chinese.ulx_has_been_muted_permanently = "聊天被永久封禁"
-b_chinese.ulx_has_been_muted_by = "by" --в английском можно просто by,дальше идет ник
-b_chinese.ulx_you = "(You)"
-b_chinese.ulx_player = "玩家"
-b_chinese.ulx_has_been_gagged = "语音聊天受到封禁:"
-b_chinese.ulx_has_been_gagged_for = "对语音聊天的访问被限制为" --здесь время,а не причина
-b_chinese.ulx_has_been_gagged_permanently = "语音受到永久限制"
-b_chinese.ulx_has_been_gagged_by = "by" --в английском можно просто by,дальше идет ник
-b_chinese.ulx_prioritysupport = "当前玩家的优先级为:"
-b_chinese.ulx_premium_expired = "您没有vip."
-b_chinese.ulx_premium_will_expire_pt1 = "你的"
-b_chinese.ulx_premium_will_expire_pt2 = "vip"
-b_chinese.ulx_premium_will_expire_pt3 = "之后过期:"
-b_chinese.ulx_admin_expired = "你没有管理员权限"
-b_chinese.ulx_admin_will_expire_pt1 = "你的"
-b_chinese.ulx_admin_will_expire_pt2 = "管理员权限"
-b_chinese.ulx_admin_will_expire_pt3 = "在这个时间后结束:"
-b_chinese.ulx_has_been_successfully_muted = "成功限制文字聊天."
-b_chinese.ulx_has_been_successfully_gagged = "成功限制语音聊天."
-b_chinese.ulx_admin = "管理员"
-b_chinese.ulx_they_removed_mute_from_you = "取消了您的静音限制"
-b_chinese.ulx_has_been_sucessfully_unmuted = "获得了文字聊天权限."
-b_chinese.ulx_they_removed_gag_from_you = "取消了对你的语音聊天的限制."
-b_chinese.ulx_has_been_sucessfully_ungagged = "获得语音聊天权限."
-b_chinese.ulx_unignore = "现在你听的到"
-b_chinese.ulx_ignore = "现在你听不到"
-b_chinese.ulx_your_mute_expired = "您已被取消禁言,因为封禁期限已过."
-b_chinese.ulx_your_gag_expired = "您已被取消禁音,因为封禁期限已过"
-b_chinese.ulx_asay_cd = "您需要再等待 30 秒才能向管理员发送新消息."
-b_chinese.ulx_your_expired_unmuted = "已解除文字聊天:"
-b_chinese.ulx_your_expired_ungagged = "已解除语音静音:"
-b_chinese.ulx_your_expired_un = "惩罚时间结束."
-b_chinese.player = "玩家"
-b_chinese.unlocked_achievement = "获得成就"
-b_chinese.scp860_first_msg = "你 \"Xen-860-2\" 在你的森林中"
-b_chinese.scp860_second_msg = "你能看到墙上的出口"
-b_chinese.loudconnect_connecting = "ATTENTION,LOUDCONNECTING" --不启用
-b_chinese.loudconnect_carpet = ",APPLAUSE IN THE STUDIO,LAY A RED CARPET!" --不启用
-b_chinese.loudconnect_hooray = ",APPLAUSE IN THE STUDIO!CHEER!" --不启用
-b_chinese.evac_disclosed = "你真倒霉,你的身份被安保人员查了出来,你被送到了接近南西伯利亚的贝加尔湖的一片区域"
-b_chinese.dont_spawncamp = "你个[数据删除]!不去执行任务,在这里摸鱼？"
-b_chinese.gru_task = "任务:"
-b_chinese.gru_sapper_rewards = "你获得了额外的一发RPG弹药"
-b_chinese.pmfrom = "来自:"
-b_chinese.pmto = "发送至:"
-b_chinese.scp_occupied_pt1 = "Subject"
-b_chinese.scp_occupied_pt2 = "被其他玩家选中,请选择另一个Xen生物."
-b_chinese.temp_attach = "武器配件编辑时间为 30 秒."
-b_chinese.temp_attach_time_out = "编辑配件时间到了"
-b_chinese.uiuspy_docs_ready = "干得好,需要的情报已经全部被上传,你的新任务是带着情报逃离设施,别忘了妥善使用你的钥匙卡!"
-b_chinese.premium_2x_bonus_pt1 = "因为已经是"
-b_chinese.premium_2x_bonus_pt2 = "VIP"
-b_chinese.premium_2x_bonus_pt3 = "了"
-b_chinese.premium_2x_bonus_pt4 = "你获得的经验值已翻倍"
-b_chinese.levelup = "恭喜你,你升级了,当前等级为:"
-b_chinese.premium_unlocked_pt1 = "你获得了VIP"
-b_chinese.premium_unlocked_pt2 = "天!"
-b_chinese.player_connected = "连接到服务器"
-b_chinese.player_connected_first_time = "连接到了服务器,他是第一次来游玩!"
-b_chinese.player_connected_with_new_name = "连接到了服务器,他以前的id是"
-b_chinese.prefix_unlocked = "你得到了一个头衔!"
-b_chinese.levels_gifted_pt1 = "你得到了"
-b_chinese.levels_gifted_pt2 = " 等级!"
-b_chinese.sins_cleansed = "你的所有警告已全部清除!"
-b_chinese.you_are_not_supposed_to_be_here_pt1 = "警告,你不应该出现在这里!如果你在 5 秒内不离开,"
-b_chinese.you_are_not_supposed_to_be_here_pt2 = "你会死!"
-b_chinese.premium_expired = "你的VIP已过期,你可以选择延长VIP,请访问QQ群 了解更多信息."
-b_chinese.not_enough_players = "玩家还不够,等待其他玩家."
-b_chinese.game_will_start_soon = "回合还有 2 分钟开始"
-b_chinese.not_enough_players_for_round_start = "回合开始玩家不够,等待更多玩家"
-b_chinese.you_are_muted = "你被禁言."
-b_chinese.no_radio = "你没有对讲机!"
-b_chinese.turn_up_the_radio = "打开了对讲机!"
-b_chinese.no_text_radio = "输入文字!"
-b_chinese.radio_in_chat = "[对讲机]"
--- b_chinese.gru_friendly = "黑山基地的盟友--GRU A 部门已抵达设施"
--- b_chinese.gru_evil = "所有人注意敌对势力GRU A部门正在侵入设施!"
-b_chinese.looting_started = "你开始搜刮尸体,这需要一些时间......"
-b_chinese.looting_end = "搜刮完毕"
-b_chinese.looted_ammo_pt1 = "你拿了"
-b_chinese.looted_ammo_pt2 = "弹药"
-b_chinese.sport_run = "改变奔跑速度为快"
-b_chinese.default_run = "改变奔跑速度为普通"
-b_chinese.cant_change_run = "无法改变奔跑速度"
-b_chinese.spyusainfo = "\'心上人\'系统无法找到你的心上人,也许他已经遭遇不测了呢"
-b_chinese.spyusa_toolate_for_hacking = "骇入为时已晚,任务失败,当前主要目标:逃离设施."
-b_chinese.spyusa_cant_hacking = "黑山基地进入紧急状态,无法进行骇入操作"
-b_chinese.hacking_monitor_hint = "已有电脑正在进行骇入程序"
-b_chinese.hacking_monitor_hint1 = "你无法对这台电脑进行操作"
-b_chinese.spyusa_toolate_for_hacking_document = "你发送了设施坐标给FBI,但为时已晚,支援来不及到达. 任务失败. 当前主要目标:逃离设施."
-b_chinese.spyusa_hofnotdead = "设施主管还活着."
-b_chinese.spyusa_hacking = "启动骇入过程..."
-b_chinese.spyusa_hacking_notify = "所有人员注意:控制终端检测到非法强硬访问手段!"
-b_chinese.spyusa_hacking_successful = "你成功入侵了终端,并将设施坐标发送给FBI,你重新刷新了你的权限卡,现在它能够开启大门."
-b_chinese.spyusa_hacking_successful2 = "你成功入侵了终端,并将设施坐标发送给FBI总部,现在完成你的任务!"
-b_chinese.spyusa_hacking_stopped = "尝试骇入已被阻止!"
-b_chinese.spyusa_enemy_detected = "在到达区域检测到敌对活动,到达延迟一分钟"
-b_chinese.ntf_searching_team_D = "指挥官搜索阵营为:囚犯"
-b_chinese.ntf_searching_team_SCI = "指挥官搜索阵营为:科研团队"
-b_chinese.ntf_searching_team_SCP = "指挥官搜索阵营为:Xen生物"
-b_chinese.ntf_searching_team_unknown = "指挥官搜索阵营为:未知阵营"
-b_chinese.ci_hackdenined = "扫描请求被安全系统拦截"
-b_chinese.hamburger_mio_1 = "距离进化还有:"
-b_chinese.hamburger_mio_2 = " 个蟹黄包"
-b_chinese.hamburger_mio_3 = "恭喜你!进化失败了 :)"
-b_chinese.hamburger_mio_4 = "恭喜你!进化成功了 :>"
+你无法穿上这个衣服!
+你目前的经验为:
+你更改SCP914的模式为:
+你需要拿出祷文.
+你无法修理发电机.
+你需要一个工具箱.
+就连我也没办法给你找个女朋友.
+这尝起来真棒!
+这尝起来像水,没什么特别的
+SCP-294 无法制造出这种饮料 \"
+你无法与此对象交互!
+你已经拿过弹药了!
+你已经有装备了!
+你需要有
+空着的物品栏!
+你穿上了这套装备
+\"MTF\"
+你因为摧毁了直升机而被奖励,现在快跑.!
+将文档交付到你的基地.
+你读到了关于 \"
+杯子里什么都没有.
+你喝了一杯漂白剂. 你的体内在燃烧,尝起来像游泳池里的水. 现在只能祈祷你的身体能够承受住这种毒药.
+清凉的饮料.
+这具尸体已经完全腐烂了,
+没有复活的可能.
+你疯了? 你在尝试救一副骨架!
+这具尸体已经躺了一会了,
+没有复活的可能.
+这具尸体受到的伤害太过严重,
+没有复活的可能.
+这具尸体已经躺了一会了无法被治愈
+可惜的是,你已经躺了一会了
+你无法被治愈
+恭喜.
+你进化了,并获得了新能力!
+你无法在此区域中使用能力.
+你需要看着尸体才能进食!
+他非常健康.
+你需要看着目标才能进行偷窃.
+你无法从这个玩家身上偷窃这个物品!
+你需要给你的背包腾出空间才能行窃.
+你已经有这个物品了!
+距离[对讲机]有:
+未发现[对讲机]的存在
+你无法呼叫
+距离\'心上人\'有:
+大概
+位置未知
+在轻收容
+在重收容
+在办公区
+在设施地表
+你不能在这里放置闪电门
+目标已经有装备了.
+目标需要脱下装备.
+该玩家的装备库存中必须有空闲格.
+你无法在空中放置此设备
+你必须在地面上才能释放
+按R键开启或关闭目镜,左右键切换目镜模式
+地雷应该放在地上!
+医疗站应该被放在地上!
+防弹插板盒子应该被放在地上!
+现实稳定锚应该被部署在地面上!
+这是给你队友的,你无法使用
+你已经有了防弹插板
+你无法使用防弹插板
+退出的时候,请按BackSpace
+机动护盾应该被放在地面上!
+看起来,你离你想放地雷的地方太远了.
+你的传送装置被摧毁了
+你的时间节点被摧毁了
+因为某些原因,核弹系统被强制关闭了
+炮台应该被放在地上!
+脱下头盔.
+脱下防弹衣!
+你成功更换了你的服装!
+你需要站在地上.
+你需要看着目标才能擒拿.
+光学迷彩启动.
+光学迷彩失效
+看着目标!
+你不能给这个玩家装备!
+该玩家的装备库存中必须有空闲格!
+该玩家必须将物品从手中拿开!
+完成伪装,开始找点乐子吧!
+你对这具尸体感到困惑
+你对这具尸体感到恶心
+这具尸体太过'骨感',并不适合伪装
+ 还活着
+你参加了竞技场
+你离开了竞技场
+能力
+未被找到.
+玩家
+不在使用Steam Sharing.
+使用Steam Sharing,SteamID64 owner
+永不.
+之后
+这个玩家没有被抵押.
+被管理员惩罚
+理由
+抵押结束
+这个玩家没有被禁言.
+被管理员禁言
+理由
+禁言结束
+成功封禁.
+解禁 玩家
+文字聊天被封禁:
+对文字聊天的被限制为
+聊天被永久封禁
+by
+(You)
+玩家
+语音聊天受到封禁:
+对语音聊天的访问被限制为
+语音受到永久限制
+by
+当前玩家的优先级为:
+您没有vip.
+你的
+vip
+之后过期:
+你没有管理员权限
+你的
+管理员权限
+在这个时间后结束:
+成功限制文字聊天.
+成功限制语音聊天.
+管理员
+取消了您的静音限制
+获得了文字聊天权限.
+取消了对你的语音聊天的限制.
+获得语音聊天权限.
+现在你听的到
+现在你听不到
+您已被取消禁言,因为封禁期限已过.
+您已被取消禁音,因为封禁期限已过
+您需要再等待 30 秒才能向管理员发送新消息.
+已解除文字聊天:
+已解除语音静音:
+惩罚时间结束.
+玩家
+获得成就
+你 \"SCP-860-2\" 在你的森林中
+你能看到墙上的出口
+ATTENTION,LOUDCONNECTING
+,APPLAUSE IN THE STUDIO,LAY A RED CARPET!
+,APPLAUSE IN THE STUDIO!CHEER!
+你真倒霉,你的身份被安保人员查了出来,你被送到了接近南西伯利亚的贝加尔湖的一片区域
+你个[数据删除]!不去执行任务,在这里摸鱼？
+任务:
+你获得了额外的一发RPG弹药
+来自:
+发送至:
+Subject
+被其他玩家选中,请选择另一个SCP.
+武器配件编辑时间为 30 秒.
+编辑配件时间到了
+干得好,需要的情报已经全部被上传,你的新任务是带着情报逃离设施,别忘了妥善使用你的钥匙卡!
+因为已经是
+VIP
+了
+你获得的经验值已翻倍
+你获得了额外经验值
+恭喜你,你升级了,当前等级为:
+你获得了VIP
+天!
+连接到服务器
+连接到了服务器,他是第一次来游玩!
+连接到了服务器,他以前的id是
+你得到了一个头衔!
+你得到了
+ 等级!
+你的所有警告已全部清除!
+警告,你不应该出现在这里!如果你在 5 秒内不离开,
+你会死!
+你的VIP已过期,你可以选择延长VIP,请访问QQ群[CN]RXSEND 了解更多信息.
+玩家还不够,等待其他玩家.
+回合还有 2 分钟开始
+回合开始玩家不够,等待更多玩家
+你被禁言.
+你没有对讲机!
+打开了对讲机!
+输入文字!
+[对讲机]
+-- chinese.gru_friendly = "SCP基金会的盟友--GRU P 部门已抵达设施"
+-- chinese.gru_evil = "所有人注意敌对势力GRU P部门正在侵入设施!"
+你开始搜刮尸体,这需要一些时间......
+搜刮完毕
+你拿了
+弹药
+改变奔跑速度为快
+改变奔跑速度为普通
+无法改变奔跑速度
+\'心上人\'系统无法找到你的心上人,也许他已经遭遇不测了呢
+骇入为时已晚,任务失败,当前主要目标:逃离设施.
+基金会进入紧急状态,无法进行骇入操作
+已有电脑正在进行骇入程序
+你无法对这台电脑进行操作
+你没有任何文件
+你发送了设施坐标给UIU,但为时已晚,支援来不及到达. 任务失败. 当前主要目标:逃离设施.
+设施主管还活着.
+启动骇入过程...
+所有人员注意:控制终端检测到非法强硬访问手段!
+你成功入侵了终端,并将设施坐标发送给UIU,你重新刷新了你的权限卡,现在它能够开启大门.
+你成功入侵了终端,并将设施坐标发送给UIU总部,现在完成你的任务!
+尝试骇入已被阻止!
+在到达区域检测到敌对活动,到达延迟一分钟
+指挥官搜索阵营为:D级人员
+指挥官搜索阵营为:科研团队
+指挥官搜索阵营为:SCP
+指挥官搜索阵营为:未知
+扫描请求被安全系统拦截
+距离进化还有:
+ 个蟹黄包
+恭喜你!进化失败了 :)
+恭喜你!进化成功了 :>
+你背叛了D国!
+--重型现实稳定锚
+工作中...
+损坏
+破环稳定锚中...
+修复稳定锚中...
+你需要工具来修理
+修复重型现实稳定锚
+所有发电机未修复
+重型现实稳定锚已修复
+重型现实稳定锚被损坏
+--人员扫描器
+无法使用
+待命中...
+扫描冷却
+正在被使用
+设备正在冷却
+基金会武装
+基金会科研
+敌对武装
+请选择要扫描的目标
+--QRT召唤器
+QRT小队尚未准备完毕
+没有可用的QRT小队
+--单兵伤害吸收设备
+已启动PoS-9装置
+已关闭PoS-9装置
+PoS-9装置已损坏
+Pos-9剩余耐久: 
+--格鲁乌P撤离提醒
+装甲车将在
+秒后离开
+--实体提醒
+有人正在使用/互动
+你互动地太快了!
 --AmmoChecking lang
-b_chinese.ammochecking = "检查中..."
-b_chinese.ammo_full = "弹药已满"
-b_chinese.almostfull = "弹药充足"
-b_chinese.halfammo = "大概还有一半"
-b_chinese.littleammo = "不剩多少"
-b_chinese.noammo = "没有子弹"
-b_chinese.gauss_full = "能量充足"
-b_chinese.no_gauss_energy = "能量耗尽"
-b_chinese.medkit_left = "可使用次数:"
+检查中...
+弹药已满
+弹药充足
+大概还有一半
+不剩多少
+没有子弹
+能量充足
+能量耗尽
+可使用次数:
 --nu7 commander ability
-b_chinese.nu7_func_title = "功能名称: "
-b_chinese.nu7_func_desc = "功能介绍: "
-b_chinese.nu7_func_title_1 = "人员数据库查询"
-b_chinese.nu7_func_desc_1 = "通过检索黑山基地数据库中的人员信息,能快捷的识别所面对目标的身份\n\n设备冷却时间: 10秒"
-b_chinese.nu7_func_title_2 = "无线电干扰"
-b_chinese.nu7_func_desc_2 = "干扰任何非黑山基地武装单位的频道15秒同时让其对讲机发出异常声响\n并且能够有效预防任何非法的对讲机窃听\n\n设备冷却时间: 30秒"
-b_chinese.nu7_func_title_3 = "xen生物生命检测"
-b_chinese.nu7_func_desc_3 = "对设施所有xen生物的生命状态进行检测并对其生命状态做出评估,同时显\n示其的所处的大概区域\n\n设备冷却时间: 45秒"
-b_chinese.nu7_func_title_4 = "敌对武装单位侦测"
-b_chinese.nu7_func_desc_4 = "扫描一次以使用者为中心的一定范围的敌对武装单位以及任何持有致\n命武器的囚犯人员(包括一切冷兵器)并将他们标记; 被标记的目标会在你屏幕上存\n在15秒\n\n设备冷却时间: 60秒"
-b_chinese.nu7_noscp_alive = "无任何Xen存活"
-b_chinese.nu7_show_hp_state = "生命状态: "
-b_chinese.nu7_scphp_good = "良好"
-b_chinese.nu7_scphp_normal = "正常"
-b_chinese.nu7_scphp_bad = "危险"
-b_chinese.nu7_scphp_very_bad = "垂危"
-b_chinese.nu7_scphp_gonna_die = "濒死"
-b_chinese.nu7_scphp_died = "无效化"
-b_chinese.nu7_show_scp_location = "大致位置: "
-b_chinese.nu7_unknown_location = "未知"
-b_chinese.nu7_in_lcz = "轻收容"
-b_chinese.nu7_in_hcz = "重收容"
-b_chinese.nu7_in_entrance = "办公区"
-b_chinese.nu7_on_surface = "地表"
+功能名称: 
+功能介绍: 
+人员数据库查询
+通过检索基金会数据库中的人员信息,能快捷的识别所面对目标的身份\n\n设备冷却时间: 10秒
+无线电干扰
+干扰任何非基金会武装单位的频道15秒同时让其对讲机发出异常声响\n并且能够有效预防任何非法的对讲机窃听\n\n设备冷却时间: 30秒
+SCP生命检测
+对设施所有SCP的生命状态进行检测并对其生命状态做出评估,同时显\n示其的所处的大概区域\n\n设备冷却时间: 45秒
+敌对武装单位侦测
+扫描一次以使用者为中心的一定范围的敌对武装单位以及任何持有致\n命武器的D级人员(包括一切冷兵器)并将他们标记; 被标记的目标会在你屏幕上存\n在15秒\n\n设备冷却时间: 60秒
+无任何SCP存活
+生命状态: 
+良好
+正常
+危险
+垂危
+濒死
+无效化
+大致位置: 
+未知
+轻收容
+重收容
+办公区
+地表
+对象已有手铐
+左键缴械, 右键给D级人员戴手铐
+你无法给人戴手铐/你需要先取得MTF制服/但你任然可以缴械他人
 --TEAMS
-b_chinese["Not Set"] = "null"
-b_chinese["SCPs"] = "Xens"
-b_chinese["MTF Guards"] = "黑山特遣部队"
-b_chinese["Class-Ds"] = "囚犯"
-b_chinese["Spectators"] = "观察者"
-b_chinese["Scientists"] = "研究员"
-b_chinese["Chaos Insurgency"] = "俄罗斯武装部队"
-b_chinese["Security Department"] = "黑山基地安保部门"
-b_chinese["GRU"] = "格鲁乌A部门(后时代)"
-b_chinese["GRU_Guard"] = "格鲁乌A部门 近卫小组"
-b_chinese["Nine Tailed Fox"] = "黑山特遣部队 \"皎洁之狐\""
-b_chinese["Serpents Hand"] = "图书爱好者"
-b_chinese["Global Occult Coalition"] = "联合国特战部队"
-b_chinese["Unusual Incidents Unit"] = "FBI特遣部队"
-b_chinese["Unusual Incidents Unit Main Force"] = "FBI金鹰小组"
-b_chinese["Quick Response Team"] = "快速反应部队"
-b_chinese["Children of the Scarlet King"] = "废土拾荒者"
-b_chinese["Specials"] = "特殊科研"
-b_chinese["Spec. Task Force"] = "Spec. Task Force" --不启用
-b_chinese["Nazi Germany"] = "德国部队"
-b_chinese["American Army"] = "美国陆军"
-b_chinese["Arena Participants"] = "竞技场参与者"
-b_chinese["NU7 Hammer Down"] = "黑山特遣部队 \"战锤\" "
+null
+SCPs
+机动特遣队
+MTF 专家组
+D级人员
+观察者
+科研团队
+混沌分裂者
+设施安保部门
+格鲁乌P部门(后时代)
+格鲁乌P部门 近卫小组
+机动特遣队 \"九尾狐\"
+蛇之手
+全球超自然联盟
+特异事故处
+特异事故处-渗透小组
+快速反应部队
+猩红之子
+特殊科研
+Spec. Task Force
+机动特遣队 \"落锤\" 特种大队
+STS \"清理者\" 小队
+GRU-CI突袭部队
+机动特遣队 Nu-22 \"火箭侠\"
+纳粹德国
+美国陆军
+竞技场参与者
 --SCOREBOARD
-b_chinese.scoreboard_ping = "延迟"
-b_chinese.scoreboard_level = "等级"
-b_chinese.scoreboard_achievements = "成就." --достижения
-b_chinese.scoreboard_country = "国家"
-b_chinese.scoreboard_score = "分数"
-b_chinese.scoreboard_rounds_left = "剩余回合数"
+延迟
+等级
+成就.
+国家
+分数
+剩余回合数
 --BOTTOM MESSAGES
-b_chinese.ammo_maximum = "你的弹药已经满了."
-b_chinese.ammo_not_suitable = "这种弹药不适配你的枪支."
-b_chinese.scp294_feeling_really_bad = "喝完这个之后,我感到很难受 "
-b_chinese.scp294_scp500 = "喝下去之后,感觉浑身都舒服了"
-b_chinese.vendor_no_money = "你需要钱才能买"
-b_chinese.vendor_bought = "你花钱买了杯喝的"
-b_chinese.scp1025_chickenpox = "你感觉很痒"
-b_chinese.scp1033_protect = "手镯将会保护你!"
-b_chinese.scp1033_depleted = "手镯似乎没有作用了"
-b_chinese.screwdriver_used = "你使用了螺丝刀打开了检查点钢板"
-b_chinese.scp409_1st_stage = "你突然感到全身冷的发抖"
-b_chinese.scp409_2nd_stage = "突然你觉得很冷" --уверен
-b_chinese.inventory_full = "你的物品栏满了"
-b_chinese.secondary_inventory_full = "你的副物品栏满了"
-b_chinese.trashbin_loot_end = "你完成了对垃圾桶的搜索"
-b_chinese.trashbin_empty = "垃圾桶是空的."
-b_chinese.access_denied = "访问拒绝"
-b_chinese.access_granted = "访问许可"
-b_chinese.keycard_needed = "需要一个权限卡才能开启此门."
-b_chinese.scarlet_hurt_you = "拾荒的力量正在缓慢撕扯你的身体"
-b_chinese.suppress_scp = "你正在被'压制'!"
+你的弹药已经满了.
+这种弹药不适配你的枪支.
+喝完这个之后,我感到很难受 
+喝下去之后,感觉浑身都舒服了
+你需要钱才能买
+你花钱买了杯喝的
+你感觉很痒
+手镯将会保护你
+手镯似乎没有作用了
+你使用了螺丝刀打开了检查点钢板
+你突然感到全身冷的发抖
+突然你觉得很冷
+你的物品栏满了
+你的副物品栏满了
+你完成了对垃圾桶的搜索
+垃圾桶是空的.
+访问拒绝
+访问许可
+需要一个权限卡才能开启此门.
+猩红的力量正在缓慢撕扯你的身体
+你正在被'压制'!
+你依旧感觉很焦虑
+你的精神感到振奋!
+目标抵御了你的攻击!
+箱子内空无一物
+你已经拥有箱内的物品
 --新东西 by someone
-b_chinese.missionbriefing = "介绍:"
-b_chinese.uiutask_title = "任务选择"
-b_chinese.uiutask_secret = "秘密战争"
-b_chinese.uiutask_intrude = "气势汹汹"
-b_chinese.secretwar_intro = "使用隐匿的方法骇入电脑,\n这不会触发警报,但支援来\n的人会很少"
-b_chinese.intruder_intro = "强制骇入电脑,这会触发警\n报,但支援来的人会很多"
-b_chinese.intruder_hack = "你强制骇入了电脑并触发了安全警报"
-b_chinese.secret_hack = "你使用更安全方法骇入了电脑"
-b_chinese.intruder_hack_special = "你使用了主管的代码,关闭了安全警报"
-b_chinese.secret_hack_speical = "你使用了主管的代码,关闭外部人员扫描系统"
-b_chinese.shutdown_hacking = "未知的骇入程序已被关闭"
-b_chinese.spy_complete = "骇入成功,支援已经在路上来了!"
-b_chinese.scp127_1likeu = "xen生物127-1认可了你"
-b_chinese.scp127_1hateu = "xen生物127-1觉得你很恶心"
-b_chinese.general_choose_title = "请选择"
-b_chinese.d_shotgun_broken = "这把枪坏掉了"
+介绍:
+任务选择
+秘密战争
+气势汹汹
+使用隐匿的方法骇入某台\n办公区的电脑,\n这不会触发警报,但支援来\n的人会很少
+强制骇入某台办公区的\n电脑,这会触发警报,但支援\n来的人会很多
+你强制骇入了电脑并触发了安全警报
+你使用更安全方法骇入了电脑
+你使用了主管的代码,关闭了安全警报
+你使用了主管的代码,关闭外部人员扫描系统
+未知的骇入程序已被关闭
+骇入成功,支援已经在路上来了!
+SCP127-1认可了你
+SCP127-1觉得你很恶心
+请选择
+这把枪坏掉了
 --格鲁乌近卫小组精确射手选择倍镜
-b_chinese.marks_man_holo = "全息镜"
-b_chinese.marks_man_sniper = "狙击镜"
+全息镜
+狙击镜
 --GOC特工的选项
-b_chinese.goc_light_armor = "便携轻型护甲"
-b_chinese.goc_light_armor_desc = "便携版本的轻型装甲危险作\n战护甲\n能够使装备者拥有更快的\n奔跑速度\n但该护甲防护性能要低于\n所有GOC危险作战护甲\n------\n使用R3K突击步枪"
-b_chinese.goc_standard_armor = "便携标准护甲"
-b_chinese.goc_standard_armor_desc = "便携版本的标准装甲危险作\n战护甲\n各方面数据相对均衡\n------\n使用ARX战斗步枪"
-b_chinese.goc_heavy_armor = "便携战斗护甲"
-b_chinese.goc_heavy_armor_desc = "便携版本的战斗装甲危险作\n战护甲\n防护性能是三套护甲最强\n的\n但远远不及常规攻击小组\n的重型护甲\n------\n使用Fate压制步枪"
+便携轻型护甲
+便携版本的轻型GOC危险作\n战护甲\n能够使装备者拥有更快的\n奔跑速度\n但该护甲防护性能要低于\n所有GOC危险作战护甲\n------\n使用R3K突击步枪
+便携标准护甲
+便携版本的标准GOC危险作\n战护甲\n各方面数据相对均衡\n------\n使用ARX战斗步枪
+便携战斗护甲
+便携版本的战斗GOC危险作\n战护甲\n防护性能是三套护甲最强\n的\n但远远不及常规攻击小组\n的重型护甲\n------\n使用Fate压制步枪
+--是否相信079
+相信SCP-079
+不相信SCP-079
 --角色介绍 --FZ翻译
 BREACH = BREACH or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
-BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
-BREACH.Descriptions.b_chinese[role.SCI_SpyUSA] = "你是FBI - 间谍\n\n你的目标:骇入办公区的某台电脑\n\n获取部分重要信息并呼叫支援\n\n设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报"
-BREACH.Descriptions.b_chinese[role.Nazi] = "Your current objective is to kill all the Americans.\n\nDON'T LET THEM WIN!" --未启用
-BREACH.Descriptions.b_chinese[role.USA] = "Your current objective is to kill all the nazis.\n\nDON'T LET THEM WIN!" --未启用
-BREACH.Descriptions.b_chinese[SCP049] = "你是Xen-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人"
-BREACH.Descriptions.b_chinese[SCP912] = "你是Xen-912[自主型SWAT装甲]\n击杀设施内的罪犯"
-BREACH.Descriptions.b_chinese[SCP062DE] = "你是Xen-062-DE[战争的幽灵]\n继续完成你的使命!"
-BREACH.Descriptions.b_chinese[SCP638] = "你是Xen-638[狂吼之人]\n你的吼声能让周围的人感到恐惧"
-BREACH.Descriptions.b_chinese[SCP062FR] = "你是Xen-062-FR[完美掠食者]\n吃掉他们,然后进化..."
-BREACH.Descriptions.b_chinese[SCP076] = "你是Xen-076[亚伯]\n你的刀能轻易斩断任何阻挡你的事物"
-BREACH.Descriptions.b_chinese[SCP106] = "你是Xen-106[恐怖老人]\n嘿嘿,想来我的快乐老家做客吗?!"
-BREACH.Descriptions.b_chinese[SCP096] = "你是Xen-096[害羞的人]\n你憎恶那些看到你脸的施暴者!"
-BREACH.Descriptions.b_chinese[SCP542] = "你是Xen-542[外科医学先生]\n设施内的病人疑似有点太多了"
-BREACH.Descriptions.b_chinese[SCP973] = "你是Xen-973[公路巡警]\n设施内的\'交通\'需要你的管制"
-BREACH.Descriptions.b_chinese[SCP2012] = "你是Xen-2012[迷失时间的军灵]\n为了军团的荣耀!"
-BREACH.Descriptions.b_chinese[SCP082] = "你是Xen-082[食人者“费尔南德”]\n想要了解一点\'做人\'的道理吗？"
-BREACH.Descriptions.b_chinese[SCP939] = "你是Xen-939[千喉之兽]\n多么优雅的声音,现在,是我的了"
-BREACH.Descriptions.b_chinese[SCP811] = "你是Xen-811[沼女]\n你的酸液能浸透装甲!"
-BREACH.Descriptions.b_chinese[SCP682] = "你是Xen-682[不灭孽蜥]\n憎恶一切,毁灭一切"
-BREACH.Descriptions.b_chinese[SCP999] = "你是Xen-999-2[不完美的副产物]\n是黑山基地对Xen-999实验所创造的生命体\n你虽然能够治愈别人但你似乎不像999那么友善"
-BREACH.Descriptions.b_chinese[SCP3114] = "你是Xen-3114[是不是太冷淡了?]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了..."
-BREACH.Descriptions.b_chinese[role.Chaos_Grunt] = "你是俄罗斯武装部队 - 士兵\n\n俘虏囚犯人员\n\n遵循你指挥官的命令完成目标!"
-BREACH.Descriptions.b_chinese[role.Chaos_Demo] = "你是俄罗斯武装部队 - 恶魔\n\n你有RPG火箭发射器和两发弹药,用它摧毁直升机和一切你遇到的敌人\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.Chaos_Claymore] = "你是俄罗斯武装部队 - 猎人\n\n你能放置三枚阔剑地雷\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.Chaos_Jugg] = "你是俄罗斯武装部队的 - 重装\n\n你有一挺M60重机枪的同时还有非常厚重的护甲,杀掉所有你看到的敌人!\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.Chaos_Commander] = "你是俄罗斯武装部队的 - 指挥官\n\n你有一把SCAR突击步枪并且能够武装囚犯人员\n\n向你的士兵下达命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.NTF_Soldier] = "你是皎洁之狐的 - 士兵\n\n营救设施人员并遵循你指挥官的命令完成目标!"
-BREACH.Descriptions.b_chinese[role.NTF_Specialist] = "你是皎洁之狐的 - 战斗专家\n\n你的特殊捕获网能控制住大部分的XEN\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.NTF_Sniper] = "你是皎洁之狐的 - 狙击手\n\n你有一挺巴雷特,它能够轻易撕开XEN的那脆弱的防御\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.NTF_Pilot] = "你是皎洁之狐的 - 飞行员\n\nY!"
-BREACH.Descriptions.b_chinese[role.NTF_Commander] = "你是皎洁之狐的 - 指挥官\n\n你能够扫描设施人员包括Xen并看到他们\n\n遏制设施内的收容失效并保卫整个设施不受其他势力的侵扰!"
-BREACH.Descriptions.b_chinese[role.NU7_Soldier] = "你是战锤特种部队 - 士兵\n\n营救设施内的研究人员,消灭所有外部势力,并遏制Xen的活动"
-BREACH.Descriptions.b_chinese[role.NU7_Commander] = "你是战锤特种部队 - 指挥官\n\n营救设施内的研究人员,消灭所有外部势力,并遏制Xen的活动"
-BREACH.Descriptions.b_chinese[role.NU7_Specialist] = "你是战锤特种部队 - 作战专家\n\n你所携带的由Kelen博士研发的便携式现实稳定锚,能够遏制住大部分Xen技能的使用\n\n营救设施内的研究人员,消灭所有外部势力,并遏制Xen的活动"
-BREACH.Descriptions.b_chinese[role.NU7_Vanguard] = "你是战锤特种部队 - 先锋\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制Xen的活动"
-BREACH.Descriptions.b_chinese[role.NU7_Juggernaut] = "你是战锤特种部队 - 无畏战士\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制Xen的活动"
-BREACH.Descriptions.b_chinese[role.Cult_Grunt] = "你是教众 - 废土拾荒者的信徒\n\n遵循祭司的命令并完成仪式!"
-BREACH.Descriptions.b_chinese[role.Cult_Psycho] = "你是狂信徒 - 废土拾荒者狂热崇拜者\n\n遵循祭司的命令并完成仪式!"
-BREACH.Descriptions.b_chinese[role.Cult_Commander] = "你是祭祀 - 拾荒最虔诚的崇拜者\n\n向其他教众下达命令并完成仪式!"
-BREACH.Descriptions.b_chinese[role.Cult_Specialist] = "你是助祭 - 拾荒的得力帮手\n\n遵循祭司的命令并完成仪式!"
-BREACH.Descriptions.b_chinese[role.UIU_Agent] = "你是FBI特工部的 - 干员\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.UIU_Agent_Commander] = "你是FBI特工部的 - 组长\n\n你能看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.UIU_Agent_Specialist] = "你是FBI特工部的 - 特种干员\n\n你有一枚特殊的手榴弹,它会在房间里产生回声,标记你和你的队友附近的每一个敌人.\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.UIU_Agent_Thunder] = "你是FBI特工部的 - 精英干员[代号:'雷击']\n\n你所携带的3个实验性'闪电门'装置能够安放在门上,当有人类试图穿过它时就会被电击并失去瞬间的行动能力\n\n但该装置目前不能够长久的工作....\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!"
---BREACH.Descriptions.b_chinese[role.FBI_Commander] = "你是特异事务处的 - 指挥官\n\n你可以看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.UIU_Soldier] = "你是FBI的 - 士兵\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!"
---BREACH.Descriptions.b_chinese[role.UIU_Agent_Information] = "你是特异事务处特工部的 - 情报专员\n\n骇入设施终端电脑呼叫FBI主力部队"
-BREACH.Descriptions.b_chinese[role.UIU_Specialist] = "你是FBI的 - 战斗专家\n\n你能够锁上任何门一段时间\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.UIU_Clocker] = "你是FBI的 - 渗透者\n\n你敏捷并致命,你的刀非常锋利,它甚至能切碎Xen\n\n遵循你指挥官的命令并完成目标!"
-BREACH.Descriptions.b_chinese[role.UIU_Commander] = "你是FBI的 - 指挥官\n\n你所携带的绿烟(\"Green Haze\")手雷,能够对吸入的人造成大量伤害,尽管这不符合交战规则\n\n向你的士兵下达命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Soldier] = "你是格鲁乌 - 士兵\n\n遵照指挥官和少尉的命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Specialist] = "你是格鲁乌 - 作战专家\n遵照指挥官和少尉的命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Jugg] = "你是格鲁乌 - 重装\n\n遵照指挥官和少尉的命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Sapper] = "你是格鲁乌 - 战斗工兵\n\n遵照指挥官和少尉的命令并完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Commander] = "你是格鲁乌 - 指挥官\n\n与少尉合理分配人数,完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Political] = "你是格鲁乌 - 少尉\n\n与指挥官合理分配人数,完成任务!"
-BREACH.Descriptions.b_chinese[role.GRU_Grunt] = "你是格鲁乌 - 近卫小组组员\n\n快速构建防线,掩护侵入部队安全撤离"
-BREACH.Descriptions.b_chinese[role.GRU_Machinegunner] = "你是格鲁乌 - 近卫小组机枪手\n\n快速构建防线,掩护侵入部队安全撤离"
-BREACH.Descriptions.b_chinese[role.GRU_Marksman] = "你是格鲁乌 - 近卫小组精确射手\n\n快速构建防线,掩护侵入部队安全撤离"
-BREACH.Descriptions.b_chinese[role.Goc_Grunt] = "你是联合国特战部队的 - 士兵\n\n不惜一切代价引爆Alpha核弹!!"
-BREACH.Descriptions.b_chinese[role.Goc_Special] = "你是联合国特战部队的 - 战斗专家\n\n你可以放置一个信标并在将来传送过去\n\n不惜一切代价引爆Alpha核弹!"
-BREACH.Descriptions.b_chinese[role.Goc_Jag] = "你是联合国特战部队的 - 无畏勇士\n\n你能生成一面跟随你移动的能量护盾\n\n仅有联合国下发的武器才能击穿它\n\n不惜一切代价引爆Alpha核弹!"
-BREACH.Descriptions.b_chinese[role.DZ_Grunt] = "你是图书爱好者 - 士兵\n\n你的任务是帮助并疏散Xen!"
-BREACH.Descriptions.b_chinese[role.DZ_Gas] = "你是图书爱好者 - 特种探员\n\n你特制的防毒面具可以免疫Xen-409\n\n你的任务是帮助并疏散Xen!" --未启用
-BREACH.Descriptions.b_chinese[role.DZ_Psycho] = "你是图书爱好者 - 疯子\n\n你携带Xen-127-1是一把特殊Xen武器,它的伤害能够轻易撕裂任何挡路的人!\n\n你的任务是帮助并疏散Xen!"
-BREACH.Descriptions.b_chinese[role.DZ_Commander] = "你是图书爱好者 - 指挥官\n\n你有能力召唤一个传送门到任意位置\n\n小心没有人知道它会你传送到哪里\n\n你的任务是帮助并疏散Xen!"
-BREACH.Descriptions.b_chinese[role.QRT_Soldier] = "你是快速反应部队 - 士兵\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_Medic] = "你是快速反应部队 - 医疗兵\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_ShockTrooper] = "你是快速反应部队 - 突击队员\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_Commander] = "你是快速反应部队 - 指挥官\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_Machinegunner] = "你是快速反应部队 - 机枪手\n\n你有着M249轻机枪\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_Shield] = "你是快速反应部队 - 盾牌手\n\n利用好你的防弹盾牌\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.QRT_Marksmen] = "你是快速反应部队 - 精确射手\n\n你有着全自动的MK14战斗步枪\n\n保护设施并遵守安全主管的命令!"
-BREACH.Descriptions.b_chinese[role.OSN_Soldier] = "You - are the Special Task Grunt\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.b_chinese[role.OSN_Specialist] = "You - are the Special Task Specialist\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.b_chinese[role.OSN_Commander] = "You - are the Special Task Commander\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.b_chinese[role.SECURITY_Recruit] = "你是黑山基地保安 - 菜鸟\n\n前往武器库获取子弹\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Sergeant] = "你是黑山基地保安 - 中士\n\n您可以向安保人员发出命令\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Corporal] = "你是黑山基地保安 - 下士\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_OFFICER] = "你是黑山基地保安 - 警员\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Warden] = "你是黑山基地保安 - 典狱长\n\n您可以向中士以及其他安保人员发出命令\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Shocktrooper] = "你是黑山基地保安 - 突击队员\n\n与其他安保人员不同你有全自动的MP5K\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Heavy] = "你是黑山基地保安 - 镇暴队员\n\n你拥有更厚的护甲和一把射击橡胶弹的枪\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_IMVSOLDIER] = "你是黑山基地保安 - 特别专员\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Chief] = "你是黑山基地保安 - 上尉\n\n你可以向所有安保人员下达命令\n\n保护研究员并逃离设施"
-BREACH.Descriptions.b_chinese[role.SECURITY_Spy] = "你是俄罗斯武装部队 - 间谍\n\n你通过伪装成一名还未进行审查的安保人员进入了设施\n\n运用一切资源帮助囚犯人员逃离设施"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_DAMAGE] = "您是Xen处决部 - Kelen博士\n\n您的特殊技能是增加附近人员对Xen的伤害\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_HEALER] = "您是特殊护理小组组长 - Matilda组长\n\n你的特殊技能是治愈附近的人\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_SLOWER] = "您是Xen应对部门 - Speedwone博士\n\n你的特殊技能是减缓附近Xen的速度\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_SPEED] = "您是Xen应对部门 - Lomao博士\n\n你的特殊技能是为附近的人提高速度\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_MINE] = "您是Xen处决部 - Feelon博士\n\n你的特殊技能是放置特殊的反Xen地雷\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_BOOSTER] = "您是特殊科研\n\n你的特殊技能是增加附近人的特征\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_SHIELD] = "您是防卫设备研发部门 - Shieldmeh博士\n\n你的特殊技能是启用特殊的力场盾牌来防御子弹\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_INVISIBLE] = "您是Xen应对部门 - Ruprecht博士\n\n你的特殊技能是让自己隐身\n\n与研究员和保安一起逃离设施"
-BREACH.Descriptions.b_chinese[role.SCI_SPECIAL_VISION] = "您是Xen应对部门 - Hedwig教授\n\n你拥有一副特殊眼镜,可以看到所有Xen的位置\n\n与研究员和保安一起逃离设施"
-BREACH.Descriptions.b_chinese[role.SCI_Assistant] = "你是科学人员助手\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_SpyDZ] = "你是图书爱好者 - 间谍\n\n组织通过一个危险且隐秘传送虫洞将你精确传送进了黑山基地-19的某个无人的角落\n\n尝试拿取尽可能多的Xen物品,并帮助其他Xen逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_Grunt] = "你是科研人员\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_Tester] = "你是高级科研人员\n\n你有着较高等级的权限卡\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_Recruiter] = "你是道德伦理委员会检察官\n\n你有能力将一些你认为有价值的囚犯人员招募为科研助手\n\n与研究员和保安一起逃离设施"
-BREACH.Descriptions.b_chinese[role.SCI_Medic] = "你是医务人员\n\n医者仁心\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_Cleaner] = "你是清洁工\n\n你可以'清洁'每一个垃圾桶,说不定会有以外收获呢\n\n与研究员和保安一起逃离设施!"
-BREACH.Descriptions.b_chinese[role.SCI_Head] = "你是人事主管\n\n研究员和保安一起逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Default] = "你是囚犯\n\n与其他囚犯人员合作,逃离设施!"
-BREACH.Descriptions.b_chinese[role.ClassD_GOCSpy] = "你是联合国特种部队 - 特工\n\n你伪装成囚犯人员进入了设施\n\n前往办公区找到自己的装备并引爆阿尔法核弹!"
-BREACH.Descriptions.b_chinese[role.ClassD_FartInhaler] = "你是囚犯员工....多年来,你一直在吸入胖子和大力士的屁味,因此你的鼻子已经无法感知任何气味.\n\n似乎连有毒气体也无法阻止你.\n\n请明智地利用这个优势."
-BREACH.Descriptions.b_chinese[role.ClassD_Survivor] = "你是囚犯 - 生存者\n\n你的生存能力是其他人不可比拟的\n\n好好的利用你生存经验活下去!"
-BREACH.Descriptions.b_chinese[role.ClassD_Pron] = "你是囚犯 - 窃贼\n\n你从某名研究员那里偷了一张权限卡\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Thief] = "你是囚犯 - 小偷\n\n你是个小偷,所以你技能可以从玩家那里偷东西\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Fat] = "你是囚犯 - 胖子\n\n你是个胖子,你可以使用你的肥肉抵挡伤害\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Bor] = "你是囚犯 - 摔角手\n\n你在这里没有向其他人一样浪费时间,所以你每天都在训练以锻炼肌肉\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Hack] = "你是囚犯 - 黑客\n\n你是个黑客,你在这里生活时从一个'好心'的安保人员那里\n\n得到一些电子元件和一张通用一级原型卡\n\n你用这些东西制作了一个简易电子锁骇入设备\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Cannibal] = "你是囚犯 - 食人魔\n\n曾经痛苦的家庭生活让你精神状态极其糟糕,久而久之,你对人表现得极其冷漠\n\n你依稀记得那个晚上,父亲和母亲做成的[数据删除]很美味\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Probitiy] = "你是囚犯 - 大兜哥\n\n看起来你的口袋比别人的大\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Fast] = "你是囚犯 - 运动员\n\n作为前省级一级运动员,你能够轻易超越其他人\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Killer] = "你是囚犯 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法有效地使用这么多把刀,因此分给了一些有杀人经验的囚犯人员\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Hitman] = "你是囚犯 - 职业杀手\n\n你以前是职业杀手,看起来你没有失去你的旧习惯..\n\n与其他囚犯人员合作,逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Soldier] = "你是囚犯 - 老兵\n\n你曾是一名久经沙场的特种部队士兵,但是因为被指控犯下了\"反人类\"的罪行而被判无期徒刑,而事情的真相只有你知道...\n\n你并未忘记战场上磨砺出来的技能,好好利用这种能力逃离设施"
-BREACH.Descriptions.b_chinese[role.MTF_Guard] = "你是黑山基地特遣队 - 士兵\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_Medic] = "你是黑山基地特遣队 - 医疗兵\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_Left] = "你是黑山基地特遣队 - 中尉\n\n执行上级的命令,你可以命令士兵"
-BREACH.Descriptions.b_chinese[role.MEG_Chem] = "你是黑山基地特遣队 - 生化专家\n\n作为Beta-7的退役老兵,你在对付具有化学危害和XEN时更加灵活自如\n\n而你身穿的战斗型防化服能够让你在完美防护大部分危险SCP的同时\n\n又有与其他敌对目标抗衡的实力\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_Shock] = "你是黑山基地特遣队 - 突击队员,你有燃烧弹\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_Specialist] = "你是黑山基地特遣队 - 战斗专家,你有 \"Blackout\" 突击步枪\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_Com] = "你是黑山基地特遣队 - 指挥官,你可以向你的士兵下达命令\n\n执行设施主管的命令并完成您的任务"
-BREACH.Descriptions.b_chinese[role.MTF_Engi] = "你是黑山基地特遣队 - 工程师,你有对付Xen的特殊炮塔\n\n修复所有5台发电机,恢复设施供电\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.MTF_HOF] = "你是设施的主管\n\n除了皎洁之狐,你可以向任何人下达命令\n\n完成你的任务,并可选择召唤QRT小队"
-BREACH.Descriptions.b_chinese[role.MTF_Security] = "你是内部安全代理\n\n你有一份整个设施人员的名单\n\n并且前不久你们从 Iota-10(\"该死的联邦探员\")那里获得了一份绝密情报\n\n执行指挥官的命令,完成任务"
-BREACH.Descriptions.b_chinese[role.O4Commander] = "你是O4指挥官\n\n通过监控支援队友并在适当的时候召唤对应支援\n\n帮助黑山设施"
-BREACH.Descriptions.b_chinese[role.MTF_Jag] = "你是黑山基地特遣队 - 重装士兵\n\nM249轻机枪与重型防弹衣让你成为了设施内最强的战士\n\n执行指挥官的命令,完成任务"
+BREACH.Descriptions.chinese = BREACH.Descriptions.chinese or {}
+你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑\n\n获取部分重要信息并呼叫支援\n\n设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报
+你是SCP-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人
+你是SCP-912[自主型SWAT装甲]\n击杀设施内的罪犯
+你是SCP-062-DE[战争的幽灵]\n继续完成元首赋予你的使命!
+你是SCP-638[狂吼之人]\n你的吼声能让周围的人感到恐惧
+你是SCP-062-FR[完美掠食者]\n吃掉他们,然后进化...
+你是SCP-076[亚伯]\n你的刀能轻易斩断任何阻挡你的事物
+你是SCP-106[恐怖老人]\n嘿嘿,想来我的快乐老家做客吗?!
+你是SCP-096[害羞的人]\n你憎恶那些看到你脸的施暴者!
+你是SCP-542[外科医学先生]\n设施内的病人疑似有点太多了
+你是SCP-973[公路巡警]\n设施内的\'交通\'需要你的管制
+你是SCP-2012[迷失时间的军灵]\n为了军团的荣耀!
+你是SCP-082[食人者“费尔南德”]\n想要了解一点\'做人\'的道理吗？
+你是SCP-939[千喉之兽]\n多么优雅的声音,现在,是我的了
+你是SCP-811[沼女]\n你的酸液能浸透装甲!
+你是SCP-682[不灭孽蜥]\n憎恶一切,毁灭一切
+你是SCP-999-2[不完美的副产物]\n是基金会对SCP-999实验所创造的生命体\n你虽然能够治愈别人但你似乎不像999那么友善
+你是SCP-3114[是不是太冷淡了?]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了...
+你是混沌分裂者 - 士兵\n\n俘虏D级人员\n\n遵循你指挥官的命令完成目标!
+你是混沌分裂者 - 恶魔\n\n你有RPG火箭发射器和两发弹药,用它摧毁直升机和一切你遇到的敌人\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者 - 猎人\n\n你能放置三枚阔剑地雷\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 重装\n\n你有一挺M60重机枪的同时还有非常厚重的护甲,杀掉所有你看到的敌人!\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 指挥官\n\n你有一把SCAR突击步枪并且能够武装D级人员\n\n向你的士兵下达命令并完成任务!
+你是九尾狐小队的 - 士兵\n\n营救设施人员并遵循你指挥官的命令完成目标!
+你是九尾狐小队的 - 战斗专家\n\n你的特殊捕获网能控制住大部分的SCP\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 狙击手\n\n你有一挺巴雷特,它能够轻易撕开SCP的那脆弱的防御\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 飞行员\n\nY!
+你是九尾狐小队的 - 指挥官\n\n你能够扫描设施人员包括SCP并看到他们\n\n遏制设施内的收容失效并保卫整个设施不受其他势力的侵扰!
+你是落锤肃杀营A连 - 士兵\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 指挥官\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 作战专家\n\n你所携带的由Kelen博士研发的便携式现实稳定锚,能够遏制住大部分SCP技能的使用\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 先锋\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是落锤肃杀营A连 - 无畏战士\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是教众 - 猩红之王的信徒\n\n遵循祭司的命令并完成仪式!
+你是狂信徒 - 猩红之王的狂热崇拜者\n\n遵循祭司的命令并完成仪式!
+你是祭祀 - 猩红之王最虔诚的崇拜者\n\n向其他教众下达命令并完成仪式!
+你是助祭 - 猩红之王的得力帮手\n\n遵循祭司的命令并完成仪式!
+你是特异事务处特工部的 - 干员\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 组长\n\n你能看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处特工部的 - 特种干员\n\n你有一枚特殊的手榴弹,它会在房间里产生回声,标记你和你的队友附近的每一个敌人.\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 精英干员[代号:'雷击']\n\n你所携带的3个实验性'闪电门'装置能够安放在门上,当有人类试图穿过它时就会被电击并失去瞬间的行动能力\n\n但该装置目前不能够长久的工作....\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你可以看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处的 - 士兵\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 情报专员\n\n骇入设施终端电脑呼叫UIU主力部队
+你是特异事务处的 - 战斗专家\n\n你能够锁上任何门一段时间\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 渗透者\n\n你敏捷并致命,你的刀非常锋利,它甚至能切碎SCP\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你所携带的绿烟(\"Green Haze\")手雷,能够对吸入的人造成大量伤害,尽管这不符合交战规则\n\n向你的士兵下达命令并完成任务!
+你是格鲁乌 - 士兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 作战专家\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 重装\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 战斗工兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 指挥官\n\n与少尉合理分配人数,完成任务!
+你是格鲁乌 - 少尉\n\n与指挥官合理分配人数,完成任务!
+你是格鲁乌 - 近卫小组组员\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组机枪手\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组精确射手\n\n快速构建防线,掩护侵入部队安全撤离
+你是全球超自然联盟的 - 士兵\n\n不惜一切代价引爆Alpha核弹!!
+你是全球超自然联盟的 - 战斗专家\n\n你可以放置一个信标并在将来传送过去\n\n不惜一切代价引爆Alpha核弹!
+你是全球超自然联盟的 - 无畏勇士\n\n你能生成一面跟随你移动的能量护盾\n\n仅有全球超自然联盟下发的武器才能击穿它\n\n不惜一切代价引爆Alpha核弹!
+你是蛇之手 - 士兵\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 特种探员\n\n你特制的防毒面具可以免疫SCP-409\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 疯子\n\n你携带SCP-127-1是一把特殊SCP武器,它的伤害能够轻易撕裂任何挡路的人!\n\n你的任务是帮助并疏散SCP!
+你是蛇手 - 指挥官\n\n你有能力召唤一个传送门到任意位置\n\n小心没有人知道它会你传送到哪里\n\n你的任务是帮助并疏散SCP!
+你是快速反应部队 - 士兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 医疗兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 突击队员\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 指挥官\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 机枪手\n\n你有着M249轻机枪\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 盾牌手\n\n利用好你的防弹盾牌\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 精确射手\n\n你有着全自动的MK14战斗步枪\n\n保护设施并遵守安全主管的命令!
+You - are the Special Task Grunt\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Specialist\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Commander\n\nProtect and follow the orders of the Dispatcher!
+你是保安 - 菜鸟\n\n前往武器库获取子弹\n\n保护研究员并逃离设施
+你是保安 - 中士\n\n您可以向安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 下士\n\n保护研究员并逃离设施
+你是保安 - 警员\n\n保护研究员并逃离设施
+你是保安 - 典狱长\n\n您可以向中士以及其他安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 突击队员\n\n与其他安保人员不同你有全自动的MP5K\n\n保护研究员并逃离设施
+你是保安 - 镇暴队员\n\n你拥有更厚的护甲和一把射击橡胶弹的枪\n\n保护研究员并逃离设施
+你是保安 - 特别专员\n\n保护研究员并逃离设施
+你是保安 - 上尉\n\n你可以向所有安保人员下达命令\n\n保护研究员并逃离设施
+你是混沌分裂者 - 间谍\n\n你通过伪装成一名还未进行审查的安保人员进入了设施\n\n运用一切资源帮助D级人员逃离设施
+您是异常处决部 - Kelen博士\n\n您的特殊技能是增加附近人员对SCP的伤害\n\n与研究员和保安一起逃离设施!
+您是特殊护理小组组长 - Matilda组长\n\n你的特殊技能是治愈附近的人\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Speedwone博士\n\n你的特殊技能是减缓附近SCP的速度\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Lomao博士\n\n你的特殊技能是为附近的人提高速度\n\n与研究员和保安一起逃离设施!
+您是异常处决部 - Feelon博士\n\n你的特殊技能是放置特殊的反SCP地雷\n\n与研究员和保安一起逃离设施!
+您是特殊科研\n\n你的特殊技能是增加附近人的特征\n\n与研究员和保安一起逃离设施!
+您是防卫设备研发部门 - Shieldmeh博士\n\n你的特殊技能是启用特殊的力场盾牌来防御子弹\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Ruprecht博士\n\n你的特殊技能是让自己隐身\n\n与研究员和保安一起逃离设施
+您是异常应对部门 - Hedwig教授\n\n你拥有一副特殊眼镜,可以看到所有SCP的位置\n\n与研究员和保安一起逃离设施
+你是科学人员助手\n\n与研究员和保安一起逃离设施!
+你是蛇之手 - 间谍\n\n组织通过一个危险且隐秘传送虫洞将你精确传送进了site19的某个无人的角落\n\n尝试拿取尽可能多的SCP物品,并帮助其他SCP逃离设施!
+你是科研人员\n\n与研究员和保安一起逃离设施!
+你是高级科研人员\n\n你有着较高等级的权限卡\n\n与研究员和保安一起逃离设施!
+你是道德伦理委员会检察官\n\n你有能力将一些你认为有价值的D级人员招募为科研助手\n\n与研究员和保安一起逃离设施
+你是医务人员\n\n医者仁心\n\n与研究员和保安一起逃离设施!
+你是清洁工\n\n你可以'清洁'每一个垃圾桶,说不定会有以外收获呢\n\n与研究员和保安一起逃离设施!
+你是人事主管\n\n研究员和保安一起逃离设施
+你是D级人员\n\n与其他D级人员合作,逃离设施!
+你是全球超自然联盟 - 特工\n\n你伪装成D级人员进入了设施\n\n前往办公区找到自己的装备并引爆阿尔法核弹!
+你是D级员工....多年来,你一直在吸入胖子和大力士的屁味,因此你的鼻子已经无法感知任何气味.\n\n似乎连有毒气体也无法阻止你.\n\n请明智地利用这个优势.
+你是D级人员 - 生存者\n\n你的生存能力是其他人不可比拟的\n\n好好的利用你生存经验活下去!
+你是D级人员 - 窃贼\n\n你从某名研究员那里偷了一张权限卡\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 小偷\n\n你是个小偷,所以你技能可以从玩家那里偷东西\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 胖子\n\n你是个胖子,你可以使用你的肥肉抵挡伤害\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 摔角手\n\n你在这里没有向其他人一样浪费时间,所以你每天都在训练以锻炼肌肉\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 黑客\n\n你是个黑客,你在这里生活时从一个'好心'的安保人员那里\n\n得到一些电子元件和一张通用一级原型卡\n\n你用这些东西制作了一个简易电子锁骇入设备\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 食人魔\n\n曾经痛苦的家庭生活让你精神状态极其糟糕,久而久之,你对人表现得极其冷漠\n\n你依稀记得那个晚上,父亲和母亲做成的[数据删除]很美味\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 大兜哥\n\n看起来你的口袋比别人的大\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 运动员\n\n作为前省级一级运动员,你能够轻易超越其他人\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法有效地使用这么多把刀,因此分给了一些有杀人经验的D级人员\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 职业杀手\n\n你以前是职业杀手,看起来你没有失去你的旧习惯..\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 老兵\n\n你曾是一名久经沙场的特种部队士兵,但是因为被指控犯下了\"反人类\"的罪行而被判无期徒刑,而事情的真相只有你知道...\n\n你并未忘记战场上磨砺出来的技能,好好利用这种能力逃离设施
+你是机动特遣队 - 士兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 医疗兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 中尉\n\n执行上级的命令,你可以命令士兵
+你是机动特遣队 - 突击队员,你有燃烧弹\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 战斗专家,你有 \"Blackout\" 突击步枪\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 指挥官,你可以向你的士兵下达命令\n\n执行设施主管的命令并完成您的任务
+你是机动特遣队 - 工程师,你有对付SCP的特殊炮塔\n\n修复所有5台发电机,恢复设施供电\n\n执行指挥官的命令,完成任务
+你是设施的主管\n\n除了九尾狐,你可以向任何人下达命令\n\n完成你的任务,并可选择召唤QRT小队
+你是内部安全代理\n\n你有一份整个设施人员的名单\n\n并且前不久你们从MTF Iota-10(\"该死的联邦探员\")那里获得了一份绝密情报\n\n执行指挥官的命令,完成任务
+你是O4指挥官\n\n通过监控支援队友并在适当的时候召唤对应支援\n\n帮助设施
+你是机动特遣队 - 重装士兵\n\nM249轻机枪与重型防弹衣让你成为了设施内最强的战士\n\n执行指挥官的命令,完成任务
+--专家组
+你是MEG - 生化专家\n\n作为Beta-7的退役老兵,你在对付具有化学危害的SCP时更加灵活自如\n\n而你身穿的战斗型防化服能够让你在完美防护大部分危险SCP的同时\n\n又有与其他敌对目标抗衡的实力\n\n执行指挥官的命令,完成任务
+你是MEG - 九尾狐收容专家\n\n你被指派到该设施内训练武装人员应对SCP的措施并选拔部分人加入到NTF的预备队伍之中\n\n你所持有的\"妖狐之舞\"是设施独一无二的特殊武器\n\n它能够对SCP造成不小的伤害,但可惜的是你只携带了三个弹匣...
+你是MEG - 落锤特战教官\n\n你是被该设施内的O4指挥官直接指派的特战教官\n\n作为现役落锤特种部队的你,被O4指挥官要求训练设施内的武装人员\n\n提高设施武装人员应对外部势力入侵的能力
+--事件专属角色
+你是UIU - 联络专员\n\n协助基金会遏制收容失效,并在必要时在广播室呼叫支援
+你是混沌分裂者 - 特工\n\n你拥有一张一次性的特殊钥匙卡你可以用它打开地下武器库的门
+--事件专属支援
+--UIU收容小组
+你是UIU收容小组 - 组员\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 机枪手\n\n你拥有强大的火力\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 收容专家\n\n你曾在NTF的训练基地中进行过为期[数据删除]的训练,因此你拥有一定的应对SCP的经验\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 暗面\n\n你是UIU收容小组最强大的战士\n\n你的特制匕首\"CK-101\"在你释放你的能力之后能够对SCP造成不俗的伤害\n\n而且在你能力期间你能够免疫一次伤害大于你的最大生命且小于500点的伤害
+你是UIU收容小组 - 组长\n\n领导你的组员帮助基金会收容SCP稳定设施内的情况\n\n你携带了阉割版的智能操作平台,其只能够侦测设施内SCP的状态
 --生涯专属任务
-BREACH.Descriptions.b_chinese[role.ClassD_Mio] = "你是Mio\n你因在多次向技术提出睿智问题且数次朝令夕改\n现在被O5议会降级为囚犯人员\n你可以通过某些手段进化成奶龙MIO\n与其他囚犯合作逃离设施"
-BREACH.Descriptions.b_chinese[role.ClassD_Mio_NaiLong] = "你是奶龙MIO\n\n你是MIO的进化体"
+你是Mio\n你因在多次向技术提出睿智问题且数次朝令夕改\n现在被O5议会降级为D级人员\n你可以通过某些手段进化成奶龙MIO\n与其他D级合作逃离设施
+你是奶龙MIO\n\n你是MIO的进化体
+--二战模式
+你是美军 - 士兵\n干掉所有德国鬼子!
+你是美军 - 指挥官\n领导你的士兵干掉所有反人类畜生!
+你是纳粹德国 - 士兵\n干掉所有美国混蛋!
+你是纳粹德国 - 士兵\n领导你的士兵为元首攻城略地!
 --CHATPRINT
-b_chinese.sgoc_first_objective = "你找到了装备,进行主要目标任务开启核弹."
-b_chinese.ammocrate_max_ammo = "你不能为这种类型的武器补充已达到上限."
-b_chinese.ammo_notfound = "弹药箱内没有这种弹药."
-b_chinese.ammocrate_no_ammo = "弹药箱里已经没有这种武器的弹药了"
-b_chinese.ammocrate_weapon_needed = "把需要弹药的武器拿出来."
-b_chinese.cultbook_ritual_distrupted = "仪式被打断了,你需要重新开始"
-b_chinese.cultbook_ritual_stopped = "未知对象的入侵被打断!"
-b_chinese.cultbook_ritual_start_pt1 = "警告!未知对象正在入侵我们的现实!"
-b_chinese.cultbook_ritual_start_pt2 = "设施武装力量接到新任务:阻止入侵!"
-b_chinese.generator_toolkit_abuse = "你没有工具来修理发电机."
-b_chinese.temp_attach_avaliable_pt1 = "武器改装可用!按下按钮"
-b_chinese.temp_attach_avaliable_pt2 = "改装你的枪"
-b_chinese.temp_attach_zone_left = "你离开了改枪范围."
-b_chinese.uiu_remaining_computers = "已收到数据.待破解的计算机:"
-b_chinese.uiu_mission_complete = "所有需要的数据已发送给技术部门,现在快速逃离设施!"
-b_chinese.gru_has_got = "已获取到的文件数量:"
-b_chinese.gru_docu_remaining = "还需要获得的文件数量:"
-b_chinese.gru_got_all = "所有文件已获取完毕!"
-b_chinese.scp294_nospawn_destructive = "这种饮料不会在这里留下任何痕迹,我不会喝那个!"
-b_chinese.scp294_nospawn_bad_idea = "这真是个坏主意!"
-b_chinese.take_off_nvg_first = "取下当前夜视仪."
-b_chinese.radio_edit_info = "进入对讲机的手动频道编辑模式,按 \"RMB\"."
-b_chinese.radio_entered_edit = "您进入了对讲机的手动频道编辑模式.请按照频道表进行操作. ( NNN.N,N = natural number,N < 10 )"
-b_chinese.radio_exit_info = "在不进行任何更改的情况下退出此模式,按 \"RMB\". 进行变更,按 \"ENTER\"."
-b_chinese.radio_bad_channel = "不幸的是,我们无法更改无线电频道.按照频道表."
-b_chinese.scp268_reloading = "等等,Xen正在冷却."
-b_chinese.scp268_reload_when_pt1 = "隐身效果将在"
-b_chinese.scp268_reload_when_pt2 = "秒后才可以使用"
-b_chinese.scp268_activated_first_pt1 = "隐身激活.尽量避免与他人进行身体接触,因为隐身效果会消失."
-b_chinese.scp268_activated_first_pt2 = "如果你使用武器,同样的事情也会发生;您的隐身将在 20 秒内消失."
-b_chinese.scp268_activated = "隐身激活.持续时间 - 20 秒s."
-b_chinese.scp268_end = "隐身效果被移除."
-b_chinese.scp106_1 = "激活模式 \"潜行\"."
-b_chinese.scp106_2 = "你的移动速度提高了一倍."
-b_chinese.scp106_3 = "在当前模式下,你不能攻击任何人,反过来其他人也看不到你."
-b_chinese.scp106_4 = "你可以通过按“R”键离开这个模式,你的角色将出现在当前位置."
-b_chinese.scp106_5 = "现在你在你的口袋维度."
-b_chinese.scp106_6 = "通过按键 \"H\" 你可以回到原来的位置,从刚刚进维度的地方."
-b_chinese.scp106_7 = "你可以继续传送到口袋的随机位置使用按键 \"T\"."
-b_chinese.mvp_scpkill = "作为Xen击杀敌人"
-b_chinese.mvp_headshot = "爆头击杀"
-b_chinese.mvp_kill = "击杀敌人"
-b_chinese.mvp_heal = "治疗量"
-b_chinese.mvp_damage = "造成伤害"
-b_chinese.scp106_ghost_pt1 = "激活模式 \"幽灵\"."
-b_chinese.scp106_ghost_pt2 = "你的移动速度已经提高."
-b_chinese.scp106_ghost_pt3 = "在这种模式下,你不能攻击任何人.人们将无法看到你."
-b_chinese.scp106_ghost_pt4 = "您可以通过按下按钮退出此模式 \"R\". 你的角色将出现在当前位置."
-b_chinese.scp106_dimension_pt1 = "现在你处于自己的维度."
-b_chinese.scp106_dimension_pt2 = "通过按下按钮 \"H\" 你可以回到你的第一个位置,在那里你进入了你自己的维度."
-b_chinese.scp106_dimension_pt3 = "您可以通过按下按钮传送到随机点 \"T\"."
-b_chinese.scp106_ghost_bad_pos = "您无法退出该模式 \"幽灵\" 在这里."
-b_chinese.scp173_not_in_los = "You are not in the field of view of your body."
-b_chinese.scp973_frenzy = "现在你可以通过按下按钮进入狂热 \"T\""
-b_chinese.teamkill_killed = "杀死"
-b_chinese.teamkill_you_have_been_teamkilled = "你被队友杀死了"
-b_chinese.teamkill_report_if_rulebreaker = "如果你觉得你被杀存在疑问,那么你可以写一份!report"
-b_chinese.teamkill_you_teamkilled = "你杀了一个队友"
-b_chinese.you_have_been_killed = "你被杀了被:"
-b_chinese.evac_start_leave_immediately = "注意,设施紧急疏散已经开始,立即离开设施!"
-b_chinese.medkit_heal_ended = "治疗完成,你的健康状况已恢复."
-b_chinese.demo_stop = "Demo recording has been stopped to perform full game update"
-b_chinese.cantequipmtfuniform = "你无法穿上这套制服"
+你找到了装备,进行主要目标任务开启核弹.
+你不能为这种类型的武器补充已达到上限.
+弹药箱内没有这种弹药.
+弹药箱里已经没有这种武器的弹药了
+把需要弹药的武器拿出来.
+仪式被打断了,你需要重新开始
+未知对象的入侵被打断!
+警告!未知对象正在入侵我们的现实!
+设施武装力量接到新任务:阻止入侵!
+你没有工具来修理发电机.
+武器改装可用!按下按钮
+改装你的枪
+你离开了改枪范围.
+已收到数据.待破解的计算机:
+所有需要的数据已发送给技术部门,现在快速逃离设施!
+已获取到的文件数量:
+还需要获得的文件数量:
+所有文件已获取完毕!
+这种饮料不会在这里留下任何痕迹,我不会喝那个!
+这真是个坏主意!
+取下当前夜视仪.
+进入对讲机的手动频道编辑模式,按 \"RMB\".
+您进入了对讲机的手动频道编辑模式.请按照频道表进行操作. ( NNN.N,N = natural number,N < 10 )
+在不进行任何更改的情况下退出此模式,按 \"RMB\". 进行变更,按 \"ENTER\".
+不幸的是,我们无法更改无线电频道.按照频道表.
+等等,SCP正在冷却.
+隐身效果将在
+秒后才可以使用
+隐身激活.尽量避免与他人进行身体接触,因为隐身效果会消失.
+如果你使用武器,同样的事情也会发生;您的隐身将在 20 秒内消失.
+隐身激活.持续时间 - 20 秒s.
+隐身效果被移除.
+激活模式 \"潜行\".
+你的移动速度提高了一倍.
+在当前模式下,你不能攻击任何人,反过来其他人也看不到你.
+你可以通过按“R”键离开这个模式,你的角色将出现在当前位置.
+现在你在你的口袋维度.
+通过按键 \"H\" 你可以回到原来的位置,从刚刚进维度的地方.
+你可以继续传送到口袋的随机位置使用按键 \"T\".
+作为SCP击杀敌人
+爆头击杀
+击杀敌人
+治疗量
+造成伤害
+激活模式 \"幽灵\".
+你的移动速度已经提高.
+在这种模式下,你不能攻击任何人.人们将无法看到你.
+您可以通过按下按钮退出此模式 \"R\". 你的角色将出现在当前位置.
+现在你处于自己的维度.
+通过按下按钮 \"H\" 你可以回到你的第一个位置,在那里你进入了你自己的维度.
+您可以通过按下按钮传送到随机点 \"T\".
+您无法退出该模式 \"幽灵\" 在这里.
+You are not in the field of view of your body.
+现在你可以通过按下按钮进入狂热 \"T\"
+杀死
+你被队友杀死了
+如果你觉得你被杀存在疑问,那么你可以写一份!report
+你杀了一个队友
+你被杀了被:
+注意,设施紧急疏散已经开始,立即离开设施!
+治疗完成,你的健康状况已恢复.
+Demo recording has been stopped to perform full game update
+你无法穿上这套制服
 --统计数据
-b_chinese.apc_destroyed = "APC被摧毁"
-b_chinese.sgoc_first_objective_completed = "第一个目标完成"
-b_chinese.activated_warhead = "激活阿尔法弹头"
-b_chinese.escaped = "逃离"
-b_chinese.detonated_warhead_for_non_goc = "阿尔法弹头的引爆"
-b_chinese.scp914_death = "死于Xen-914"
-b_chinese.repair_bonus = "修"
-b_chinese.choppa_bonus = "直升机被摧毁"
-b_chinese.gru_heli_bonus = "格鲁乌救援装甲车被毁"
-b_chinese.cotsk_summon_bonus = "拾荒之王的召唤"
-b_chinese.uiu_obj_bonus = "目标完成"
-b_chinese.gru_obj_bonus = "成功获取文件"
-b_chinese.gru_looting_scps = "抢夺高价值Xen物品"
-b_chinese.sh_scps_stolen = "窃取Xen物品"
-b_chinese.sh_scps_evacuated = "Xen撤离"
-b_chinese.scp009_death = "死于Xen-009"
-b_chinese.checker_bonus = "发现间谍"
-b_chinese.scp999_healing_bonus = "康复"
-b_chinese.psycho_bravery_bonus = "勇敢"
-b_chinese.interrogated_by_gru = "GRU Interrogation"
-b_chinese.teamkill = "误伤队友"
-b_chinese.pacifist = "和平主义者"
-b_chinese.enemykill = "击杀敌人"
-b_chinese.headshot = "爆头"
-b_chinese.scpkill = "Xen收容"
-b_chinese.death = "死亡"
-b_chinese.ci_classd_evac = "俘虏 囚犯人员"
-b_chinese.cheemer_rescue = "Cheemers 救援"
-b_chinese.ci_scp_evac = "带走最重要的 Xen"
-b_chinese.sci_evac = "疏散 科研"
-b_chinese.vip_evac = "特殊研究员 疏散"
-b_chinese.escape_fail = "撤离失败"
-b_chinese.survival_bonus = "幸存时间"
-b_chinese.scp409_death = "死于 Xen-409"
-b_chinese.prem_bonus = "VIP额外经验"
-b_chinese.crazythursday = "疯狂星期四V你50"
-b_chinese.gru_mission_completed = "格鲁乌任务完成"
-b_chinese.gru_success_escape = "成功逃离黑山设施"
-b_chinese.foundation_winnder = "黑山基地-19重新恢复秩序"
+APC被摧毁
+第一个目标完成
+激活阿尔法弹头
+逃离
+阿尔法弹头的引爆
+死于SCP-914
+修
+直升机被摧毁
+格鲁乌救援装甲车被毁
+绯红之王的召唤
+目标完成
+成功获取文件
+抢夺高价值SCP物品
+窃取SCP物品
+SCP撤离
+死于SCP-009
+死于\"尖啸\"
+发现间谍
+康复
+勇敢
+GRU Interrogation
+误伤队友
+和平主义者
+击杀敌人
+爆头
+SCP收容
+死亡
+俘虏 D级人员
+Cheemers 救援
+带走最重要的 SCP
+疏散 科研
+特殊研究员 疏散
+撤离失败
+幸存时间
+死于 SCP-409
+VIP额外经验
+疯狂星期四V你50
+格鲁乌任务完成
+成功逃离设施
+Site19重新恢复秩序
 --kongshu_胜利经验
-b_chinese.ci_vdv_winner = "俄罗斯空输部队占领了黑山基地-19"
-b_chinese.nu7_squad_winner = "战锤特战分队保卫住了黑山基地-19"
+CI空输占领了Site19
+落锤特战分队保卫住了Site19
 --结束回合显示的东西
-b_chinese.ending_tp_to_unknown_loc = "传送到未知位置."
-b_chinese.ending_evac_apc = "在APC撤离."
-b_chinese.ending_ci_evac_apc_pt1 = "被APC俘虏和救援"
-b_chinese.ending_ci_evac_apc_pt2 = "囚犯人员."
-b_chinese.ending_ci_evac_apc_pt2_many = "更多囚犯人员."
-b_chinese.ending_evac_choppa = "直升机撤离."
-b_chinese.ending_evac_train = "火车撤离"
-b_chinese.ending_captured_by_unknown = "被不知名小队俘虏."
-b_chinese.ending_escaped_site19_got_captured = "从黑山基地-19逃脱并被俘虏[数据已删除]"
-b_chinese.ending_mission_complete = "任务完成."
-b_chinese.ending_mission_failed = "任务失败."
-b_chinese.ending_escaped_site19 = "逃脱黑山基地-19."
-b_chinese.ending_car = "在 48 号口发现了汽车."
-b_chinese.ending_o5 = "对象使用了 \"特殊的方法\" O5紧急..单轨列车逃跑."
-b_chinese.ending_gru = "成功乘坐BTR逃离设施"
-b_chinese.ending_perfect = "黑山基地成功遏制了收容"
-b_chinese.ending_uiu_spy_under = "任务失败,继续潜伏下去!"
-b_chinese.ending_scp999 = "逃离失败,你被黑山基地继续关在了黑山基地-19"
+传送到未知位置.
+在APC撤离.
+被APC俘虏和救援
+D级人员.
+更多D级人员.
+直升机撤离.
+火车撤离
+被不知名小队俘虏.
+从Site-19逃脱并被俘虏[数据已删除]
+任务完成.
+任务失败.
+逃脱Site-19.
+在 48 号口发现了汽车.
+对象使用了 \"特殊的方法\" O5紧急..单轨列车逃跑.
+成功乘坐BTR逃离设施
+基金会成功遏制了收容
+任务失败,继续潜伏下去!
+逃离失败,你被基金会继续关在了Site19
+奔跑着穿过了隧道
 --空输逃离
-b_chinese.ending_kongshu_1 = "你被传送到了一片未知空间(朋友~ 要不要读书)"
-b_chinese.ending_kongshu_2 = "不知怎么的,老头的空间突然多出了一个人"
-b_chinese.ending_kongshu_3 = "你很幸运,传送出了黑山基地,但是你的位置嘛...."
-b_chinese.ending_kongshu_4 = "你被传送到了[数据删除]光年外的一个星球上"
-b_chinese.ending_kongshu_5 = "你的周围的墙上全是泛黄的墙纸以及不知道从何处不停传来的嗡嗡声"
-b_chinese.ending_kongshu_6 = "一名西装男子对你很感兴趣,并\"雇佣\"了你"
+你被传送到了一片未知空间(朋友~ 要不要读书)
+不知怎么的,106的空间突然多出了一个人
+你很幸运,传送出了site19,但是你的位置嘛....
+你被传送到了[数据删除]光年外的一个星球上
+你的周围的墙上全是泛黄的墙纸以及不知道从何处不停传来的嗡嗡声
+一名西装男子对你很感兴趣,并\"雇佣\"了你
+--蛇之手随机传送门
+进入传送门奖励
+你被传送到了site-[数据删除]
+你正在下落,狂风撕碎你的身体
+瞬间!强大压强将你压碎
+你回到你家的床上
+周围只剩下烦躁的白
+你回家了,但是在万米高空
+你被送到了一个全是SCP-173的现代都市里...
+对你的出现,收容间管理人员表现出困惑
+[数据删除]光年外,你漂浮在虚空中,停止了思考
+你被传进了图书馆,蛇之手对你的出现感到惊喜
+你被传进了图书馆,蛇之手正在思考如何把你从墙里弄出来
+你出现在了一片未知区域,这里只有死一样的寂静
+GOC的正在测试新的能量武器,而你刚好在武器的射程内
+--事件特殊结局和奖励
+你很幸运核弹头没有爆炸
+核弹幸运星
 --VOICE/TEXT CHAT
-b_chinese.whispers = "轻语"
-b_chinese.talks = "说"
-b_chinese.asks = "问"
-b_chinese.yells = "喊"
-b_chinese.players_online = "玩家在线"
-b_chinese.speaks = "说..."
-b_chinese.talks_to_you = "(对你说)"
-b_chinese.chat_unknown = "未知"
-b_chinese.intercom = "(内部通讯)"
-b_chinese.copy_message = "复制"
-b_chinese.clientside_mute = "禁言"
-b_chinese.motivational_mute = "Motivational mute" --未启用
-b_chinese.clientside_mute_spec_only = "你只能在观察者模式或身为Xen时禁言他人"
-b_chinese.motivation_1 = "再接再厉!"
-b_chinese.motivation_2 = "愚公能移山,你也能完成这个任务!"
-b_chinese.motivation_3 = "先做再想!"
-b_chinese.motivation_4 = "种瓜得瓜,种果得果,永远做最好的自己!" --以后翻
-b_chinese.motivation_5 = "从哪里跌倒就从哪里爬起来!" --以后翻
-b_chinese.motivation_6 = "越是激烈的战斗也就越能成就自己!" --以后翻
-b_chinese.motivation_7 = "不要纠结于过往的失误!"
-b_chinese.motivation_8 = "你会选择自己掌控自己的命运还是别人来掌控." --以后翻
-b_chinese.motivation_9 = "以后的路还长不要在一天内就确定了自己的命运." --以后翻
-b_chinese.motivation_10 = "用乐观的心态对待每一天!"
-b_chinese.motivation_11 = "你是最棒的,最强的." --以后翻
-b_chinese.motivation_12 = "你已经具备了成功的一切条件!"
-b_chinese.motivation_13 = "这个世界需要你!"
-b_chinese.newplayer = "小萌新"
+轻语
+说
+问
+喊
+玩家在线
+说...
+(对你说)
+未知
+(内部通讯)
+复制
+禁言
+Motivational mute
+你只能在观察者模式或身为SCP时禁言他人
+再接再厉!
+愚公能移山,你也能完成这个任务!
+先做再想!
+种瓜得瓜,种果得果,永远做最好的自己!
+从哪里跌倒就从哪里爬起来!
+越是激烈的战斗也就越能成就自己!
+不要纠结于过往的失误!
+你会选择自己掌控自己的命运还是别人来掌控.
+以后的路还长不要在一天内就确定了自己的命运.
+用乐观的心态对待每一天!
+你是最棒的,最强的.
+你已经具备了成功的一切条件!
+这个世界需要你!
+小萌新
 --MENU
-b_chinese.menu_scp_hud_left = "在左下角显示Xen的技能"
-b_chinese.menu_killfeed = "显示死亡画面"
-b_chinese.menu_drawlegs = "看到你的双腿"
-b_chinese.menu_changelog = "更新日志"
-b_chinese.menu_lead = "服主"
-b_chinese.menu_dev = "开发者"
-b_chinese.menu_managers = "管理者"
-b_chinese.menu_xlk = "服务器总主管"
-b_chinese.menu_mio = "人事主管"
-b_chinese.menu_coder = "技术人员"
-b_chinese.menu_en = "外交人员"
-b_chinese.menu_modeller = "模型制作者"
-b_chinese.menu_head_admin = "管理员主管"
-b_chinese.menu_make_map = "地图制作者"
-b_chinese.menu_chemist = "性感化学兵"
-b_chinese.menu_admin_firstperson = "启用观察者第一人称"
-b_chinese.menu_weapon_fov = "武器视角范围"
-b_chinese.menu_weapon_z_offset = "持枪视角Z轴调整" --z offset,координаты z,есть абсцисса,ордината,а это называется аппликатом
-b_chinese.menu_no_role_desc = "关闭人物说明"
-b_chinese.menu_spawn_as_sup = "以支援身份复活"
-b_chinese.menu_useability = "技能按键"
-b_chinese.menu_inventory_key = "物品栏"
-b_chinese.menu_lean_left = "向左倾"
-b_chinese.menu_lean_right = "向右倾"
-b_chinese.menu_lang = "语言"
-b_chinese.menu_lang_b_chinese = "特供版"
-b_chinese.menu_lang_chinese = "简体中文"
-b_chinese.menu_lang_traditional = "繁体中文"
-b_chinese.menu_lang_english = "英文"
-b_chinese.menu_lang_russian = "俄语"
-b_chinese.menu_chat_voice = "文字与语音聊天"
-b_chinese.menu_gradient_voice = "渐变语音聊天"
-b_chinese.menu_voice_show_alive = "显示存活的玩家"
-b_chinese.menu_disable_flashes = "关闭彩色前缀闪烁"
-b_chinese.menu_disable_avatars = "禁用聊天头像"
-b_chinese.menu_roundavatars = "聊天圆形头像(如果FPS下降,则禁用)"
-b_chinese.menu_clearemoji = "清除表情符号文件夹"
-b_chinese.menu_clear_downloaded_images = "清除下载的图像文件夹"
-b_chinese.menu_audio = "音频"
-b_chinese.menu_mute_spec = "静音所有观察者"
-b_chinese.menu_mute_spec_if_alive = "在观察者模式下,静音所有活的玩家"
-b_chinese.menu_music_volume = "音乐音量"
-b_chinese.menu_music_title = "音乐"
-b_chinese.menu_overall_music_volume = "整体音量"
-b_chinese.menu_panic_music_volume = "追逐音量"
-b_chinese.menu_spawn_music_volume = "复活音量"
-b_chinese.menu_ambience_music_volume = "场景音量"
-b_chinese.menu_misc_music_volume = "杂项音量"
-b_chinese.menu_announcer_volume = "播报员音量"
-b_chinese.menu_visual_settings = "画面设置"
-b_chinese.menu_hide_title = "隐藏底部的名字"
-b_chinese.menu_scp_red_vision = "Xen透视(作为Xen)"
-b_chinese.menu_screenshot_mode = "禁用HUD(可能存在Bug)"
-b_chinese.menu_screen_effects = "景深与锐化"
-b_chinese.menu_filter_textures = "纹理过滤"
-b_chinese.menu_filter_lightmaps = "阴影过滤"
-b_chinese.menu_yellow_color_filter = "黄色滤镜"
-b_chinese.menu_blue_color_filter = "蓝色滤镜"
-b_chinese.menu_filter_outside = "在外部使用滤镜"
-b_chinese.menu_filter_intensity = "滤镜强度"
-b_chinese.menu_special_settings = "特殊设置"
-b_chinese.menu_chat_prefix = "头衔"
-b_chinese.menu_premium_settings = "VIP设定"
-b_chinese.menu_nick_grb_color = "以RGB显示昵称"
-b_chinese.menu_display_premium_icon = "显示VIP图标"
-b_chinese.menu_spawn_male_only = "仅以男性角色复活"
-b_chinese.menu_spawn_female_only = "仅以女性角色复活"
-b_chinese.menu_current_lang = "当前语言:"
-b_chinese.menu_press_any_key = "按下任何键"
+在左下角显示SCP的技能
+显示死亡画面
+看到你的双腿
+更新日志
+服主
+开发者
+管理者
+服务器总主管
+人事主管
+技术人员
+外交人员
+模型制作者
+管理员主管
+地图制作者
+性感化学兵
+启用观察者第一人称
+武器视角范围
+持枪视角Z轴调整
+关闭人物说明
+以支援身份复活
+成为D级人员时自动转变成\"MIO\"
+不显示\"小萌新\"前缀
+技能按键
+物品栏
+向左倾
+向右倾
+语言
+特供版
+简体中文
+繁体中文
+英文
+俄语
+文字与语音聊天
+渐变语音聊天
+显示存活的玩家
+关闭彩色前缀闪烁
+禁用聊天头像
+聊天圆形头像(如果FPS下降,则禁用)
+清除表情符号文件夹
+清除下载的图像文件夹
+音频
+静音所有观察者
+在观察者模式下,静音所有活的玩家
+音乐音量
+音乐
+整体音量
+追逐音量
+复活音量
+场景音量
+杂项音量
+播报员音量
+画面设置
+隐藏底部的名字
+SCP透视(作为SCP)
+禁用HUD(可能存在Bug)
+景深与锐化
+纹理过滤
+阴影过滤
+黄色滤镜
+蓝色滤镜
+在外部使用滤镜
+滤镜强度
+特殊设置
+头衔
+VIP设定
+以RGB显示昵称
+显示VIP图标
+仅以男性角色复活
+仅以女性角色复活
+当前语言:
+按下任何键
 --тут просто длиннее нельзя,кириллица не влезет,а в английском можно press any key
-b_chinese.menu_swap = "更改" --достает прямо до краёв кнопки,длиннее не переводить!!!
-b_chinese.menu_cancel = "按下 \"END\" 以取消"
-b_chinese.menu_desc_premium = "请访问QQ群询问管理员"
-b_chinese.menu_prem_status = "VIP状态"
-b_chinese.menu_days = "天"
-b_chinese.menu_forever = "永久" --未启用
-b_chinese.menu_other = "其它"
-b_chinese.menu_decrease_active_warnings = "减少当前警告"
-b_chinese.menu_kit_start = "设置 \"新手\""
-b_chinese.menu_kit_start_desc = "包括:一个月的VIP和15级(等级加到当前等级之上)"
-b_chinese.menu_1_level = "1 级"
-b_chinese.menu_45_level = "45 级"
-b_chinese.menu_ungag = "Ungag (语音聊天)"
-b_chinese.menu_less_than_a_week = "少于一周"
-b_chinese.menu_more_than_a_week = "多于一周"
-b_chinese.menu_unmute = "Unmute (聊天)"
-b_chinese.menu_unban = "解除封禁"
-b_chinese.menu_discount = "(折扣"
-b_chinese.menu_seller = "请访问QQ群询问管理员" --барыга
-b_chinese.precaching_resources = "正在预加载资源..."
-b_chinese.menu_play = "开始游玩"
-b_chinese.menu_resume = "继续"
-b_chinese.menu_disconnect = "断开连接"
-b_chinese.menu_credits = "鸣谢名单"
-b_chinese.menu_settings = "设置"
-b_chinese.menu_discord = "Discord"
-b_chinese.menu_donate = "捐款"
-b_chinese.menu_wiki = "维基"
-b_chinese.menu_my_life_my_rules = "规则"
-b_chinese.menu_sure = "你确定吗？"
-b_chinese.menu_yes = "是的"
-b_chinese.menu_no = "不是"
-b_chinese.menu_do_precache_or_nah = "要预加载内容吗？"
-b_chinese.menu_precache_hover = "在预加载期间,你仍然有机会复活"
-b_chinese.menu_no_precache_hover = "你仅应在加载时间大于4分钟且因此被踢出的情况下跳过预加载\n警告:游玩期间预计会有大量卡顿"
-b_chinese.menu_quickchat = "快速聊天"
+更改
+按下 \"END\" 以取消
+请访问QQ群询问管理员
+VIP状态
+天
+永久
+其它
+减少当前警告
+设置 \"新手\"
+包括:一个月的VIP和15级(等级加到当前等级之上)
+1 级
+45 级
+Ungag (语音聊天)
+少于一周
+多于一周
+Unmute (聊天)
+解除封禁
+(折扣
+请访问QQ群询问管理员
+正在预加载资源...
+开始游玩
+继续
+断开连接
+鸣谢名单
+设置
+Discord
+捐款
+维基
+规则
+你确定吗？
+是的
+不是
+要预加载内容吗？
+在预加载期间,你仍然有机会复活
+你仅应在加载时间大于4分钟且因此被踢出的情况下跳过预加载\n警告:游玩期间预计会有大量卡顿
+快速聊天
 --TASKS
-b_chinese.tasks_evacuate_personnel_and_defend_comrades = "疏散黑山设施,帮助队友"
-b_chinese.tasks_cn_escape = "夺回属于我们的东西,逃离黑山设施"
-b_chinese.tasks_escape_from_site19 = "逃离黑山设施"
-b_chinese.tasks_sgoc = "找到联合国特种装甲并引爆阿尔法弹头"
-b_chinese.tasks_author = "AUTHOR:"
-b_chinese.tasks_suiu = "找到目标电脑黑入它并呼叫支援"
-b_chinese.tasks_evacuate_personnel_and_terminate_enemies = "疏散人员,消灭Xen和囚犯"
-b_chinese.tasks_coordinate_mtf_peasants = "领导自己的队员"
-b_chinese.tasks_coordinate_mtf = "领导 黑山基地特遣队"
-b_chinese.tasks_hof = "疏散设施人员并领导黑山基地特遣队与黑山基地安保部门"
-b_chinese.tasks_mtf_checker = "疏散人员,检查人员信息"
-b_chinese.tasks_engi = "放置炮台"
-b_chinese.tasks_support_teammates = "在适当时候呼叫支援帮助设施遏制混乱"
-b_chinese.tasks_heal_teammates = "治疗队友"
-b_chinese.tasks_recruitment = "招募囚犯"
-b_chinese.tasks_coordinate_sci = "首席科学人员"
-b_chinese.tasks_protect_sci = "保护科学家"
-b_chinese.tasks_help_d = "帮助囚犯"
-b_chinese.tasks_help_teammates = "帮助队友"
-b_chinese.tasks_ntf = "收容Xen,消灭囚犯,疏散人员"
-b_chinese.tasks_nu7 = "收容Xen,清除外部势力"
-b_chinese.tasks_coordinate_ntf = "领导 皎洁之狐"
-b_chinese.tasks_skp = "消灭现场的所有人"
-b_chinese.tasks_goc = "撤离前引爆阿尔法弹头"
-b_chinese.tasks_coordinate_goc = "领导 联合国武装部队"
-b_chinese.tasks_gru = "夺取资料,篡改权限"
-b_chinese.tasks_gru_guard = "掩护侵入部队撤离"
-b_chinese.tasks_coordinate_gru = "带领小队完成任务"
-b_chinese.tasks_ci = "站点人员的分散疏散,疏散囚犯"
-b_chinese.tasks_mines = "设置地雷"
-b_chinese.tasks_destroy = "摧毁撤离飞机"
-b_chinese.tasks_coordinate_ci = "领导 俄罗斯武装部队"
-b_chinese.tasks_osn = "Support teammates,help HoF" --HoF - head of foundation --未启用
-b_chinese.tasks_coordinate_osn = "lead squad" --未启用
-b_chinese.tasks_sh = "帮助Xen逃脱,掩护Xen"
-b_chinese.tasks_coordinate_sh = "指挥其他图书队员"
-b_chinese.tasks_uiu = "侵入设施电脑并且逃脱设施"
-b_chinese.tasks_coordinate_uiu = "指挥其他FBI队员"
-b_chinese.tasks_cotsk = "完成仪式并召拾荒之王"
-b_chinese.tasks_coordinate_cotsk = "指挥其他教众"
-b_chinese.tasks_scp999 = "治愈人或Xen,逃脱"
-b_chinese.tasks_terminate_enemies = "消灭敌人"
-b_chinese.tasks_arena = "参加竞技场"
-b_chinese.tasks_kill_everyone_except_sh = "杀死除了图书爱好者之外的所有人"
+疏散设施,帮助队友
+夺回属于我们的东西,逃离设施
+逃离设施
+找到GOC装甲并引爆阿尔法弹头
+AUTHOR:
+找到目标电脑黑入它并呼叫支援
+帮助基金会遏制收容失效
+疏散人员,消灭SCP和D级
+领导自己的队员
+领导 MTF
+疏散设施人员并领导机动特遣队与安保部门
+疏散人员,检查人员信息
+放置炮台
+在适当时候呼叫支援帮助设施遏制混乱
+治疗队友
+招募D级
+首席科学人员
+保护科学家
+帮助D级
+帮助队友
+收容SCP,消灭D级,疏散人员
+收容SCP,清除外部势力
+清理掉所有受[感染]的人
+夺取控制权,封锁整个地下设施
+领导 NTF
+消灭现场的所有人
+撤离前引爆阿尔法弹头
+完成奇术的部署,消灭所有威胁
+领导 GOC
+夺取资料,篡改权限
+掩护侵入部队撤离
+带领小队完成任务
+站点人员的分散疏散,疏散D级
+设置地雷
+摧毁撤离飞机
+领导 CI
+Support teammates,help HoF
+lead squad
+帮助SCP逃脱,掩护SCP
+指挥其他蛇之手队员
+侵入设施电脑并且逃脱设施
+指挥其他UIU队员
+完成仪式并召猩红红之王
+指挥其他教众
+治愈人或SCP,逃脱
+消灭敌人
+参加竞技场
+杀死除了蛇之手之外的所有人
 --能力
-b_chinese.abilities_cd = "冷却时间:"
-b_chinese.abilities_name_thief = "精巧手法"
-b_chinese.abilities_thief = "偷取他人手上的物品"
-b_chinese.abilities_name_bor = "抱摔" --в английском можно knockout
-b_chinese.abilities_bor = "你强壮的身体让你可以抱\n摔他人"
-b_chinese.ability_name_fast = "正确跑势"
-b_chinese.ability_fast = "更改跑步姿势挺高跑步时\n的速度"
-b_chinese.abilities_name_hitman = "伪装"
-b_chinese.abilities_hitman = "将你自己伪装成你看着的\n尸体的模样"
-b_chinese.abilities_name_suiu = "\"心上人\"系统"
-b_chinese.abilities_suiu = "能探测到\"心上人\"距离你\n的位置"
-b_chinese.abilities_name_scirecruit = "招募"
-b_chinese.abilities_scirecruit = "将囚犯人员变为黑山基地科研人员"
-b_chinese.abilities_name_cispy = "自己人!"
-b_chinese.abilities_cispy = "知道谁是囚犯人员"
-b_chinese.abilities_name_matilda = "范围治疗" --AOE Heal
-b_chinese.abilities_matilda = "对你周围的人进行一次过\n量治疗"
-b_chinese.abilities_name_speedwone = "减速"
-b_chinese.abilities_speedwone = "使你周围的Xen减速"
-b_chinese.abilities_name_hedwig = "休谟眼镜"
-b_chinese.abilities_hedwig = "你能穿墙看到Xen"
-b_chinese.abilities_name_feelon = "反Xen地雷"
-b_chinese.abilities_feelon = "设置反Xen地雷"
-b_chinese.abilities_name_invis = "隐匿踪迹"
-b_chinese.abilities_invis = "能够让你隐藏自己的踪迹\n30秒"
-b_chinese.abilities_name_lomao = "加速"
-b_chinese.abilities_lomao = "使你与你周围的人加速"
-b_chinese.abilities_name_shield = "护盾"
-b_chinese.abilities_shield = "在你周围创造一个护盾,从\nXen的攻击中保护你"
-b_chinese.abilities_name_buster = "Boost" --未使用
-b_chinese.abilities_buster = "Boost yourself and people around you." --未使用
-b_chinese.abilities_name_kelen = "愤恨"
-b_chinese.abilities_kelen = "增加你和周围人对Xen的伤\n害"
-b_chinese.abilities_name_engi = "炮台"
-b_chinese.abilities_engi = "设置一个炮塔攻击Xen"
-b_chinese.abilities_name_ntfspec = "电磁捕获网"
-b_chinese.abilities_ntfspec = "可以将Xen定在原地几秒"
-b_chinese.abilities_name_ntfcom = "摄像头扫描"
-b_chinese.abilities_ntfcom = "在设施摄像头上查找人员"
-b_chinese.abilities_name_cicom = "入伍!"
-b_chinese.abilities_cicom = "武装囚犯,并将囚犯人员转换\n成俄罗斯武装部队"
-b_chinese.abilities_name_cimine = "阔剑地雷"
-b_chinese.abilities_cimine = "放置一枚高伤害的阔剑\n地雷"
-b_chinese.abilities_name_cijugg = "高能弹药"
-b_chinese.abilities_cijugg_desc = "通过使用携带的[数据删除]\n异常能够在25秒加强使用\n者所发射的子弹"
-b_chinese.abilities_name_grucom = "拷问"
-b_chinese.abilities_grucom = "拷问目标让其透露出同阵\n营人员的位置"
-b_chinese.abilities_gru_shield = "机动护盾"
-b_chinese.abilities_gru_shield_desc = "在瞄准的位置部署一块可\n以抵挡攻击机动护盾"
-b_chinese.abilities_gru_fighting = "战斗潮流"
-b_chinese.abilities_gru_fighting_desc = "加强周围队友攻击敌人和X\nen的伤害15秒"
-b_chinese.abilities_gru_buff = "赤色浪潮"
-b_chinese.abilities_gru_buff_desc = "恢复周围队友的生命值并\n获得一定护甲值,且短暂时\n间内不会消耗体力"
-b_chinese.abilities_name_gocspec = "联合国特种部队 传送器"
-b_chinese.abilities_gocspec = "放置传送设备并在使用时\n传送到它"
-b_chinese.abilities_name_goccom = "隐身斗篷"
-b_chinese.abilities_goccom = "能够使自身完全隐形,不留\n一丝痕迹..."
-b_chinese.abilities_name_gocjag = "能量护盾"
-b_chinese.abilities_gocjag = "激活能量护盾保护自己和\n队友"
-b_chinese.abilities_name_skpjager = "Expansive bullets" --不知道什么玩意
-b_chinese.abilities_skpjager = "You will use expansive bullets." --不知道什么玩意
-b_chinese.abilities_name_shcom = "虫洞"
-b_chinese.abilities_shcom = "创建一个虫洞,它会把你们\n传送到设施的任意一处地\n点"
-b_chinese.abilities_name_shpsycho = "血肉之枪"
-b_chinese.abilities_shpsycho_desc = "激活Xen-127-1的特殊能力\n30秒在这段时间内被攻击\n到的目标会被命中在身上\n的牙齿所啃食;并且当你击\n杀目标后会受到来自\nXen-127-1自愈效果"
-b_chinese.abilities_name_uiucom = "对讲监听"
-b_chinese.abilities_uiucom = "显示启用了对讲机的人员"
-b_chinese.abilities_name_uiuspec = "锁门"
-b_chinese.abilities_uiuspec = "把门上锁一段时间."
-b_chinese.abilities_name_uiuclocker = "机能强化"
-b_chinese.abilities_uiuclocker = "短时间内挺高自身移速和\n子弹抗性(在某时可能会出\n现其他作用)"
-b_chinese.abilities_name_cotskpsycho = "最后的机会"
-b_chinese.abilities_cotskpsycho = "恢复你的健康,增强自己速\n度,然后在30秒后死亡"
-b_chinese.abilities_name_scarlet_range = "拾荒力场"
-b_chinese.abilities_scarlet_range_desc = "原地释放一个伤害力场,任\n何非拾荒者的生物进入\n力场都会受到伤害,而部分\n伤害会转换成养分滋润每\n一个虔诚的信徒"
-b_chinese.abilities_name_uiuagentspec = "回声探测"
-b_chinese.abilities_uiuagentspec = "一枚特殊的手榴弹,它会在\n房间里产生回声,标记你和\n你的队友附近的每一个敌\n人."
-b_chinese.abilities_name_uiuagentcmd = "\'绿烟\'手雷"
-b_chinese.abilities_uiuagentcmd = "一枚特殊的手榴弹,它会在\n爆炸后产生有毒气体,只有\n你的防毒面具对这种气体\n免疫."
-b_chinese.abilities_name_uiuthunder = "闪电门"
-b_chinese.abilities_name_uiuthunder_desc = "在一扇普通的门上安放'闪\n电门'装置,该装置会存在35秒,非\nFBI人员经过时会受到电击\n并失去瞬时的行动能力"
-b_chinese.abilities_name_hof = "降职"
-b_chinese.abilities_hof = "你认为他对黑山基地没有任何用处"
-b_chinese.abilities_name_ciedd = "阔剑地雷"
-b_chinese.abilities_ciedd = "放置阔剑地雷"
-b_chinese.abilities_enemyscan = "狩猎之眼"
-b_chinese.abilities_scaneye = "拾荒之王赐予你看见别人\n灵魂的能力."
-b_chinese.abilities_mtf_detector = "运动检测器"
-b_chinese.abilities_mtf_detector_desc = "布置一个运动探测器在你\n所瞄准的位置,当有人从它\n旁边经过时,会被它检测到\n并将3秒内的位置信息显示在\n你的目镜上"
-b_chinese.abilities_nu7_healing = "'守护者'治疗站"
-b_chinese.abilities_nu7_healing_desc = "每15秒治疗范围内血量最\n少的黑山基地武装单位(非保\n安单位),优先选择黑山基地特遣队战锤\n中血量最少的队员"
-b_chinese.abilities_nu7_armor = "防弹插板"
-b_chinese.abilities_nu7_armor_desc = "在地上放置一个装有10个防\n弹插板的盒子,任何武装单\n位或穿着黑山基地武装衣服的人员\n都能使用其中的防弹插板"
-b_chinese.abilities_nu7_stability = "现实稳定锚"
-b_chinese.abilities_nu7_stability_desc = "在地上部署一个便携式的\n'斯克兰顿'现实稳定锚,任\n何走进其影响范围的Xen都\n将受到'压制'"
-b_chinese.abilities_nu7_device = "智能操作平台"
-b_chinese.abilities_nu7_device_desc = "佩戴在手臂上的便携式的\n智能平板其搭载的四项功\n能能够辅助佩戴者应对Xen项\n目失效时的危险情况"
+冷却时间:
+你无权使用该技能
+你的技能改变了
+精巧手法
+偷取他人手上的物品
+抱摔
+你强壮的身体让你可以抱\n摔他人
+正确跑势
+更改跑步姿势挺高跑步时\n的速度
+伪装
+将你自己伪装成你看着的\n尸体的模样
+\"心上人\"系统
+能探测到\"心上人\"距离你\n的位置
+招募
+将D级人员变为科学家
+自己人!
+知道谁是D级人员
+己方对讲机
+找到[对讲机]的位置
+范围治疗
+对你周围的人进行一次过\n量治疗
+减速
+使你周围的SCP减速
+休谟眼镜
+你能穿墙看到SCP
+反SCP地雷
+设置反SCP地雷
+隐匿踪迹
+能够让你隐藏自己的踪迹\n30秒
+加速
+使你与你周围的人加速
+护盾
+在你周围创造一个护盾,从\nSCP的攻击中保护你
+Boost
+Boost yourself and people around you.
+愤恨
+增加你和周围人对SCP的伤\n害
+炮台
+设置一个炮塔攻击SCP
+电磁捕获网
+可以将SCP定在原地几秒
+摄像头扫描
+在设施摄像头上查找人员
+入伍!
+武装D级,并将D级人员转换\n成混沌分裂者
+阔剑地雷
+放置一枚高伤害的阔剑\n地雷
+高能弹药
+通过使用携带的[数据删除]\n异常能够在25秒加强使用\n者所发射的子弹
+拷问
+拷问目标让其透露出同阵\n营人员的位置
+机动护盾
+在瞄准的位置部署一块可\n以抵挡攻击机动护盾
+战斗潮流
+加强周围队友攻击敌人和S\nCP的伤害15秒
+赤色浪潮
+恢复周围队友的生命值并\n获得一定护甲值,且短暂时\n间内不会消耗体力
+GOC 传送器
+放置传送设备并在使用时\n传送到它
+隐身斗篷
+能够使自身完全隐形,不留\n一丝痕迹...
+能量护盾
+激活能量护盾保护自己和\n队友
+Expansive bullets
+You will use expansive bullets.
+虫洞
+创建一个虫洞,它会把你们\n传送到设施的任意一处地\n点
+血肉之枪
+激活SCP-127-1的特殊能力\n30秒在这段时间内被攻击\n到的目标会被命中在身上\n的牙齿所啃食;并且当你击\n杀目标后会受到来自\nSCP-127-1自愈效果
+众人之血泪
+激活你的奇术能力\n让周围的己方恢复生命值\n和拥有子弹抗性\n周围的己方越多效果也就\n越强大\n当你持有某些SCP物品使\n用技能时会有特别的效果...
+对讲监听
+显示启用了对讲机的人员
+锁门
+把门上锁一段时间.
+机能强化
+短时间内挺高自身移速和\n子弹抗性(在某时可能会出\n现其他作用)
+最后的机会
+恢复你的健康,增强自己速\n度,然后在30秒后死亡
+猩红力场
+原地释放一个伤害力场,任\n何非猩红之子的生物进入\n力场都会受到伤害,而部分\n伤害会转换成养分滋润每\n一个虔诚的信徒
+回声探测
+一枚特殊的手榴弹,它会在\n房间里产生回声,标记你和\n你的队友附近的每一个敌\n人.
+\'绿烟\'手雷
+一枚特殊的手榴弹,它会在\n爆炸后产生有毒气体,只有\n你的防毒面具对这种气体\n免疫.
+闪电门
+在一扇普通的门上安放'闪\n电门'装置,该装置会存在3\n5秒,非UIU人员经过时会受\n到电击并失去瞬时的行动\n能力
+降职
+你认为他对基金会没有任何用处
+阔剑地雷
+放置阔剑地雷
+狩猎之眼
+猩红之王赐予你看见别人\n灵魂的能力.
+运动检测器
+布置一个运动探测器在你\n所瞄准的位置,当有人从它\n旁边经过时,会被它检测到\n并将3秒内的位置信息显示在\n你的目镜上
+\'守护者\'治疗站
+每15秒治疗范围内血量最\n少的基金会武装单位(非保\n安单位),优先选择MTF落锤\n中血量最少的队员
+防弹插板
+在地上放置一个装有10个防\n弹插板的盒子,任何武装单\n位或穿着MTF衣服的人员\n都能使用其中的防弹插板
+现实稳定锚
+在地上部署一个便携式的\n'斯克兰顿'现实稳定锚,任\n何走进其影响范围的SCP都\n将受到'压制'
+智能操作平台
+佩戴在手臂上的便携式的\n智能平板其搭载的四项功\n能能够辅助佩戴者应对收\n容失效时的危险情况
+寒冰毒雾
+掷出一个释放类似\"SCP-2\n44\"寒冷气体的投掷物,它\n能在极短时间内让目标受\n到强烈的干扰
+靶向失能
+发射一个微小的长方体特\n殊射弹,被击中的SCP将无\n法使用它的技能(某些SCP\n的技能不会受到影响)并\n且其获得二级\"易伤\"效果
+精准射击
+大幅度降低你的枪械后座\n力并给予你个3级\"子弹护\n盾\"效果,同时周围的己方\n单位也会小幅度降低枪械\n后座力
+生命侦测
+快速侦测设施内SCP的生\n命状态以及他们大致所处\n的位置
+快速稳定锚
+一种非常轻便小巧的现实稳定\n锚,能够快速部署\n但功能性上远不人其他类\n型的稳定锚,续航时间也有\n限...
+暗面
+激活你的特殊能力,让它\n们感受你的暗黑之面
+老兵本能
+开启技能后获得35秒的3\n级枪械后座降低效果和5\n级快速换弹效果
+冲击手雷
+WoA-G-3型异常手雷,掷出\n后能够对周围的人员造成\n15秒武器后座力提升和易\n伤效果和3秒头疼效果
+现实尖啸弹
+WoA-G-15型异常手雷,掷出\n后将在一秒内形成一片\n\"虚空\"区域,处在\"虚空\"内\n的玩家就会被杀死,并彻\n底消失
+信息探针
+向瞄准方向发射一根\"虚\n拟\"探针,其会探测周围一\n定范围的\"受影响\"对象
+狂躁抑郁
+你的刀存储的能量越多,\n开启技能后你就越强大
+--技能5K
+强化奇术
+给予自身和周围己方五级\n子弹抗性和七级SCP护盾\n以及三级生命恢复的效果
+幽冥化
+将自身完全幽冥化,任何\n攻击都无法伤害你,你也\n可以轻易穿过别人,但在\n此之间你无法攻击
+时间领域
+创造一个静止6.5秒时间的\n小范围球形时间静止区域\n这里面只有身穿GOC装甲\n的人可以活动
+存在于过去
+在当前位置创建一个属于\n你自己的时间节点,当你遭\n受到致命伤害时会自动重\n置你的时间并回到放置节\n点的位置上
 --kongshu mode技能
-b_chinese.abilities_ciagent = "恩!情!"
-b_chinese.abilities_ciagent_desc = "ELS空输部队的恩情还不完~\n为周围的己方加血和体\n力"
-b_chinese.abilities_protector = "忠!诚!"
-b_chinese.abilities_protector_desc = "这份荣光,我白帽不会独\n享\n为周围的己方加血和体\n力"
-b_chinese.abilities_ottospeedup = "冲刺!冲!"
-b_chinese.abilities_ottospeedup_desc = "周围的己方获得一个15秒\n的3级加速效果和一个15\n秒的三级恢复效果"
+恩!情!
+CI空输的恩情还不完~\n为周围的己方加血和体\n力
+忠!诚!
+这份荣光,我白帽不会独\n享\n为周围的己方加血和体\n力
+冲刺!冲!
+周围的己方获得一个15秒\n的3级加速效果和一个15\n秒的三级恢复效果
 --SCP能力
 --049
-b_chinese.scp049curing = "医者仁心"
-b_chinese.scp049curing_desc = "强化所有Xen-049-2实体"
+医者仁心
+强化所有SCP-049-2实体
 --912
-b_chinese.scp912smoke = "烟雾弹"
-b_chinese.scp912smoke_desc = "向前投掷一颗烟雾弹"
-b_chinese.scp912knife = "突进!"
-b_chinese.scp912knife_desc = "使用战术匕首攻击并在短\n时间内提高移动速度"
+烟雾弹
+向前投掷一颗烟雾弹
+突进!
+使用战术匕首攻击并在短\n时间内提高移动速度
 --638
-b_chinese.scp638bite = "撕咬"
-b_chinese.scp638bite_desc = "用你的嘴巴咬别人"
-b_chinese.scp638scream = "凄厉尖叫"
-b_chinese.scp638scream_desc = "在一个中近距离对目标进\n行尖叫"
-b_chinese.scp638fearscream = "恐惧尖叫"
-b_chinese.scp638fearscream_desc = "对近距离的目标进行尖叫"
+撕咬
+用你的嘴巴咬别人
+凄厉尖叫
+在一个中近距离对目标进\n行尖叫
+恐惧尖叫
+对近距离的目标进行尖叫
 --062fr
-b_chinese.scp062frconsume = "敲骨吸髓"
-b_chinese.scp062frconsume_desc = "从死去的尸体汲取养分\n帮助自己进化"
-b_chinese.scp062frrage = "捕食者的怒火"
-b_chinese.scp062frrage_desc = "向前冲刺并对目标施加巨\n大的伤害"
-b_chinese.scp062frscreaming = "尖锐咆哮"
-b_chinese.scp062frscreaming_desc = "发出剧烈的咆哮让周围的\n目标暂时失去行动能力"
-b_chinese.scp062frtracking = "狩猎本能"
-b_chinese.scp062frtracking_desc = "能够透视到周围一定范围\n的目标"
-b_chinese.scp062frjumping = "死亡飞扑"
-b_chinese.scp062frjumping_desc = "跳起来飞扑向最近的目标"
+敲骨吸髓
+从死去的尸体汲取养分\n帮助自己进化
+捕食者的怒火
+向前冲刺并对目标施加巨\n大的伤害
+尖锐咆哮
+发出剧烈的咆哮让周围的\n目标暂时失去行动能力
+狩猎本能
+能够透视到周围一定范围\n的目标
+死亡飞扑
+跳起来飞扑向最近的目标
 --076
-b_chinese.scp076throw = "投掷飞镖"
-b_chinese.scp076throw_desc = "向瞄准的方向发射一枚飞\n镖"
-b_chinese.scp076speedup = "迅捷"
-b_chinese.scp076speedup_desc = "短时间内提升速度和挥刀\n速度"
-b_chinese.scp076kill = "枭首"
-b_chinese.scp076kill_desc = "向前冲刺使出一记回旋斩\n斩下区域内敌人的头颅"
+投掷飞镖
+向瞄准的方向发射一枚飞\n镖
+迅捷
+短时间内提升速度和挥刀\n速度
+枭首
+向前冲刺使出一记回旋斩\n斩下区域内敌人的头颅
 --106
-b_chinese.scp106ghost = "隐匿追猎"
-b_chinese.scp106ghost_desc = "遁入地下后的10秒内移动\n速度将非常快,10秒后将自\n动从地底出来"
-b_chinese.scp106sweethome = "口袋空间"
-b_chinese.scp106sweethome_desc = "进入口袋空间"
-b_chinese.scp106rottinghole = "腐蚀黑洞"
-b_chinese.scp106rottinghole_desc = "从地面向瞄准方向放出紧\n贴地面的黑洞,所有碰到黑\n洞的人都会被传送到你的\n口袋空间内"
-b_chinese.scp106teleport = "腐败传送"
-b_chinese.scp106teleport_desc = "传送到你标记的位置"
-b_chinese.scp106teleport_0 = "标记一处传送点"
-b_chinese.scp106teleport_1 = "传送至标记点"
-b_chinese.scp106teleport_2 = "传送至上一次传送的位置"
-b_chinese.scp106cantmarked = "你不能在这里放置传送门"
-b_chinese.scp106cantback = "你不能传送回去"
-b_chinese.scp106markedpos = "你标记了一处传送点"
-b_chinese.scp106notpos = "没有位置,无法传送"
-b_chinese.scp106markedally = "你标记了一个盟友"
-b_chinese.scp106cantmarkedally = "你无法标记他/她作为你的盟友"
-b_chinese.scp106current_ally = "当前盟友:"
-b_chinese.scp106ending_recontained = "你被重新收容了...."
-b_chinese.scp106recontained = "重新收容Xen-106"
-b_chinese.scp106recontained_by_serpent = "你疯了? 你个[数据删除]!"
-b_chinese.scp106recontainedman = "作为收容Xen-106的诱饵"
-b_chinese.scp106recontainedman_serpent = "你是干什么吃的?!"
+隐匿追猎
+遁入地下后的10秒内移动\n速度将非常快,10秒后将自\n动从地底出来
+口袋空间
+进入口袋空间
+腐蚀黑洞
+从地面向瞄准方向放出紧\n贴地面的黑洞,所有碰到黑\n洞的人都会被传送到你的\n口袋空间内
+腐败传送
+传送到你标记的位置
+标记一处传送点
+传送至标记点
+传送至上一次传送的位置
+你不能在这里放置传送门
+你不能传送回去
+你标记了一处传送点
+没有位置,无法传送
+你标记了一个盟友
+你无法标记他/她作为你的盟友
+当前盟友:
+你被重新收容了....
+重新收容SCP-106
+你疯了? 你个[数据删除]!
+作为收容106的诱饵
+你是干什么吃的?!
 --542
-b_chinese.scp542charge = "急诊断"
-b_chinese.scp542charge_desc = "Xen-542进入奔跑模式并\'治疗\'\n第一个被触摸到的人类"
-b_chinese.scp542grab = "原地诊断"
-b_chinese.scp542grab_desc = "近距离\'治疗\'一名人类"
-b_chinese.scp542tracking = "医者的敏锐"
-b_chinese.scp542tracking_desc = "能够看见所有低于60%血量\n的人类"
+急诊断
+542进入奔跑模式并\'治疗\'\n第一个被触摸到的人类
+原地诊断
+近距离\'治疗\'一名人类
+医者的敏锐
+能够看见所有低于60%血量\n的人类
 --999
-b_chinese.scp999recover = "治愈"
-b_chinese.scp999recover_desc = "完全治愈人类角色(Xen只\n能恢复少量的生命值)"
-b_chinese.scp999rangeheal = "范围治疗"
-b_chinese.scp999rangeheal_desc = "治愈你周围的每一个人包\n括你自己"
-b_chinese.scp999slimetrap = "黏黏陷阱"
-b_chinese.scp999slimetrap_desc = "将一个人黏在原地无法移\n动"
-b_chinese.scp999slimebilnd = "黏液障目"
-b_chinese.scp999slimebilnd_desc = "向周围的人甩出黏液并使\n他们看不见东西"
+治愈
+完全治愈人类角色(SCP只\n能恢复少量的生命值)
+范围治疗
+治愈你周围的每一个人包\n括你自己
+黏黏陷阱
+将一个人黏在原地无法移\n动
+黏液障目
+向周围的人甩出黏液并使\n他们看不见东西
 --973
-b_chinese.scp973stun = "电击"
-b_chinese.scp973stun_desc = "把目标定在原地几秒"
+电击
+把目标定在原地几秒
 --2012
-b_chinese.scp2012shield = "举盾!"
-b_chinese.scp2012shield_desc = "举起盾牌"
-b_chinese.scp2012charge = "英勇冲锋"
-b_chinese.scp2012charge_desc = "获得短时间的速度提升"
-b_chinese.scp2012crossbow = "十字弩"
-b_chinese.scp2012crossbow_desc = "使用十字弩进行远程攻击"
-b_chinese.scp2012sword = "巨剑"
-b_chinese.scp2012sword_desc = "使用巨剑进行攻击"
-b_chinese.scp2012shielddefence = "盾牌防御"
-b_chinese.scp2012shielddefence_desc = "将盾牌挡在胸前进行防御"
+举盾!
+举起盾牌
+英勇冲锋
+获得短时间的速度提升
+十字弩
+使用十字弩进行远程攻击
+巨剑
+使用巨剑进行攻击
+盾牌防御
+将盾牌挡在胸前进行防御
+沉重盾击
+使用盾牌向前进行一次撞\n击
 --939
-b_chinese.scp939eatbody = "食腐者"
-b_chinese.scp939eatbody_desc = "吃掉尸体恢复血量和提升\n自身的移速"
-b_chinese.scp939sounddisguise = "声音模仿者"
-b_chinese.scp939sounddisguise_desc = "短时间内所有人会错将你\n的脚步听成普通人类的脚\n步"
+食腐者
+吃掉尸体恢复血量和提升\n自身的移速
+声音模仿者
+短时间内所有人会错将你\n的脚步听成普通人类的脚\n步
+遗忘气团
+在原地释放一团AMNC-22\n7气体\n不小心吸入这种气体的人\n将会忘记你的存在
 --811
-b_chinese.scp811acidbomb = "酸液弹"
-b_chinese.scp811acidbomb_desc = "向瞄准方向吐出一发酸液\n弹"
-b_chinese.scp811acidbombstrong = "酸液弹(强化)"
-b_chinese.scp811acidbombstrong_desc = "向瞄准方向吐出一发更强\n大的酸液弹"
-b_chinese.scp811acidmine = "酸液地雷"
-b_chinese.scp811acidmine_desc = "在地上放置一枚酸液地雷"
-b_chinese.scp811vomit = "酸液喷射"
-b_chinese.scp811vomit_desc = "向瞄准的方向喷射出大量\n的酸液"
-b_chinese.scp811acidbigbomb = "酸液炸弹"
-b_chinese.scp811acidbigbomb_desc = "以自身为原点爆发出巨大\n伤害"
+酸液弹
+向瞄准方向吐出一发酸液\n弹
+酸液弹(强化)
+向瞄准方向吐出一发更强\n大的酸液弹
+酸液地雷
+在地上放置一枚酸液地雷
+酸液喷射
+向瞄准的方向喷射出大量\n的酸液
+酸液炸弹
+以自身为原点爆发出巨大\n伤害
 --682
-b_chinese.scp682armor = "鳞片装甲"
-b_chinese.scp682armor_desc = "让覆盖在自身的鳞片硬化\n使自身受到更少的子弹伤\n害"
-b_chinese.scp682speedup = "速度提升"
-b_chinese.scp682speedup_desc = "短时间提升自身的移速"
-b_chinese.scp682regeneration = "不死孽物"
-b_chinese.scp682regeneration_desc = "恢复一定的血量"
-b_chinese.scp682screming = "憎恶怒吼"
-b_chinese.scp682screming_desc = "让周围的目标暂时失去行\n动能力"
+鳞片装甲
+让覆盖在自身的鳞片硬化\n使自身受到更少的子弹伤\n害
+速度提升
+短时间提升自身的移速
+不死孽物
+恢复一定的血量
+憎恶怒吼
+让周围的目标暂时失去行\n动能力
 --3114
-b_chinese.scp3114strangle = "扼杀"
-b_chinese.scp3114strangle_desc = "扼住目标的敌人咽喉并使\n其窒息"
-b_chinese.scp3114disguise = "伪装者"
-b_chinese.scp3114disguise_desc = "剥下尸体的皮肤并覆盖在\n自己的身上(别人很难看出\n你的伪装!)"
-b_chinese.scp3114angry = "骷髅怒焰"
-b_chinese.scp3114angry_desc = "向前打出一段高伤害的连击"
-b_chinese.scp3114hint1 = "按鼠标右键可以卸下伪装"
+扼杀
+扼住目标的敌人咽喉并使\n其窒息
+伪装者
+剥下尸体的皮肤并覆盖在\n自己的身上(别人很难看出\n你的伪装!)
+骷髅怒焰
+向前打出一段高伤害的\n4连击
+按鼠标右键可以卸下伪装
+--1903
+精神强击
+对目标造成小额伤害并附\n加一层\"舞会假面\"效果
+脆弱心灵
+目标必须有\"舞会假面\"效\n果才能释放此技能\n目标效果层数越高该技能\n造成的伤害也就越多
+兔子面具
+影响一个目标将其转变成\n承载你能力的个体,并在\n45秒后死亡,其死亡后会对\n周围的目标施加5层\"舞会\n假面\"效果
+心灵癫狂
+对范围内的所有敌对目标\n造成伤害\n拥有\"舞会假面\"效果的目\n标会受到更多的伤害\n并对其施加头疼效果
+1903的秘密
+对所有拥有\"舞会假面\"效\n果的目标造成幻觉影响\n透视其位置15秒\n幻觉时间5秒
 --ROLEMENU --FZ翻译
-b_chinese.f2_name = "名字:"
-b_chinese.f2_objectives = "任务:"
-b_chinese.f2_char_stats = "人物统计"
-b_chinese.f2_health = "血量:"
-b_chinese.f2_stamina = "耐力:"
-b_chinese.f2_choose = "在左边的列表中选择一个阵营"
+名字:
+任务:
+人物统计
+血量:
+耐力:
+在左边的列表中选择一个阵营
+--更多阵营选择
+常规模式
+空输模式
+杂项
+事件 5K
+事件
+--f2模式--
+--占位符
+未知阵营
+会在未来上线的阵营
+--5K 伊始
+GRU-CI突袭部队
+混沌分裂者几乎所有的基地在SCP基金会\"揭开帷幕\"后\n受到了来自基金会致命的攻击,绝大多数基地已被完全摧毁\n而幸存下来的混沌分裂者部队受到来自藏在\"空泡\"里的格鲁乌P(后时代)的帮助下\n组建了一支由格鲁乌P和混沌分裂者的成员构成的突袭部队\n他们利用格鲁乌P的[超传]技术四处突击基金会的站点企图找到基金会\"发疯\"的原因...
+STS \"清理者\" 5队
+STS 5队是5支STS小队中最残忍无情的队伍, 他们被O5直接允许使用一些极端危险的异常作为武器\n相较于另外4支小队, 5队的选拔是最为残酷的, 除了最普通的特种部队训练以外,还要进行更多与拥有智能异常搏斗的训练\n以及恐怖的\"忠诚\"测试、[数据删除]等训练\n5队的队员都接受过小幅度身体改造和情感剥除手术, 因此他们是5支队伍中任务完成度最高最完美的小组\n更多信息已被[封锁]....
+GOC奇术打击2组
+GOC奇术打击部队是全球超自然联盟组建的一支使用\"奇术\"进行大范围攻击的部队\n其下分为4支攻击小组——0号行动组和奇术打击1、2、3组,并且每支小组所使用的\n大范围杀伤性\"奇术\"也各不相同\n其中,奇术打击二组所使用的是一种被称为\"达摩克里斯之剑\"(又称\"悬顶之剑\")的精确\n打击奇术\n该奇术需要使用者在打击范围内建立多个发生装置才能使用,因此二组的每一次任务\n都是异常艰巨的
+机动特遣队 Nu-22 \"火箭侠\"
+机动特遣队Nu-22\"火箭侠\"是一只临时组建的快速机动部队,\n他们的任务是快速转移SCP-1440到各个人口密集的城市、难民营等区域,\n以达到快速消灭人口的目的
+机动特遣队 Nu-7 \"落锤\" 肃杀营B连
+落锤肃杀营B连是落锤特种大队中第二大的连队\n该部队整体拥有极高的军事素养,在极端环境下依旧保持出色的作战能力\n无论是丛林、荒漠还是城市区域,该部队都能成功完成作战任务
+--空输模式
+暴乱D级
+这就是由CI组织的一群暴乱D级人员!\n\n设施主管:这已经不是普通的D级人员了,必须出重拳!
+安保镇暴组
+用于镇压设施内的一切暴乱而建立的团队
+落锤特战分队
+一支特战\"小分队\"
+CI空输部队
+千呼万唤始出来的最伟大的CI部队!
+--二战模式
+美国陆军
+一支二战的美利坚合众国陆军
+纳粹德国
+本服务器不认可任何跟纳粹以及法西斯相关的思想和理论
+--f2杂项--
+--彩蛋角色
+彩蛋角色
+服务器里的彩蛋角色,只有满足某些条件下才能出现的特别角色
+--坐牢SCP
+冷板凳SCP
+这些SCP因为某些原因尚未出现在游戏中,V奶龙50助力这些SCP早日出场 :)
 --заебался короче переводил переводчиком похуй
-b_chinese.f2_ntf = "皎洁之狐从内部保护着黑山基地.\n\n他们代表着一个特殊的行动小组,\n\n经常在Xen项目失效的情况下被部署.因此,\n\n他们的大部分行动都可以归类为Xen收容."
-b_chinese.f2_nu7 = "黑山基地特遣队NU-7战锤是一支营级规模的特遣队.\n\n而部署在黑山基地-19的附近的战锤是一支特别为\n\n防御外部入侵和Xen项目失效而组建的特殊部队.\n\n他们的一切行动都只能由议会或指令部下达."
-b_chinese.f2_chaos = "els武装部队是从黑山基地分裂出去的一个组织,\n\n在1924年由一伙携带数个Xen物品叛变的黑山基地人员所建立,\n\n他们一般为了自身利益和巩固全球权力基础而使用所占有的Xen."
-b_chinese.f2_gru = "苏联解体之后,格鲁乌P部门也随之消散.但在新时代的浪潮中,新的国际共运在帷幕\n\n之下悄然进行.曾经的格鲁乌P部门趁着这股赤色浪潮逐渐复苏,旧的格鲁乌P部门\n\n已经成为一个时代的符号,而新的格鲁乌P正成长为一个全球性的共产主义Xen组织.\n\n因而为了新生的格鲁乌P,其组织成员将在全球范围内不惜一切代价获取尽可能多的\n\n资源使格鲁乌P重新强大起来."
-b_chinese.f2_gru_guard = "一支由6人组成的近卫小组,在侵入部队完成任务时接应并掩护他们安全撤离"
-b_chinese.f2_dz = "\'花园是毒蛇栖息之所\'图书爱好者——\"Serpent's hand\"\n\n一个规模较小但难以对付的异常组织,黑山基地对该组织知之甚少,因此对该组织的认识大\n\n部分都来自联合国提供的资料\n\n而该组织对黑山基地和联合国都抱有极大的恶意,尤其是在对付联合国\n\n的成员时\n\n并且图书爱好者提倡与Xen和平相处,且极度厌恶任何毁灭Xen和囚禁Xen的行为,其成员\n\n通常不会采取任何致命的行动,但发现无法和平解决时便会采取极端的武力!"
-b_chinese.f2_uiu = "Xen事件部门是在冷战开始后成立的,\n\n当时美国政府专注于利用Xen并防止它们被亲苏势力使用.\n\n随后成立了联邦调查局的一个特别部门,\n\n以处理对超自然事件和犯罪的快速反应."
-b_chinese.f2_goc = "联合国特种武装是在第二次世界大战后由一个联盟组成的庞大组织.\n\n它由来自轴心国和同盟国的成员组成 - 超自然学者,\n\n通灵者,神职人员和科学家.他们以摧毁Xen生物为荣.\n\n在黑山基地复并保护它们之前,它们被摧毁了许多潜在的Xen."
-b_chinese.f2_sci = "黑山基地人员是在该机构担任文职职位的人,\n\n从科研人员到简单的清洁工,他们大部分都是黑山基地雇用的普通人,\n\n但也有例外.高级科学家在他们的日常工作中中脱颖而出.\n\n这是长期为黑山基地工作的最有经验的工作人员."
-b_chinese.f2_sci_speical = "来自黑山基地各个研究部门的专家,他们在各自的领域拥有卓越的成就,\n\n并且他们拥有各种奇特的特殊技能,而且这些技能在战斗和收容\n\nXen中发挥着重要的作用"
-b_chinese.f2_security = "黑山安保部门SD负责所有黑山基地设施和Xen项目的安全和保护,无论其优先级如何.\n\n安保人员经过培训和训练,是一支不可忽视的力量\n\n可以在Xen收容失效以及在入侵的情况下采取行动."
-b_chinese.f2_mtf = "黑山基地特遣队是小型的,以任务为重点的或特殊情况的军事单位.\n\n这些人员有时会驻扎在某些设施待命\n\n他们的主要任务包括恢复Xen收容和疏散黑山基地人员,尽管还有更多的专门单位."
-b_chinese.f2_osn = "Special Forces - Special formations of the Security Service,consisting of security specialists in the field of interaction with anomalous objects,as well as ordinary employees of other security departments in the event of a N.U.S. at the time of the disaster. The main task of the OSN - countering and guarding ''Xen'' Anomalous Objects."
-b_chinese.f2_qrt = "快速反应部队QRF是黑山基地-19和[数据删除]内的一个实验性安全部队单位.\n\n如果发生收容失效或第三方攻击\n\n站点管理员或站点控制器将向[数据删除] 发送请求.如果请求获得批准,则立即将其中一个快速反应小队派往现场."
-b_chinese.f2_classd = "囚犯人员是专门被派去测试危险异常的人员.囚犯人员通常从罪犯中选拔,\n\n优先考虑那些被判犯有暴力罪行的人,\n\n尤其是那些死囚.如果机构发生灾难性事件,\n\n除非当地安全部门另有决定,否则所有囚犯人员将立即被处决."
-b_chinese.f2_cult = "拾荒者COTSK - 由[数据删除]创立的邪教组织,\n\n崇拜Xen对象Xen-001“拾荒之王”.\n\n该邪教是另一个相关组织“图书爱好者”的分裂组织.\n\n邪教人数不多,但有证据表明他们有一些尚未收容和未探索的Xen物体.此外,\n\n一些邪教成员可能具有Xen能力,\n\n他们从哪里获得这些能力尚不清楚."
-b_chinese.f2_scp = "Xen项目是黑山基地能够捕获、\n\n收容和分类的异常项目.它们对人类构成威胁,\n\n因此,黑山基地一直在世界各地捕获它们,并试图将它们控制在最合适的条件下,\n\n但由于许多有生命的Xen具有攻击性,\n\n它们想要脱离黑山基地的控制."
-b_chinese.f2_minigames = "Roles for all kinds of extra modes."
-b_chinese.f2_skp = "The Special Paranormal Unit is a Third Reich anomaly research organization that in our reality was disbanded after the fall of the Reich itself. In Incident #028-DE/I2,the SKP attempted to infiltrate our reality from R-3378-DE's reality which was only prevented due to a chain of fortunate circumstances.The SKP is considered to be extremely hostile.It is known that they will once again try to infiltrate our reality and then they will be much better prepared.It is assumed that if the invasion is not prevented in the initial stages,it will be possible to stop them impossible."
-b_chinese.f2_uiu_agent = "这个FBI特异事务处的小组是一\n\n个由训练有素的专业特工组成的精英单位.\n\n他们的任务是在不被注意的情况下潜入一个设施,\n\n并在完成任务后不被发现地离开.这些特工拥有独特的能力和技能,\n\n使他们能够在其他特工甚至无法接近的条件下工作.\n\n他们能够快速应对任何超自然事件和犯罪,他们的工作通常会威胁到生命,\n\n因此他们随时准备迎接任何挑战.该小组是Xen异常事件部门中最秘密和最有效的小组之一,\n\n执行需要最大程度的机密性和专业性的任务."
+机动特遣队Epsilon-11九尾狐从内部保护着SCP基金会.\n\n他们代表着一个特殊的行动小组,\n\n经常在收容失效的情况下被部署.因此,\n\n他们的大部分行动都可以归类为SCP收容.
+机动特遣队NU-7落锤是一支营级规模的特遣队.\n\n其中落锤特种大队的肃杀营的A连被秘密部署在Site-19的附近[详细位置未知],\n\n他们主要负责在设施处于极端危险时进行武力支援,帮助设施扫清一切外部威胁\n\n他们的任务通常由在设施内的O4指挥官指派
+混沌分裂者CI是从SCP基金会分裂出去的一个组织,\n\n在1924年由一伙携带数个SCP物品叛变的基金会人员所建立,\n\n他们一般为了自身利益和巩固全球权力基础而使用所占有的异常.
+苏联解体之后,格鲁乌P部门也随之消散.但在新时代的浪潮中,新的国际共运在帷幕\n\n之下悄然进行.曾经的格鲁乌P部门趁着这股赤色浪潮逐渐复苏,旧的格鲁乌P部门\n\n已经成为一个时代的符号,而新的格鲁乌P正成长为一个全球性的共产主义异常组织.\n\n因而为了新生的格鲁乌P,其组织成员将在全球范围内不惜一切代价获取尽可能多的\n\n资源使格鲁乌P重新强大起来.
+一支由6人组成的近卫小组,在侵入部队完成任务时接应并掩护他们安全撤离
+\'花园是毒蛇栖息之所\'蛇之手——\"Serpent's hand\"\n\n一个规模较小但难以对付的异常组织,基金会对该组织知之甚少,因此对该组织的认识大\n\n部分都来自GOC提供的资料\n\n而该组织对基金会和全球超自然联盟都抱有极大的恶意,尤其是在对付全球超自然联盟\n\n的成员时\n\n并且蛇之手提倡与异常和平相处,且极度厌恶任何毁灭异常和囚禁异常的行为,其成员\n\n通常不会采取任何致命的行动,但发现无法和平解决时便会采取极端的武力!
+异常事件部门是在冷战开始后成立的,\n\n当时美国政府专注于利用异常并防止它们被亲苏势力使用.\n\n随后成立了联邦调查局的一个特别部门,\n\n以处理对超自然事件和犯罪的快速反应.
+全球超自然联盟GOC是在第二次世界大战后由一个联盟组成的庞大组织.\n\n它由来自轴心国和同盟国的成员组成 - 超自然学者,\n\n通灵者,神职人员和科学家.他们以摧毁超自然生物为荣.\n\n在基金会恢复并保护它们之前,它们被摧毁了许多潜在的SCP.
+基金会人员是在该机构担任文职职位的人,\n\n从科研人员到简单的清洁工,他们大部分都是基金会雇用的普通人,\n\n但也有例外.高级科学家在他们的日常工作中中脱颖而出.\n\n这是长期为基金会工作的最有经验的工作人员.
+来自基金会各个研究部门的专家,他们在各自的领域拥有卓越的成就,\n\n并且他们拥有各种奇特的特殊技能,而且这些技能在战斗和收容\n\nSCP中发挥着重要的作用
+安保部门SD负责所有基金会设施和SCP项目的安全和保护,无论其优先级如何.\n\n安保人员经过培训和训练,是一支不可忽视的力量\n\n可以在SCP收容失效以及在入侵的情况下采取行动.
+机动特遣队MTF是小型的,以任务为重点的或特殊情况的军事单位.\n\n这些人员有时会驻扎在某些设施待命\n\n他们的主要任务包括恢复SCP收容和疏散基金会人员,尽管还有更多的专门单位.
+Special Forces - Special formations of the Security Service,consisting of security specialists in the field of interaction with anomalous objects,as well as ordinary employees of other security departments in the event of a N.U.S. at the time of the disaster. The main task of the OSN - countering and guarding ''SCP'' Anomalous Objects.
+快速反应部队QRF是Site-19和[数据删除]内的一个实验性安全部队单位.\n\n如果发生收容失效或第三方攻击\n\n站点管理员或站点控制器将向[数据删除] 发送请求.如果请求获得批准,则立即将其中一个快速反应小队派往现场.
+D级人员是专门被派去测试危险异常的人员.D级人员通常从囚犯中选拔,\n\n优先考虑那些被判犯有暴力罪行的人,\n\n尤其是那些死囚.如果机构发生灾难性事件,\n\n除非当地安全部门另有决定,否则所有D级人员将立即被处决.
+猩红之子COTSK - 由[数据删除]创立的邪教组织,\n\n崇拜异常对象SCP-001“猩红之王”.\n\n该邪教是另一个相关组织“蛇之手”的分裂组织.\n\n邪教人数不多,但有证据表明他们有一些尚未收容和未探索的异常物体.此外,\n\n一些邪教成员可能具有异常能力,\n\n他们从哪里获得这些能力尚不清楚.
+SCP项目是基金会能够捕获、\n\n收容和分类的异常.它们对人类构成威胁,\n\n因此,基金会一直在世界各地捕获它们,并试图将它们控制在最合适的条件下,\n\n但由于许多有生命的SCP具有攻击性,\n\n它们想要脱离基金会的控制.
+Roles for all kinds of extra modes.
+The Special Paranormal Unit is a Third Reich anomaly research organization that in our reality was disbanded after the fall of the Reich itself. In Incident #028-DE/I2,the SKP attempted to infiltrate our reality from R-3378-DE's reality which was only prevented due to a chain of fortunate circumstances.The SKP is considered to be extremely hostile.It is known that they will once again try to infiltrate our reality and then they will be much better prepared.It is assumed that if the invasion is not prevented in the initial stages,it will be possible to stop them impossible.
+这个特异事务处的小组是一\n\n个由训练有素的专业特工组成的精英单位.\n\n他们的任务是在不被注意的情况下潜入一个设施,\n\n并在完成任务后不被发现地离开.这些特工拥有独特的能力和技能,\n\n使他们能够在其他特工甚至无法接近的条件下工作.\n\n他们能够快速应对任何超自然事件和犯罪,他们的工作通常会威胁到生命,\n\n因此他们随时准备迎接任何挑战.该小组是异常事件部门中最秘密和最有效的小组之一,\n\n执行需要最大程度的机密性和专业性的任务.
+--专家组
+MTF专家组( 全称:\"机动特遣队 专家组\" ), 简称:\"MEG\"\n 驻扎在设施内来自其他MTF的专家(教官)\n他们训练设施内的MTF队员如何应对不同SCP和\n敌对人员\n有时他们会选拔一些具有潜力的MTF队员吸收进他们的MTF队伍中
+--随机事件
+--特殊角色
+某些事件发生时会出现的特殊角色
+--UIU收容小组
+属于[联邦基金会]事件下的支援阵营\nUIU收容小组是由基金会帮助美国政府训练的一支针对收容SCP的军事力量\n并且这支小组使用了部分由基金会提供的装备和科技能够更好的收容SCP
+--随机事件文本信息
+事件: 
+类型: 
+事件介绍:
+--事件类型
+大事件/世界观
+世界观
+常规
+战争
+隐匿
+--大事件
+--梦服
+收容失效之梦
+这是最美妙的梦,这也是最恐怖的梦
+--5K
+SCP-5000 \"为什么?\"
+保护常态, 遏制异常, 这是吾辈必行之路
+--常规事件
+--无阶段
+无事发生
+没有任何事件在此发生
+--开场事件
+--一阶段
+严阵以待
+本回合没有CI间谍,所有安保人员获\n得子弹,安保门禁时间延迟15秒\nD级中出现一名CI特工帮助D级
+现实不稳定
+当前场上所有SCP获得一个永久的\n2级\"异常生命恢复\"效果\n在修复所有发电机后恢复效果消失
+摆烂的内部审查
+内部安全代理无法查出UIU间谍,某个\n阵营将增加一个间谍\n(不包含GOC特工和蛇之手间谍)
+重型现实稳定锚
+修好所有电机后,任何人可在中控室\n维修稳定锚\n让处于办公区的SCP无限期获得一个3级\"脆弱\"\n效果
+动员兵政策
+本回合QRT可以刷新3波,任何设施高\n级职业均可召唤QRT,但QRT只有士兵、指挥官\n和盾兵
+联邦基金会
+UIU和基金会联合,UIU间谍转换成\"UIU\n联络专员\"可以在设施处于危险时呼叫UIU部队
+健康行动
+近几个月site19科研部门开展健身行\n动,所有科研人员的体质都得到了强化
+MTF特种训练
+设施内的MTF经过了落锤特种部队\n的训练,体质有了明显的强化\n(不包括设施主管)
+人员扫描设备
+中控室放置了一台\"人员扫描设备\"\n修好所有发电机之后可以使用其扫描设施内\n的人员,所有基金会武装单位可以看到目标人\n员的位置
+--二阶段
+强大的联合
+GOC和GRU成友好关系,GOC和CI以及D\n级同GRU一样为中立友好关系,GOC可以同GRU一\n起撤离\nGOC特工需要去帮助GRU守护中控室,本回合无\n法开启核弹
+故障传送门
+蛇之手的传送门因为未知事故随机\n出现在了设施内. 他们是怎么做到的?
+错误的坐标
+格鲁乌P的超传装置传送了部分装\n备到设施内. 他们是怎么知道我们的设施位置\n的?
+第四个SCP
+侦测到设施内某个收容间出现了未\n知能量波动\n那是...一个SCP!
+过早抵达
+某支武装势力将在50秒后抵达,正常\n第二波支援延后55秒
+脆弱的防线
+基金会的外部防线不堪一击, CI的大\n部队很快就会抵达设施
+盟友的请求
+格鲁乌P(后时代)接受了混沌分裂者\n的请求派出了一支小队回收D级人员,格鲁乌P\n成员可以从APC撤离
+--三阶段
+劣质核弹头
+核弹有极低概率不会爆炸
+直升机坠毁
+九尾狐的救援直升机在路上被未知\n力量摧毁了
+APC损坏
+CI装甲车转去接应的路上发动机损\n坏\n本回合没有CI装甲车接应
+健忘的O5
+某位O5似乎把一张O5权限卡落在O5\n办公室的某一处
+救援火车
+落锤的火车赶来救援并同时刷新五\n名落锤特种队员
+传送门失踪
+蛇之手的撤离传送门出现故障消失
+公路片
+现在可以靠自己的双腿穿过隧道逃\n出设施!
 --快速聊天
-b_chinese.quickchat_request_id = "出示ID卡"
-b_chinese.quickchat_take_off_suit = "脱掉衣服"
-b_chinese.quickchat_put_weapon_away = "把武器收起来"
-b_chinese.quickchat_drop_the_weapon = "丢掉武器"
-b_chinese.quickchat_friendly = "友军"
-b_chinese.quickchat_run = "跑"
-b_chinese.quickchat_enemy_spotted = "敌人"
-b_chinese.quickchat_scp_spotted = "Xen"
-b_chinese.quickchat_stop = "停下"
-b_chinese.quickchat_face_the_wall = "面向墙壁"
-b_chinese.quickchat_dont_follow_me = "别跟着我"
-b_chinese.quickchat_dont_approach = "别靠近我"
-b_chinese.quickchat_crouch = "蹲下"
-b_chinese.quickchat_jumping = "跳一下"
-b_chinese.quickchat_dontaimme = "别瞄准我"
+出示ID卡
+脱掉衣服
+把武器收起来
+丢掉武器
+友军
+跑
+敌人
+SCP
+停下
+面向墙壁
+别跟着我
+别靠近我
+蹲下
+跳一下
+别瞄准我
+--屏幕信息提示
+硬着心
 --其他
--- b_chinese.gru_hud_task = "任务目标:"
--- b_chinese.gru_hud_task_evacuation = "协助els武装部队扰乱设施"
--- b_chinese.gru_hud_task_militaryhelp = "帮助黑山基地遏制Xen收容失效"
--- b_chinese.gru_hud_task_destroy = "消灭所有你看的目标"
-b_chinese.gru_hud_task_none = "none"
-b_chinese.spectators = "观察者"
-b_chinese.players = "玩家"
-b_chinese.alive = "生存"
-b_chinese.f2_only_for_specs = "你只能在观察者模式下打开角色菜单."
-b_chinese.machinegun_ammo = "大口径"
-b_chinese.teeth_ammo = "牙齿"
-b_chinese.rubber_ammo = "橡胶弹"
-b_chinese.ntf_ammo = "特质弹药"
-b_chinese.gru_ammo = "俄式大口径"
-b_chinese.smg_ammo = "冲锋枪"
-b_chinese.pistol_ammo = "手枪"
-b_chinese.revolver_ammo = "左轮手枪"
-b_chinese.goc_ammo = "能量"
-b_chinese.shotgun_ammo = "霰弹枪"
-b_chinese.sniper_ammo = "狙击枪"
-b_chinese.body_cant_determine_death_time = "无法确定死亡时间"
-b_chinese.body_died_right_now = "最近死亡"
+-- chinese.gru_hud_task = "任务目标:"
+-- chinese.gru_hud_task_evacuation = "协助CI扰乱设施"
+-- chinese.gru_hud_task_militaryhelp = "帮助基金会遏制收容失效"
+-- chinese.gru_hud_task_destroy = "消灭所有你看的目标"
+none
+观察者
+玩家
+生存
+你只能在观察者模式下打开角色菜单.
+大口径
+牙齿
+橡胶弹
+特制
+强化特制
+俄式大口径
+冲锋枪
+手枪
+左轮手枪
+能量
+超高能
+霰弹枪
+狙击枪
+无法确定死亡时间
+最近死亡
 --в английском можно везде запихнуть minutes ago
-b_chinese.body_minutes_ago = "几分钟前"
-b_chinese.body_1minute_ago = "几分钟前"
-b_chinese.body_2to4minutes_ago = "几分钟前"
-b_chinese.body_death_happened = "死亡发生时间大约为"
-b_chinese.body_death_unknown = "死亡原因不明"
-b_chinese.body_search = "搜索"
-b_chinese.body_headshot = "致命的爆头"
-b_chinese.body_disconnected = "尸体没有明显的断肢"
-b_chinese.body_gas = "死于致命气体"
-b_chinese.body_acid = "尸体有明显化学烧伤"
-b_chinese.body_exploded = "尸体被烧伤"
-b_chinese.body_fall = "尸体腿部多处骨折"
-b_chinese.body_crushed = "尸体粉碎性骨折"
-b_chinese.body_burned = "尸体被烧毁"
-b_chinese.body_slashed = "尸体有被锋利利器刺伤"
-b_chinese.body_low_caliber = "尸体有小口径枪伤"
-b_chinese.body_high_caliber = "尸体有大口径枪伤"
-b_chinese.body_shotgun = "尸体有铅弹枪伤"
-b_chinese.body_goc = "尸体有电磁枪伤"
-b_chinese.body_bullets = "尸体上有明显枪伤"
-b_chinese.cutscene_subject = "项目:"
-b_chinese.cutscene_subject_name = "项目名称:"
-b_chinese.cutscene_name = "名字:"
-b_chinese.cutscene_objective = "任务:"
-b_chinese.cutscene_disaster_relief = "无效化Xen收容失效"
-b_chinese.cutscene_contain_scp = "撤离黑山基地人员并遏制Xen项目失效" --九尾狐任务介绍
-b_chinese.cutscene_mtf_nu7 = "消灭任何敌对势力并遏制Xen项目失效" --落锤任务介绍
-b_chinese.cutscene_uiu_agent = "潜入设施,骇入电脑窃取资料"
-b_chinese.cutscene_follow_task = "夺取资料,篡改权限"
-b_chinese.cutscene_gru_guard_task = "掩护侵入部队安全撤离"
-b_chinese.cutscene_scp_rescue = "拯救Xen"
-b_chinese.chaos_team_task = "营救囚犯人员"
-b_chinese.cutscene_namaz = "执行仪式,帮助我们的王斩断最后一根锁链!"
-b_chinese.cutscene_time_after_disaster = "距离Xen项目失效发生的时间:"
-b_chinese.cutscene_status = "状态:"
-b_chinese.cutscene_last_report_time = "上一次汇报的时间:"
-b_chinese.cutscene_time_after_disaster_for_last_report_time = "距离Xen项目失效发生的时间:"
-b_chinese.cutscene_kia = "死亡"
-b_chinese.cutscene_location_site19 = "地点:黑山基地-19"
-b_chinese.cutscene_evac_by_ci = "在els武装部队的帮助下撤离"
-b_chinese.cutscene_evac_by_heli = "通过直升机撤离"
-b_chinese.cutscene_undercover_agent = "卧底特工"
-b_chinese.hud_nick = "昵称:"
-b_chinese.hud_charname = "角色名字:"
-b_chinese.hud_health = "血量"
-b_chinese.hud_health_capital = "血量"
-b_chinese.hud_max_level = "最高等级"
-b_chinese.hud_killfeed_killed = "杀害"
-b_chinese.hud_killfeed_died = "死亡"
-b_chinese.startintro_round_will_begin = "新一轮回合将于"
-b_chinese.startintro_no_round = "新一轮还没有开始"
-b_chinese.startintro_welcome_pt1 = "\n黑山基地-19\n 欢迎你,"
-b_chinese.startintro_welcome_pt2 = "\n 祝你好运!"
-b_chinese.roundend_totaldeaths = "总死亡人数:"
-b_chinese.roundend_escaped = "逃脱:"
-b_chinese.roundend_gameover = "游戏结束"
-b_chinese.roundend_roundcomplete = "回合结束"
-b_chinese.roundend_roundresult = "回合结果"
-b_chinese.roundend_roundstillrestart = "离重启的回合数"
-b_chinese.roundend_nextroundin = "下一回合将在"
-b_chinese.roundend_restartinground = "开始新的回合..."
-b_chinese.roundend_restartingserverin = "重新启动服务器"
-b_chinese.roundend_restartingserver = "重启服务器..."
-b_chinese.roundend_scarletking = "拾荒之王降临:这个维度完蛋了!"
-b_chinese.roundend_nopeoplealive = "没有人幸存"
-b_chinese.roundend_alphawarhead = "阿尔法核弹头爆炸"
-b_chinese.roundend_gru_warhead = "阿尔法核弹头被未知权限引爆"
-b_chinese.roundend_foundation_win = "黑山基地重新控制了设施"
-b_chinese.roundend_cbended = "Xen项目失效已结束"
-b_chinese.roundend_kongshu = "核弹阻止了囚犯暴乱"
-b_chinese.kongshu_vdv_win = "els空输的恩情还不完┗( T__T )┛"
-b_chinese.kongshu_nu7_wind = "战锤特战分队: 忠!诚!('-'*ゞ"
-b_chinese.take_off_hover = "按 \"左键\" 摘下"
-b_chinese.heavy_helmet = "重型头盔"
-b_chinese.heavy_armor = "重型防弹衣"
-b_chinese.light_helmet = "轻型头盔"
-b_chinese.light_armor = "轻型防弹衣"
-b_chinese.small_bag = "口袋"
-b_chinese.big_bag = "背包"
-b_chinese.no_admins = "目前没有管理员在线"
-b_chinese.nt_min = "分钟"
-b_chinese.nt_d = "天"
-b_chinese.nt_y = "年"
-b_chinese.nt_m = "月"
-b_chinese.nt_s = "秒"
-b_chinese.nt_h = "小时"
-b_chinese.nt_w = "周"
-b_chinese.nt_mins = "分钟"
-b_chinese.nt_ds = "天"
-b_chinese.nt_ys = "年"
-b_chinese.nt_ms = "月"
-b_chinese.nt_ss = "秒"
-b_chinese.nt_hs = "小时"
-b_chinese.nt_ws = "周"
-b_chinese.donateadmin_protectionactivated = "你有大规模封禁的嫌疑,你的管理权限已经剥夺,请通过QQ联系高级管理员"
-b_chinese.desc_premium = "给予您作为支援复活时,更换角色的功能(除去特定重要角色);\n服务器预留位;服务器内的特殊标签;双倍经验;\n访问游戏聊天中的自定义功能;囚犯人员的特殊模型;\n复活成为Xen时,更换Xen的功能;更换昵称颜色(观察者模式);\n拥有VIP时,设置中将会有VIP设置一栏"
-b_chinese.desc_newbiekit = "包含:1个月的 VIP 资格以及15级游戏等级"
-b_chinese.desc_activewarn = "移除一次警告(您可以通过输入!warn查看您的警告个数)"
-b_chinese.desc_penalty = "移除一次惩罚(您可以通过输入!checkpenalty查看您的惩罚个数)"
-b_chinese.desc_unmute = "解除游戏内禁言封禁\n(您可以通过输入!getmuteinfo+您的64位ID查询您的封禁时长)"
-b_chinese.desc_ungag = "解除游戏内禁音封禁\n(您可以通过输入!getgaginfo+您的64位ID查询您的封禁时长)"
-b_chinese.desc_unban = "解封"
-b_chinese.desc_prefix = "给予您在设置中设置昵称前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回"
-b_chinese.desc_prefix_rainbow = "给予您在设置中设置昵称彩虹前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回"
-b_chinese.desc_admin = ""
-b_chinese.donationtitle_prem = "VIP状态"
-b_chinese.donate_days = "天"
-b_chinese.donate_other = "其它"
-b_chinese.donate_awarn = "移除一次警告"
-b_chinese.donate_penalty = "移除一次惩罚"
-b_chinese.donate_newbiekit = "新手礼包"
-b_chinese.donate_level = "等级"
-b_chinese.donate_prefix = "前缀"
-b_chinese.donate_gradientprefix = "彩虹前缀"
-b_chinese.donate_vcb = "禁音"
-b_chinese.donate_cb = "禁言"
-b_chinese.donate_gb = "游戏封禁"
-b_chinese.donate_ltaw = "少于一周"
-b_chinese.donate_mtaw = "多于一周"
-b_chinese.donate_perma = "永久封禁"
-b_chinese.donate_price = "价格:"
-b_chinese.donate_admin = "管理"
-b_chinese.donate_paymenttype = "我们接受微信支付和支付宝进行付款,\n你可以通过联系QQ群内管理关于付款事宜,\n我们的交流群群号为:751285822.\n如果你是海外可点击此地方打开网站进行购买."
-b_chinese.qqsex = "交流群:"
-b_chinese.donate_howmanylevels = "您想购买多少等级?"
-b_chinese.donate_willcostyou = "级将会花费你:"
-b_chinese.donate_dragme = ">>拖我!<<"
-b_chinese.shlogs_charname = "角色名称"
-b_chinese.shlogs_role = "身份"
-b_chinese.shlogs_team = "阵营"
-b_chinese.shlogs_setfilter = "设置过滤器"
-b_chinese.shlogs_allrounds = "所有回合"
-b_chinese.shlogs_round = "回合"
-b_chinese.shlogs_checksnapshot = "查看快照"
-b_chinese.shlogs_closesnapshot = "关闭快照"
-b_chinese.shlogs_close = "关闭"
-b_chinese.shlogs_dead = "死亡"
-b_chinese.shlogs_profile = "资料"
-b_chinese.shlogs_details = "详细信息"
-b_chinese.shlogs_chat = "聊天记录"
-b_chinese.shlogs_chat_log1 = "玩家 sender 说 message" -- DO NOT TRANSLATE sender,message
-b_chinese.shlogs_death = "死亡"
-b_chinese.shlogs_death_log1 = "玩家 victim 被门夹死" -- DO NOT TRANSLATE victim
-b_chinese.shlogs_death_log2 = "玩家 victim 被 killer 击杀" -- DO NOT TRANSLATE victim,killer
-b_chinese.shlogs_deathelev = "死于电梯"
-b_chinese.shlogs_deathelev_log1 = "玩家 user 被 killer 使用电梯击杀" -- DO NOT TRANSLATE user,victim
-b_chinese.shlogs_icedev = "死于Xen(409/009)"
-b_chinese.shlogs_icedev_log1 = "玩家 user 被 killer 使用xen-409击杀" -- DO NOT TRANSLATE user,killer
-b_chinese.shlogs_icedev_log2 = "玩家 user 受到409雕塑的影响,间接被 killer 击杀" -- DO NOT TRANSLATE user,killer
-b_chinese.shlogs_icedev_log3 = "玩家 user 被 killer 使用xen-009击杀" -- DO NOT TRANSLATE user,killer
-b_chinese.shlogs_disconnection = "断开连接"
-b_chinese.shlogs_disconnection_log1 = "玩家 user 断开连接." -- DO NOT TRANSLATE user
-b_chinese.shlogs_drop = "丢弃武器"
-b_chinese.shlogs_drop_log1 = "玩家 user 丢下了他的武器" -- DO NOT TRANSLATE user,weapon
-b_chinese.shlogs_pickup = "拾起武器"
-b_chinese.shlogs_pickup_log1 = "玩家 user 捡起了武器" -- DO NOT TRANSLATE user,weapon
-b_chinese.shlogs_spawn = "复活"
-b_chinese.shlogs_spawn_log1 = "玩家 user 被 reviver 复活了" -- DO NOT TRANSLATE user,reviver
-b_chinese.shlogs_spawn_log2 = "玩家 user 复活成为了一名支援" -- DO NOT TRANSLATE user
-b_chinese.shlogs_spawn_log3 = "玩家 user 被管理员复活了" -- DO NOT TRANSLATE user
-b_chinese.shlogs_spawn_log4 = "玩家 user 在回合开始时复活了" -- DO NOT TRANSLATE user
-b_chinese.supp_pick_cant = "由于你正在中扮演着该阵营中最重要的角色,所以你无法更换职业"
-b_chinese.supp_canpick = "由于你是VIP,你现在可以更改你的角色职业了"
-b_chinese.supp_pickcancel = "要取消选择,请按 \"BACKSPACE\""
-b_chinese.roleswap = "角色选择"
-b_chinese.inv_throw_away = "丢弃"
-b_chinese.load_tazer = "加载电击器"
-b_chinese.load_tazer_desc = "您无法使用电击器,因为电量已耗尽."
-b_chinese.select_faction_ntfcmd = "从列表中选择要扫描的阵营.点击BACKSPACE关闭窗口."
-b_chinese.ntfcmd_factionlist = "阵营列表"
-b_chinese.ntfcmd_unknowns = "未知人员"
+几分钟前
+几分钟前
+几分钟前
+死亡发生时间大约为
+死亡原因不明
+搜索
+致命的爆头
+尸体没有明显的断肢
+死于致命气体
+尸体有明显化学烧伤
+尸体被烧伤
+尸体腿部多处骨折
+尸体粉碎性骨折
+尸体被烧毁
+尸体有被锋利利器刺伤
+尸体有小口径枪伤
+尸体有大口径枪伤
+尸体有铅弹枪伤
+尸体有电磁枪伤
+尸体上有明显枪伤
+死于不可逆转的精神伤害
+项目:
+项目名称:
+名字:
+任务:
+无效化收容失效
+撤离基金会人并遏制SCP收容失效
+消灭任何敌对势力并遏制SCP收容失效
+保卫火车营救设施内残余基金会人员
+听从上级指示,完成你的任务
+潜入设施,骇入电脑窃取资料
+进入设施,骇入电脑窃取资料
+进入设施,帮助基金会遏制收容失效
+夺取资料,篡改权限
+进入设施回收D级人员
+掩护侵入部队安全撤离
+拯救SCP
+营救D级人员,阻止基金会的疏散
+脆弱的防线已被我们撕碎,现在让这里变得更加混乱!
+执行仪式,帮助我们的王斩断最后一根锁链!
+距离收容失效发生的时间:
+状态:
+上一次汇报的时间:
+距离收容失效发生的时间:
+死亡
+地点:SITE-19
+在混沌分裂者的帮助下撤离
+通过直升机撤离
+卧底特工
+昵称:
+角色名字:
+血量
+血量
+最高等级
+杀害
+死亡
+新一轮回合将于
+新一轮还没有开始
+\nSite-19\n 欢迎你,
+\n 祝你好运!
+总死亡人数:
+逃脱:
+游戏结束
+回合结束
+回合结果
+离重启的回合数
+下一回合将在
+开始新的回合...
+重新启动服务器
+重启服务器...
+猩红之王降临:这个维度完蛋了!
+没有人幸存
+阿尔法核弹头爆炸
+阿尔法核弹头未爆炸
+阿尔法核弹头被未知权限引爆
+基金会重新控制了设施
+收容失效已结束
+核弹阻止了D级暴乱
+CI空输的恩情还不完┗( T__T )┛
+落锤特战分队: 忠!诚!('-'*ゞ
+纳粹德国获胜
+美国陆军获胜
+--下面这是？
+按 \"左键\" 摘下
+重型头盔
+重型防弹衣
+轻型头盔
+轻型防弹衣
+口袋
+背包
+目前没有管理员在线
+分钟
+天
+年
+月
+秒
+小时
+周
+分钟
+天
+年
+月
+秒
+小时
+周
+你有大规模封禁的嫌疑,你的管理权限已经剥夺,请通过QQ联系高级管理员
+给予您作为支援复活时,更换角色的功能(除去特定重要角色);\n服务器预留位;服务器内的特殊标签;双倍经验;\n访问游戏聊天中的自定义功能;D级人员的特殊模型;\n复活成为SCP时,更换SCP的功能;更换昵称颜色(观察者模式);\n拥有VIP时,设置中将会有VIP设置一栏
+包含:1个月的 VIP 资格以及15级游戏等级
+移除一次警告(您可以通过输入!warn查看您的警告个数)
+移除一次惩罚(您可以通过输入!checkpenalty查看您的惩罚个数)
+解除游戏内禁言封禁\n(您可以通过输入!getmuteinfo+您的64位ID查询您的封禁时长)
+解除游戏内禁音封禁\n(您可以通过输入!getgaginfo+您的64位ID查询您的封禁时长)
+解封
+给予您在设置中设置昵称前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+给予您在设置中设置昵称彩虹前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+
+VIP状态
+天
+其它
+移除一次警告
+移除一次惩罚
+新手礼包
+等级
+前缀
+彩虹前缀
+禁音
+禁言
+游戏封禁
+少于一周
+多于一周
+永久封禁
+价格:
+管理
+我们接受微信支付和支付宝进行付款,\n你可以通过联系QQ群内管理关于付款事宜,\n我们的交流群群号为:751285822.\n如果你是海外可点击此地方打开网站进行购买.
+交流群:
+您想购买多少等级?
+级将会花费你:
+>>拖我!<<
+角色名称
+身份
+阵营
+设置过滤器
+所有回合
+回合
+查看快照
+关闭快照
+关闭
+死亡
+资料
+详细信息
+聊天记录
+玩家 sender 说 message
+死亡
+玩家 victim 被门夹死
+玩家 victim 被 killer 击杀
+死于电梯
+玩家 user 被 killer 使用电梯击杀
+死于SCP(409/009)
+玩家 user 被 killer 使用409击杀
+玩家 user 受到409雕塑的影响,间接被 killer 击杀
+玩家 user 被 killer 使用009击杀
+死于\'尖啸\'
+玩家 user 被 killer 使用\'尖啸\'击杀
+断开连接
+玩家 user 断开连接.
+丢弃武器
+玩家 user 丢下了他的武器
+拾起武器
+玩家 user 捡起了武器
+复活
+玩家 user 被 reviver 复活了
+玩家 user 复活成为了一名支援
+玩家 user 被管理员复活了
+玩家 user 在回合开始时复活了
+由于你正在中扮演着该阵营中最重要的角色,所以你无法更换职业
+由于你是VIP,你现在可以更改你的角色职业了
+要取消选择,请按 \"BACKSPACE\"
+角色选择
+丢弃
+加载电击器
+您无法使用电击器,因为电量已耗尽.
+从列表中选择要扫描的阵营.点击BACKSPACE关闭窗口.
+阵营列表
+未知人员
 --成就
-b_chinese.achievement = "你获得了成就:"
-b_chinese.achievement1 = "并获得了 "
-b_chinese.achievement2 = " 点经验,"
-b_chinese.achievement3 = " 等级和 "
-b_chinese.achievement4 = " 点数!"
+你获得了成就:
+并获得了
+点经验、
+等级和
+点数!
 --体力
-b_chinese.stamina = "我需要喘口气"
+我需要喘口气
 --选角色
-b_chinese.role_menu = "当前:"
-b_chinese.role_menu_1 = "所需等级:"
-b_chinese.role_menu_2 = "已被选择"
-b_chinese.role_menu_3 = "选择 Xen"
-b_chinese.role_menu_4 = "任务选择"
-b_chinese.role_menu_5 = "您的角色将在场景结束后改变."
-b_chinese.role_menu_6 = "该角色已被其他玩家占用,请选择其他角色"
-b_chinese.role_menu_7 = "您的角色已改变."
-b_chinese.role_menu_8 = "阵营列表"
+当前:
+所需等级:
+已被选择
+选择 SCP
+任务选择
+您的角色将在场景结束后改变.
+该角色已被其他玩家占用,请选择其他角色
+您的角色已改变.
+阵营列表
 --惩罚D
-b_chinese.desc_penalty_ts = "您只能穿戴化学防护服"
-b_chinese.desc_penalty_cx = "所需逃脱次数:"
-b_chinese.desc_penalty_cx_1 = "您没有处罚角色状态."
-b_chinese.desc_penalty_cx_2 = "剩余惩罚数量:"
-b_chinese.desc_penalty_cx_3 = "惩罚已移除"
-b_chinese.desc_penalty_cx_4 = "您已被授予状态"
-b_chinese.desc_penalty_cx_5 = "非惩罚者"
-b_chinese.desc_penalty_cx_6 = ",不要再违规了哦."
-b_chinese.desc_penalty_cx_7 = "您已达到警告限额,并被授予状态"
+您只能穿戴化学防护服
+所需逃脱次数:
+您没有处罚角色状态.
+剩余惩罚数量:
+惩罚已移除
+您已被授予状态
+非惩罚者
+,不要再违规了哦.
+您已达到警告限额,并被授予状态
 --其他
-b_chinese.start_for_players_pt = " 名玩家准备就绪"
-b_chinese.start_for_players_pt_1 = "当前回合时间:"
-b_chinese.start_for_players_pt_2 = "回合将在 "
-b_chinese.start_for_players_pt_3 = " 后开始"
-b_chinese.achievement_finish = "新成就已解锁:"
-b_chinese.desc_djj = "对讲机面板"
-b_chinese.desc_intercom = "请发送设施广播...\n只能传输文字"
-b_chinese.desc_intercom_1 = "冷却中:"
-b_chinese.desc_intercom_2 = "按E键开始设施广播"
-b_chinese.desc_914 = "当前的状态:"
-b_chinese.desc_914_1 = "Xen-914 控制板"
-b_chinese.desc_914_2 = "超粗"
-b_chinese.desc_914_3 = "粗"
-b_chinese.desc_914_4 = "精"
-b_chinese.desc_914_5 = "超精"
-b_chinese.desc_914_6 = "更改加工状态"
-b_chinese.desc_914_7 = "开始加工"
-b_chinese.desc_vip = "启用"
-b_chinese.desc_vip_1 = "彩虹色"
-b_chinese.desc_vip_2 = "应用"
-b_chinese.desc_vip_3 = "取消"
-b_chinese.desc_vip_4 = "编辑"
-b_chinese.desc_lock = "已锁定"
-b_chinese.desc_livetab = "黑山设施面板"
-b_chinese.desc_livetab_1 = "黑山基地 OS v 1.0"
-b_chinese.desc_livetab_2 = "研究员单位:"
-b_chinese.desc_livetab_3 = "黑山基地武装单位:"
-b_chinese.desc_livetab_4 = "囚犯人员:"
-b_chinese.desc_livetab_5 = "未知单位:"
-b_chinese.desc_livetab_6 = "紧急信息"
-b_chinese.desc_livetab_7 = "当前区域总人数:"
-b_chinese.desc_livetab_8 = "科研人员总数:"
-b_chinese.desc_livetab_9 = "黑山基地"
-b_chinese.desc_livetab_10 = "欢迎来到黑山基地!"
-b_chinese.desc_livetab_11 = "祝你有一个非常安全和富有成就的一天!"
-b_chinese.desc_livetab_12 = ">> 清收容消毒程序将在 "
-b_chinese.desc_livetab_13 = ">> 立即离开当前区域!"
-b_chinese.desc_livetab_14 = "Alpha弹头紧急引爆程序"
-b_chinese.desc_generator = "离线"
-b_chinese.desc_generator_1 = "激活"
-b_chinese.desc_obr = "快反小队 准备就绪!"
-b_chinese.desc_radio_on = "打开"
-b_chinese.desc_radio_off = "关闭"
-b_chinese.desc_radio = "频道:"
-b_chinese.desc_ci_scan = "轻收容囚犯人员数量:"
-b_chinese.desc_ci_scan_1 = "重收容囚犯人员数量:"
-b_chinese.desc_ci_scan_2 = "办公区囚犯人员数量:"
-b_chinese.desc_ci_scan_3 = "设施地表囚犯人员数量:"
-b_chinese.gru_hacking_time = "骇入时间:"
+ 名玩家准备就绪
+当前回合时间:
+回合将在 
+ 后开始
+新成就已解锁:
+对讲机面板
+请发送设施广播...\n只能传输文字
+冷却中:
+按E键开始设施广播
+当前的状态:
+SCP-914 控制板
+超粗
+粗
+精
+超精
+更改加工状态
+开始加工
+启用
+彩虹色
+应用
+取消
+编辑
+已锁定
+设施面板
+基金会 OS v 1.0
+研究员单位:
+基金会武装单位:
+D级人员:
+未知单位:
+紧急信息
+当前区域总人数:
+科研人员总数:
+SCP基金会
+欢迎来到SCP基金会!
+祝你有一个非常安全和富有成就的一天!
+>> 清收容消毒程序将在 
+>> 立即离开当前区域!
+Alpha弹头紧急引爆程序
+离线
+激活
+快反小队 准备就绪!
+打开
+关闭
+频道:
+轻收容D级人员数量:
+重收容D级人员数量:
+办公区D级人员数量:
+设施地表D级人员数量:
+骇入时间:
 --O4壁纸名字
-b_chinese.wallpaper_apply = "应用背景"
-b_chinese.wallpaperup = "上一页"
-b_chinese.wallpaperdown = "下一页"
-b_chinese.normal_wallpaper_name = "壁纸"
-b_chinese.scpclassic = "经典背景"
-b_chinese.mioself = "mio本人照"
-b_chinese.bc1pic = "白菜的照片1"
-b_chinese.supersex_1471 = "超绝1471色图!"
+应用背景
+上一页
+下一页
+壁纸
+经典背景
+mio本人照
+白菜的照片1
+超绝1471色图!
 --NU7
-b_chinese.desc_o4_MTF = "NU-7 战锤"
-b_chinese.desc_o4_MTF_1 = "Beta-7 疯帽商"
-b_chinese.desc_o4_status = "禁用"
-b_chinese.desc_o4_status_1 = "准备好"
-b_chinese.desc_o4_status_2 = "已发送"
-b_chinese.desc_o4_control = "O4指挥室门"
-b_chinese.desc_o4_control_1 = "电磁炮检查点"
-b_chinese.desc_o4_control_2 = "通用检查点"
-b_chinese.desc_o4_control_3 = "Xen682检查点"
-b_chinese.desc_o4_control_4 = "单向检查点"
-b_chinese.desc_o4_control_5 = "单向门"
-b_chinese.desc_o4_call = "紧急呼叫"
-b_chinese.desc_o4_call_2 = "黑山特遣队 名称:"
-b_chinese.desc_o4_call_3 = "黑山特遣队 状态:"
-b_chinese.desc_o4_call_4 = "呼叫 黑山特遣队"
-b_chinese.desc_o4_call_5 = "警告"
-b_chinese.desc_o4_call_6 = "条件未满足或该 黑山特遣队 已被派遣"
-b_chinese.desc_o4_call_7 = "已派遣 "
-b_chinese.desc_o4_door = "门控"
-b_chinese.desc_o4_door_1 = "电量剩余:"
-b_chinese.desc_o4_door_2 = "开门"
-b_chinese.desc_o4_door_3 = "锁门"
-b_chinese.desc_o4_wallpaper = "壁纸"
+NU-7 落锤
+Beta-7 疯帽商
+禁用
+准备好
+已发送
+O4指挥室门
+电磁炮检查点
+通用检查点
+SCP682检查点
+单向检查点
+单向门
+紧急呼叫
+MTF 名称:
+MTF 状态:
+呼叫 MTF
+警告
+条件未满足或该 MTF 已被派遣
+已派遣 
+门控
+电量剩余:
+开门
+锁门
+壁纸
 --摄像头扫描
-b_chinese.desc_camera = "[Secure.Contain.Protect] 安全摄像头 V2"
-b_chinese.desc_camera_1 = "视频输出:激活"
-b_chinese.desc_camera_2 = "音频输出:激活"
-b_chinese.desc_camera_3 = "缩放:"
-b_chinese.desc_camera_4 = "退出"
-b_chinese.desc_camera_5 = "下一步"
-b_chinese.desc_camera_6 = "上一步"
-b_chinese.desc_camera_7 = "放大"
-b_chinese.desc_camera_8 = "缩小"
+[Secure.Contain.Protect] 安全摄像头 V2
+视频输出:激活
+音频输出:激活
+缩放:
+退出
+下一步
+上一步
+放大
+缩小
 --scoreboard
-b_chinese.desc_scoreboard_bilbil = "Bilibili 频道"
-b_chinese.desc_scoreboard_copy = "复制"
-b_chinese.desc_scoreboard_achievement = "打开成就"
-b_chinese.desc_scoreboard_steam_url = "打开STEAM个人资料URL"
+Bilibili 频道
+复制
+打开成就
+打开STEAM个人资料URL
 --scp物品
-b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步."
+您对 SCP-215 的依恋已经到了无法割舍的地步.
 --DEMO
-b_chinese.menu_demo_settings = "DEMO录制"
-b_chinese.menu_demo_enabled = "开启DEMO录制"
-b_chinese.menu_demo_chat_messages = "开启DEMO提示"
+DEMO录制
+开启DEMO录制
+开启DEMO提示
 --击中
-b_chinese.menu_hit_settings = "击中效果"
-b_chinese.menu_hit_enabled = "启用击中"
-b_chinese.menu_hitsound_enabled = "启用击中声音"
-b_chinese.menu_hitmarkercolor = "击中标记颜色"
-b_chinese.menu_hitmarkertype = "击中标记类型"
-b_chinese.menu_hitmarkertype_line = "线条"
-b_chinese.menu_hitmarkertype_circle = "圆形"
-b_chinese.menu_hitmarkertype_dots = "点状"
-b_chinese.menu_hitmarkertype_cross = "大交叉"
-b_chinese.menu_hitmarkertype_triangle = "三角形"
-b_chinese.menu_hitmarkertype_double_circle = "双层圆形"
-b_chinese.menu_hitmarkertype_pixel = "像素风"
-b_chinese.menu_hitmarkertype_arrows = "箭头"
-b_chinese.menu_hitmarkertype_star = "星形"
-b_chinese.menu_hitmarkertype_zigzag = "锯齿状"
-b_chinese.menu_hitnums_enabled = "显示伤害"
-b_chinese.menu_hitnums_debugmode = "显示伤害调试模式"
-ALLLANGUAGES.b_chinese = b_chinese
+击中效果
+启用击中
+启用击中声音
+击中标记颜色
+击中标记类型
+线条
+圆形
+点状
+大交叉
+三角形
+双层圆形
+像素风
+箭头
+星形
+锯齿状
+显示伤害
+显示伤害调试模式
+ALLLANGUAGES.chinese = chinese
 --Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---B站中文翻译by白菜_CAIN
+--中文翻译by风子和[CN]RXSEND管理组

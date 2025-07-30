@@ -1,1898 +1,2207 @@
 english = {}
-english.LangName = "English"
-english.lang_pldied = "{num} player(s) died"
-english.lang_descaped = "{num} Class D(s) escaped"
-english.lang_sescaped = "{num} SCP(s) escaped"
-english.lang_rescaped = "{num} scientist(s) escaped"
-english.lang_dcaptured = "Chaos saved {num} Class D(s)"
-english.lang_rescorted = "MTF evacuated {num} scientist(s)"
-english.lang_teleported = "SCP-106 sent {num} player(s) to the cottage"
-english.lang_snapped = "{num} person(s) had their neck massaged by SCP-173"
-english.lang_zombies = "SCP-049 'The Surgeon' healed {num} time(s)"
-english.lang_secret_found = "Secret found"
-english.lang_secret_nfound = "Secret not found"
-english.unknown = "Unknown"
-english.waiting_for_players = "Waiting for players..."
-english.waiting_for_players_pt2 = "Need"
-english.waiting_for_players_pt3 = "more"
-english.play = "Play"
-english.resume = "Resume"
-english.settings = "Settings"
-english.leave = "Leave"
-english.credits = "Special Thanks"
-english.class_unknown = "Unknown"
-english.select_weapon = "Select Weapon"
+-- english.chinese.LangName = "Chinese"
+-- english.chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
+-- english.chinese.lang_descaped = "{num} 等级(-ов) D级人员逃脱了(-о)"
+-- english.chinese.lang_sescaped = "{num} SCP 逃脱了(-о)"
+-- english.chinese.lang_rescaped = "{num} 科研人员(-х) 逃脱了(-о)"
+-- english.chinese.lang_dcaptured = "混沌分裂者俘获了 {num} 等级(-ов)D级人员"
+-- english.chinese.lang_rescorted = "机动特遣队疏散了 {num} 科研人员(-х)"
+-- english.chinese.lang_teleported = "SCP - 106 吃了 {num} 玩家(-ов) 在老头空间"
+-- english.chinese.lang_snapped = "{num} 人类(-м) 被扭断了脖子 SCP - 173"
+-- english.chinese.lang_zombies = "SCP - 049 '治愈' {num} 患者(-а)"
+-- english.chinese.lang_secret_found = "秘密被发现"
+-- english.chinese.lang_secret_nfound = "秘密没有被发现"
+-- english.chinese.unknown = "未知"
+-- english.chinese.waiting_for_players = "正在等待玩家......"
+-- english.chinese.waiting_for_players_pt2 = "需要"
+-- english.chinese.waiting_for_players_pt3 = " 人才能开始"
+-- english.chinese.play = "开始游戏"
+-- english.chinese.resume = "继续游戏"
+-- english.chinese.settings = "设置"
+-- english.chinese.leave = "离开游戏"
+-- english.chinese.credits = "特别鸣谢"
+-- english.chinese.class_unknown = "未知"
+-- english.chinese.select_weapon = "选择武器"
 english.NRegistry = {
-    scpready = "You can be selected as SCP in next round",
-    scpwait = "You have to wait %s rounds to be able to play as SCP"
+你能在下一回合被选为SCP
+你还要等待 %s 回合才能被选为SCP
 }
 
-english.NFailed = "Filed to access NRegistry with key: %s"
-english.version_title = "RXSEND Breach 2.6.0"
-english.version = "Test server"
-english.bugs = "Report bugs!"
-english.lang_end1 = "Game over"
-english.lang_end2 = "Time's up"
-english.lang_end3 = "Unable to continue the game"
+-- english.chinese.NFailed = "无法使用此钥匙卡进行访问:%s"
+-- english.chinese.version_title = "[CN]RXSEND Breach 2.6.0"
+-- english.chinese.version = "测试服"
+-- english.chinese.bugs = "如果遇到BUG请报告BUG!"
+-- english.chinese.lang_end1 = "游戏结束"
+-- english.chinese.lang_end2 = "时不我待"
+-- english.chinese.lang_end3 = "游戏无法进行"
 english.escapemessages = {
-    {
-        main = "You escaped",
-        txt = "You escaped the facility in {t} minutes, great job!",
-        txt2 = "If you're evacuated by MTF, you'll earn more experience.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "You escaped",
-        txt = "You escaped the facility in {t} minutes, great job!",
-        txt2 = "If you're evacuated by Chaos, you'll earn more experience.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "You were evacuated",
-        txt = "You were evacuated from the facility in {t} minutes, great job!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "You escaped",
-        txt = "You escaped the facility in {t} minutes, great job!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被机动特遣队疏散,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被混沌分裂者俘获,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你已经被疏散
+你花费了 {t} 分钟从设施被疏散,干得好!
+
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+
+clr = Color(237, 28, 63),
+}
 }
 
 english.role = {}
 --SCP
-english.SCP = "SCP"
-english.role.SCP106 = "SCP-106"
-english.role.SCP049 = "SCP-049"
-english.role.SCP638 = "SCP-638"
-english.role.SCP076 = "SCP-076-2"
-english.role.SCP062DE = "SCP-062-DE"
-english.role.SCP8602 = "SCP-860-2"
-english.role.SCP062FR = "SCP-062-FR"
-english.role.SCP096 = "SCP-096"
-english.role.SCP542 = "SCP-542"
-english.role.SCP1903 = "SCP-1903"
-english.role.SCP973 = "SCP-973"
-english.role.SCP457 = "SCP-457"
-english.role.SCP173 = "SCP-173"
-english.role.SCP2012 = "SCP-2012"
-english.role.SCP082 = "SCP-082"
-english.role.SCP999 = "SCP-999-2"
-english.role.SCP939 = "SCP-939"
-english.role.SCP811 = "SCP-811"
-english.role.SCP682 = "SCP-682"
-english.role.SCP912 = "SCP-912"
-english.role.SCP3114 = "SCP-3114"
---Researcher
-english.SCI = "Scientific Department"
-english.role.SCI_Assistant = "Assistant"
-english.role.SCI_Grunt = "Scientist"
-english.role.SCI_Recruiter = "Ethics Inspector"
-english.role.SCI_Tester = "Researcher"
-english.role.SCI_Medic = "Medical Doctor"
-english.role.SCI_Cleaner = "Cleaner"
-english.role.SCI_Head = "Head of Personnel"
-english.role.SCI_SpyUSA = "UIU Spy"
---Security Department
-english.SECURITY = "Security Department"
-english.role.SECURITY_Recruit = "Security Rookie"
-english.role.SECURITY_Sergeant = "Security Sergeant"
-english.role.SECURITY_OFFICER = "Security Officer"
-english.role.SECURITY_Shocktrooper = "Security Shocktrooper"
-english.role.SECURITY_Heavy = "Security Department Riot Control Officer"
-english.role.SECURITY_Warden = "Security Warden"
-english.role.SECURITY_IMVSOLDIER = "Security Specialist"
-english.role.SECURITY_Chief = "Security Chief"
-english.role.SECURITY_Spy = "CI Spy"
-english.role.SECURITY_Corporal = "Security Corporal"
+SCP
+SCP-106
+SCP-049
+SCP-638
+SCP-076-2
+SCP-062-DE
+SCP-860-2
+SCP-062-FR
+SCP-096
+SCP-542
+SCP-1903
+SCP-973
+SCP-457
+SCP-173
+SCP-2012
+SCP-082
+SCP-999-2
+SCP-939
+SCP-811
+SCP-682
+SCP-912
+SCP-3114
+--研究员
+科研部门
+科研助手
+科研人员
+道德伦理检察官
+高级研究员
+医生
+清洁工
+人事主管
+UIU 间谍
+--安保部门
+安保部门
+安保部门 菜鸟
+安保部门 中士
+安保部门 警员
+安保部门 突击队员
+安保部门 镇暴队员
+安保部门 典狱长
+安保部门 特别专员
+安保部门 上尉
+混沌分裂者 间谍
+安保部门 下士
 --格鲁乌P部门
-english.GRU = "GRU P Department (Post-Era)"
-english.role.GRU_Soldier = "GRU P Soldier"
-english.role.GRU_Specialist = "GRU P Combat Specialist"
-english.role.GRU_Jugg = "GRU P Heavy Armor"
-english.role.GRU_Sapper = "GRU P Combat Engineer"
-english.role.GRU_Commander = "GRU P Commander"
-english.role.GRU_Political = "GRU P Lieutenant"
-english.GRU_Guard = "GRU P Department Guard Unit"
-english.role.GRU_Grunt = "GRU P Guard Unit Member"
-english.role.GRU_Machinegunner = "GRU P Guard Unit Machine Gunner"
-english.role.GRU_Marksman = "GRU P Guard Unit Marksman"
---This one doesn't know what it is anyway the server doesn't have it
-english.MINIGAMES = "Other"
-english.role.CTFCI = "CI Raider"
-english.role.CTFQRT = "QRT Defender"
-english.role.ArenaParticipant = "Arena Participant"
---Old UIU
-english.UIU = "Unusual Incidents Unit"
-english.role.UIU_Soldier = "UIU Soldier"
-english.role.UIU_Commander = "UIU Commander"
-english.role.UIU_Specialist = "UIU Specialist"
-english.role.UIU_Clocker = "UIU Infiltrator"
-english.role.UIU_Informator = "UIU Informator"
---New UIU
-english.UIU_Agents = "Agents of Unusual Incidents Unit"
-english.role.UIU_Agent = "UIU Agent"
-english.role.UIU_Agent_Commander = "UIU Commander"
---english.role.UIU_Agent_Sniper = "UIU Sniper"
-english.role.UIU_Agent_Specialist = "UIU Specialist"
-english.role.UIU_Agent_Thunder = "UIU Information"
+格鲁乌P部门(后时代)
+格鲁乌P 士兵
+格鲁乌P 作战专家
+格鲁乌P 重装
+格鲁乌P 战斗工兵
+格鲁乌P 指挥官
+格鲁乌P 少尉
+格鲁乌P部门 近卫小组
+格鲁乌P 近卫小组组员
+格鲁乌P 近卫小组机枪手
+格鲁乌P 近卫小组精确射手
+--这个不知道是什么反正服务器没有
+Other
+CI Raider
+QRT Defender
+Arena Participant
+--老UIU
+FBI特异事故处
+特异事故处 士兵
+特异事故处 指挥官
+特异事故处 战斗专家
+特异事故处 渗透者
+特异事故处 情报人员
+--新UIU
+UIU特工小组
+UIU特工小组 干员
+UIU特工小组 组长
+UIU特工小组 狙击手
+UIU特工小组 特种干员
+UIU特工小组 雷击
 --UIU收容小组
-english.UIU_Contain = "UIU收容小组"
-english.role.UIU_Control_Grunt = "UIU收容小组 组员"
-english.role.UIU_Control_MachineGunner = "UIU收容小组 机枪手"
-english.role.UIU_Control_Commander = "UIU收容小组 组长"
-english.role.UIU_Control_Specialist = "UIU收容小组 收容专家"
-english.role.UIU_Control_Darkside = "UIU收容小组 暗面" --英文和俄文都翻译成 "暗影"
---This one doesn't know what it is anyway the server doesn't have it
-english.SKP = "Sonderkommando für Paranormales"
-english.role.SKP_Soldat = "SKP Soldat"
-english.role.SKP_Jager = "SKP Jäger"
-english.role.SKP_Machinegunner = "SKP Machinegunner"
-english.role.SKP_Offizier = "SKP Offizier"
---DZ
-english.DZ = "Serpent's Hand"
-english.role.DZ_Grunt = "SH Soldier"
-english.role.SCI_SpyDZ = "SH Spy"
-english.role.DZ_Gas = "SH Special Operative"
-english.role.DZ_Psycho = "SH Psycho"
-english.role.DZ_Commander = "SH Commander"
+UIU收容小组
+UIU收容小组 组员
+UIU收容小组 机枪手
+UIU收容小组 组长
+UIU收容小组 收容专家
+UIU收容小组 暗面
+--这个不知道是什么反正服务器没有
+Sonderkommando für Paranormales
+SKP Soldat
+SKP Jäger
+SKP Machinegunner
+SKP Offizier
+--蛇之手
+蛇之手
+蛇之手 士兵
+蛇之手 间谍
+蛇之手 特种探员
+蛇之手 疯子
+蛇之手 指挥官
 --GOC
-english.Goc = "Global Occult Coalition"
-english.role.Goc_Grunt = "GOC Soldier"
-english.role.Goc_Liq = "GOC Liq"
-english.role.Goc_Commander = "GOC Commander"
-english.role.Goc_Jag = "GOC Juggernaut"
-english.role.Goc_Special = "GOC Specialist"
---QRT
-english.QRT = "Quick Response Team"
-english.role.QRT_Soldier = "QRT Soldier"
-english.role.QRT_Medic = "QRT Medic"
-english.role.QRT_ShockTrooper = "QRT Shocktrooper"
-english.role.QRT_Commander = "QRT Commander"
-english.role.QRT_Machinegunner = "QRT Machinegunner"
-english.role.QRT_Shield = "QRT Castle"
-english.role.QRT_Marksmen = "QRT Marksman"
---This one doesn't know what it is anyway the server doesn't have it
-english.STS = "Special Task Squad"
-english.role.STS_Soldier = "STS Soldier"
-english.role.STS_Shock = "STS Shocktrooper"
-english.role.STS_Special = "STS Specialist"
-english.role.STS_Officer = "STS Officer"
-english.role.STS_Left = "STS Lieutenant"
---This one doesn't know what it is anyway the server doesn't have it
-english.OSN = "Spec. Task Squad"
-english.role.OSN_Soldier = "STS Soldier"
-english.role.OSN_Specialist = "STS Specialist"
-english.role.OSN_Commander = "STS Commander"
---Class D
-english.ClassD = "Class-D Personnel"
-english.role.ClassD_Default = "Class-D"
-english.role.ClassD_Pron = "Class-D Sly"
-english.role.ClassD_Hack = "Class-D Hacker"
-english.role.ClassD_Bor = "Class-D Wrestler"
-english.role.ClassD_Fat = "Class-D Fat"
-english.role.ClassD_Probitiy = "Class-D Abnormal"
-english.role.ClassD_Thief = "Class-D Thief"
-english.role.ClassD_Cannibal = "Class-D Cannibal"
-english.role.ClassD_Fast = "Class-D Sportsman"
-english.role.ClassD_Killer = "Class-D Killer"
-english.role.ClassD_Hitman = "Class-D Stealthy"
-english.role.ClassD_FartInhaler = "Class-D Fart Inhaler"
-english.role.ClassD_Survivor = "Class D - Survivor"
-english.role.ClassD_GOCSpy = "GOC Agent"
-english.role.ClassD_Banned = "Class-D (Low-Clearance)"
-english.role.ClassD_Mio = "MIO"
-english.role.ClassD_Mio_NaiLong = "Nai Long (MIO)"
+全球超自然联盟
+全球超自然联盟 士兵
+全球超自然联盟 中尉
+全球超自然联盟 指挥官
+全球超自然联盟 无畏勇士
+全球超自然联盟 战斗专家
+--快反
+快速反应部队
+快速反应部队 士兵
+快速反应部队 医疗兵
+快速反应部队 突击队员
+快速反应部队 指挥官
+快速反应部队 机枪手
+快速反应部队 盾牌手
+快速反应部队 精准射手
+--D级
+D级人员
+D级人员
+D级人员 盗贼
+D级人员 黑客
+D级人员 摔角手
+D级人员 胖逼
+D级人员 大兜哥
+D级人员 小偷
+D级人员 食人魔
+D级人员 运动员
+D级人员 杀手
+D级人员 职业杀手
+D级人员 哥布林
+D级人员 生存者
+D级人员 老兵
+全球超自然联盟 特工
+D级人员 低信誉人员
+MIO
+奶龙 MIO
 --MTF
-english.MTF = "Mobile Task Force"
-english.role.MTF_Security = "Internal security Agent"
-english.role.MTF_Shock = "MTF Shocktrooper"
-english.role.MTF_Guard = "MTF Soldier"
-english.role.MTF_Medic = "MTF Medic"
-english.role.MTF_Left = "MTF Lieutenant"
-english.role.MTF_Specialist = "MTF Specialist"
-english.role.MTF_Com = "Head of Security"
-english.role.MTF_HOF = "Head of Foundation"
-english.role.MTF_Engi = "MTF Engineer"
-english.role.MTF_Jag = "MTF Juggernaut"
-english.role.O4Commander = "O4 Commander"
-english.MEG = "MTF 专家组"
-english.role.MEG_Chem = "MTF CBRN Specialist"
-english.role.MEG_NTFExpert = "MEG 九尾狐收容专家"
-english.role.MEG_NU7Instructor = "MEG 落锤特战教官"
---NTF
-english.NTF = "MTF Epsilon-11 ''Nine Tailed Fox''"
-english.role.NTF_Soldier = "NTF Grunt"
-english.role.NTF_Commander = "NTF Commander"
-english.role.NTF_Specialist = "NTF Specialist"
-english.role.NTF_Sniper = "NTF Sniper"
-english.role.NTF_Pilot = "NTF Pilot"
---NU7
-english.NU7 = "MTF NU-7 'Hammer Down'"
-english.role.NU7_Soldier = "NU-7 Grunt"
-english.role.NU7_Commander = "NU-7 Commander"
-english.role.NU7_Specialist = "NU-7 Specialist"
-english.role.NU7_Vanguard = "NU-7 Vanguard"
-english.role.NU7_Juggernaut = "NU-7 Juggernaut"
+机动特遣队
+内部安全代理
+机动特遣队 突击队员
+机动特遣队 士兵
+机动特遣队 医疗兵
+机动特遣队 中尉
+机动特遣队 战斗专家
+安全主管
+设施主管
+机动特遣队 工程师
+机动特遣队 重装
+O4指挥官
+MTF 专家组
+MEG 生化专家
+MEG 九尾狐收容专家
+MEG 落锤特战教官
+--九尾狐
+机动特遣队 Epsilon-11 ''Nine Tailed Fox 九尾狐''
+九尾狐 士兵
+九尾狐 指挥官
+九尾狐 战斗专家
+九尾狐 狙击手
+九尾狐 飞行员
+--NU7 落锤
+机动特遣队 NU-7 '落锤' 肃杀营A连 
+落锤肃杀A连 士兵
+落锤肃杀A连 指挥官
+落锤肃杀A连 作战专家
+落锤肃杀A连 先锋
+落锤肃杀A连 无畏战士
 --CI
-english.Chaos = "Chaos Insurgency"
-english.role.Chaos_Grunt = "CI Soldier"
-english.role.Chaos_Commander = "CI Commander"
-english.role.Chaos_Jugg = "CI Juggernaut"
-english.role.Chaos_Demo = "CI Demoman"
-english.role.Chaos_Claymore = "CI Hunter"
-english.role.Chaos_Recruit = "CI Recruit"
+Chaos Insurgency 混沌分裂者
+混沌分裂者 士兵
+混沌分裂者 指挥官
+混沌分裂者 重装
+混沌分裂者 恶魔
+混沌分裂者 猎人
+混沌分裂者 新兵
 --特殊科研感觉不用汉化他们的名字
-english.SCI_SPECIAL = "Special Scientists"
-english.role.SCI_SPECIAL_DAMAGE = "Kelen"
-english.role.SCI_SPECIAL_HEALER = "Matilda"
-english.role.SCI_SPECIAL_SLOWER = "Speedwone"
-english.role.SCI_SPECIAL_SPEED = "Lomao"
-english.role.SCI_SPECIAL_MINE = "Feelon"
-english.role.SCI_SPECIAL_BOOSTER = "Georg"
-english.role.SCI_SPECIAL_SHIELD = "Shieldmeh"
-english.role.SCI_SPECIAL_INVISIBLE = "Ruprecht"
-english.role.SCI_SPECIAL_VISION = "Hedwig"
+特殊科研人员
+Kelen
+Matilda
+Speedwone
+Lomao
+Feelon
+Georg
+Shieldmeh
+Ruprecht
+Hedwig
 --猩红之子
-english.Cult = "Children of The Scarlet King"
-english.role.Cult_Commander = "COTSK Commander"
-english.role.Cult_Grunt = "COTSK Grunt"
-english.role.Cult_Psycho = "COTSK Psycho"
-english.role.Cult_Specialist = "COTSK Specialist"
--- Sub-modes and Random Events Roles
+Children of The Scarlet King 猩红之子
+猩红之子 祭祀
+猩红之子 教众
+猩红之子 狂信徒
+猩红之子 助祭
+--事件专属角色
+事件特殊角色
+UIU 联络专员
+混沌分裂者 特工
+--5K区域
+--奇术打击
+GOC奇术打击二组 护卫
+GOC奇术打击二组 指挥官
+GOC奇术打击二组 专家
+GOC奇术打击二组 学者
+--STS 5队
+STS-5队 士兵
+STS-5队 队长
+STS-5队 精英
+STS-5队 特种干员
+STS-5队 压制者
+--GRU-CI 突袭部队
+GRU-CI突袭部队 士兵
+GRU-CI突袭部队 医疗兵
+GRU-CI突袭部队 骇客
+GRU-CI突袭部队 副指挥
+GRU-CI突袭部队 指挥官
+GRU-CI突袭部队 机枪手
+--Nu-22
+Nu-22 \"火箭侠\" 士兵
+Nu-22 \"火箭侠\" 医疗兵
+Nu-22 \"火箭侠\" 指挥官
+SCP-1440
+--NU-7 Buck
+落锤肃杀B连 士兵
+落锤肃杀B连 医疗兵
+落锤肃杀B连 毒气专家
+落锤肃杀B连 技术员
+落锤肃杀B连 副指挥
+落锤肃杀B连 指挥官
+落锤肃杀B连 机枪手
+--子模式的角色
 ------------------------------------------------kongshu
--- Facility
-english.role.ClassD_Rioter = "Class-D Rioter"
-english.role.ClassD_Psycho = "Class-D Psycho"
-english.role.ClassD_Executor = "Class-D Executor"
-english.role.ChaosAgentRioter = "CI Field Agent" -- Leader
-english.role.Security_grunt = "Security Suppression Trooper"
-english.role.Security_faster = "Security Assault Trooper"
-english.role.Security_jugg = "Security Riot Elite"
-english.role.Security_protector = "Security Protector" -- Leader
--- Support
-english.role.chaos_vdv_grunt = "CI Airborne Soldier"
-english.role.chaos_vdv_marksman = "CI Airborne Marksman"
-english.role.chaos_vdv_machinegunner = "CI Airborne Machine Gunner"
-english.role.chaos_vdv_commander = "CI Airborne Commander"
-english.role.nu7_squad_grunt = "Hammer Down Squad Soldier"
-english.role.nu7_squad_shield = "Mace Task Force - Shield"
-english.role.nu7_squad_sniper = "Hammer Down Squad Sniper"
-english.role.nu7_squad_machineunner = "Hammer Down Squad Machine Gunner"
-english.role.nu7_squad_commander = "Hammer Down Squad Commander"
+--facility
+D级 暴动人员
+D级 精神病
+D级 处刑者
+CI 外勤特工
+安保 镇压队员
+安保 冲锋队员
+安保 镇暴精英
+安保 保卫者
+--support
+CI空输 士兵
+CI空输 精确射手
+CI空输 压制者
+CI空输 指挥官
+落锤特战分队 士兵
+落锤特战分队 盾兵
+落锤特战分队 狙击手
+落锤特战分队 压制者
+落锤特战分队 指挥官
+------------------------------------------------
+------------------------------------------------ww2
+--nazi
+纳粹德国 士兵
+纳粹德国 指挥官
+纳粹德国 机枪手
+--american
+美军 士兵
+美军 指挥官
+美军 机枪手
 ------------------------------------------------
 english.weaponry = {}
-english.weaponry["breach_keycard_1"] = "Key-Card Level 1"
-english.weaponry["breach_keycard_2"] = "Key-Card Level 2"
-english.weaponry["breach_keycard_3"] = "Key-Card Level 3"
-english.weaponry["breach_keycard_4"] = "Key-Card Level 4"
-english.weaponry["breach_keycard_5"] = "Key-Card Level 5"
-english.weaponry["breach_keycard_6"] = "Key-Card Level Omni"
-english.weaponry["breach_keycard_7"] = "Key-Card Level O5"
-english.weaponry["breach_keycard_crack"] = "Key-Card Level ?"
-english.weaponry["breach_keycard_support"] = "Key-Card Level ?"
-english.weaponry["breach_keycard_sci_1"] = "Scientist Key-Card Level 1"
-english.weaponry["breach_keycard_sci_2"] = "Scientist Key-Card Level 2"
-english.weaponry["breach_keycard_sci_3"] = "Scientist Key-Card Level 3"
-english.weaponry["breach_keycard_sci_4"] = "Scientist Key-Card Level 4"
-english.weaponry["breach_keycard_security_1"] = "Security Key-Card Level 1"
-english.weaponry["breach_keycard_security_2"] = "Security Key-Card Level 2"
-english.weaponry["breach_keycard_security_3"] = "Security Key-Card Level 3"
-english.weaponry["breach_keycard_security_4"] = "Security Key-Card Level 4"
-english.weaponry["breach_keycard_guard_1"] = "Guard Key-Card Level 1"
-english.weaponry["breach_keycard_guard_2"] = "Guard Key-Card Level 2"
-english.weaponry["breach_keycard_guard_3"] = "Guard Key-Card Level 3"
-english.weaponry["breach_keycard_guard_4"] = "Guard Key-Card Level 4"
-english.weaponry["breach_keycard_ntf"] = "NTF Key-Card"
-english.weaponry["breach_keycard_nu7"] = "Nu7 Key-Card"
-english.weaponry["item_drink_dado_fire"] = "DADO Juice «Carefully, HOT»"
-english.weaponry["item_drink_dado_radioactive"] = "DADO Juice «Radiation taste»"
-english.weaponry["item_drink_energy"] = "Energy drink"
-english.weaponry["item_drink_soda"] = "Soda can"
-english.weaponry["item_drink_water"] = "Water can"
-english.weaponry["item_drink_coffee"] = "Coffee drink"
-english.weaponry["item_eyedrops_1"] = "Eye drops"
-english.weaponry["item_eyedrops_2"] = "Improved Eye drops"
-english.weaponry["item_eyedrops_3"] = "Experimental Eye drops"
-english.weaponry["item_hamburger"] = "Hamburger"
-english.weaponry["item_keys"] = "Keys for car"
-english.weaponry["item_knife"] = "Pocket knife"
-english.weaponry["item_medkit_1"] = "First Aid Kit"
-english.weaponry["item_medkit_2"] = "Office Medkit"
-english.weaponry["item_medkit_3"] = "Special Care Medkit"
-english.weaponry["item_medkit_4"] = "Universal Medkit"
-english.weaponry["item_pills"] = "Pills"
-english.weaponry["item_nightvision_green"] = "NVG"
-english.weaponry["item_nightvision_blue"] = "Improved NVG"
-english.weaponry["item_nightvision_red"] = "Thermal NVG"
-english.weaponry["item_nightvision_goc"] = "Prototype NVG"
-english.weaponry["item_nightvision_white"] = "Prototype NVG"
-english.weaponry["item_radio"] = "Radio"
-english.weaponry["item_chaos_radio"] = "Unique Radio"
-english.weaponry["item_adrenaline"] = "Adrenaline"
-english.weaponry["item_syringe"] = "Amplifier"
-english.weaponry["item_deffib_medic"] = "Defibrillator"
-english.weaponry["item_shield"] = "Bulletproof Shield"
-english.weaponry["item_special_document"] = "Special Access Code"
-english.weaponry["item_screwdriver"] = "Screwdriver"
-english.weaponry["item_tazer"] = "Stun gun"
-english.weaponry["item_toolkit"] = "Toolkit"
-english.weaponry["copper_coin"] = "Copper Coin"
-english.weaponry["silver_coin"] = "Silver Coin"
-english.weaponry["gold_coin"] = "Gold Coin"
-english.weaponry["weapon_special_gaus"] = "Gauss"
-english.weaponry["br_holster"] = "Hands"
-english.weaponry["weapon_flashlight"] = "Flashlight"
-english.weaponry["weapon_pass_guard"] = "ID-Card \"Military Personnel\""
-english.weaponry["weapon_pass_medic"] = "ID-Card \"Medical Personnel\""
-english.weaponry["weapon_pass_sci"] = "ID-Card \"Science Personnel\""
-english.weaponry["weapon_breachmelee_crowbar"] = "Crowbar"
-english.weaponry["weapon_breachmelee_pipe"] = "Wrench"
-english.weaponry["weapon_breachmelee_hammer"] = "Hammer"
-english.weaponry["weapon_breachmelee_fireaxe"] = "Fire Axe"
-english.weaponry["weapon_breachmelee_axe"] = "Axe"
-english.weaponry["weapon_breachmelee_tonfa"] = "Tonfa"
-english.weaponry["weapon_breachmelee_stick"] = "Expandable Baton"
-english.weaponry["weapon_cannibal"] = "Action: Cannibalism"
-english.weaponry["weapon_checker"] = "Action: Class Check"
-english.weaponry["weapon_cqc"] = "Tactical Action"
-english.weaponry["weapon_goggles"] = "Action: Operation Goggles"
-english.weaponry["breach_keycard_usa_spy"] = "Intercom Key-Card"
-english.weaponry["weapon_usa_instruction"] = "Instruction"
-english.weaponry["ritual_paper"] = "Ritual Paper"
-english.weaponry["cw_rubber_shotgun"] = "Rubber Shotgun"
-english.weaponry["hacking_doors"] = "Hacking Equipment"
-english.weaponry["item_ci_scan"] = "Simple Scanner"
-english.weaponry["item_cheemer"] = "Cheemes"
-english.weaponry["weapon_nu7_goggles"] = "NU-7 Goggles"
-english.weaponry["item_top_document"] = "Special Document"
-english.weaponry["cw_kk_ins2_toz66_sawed"] = "Improvised Shotgun"
-english.weaponry["gasmask"] = "Gas Mask"
-english.weaponry["battery_1"] = "Tiny Battery"
-english.weaponry["battery_2"] = "Improved Battery"
-english.weaponry["battery_3"] = "Battery"
-english.weaponry["cw_kk_ins2_deagle_ntf"] = "妖狐之舞"
-english.role.Spectator = "Spectator"
---BREACH TIPS
-english.already_have_the_bag = "You already have bag!"
-english.took_on_the_bag = "You successfully equipped bag!"
-english.you_cant_wear_the_bag = "You can't wear bag!"
-english.has_uniform_already = "You're already wearing uniform. Take off your uniform."
-english.take_off_armor_to_wear_uniform = "Take off your armor to wear uniform!"
-english.your_uniform_is = "You took on:"
-english.has_helmet_already = "You're already wearing a helmet. Take off your helmet."
-english.take_off_uniform_to_wear_helmet = "Take off your uniform to wear helmet!"
-english.put_on_helmet = "You successfully equipped helmet!"
-english.you_cant_wear_helmet = "You can't wear helmet!"
-english.take_off_vest_to_wear_vest = "You're already wearing vest. Take off your vest."
-english.take_off_uniform_to_wear_vest = "Take off your uniform to wear vest!"
-english.put_on_vest = "You successfully equipped vest!"
-english.you_cant_wear_vest = "You can't wear vest!"
-english.goc_nuke_start = "Alpha Warhead has been launched, all military personnel - disable the Warhead!"
-english.repaired_generators_count = "Number of generators repaired: "
-english.you_ate_burger = "You ate burger. Health restored."
-english.you_ate_burger_hp_regenerated_pt1 = "You ate burger. Filled "
-english.you_ate_burger_hp_regenerated_pt2 = " health."
-english.dont_go_far_away_from_body = "Don't go far away from your body"
-english.scp427_regenerates_health = "SCP-427 slowly restores Your health."
-english.you_took_off_scp427 = "You unequip SCP-427. Healing was stopped."
-english.you_feel_healthy = "You feel healthy"
-english.exp = " EXP"
-english.evac_start = "Warning! Alpha warhead was activated!"
-english.ntf_enter = "Mobile Task Force Epsilon-11 has entered the facility"
-english.nu7_enter = "Mobile Task Force Nu-7, Hammer Down Special Forces, has entered the facility"
-english.evac_15min = "Attention! Time until Alpha-Warhead detonation: 15 minutes!"
-english.decont_5min = "Attention! Time until decontamination in light zone: 5 minutes."
-english.decont_1min = "Attention! Time until decontamination in light zone: 1 minute!"
-english.evac_10min = "Attention! Time until Alpha-Warhead detonation: 10 minutes!"
-english.evac_5min = "Attention! Time until Alpha-Warhead detonation: 5 minutes!"
-english.scp_cant_skill = "You can't use your skill"
-english.gru_start_hacking = "Unknown privileges have been detected forcibly changing privileges within the facility, last reported by the security system at: Central Control Room"
-english.gru_faild_hacking = "Unauthorized modification blocked. All systems rebooting"
-english.gru_start_warhead = "WARNING! Alpha Warhead forcibly activated by [DATA EXPUNGED] credentials!"
-english.gru_evac_warhead = "WARNING! Facility data integrity compromised. [DATA EXPUNGED] credentials initiating Alpha Warhead activation"
---PROGRESS BAR
-english.progress_wait = "Wait..."
-english.bismillah = "Reading prayer..."
-english.stopscarletinvsion = "Closing the Scarlet Book..."
-english.repairing_generator = "Repairing generator..."
-english.picking_up_docs = "Taking documents..."
-english.medkit_healing = "Healing"
-english.hacking_door = "Hacking..."
-english.ressurecting_someone = "Reviving..."
-english.opening_car_door = "Opening door..."
-english.progress_using = "Using..."
-english.hacking_cell = "Opening cell..."
-english.cannibal = "Eating corpse..."
-english.checking_class = "Checking class..."
-english.disarming = "Disarming..."
-english.creating_zombie = "Creating zombie..."
-english.drinking_blood = "Drinking blood..."
-english.sprint = "Sprint"
-english.ragemode = "RAGE"
-english.throwing_grenade = "Throwing grenade"
-english.scp939_eating_body = "Eating corpse..."
-english.scp999_healing = "Healing "
-english.stealing = "Stealing..."
-english.giving_uniform = "Giving uniform..."
-english.changing_identity = "Changing identity..."
-english.becoming_invisible = "Becoming invisible..."
-english.giving_equipment = "Giving equipment..."
-english.blocking_door = "Blocking door..."
-english.planting_trap = "Setting trap..."
-english.interrogation = "Interrogation..."
-english.breaking_door = "Breaking door..."
-english.looting_trash_can = "Looting trashcan..."
-english.progress_stopped = "Stopped!"
-english.looting_body = "Searching..."
-english.nu7pickarmorbox = "Picking up Armor Plate Box..."
-english.nu7pickarmor = "Picking up Armor Plate..."
-english.putupstability = "Deploying Reality Stabilizer..."
-english.pickupstability = "Retrieving Reality Stabilizer..."
-english.putup_gru_shield = "Deploying Mobile Shield..."
-english.pickup_gru_shield = "Retrieving Mobile Shield..."
-english.destroy_gru_shield = "Destroying Mobile Shield..."
-english.scp3114_disguise = "Disguise in progress..."
-english.progress_done = "Done!"
+一级权限卡
+二级权限卡
+三级权限卡
+四级权限卡
+五级权限卡
+Omni权限卡
+O5权限卡
+?级权限卡
+?级权限卡
+一级科研权限卡
+二级科研权限卡
+三级科研权限卡
+四级科研权限卡
+一级安保权限卡
+二级安保权限卡
+三级安保权限卡
+四级安保权限卡
+一级警卫权限卡
+二级警卫权限卡
+三级警卫权限卡
+四级警卫权限卡
+九尾狐权限卡
+落锤权限卡
+紫苞果汁 «小心点,烫嘴»
+蝮蛇果汁 «尝起来像辐射»
+能量饮料
+苏打水
+饮用水
+咖啡
+眼药水
+改进型眼药水
+实验型眼药水
+蟹黄堡
+大G车钥匙
+自制小刀
+医疗包
+办公用医疗包
+特殊护理医疗包
+通用医疗包
+止痛药
+夜视仪
+蓝色夜视仪
+\"杀意感知\"
+GOC原型夜视仪
+原型夜视仪
+对讲机
+CI对讲机
+肾上腺素注射器
+机能强化注射器
+便携式除颤仪
+防弹盾牌
+特殊访问代码
+螺丝刀
+电击器
+工具箱
+铜币
+银币
+金币
+电磁炮
+空手
+手电筒
+ID卡 \"军事人员\"
+ID卡 \"医疗人员\"
+ID卡 \"科研人员\"
+撬棍
+扳手
+锤子
+消防斧
+斧头
+警棍
+甩棍
+动作:吃尸体
+动作:检查身份
+战术动作
+动作:操作目镜
+内部权限卡
+教诲
+王的福音
+豆弹枪
+妖狐之舞
+黑客设备
+简易扫描设备
+Cheemes
+特种夜视仪
+特别文件
+土质霰弹枪
+防毒面具
+微小电池
+改良电池
+电池
+一次性钥匙卡
+手铐
+医疗注射器
+断手
+PoS-9单兵伤害吸收装置
+观察者
+--提示
+你已经有背包了!
+你穿上了背包!
+你不能穿背包!
+你已经有衣服了.
+脱掉你的护甲才能穿上这件衣服!
+你穿上了:
+你已经有头盔了.
+脱下你的衣服才能戴上这个头盔!
+你戴上了头盔!
+你不能戴头盔!
+你已经有防弹衣了.
+脱下你的衣服才能传上这个防弹衣!
+你穿上了防弹衣!
+你不能穿防弹衣!
+Alpha核弹已被非法激活 所有战斗人员 - 立刻阻止!
+已被维修的发电机数量:
+你吃了个蟹黄堡,恢复了生命值.
+你吃饱了 
+ 你变健康了.
+你不能离尸体太远了
+SCP-427 缓慢地恢复了你的生命值.
+你卸下了 SCP-427. 治疗停止了.
+你感觉很健康
+经验
+警告!Alpha核弹已被激活!
+Mobile Task Force Epsilon-11 机动特遣队九尾狐进入了设施
+Mobile Task Force Nu-7 落锤特种部队进入了设施
+注意!距离Alpha核弹头起爆:15 分钟!
+注意!距离轻收容净化:5 分钟.
+注意!距离轻收容净化:1 分钟!
+注意!距离Alpha核弹头起爆:10 分钟!
+注意!距离Alpha核弹头起爆:5 分钟!
+你无法使用你的技能
+检测到未知权限正在强制更改设施内的权限,安全系统最后一次报告的位置在:中央控制室
+已阻断未知权限的强制修改,所有系统正在重新启动
+警告!Alpha核弹头被[数据删除]权限强制激活!
+警告!设施多处数据遭到修改,[数据删除]权限正在启动Alpha核弹头
+已被收容
+--进度条
+等待中...
+阅读祷文中...
+合上猩红之书中...
+维修发电机中...
+收集文件中...
+治疗中
+骇入中...
+复活中...
+开门中...
+使用中...
+破坏挡板中...
+吃尸体中...
+检查身份中...
+缴械中...
+给目标戴手铐中...
+破坏手铐中...
+治愈中...
+饮血中...
+冲刺
+狂暴
+投掷手榴弹
+享用美味中...
+治疗中 
+偷窃中...
+给予制服中...
+更改身份中...
+消失不见中...
+给予装备中...
+锁门中...
+设置陷阱中...
+审讯中...
+破门中...
+搜索垃圾桶中...
+停止!
+搜索中...
+拾取防弹插板盒子中...
+拾取防弹插板中...
+部署现实稳定锚中...
+收起现实稳定锚中...
+放置机动护盾中...
+收起机动护盾中...
+摧毁机动护盾中...
+正在进行伪装中...
+完成!
 --ARMORS
 --вы переоделись во что? в кого?
-english.armor_medic = "Medic uniform"
-english.armor_mtf = "MTF uniform"
-english.armor_sci = "Scientist uniform"
-english.armor_goc = "GOC armor"
-english.armor_uiu = "UIU Army Armor"
-english.armor_hazmat_blue = "Blue hazmat"
-english.armor_hazmat_orange = "Orange hazmat"
-english.armor_hazmat_white = "White hazmat"
-english.armor_hazmat_yellow = "Yellow hazmat"
-english.armor_hazmat_black = "Black hazmat"
-english.armor_lighthazmat_white = "White light hazmat"
-english.armor_lighthazmat_yellow = "Yellow light hazmat"
+医护人员制服
+MTF 制服
+科研 制服
+GOC 装甲
+UIU 陆军装甲
+蓝色防化服
+橘色防化服
+白色防化服
+黄色防化服
+黑色防化服
+白色轻型防化服
+黄色轻型防化服
 --DISEASES
-english.diseases_appendicitis = "Appendicitis"
-english.diseases_lungcancer = "Lung cancer"
-english.diseases_asthma = "Asthma"
-english.diseases_cardiacarrest = "Cardiac arrest"
-english.diseases_spontaneouscombustion = "Spontaneous combustion"
-english.diseases_chickenpox = "Chickenpox"
-english.diseases_cold = "Cold"
-english.diseases_musclemutation = "Muscle mutation"
-english.diseases_mitosis = "Hyper-cellular mitosis"
---CHAT NOTIFICATIONS
-english.you_cant_wear_this_uniform = "You can't wear this uniform!"
-english.your_current_exp = "Your current EXP right now:"
-english.scp914_change_mode = "You changed SCP-914 mode to:"
-english.quran_needed = "Take a paper for ritual."
-english.you_cant_repair_generator = "You can't repair generator."
-english.you_need_toolkit = "You need a toolkit."
-english.scp294_sex = "It's too hard for me to find a girlfriend for you."
-english.scp294_fanta = "This tastes great!"
-english.scp294_water = "It tastes like water, nothing unusual"
-english.scp294_out_of_order = "SCP-294 can't create a drink with the name \""
-english.weaponry_cant_use = "You cant interact with this object!"
-english.weaponry_took_ammo_already = "You took ammo already!"
-english.weaponry_took_uniform_already = "You already wearing gear!"
-english.weaponry_need_slots_pt1 = "You need to have"
-english.weaponry_need_slots_pt2 = "free cells in inventory!"
-english.weaponry_mtf_armor_pt1 = "You equiped a gear"
-english.weaponry_mtf_armor_pt2 = "\"MTF\""
-english.ci_choppa_down = "You have been awarded EXP for blowing up a helicopter. Now evacuate!"
-english.ctf_docs_to_base = "Deliver documents to your base."
-english.scp1025_you_read_about = "You read about \""
-english.scp294_nothing = "There was nothing in the glass."
-english.scp294_bleach = "You took a drink of bleach. It burns everything inside, tastes like water in swimming pools. Now pray that your stomache will cope with poison."
-english.scp294_refreshing_drink = "Refreshing drink."
-english.deffib_body_decayed_pt1 = "This body has completely decomposed,"
-english.deffib_body_decayed_pt2 = "ressurection unable."
-english.deffib_body_decayed_pt3 = "Are you insane? You're trying to revive a skeleton!"
-english.deffib_body_too_late_pt1 = "This body laying for a while,"
-english.deffib_body_too_late_pt2 = "ressurection unable."
-english.deffib_headshot_pt1 = "The body was badly damaged.,"
-english.deffib_headshot_pt2 = "ressurection unable."
-english.scp049_too_late = "This corpse laying for a while and it can't be turned into zombie."
-english.scp049_time_out_pt1 = "Sadly, you have been lying for a while"
-english.scp049_time_out_pt2 = "and you cant become a zombie."
-english.scp062_new_stage_pt1 = "Congratulations."
-english.scp062_new_stage_pt2 = "You opened a new stage, and now you got a new ability!"
-english.scp173_bad_zone = "You can't use ability in this area."
-english.scp939_look_on_body = "You need to look at the corpse!"
-english.scp999_healthy = "He's fully healthy."
-english.thief_look_on_them = "You need to look at the target to steal something."
-english.thief_cant_steal = "You can't steal this item from this player!"
-english.thief_need_slot = "You need to have a free cell in inventory for stealing."
-english.thief_has_already = "You have this item already!"
-english.uiuspy_doc_dist_pt1 = "Distance to target "
-english.uiuspy_doc_dist_pt2 = "presumably"
-english.uiu_locationunknown = "Location Unknown"
-english.uiu_locationlcz = "In Light Containment"
-english.uiu_locationhcz = "In Heavy Containment"
-english.uiu_locationentrance = "In Administration Area"
-english.uiu_locationoutside = "On Facility Surface"
-english.uiu_trap_forbidden = "You can't place a Lightning Gate here"
-english.cicommander_conscripted_already = "Target has got a gear already."
-english.cicommander_need_to_take_off_smth = "Target need to take off gear."
-english.cicommander_no_slots = "Target need to have a free cells in invetory."
-english.dectector_no_right = "You can't place this device in mid-air"
-english.stayon_the_ground = "You must be on the ground to deploy"
-english.MTF_Special_Goggles_Hint = "Press R to toggle the goggles, left/right mouse buttons to switch modes"
-english.feelon_no_ground = "Mines should be placed on the floor!"
-english.heal_should_on_ground = "The medical station should be placed on the ground!"
-english.armorbox_should_on_ground = "The armor plate box should be placed on the ground!"
-english.stability_should_on_ground = "The Reality Stabilizer should be deployed on the ground!"
-english.nu7_juggernaut_hint = "This is for your teammates, you can't use it"
-english.armorbox_hint_already = "You already have an armor plate"
-english.armorbox_hint_cant = "You can't use the armor plate"
-english.o4monitor_quit_hint = "When exiting, please press BackSpace"
-english.grushield_should_on_ground = "The mobile shield should be placed on the ground!"
-english.feelon_too_far = "It looks like you're too far from the point where you want to place a mine."
-english.teleport_device_destroyed = "Your teleportation device has been destroyed"
-english.goc_cant_start_nuke = "For some reason, the nuke system has been forcibly shut down"
-english.engi_no_ground = "Turret should be placed on the floor!"
-english.hitman_take_off_helmet = "Take off your helmet."
-english.hitman_take_off_vest = "Take off your vest!"
-english.hitman_disguised = "You changed your clothes succesfully!"
-english.strong_no_ground = "You need to stand on floor."
-english.strong_look_on_them = "You need to look at the target for takedown."
-english.became_invisible = "You activated your ability, now you're invinsible."
-english.visibility_lost_due_to_shooting = "Because you started shooting, the invisibility was terminated."
-english.commitee_look_on_them = "Look at the target!"
-english.commitee_cant_conscript = "You can't give equipment for this player!"
-english.commitee_no_slots = "This player must have free cell in inventory for equipment!"
-english.commitee_active_weapon = "This player must put item away from his hands!"
-english.scp3114_disguised = "Disguise complete. Let the chaos begin!"
-english.scp3114_confusion = "This corpse perplexes you"
-english.scp3114_hating_bodies = "This corpse disgusts you"
-english.scp3114_tooboney = "This corpse is too 'bony' for disguise"
-english.ulx_still_alive = " still alive"
-english.arena_participating = "You participating in arena"
-english.arena_left = "You left arena"
-english.ulx_ability_not_found_pt1 = "Ability"
-english.ulx_ability_not_found_pt2 = "not found."
-english.ulx_family_sharing_pt1 = "Player"
-english.ulx_family_sharing_pt2 = "not using Steam Sharing."
-english.ulx_family_sharing_pt3 = "using  Steam Sharing, SteamID64 owner"
-english.ulx_never = "never."
-english.ulx_after = "after"
-english.ulx_not_gagged = "This player not gaged."
-english.ulx_gagged_by = "Punished by Administrator"
-english.ulx_gag_reason = "Reason"
-english.ulx_gag_expires = "Gag ends"
-english.ulx_not_muted = "This player not muted."
-english.ulx_muted_by = "Punished by Administrator"
-english.ulx_mute_reason = "Reason"
-english.ulx_mute_expires = "Mute ends"
-english.ulx_global_banned = "successfully baned."
-english.ulx_global_unbanned = "Unbanned player"
-english.ulx_has_been_muted = "access to the chat was restricted:"
-english.ulx_has_been_muted_for = "access to the chat was restricted up for" --здесь время, а не причина
-english.ulx_has_been_muted_permanently = "access to the chat was restricted permamently"
-english.ulx_has_been_muted_by = "by" --в английском можно просто by, дальше идет ник
-english.ulx_you = "(You)"
-english.ulx_player = "Player"
-english.ulx_has_been_gagged = "access to the voice chat was restricted:"
-english.ulx_has_been_gagged_for = "access to the voice chat was restricted up for" --здесь время, а не причина
-english.ulx_has_been_gagged_permanently = "access to the voice chat was restricted permamently"
-english.ulx_has_been_gagged_by = "by" --в английском можно просто by, дальше идет ник
-english.ulx_prioritysupport = "Current players priority:"
-english.ulx_premium_expired = "You don't have a premium status."
-english.ulx_premium_will_expire_pt1 = "Your"
-english.ulx_premium_will_expire_pt2 = "premium status"
-english.ulx_premium_will_expire_pt3 = "ends after:"
-english.ulx_admin_expired = "You don't have admin status."
-english.ulx_admin_will_expire_pt1 = "Your"
-english.ulx_admin_will_expire_pt2 = "admin status"
-english.ulx_admin_will_expire_pt3 = "ends after:"
-english.ulx_has_been_successfully_muted = "was succesfully restricted to chat."
-english.ulx_has_been_successfully_gagged = "was succesfully restricted to voice chat."
-english.ulx_admin = "Administrator"
-english.ulx_they_removed_mute_from_you = "removed mute restriction from you."
-english.ulx_has_been_sucessfully_unmuted = "gained access to chat."
-english.ulx_they_removed_gag_from_you = "removed voice restriction from you."
-english.ulx_has_been_sucessfully_ungagged = "gained access to voice chat."
-english.ulx_unignore = "Now you can hear"
-english.ulx_ignore = "Now you can't hear"
-english.ulx_your_mute_expired = "You have been unmuted, because punishment period has expired."
-english.ulx_your_gag_expired = "You have been ungaged, because punishment period has expired."
-english.ulx_asay_cd = "You need to wait 30 seconds before sending new message to admins."
-english.ulx_your_expired_unmuted = "Text chat unmuted:"
-english.ulx_your_expired_ungagged = "Voice chat ungagged:"
-english.ulx_your_expired_un = "Punishment time expired."
-english.player = "Player"
-english.unlocked_achievement = "reached achivement"
-english.scp860_first_msg = "You \"SCP-860-2\" and you in your forest"
-english.scp860_second_msg = "You can see exit doors through the walls"
-english.loudconnect_connecting = "ATTENTION, LOUDCONNECTING"
-english.loudconnect_carpet = ", APPLAUSE IN THE STUDIO, LAY A RED CARPET!"
-english.loudconnect_hooray = ", APPLAUSE IN THE STUDIO! CHEER!"
-english.evac_disclosed = "Unfortunatly, your real identity was recognized by the security of the foundation. You were sent back to another foundation."
-english.dont_spawncamp = "That's not very nice to do that, you know."
-english.gru_task = "Your objective:"
-english.gru_sapper_rewards = "You have received an extra RPG round"
-english.pmfrom = "PM from:"
-english.pmto = "PM To:"
-english.scp_occupied_pt1 = "Subject"
-english.scp_occupied_pt2 = "was picked by other player. Please, choose another SCP."
-english.temp_attach = "Weapon edit is available for 30 seconds."
-english.temp_attach_time_out = "Editing time is up."
-english.uiuspy_docs_ready = "Good job, all required documents have been collected, your new task is to escape with received documents, use your keycard to execute plan!"
-english.premium_2x_bonus_pt1 = "Since you got"
-english.premium_2x_bonus_pt2 = "premium"
-english.premium_2x_bonus_pt3 = "status"
-english.premium_2x_bonus_pt4 = "your gained EXP has been doubled."
-english.nonpremium_bonus = "You gained extra exp"
-english.levelup = "Congratulations, you leveled up. Current level:"
-english.premium_unlocked_pt1 = "You got a premium for a"
-english.premium_unlocked_pt2 = "days!"
-english.player_connected = "connected to the server"
-english.player_connected_first_time = "connected to the server, he's here for the first time!"
-english.player_connected_with_new_name = "connected to the server, he was known as"
-english.prefix_unlocked = "You got an access for prefix!"
-english.levels_gifted_pt1 = "You got"
-english.levels_gifted_pt2 = " level!"
-english.sins_cleansed = "All your warnings have been cleared!"
-english.you_are_not_supposed_to_be_here_pt1 = "Warning, you are not supposed to be here! If you do not leave within 5 seconds,"
-english.you_are_not_supposed_to_be_here_pt2 = "you will die!"
-english.premium_expired = "Your VIP has expired. You can choose to extend your VIP, please visit QQ group [CN]RXSEND for more information."
-english.not_enough_players = "Not enough players, waiting for more players."
-english.game_will_start_soon = "The round will start in 2 minutes."
-english.not_enough_players_for_round_start = "Not enough players to start the round, waiting for more players."
-english.you_are_muted = "You are muted."
-english.no_radio = "You don't have a radio!"
-english.turn_up_the_radio = "Turned on the radio!"
-english.no_text_radio = "Enter text!"
-english.radio_in_chat = "[Radio]"
---english.gru_friendly = "GRU P Department, allies of the SCP Foundation, have arrived at the facility."
---english.gru_evil = "Attention everyone! Hostile GRU P Department forces are infiltrating the facility!"
-english.looting_started = "You started looting the body, this will take some time..."
-english.looting_end = "Looting completed."
-english.looted_ammo_pt1 = "You took"
-english.looted_ammo_pt2 = "ammunition."
-english.sport_run = "Changed running speed to fast."
-english.default_run = "Changed running speed to normal."
-english.cant_change_run = "can't change running speed."
-english.spyusainfo = "The 'Crush' system could not find your crush, maybe they've met an unfortunate fate."
-english.spyusa_toolate_for_hacking = "It's too late for hacking, mission failed. Current main objective: Escape the facility."
-english.spyusa_cant_hacking = "Foundation is in emergency state. Hacking operations disabled."
-english.hacking_monitor_hint = "A computer is already running hacking protocols"
-english.hacking_monitor_hint1 = "You cannot operate this terminal"
-english.spyusa_toolate_for_hacking_document = "You sent coordinates to UIU, but it's too late for reinforcements. Mission failed. Primary objective: Escape the facility."
-english.spyusa_hofnotdead = "Facility Director is still alive."
-english.spyusa_hacking = "Initiating hacking sequence..."
-english.spyusa_hacking_notify = "ALERT: Unauthorized brute-force access detected in control terminals!"
-english.spyusa_hacking_successful = "Terminal breached. Coordinates sent to UIU. Keycard permissions refreshed."
-english.spyusa_hacking_successful2 = "Terminal compromised. Coordinates transmitted to UIU HQ. Complete your mission!"
-english.spyusa_hacking_stopped = "Hacking attempt neutralized!"
-english.spyusa_enemy_detected = "Hostile activity detected in AO. Deployment delayed by 60 seconds."
-english.ntf_searching_team_D = "Commander search filter: Class-D"
-english.ntf_searching_team_SCI = "Commander search filter: Science Team"
-english.ntf_searching_team_SCP = "Commander search filter: SCPs"
-english.ntf_searching_team_unknown = "Commander search filter: Unknown"
-english.ci_hackdenined = "Scan request intercepted by security protocols"
-english.hamburger_mio_1 = "Evolution progress: "
-english.hamburger_mio_2 = " crab roe buns remaining"
-english.hamburger_mio_3 = "Congratulations! Evolution failed :)"
-english.hamburger_mio_4 = "Congratulations! Evolution successful :>"
---AmmoChecking
-english.ammochecking = "Checking..."
-english.ammo_full = "Ammo Full"
-english.almostfull = "Ammo Sufficient"
-english.halfammo = "Half capacity"
-english.littleammo = "Low reserves"
-english.noammo = "Empty"
-english.gauss_full = "Energy: Optimal"
-english.no_gauss_energy = "Energy depleted"
-english.medkit_left = "Charges remaining: "
--- NU7 Commander Abilities
-english.nu7_func_title = "Function Name: "
-english.nu7_func_desc = "Function Description: "
-english.nu7_func_title_1 = "Personnel Database Query"
-english.nu7_func_desc_1 = "Retrieves personnel information from the Foundation database to quickly identify targets.\n\nCooldown: 10s"
-english.nu7_func_title_2 = "Radio Jamming"
-english.nu7_func_desc_2 = "Jams non-Foundation communication channels for 15 seconds, causing radio interference and preventing eavesdropping.\n\nCooldown: 30s"
-english.nu7_func_title_3 = "SCP Life Detection"
-english.nu7_func_desc_3 = "Scans all SCPs in the facility to assess their health status and approximate location.\n\nCooldown: 45s"
-english.nu7_func_title_4 = "Hostile Unit Detection"
-english.nu7_func_desc_4 = "Scans and marks hostile units (including armed D-Class) within range. Marks last 15 seconds.\n\nCooldown: 60s"
-english.nu7_noscp_alive = "No SCPs Alive"
-english.nu7_show_hp_state = "Health Status: "
-english.nu7_scphp_good = "Stable"
-english.nu7_scphp_normal = "Normal"
-english.nu7_scphp_bad = "Critical"
-english.nu7_scphp_very_bad = "Terminal"
-english.nu7_scphp_gonna_die = "Near Death"
-english.nu7_scphp_died = "Neutralized"
-english.nu7_show_scp_location = "Approximate Location: "
-english.nu7_unknown_location = "Unknown"
-english.nu7_in_lcz = "Light Containment Zone"
-english.nu7_in_hcz = "Heavy Containment Zone"
-english.nu7_in_entrance = "Office Sector"
-english.nu7_on_surface = "Surface"
+急性阑尾炎
+肺癌
+哮喘
+心脏骤停
+自燃
+水痘
+感冒
+肌肉突变
+超细胞有丝分裂
+--聊天通知
+你无法穿上这个衣服!
+你目前的经验为:
+你更改SCP914的模式为:
+你需要拿出祷文.
+你无法修理发电机.
+你需要一个工具箱.
+就连我也没办法给你找个女朋友.
+这尝起来真棒!
+这尝起来像水,没什么特别的
+SCP-294 无法制造出这种饮料 \"
+你无法与此对象交互!
+你已经拿过弹药了!
+你已经有装备了!
+你需要有
+空着的物品栏!
+你穿上了这套装备
+\"MTF\"
+你因为摧毁了直升机而被奖励,现在快跑.!
+将文档交付到你的基地.
+你读到了关于 \"
+杯子里什么都没有.
+你喝了一杯漂白剂. 你的体内在燃烧,尝起来像游泳池里的水. 现在只能祈祷你的身体能够承受住这种毒药.
+清凉的饮料.
+这具尸体已经完全腐烂了,
+没有复活的可能.
+你疯了? 你在尝试救一副骨架!
+这具尸体已经躺了一会了,
+没有复活的可能.
+这具尸体受到的伤害太过严重,
+没有复活的可能.
+这具尸体已经躺了一会了无法被治愈
+可惜的是,你已经躺了一会了
+你无法被治愈
+恭喜.
+你进化了,并获得了新能力!
+你无法在此区域中使用能力.
+你需要看着尸体才能进食!
+他非常健康.
+你需要看着目标才能进行偷窃.
+你无法从这个玩家身上偷窃这个物品!
+你需要给你的背包腾出空间才能行窃.
+你已经有这个物品了!
+距离[对讲机]有:
+未发现[对讲机]的存在
+你无法呼叫
+距离\'心上人\'有:
+大概
+位置未知
+在轻收容
+在重收容
+在办公区
+在设施地表
+你不能在这里放置闪电门
+目标已经有装备了.
+目标需要脱下装备.
+该玩家的装备库存中必须有空闲格.
+你无法在空中放置此设备
+你必须在地面上才能释放
+按R键开启或关闭目镜,左右键切换目镜模式
+地雷应该放在地上!
+医疗站应该被放在地上!
+防弹插板盒子应该被放在地上!
+现实稳定锚应该被部署在地面上!
+这是给你队友的,你无法使用
+你已经有了防弹插板
+你无法使用防弹插板
+退出的时候,请按BackSpace
+机动护盾应该被放在地面上!
+看起来,你离你想放地雷的地方太远了.
+你的传送装置被摧毁了
+你的时间节点被摧毁了
+因为某些原因,核弹系统被强制关闭了
+炮台应该被放在地上!
+脱下头盔.
+脱下防弹衣!
+你成功更换了你的服装!
+你需要站在地上.
+你需要看着目标才能擒拿.
+光学迷彩启动.
+光学迷彩失效
+看着目标!
+你不能给这个玩家装备!
+该玩家的装备库存中必须有空闲格!
+该玩家必须将物品从手中拿开!
+完成伪装,开始找点乐子吧!
+你对这具尸体感到困惑
+你对这具尸体感到恶心
+这具尸体太过'骨感',并不适合伪装
+ 还活着
+你参加了竞技场
+你离开了竞技场
+能力
+未被找到.
+玩家
+不在使用Steam Sharing.
+使用Steam Sharing,SteamID64 owner
+永不.
+之后
+这个玩家没有被抵押.
+被管理员惩罚
+理由
+抵押结束
+这个玩家没有被禁言.
+被管理员禁言
+理由
+禁言结束
+成功封禁.
+解禁 玩家
+文字聊天被封禁:
+对文字聊天的被限制为
+聊天被永久封禁
+by
+(You)
+玩家
+语音聊天受到封禁:
+对语音聊天的访问被限制为
+语音受到永久限制
+by
+当前玩家的优先级为:
+您没有vip.
+你的
+vip
+之后过期:
+你没有管理员权限
+你的
+管理员权限
+在这个时间后结束:
+成功限制文字聊天.
+成功限制语音聊天.
+管理员
+取消了您的静音限制
+获得了文字聊天权限.
+取消了对你的语音聊天的限制.
+获得语音聊天权限.
+现在你听的到
+现在你听不到
+您已被取消禁言,因为封禁期限已过.
+您已被取消禁音,因为封禁期限已过
+您需要再等待 30 秒才能向管理员发送新消息.
+已解除文字聊天:
+已解除语音静音:
+惩罚时间结束.
+玩家
+获得成就
+你 \"SCP-860-2\" 在你的森林中
+你能看到墙上的出口
+ATTENTION,LOUDCONNECTING
+,APPLAUSE IN THE STUDIO,LAY A RED CARPET!
+,APPLAUSE IN THE STUDIO!CHEER!
+你真倒霉,你的身份被安保人员查了出来,你被送到了接近南西伯利亚的贝加尔湖的一片区域
+你个[数据删除]!不去执行任务,在这里摸鱼？
+任务:
+你获得了额外的一发RPG弹药
+来自:
+发送至:
+Subject
+被其他玩家选中,请选择另一个SCP.
+武器配件编辑时间为 30 秒.
+编辑配件时间到了
+干得好,需要的情报已经全部被上传,你的新任务是带着情报逃离设施,别忘了妥善使用你的钥匙卡!
+因为已经是
+VIP
+了
+你获得的经验值已翻倍
+你获得了额外经验值
+恭喜你,你升级了,当前等级为:
+你获得了VIP
+天!
+连接到服务器
+连接到了服务器,他是第一次来游玩!
+连接到了服务器,他以前的id是
+你得到了一个头衔!
+你得到了
+ 等级!
+你的所有警告已全部清除!
+警告,你不应该出现在这里!如果你在 5 秒内不离开,
+你会死!
+你的VIP已过期,你可以选择延长VIP,请访问QQ群[CN]RXSEND 了解更多信息.
+玩家还不够,等待其他玩家.
+回合还有 2 分钟开始
+回合开始玩家不够,等待更多玩家
+你被禁言.
+你没有对讲机!
+打开了对讲机!
+输入文字!
+[对讲机]
+-- chinese.gru_friendly = "SCP基金会的盟友--GRU P 部门已抵达设施"
+-- chinese.gru_evil = "所有人注意敌对势力GRU P部门正在侵入设施!"
+你开始搜刮尸体,这需要一些时间......
+搜刮完毕
+你拿了
+弹药
+改变奔跑速度为快
+改变奔跑速度为普通
+无法改变奔跑速度
+\'心上人\'系统无法找到你的心上人,也许他已经遭遇不测了呢
+骇入为时已晚,任务失败,当前主要目标:逃离设施.
+基金会进入紧急状态,无法进行骇入操作
+已有电脑正在进行骇入程序
+你无法对这台电脑进行操作
+你没有任何文件
+你发送了设施坐标给UIU,但为时已晚,支援来不及到达. 任务失败. 当前主要目标:逃离设施.
+设施主管还活着.
+启动骇入过程...
+所有人员注意:控制终端检测到非法强硬访问手段!
+你成功入侵了终端,并将设施坐标发送给UIU,你重新刷新了你的权限卡,现在它能够开启大门.
+你成功入侵了终端,并将设施坐标发送给UIU总部,现在完成你的任务!
+尝试骇入已被阻止!
+在到达区域检测到敌对活动,到达延迟一分钟
+指挥官搜索阵营为:D级人员
+指挥官搜索阵营为:科研团队
+指挥官搜索阵营为:SCP
+指挥官搜索阵营为:未知
+扫描请求被安全系统拦截
+距离进化还有:
+ 个蟹黄包
+恭喜你!进化失败了 :)
+恭喜你!进化成功了 :>
+你背叛了D国!
+--重型现实稳定锚
+工作中...
+损坏
+破环稳定锚中...
+修复稳定锚中...
+你需要工具来修理
+修复重型现实稳定锚
+所有发电机未修复
+重型现实稳定锚已修复
+重型现实稳定锚被损坏
+--人员扫描器
+无法使用
+待命中...
+扫描冷却
+正在被使用
+设备正在冷却
+基金会武装
+基金会科研
+敌对武装
+请选择要扫描的目标
+--QRT召唤器
+QRT小队尚未准备完毕
+没有可用的QRT小队
+--单兵伤害吸收设备
+已启动PoS-9装置
+已关闭PoS-9装置
+PoS-9装置已损坏
+Pos-9剩余耐久: 
+--格鲁乌P撤离提醒
+装甲车将在
+秒后离开
+--实体提醒
+有人正在使用/互动
+你互动地太快了!
+--AmmoChecking lang
+检查中...
+弹药已满
+弹药充足
+大概还有一半
+不剩多少
+没有子弹
+能量充足
+能量耗尽
+可使用次数:
+--nu7 commander ability
+功能名称: 
+功能介绍: 
+人员数据库查询
+通过检索基金会数据库中的人员信息,能快捷的识别所面对目标的身份\n\n设备冷却时间: 10秒
+无线电干扰
+干扰任何非基金会武装单位的频道15秒同时让其对讲机发出异常声响\n并且能够有效预防任何非法的对讲机窃听\n\n设备冷却时间: 30秒
+SCP生命检测
+对设施所有SCP的生命状态进行检测并对其生命状态做出评估,同时显\n示其的所处的大概区域\n\n设备冷却时间: 45秒
+敌对武装单位侦测
+扫描一次以使用者为中心的一定范围的敌对武装单位以及任何持有致\n命武器的D级人员(包括一切冷兵器)并将他们标记; 被标记的目标会在你屏幕上存\n在15秒\n\n设备冷却时间: 60秒
+无任何SCP存活
+生命状态: 
+良好
+正常
+危险
+垂危
+濒死
+无效化
+大致位置: 
+未知
+轻收容
+重收容
+办公区
+地表
+对象已有手铐
+左键缴械, 右键给D级人员戴手铐
+你无法给人戴手铐/你需要先取得MTF制服/但你任然可以缴械他人
 --TEAMS
-english["Not Set"] = "null"
-english["SCPs"] = "SCPs"
-english["MTF Guards"] = "MTF Guards"
-english["Class-Ds"] = "Class-D"
-english["Spectators"] = "Spectators"
-english["Scientists"] = "Researchers"
-english["Chaos Insurgency"] = "Chaos Insurgency"
-english["Security Department"] = "Security Department"
-english["GRU"] = "GRU-P Division (Post-Era)"
-english["GRU_Guard"] = "GRU-P Guard Unit"
-english["Nine Tailed Fox"] = "MTF Nu-7 \"Nine Tailed Fox\""
-english["Serpents Hand"] = "Serpent's Hand"
-english["Global Occult Coalition"] = "Global Occult Coalition"
-english["Unusual Incidents Unit"] = "Unusual Incidents Unit"
-english["Unusual Incidents Unit Main Force"] = "UIU Infiltration Team"
-english["Quick Response Team"] = "Quick Response Team"
-english["Children of the Scarlet King"] = "Children of the Scarlet King"
-english["Specials"] = "Special Research"
-english["Spec. Task Force"] = "Spec. Task Force"
-english["Nazi Germany"] = "Nazi Germany"
-english["American Army"] = "U.S. Army"
-english["Arena Participants"] = "Arena Participants"
-english["NU7 Hammer Down"] = "MTF Nu-7 \"Hammer Down\""
+null
+SCPs
+机动特遣队
+MTF 专家组
+D级人员
+观察者
+科研团队
+混沌分裂者
+设施安保部门
+格鲁乌P部门(后时代)
+格鲁乌P部门 近卫小组
+机动特遣队 \"九尾狐\"
+蛇之手
+全球超自然联盟
+特异事故处
+特异事故处-渗透小组
+快速反应部队
+猩红之子
+特殊科研
+Spec. Task Force
+机动特遣队 \"落锤\" 特种大队
+STS \"清理者\" 小队
+GRU-CI突袭部队
+机动特遣队 Nu-22 \"火箭侠\"
+纳粹德国
+美国陆军
+竞技场参与者
 --SCOREBOARD
-english.scoreboard_ping = "Ping"
-english.scoreboard_level = "Level"
-english.scoreboard_achievements = "Achievements"
-english.scoreboard_country = "Country"
-english.scoreboard_score = "Score"
-english.scoreboard_rounds_left = "Rounds left"
+延迟
+等级
+成就.
+国家
+分数
+剩余回合数
 --BOTTOM MESSAGES
-english.ammo_maximum = "Ammo capacity reached."
-english.ammo_not_suitable = "Ammo type mismatch."
-english.scp294_feeling_really_bad = "This drink makes me nauseous..."
-english.scp294_scp500 = "All ailments cured. Optimal condition restored."
-english.vendor_no_money = "Insufficient funds"
-english.vendor_bought = "Purchase completed"
-english.scp1025_chickenpox = "Cutaneous irritation detected"
-english.scp1033_protect = "The bracelet will protect you"
-english.scp1033_depleted = "Bracelet energy exhausted"
-english.screwdriver_used = "Checkpoint panel breached"
-english.scp409_1st_stage = "Body temperature dropping rapidly"
-english.scp409_2nd_stage = "Critical hypothermia detected"
-english.inventory_full = "Inventory full"
-english.secondary_inventory_full = "Secondary slot occupied"
-english.trashbin_loot_end = "Trash inspection complete"
-english.trashbin_empty = "No items detected"
-english.access_denied = "ACCESS DENIED"
-english.access_granted = "ACCESS GRANTED"
-english.keycard_needed = "Keycard required"
-english.scarlet_hurt_you = "Scarlet King's corruption spreading"
-english.suppress_scp = "Suppression field active!"
-english.water_doesnt_work = "You still feel anxious"
-english.scp109_defend_1903 = "Your spirit feels uplifted!"
-english.scp109_defend_1903_1 = "The target resisted your attack!"
---New content
-english.missionbriefing = "Briefing:"
-english.uiutask_title = "Mission Selection"
-english.uiutask_secret = "Covert Operation"
-english.uiutask_intrude = "Brute-force Protocol"
-english.secretwar_intro = "Stealth hack:\nNo alarms triggered\nMinimal reinforcements"
-english.intruder_intro = "Forced breach:\nTriggers alarms\nMaximum reinforcements"
-english.intruder_hack = "Brute-force hack initiated. Security alarms tripped."
-english.secret_hack = "Covert intrusion protocol executed"
-english.intruder_hack_special = "Director codes used: Security systems offline"
-english.secret_hack_speical = "Director codes applied: External scanners disabled"
-english.shutdown_hacking = "Foreign hacking process terminated"
-english.spy_complete = "Hack successful! Reinforcements inbound."
-english.scp127_1likeu = "SCP127-1 affinity increased"
-english.scp127_1hateu = "SCP127-1 hostility detected"
-english.general_choose_title = "Selection Required"
-english.d_shotgun_broken = "This gun is broken"
---GRU Marksman
-english.marks_man_holo = "Holographic Sight"
-english.marks_man_sniper = "Sniper Scope"
+你的弹药已经满了.
+这种弹药不适配你的枪支.
+喝完这个之后,我感到很难受 
+喝下去之后,感觉浑身都舒服了
+你需要钱才能买
+你花钱买了杯喝的
+你感觉很痒
+手镯将会保护你
+手镯似乎没有作用了
+你使用了螺丝刀打开了检查点钢板
+你突然感到全身冷的发抖
+突然你觉得很冷
+你的物品栏满了
+你的副物品栏满了
+你完成了对垃圾桶的搜索
+垃圾桶是空的.
+访问拒绝
+访问许可
+需要一个权限卡才能开启此门.
+猩红的力量正在缓慢撕扯你的身体
+你正在被'压制'!
+你依旧感觉很焦虑
+你的精神感到振奋!
+目标抵御了你的攻击!
+箱子内空无一物
+你已经拥有箱内的物品
+--新东西 by someone
+介绍:
+任务选择
+秘密战争
+气势汹汹
+使用隐匿的方法骇入某台\n办公区的电脑,\n这不会触发警报,但支援来\n的人会很少
+强制骇入某台办公区的\n电脑,这会触发警报,但支援\n来的人会很多
+你强制骇入了电脑并触发了安全警报
+你使用更安全方法骇入了电脑
+你使用了主管的代码,关闭了安全警报
+你使用了主管的代码,关闭外部人员扫描系统
+未知的骇入程序已被关闭
+骇入成功,支援已经在路上来了!
+SCP127-1认可了你
+SCP127-1觉得你很恶心
+请选择
+这把枪坏掉了
+--格鲁乌近卫小组精确射手选择倍镜
+全息镜
+狙击镜
 --GOC特工的选项
-english.goc_light_armor = "Portable Light Armor"
-english.goc_light_armor_desc = "A portable version of the GOC Light Hazard Combat Armor.\nAllows the wearer to move faster\nbut offers less protection than\nall GOC Hazard Combat Armor variants.\n------\nEquipped with R3K Assault Rifle"
-english.goc_standard_armor = "Portable Standard Armor"
-english.goc_standard_armor_desc = "A portable version of the standard\nGOC Hazard Combat Armor.\nBalanced in all aspects.\n------\nEquipped with ARX Combat Rifle"
-english.goc_heavy_armor = "Portable Combat Armor"
-english.goc_heavy_armor_desc = "A portable version of the GOC Heavy\nHazard Combat Armor.\nOffers the highest protection among\nthe three variants, though far inferior\nto standard assault team armor.\n------\nEquipped with Fate Suppression Rifle"
---DESCRIPTIONS
+便携轻型护甲
+便携版本的轻型GOC危险作\n战护甲\n能够使装备者拥有更快的\n奔跑速度\n但该护甲防护性能要低于\n所有GOC危险作战护甲\n------\n使用R3K突击步枪
+便携标准护甲
+便携版本的标准GOC危险作\n战护甲\n各方面数据相对均衡\n------\n使用ARX战斗步枪
+便携战斗护甲
+便携版本的战斗GOC危险作\n战护甲\n防护性能是三套护甲最强\n的\n但远远不及常规攻击小组\n的重型护甲\n------\n使用Fate压制步枪
+--是否相信079
+相信SCP-079
+不相信SCP-079
+--角色介绍 --FZ翻译
 BREACH = BREACH or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
-BREACH.Descriptions.english = BREACH.Descriptions.english or {}
-BREACH.Descriptions.english[role.SCI_SpyUSA] = "You are AEgIS - Spy\n\nObjective: Hack office computers\n\nRetrieve critical data and summon reinforcements\n\nFacility Director's cipher device may assist you\n\nYour identity is encrypted in database\n\nIntel suggests compromising evidence exists"
-BREACH.Descriptions.english[role.Nazi] = "Primary Objective: Eliminate designated hostile forces\n\nPREVENT THEIR VICTORY!" -- Disabled
-BREACH.Descriptions.english[role.USA] = "Primary Objective: Neutralize designated hostile forces\n\nPREVENT THEIR VICTORY!" -- Disabled
-BREACH.Descriptions.english[SCP049] = "You are SCP-049[Plague Doctor]\nContain the 'Pestilence' outbreak\n'Cure' infected personnel"
-BREACH.Descriptions.english[SCP912] = "You are SCP-912[Autonomous SWAT Armor]\nEliminate facility intruders"
-BREACH.Descriptions.english[SCP062DE] = "You are SCP-062-DE[Phantom of War]\nFulfill your final orders"
-BREACH.Descriptions.english[SCP638] = "You are SCP-638[Howling Entity]\nInduce terror through sonic attacks"
-BREACH.Descriptions.english[SCP062FR] = "You are SCP-062-FR[Perfect Predator]\nConsume targets for evolution"
-BREACH.Descriptions.english[SCP076] = "You are SCP-076[Able]\nCleave through all obstacles"
-BREACH.Descriptions.english[SCP106] = "You are SCP-106[The Old Man]\nClaim victims for your pocket dimension"
-BREACH.Descriptions.english[SCP096] = "You are SCP-096[Shy Guy]\nEliminate visual contact perpetrators"
-BREACH.Descriptions.english[SCP542] = "You are SCP-542[Mister Surgery]\nContain medical anomalies"
-BREACH.Descriptions.english[SCP973] = "You are SCP-973[Highway Patrol]\nEnforce containment protocols"
-BREACH.Descriptions.english[SCP2012] = "You are SCP-2012[Legion Specter]\nFor military honor!"
-BREACH.Descriptions.english[SCP082] = "You are SCP-082[Fernand the Cannibal]\nImpart 'life lessons'"
-BREACH.Descriptions.english[SCP939] = "You are SCP-939[With Many Voices]\nMimic and ambush targets"
-BREACH.Descriptions.english[SCP811] = "You are SCP-811[Swamp Woman]\nCorrode through defenses"
-BREACH.Descriptions.english[SCP682] = "You are SCP-682[Hard-to-Destroy Reptile]\nTerminate all lifeforms"
-BREACH.Descriptions.english[SCP999] = "You are SCP-999-2[Imperfect Derivative]\nExperimental healing entity with altered behavior"
-BREACH.Descriptions.english[SCP3114] = "You are SCP-3114[Is This Too Cold?]\nMultiversal entity with enhanced emotional capacity"
-BREACH.Descriptions.english[role.Chaos_Grunt] = "Chaos Insurgency - Operative\n\nSecure D-Class personnel\n\nFollow commander's orders"
-BREACH.Descriptions.english[role.Chaos_Demo] = "Chaos Insurgency - Demolitions\n\nEquipped with RPG launcher (2 rounds)\n\nDestroy hostile assets"
-BREACH.Descriptions.english[role.Chaos_Claymore] = "Chaos Insurgency - Tactician\n\nDeploy 3 directional mines\n\nExecute containment protocols"
-BREACH.Descriptions.english[role.Chaos_Jugg] = "Chaos Insurgency - Juggernaut\n\nM60 + Heavy armor\n\nNeutralize hostiles"
-BREACH.Descriptions.english[role.Chaos_Commander] = "Chaos Insurgency - Commander\n\nSCAR rifle + D-Class armament\n\nCoordinate operations"
-BREACH.Descriptions.english[role.NTF_Soldier] = "MTF Epsilon-11 - Soldier\n\nRescue personnel\n\nFollow command protocols"
-BREACH.Descriptions.english[role.NTF_Specialist] = "MTF Epsilon-11 - Containment Specialist\n\nDeploy SCP restraint nets\n\nExecute special protocols"
-BREACH.Descriptions.english[role.NTF_Sniper] = "MTF Epsilon-11 - Sniper\n\nBarrett anti-materiel rifle\n\nEngage high-value targets"
-BREACH.Descriptions.english[role.NTF_Pilot] = "MTF Epsilon-11 - Pilot\n\nEvac protocol: Y!"
-BREACH.Descriptions.english[role.NTF_Commander] = "MTF Epsilon-11 - Commander\n\nAdvanced biometric scanning\n\nCoordinate containment efforts"
-BREACH.Descriptions.english[role.NU7_Soldier] = "MTF Nu-7 - Operator\n\nRescue researchers\n\nNeutralize hostiles"
-BREACH.Descriptions.english[role.NU7_Commander] = "MTF Nu-7 - Field Commander\n\nLead rescue operations\n\nMaintain facility security"
-BREACH.Descriptions.english[role.NU7_Specialist] = "MTF Nu-7 - Reality Specialist\n\nPortable Scranton Anchor\n\nSuppress anomalous activity"
-BREACH.Descriptions.english[role.NU7_Vanguard] = "MTF Nu-7 - Vanguard\n\nFrontline operations\n\nSecure evacuation routes"
-BREACH.Descriptions.english[role.NU7_Juggernaut] = "MTF Nu-7 - Juggernaut\n\nHeavy weapons specialist\n\nBreach and clear"
-BREACH.Descriptions.english[role.Cult_Grunt] = "Church of the Broken God - Acolyte\n\nPerform ritual components\n\nFollow high priest"
-BREACH.Descriptions.english[role.Cult_Psycho] = "Church of the Broken God - Zealot\n\nExecute ritual violence\n\nMaintain dogma"
-BREACH.Descriptions.english[role.Cult_Commander] = "Church of the Broken God - High Priest\n\nDirect ritual operations\n\nComplete ascension"
-BREACH.Descriptions.english[role.Cult_Specialist] = "Church of the Broken God - Deacon\n\nSupport ritual completion\n\nHandle sacred artifacts"
-BREACH.Descriptions.english[role.UIU_Agent] = "UIU - Field Agent\n\nCyber infiltration ops\n\nFollow command chain"
-BREACH.Descriptions.english[role.UIU_Agent_Commander] = "UIU - Squad Leader\n\nRadio surveillance capability\n\nCoordinate intelligence ops"
-BREACH.Descriptions.english[role.UIU_Agent_Specialist] = "UIU - Tactical Agent\n\nAcoustic detection grenades\n\nMark hostile signatures"
-BREACH.Descriptions.english[role.UIU_Agent_Thunder] = "You are an elite operative of the Special Affairs Department Agent Division - [Codename: 'Thunderstrike']\n\nYou carry 3 experimental 'Lightning Gate' devices that can be installed on doors. When a human attempts to pass through, they will be electrocuted and temporarily incapacitated.\n\nHowever, these devices cannot function for extended periods...\n\nHack into computers to gather intel, follow your commander's orders, and complete the objectives!"
---BREACH.Descriptions.english[role.FBI_Commander] = "You are the Special Incident Section - Commander\n\nYou can see nearby people using radios\n\nGive orders to your soldiers and complete the mission!"
-BREACH.Descriptions.english[role.UIU_Soldier] = "UIU - Operations Specialist\n\nCyber warfare protocols\n\nExecute command orders"
---BREACH.Descriptions.english[role.UIU_Agent_Information] = "You are the Special Incident Section - Intelligence Agent\n\nHack into facility terminal computers and call for UIU main forces"BREACH.Descriptions.english[role.UIU_Specialist] = "UIU - Containment Expert\n\nTemporary door lockdown\n\nSupport tactical ops"
-BREACH.Descriptions.english[role.UIU_Specialist] = "UIU - Containment Expert\n\nTemporary door lockdown\n\nSupport tactical ops"
-BREACH.Descriptions.english[role.UIU_Clocker] = "UIU - Infiltrator\n\nMonomolecular blade\n\nExecute precision strikes"
-BREACH.Descriptions.english[role.UIU_Commander] = "UIU - Operations Commander\n\nGreen Haze neurotoxin grenades\n\nCoordinate extraction"
-BREACH.Descriptions.english[role.GRU_Soldier] = "GRU Division P - Operative\n\nFollow command hierarchy\n\nComplete objectives"
-BREACH.Descriptions.english[role.GRU_Specialist] = "GRU Division P - Tactician\n\nAdvanced combat protocols\n\nSupport primary ops"
-BREACH.Descriptions.english[role.GRU_Jugg] = "GRU Division P - Heavy\n\nArmored assault unit\n\nBreach defenses"
-BREACH.Descriptions.english[role.GRU_Sapper] = "GRU Division P - Combat Engineer\n\nTactical fortifications\n\nSecure positions"
-BREACH.Descriptions.english[role.GRU_Commander] = "GRU Division P - Field Commander\n\nCoordinate personnel allocation\n\nMission execution"
-BREACH.Descriptions.english[role.GRU_Political] = "GRU Division P - Commissar\n\nPersonnel management\n\nEnsure operational compliance"
-BREACH.Descriptions.english[role.GRU_Grunt] = "GRU Division P - Vanguard\n\nRapid defense deployment\n\nCover extraction"
-BREACH.Descriptions.english[role.GRU_Machinegunner] = "GRU Division P - Gunner\n\nSuppressive fire support\n\nMaintain perimeter"
-BREACH.Descriptions.english[role.GRU_Marksman] = "GRU Division P - Marksman\n\nPrecision engagement\n\nOverwatch duties"
-BREACH.Descriptions.english[role.Goc_Grunt] = "GOC - Strike Operative\n\nDetonate Alpha warhead\n\nPriority objective"
-BREACH.Descriptions.english[role.Goc_Special] = "GOC - Tactical Specialist\n\nDeploy teleport beacon\n\nSupport nuclear detonation"
-BREACH.Descriptions.english[role.Goc_Jag] = "Global Occult Coalition - Juggernaut\n\nGenerate mobile energy shield\n\nOnly GOC-issued weapons can penetrate it\n\nDetonate Alpha Warhead at all costs!"
-BREACH.Descriptions.english[role.DZ_Grunt] = "Serpent's Hand - Soldier\n\nAssist and evacuate SCPs!"
-BREACH.Descriptions.english[role.DZ_Gas] = "Serpent's Hand - Gas Specialist\n\nSpecial mask grants SCP-409 immunity\n\nAssist SCP evacuation!"
-BREACH.Descriptions.english[role.DZ_Psycho] = "Serpent's Hand - Berserker\n\nWield SCP-127-1 - an anomalous weapon that shreds enemies!\n\nAssist SCP evacuation!"
-BREACH.Descriptions.english[role.DZ_Commander] = "Serpent's Hand - Gatekeeper\n\nSummon portals to random locations\n\nWarning: Unpredictable destinations\n\nLead SCP evacuation!"
-BREACH.Descriptions.english[role.QRT_Soldier] = "QRT - Rifleman\n\nSecure facility under Chief's orders!"
-BREACH.Descriptions.english[role.QRT_Medic] = "QRT - Medic\n\nMedical support operations!"
-BREACH.Descriptions.english[role.QRT_ShockTrooper] = "QRT - Shock Trooper\n\nAssault and clear hostiles!"
-BREACH.Descriptions.english[role.QRT_Commander] = "QRT - Commander\n\nOversee facility defense!"
-BREACH.Descriptions.english[role.QRT_Machinegunner] = "QRT - Machine Gunner\n\nM249 SAW operator!"
-BREACH.Descriptions.english[role.QRT_Shield] = "QRT - Shield Operator\n\nBallistic shield deployment!"
-BREACH.Descriptions.english[role.QRT_Marksmen] = "QRT - Marksman\n\nFully-auto MK14 EBR!"
-BREACH.Descriptions.english[role.OSN_Soldier] = "You - are the Special Task Grunt\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.english[role.OSN_Specialist] = "You - are the Special Task Specialist\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.english[role.OSN_Commander] = "You - are the Special Task Commander\n\nProtect and follow the orders of the Dispatcher!" --未启用
-BREACH.Descriptions.english[role.SECURITY_Recruit] = "Security - Rookie\n\nArmory resupply required\n\nProtect researchers!"
-BREACH.Descriptions.english[role.SECURITY_Sergeant] = "Security - Sergeant\n\nIssue commands to guards!"
-BREACH.Descriptions.english[role.SECURITY_Corporal] = "Security - Corporal\n\nStandard protection duty!"
-BREACH.Descriptions.english[role.SECURITY_OFFICER] = "Security - Officer\n\nRoutine patrols!"
-BREACH.Descriptions.english[role.SECURITY_Warden] = "Security - Warden\n\nFull command authority!"
-BREACH.Descriptions.english[role.SECURITY_Shocktrooper] = "Security - Breacher\n\nFull-auto MP5K!"
-BREACH.Descriptions.english[role.SECURITY_Heavy] = "Security - Riot Control\n\nRubber slug shotgun!"
-BREACH.Descriptions.english[role.SECURITY_IMVSOLDIER] = "Security - IMV Specialist"
-BREACH.Descriptions.english[role.SECURITY_Chief] = "Security - Captain\n\nCommand all guards!"
-BREACH.Descriptions.english[role.SECURITY_Spy] = "Chaos Insurgency - Infiltrator\n\nDisguised as security\n\nAid D-class escape!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_DAMAGE] = "Dr. Kelen - SCP Execution\n\nBoost SCP damage radius!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_HEALER] = "Matilda - Lead Nurse\n\nArea healing ability!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_SLOWER] = "Dr. Speedwone\n\nSCP speed reduction field!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_SPEED] = "Dr. Lomao\n\nMovement speed booster!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_MINE] = "Dr. Feelon\n\nAnti-SCP smart mines!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_BOOSTER] = "Special Research\n\nAttribute enhancement field!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_SHIELD] = "Dr. Shieldmeh\n\nBulletproof forcefield!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_INVISIBLE] = "Dr. Ruprecht\n\nActive camouflage!"
-BREACH.Descriptions.english[role.SCI_SPECIAL_VISION] = "Prof. Hedwig\n\nSCP tracking visor!"
-BREACH.Descriptions.english[role.SCI_Assistant] = "Research Assistant\n\nEvacuate with staff!"
-BREACH.Descriptions.english[role.SCI_SpyDZ] = "Serpent's Hand - Infiltrator\n\nAnomalous wormhole insertion\n\nSteal SCP items!"
-BREACH.Descriptions.english[role.SCI_Grunt] = "Researcher\n\nStandard evacuation!"
-BREACH.Descriptions.english[role.SCI_Tester] = "Senior Researcher\n\nHigh-level keycard access!"
-BREACH.Descriptions.english[role.SCI_Recruiter] = "Ethics Committee\n\nRecruit valuable D-class!"
-BREACH.Descriptions.english[role.SCI_Medic] = "Medical Staff\n\nCombat medic!"
-BREACH.Descriptions.english[role.SCI_Cleaner] = "Janitor\n\nTrash inspection bonus!"
-BREACH.Descriptions.english[role.SCI_Head] = "HR Director\n\nPersonnel management!"
-BREACH.Descriptions.english[role.ClassD_Default] = "Class-D\n\nCoordinate escape!"
-BREACH.Descriptions.english[role.ClassD_GOCSpy] = "GOC Sleeper Agent\n\nInfiltrate office area!"
-BREACH.Descriptions.english[role.ClassD_FartInhaler] = "D-class - Anosmic\n\nToxic gas immunity!"
-BREACH.Descriptions.english[role.ClassD_Survivor] = "You are Class D - Survivor\n\nYour survival skills are unmatched by others\n\nMake good use of your survival experience to stay alive!"
-BREACH.Descriptions.english[role.ClassD_Pron] = "You are Class D - Thief\n\nYou stole an access card from a researcher.\n\nWork with other D-Class to escape."
-BREACH.Descriptions.english[role.ClassD_Thief] = "You are Class D - Pickpocket\n\nYou can steal items from players.\n\nWork with others to escape."
-BREACH.Descriptions.english[role.ClassD_Fat] = "You are Class D - Tank\n\nYour body fat reduces damage.\n\nCooperate to escape."
-BREACH.Descriptions.english[role.ClassD_Bor] = "You are Class D - Wrestler\n\nTrained daily to build muscle.\n\nWork with others to escape."
-BREACH.Descriptions.english[role.ClassD_Hack] = "You are Class D - Hacker\n\nBuilt a lock-hacking device using stolen components.\n\nCooperate to escape."
-BREACH.Descriptions.english[role.ClassD_Cannibal] = "You are Class D - Cannibal\n\nTraumatized past led to extreme indifference.\n\n[REDACTED] memories haunt you.\n\nEscape with others."
-BREACH.Descriptions.english[role.ClassD_Probitiy] = "You are Class D - Pockets\n\nYour pockets are unusually large.\n\nWork with others to escape."
-BREACH.Descriptions.english[role.ClassD_Fast] = "You are Class D - Athlete\n\nFormer provincial-level sprinter.\n\nOutrun others to escape."
-BREACH.Descriptions.english[role.ClassD_Killer] = "You are Class D - Killer\n\nCrafted fragile but lethal knives for yourself and others.\n\nCooperate to escape."
-BREACH.Descriptions.english[role.ClassD_Hitman] = "You are Class D - Assassin\n\nOld habits die hard.\n\nWork with others to escape."
-BREACH.Descriptions.english[role.MTF_Guard] = "MTF - Guard\n\nExecute orders!"
-BREACH.Descriptions.english[role.MTF_Medic] = "MTF - Medic\n\nMedical operations!"
-BREACH.Descriptions.english[role.MTF_Left] = "MTF - Lieutenant\n\nCommand squad!"
-BREACH.Descriptions.english[role.MEG_Chem] = "MTF - CBRN Expert\n\nBeta-7 veteran gear!"
-BREACH.Descriptions.english[role.MTF_Shock] = "MTF - Pyro\n\nIncendiary grenades!"
-BREACH.Descriptions.english[role.MTF_Specialist] = "MTF - Specialist\n\nBlackout AR!"
-BREACH.Descriptions.english[role.MTF_Com] = "MTF - Commander\n\nStrategic leadership!"
-BREACH.Descriptions.english[role.MTF_Engi] = "MTF - Engineer\n\nSCP suppression turrets!"
-BREACH.Descriptions.english[role.MTF_HOF] = "Facility Director\n\nFull authority!"
-BREACH.Descriptions.english[role.MTF_Security] = "Internal Security\n\nPersonnel tracking!"
-BREACH.Descriptions.english[role.O4Commander] = "O4 Commander\n\nStrategic oversight!"
-BREACH.Descriptions.english[role.MTF_Jag] = "MTF - Heavy\n\nM249 + armor!"
+BREACH.Descriptions.chinese = BREACH.Descriptions.chinese or {}
+你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑\n\n获取部分重要信息并呼叫支援\n\n设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报
+你是SCP-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人
+你是SCP-912[自主型SWAT装甲]\n击杀设施内的罪犯
+你是SCP-062-DE[战争的幽灵]\n继续完成元首赋予你的使命!
+你是SCP-638[狂吼之人]\n你的吼声能让周围的人感到恐惧
+你是SCP-062-FR[完美掠食者]\n吃掉他们,然后进化...
+你是SCP-076[亚伯]\n你的刀能轻易斩断任何阻挡你的事物
+你是SCP-106[恐怖老人]\n嘿嘿,想来我的快乐老家做客吗?!
+你是SCP-096[害羞的人]\n你憎恶那些看到你脸的施暴者!
+你是SCP-542[外科医学先生]\n设施内的病人疑似有点太多了
+你是SCP-973[公路巡警]\n设施内的\'交通\'需要你的管制
+你是SCP-2012[迷失时间的军灵]\n为了军团的荣耀!
+你是SCP-082[食人者“费尔南德”]\n想要了解一点\'做人\'的道理吗？
+你是SCP-939[千喉之兽]\n多么优雅的声音,现在,是我的了
+你是SCP-811[沼女]\n你的酸液能浸透装甲!
+你是SCP-682[不灭孽蜥]\n憎恶一切,毁灭一切
+你是SCP-999-2[不完美的副产物]\n是基金会对SCP-999实验所创造的生命体\n你虽然能够治愈别人但你似乎不像999那么友善
+你是SCP-3114[是不是太冷淡了?]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了...
+你是混沌分裂者 - 士兵\n\n俘虏D级人员\n\n遵循你指挥官的命令完成目标!
+你是混沌分裂者 - 恶魔\n\n你有RPG火箭发射器和两发弹药,用它摧毁直升机和一切你遇到的敌人\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者 - 猎人\n\n你能放置三枚阔剑地雷\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 重装\n\n你有一挺M60重机枪的同时还有非常厚重的护甲,杀掉所有你看到的敌人!\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 指挥官\n\n你有一把SCAR突击步枪并且能够武装D级人员\n\n向你的士兵下达命令并完成任务!
+你是九尾狐小队的 - 士兵\n\n营救设施人员并遵循你指挥官的命令完成目标!
+你是九尾狐小队的 - 战斗专家\n\n你的特殊捕获网能控制住大部分的SCP\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 狙击手\n\n你有一挺巴雷特,它能够轻易撕开SCP的那脆弱的防御\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 飞行员\n\nY!
+你是九尾狐小队的 - 指挥官\n\n你能够扫描设施人员包括SCP并看到他们\n\n遏制设施内的收容失效并保卫整个设施不受其他势力的侵扰!
+你是落锤肃杀营A连 - 士兵\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 指挥官\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 作战专家\n\n你所携带的由Kelen博士研发的便携式现实稳定锚,能够遏制住大部分SCP技能的使用\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 先锋\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是落锤肃杀营A连 - 无畏战士\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是教众 - 猩红之王的信徒\n\n遵循祭司的命令并完成仪式!
+你是狂信徒 - 猩红之王的狂热崇拜者\n\n遵循祭司的命令并完成仪式!
+你是祭祀 - 猩红之王最虔诚的崇拜者\n\n向其他教众下达命令并完成仪式!
+你是助祭 - 猩红之王的得力帮手\n\n遵循祭司的命令并完成仪式!
+你是特异事务处特工部的 - 干员\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 组长\n\n你能看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处特工部的 - 特种干员\n\n你有一枚特殊的手榴弹,它会在房间里产生回声,标记你和你的队友附近的每一个敌人.\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 精英干员[代号:'雷击']\n\n你所携带的3个实验性'闪电门'装置能够安放在门上,当有人类试图穿过它时就会被电击并失去瞬间的行动能力\n\n但该装置目前不能够长久的工作....\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你可以看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处的 - 士兵\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 情报专员\n\n骇入设施终端电脑呼叫UIU主力部队
+你是特异事务处的 - 战斗专家\n\n你能够锁上任何门一段时间\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 渗透者\n\n你敏捷并致命,你的刀非常锋利,它甚至能切碎SCP\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你所携带的绿烟(\"Green Haze\")手雷,能够对吸入的人造成大量伤害,尽管这不符合交战规则\n\n向你的士兵下达命令并完成任务!
+你是格鲁乌 - 士兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 作战专家\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 重装\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 战斗工兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 指挥官\n\n与少尉合理分配人数,完成任务!
+你是格鲁乌 - 少尉\n\n与指挥官合理分配人数,完成任务!
+你是格鲁乌 - 近卫小组组员\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组机枪手\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组精确射手\n\n快速构建防线,掩护侵入部队安全撤离
+你是全球超自然联盟的 - 士兵\n\n不惜一切代价引爆Alpha核弹!!
+你是全球超自然联盟的 - 战斗专家\n\n你可以放置一个信标并在将来传送过去\n\n不惜一切代价引爆Alpha核弹!
+你是全球超自然联盟的 - 无畏勇士\n\n你能生成一面跟随你移动的能量护盾\n\n仅有全球超自然联盟下发的武器才能击穿它\n\n不惜一切代价引爆Alpha核弹!
+你是蛇之手 - 士兵\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 特种探员\n\n你特制的防毒面具可以免疫SCP-409\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 疯子\n\n你携带SCP-127-1是一把特殊SCP武器,它的伤害能够轻易撕裂任何挡路的人!\n\n你的任务是帮助并疏散SCP!
+你是蛇手 - 指挥官\n\n你有能力召唤一个传送门到任意位置\n\n小心没有人知道它会你传送到哪里\n\n你的任务是帮助并疏散SCP!
+你是快速反应部队 - 士兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 医疗兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 突击队员\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 指挥官\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 机枪手\n\n你有着M249轻机枪\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 盾牌手\n\n利用好你的防弹盾牌\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 精确射手\n\n你有着全自动的MK14战斗步枪\n\n保护设施并遵守安全主管的命令!
+You - are the Special Task Grunt\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Specialist\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Commander\n\nProtect and follow the orders of the Dispatcher!
+你是保安 - 菜鸟\n\n前往武器库获取子弹\n\n保护研究员并逃离设施
+你是保安 - 中士\n\n您可以向安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 下士\n\n保护研究员并逃离设施
+你是保安 - 警员\n\n保护研究员并逃离设施
+你是保安 - 典狱长\n\n您可以向中士以及其他安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 突击队员\n\n与其他安保人员不同你有全自动的MP5K\n\n保护研究员并逃离设施
+你是保安 - 镇暴队员\n\n你拥有更厚的护甲和一把射击橡胶弹的枪\n\n保护研究员并逃离设施
+你是保安 - 特别专员\n\n保护研究员并逃离设施
+你是保安 - 上尉\n\n你可以向所有安保人员下达命令\n\n保护研究员并逃离设施
+你是混沌分裂者 - 间谍\n\n你通过伪装成一名还未进行审查的安保人员进入了设施\n\n运用一切资源帮助D级人员逃离设施
+您是异常处决部 - Kelen博士\n\n您的特殊技能是增加附近人员对SCP的伤害\n\n与研究员和保安一起逃离设施!
+您是特殊护理小组组长 - Matilda组长\n\n你的特殊技能是治愈附近的人\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Speedwone博士\n\n你的特殊技能是减缓附近SCP的速度\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Lomao博士\n\n你的特殊技能是为附近的人提高速度\n\n与研究员和保安一起逃离设施!
+您是异常处决部 - Feelon博士\n\n你的特殊技能是放置特殊的反SCP地雷\n\n与研究员和保安一起逃离设施!
+您是特殊科研\n\n你的特殊技能是增加附近人的特征\n\n与研究员和保安一起逃离设施!
+您是防卫设备研发部门 - Shieldmeh博士\n\n你的特殊技能是启用特殊的力场盾牌来防御子弹\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Ruprecht博士\n\n你的特殊技能是让自己隐身\n\n与研究员和保安一起逃离设施
+您是异常应对部门 - Hedwig教授\n\n你拥有一副特殊眼镜,可以看到所有SCP的位置\n\n与研究员和保安一起逃离设施
+你是科学人员助手\n\n与研究员和保安一起逃离设施!
+你是蛇之手 - 间谍\n\n组织通过一个危险且隐秘传送虫洞将你精确传送进了site19的某个无人的角落\n\n尝试拿取尽可能多的SCP物品,并帮助其他SCP逃离设施!
+你是科研人员\n\n与研究员和保安一起逃离设施!
+你是高级科研人员\n\n你有着较高等级的权限卡\n\n与研究员和保安一起逃离设施!
+你是道德伦理委员会检察官\n\n你有能力将一些你认为有价值的D级人员招募为科研助手\n\n与研究员和保安一起逃离设施
+你是医务人员\n\n医者仁心\n\n与研究员和保安一起逃离设施!
+你是清洁工\n\n你可以'清洁'每一个垃圾桶,说不定会有以外收获呢\n\n与研究员和保安一起逃离设施!
+你是人事主管\n\n研究员和保安一起逃离设施
+你是D级人员\n\n与其他D级人员合作,逃离设施!
+你是全球超自然联盟 - 特工\n\n你伪装成D级人员进入了设施\n\n前往办公区找到自己的装备并引爆阿尔法核弹!
+你是D级员工....多年来,你一直在吸入胖子和大力士的屁味,因此你的鼻子已经无法感知任何气味.\n\n似乎连有毒气体也无法阻止你.\n\n请明智地利用这个优势.
+你是D级人员 - 生存者\n\n你的生存能力是其他人不可比拟的\n\n好好的利用你生存经验活下去!
+你是D级人员 - 窃贼\n\n你从某名研究员那里偷了一张权限卡\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 小偷\n\n你是个小偷,所以你技能可以从玩家那里偷东西\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 胖子\n\n你是个胖子,你可以使用你的肥肉抵挡伤害\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 摔角手\n\n你在这里没有向其他人一样浪费时间,所以你每天都在训练以锻炼肌肉\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 黑客\n\n你是个黑客,你在这里生活时从一个'好心'的安保人员那里\n\n得到一些电子元件和一张通用一级原型卡\n\n你用这些东西制作了一个简易电子锁骇入设备\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 食人魔\n\n曾经痛苦的家庭生活让你精神状态极其糟糕,久而久之,你对人表现得极其冷漠\n\n你依稀记得那个晚上,父亲和母亲做成的[数据删除]很美味\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 大兜哥\n\n看起来你的口袋比别人的大\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 运动员\n\n作为前省级一级运动员,你能够轻易超越其他人\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法有效地使用这么多把刀,因此分给了一些有杀人经验的D级人员\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 职业杀手\n\n你以前是职业杀手,看起来你没有失去你的旧习惯..\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 老兵\n\n你曾是一名久经沙场的特种部队士兵,但是因为被指控犯下了\"反人类\"的罪行而被判无期徒刑,而事情的真相只有你知道...\n\n你并未忘记战场上磨砺出来的技能,好好利用这种能力逃离设施
+你是机动特遣队 - 士兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 医疗兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 中尉\n\n执行上级的命令,你可以命令士兵
+你是机动特遣队 - 突击队员,你有燃烧弹\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 战斗专家,你有 \"Blackout\" 突击步枪\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 指挥官,你可以向你的士兵下达命令\n\n执行设施主管的命令并完成您的任务
+你是机动特遣队 - 工程师,你有对付SCP的特殊炮塔\n\n修复所有5台发电机,恢复设施供电\n\n执行指挥官的命令,完成任务
+你是设施的主管\n\n除了九尾狐,你可以向任何人下达命令\n\n完成你的任务,并可选择召唤QRT小队
+你是内部安全代理\n\n你有一份整个设施人员的名单\n\n并且前不久你们从MTF Iota-10(\"该死的联邦探员\")那里获得了一份绝密情报\n\n执行指挥官的命令,完成任务
+你是O4指挥官\n\n通过监控支援队友并在适当的时候召唤对应支援\n\n帮助设施
+你是机动特遣队 - 重装士兵\n\nM249轻机枪与重型防弹衣让你成为了设施内最强的战士\n\n执行指挥官的命令,完成任务
+--专家组
+你是MEG - 生化专家\n\n作为Beta-7的退役老兵,你在对付具有化学危害的SCP时更加灵活自如\n\n而你身穿的战斗型防化服能够让你在完美防护大部分危险SCP的同时\n\n又有与其他敌对目标抗衡的实力\n\n执行指挥官的命令,完成任务
+你是MEG - 九尾狐收容专家\n\n你被指派到该设施内训练武装人员应对SCP的措施并选拔部分人加入到NTF的预备队伍之中\n\n你所持有的\"妖狐之舞\"是设施独一无二的特殊武器\n\n它能够对SCP造成不小的伤害,但可惜的是你只携带了三个弹匣...
+你是MEG - 落锤特战教官\n\n你是被该设施内的O4指挥官直接指派的特战教官\n\n作为现役落锤特种部队的你,被O4指挥官要求训练设施内的武装人员\n\n提高设施武装人员应对外部势力入侵的能力
+--事件专属角色
+你是UIU - 联络专员\n\n协助基金会遏制收容失效,并在必要时在广播室呼叫支援
+你是混沌分裂者 - 特工\n\n你拥有一张一次性的特殊钥匙卡你可以用它打开地下武器库的门
+--事件专属支援
+--UIU收容小组
+你是UIU收容小组 - 组员\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 机枪手\n\n你拥有强大的火力\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 收容专家\n\n你曾在NTF的训练基地中进行过为期[数据删除]的训练,因此你拥有一定的应对SCP的经验\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 暗面\n\n你是UIU收容小组最强大的战士\n\n你的特制匕首\"CK-101\"在你释放你的能力之后能够对SCP造成不俗的伤害\n\n而且在你能力期间你能够免疫一次伤害大于你的最大生命且小于500点的伤害
+你是UIU收容小组 - 组长\n\n领导你的组员帮助基金会收容SCP稳定设施内的情况\n\n你携带了阉割版的智能操作平台,其只能够侦测设施内SCP的状态
 --生涯专属任务
-BREACH.Descriptions.english[role.ClassD_Mio] = "D-class Mio\n\nDemoted by O5 Council\n\nEvolve into Nai Long!"
-BREACH.Descriptions.english[role.ClassD_Mio_NaiLong] = "Nai Long MIO\n\nEvolved form"
+你是Mio\n你因在多次向技术提出睿智问题且数次朝令夕改\n现在被O5议会降级为D级人员\n你可以通过某些手段进化成奶龙MIO\n与其他D级合作逃离设施
+你是奶龙MIO\n\n你是MIO的进化体
+--二战模式
+你是美军 - 士兵\n干掉所有德国鬼子!
+你是美军 - 指挥官\n领导你的士兵干掉所有反人类畜生!
+你是纳粹德国 - 士兵\n干掉所有美国混蛋!
+你是纳粹德国 - 士兵\n领导你的士兵为元首攻城略地!
 --CHATPRINT
-english.sgoc_first_objective = "You found the equipment, proceed to main objective - activate the warhead."
-english.ammocrate_max_ammo = "You can't resupply ammo for this weapon type as it's already maxed."
-english.ammo_notfound = "No such ammo type in the crate."
-english.ammocrate_no_ammo = "This weapon's ammo is depleted in the crate"
-english.ammocrate_weapon_needed = "Hold out the weapon needing ammo."
-english.cultbook_ritual_distrupted = "Ritual disrupted, you need to restart."
-english.cultbook_ritual_stopped = "Unknown entity's invasion halted!"
-english.cultbook_ritual_start_pt1 = "Warning! Unknown entity invading our reality!"
-english.cultbook_ritual_start_pt2 = "Facility forces receive new objective: Prevent invasion!"
-english.generator_toolkit_abuse = "You lack tools to repair generators."
-english.temp_attach_avaliable_pt1 = "Weapon mod available! Press"
-english.temp_attach_avaliable_pt2 = "to modify your gun"
-english.temp_attach_zone_left = "You left weapon modification area."
-english.uiu_remaining_computers = "Data received. Computers remaining:"
-english.uiu_mission_complete = "All required data sent to tech department, evacuate immediately!"
-english.gru_has_got = "Documents acquired: "
-english.gru_docu_remaining = "Documents remaining: "
-english.gru_got_all = "All documents secured!"
-english.scp294_nospawn_destructive = "This drink leaves no residue - I won't drink that!"
-english.scp294_nospawn_bad_idea = "This is really bad idea!"
-english.take_off_nvg_first = "Remove current night vision device."
-english.radio_edit_info = "Enter radio manual channel edit mode with \"RMB\"."
-english.radio_entered_edit = "Manual channel edit mode active. Use format: NNN.N (N<10)"
-english.radio_exit_info = "Press RMB to cancel/ENTER to confirm changes."
-english.radio_bad_channel = "Failed to change radio channel. Follow frequency chart."
-english.scp268_reloading = "SCP cooldown in progress."
-english.scp268_reload_when_pt1 = "Stealth available in"
-english.scp268_reload_when_pt2 = "seconds"
-english.scp268_activated_first_pt1 = "Stealth active. Avoid physical contact to maintain cloak."
-english.scp268_activated_first_pt2 = "Weapon use will disable cloak. Duration: 20s"
-english.scp268_activated = "Stealth activated. Duration - 20 seconds."
-english.scp268_end = "Cloak disabled."
-english.scp106_1 = "\"Lurking\" mode activated."
-english.scp106_2 = "Movement speed doubled."
-english.scp106_3 = "Cannot attack others. Invisible to detection."
-english.scp106_4 = "Press R to exit mode - reappear at current position."
-english.scp106_5 = "Now in pocket dimension."
-english.scp106_6 = "Press H to return to entry point."
-english.scp106_7 = "Press T for random teleport within dimension."
-english.mvp_scpkill = "SCP Eliminations"
-english.mvp_headshot = "Headshot Kills"
-english.mvp_kill = "Enemy Kills"
-english.mvp_heal = "Healing Done"
-english.mvp_damage = "Damage Dealt"
-english.scp106_ghost_pt1 = "\"Specter\" mode activated."
-english.scp106_ghost_pt2 = "Movement speed increased."
-english.scp106_ghost_pt3 = "Cannot attack. Remains undetectable."
-english.scp106_ghost_pt4 = "Press R to exit - reappear at current location."
-english.scp106_dimension_pt1 = "Now in personal dimension."
-english.scp106_dimension_pt2 = "Press H to return to entry position."
-english.scp106_dimension_pt3 = "Press T for random teleportation."
-english.scp106_ghost_bad_pos = "Cannot exit Specter mode here."
-english.scp173_not_in_los = "You are not in the field of view of your body."
-english.scp973_frenzy = "Press T to enter Frenzy mode"
-english.teamkill_killed = "Killed"
-english.teamkill_you_have_been_teamkilled = "You were killed by teammate"
-english.teamkill_report_if_rulebreaker = "File !report if suspicious"
-english.teamkill_you_teamkilled = "You teamkilled:"
-english.you_have_been_killed = "Killed by:"
-english.evac_start_leave_immediately = "EMERGENCY EVACUATION INITIATED - LEAVE IMMEDIATELY!"
-english.medkit_heal_ended = "Treatment complete. Health restored."
-english.demo_stop = "Demo recording stopped for full game update"
-english.cantequipmtfuniform = "Cannot equip this uniform"
---STATISTICS
-english.apc_destroyed = "APC Destroyed"
-english.sgoc_first_objective_completed = "First Objective Completed"
-english.activated_warhead = "Alpha Warhead Activated"
-english.escaped = "Escaped"
-english.detonated_warhead_for_non_goc = "Alpha Warhead Detonated"
-english.scp914_death = "Killed by SCP-914"
-english.repair_bonus = "Repair"
-english.choppa_bonus = "Helicopter Destroyed"
-english.gru_heli_bonus = "GRU Rescue APC Destroyed"
-english.cotsk_summon_bonus = "Scarlet King Summoned"
-english.uiu_obj_bonus = "Objective Completed"
-english.gru_obj_bonus = "Documents Secured"
-english.gru_looting_scps = "Looted High-Value SCP Items"
-english.sh_scps_stolen = "SCP Items Stolen"
-english.sh_scps_evacuated = "SCP Evacuated"
-english.scp009_death = "Killed by SCP-009"
-english.checker_bonus = "Spy Detected"
-english.scp999_healing_bonus = "Healed"
-english.psycho_bravery_bonus = "Bravery"
-english.interrogated_by_gru = "GRU Interrogation"
-english.teamkill = "Friendly Fire"
-english.pacifist = "Pacifist"
-english.enemykill = "Enemy Eliminated"
-english.headshot = "Headshot"
-english.scpkill = "SCP Contained"
-english.death = "Death"
-english.ci_classd_evac = "D-Class Captured"
-english.cheemer_rescue = "Cheemers Rescued"
-english.ci_scp_evac = "Key SCP Secured"
-english.sci_evac = "Scientists Evacuated"
-english.vip_evac = "VIP Researcher Evacuated"
-english.escape_fail = "Escape Failed"
-english.survival_bonus = "Survival Time"
-english.scp409_death = "Killed by SCP-409"
-english.prem_bonus = "VIP Bonus EXP"
-english.crazythursday = "Crazy Thursday Bonus 50"
-english.gru_mission_completed = "GRU Mission Accomplished"
-english.gru_success_escape = "Facility Escape Successful"
-english.foundation_winnder = "Order Restored in Site-19"
--- Victory Messages
-english.ci_vdv_winner = "CI Airborne has taken over Site-19"
-english.nu7_squad_winner = "Hammer Down Squad has defended Site-19"
---ENDING HUD
-english.ending_tp_to_unknown_loc = "Teleported to unknown location."
-english.ending_evac_apc = "Evacuated by APC."
-english.ending_ci_evac_apc_pt1 = "Evacuated by APC and rescue"
-english.ending_ci_evac_apc_pt2 = "Class-D."
-english.ending_ci_evac_apc_pt2_many = "Class-Ds."
-english.ending_evac_choppa = "Evacuated by helicopter."
-english.ending_evac_train = "Train Evacuation"
-english.ending_captured_by_unknown = "Was captured by unknown squad."
-english.ending_escaped_site19_got_captured = "Escaped from Site-19 and was captured [DATA DELETED]"
-english.ending_mission_complete = "Mission complete."
-english.ending_mission_failed = "Mission failed."
-english.ending_escaped_site19 = "Escaped from Site-19."
-english.ending_car = "Transport was spotted in gate 48."
-english.ending_o5 = "The subject was spotted running away in \"special\" council-05 monorail."
-english.ending_gru = "Escaped via BTR"
-english.ending_perfect = "Foundation successfully contained the breach"
-english.ending_uiu_spy_under = "Mission failed, continue undercover operation!"
-english.ending_scp999 = "Escape failed, you remain contained at Site-19"
--- Kongshu Mode Endings
-english.ending_kongshu_1 = "You have been teleported to an unknown space. (Friend~ Want to read some books?)"
-english.ending_kongshu_2 = "For some reason, SCP-106's pocket dimension suddenly has one more person."
-english.ending_kongshu_3 = "You are lucky! You escaped from Site-19... but where are you exactly?"
-english.ending_kongshu_4 = "You have been teleported to a planet [DATA EXPUNGED] light-years away."
-english.ending_kongshu_5 = "The walls around you are covered in yellowish wallpaper, and you hear an endless buzzing from nowhere."
-english.ending_kongshu_6 = "A well-dressed man is very interested in you and has 'hired' you."
+你找到了装备,进行主要目标任务开启核弹.
+你不能为这种类型的武器补充已达到上限.
+弹药箱内没有这种弹药.
+弹药箱里已经没有这种武器的弹药了
+把需要弹药的武器拿出来.
+仪式被打断了,你需要重新开始
+未知对象的入侵被打断!
+警告!未知对象正在入侵我们的现实!
+设施武装力量接到新任务:阻止入侵!
+你没有工具来修理发电机.
+武器改装可用!按下按钮
+改装你的枪
+你离开了改枪范围.
+已收到数据.待破解的计算机:
+所有需要的数据已发送给技术部门,现在快速逃离设施!
+已获取到的文件数量:
+还需要获得的文件数量:
+所有文件已获取完毕!
+这种饮料不会在这里留下任何痕迹,我不会喝那个!
+这真是个坏主意!
+取下当前夜视仪.
+进入对讲机的手动频道编辑模式,按 \"RMB\".
+您进入了对讲机的手动频道编辑模式.请按照频道表进行操作. ( NNN.N,N = natural number,N < 10 )
+在不进行任何更改的情况下退出此模式,按 \"RMB\". 进行变更,按 \"ENTER\".
+不幸的是,我们无法更改无线电频道.按照频道表.
+等等,SCP正在冷却.
+隐身效果将在
+秒后才可以使用
+隐身激活.尽量避免与他人进行身体接触,因为隐身效果会消失.
+如果你使用武器,同样的事情也会发生;您的隐身将在 20 秒内消失.
+隐身激活.持续时间 - 20 秒s.
+隐身效果被移除.
+激活模式 \"潜行\".
+你的移动速度提高了一倍.
+在当前模式下,你不能攻击任何人,反过来其他人也看不到你.
+你可以通过按“R”键离开这个模式,你的角色将出现在当前位置.
+现在你在你的口袋维度.
+通过按键 \"H\" 你可以回到原来的位置,从刚刚进维度的地方.
+你可以继续传送到口袋的随机位置使用按键 \"T\".
+作为SCP击杀敌人
+爆头击杀
+击杀敌人
+治疗量
+造成伤害
+激活模式 \"幽灵\".
+你的移动速度已经提高.
+在这种模式下,你不能攻击任何人.人们将无法看到你.
+您可以通过按下按钮退出此模式 \"R\". 你的角色将出现在当前位置.
+现在你处于自己的维度.
+通过按下按钮 \"H\" 你可以回到你的第一个位置,在那里你进入了你自己的维度.
+您可以通过按下按钮传送到随机点 \"T\".
+您无法退出该模式 \"幽灵\" 在这里.
+You are not in the field of view of your body.
+现在你可以通过按下按钮进入狂热 \"T\"
+杀死
+你被队友杀死了
+如果你觉得你被杀存在疑问,那么你可以写一份!report
+你杀了一个队友
+你被杀了被:
+注意,设施紧急疏散已经开始,立即离开设施!
+治疗完成,你的健康状况已恢复.
+Demo recording has been stopped to perform full game update
+你无法穿上这套制服
+--统计数据
+APC被摧毁
+第一个目标完成
+激活阿尔法弹头
+逃离
+阿尔法弹头的引爆
+死于SCP-914
+修
+直升机被摧毁
+格鲁乌救援装甲车被毁
+绯红之王的召唤
+目标完成
+成功获取文件
+抢夺高价值SCP物品
+窃取SCP物品
+SCP撤离
+死于SCP-009
+死于\"尖啸\"
+发现间谍
+康复
+勇敢
+GRU Interrogation
+误伤队友
+和平主义者
+击杀敌人
+爆头
+SCP收容
+死亡
+俘虏 D级人员
+Cheemers 救援
+带走最重要的 SCP
+疏散 科研
+特殊研究员 疏散
+撤离失败
+幸存时间
+死于 SCP-409
+VIP额外经验
+疯狂星期四V你50
+格鲁乌任务完成
+成功逃离设施
+Site19重新恢复秩序
+--kongshu_胜利经验
+CI空输占领了Site19
+落锤特战分队保卫住了Site19
+--结束回合显示的东西
+传送到未知位置.
+在APC撤离.
+被APC俘虏和救援
+D级人员.
+更多D级人员.
+直升机撤离.
+火车撤离
+被不知名小队俘虏.
+从Site-19逃脱并被俘虏[数据已删除]
+任务完成.
+任务失败.
+逃脱Site-19.
+在 48 号口发现了汽车.
+对象使用了 \"特殊的方法\" O5紧急..单轨列车逃跑.
+成功乘坐BTR逃离设施
+基金会成功遏制了收容
+任务失败,继续潜伏下去!
+逃离失败,你被基金会继续关在了Site19
+奔跑着穿过了隧道
+--空输逃离
+你被传送到了一片未知空间(朋友~ 要不要读书)
+不知怎么的,106的空间突然多出了一个人
+你很幸运,传送出了site19,但是你的位置嘛....
+你被传送到了[数据删除]光年外的一个星球上
+你的周围的墙上全是泛黄的墙纸以及不知道从何处不停传来的嗡嗡声
+一名西装男子对你很感兴趣,并\"雇佣\"了你
+--蛇之手随机传送门
+进入传送门奖励
+你被传送到了site-[数据删除]
+你正在下落,狂风撕碎你的身体
+瞬间!强大压强将你压碎
+你回到你家的床上
+周围只剩下烦躁的白
+你回家了,但是在万米高空
+你被送到了一个全是SCP-173的现代都市里...
+对你的出现,收容间管理人员表现出困惑
+[数据删除]光年外,你漂浮在虚空中,停止了思考
+你被传进了图书馆,蛇之手对你的出现感到惊喜
+你被传进了图书馆,蛇之手正在思考如何把你从墙里弄出来
+你出现在了一片未知区域,这里只有死一样的寂静
+GOC的正在测试新的能量武器,而你刚好在武器的射程内
+--事件特殊结局和奖励
+你很幸运核弹头没有爆炸
+核弹幸运星
 --VOICE/TEXT CHAT
-english.whispers = "whispers"
-english.talks = "talks"
-english.asks = "asks"
-english.yells = "yells"
-english.players_online = "Players online"
-english.speaks = "Speaks..."
-english.talks_to_you = "(to you)"
-english.chat_unknown = "Unknown"
-english.intercom = "(INTERCOM)"
-english.copy_message = "Copy"
-english.clientside_mute = "Mute"
-english.motivational_mute = "Motivational mute"
-english.clientside_mute_spec_only = "You can mute players only in spectator mode or when you are SCP."
-english.motivation_1 = "Keep up the nice work."
-english.motivation_2 = "You have been assigned this mountain to show others it can be moved."
-english.motivation_3 = "Don't think, just do."
-english.motivation_4 = "Always do your best. What you plant now, you will harvest later."
-english.motivation_5 = "Start where you are. Use what you have. Do what you can."
-english.motivation_6 = "The harder the conflict, the more glorious the triumph."
-english.motivation_7 = "Forget the mistake - remember the lesson."
-english.motivation_8 = "Either you run the day or the day runs you."
-english.motivation_9 = "You're not going to master the rest of your life in one day."
-english.motivation_10 = "Grant every day with enthusiasm."
-english.motivation_11 = "You are amazing, you are brave, you are strong."
-english.motivation_12 = "Everything you need to accomplish your goals is already in you."
-english.motivation_13 = "There's something in you that the world needs."
-english.newplayer = "New Player"
+轻语
+说
+问
+喊
+玩家在线
+说...
+(对你说)
+未知
+(内部通讯)
+复制
+禁言
+Motivational mute
+你只能在观察者模式或身为SCP时禁言他人
+再接再厉!
+愚公能移山,你也能完成这个任务!
+先做再想!
+种瓜得瓜,种果得果,永远做最好的自己!
+从哪里跌倒就从哪里爬起来!
+越是激烈的战斗也就越能成就自己!
+不要纠结于过往的失误!
+你会选择自己掌控自己的命运还是别人来掌控.
+以后的路还长不要在一天内就确定了自己的命运.
+用乐观的心态对待每一天!
+你是最棒的,最强的.
+你已经具备了成功的一切条件!
+这个世界需要你!
+小萌新
 --MENU
-english.menu_scp_hud_left = "Display SCP Abilities at bottom left corner"
-english.menu_killfeed = "Show KillFeed"
-english.menu_drawlegs = "Draw Legs"
-english.menu_changelog = "Changelog"
-english.menu_lead = "Head"
-english.menu_dev = "Developer"
-english.menu_managers = "Managers"
-english.menu_xlk = "Server Head Administrator"
-english.menu_mio = "Head of Personnel"
-english.menu_coder = "Coder"
-english.menu_en = "Diplomat"
-english.menu_modeller = "Models maker"
-english.menu_head_admin = "Head Administrator"
-english.menu_make_map = "Map Maker"
-english.menu_chemist = "SEXY CHEMIST"
-english.menu_admin_firstperson = "Enable Observer First Person"
-english.menu_weapon_fov = "Distance of weapon (in degrees)"
-english.menu_weapon_z_offset = "Weapon offset Z" --z offset, координаты z, есть абсцисса, ордината, а это называется аппликатом
-english.menu_no_role_desc = "Turn off role description"
-english.menu_spawn_as_sup = "Spawn as support"
-english.menu_useability = "Key for ability"
-english.menu_inventory_key = "Inventory button"
-english.menu_lean_left = "Lean left"
-english.menu_lean_right = "Lean right"
-english.menu_lang = "Language"
-english.menu_lang_b_chinese = "special edition"
-english.menu_lang_chinese = "SChinese"
-english.menu_lang_traditional = "TChinese"
-english.menu_lang_english = "English"
-english.menu_lang_russian = "Russian"
-english.menu_chat_voice = "Chat & Voice Chat"
-english.menu_gradient_voice = "Gradient voice chat"
-english.menu_voice_show_alive = "Show alive players"
-english.menu_disable_flashes = "Disable color prefix flashing"
-english.menu_disable_avatars = "Disable chat avatars"
-english.menu_roundavatars = "Round avatars (disable it, if FPS drops)"
-english.menu_clearemoji = "Clear emoji folder"
-english.menu_clear_downloaded_images = "Clear downloaded images folder"
-english.menu_audio = "Audio"
-english.menu_mute_spec = "Mute spectators"
-english.menu_mute_spec_if_alive = "Mute alive players, if you spectator"
-english.menu_music_volume = "Music volume"
-english.menu_music_title = "Music"
-english.menu_overall_music_volume = "Overall volume"
-english.menu_panic_music_volume = "Panic volume"
-english.menu_spawn_music_volume = "Spawn volume"
-english.menu_ambience_music_volume = "Ambience volume"
-english.menu_misc_music_volume = "Misc volume"
-english.menu_announcer_volume = "Announcer volume"
-english.menu_visual_settings = "Visual settings"
-english.menu_hide_title = "Hide the name at the bottom"
-english.menu_scp_red_vision = "SCP vision (as SCP)"
-english.menu_screenshot_mode = "Disable HUD (may have bugs)"
-english.menu_screen_effects = "Scene illumination & bluring edges"
-english.menu_filter_textures = "Textures filter"
-english.menu_filter_lightmaps = "Shadows filter"
-english.menu_yellow_color_filter = "Yellow filter"
-english.menu_blue_color_filter = "Blue filter"
-english.menu_filter_outside = "Use filter in outside"
-english.menu_filter_intensity = "Filter intensity"
-english.menu_special_settings = "Special settings"
-english.menu_chat_prefix = "Chat prefix"
-english.menu_premium_settings = "Premium settings"
-english.menu_nick_grb_color = "Nick color in RGB"
-english.menu_display_premium_icon = "Display premium icon"
-english.menu_spawn_male_only = "Spawn only as male"
-english.menu_spawn_female_only = "Spawn only as premium models"
-english.menu_current_lang = "Current language:"
-english.menu_press_any_key = "PRESS ANY KEY"
---тут просто длиннее нельзя, кириллица не влезет, а в английском можно press any key
-english.menu_swap = "SWAP" --достает прямо до краёв кнопки, длиннее не переводить!!!
-english.menu_cancel = "Press \"END\" to cancel"
-english.menu_desc_premium = "What gives?: server connection priority; Special skins; Highlighting in chat and in the player table; Doubled experience; access to some chat functions; Special skin for class D; SCP selection, Ability to play as new scp; Ability to change nick color; new options in settings (Removing the highlighting in tab and in chat and spawns with exclusive skin)"
-english.menu_prem_status = "Premium-Status"
-english.menu_days = "Days"
-english.menu_forever = "Forever"
-english.menu_other = "Other"
-english.menu_decrease_active_warnings = "Decreases active warnings"
-english.menu_kit_start = "Set \"Newbie\""
-english.menu_kit_start_desc = "Includes: Premium status for a month; 15 levels (Level is added to current)"
-english.menu_1_level = "1 level"
-english.menu_45_level = "45 level"
-english.menu_ungag = "Ungag (Voice chat)"
-english.menu_less_than_a_week = "Less than a week"
-english.menu_more_than_a_week = "More than a week"
-english.menu_unmute = "Unmute (Chat)"
-english.menu_unban = "Unban"
-english.menu_discount = "(discount"
-english.menu_seller = "Donate seller\nShaky#8698" --барыга
-english.precaching_resources = "Precaching resources..."
-english.menu_play = "Play"
-english.menu_resume = "Resume"
-english.menu_disconnect = "Disconnect"
-english.menu_credits = "Credits"
-english.menu_settings = "Settings"
-english.menu_discord = "Discord"
-english.menu_donate = "Donations"
-english.menu_wiki = "Wiki"
-english.menu_my_life_my_rules = "Rules"
-english.menu_sure = "Are you sure?"
-english.menu_yes = "Yes"
-english.menu_no = "No"
-english.menu_do_precache_or_nah = "Perform content precache?"
-english.menu_precache_hover = "During precache you will respawn anyway if it's possible"
-english.menu_no_precache_hover = "You should skip precache only if it takes more than 4 minutes and you're being kicked due to this.\nWARNING: Expect a lot of lags during the game"
-english.menu_quickchat = "Quick chat"
+在左下角显示SCP的技能
+显示死亡画面
+看到你的双腿
+更新日志
+服主
+开发者
+管理者
+服务器总主管
+人事主管
+技术人员
+外交人员
+模型制作者
+管理员主管
+地图制作者
+性感化学兵
+启用观察者第一人称
+武器视角范围
+持枪视角Z轴调整
+关闭人物说明
+以支援身份复活
+成为D级人员时自动转变成\"MIO\"
+不显示\"小萌新\"前缀
+技能按键
+物品栏
+向左倾
+向右倾
+语言
+特供版
+简体中文
+繁体中文
+英文
+俄语
+文字与语音聊天
+渐变语音聊天
+显示存活的玩家
+关闭彩色前缀闪烁
+禁用聊天头像
+聊天圆形头像(如果FPS下降,则禁用)
+清除表情符号文件夹
+清除下载的图像文件夹
+音频
+静音所有观察者
+在观察者模式下,静音所有活的玩家
+音乐音量
+音乐
+整体音量
+追逐音量
+复活音量
+场景音量
+杂项音量
+播报员音量
+画面设置
+隐藏底部的名字
+SCP透视(作为SCP)
+禁用HUD(可能存在Bug)
+景深与锐化
+纹理过滤
+阴影过滤
+黄色滤镜
+蓝色滤镜
+在外部使用滤镜
+滤镜强度
+特殊设置
+头衔
+VIP设定
+以RGB显示昵称
+显示VIP图标
+仅以男性角色复活
+仅以女性角色复活
+当前语言:
+按下任何键
+--тут просто длиннее нельзя,кириллица не влезет,а в английском можно press any key
+更改
+按下 \"END\" 以取消
+请访问QQ群询问管理员
+VIP状态
+天
+永久
+其它
+减少当前警告
+设置 \"新手\"
+包括:一个月的VIP和15级(等级加到当前等级之上)
+1 级
+45 级
+Ungag (语音聊天)
+少于一周
+多于一周
+Unmute (聊天)
+解除封禁
+(折扣
+请访问QQ群询问管理员
+正在预加载资源...
+开始游玩
+继续
+断开连接
+鸣谢名单
+设置
+Discord
+捐款
+维基
+规则
+你确定吗？
+是的
+不是
+要预加载内容吗？
+在预加载期间,你仍然有机会复活
+你仅应在加载时间大于4分钟且因此被踢出的情况下跳过预加载\n警告:游玩期间预计会有大量卡顿
+快速聊天
 --TASKS
-english.tasks_evacuate_personnel_and_defend_comrades = "Evacuate facility, assist teammates"
-english.tasks_cn_escape = "Recover our assets and escape"
-english.tasks_escape_from_site19 = "Escape the facility"
-english.tasks_sgoc = "Locate GOC armor and detonate Alpha Warhead"
-english.tasks_author = "AUTHOR:"
-english.tasks_suiu = "Find target computer to hack and call reinforcements"
-english.tasks_evacuate_personnel_and_terminate_enemies = "Evacuate personnel, eliminate SCPs and D-class"
-english.tasks_coordinate_mtf_peasants = "Lead your squad"
-english.tasks_coordinate_mtf = "Command MTF"
-english.tasks_hof = "Evacuate personnel and lead MTF/security teams"
-english.tasks_mtf_checker = "Evacuate personnel, verify identities"
-english.tasks_engi = "Deploy sentry guns"
-english.tasks_support_teammates = "Call reinforcements when needed"
-english.tasks_heal_teammates = "Heal teammates"
-english.tasks_recruitment = "Recruit D-class"
-english.tasks_coordinate_sci = "Chief Science Officer"
-english.tasks_protect_sci = "Protect scientists"
-english.tasks_help_d = "Assist D-class"
-english.tasks_help_teammates = "Support teammates"
-english.tasks_ntf = "Contain SCPs, eliminate D-class, evacuate personnel"
-english.tasks_nu7 = "Contain SCPs, eliminate external forces"
-english.tasks_coordinate_ntf = "Command NTF"
-english.tasks_skp = "Eliminate all personnel on-site"
-english.tasks_goc = "Detonate Alpha Warhead before evacuation"
-english.tasks_coordinate_goc = "Command GOC"
-english.tasks_gru = "Secure documents, override permissions"
-english.tasks_gru_guard = "Cover extraction team's retreat"
-english.tasks_coordinate_gru = "Lead squad to complete mission"
-english.tasks_ci = "Coordinate site personnel evacuation, extract D-class"
-english.tasks_mines = "Plant mines"
-english.tasks_destroy = "Destroy evacuation aircraft"
-english.tasks_coordinate_ci = "Command CI"
-english.tasks_osn = "Support teammates, help HoF" --HoF - head of foundation --disabled
-english.tasks_coordinate_osn = "lead squad" --disabled
-english.tasks_sh = "Assist SCP escape, cover SCPs"
-english.tasks_coordinate_sh = "Command Serpent's Hand members"
-english.tasks_uiu = "Hack facility computers and escape"
-english.tasks_coordinate_uiu = "Command UIU operatives"
-english.tasks_cotsk = "Complete ritual to summon Scarlet King"
-english.tasks_coordinate_cotsk = "Command cult members"
-english.tasks_scp999 = "Heal humans/SCPs and escape"
-english.tasks_terminate_enemies = "Eliminate enemies"
-english.tasks_arena = "Participate in arena battles"
-english.tasks_kill_everyone_except_sh = "Eliminate all non-Serpent's Hand personnel"
---ABILITIES
-english.abilities_cd = "Cooldown:"
-english.abilities_name_thief = "Sleight of Hand"
-english.abilities_thief = "Steal items from others."
-english.abilities_name_bor = "Body Slam" -- In English, could be "Knockout"
-english.abilities_bor = "Your strong body allows you to body slam others."
-english.ability_name_fast = "Proper Running Stance"
-english.ability_fast = "Change your running stance to increase speed while running."
-english.abilities_name_hitman = "Disguise"
-english.abilities_hitman = "Disguise yourself as a corpse you are looking at."
-english.abilities_name_suiu = "\"Heart's Desire\" System"
-english.abilities_suiu = "Detect the location of your 'heart's desire' (target)."
-english.abilities_name_scirecruit = "Recruit"
-english.abilities_scirecruit = "Convert D-class personnel into scientists."
-english.abilities_name_cispy = "Ally!"
-english.abilities_cispy = "Know who the D-class personnel are."
-english.abilities_name_matilda = "Area Heal" -- AOE Heal
-english.abilities_matilda = "Perform area overdose healing"
-english.abilities_name_speedwone = "Slowdown"
-english.abilities_speedwone = "Slow nearby SCPs"
-english.abilities_name_hedwig = "Hume Lenses"
-english.abilities_hedwig = "See SCPs through walls"
-english.abilities_name_feelon = "Anti-SCP Mines"
-english.abilities_feelon = "Plant anti-SCP mines"
-english.abilities_name_invis = "Conceal Traces"
-english.abilities_invis = "Hide your traces for 30s"
-english.abilities_name_lomao = "Speed Boost"
-english.abilities_lomao = "Boost speed for you and nearby allies"
-english.abilities_name_shield = "Energy Shield"
-english.abilities_shield = "Create protective shield against SCP attacks"
-english.abilities_name_buster = "Boost" --unused
-english.abilities_buster = "Boost yourself and people around you." --unused
-english.abilities_name_kelen = "Resentment"
-english.abilities_kelen = "Increase SCP damage for you and allies"
-english.abilities_name_engi = "Sentry Gun"
-english.abilities_engi = "Deploy SCP-targeting turret"
-english.abilities_name_ntfspec = "EM Net"
-english.abilities_ntfspec = "Immobilize SCPs temporarily"
-english.abilities_name_ntfcom = "Camera Scan"
-english.abilities_ntfcom = "Locate personnel through facility cameras"
-english.abilities_name_cicom = "Enlist!"
-english.abilities_cicom = "Arm D-class and convert to Chaos Insurgency"
-english.abilities_name_cimine = "Claymore"
-english.abilities_cimine = "Plant high-damage claymore mine"
-english.abilities_name_cijugg = "High-Energy Ammunition"
-english.abilities_cijugg_desc = "Utilizes carried [DATA EXPUNGED]\nanomaly to enhance the user's bullets\nfor 25 seconds."
-english.abilities_name_grucom = "Interrogation"
-english.abilities_grucom = "Reveal same-faction targets through torture"
-english.abilities_gru_shield = "Mobile Shield"
-english.abilities_gru_shield_desc = "Deploy movable damage-absorbing shield"
-english.abilities_gru_fighting = "Combat Surge"
-english.abilities_gru_fighting_desc = "+DMG to SCPs for allies (15s)"
-english.abilities_gru_buff = "Red Tide"
-english.abilities_gru_buff_desc = "Heal allies, grant armor and stamina boost"
-english.abilities_name_gocspec = "GOC Teleporter"
-english.abilities_gocspec = "Place teleport beacon for later use"
-english.abilities_name_goccom = "Cloak"
-english.abilities_goccom = "Complete invisibility with no traces"
-english.abilities_name_gocjag = "Energy Barrier"
-english.abilities_gocjag = "Activate stance shield to protect yourself and teammates."
-english.abilities_name_skpjager = "Expansive Bullets" -- Unclear what this is
-english.abilities_skpjager = "You will use expansive bullets." -- Unclear what this is
-english.abilities_name_shcom = "Wormhole"
-english.abilities_shcom = "Create a wormhole that teleports you to any location in the facility."
-english.abilities_name_shpsycho = "Flesh Gun"
-english.abilities_shpsycho_desc = "Activates SCP-127-1's special ability for 30 seconds.\nTargets hit during this time are bitten by teeth\nembedded in the bullets. Killing a target triggers\nSCP-127-1's self-healing effect on the user."
-english.abilities_name_shpspecial = "Tears of the Masses"
-english.abilities_shpspecial_desc = "Activate your arcane ability\nHeal nearby allies and grant bullet resistance\nThe more allies around you, the stronger the effect\nCertain SCP items grant special effects when using this skill..."
-english.abilities_name_uiucom = "Intercom Listening"
-english.abilities_uiucom = "Show personnel using the intercom."
-english.abilities_name_uiuspec = "Lock Door"
-english.abilities_uiuspec = "Lock a door for a period of time."
-english.abilities_name_uiuclocker = "Function Enhancement"
-english.abilities_uiuclocker = "Increase your speed and bullet resistance for a short time (may have other effects)."
-english.abilities_name_cotskpsycho = "Last Chance"
-english.abilities_cotskpsycho = "Restore your health, enhance your speed,\nthen die after 30 seconds"
-english.abilities_name_scarlet_range = "Scarlet Field"
-english.abilities_scarlet_range_desc = "Release a damage field at the location; any\nnon-Children of The Scarlet King entering\nthe field will take damage, with a portion\nof the damage converting into nourishment\nfor each devout follower"
-english.abilities_name_uiuagentspec = "Echo Detection"
-english.abilities_uiuagentspec = "A special grenade that generates echoes\nwithin a room, marking every enemy near\nyou and your teammates."
-english.abilities_name_uiuagentcmd = "Toxic Grenade"
-english.abilities_uiuagentcmd = "A special grenade that generates toxic\ngas after exploding, which only your\ngas mask can protect you from."
-english.abilities_name_uiuthunder = "Lightning Gate"
-english.abilities_name_uiuthunder_desc = "Install a 'Lightning Gate' device on a door.\nThe device lasts 35 seconds. Non-UIU personnel\npassing through will be electrocuted and\nmomentarily incapacitated"
-english.abilities_name_hof = "Demotion"
-english.abilities_hof = "You believe they are of no use to the Foundation"
-english.abilities_name_ciedd = "Claymore Mine"
-english.abilities_ciedd = "Place a Claymore mine"
-english.abilities_enemyscan = "Hunter's Eye"
-english.abilities_scaneye = "Granted by the Scarlet King, the ability\nto see others' souls."
-english.abilities_mtf_detector = "Motion Detector"
-english.abilities_mtf_detector_desc = "Place a motion detector at the aimed\nlocation. It will detect anyone passing\nby and display their position within 3\nseconds on your goggles."
-english.abilities_nu7_healing = "'Guardian' Healing Station"
-english.abilities_nu7_healing_desc = "Every 15 seconds, heal the lowest health\nFoundation armed unit (non-security).\nPrioritize the lowest health member in\nMTF Hammer Down."
-english.abilities_nu7_armor = "Ballistic Plates"
-english.abilities_nu7_armor_desc = "Place a box containing 10 ballistic plates\non the ground. Any armed unit or\npersonnel wearing MTF clothing can use\nthe plates."
-english.abilities_nu7_stability = "Reality Stabilizer"
-english.abilities_nu7_stability_desc = "Deploy a portable 'Scranton' reality\nstabilizer on the ground. Any SCPs\nentering its range will be 'suppressed'."
-english.abilities_nu7_device = "Tactical Smart Platform"
-english.abilities_nu7_device_desc = "A wrist-mounted tablet with four functions to assist during containment breaches."
--- Kongshu Mode Abilities
-english.abilities_ciagent = "Grace!"
-english.abilities_ciagent_desc = "The grace of CI Airborne never ends~\nHeals nearby allies and restores stamina."
-english.abilities_protector = "Loyalty!"
-english.abilities_protector_desc = "This glory shall not be mine alone!\nHeals nearby allies and restores stamina."
-english.abilities_ottospeedup = "Charge!"
-english.abilities_ottospeedup_desc = "Nearby allies receive a level 3 speed boost for 15 seconds\nand a level 3 regeneration effect for 15 seconds."
--- SCP Abilities
--- SCP-049
-english.scp049curing = "Physician's Heart"
-english.scp049curing_desc = "Enhance all SCP-049-2 entities."
--- SCP-912
-english.scp912smoke = "Smoke Grenade"
-english.scp912smoke_desc = "Throw a smoke grenade forward."
-english.scp912knife = "Rush!"
-english.scp912knife_desc = "Use a tactical knife to attack and temporarily increase your movement speed."
--- SCP-638
-english.scp638bite = "Bite"
-english.scp638bite_desc = "Bite others with your mouth."
-english.scp638scream = "Shrill Scream"
-english.scp638scream_desc = "Scream at a target from close range."
-english.scp638fearscream = "Fear Scream"
-english.scp638fearscream_desc = "Scream at a target from close range to instill fear."
--- SCP-062 (FR)
-english.scp062frconsume = "Bone Suck"
-english.scp062frconsume_desc = "Siphon nutrients from dead bodies to help yourself evolve."
-english.scp062frrage = "Predator's Fury"
-english.scp062frrage_desc = "Charge forward and deal massive damage to the target."
-english.scp062frscreaming = "Sharp Roar"
-english.scp062frscreaming_desc = "Roar violently, temporarily incapacitating nearby targets."
-english.scp062frtracking = "Hunting Instinct"
-english.scp062frtracking_desc = "Can see nearby targets within a certain range."
-english.scp062frjumping = "Death Pounce"
-english.scp062frjumping_desc = "Leap and pounce on the nearest target."
--- SCP-076
-english.scp076throw = "Throwing Darts"
-english.scp076throw_desc = "Throw a dart in the aimed direction."
-english.scp076speedup = "Swiftness"
-english.scp076speedup_desc = "Temporarily increase your speed and attack speed."
-english.scp076kill = "Decapitate"
-english.scp076kill_desc = "Charge forward and perform a spinning slash, decapitating all enemies in the area."
--- SCP-106
-english.scp106ghost = "Shadow Pursuit"
-english.scp106ghost_desc = "Gain extreme movement speed for 10 seconds\nwhile submerged underground. Automatically\nresurface after 10 seconds"
-english.scp106sweethome = "Pocket Dimension"
-english.scp106sweethome_desc = "Enter the pocket dimension."
-english.scp106rottinghole = "Rotting Hole"
-english.scp106rottinghole_desc = "Create a black hole on the ground that sucks anyone who touches it into your pocket dimension."
-english.scp106teleport = "Corruptive Teleport"
-english.scp106teleport_desc = "Teleport to a marked location"
-english.scp106teleport_0 = "Mark a teleportation point"
-english.scp106teleport_1 = "Teleport to marked point"
-english.scp106teleport_2 = "Teleport to previous location"
-english.scp106cantmarked = "You cannot place a portal here"
-english.scp106cantback = "You cannot teleport back"
-english.scp106markedpos = "You marked a teleportation point"
-english.scp106notpos = "No valid location to teleport"
-english.scp106markedally = "You marked an ally"
-english.scp106cantmarkedally = "You cannot mark him/her as your ally"
-english.scp106current_ally = "Current Ally: "
-english.scp106ending_recontained = "You have been recontained...."
-english.scp106recontained = "SCP-106 Recontained"
-english.scp106recontained_by_serpent = "Are you insane? You [DATA EXPUNGED]!"
-english.scp106recontainedman = "As bait for recontaining SCP-106"
-english.scp106recontainedman_serpent = "What are you even doing?!"
--- SCP-542
-english.scp542charge = "Emergency Diagnosis"
-english.scp542charge_desc = "SCP-542 enters running mode and 'treats' the first human it touches."
-english.scp542grab = "Local Diagnosis"
-english.scp542grab_desc = "Perform a 'treatment' on a human nearby."
-english.scp542tracking = "Physician's Keen Senses"
-english.scp542tracking_desc = "Can see humans with less than 60% health."
--- SCP-999
-english.scp999recover = "Heal"
-english.scp999recover_desc = "Fully heal a human character (SCPs can only recover a small amount of health)."
-english.scp999rangeheal = "Area Heal"
-english.scp999rangeheal_desc = "Heal everyone around you, including yourself."
-english.scp999slimetrap = "Slimy Trap"
-english.scp999slimetrap_desc = "Trap a person in place with slime, preventing movement."
-english.scp999slimebilnd = "Slime Blind"
-english.scp999slimebilnd_desc = "Throw slime around you, blinding those affected."
--- SCP-973
-english.scp973stun = "Electroshock"
-english.scp973stun_desc = "Stun the target in place for a few seconds."
--- SCP-2012
-english.scp2012shield = "Raise Shield!"
-english.scp2012shield_desc = "Raise your shield."
-english.scp2012charge = "Brave Charge"
-english.scp2012charge_desc = "Gain a temporary speed boost."
-english.scp2012crossbow = "Crossbow"
-english.scp2012crossbow_desc = "Use a crossbow for ranged attacks."
-english.scp2012sword = "Greatsword"
-english.scp2012sword_desc = "Use a greatsword for attacks."
-english.scp2012shielddefence = "Shield Defense"
-english.scp2012shielddefence_desc = "Hold your shield in front for defense."
-english.scp2012shieldsmash = "Heavy Shield Bash"
-english.scp2012shieldsmash_desc = "Perform a forward bash using the shield"
--- SCP-939
-english.scp939eatbody = "Corpse Eater"
-english.scp939eatbody_desc = "Eat a corpse to recover health and increase your speed."
-english.scp939sounddisguise = "Sound Mimicry"
-english.scp939sounddisguise_desc = "Mimic footsteps to sound like an ordinary human for a short time."
-english.scp939amnc227 = "Amnestic Cloud"
-english.scp939amnc227_desc = "Release a cloud of AMNC-227 gas at your location\nThose who accidentally inhale it will forget your presence"
--- SCP-811
-english.scp811acidbomb = "Acid Bomb"
-english.scp811acidbomb_desc = "Throw an acid bomb in the aimed direction."
-english.scp811acidbombstrong = "Acid Bomb (Enhanced)"
-english.scp811acidbombstrong_desc = "Throw a stronger acid bomb in the aimed direction."
-english.scp811acidmine = "Acid Mine"
-english.scp811acidmine_desc = "Place an acid mine on the ground."
-english.scp811vomit = "Acid Spit"
-english.scp811vomit_desc = "Spit a large amount of acid in the aimed direction."
-english.scp811acidbigbomb = "Acid Bomb (Big)"
-english.scp811acidbigbomb_desc = "Create a huge explosion of acid damage from your position."
--- SCP-682
-english.scp682armor = "Scale Armor"
-english.scp682armor_desc = "Harden your scales to reduce bullet damage."
-english.scp682speedup = "Speed Boost"
-english.scp682speedup_desc = "Temporarily increase your movement speed."
-english.scp682regeneration = "Regeneration"
-english.scp682regeneration_desc = "Regenerate a portion of health."
-english.scp682screming = "Hateful Roar"
-english.scp682screming_desc = "Temporarily incapacitate nearby targets."
+疏散设施,帮助队友
+夺回属于我们的东西,逃离设施
+逃离设施
+找到GOC装甲并引爆阿尔法弹头
+AUTHOR:
+找到目标电脑黑入它并呼叫支援
+帮助基金会遏制收容失效
+疏散人员,消灭SCP和D级
+领导自己的队员
+领导 MTF
+疏散设施人员并领导机动特遣队与安保部门
+疏散人员,检查人员信息
+放置炮台
+在适当时候呼叫支援帮助设施遏制混乱
+治疗队友
+招募D级
+首席科学人员
+保护科学家
+帮助D级
+帮助队友
+收容SCP,消灭D级,疏散人员
+收容SCP,清除外部势力
+清理掉所有受[感染]的人
+夺取控制权,封锁整个地下设施
+领导 NTF
+消灭现场的所有人
+撤离前引爆阿尔法弹头
+完成奇术的部署,消灭所有威胁
+领导 GOC
+夺取资料,篡改权限
+掩护侵入部队撤离
+带领小队完成任务
+站点人员的分散疏散,疏散D级
+设置地雷
+摧毁撤离飞机
+领导 CI
+Support teammates,help HoF
+lead squad
+帮助SCP逃脱,掩护SCP
+指挥其他蛇之手队员
+侵入设施电脑并且逃脱设施
+指挥其他UIU队员
+完成仪式并召猩红红之王
+指挥其他教众
+治愈人或SCP,逃脱
+消灭敌人
+参加竞技场
+杀死除了蛇之手之外的所有人
+--能力
+冷却时间:
+你无权使用该技能
+你的技能改变了
+精巧手法
+偷取他人手上的物品
+抱摔
+你强壮的身体让你可以抱\n摔他人
+正确跑势
+更改跑步姿势挺高跑步时\n的速度
+伪装
+将你自己伪装成你看着的\n尸体的模样
+\"心上人\"系统
+能探测到\"心上人\"距离你\n的位置
+招募
+将D级人员变为科学家
+自己人!
+知道谁是D级人员
+己方对讲机
+找到[对讲机]的位置
+范围治疗
+对你周围的人进行一次过\n量治疗
+减速
+使你周围的SCP减速
+休谟眼镜
+你能穿墙看到SCP
+反SCP地雷
+设置反SCP地雷
+隐匿踪迹
+能够让你隐藏自己的踪迹\n30秒
+加速
+使你与你周围的人加速
+护盾
+在你周围创造一个护盾,从\nSCP的攻击中保护你
+Boost
+Boost yourself and people around you.
+愤恨
+增加你和周围人对SCP的伤\n害
+炮台
+设置一个炮塔攻击SCP
+电磁捕获网
+可以将SCP定在原地几秒
+摄像头扫描
+在设施摄像头上查找人员
+入伍!
+武装D级,并将D级人员转换\n成混沌分裂者
+阔剑地雷
+放置一枚高伤害的阔剑\n地雷
+高能弹药
+通过使用携带的[数据删除]\n异常能够在25秒加强使用\n者所发射的子弹
+拷问
+拷问目标让其透露出同阵\n营人员的位置
+机动护盾
+在瞄准的位置部署一块可\n以抵挡攻击机动护盾
+战斗潮流
+加强周围队友攻击敌人和S\nCP的伤害15秒
+赤色浪潮
+恢复周围队友的生命值并\n获得一定护甲值,且短暂时\n间内不会消耗体力
+GOC 传送器
+放置传送设备并在使用时\n传送到它
+隐身斗篷
+能够使自身完全隐形,不留\n一丝痕迹...
+能量护盾
+激活能量护盾保护自己和\n队友
+Expansive bullets
+You will use expansive bullets.
+虫洞
+创建一个虫洞,它会把你们\n传送到设施的任意一处地\n点
+血肉之枪
+激活SCP-127-1的特殊能力\n30秒在这段时间内被攻击\n到的目标会被命中在身上\n的牙齿所啃食;并且当你击\n杀目标后会受到来自\nSCP-127-1自愈效果
+众人之血泪
+激活你的奇术能力\n让周围的己方恢复生命值\n和拥有子弹抗性\n周围的己方越多效果也就\n越强大\n当你持有某些SCP物品使\n用技能时会有特别的效果...
+对讲监听
+显示启用了对讲机的人员
+锁门
+把门上锁一段时间.
+机能强化
+短时间内挺高自身移速和\n子弹抗性(在某时可能会出\n现其他作用)
+最后的机会
+恢复你的健康,增强自己速\n度,然后在30秒后死亡
+猩红力场
+原地释放一个伤害力场,任\n何非猩红之子的生物进入\n力场都会受到伤害,而部分\n伤害会转换成养分滋润每\n一个虔诚的信徒
+回声探测
+一枚特殊的手榴弹,它会在\n房间里产生回声,标记你和\n你的队友附近的每一个敌\n人.
+\'绿烟\'手雷
+一枚特殊的手榴弹,它会在\n爆炸后产生有毒气体,只有\n你的防毒面具对这种气体\n免疫.
+闪电门
+在一扇普通的门上安放'闪\n电门'装置,该装置会存在3\n5秒,非UIU人员经过时会受\n到电击并失去瞬时的行动\n能力
+降职
+你认为他对基金会没有任何用处
+阔剑地雷
+放置阔剑地雷
+狩猎之眼
+猩红之王赐予你看见别人\n灵魂的能力.
+运动检测器
+布置一个运动探测器在你\n所瞄准的位置,当有人从它\n旁边经过时,会被它检测到\n并将3秒内的位置信息显示在\n你的目镜上
+\'守护者\'治疗站
+每15秒治疗范围内血量最\n少的基金会武装单位(非保\n安单位),优先选择MTF落锤\n中血量最少的队员
+防弹插板
+在地上放置一个装有10个防\n弹插板的盒子,任何武装单\n位或穿着MTF衣服的人员\n都能使用其中的防弹插板
+现实稳定锚
+在地上部署一个便携式的\n'斯克兰顿'现实稳定锚,任\n何走进其影响范围的SCP都\n将受到'压制'
+智能操作平台
+佩戴在手臂上的便携式的\n智能平板其搭载的四项功\n能能够辅助佩戴者应对收\n容失效时的危险情况
+寒冰毒雾
+掷出一个释放类似\"SCP-2\n44\"寒冷气体的投掷物,它\n能在极短时间内让目标受\n到强烈的干扰
+靶向失能
+发射一个微小的长方体特\n殊射弹,被击中的SCP将无\n法使用它的技能(某些SCP\n的技能不会受到影响)并\n且其获得二级\"易伤\"效果
+精准射击
+大幅度降低你的枪械后座\n力并给予你个3级\"子弹护\n盾\"效果,同时周围的己方\n单位也会小幅度降低枪械\n后座力
+生命侦测
+快速侦测设施内SCP的生\n命状态以及他们大致所处\n的位置
+快速稳定锚
+一种非常轻便小巧的现实稳定\n锚,能够快速部署\n但功能性上远不人其他类\n型的稳定锚,续航时间也有\n限...
+暗面
+激活你的特殊能力,让它\n们感受你的暗黑之面
+老兵本能
+开启技能后获得35秒的3\n级枪械后座降低效果和5\n级快速换弹效果
+冲击手雷
+WoA-G-3型异常手雷,掷出\n后能够对周围的人员造成\n15秒武器后座力提升和易\n伤效果和3秒头疼效果
+现实尖啸弹
+WoA-G-15型异常手雷,掷出\n后将在一秒内形成一片\n\"虚空\"区域,处在\"虚空\"内\n的玩家就会被杀死,并彻\n底消失
+信息探针
+向瞄准方向发射一根\"虚\n拟\"探针,其会探测周围一\n定范围的\"受影响\"对象
+狂躁抑郁
+你的刀存储的能量越多,\n开启技能后你就越强大
+--技能5K
+强化奇术
+给予自身和周围己方五级\n子弹抗性和七级SCP护盾\n以及三级生命恢复的效果
+幽冥化
+将自身完全幽冥化,任何\n攻击都无法伤害你,你也\n可以轻易穿过别人,但在\n此之间你无法攻击
+时间领域
+创造一个静止6.5秒时间的\n小范围球形时间静止区域\n这里面只有身穿GOC装甲\n的人可以活动
+存在于过去
+在当前位置创建一个属于\n你自己的时间节点,当你遭\n受到致命伤害时会自动重\n置你的时间并回到放置节\n点的位置上
+--kongshu mode技能
+恩!情!
+CI空输的恩情还不完~\n为周围的己方加血和体\n力
+忠!诚!
+这份荣光,我白帽不会独\n享\n为周围的己方加血和体\n力
+冲刺!冲!
+周围的己方获得一个15秒\n的3级加速效果和一个15\n秒的三级恢复效果
+--SCP能力
+--049
+医者仁心
+强化所有SCP-049-2实体
+--912
+烟雾弹
+向前投掷一颗烟雾弹
+突进!
+使用战术匕首攻击并在短\n时间内提高移动速度
+--638
+撕咬
+用你的嘴巴咬别人
+凄厉尖叫
+在一个中近距离对目标进\n行尖叫
+恐惧尖叫
+对近距离的目标进行尖叫
+--062fr
+敲骨吸髓
+从死去的尸体汲取养分\n帮助自己进化
+捕食者的怒火
+向前冲刺并对目标施加巨\n大的伤害
+尖锐咆哮
+发出剧烈的咆哮让周围的\n目标暂时失去行动能力
+狩猎本能
+能够透视到周围一定范围\n的目标
+死亡飞扑
+跳起来飞扑向最近的目标
+--076
+投掷飞镖
+向瞄准的方向发射一枚飞\n镖
+迅捷
+短时间内提升速度和挥刀\n速度
+枭首
+向前冲刺使出一记回旋斩\n斩下区域内敌人的头颅
+--106
+隐匿追猎
+遁入地下后的10秒内移动\n速度将非常快,10秒后将自\n动从地底出来
+口袋空间
+进入口袋空间
+腐蚀黑洞
+从地面向瞄准方向放出紧\n贴地面的黑洞,所有碰到黑\n洞的人都会被传送到你的\n口袋空间内
+腐败传送
+传送到你标记的位置
+标记一处传送点
+传送至标记点
+传送至上一次传送的位置
+你不能在这里放置传送门
+你不能传送回去
+你标记了一处传送点
+没有位置,无法传送
+你标记了一个盟友
+你无法标记他/她作为你的盟友
+当前盟友:
+你被重新收容了....
+重新收容SCP-106
+你疯了? 你个[数据删除]!
+作为收容106的诱饵
+你是干什么吃的?!
+--542
+急诊断
+542进入奔跑模式并\'治疗\'\n第一个被触摸到的人类
+原地诊断
+近距离\'治疗\'一名人类
+医者的敏锐
+能够看见所有低于60%血量\n的人类
+--999
+治愈
+完全治愈人类角色(SCP只\n能恢复少量的生命值)
+范围治疗
+治愈你周围的每一个人包\n括你自己
+黏黏陷阱
+将一个人黏在原地无法移\n动
+黏液障目
+向周围的人甩出黏液并使\n他们看不见东西
+--973
+电击
+把目标定在原地几秒
+--2012
+举盾!
+举起盾牌
+英勇冲锋
+获得短时间的速度提升
+十字弩
+使用十字弩进行远程攻击
+巨剑
+使用巨剑进行攻击
+盾牌防御
+将盾牌挡在胸前进行防御
+沉重盾击
+使用盾牌向前进行一次撞\n击
+--939
+食腐者
+吃掉尸体恢复血量和提升\n自身的移速
+声音模仿者
+短时间内所有人会错将你\n的脚步听成普通人类的脚\n步
+遗忘气团
+在原地释放一团AMNC-22\n7气体\n不小心吸入这种气体的人\n将会忘记你的存在
+--811
+酸液弹
+向瞄准方向吐出一发酸液\n弹
+酸液弹(强化)
+向瞄准方向吐出一发更强\n大的酸液弹
+酸液地雷
+在地上放置一枚酸液地雷
+酸液喷射
+向瞄准的方向喷射出大量\n的酸液
+酸液炸弹
+以自身为原点爆发出巨大\n伤害
+--682
+鳞片装甲
+让覆盖在自身的鳞片硬化\n使自身受到更少的子弹伤\n害
+速度提升
+短时间提升自身的移速
+不死孽物
+恢复一定的血量
+憎恶怒吼
+让周围的目标暂时失去行\n动能力
 --3114
-english.scp3114strangle = "Strangle"
-english.scp3114strangle_desc = "Choke targets by gripping their throats\ncausing suffocation damage"
-english.scp3114disguise = "Skinwalker"
-english.scp3114disguise_desc = "Assume victim's appearance by wearing\ntheir skin (Provides effective disguise)"
-english.scp3114angry = "Bone Fury"
-english.scp3114angry_desc = "Unleash a powerful 4-hit combo forward"
-english.scp3114hint1 = "Press RMB to remove disguise"
+扼杀
+扼住目标的敌人咽喉并使\n其窒息
+伪装者
+剥下尸体的皮肤并覆盖在\n自己的身上(别人很难看出\n你的伪装!)
+骷髅怒焰
+向前打出一段高伤害的\n4连击
+按鼠标右键可以卸下伪装
 --1903
-english.scp1903attack = "Mental Strike"
-english.scp1903attack_desc = "Deals minor damage to the target and\napplies one stack of 'Masquerade'"
-english.scp1903attack_special = "Fragile Mind"
-english.scp1903attack_special_desc = "Requires the target to have the 'Masquerade'\neffect to activate\nThe more stacks, the more damage"
-english.scp1903mask = "Rabbit Mask"
-english.scp1903mask_desc = "Affects a target, transforming them into a\nvessel of your power. After 60 seconds,\nthey die and apply 5 stacks of\n'Masquerade' to nearby targets"
-english.scp1903range_special = "Psychic Frenzy"
-english.scp1903range_special_desc = "Deals damage to all hostile targets\nwithin range.\nTargets with 'Masquerade' take more\ndamage and suffer from a headache"
-english.scp1903secret = "The Secret of 1903"
-english.scp1903secret_desc = "Inflicts hallucinations on all targets\nwith 'Masquerade'. Reveals their\nlocation for 15 seconds\nHallucination lasts 5 seconds"
---ROLEMENU
-english.f2_name = "Name:"
-english.f2_objectives = "Objectives:"
-english.f2_char_stats = "Character stats"
-english.f2_health = "Health:"
-english.f2_stamina = "Stamina:"
-english.f2_choose = "Choose a faction in the list on left."
+精神强击
+对目标造成小额伤害并附\n加一层\"舞会假面\"效果
+脆弱心灵
+目标必须有\"舞会假面\"效\n果才能释放此技能\n目标效果层数越高该技能\n造成的伤害也就越多
+兔子面具
+影响一个目标将其转变成\n承载你能力的个体,并在\n45秒后死亡,其死亡后会对\n周围的目标施加5层\"舞会\n假面\"效果
+心灵癫狂
+对范围内的所有敌对目标\n造成伤害\n拥有\"舞会假面\"效果的目\n标会受到更多的伤害\n并对其施加头疼效果
+1903的秘密
+对所有拥有\"舞会假面\"效\n果的目标造成幻觉影响\n透视其位置15秒\n幻觉时间5秒
+--ROLEMENU --FZ翻译
+名字:
+任务:
+人物统计
+血量:
+耐力:
+在左边的列表中选择一个阵营
+--更多阵营选择
+常规模式
+空输模式
+杂项
+事件 5K
+事件
+--f2模式--
+--占位符
+未知阵营
+会在未来上线的阵营
+--5K 伊始
+GRU-CI突袭部队
+混沌分裂者几乎所有的基地在SCP基金会\"揭开帷幕\"后\n受到了来自基金会致命的攻击,绝大多数基地已被完全摧毁\n而幸存下来的混沌分裂者部队受到来自藏在\"空泡\"里的格鲁乌P(后时代)的帮助下\n组建了一支由格鲁乌P和混沌分裂者的成员构成的突袭部队\n他们利用格鲁乌P的[超传]技术四处突击基金会的站点企图找到基金会\"发疯\"的原因...
+STS \"清理者\" 5队
+STS 5队是5支STS小队中最残忍无情的队伍, 他们被O5直接允许使用一些极端危险的异常作为武器\n相较于另外4支小队, 5队的选拔是最为残酷的, 除了最普通的特种部队训练以外,还要进行更多与拥有智能异常搏斗的训练\n以及恐怖的\"忠诚\"测试、[数据删除]等训练\n5队的队员都接受过小幅度身体改造和情感剥除手术, 因此他们是5支队伍中任务完成度最高最完美的小组\n更多信息已被[封锁]....
+GOC奇术打击2组
+GOC奇术打击部队是全球超自然联盟组建的一支使用\"奇术\"进行大范围攻击的部队\n其下分为4支攻击小组——0号行动组和奇术打击1、2、3组,并且每支小组所使用的\n大范围杀伤性\"奇术\"也各不相同\n其中,奇术打击二组所使用的是一种被称为\"达摩克里斯之剑\"(又称\"悬顶之剑\")的精确\n打击奇术\n该奇术需要使用者在打击范围内建立多个发生装置才能使用,因此二组的每一次任务\n都是异常艰巨的
+机动特遣队 Nu-22 \"火箭侠\"
+机动特遣队Nu-22\"火箭侠\"是一只临时组建的快速机动部队,\n他们的任务是快速转移SCP-1440到各个人口密集的城市、难民营等区域,\n以达到快速消灭人口的目的
+机动特遣队 Nu-7 \"落锤\" 肃杀营B连
+落锤肃杀营B连是落锤特种大队中第二大的连队\n该部队整体拥有极高的军事素养,在极端环境下依旧保持出色的作战能力\n无论是丛林、荒漠还是城市区域,该部队都能成功完成作战任务
+--空输模式
+暴乱D级
+这就是由CI组织的一群暴乱D级人员!\n\n设施主管:这已经不是普通的D级人员了,必须出重拳!
+安保镇暴组
+用于镇压设施内的一切暴乱而建立的团队
+落锤特战分队
+一支特战\"小分队\"
+CI空输部队
+千呼万唤始出来的最伟大的CI部队!
+--二战模式
+美国陆军
+一支二战的美利坚合众国陆军
+纳粹德国
+本服务器不认可任何跟纳粹以及法西斯相关的思想和理论
+--f2杂项--
+--彩蛋角色
+彩蛋角色
+服务器里的彩蛋角色,只有满足某些条件下才能出现的特别角色
+--坐牢SCP
+冷板凳SCP
+这些SCP因为某些原因尚未出现在游戏中,V奶龙50助力这些SCP早日出场 :)
 --заебался короче переводил переводчиком похуй
-english.f2_ntf = "Mobile task force Epsilon-11 protects the SCP foundation from inside. They represent a special operative group, which is deployed on site in case of containment breach. So most of their operations can be classified as SCP containment."
-english.f2_nu7 = "MTF NU-7 'Hammer Down' is a battalion-sized special task force.\n\nThe Hammer Down unit stationed near Site-19 is a special unit formed specifically for\n\ndefending against external invasions and containing containment failures.\n\nAll of their actions can only be ordered by the O5 Council or the O4 Command."
-english.f2_chaos = "The Chaos Insurgency is a splinter group from the Foundation. It was formed when one of the divisions voluntarily left their area, taking with them several extremely useful SCP objects. They use the SCP objects in their possession for their own personal interests. benefits and to bolster global political support."
-english.f2_gru = "Department \"P\", GRU Overview: Founded in early 1935 by order of J.V. Stalin and originally called CHD KAS (Fourth Department of the Commission for Abnormal Events). Its first business was to investigate a murder S. M. Kirov.\n\nDuring the Second World War, the Commission became part of the newly created GRU as a department \"P \" - \"Psychotronics\" - and was engaged in neutralizing anomalous threats from the SS, Ahnenerbe and the Vatican, and also, in the interests of the Soviet government, the capture and study of anomalous artifacts in the USSR and abroad. The \"P\" department performed this function during the Cold War, making it difficult for the Foundation to conduct operations in the territories of the Comintern countries."
-english.f2_gru_guard = "A 6-member security team providing cover and safe extraction for infiltration units during missions"
-english.f2_dz = "'The Garden is the Viper's Nest' - Serpent's Hand\n\nA small but formidable anomaly group. The Foundation knows little about them; most intel comes from the GOC.\n\nThey despise both the Foundation and GOC, advocating coexistence with anomalies. Members avoid lethal force unless necessary."
-english.f2_uiu = "The Unusual Incidents Unit was formed after the start of the Cold War, when the US government focused on using anomalies and preventing them from being used by pro-Soviet forces. A special branch of the Federal Bureau of Investigation was then created to deal with the rapid response to paranormal events and crimes."
-english.f2_goc = "The GOC was formed by a coalition after World War II. It was composed of surviving emigrants from the Nazi, Soviet and coalition states - occultists, psychics, clerics and scientists. They pride themselves on destroying supernatural beings. They were destroyed many potential SCPs before the Foundation could recover and secure them."
-english.f2_sci = "Foundation personnel are people who work in civilian positions at the institution, from scientific staff to simple cleaners, for the most part they are ordinary people employed by the foundation, although there are exceptions. Senior scientists stand out on their plan. This is the most experienced staff members who have worked for the foundation for a long time."
-english.f2_sci_speical = "Experts from various research departments of the Foundation, each of whom has made outstanding achievements in their respective fields. \n\nThey possess a variety of unique special skills, which play a significant role in combat and containing SCPs."
-english.f2_security = "Security is the unit responsible for the security and protection of all Foundation facilities and SCP objects, regardless of their priority. Security personnel are trained and trained to act in conditions of containment breaches of SCP objects, as well as in the event of an invasion. They act in the role of protection for personnel, not so much from dangerous objects, but from themselves."
-english.f2_mtf = "Mobile Task Forces are small, task-focused or special-situation military units. Their main tasks include restoring SCP containment and evacuating Foundation personnel, although there are more specialized units."
-english.f2_osn = "Special Forces - Special formations of the Security Service, consisting of security specialists in the field of interaction with anomalous objects, as well as ordinary employees of other security departments in the event of a N.U.S. at the time of the disaster. The main task of the OSN - countering and guarding ''SCP'' Anomalous Objects."
-english.f2_qrt = "The Rapid Response Team is an experimental Security Force unit within Site-19 and [DATA EXPUNGED]. In the event of a NUS or attack by third parties, the Site Master or Site Controller will send a request to [DATA EXPUNGED]. If the request is approved , one of the active OBRs is immediately dispatched to the scene."
-english.f2_classd = "D-class personnel are a specialized category of personnel dedicated to working with dangerous anomalies. D-class personnel are usually drawn from prisoners, with preference given to those convicted of violent crimes and especially those on death row. In the event of a catastrophic event in an institution, all D-class personnel are to be terminated immediately unless local security decides otherwise."
-english.f2_cult = "Children of the Scarlet King - A cult founded by [DATA EXPUNGED] that praises the anomalous object SCP-001 ''The Scarlet King''. The cult is a splinter group from another related organization, the Serpent's Hand. The cult is not numerous, however there is evidence that they have some anomalous objects not yet contained and unexplored. Also, some Cult Members may have anomalous abilities, where they got them from is not known for certain."
-english.f2_scp = "SCP Objects are anomalies that the Foundation has been able to capture, contain, and classify. They pose a threat to humanity, and as such, the Foundation has been capturing them around the world, and trying to contain them in the most appropriate conditions, but since many animate SCPs aggressive, they want to break free"
-english.f2_minigames = "Roles for all kinds of extra modes."
-english.f2_skp = "The Special Paranormal Unit is a Third Reich anomaly research organization that in our reality was disbanded after the fall of the Reich itself. In Incident #028-DE/I2, the SKP attempted to infiltrate our reality from R-3378-DE's reality which was only prevented due to a chain of fortunate circumstances.The SKP is considered to be extremely hostile.It is known that they will once again try to infiltrate our reality and then they will be much better prepared.It is assumed that if the invasion is not prevented in the initial stages, it will be possible to stop them impossible."
-english.f2_uiu_agent = "This subgroup of the Department of Unusual Incidents is an elite unit composed of highly trained professional agents. Their task is to infiltrate a complex unnoticed and leave unnoticed after completing their mission. These agents possess unique abilities and skills that enable them to work in conditions where other agents can't even come close. They are capable of quickly responding to any paranormal events and crimes, and their work is often associated with danger to life, so they are always ready for any challenges. This subgroup is one of the most secret and effective in the Department of Unusual Incidents, performing tasks that require maximum confidentiality and professionalism."
---QUICK CHAT
-english.quickchat_request_id = "Show ID Card"
-english.quickchat_take_off_suit = "Take off suit"
-english.quickchat_put_weapon_away = "Put the weapon away"
-english.quickchat_drop_the_weapon = "Drop the weapon"
-english.quickchat_friendly = "Friendly"
-english.quickchat_run = "Run"
-english.quickchat_enemy_spotted = "Enemy"
-english.quickchat_scp_spotted = "SCP"
-english.quickchat_stop = "Stop"
-english.quickchat_face_the_wall = "Face the wall"
-english.quickchat_dont_follow_me = "Don't follow me"
-english.quickchat_dont_approach = "Don't approach me"
-english.quickchat_crouch = "Crouch"
-english.quickchat_jumping = "Jump"
-english.quickchat_dontaimme = "Don't point the weapon at me"
---OTHER
---english.gru_hud_task = "Mission Objective:"
---english.gru_hud_task_evacuation = "Assist CI in disrupting the facility"
---english.gru_hud_task_militaryhelp = "Help the Foundation contain containment breach"
---english.gru_hud_task_destroy = "Eliminate all targets you see"
-english.gru_hud_task_none = "none"
-english.spectators = "Spectators"
-english.players = "Players"
-english.alive = "Alive"
-english.f2_only_for_specs = "You can only open the character menu in spectator mode."
-english.machinegun_ammo = "Large Caliber"
-english.teeth_ammo = "Teeth"
-english.rubber_ammo = "Rubber Bullets"
-english.ntf_ammo = "Special Ammo"
-english.gru_ammo = "Russian Large Caliber"
-english.smg_ammo = "Submachine Gun"
-english.pistol_ammo = "Pistol"
-english.revolver_ammo = "Revolver"
-english.goc_ammo = "Energy"
-english.shotgun_ammo = "Shotgun"
-english.sniper_ammo = "Sniper Rifle"
-english.body_cant_determine_death_time = "Unable to determine time of death"
-english.body_died_right_now = "Died recently"
+机动特遣队Epsilon-11九尾狐从内部保护着SCP基金会.\n\n他们代表着一个特殊的行动小组,\n\n经常在收容失效的情况下被部署.因此,\n\n他们的大部分行动都可以归类为SCP收容.
+机动特遣队NU-7落锤是一支营级规模的特遣队.\n\n其中落锤特种大队的肃杀营的A连被秘密部署在Site-19的附近[详细位置未知],\n\n他们主要负责在设施处于极端危险时进行武力支援,帮助设施扫清一切外部威胁\n\n他们的任务通常由在设施内的O4指挥官指派
+混沌分裂者CI是从SCP基金会分裂出去的一个组织,\n\n在1924年由一伙携带数个SCP物品叛变的基金会人员所建立,\n\n他们一般为了自身利益和巩固全球权力基础而使用所占有的异常.
+苏联解体之后,格鲁乌P部门也随之消散.但在新时代的浪潮中,新的国际共运在帷幕\n\n之下悄然进行.曾经的格鲁乌P部门趁着这股赤色浪潮逐渐复苏,旧的格鲁乌P部门\n\n已经成为一个时代的符号,而新的格鲁乌P正成长为一个全球性的共产主义异常组织.\n\n因而为了新生的格鲁乌P,其组织成员将在全球范围内不惜一切代价获取尽可能多的\n\n资源使格鲁乌P重新强大起来.
+一支由6人组成的近卫小组,在侵入部队完成任务时接应并掩护他们安全撤离
+\'花园是毒蛇栖息之所\'蛇之手——\"Serpent's hand\"\n\n一个规模较小但难以对付的异常组织,基金会对该组织知之甚少,因此对该组织的认识大\n\n部分都来自GOC提供的资料\n\n而该组织对基金会和全球超自然联盟都抱有极大的恶意,尤其是在对付全球超自然联盟\n\n的成员时\n\n并且蛇之手提倡与异常和平相处,且极度厌恶任何毁灭异常和囚禁异常的行为,其成员\n\n通常不会采取任何致命的行动,但发现无法和平解决时便会采取极端的武力!
+异常事件部门是在冷战开始后成立的,\n\n当时美国政府专注于利用异常并防止它们被亲苏势力使用.\n\n随后成立了联邦调查局的一个特别部门,\n\n以处理对超自然事件和犯罪的快速反应.
+全球超自然联盟GOC是在第二次世界大战后由一个联盟组成的庞大组织.\n\n它由来自轴心国和同盟国的成员组成 - 超自然学者,\n\n通灵者,神职人员和科学家.他们以摧毁超自然生物为荣.\n\n在基金会恢复并保护它们之前,它们被摧毁了许多潜在的SCP.
+基金会人员是在该机构担任文职职位的人,\n\n从科研人员到简单的清洁工,他们大部分都是基金会雇用的普通人,\n\n但也有例外.高级科学家在他们的日常工作中中脱颖而出.\n\n这是长期为基金会工作的最有经验的工作人员.
+来自基金会各个研究部门的专家,他们在各自的领域拥有卓越的成就,\n\n并且他们拥有各种奇特的特殊技能,而且这些技能在战斗和收容\n\nSCP中发挥着重要的作用
+安保部门SD负责所有基金会设施和SCP项目的安全和保护,无论其优先级如何.\n\n安保人员经过培训和训练,是一支不可忽视的力量\n\n可以在SCP收容失效以及在入侵的情况下采取行动.
+机动特遣队MTF是小型的,以任务为重点的或特殊情况的军事单位.\n\n这些人员有时会驻扎在某些设施待命\n\n他们的主要任务包括恢复SCP收容和疏散基金会人员,尽管还有更多的专门单位.
+Special Forces - Special formations of the Security Service,consisting of security specialists in the field of interaction with anomalous objects,as well as ordinary employees of other security departments in the event of a N.U.S. at the time of the disaster. The main task of the OSN - countering and guarding ''SCP'' Anomalous Objects.
+快速反应部队QRF是Site-19和[数据删除]内的一个实验性安全部队单位.\n\n如果发生收容失效或第三方攻击\n\n站点管理员或站点控制器将向[数据删除] 发送请求.如果请求获得批准,则立即将其中一个快速反应小队派往现场.
+D级人员是专门被派去测试危险异常的人员.D级人员通常从囚犯中选拔,\n\n优先考虑那些被判犯有暴力罪行的人,\n\n尤其是那些死囚.如果机构发生灾难性事件,\n\n除非当地安全部门另有决定,否则所有D级人员将立即被处决.
+猩红之子COTSK - 由[数据删除]创立的邪教组织,\n\n崇拜异常对象SCP-001“猩红之王”.\n\n该邪教是另一个相关组织“蛇之手”的分裂组织.\n\n邪教人数不多,但有证据表明他们有一些尚未收容和未探索的异常物体.此外,\n\n一些邪教成员可能具有异常能力,\n\n他们从哪里获得这些能力尚不清楚.
+SCP项目是基金会能够捕获、\n\n收容和分类的异常.它们对人类构成威胁,\n\n因此,基金会一直在世界各地捕获它们,并试图将它们控制在最合适的条件下,\n\n但由于许多有生命的SCP具有攻击性,\n\n它们想要脱离基金会的控制.
+Roles for all kinds of extra modes.
+The Special Paranormal Unit is a Third Reich anomaly research organization that in our reality was disbanded after the fall of the Reich itself. In Incident #028-DE/I2,the SKP attempted to infiltrate our reality from R-3378-DE's reality which was only prevented due to a chain of fortunate circumstances.The SKP is considered to be extremely hostile.It is known that they will once again try to infiltrate our reality and then they will be much better prepared.It is assumed that if the invasion is not prevented in the initial stages,it will be possible to stop them impossible.
+这个特异事务处的小组是一\n\n个由训练有素的专业特工组成的精英单位.\n\n他们的任务是在不被注意的情况下潜入一个设施,\n\n并在完成任务后不被发现地离开.这些特工拥有独特的能力和技能,\n\n使他们能够在其他特工甚至无法接近的条件下工作.\n\n他们能够快速应对任何超自然事件和犯罪,他们的工作通常会威胁到生命,\n\n因此他们随时准备迎接任何挑战.该小组是异常事件部门中最秘密和最有效的小组之一,\n\n执行需要最大程度的机密性和专业性的任务.
+--专家组
+MTF专家组( 全称:\"机动特遣队 专家组\" ), 简称:\"MEG\"\n 驻扎在设施内来自其他MTF的专家(教官)\n他们训练设施内的MTF队员如何应对不同SCP和\n敌对人员\n有时他们会选拔一些具有潜力的MTF队员吸收进他们的MTF队伍中
+--随机事件
+--特殊角色
+某些事件发生时会出现的特殊角色
+--UIU收容小组
+属于[联邦基金会]事件下的支援阵营\nUIU收容小组是由基金会帮助美国政府训练的一支针对收容SCP的军事力量\n并且这支小组使用了部分由基金会提供的装备和科技能够更好的收容SCP
+--随机事件文本信息
+事件: 
+类型: 
+事件介绍:
+--事件类型
+大事件/世界观
+世界观
+常规
+战争
+隐匿
+--大事件
+--梦服
+收容失效之梦
+这是最美妙的梦,这也是最恐怖的梦
+--5K
+SCP-5000 \"为什么?\"
+保护常态, 遏制异常, 这是吾辈必行之路
+--常规事件
+--无阶段
+无事发生
+没有任何事件在此发生
+--开场事件
+--一阶段
+严阵以待
+本回合没有CI间谍,所有安保人员获\n得子弹,安保门禁时间延迟15秒\nD级中出现一名CI特工帮助D级
+现实不稳定
+当前场上所有SCP获得一个永久的\n2级\"异常生命恢复\"效果\n在修复所有发电机后恢复效果消失
+摆烂的内部审查
+内部安全代理无法查出UIU间谍,某个\n阵营将增加一个间谍\n(不包含GOC特工和蛇之手间谍)
+重型现实稳定锚
+修好所有电机后,任何人可在中控室\n维修稳定锚\n让处于办公区的SCP无限期获得一个3级\"脆弱\"\n效果
+动员兵政策
+本回合QRT可以刷新3波,任何设施高\n级职业均可召唤QRT,但QRT只有士兵、指挥官\n和盾兵
+联邦基金会
+UIU和基金会联合,UIU间谍转换成\"UIU\n联络专员\"可以在设施处于危险时呼叫UIU部队
+健康行动
+近几个月site19科研部门开展健身行\n动,所有科研人员的体质都得到了强化
+MTF特种训练
+设施内的MTF经过了落锤特种部队\n的训练,体质有了明显的强化\n(不包括设施主管)
+人员扫描设备
+中控室放置了一台\"人员扫描设备\"\n修好所有发电机之后可以使用其扫描设施内\n的人员,所有基金会武装单位可以看到目标人\n员的位置
+--二阶段
+强大的联合
+GOC和GRU成友好关系,GOC和CI以及D\n级同GRU一样为中立友好关系,GOC可以同GRU一\n起撤离\nGOC特工需要去帮助GRU守护中控室,本回合无\n法开启核弹
+故障传送门
+蛇之手的传送门因为未知事故随机\n出现在了设施内. 他们是怎么做到的?
+错误的坐标
+格鲁乌P的超传装置传送了部分装\n备到设施内. 他们是怎么知道我们的设施位置\n的?
+第四个SCP
+侦测到设施内某个收容间出现了未\n知能量波动\n那是...一个SCP!
+过早抵达
+某支武装势力将在50秒后抵达,正常\n第二波支援延后55秒
+脆弱的防线
+基金会的外部防线不堪一击, CI的大\n部队很快就会抵达设施
+盟友的请求
+格鲁乌P(后时代)接受了混沌分裂者\n的请求派出了一支小队回收D级人员,格鲁乌P\n成员可以从APC撤离
+--三阶段
+劣质核弹头
+核弹有极低概率不会爆炸
+直升机坠毁
+九尾狐的救援直升机在路上被未知\n力量摧毁了
+APC损坏
+CI装甲车转去接应的路上发动机损\n坏\n本回合没有CI装甲车接应
+健忘的O5
+某位O5似乎把一张O5权限卡落在O5\n办公室的某一处
+救援火车
+落锤的火车赶来救援并同时刷新五\n名落锤特种队员
+传送门失踪
+蛇之手的撤离传送门出现故障消失
+公路片
+现在可以靠自己的双腿穿过隧道逃\n出设施!
+--快速聊天
+出示ID卡
+脱掉衣服
+把武器收起来
+丢掉武器
+友军
+跑
+敌人
+SCP
+停下
+面向墙壁
+别跟着我
+别靠近我
+蹲下
+跳一下
+别瞄准我
+--屏幕信息提示
+硬着心
+--其他
+-- chinese.gru_hud_task = "任务目标:"
+-- chinese.gru_hud_task_evacuation = "协助CI扰乱设施"
+-- chinese.gru_hud_task_militaryhelp = "帮助基金会遏制收容失效"
+-- chinese.gru_hud_task_destroy = "消灭所有你看的目标"
+none
+观察者
+玩家
+生存
+你只能在观察者模式下打开角色菜单.
+大口径
+牙齿
+橡胶弹
+特制
+强化特制
+俄式大口径
+冲锋枪
+手枪
+左轮手枪
+能量
+超高能
+霰弹枪
+狙击枪
+无法确定死亡时间
+最近死亡
 --в английском можно везде запихнуть minutes ago
-english.body_minutes_ago = "Minutes ago"
-english.body_1minute_ago = "1 minute ago"
-english.body_2to4minutes_ago = "2 to 4 minutes ago"
-english.body_death_happened = "Death occurred approximately"
-english.body_death_unknown = "Cause of death unknown"
-english.body_search = "Search"
-english.body_headshot = "Fatal headshot"
-english.body_disconnected = "Body has no visible limb severance"
-english.body_gas = "Died from lethal gas"
-english.body_acid = "Body shows clear signs of chemical burns"
-english.body_exploded = "Body shows signs of burning"
-english.body_fall = "Multiple fractures in the legs"
-english.body_crushed = "Body has crush fractures"
-english.body_burned = "Body burned"
-english.body_slashed = "Body has stab wounds from a sharp object"
-english.body_low_caliber = "Body has small caliber gunshot wounds"
-english.body_high_caliber = "Body has large caliber gunshot wounds"
-english.body_shotgun = "Body has shotgun wounds"
-english.body_goc = "Body shows signs of electromagnetic gunshot wounds"
-english.body_bullets = "Body shows obvious gunshot wounds"
-english.body_scp1903 = "Died from irreversible mental damage"
-english.cutscene_subject = "Subject:"
-english.cutscene_subject_name = "Subject Name:"
-english.cutscene_name = "Name:"
-english.cutscene_objective = "Objective:"
-english.cutscene_disaster_relief = "Containment breach nullification"
-english.cutscene_contain_scp = "Evacuate Foundation personnel and contain SCP breach" -- Nine-Tailed Fox mission introduction
-english.cutscene_mtf_nu7 = "Eliminate any hostile forces and contain SCP containment breaches" -- Hammer Down mission introduction
-english.cutscene_uiu_agent = "Infiltrate the facility, hack computers to steal data"
-english.cutscene_follow_task = "Act according to the specific task"
-english.cutscene_gru_guard_task = "Cover the safe evacuation of infiltration teams"
-english.cutscene_scp_rescue = "Rescue SCP"
-english.chaos_team_task = "Rescue D-Class personnel"
-english.cutscene_namaz = "Perform the ritual"
-english.cutscene_time_after_disaster = "Time since containment breach:"
-english.cutscene_status = "Status:"
-english.cutscene_last_report_time = "Last report time:"
-english.cutscene_time_after_disaster_for_last_report_time = "Time since the last report:"
-english.cutscene_kia = "Killed in action"
-english.cutscene_location_site19 = "Location: SITE-19"
-english.cutscene_evac_by_ci = "Evacuated with the help of Chaos Insurgency"
-english.cutscene_evac_by_heli = "Evacuated by helicopter"
-english.cutscene_undercover_agent = "Undercover agent"
-english.hud_nick = "Nickname:"
-english.hud_charname = "Character Name:"
-english.hud_health = "Health"
-english.hud_health_capital = "HEALTH"
-english.hud_max_level = "Max Level"
-english.hud_killfeed_killed = "Killed"
-english.hud_killfeed_died = "Died"
-english.startintro_round_will_begin = "The next round will begin in"
-english.startintro_no_round = "The next round has not started yet"
-english.startintro_welcome_pt1 = "\nSite-19\n Welcome,"
-english.startintro_welcome_pt2 = "\n Good luck!"
-english.roundend_totaldeaths = "Total Deaths:"
-english.roundend_escaped = "Escaped:"
-english.roundend_gameover = "Game Over"
-english.roundend_roundcomplete = "Round Complete"
-english.roundend_roundresult = "Round Result"
-english.roundend_roundstillrestart = "Rounds until restart"
-english.roundend_nextroundin = "Next round in"
-english.roundend_restartinground = "Starting new round..."
-english.roundend_restartingserverin = "Restarting server"
-english.roundend_restartingserver = "Restarting server..."
-english.roundend_scarletking = "Scarlet King has arrived: This dimension is doomed!"
-english.roundend_nopeoplealive = "No one survived"
-english.roundend_alphawarhead = "Alpha warhead detonated"
-english.roundend_gru_warhead = "Alpha Warhead detonated by unknown credentials"
-english.roundend_foundation_win = "Foundation regained control of the facility"
-english.roundend_cbended = "Containment breach has ended"
-english.roundend_kongshu = "The nuclear warhead has stopped the Class-D riot."
-english.kongshu_vdv_win = "The grace of CI Airborne never ends ┗( T__T )┛"
-english.kongshu_nu7_wind = "Hammer Down Squad: Loyalty! ('-'*ゞ"
-english.take_off_hover = "Press 'Left Click' to remove"
-english.heavy_helmet = "Heavy Helmet"
-english.heavy_armor = "Heavy Armor"
-english.light_helmet = "Light Helmet"
-english.light_armor = "Light Armor"
-english.small_bag = "Pocket"
-english.big_bag = "Backpack"
-english.no_admins = "No admins are currently online"
-english.nt_min = "Minutes"
-english.nt_d = "Days"
-english.nt_y = "Years"
-english.nt_m = "Months"
-english.nt_s = "Seconds"
-english.nt_h = "Hours"
-english.nt_w = "Weeks"
-english.nt_mins = "Minutes"
-english.nt_ds = "Days"
-english.nt_ys = "Years"
-english.nt_ms = "Months"
-english.nt_ss = "Seconds"
-english.nt_hs = "Hours"
-english.nt_ws = "Weeks"
-english.donateadmin_protectionactivated = "You are suspected of large-scale banning, your admin rights have been revoked. Please contact a senior admin via QQ."
-english.desc_premium = "Gives you the ability to change roles during respawn (excluding certain important roles); reserved slots on the server; special tags in-game; double experience; access to custom features in game chat; special models for D-Class personnel; ability to change SCP when respawning as SCP; ability to change nickname color (observer mode); VIP settings available in the settings menu."
-english.desc_newbiekit = "Includes: 1 month of VIP status and level 15 in-game rank."
-english.desc_activewarn = "Remove one warning (You can check your warning count by typing !warns)."
-english.desc_penalty = "Remove one penalty (You can check your penalty count by typing !checkpenalty)."
-english.desc_unmute = "Unmute in-game (You can check the mute duration by typing !getmuteinfo + your 64-bit ID)."
-english.desc_ungag = "Ungag in-game (You can check the gag duration by typing !getgaginfo + your 64-bit ID)."
-english.desc_unban = "Unban"
-english.desc_prefix = "Gives you the ability to set a nickname prefix in the settings, but it must not contain any sensitive content, or your prefix will be revoked."
-english.desc_prefix_rainbow = "Gives you the ability to set a rainbow nickname prefix in the settings, but it must not contain any sensitive content, or your prefix will be revoked."
-english.desc_admin = ""
-english.donationtitle_prem = "VIP Status"
-english.donate_days = "Days"
-english.donate_other = "Other"
-english.donate_awarn = "Remove one warning"
-english.donate_penalty = "Remove one penalty"
-english.donate_newbiekit = "Newbie Kit"
-english.donate_level = "Level"
-english.donate_prefix = "Prefix"
-english.donate_gradientprefix = "Rainbow Prefix"
-english.donate_vcb = "Mute"
-english.donate_cb = "Gag"
-english.donate_gb = "Game Ban"
-english.donate_ltaw = "Less than a week"
-english.donate_mtaw = "More than a week"
-english.donate_perma = "Permanent Ban"
-english.donate_price = "Price:"
-english.donate_admin = "Admin"
-english.donate_paymenttype = "We accept WeChat Pay and Alipay for payments.\nYou can contact the administrators in the QQ group regarding payment matters.\nOur group number is: 751285822.\nIf you are overseas, you can click here to visit the website for purchases."
-english.qqsex = "Group chat:"
-english.donate_howmanylevels = "How many levels would you like to buy?"
-english.donate_willcostyou = "This level(s) will cost you:"
-english.donate_dragme = ">> Drag me! <<"
-english.shlogs_charname = "Character Name"
-english.shlogs_role = "Role"
-english.shlogs_team = "Faction"
-english.shlogs_setfilter = "Set Filter"
-english.shlogs_allrounds = "All Rounds"
-english.shlogs_round = "Round"
-english.shlogs_checksnapshot = "Check Snapshot"
-english.shlogs_closesnapshot = "Close Snapshot"
-english.shlogs_close = "Close"
-english.shlogs_dead = "Dead"
-english.shlogs_profile = "Profile"
-english.shlogs_details = "Details"
-english.shlogs_chat = "Chat Logs"
-english.shlogs_chat_log1 = "Player sender said message" -- DO NOT TRANSLATE sender, message
-english.shlogs_death = "Death"
-english.shlogs_death_log1 = "Player victim was crushed by a door" -- DO NOT TRANSLATE victim
-english.shlogs_death_log2 = "Player victim was killed by killer" -- DO NOT TRANSLATE victim, killer
-english.shlogs_deathelev = "Died in an elevator"
-english.shlogs_deathelev_log1 = "Player user was killed by killer using the elevator" -- DO NOT TRANSLATE user, victim
-english.shlogs_icedev = "Died from SCP (409/009)"
-english.shlogs_icedev_log1 = "Player user was killed by killer using SCP-409" -- DO NOT TRANSLATE user, killer
-english.shlogs_icedev_log2 = "Player user was indirectly killed by killer due to SCP-409's influence" -- DO NOT TRANSLATE user, killer
-english.shlogs_icedev_log3 = "Player user was killed by killer using SCP-009" -- DO NOT TRANSLATE user, killer
-english.shlogs_disconnection = "Disconnected"
-english.shlogs_disconnection_log1 = "Player user disconnected." -- DO NOT TRANSLATE user
-english.shlogs_drop = "Dropped Weapon"
-english.shlogs_drop_log1 = "Player user dropped their weapon" -- DO NOT TRANSLATE user, weapon
-english.shlogs_pickup = "Picked Up Weapon"
-english.shlogs_pickup_log1 = "Player user picked up the weapon" -- DO NOT TRANSLATE user, weapon
-english.shlogs_spawn = "Respawn"
-english.shlogs_spawn_log1 = "Player user was respawned by reviver" -- DO NOT TRANSLATE user, reviver
-english.shlogs_spawn_log2 = "Player user respawned as a Support" -- DO NOT TRANSLATE user
-english.shlogs_spawn_log3 = "Player user was respawned by an admin" -- DO NOT TRANSLATE user
-english.shlogs_spawn_log4 = "Player user respawned at the start of the round" -- DO NOT TRANSLATE user
-english.supp_pick_cant = "You can't change your role because you are currently playing the most important role in this faction."
-english.supp_canpick = "As a VIP, you can now change your role."
-english.supp_pickcancel = "To cancel the selection, press \"BACKSPACE\"."
-english.roleswap = "Role Selection"
-english.inv_throw_away = "Discard"
-english.load_tazer = "Load Taser"
-english.load_tazer_desc = "You can't use the taser because the battery is depleted."
-english.select_faction_ntfcmd = "Select the faction to scan from the list. Press BACKSPACE to close the window."
-english.ntfcmd_factionlist = "Faction List"
-english.ntfcmd_unknowns = "Unknown Personnel"
--- Achievements
-english.achievement = "You earned an achievement:"
-english.achievement1 = " and received "
-english.achievement2 = " experience points,"
-english.achievement3 = " levels and "
-english.achievement4 = " points!"
+几分钟前
+几分钟前
+几分钟前
+死亡发生时间大约为
+死亡原因不明
+搜索
+致命的爆头
+尸体没有明显的断肢
+死于致命气体
+尸体有明显化学烧伤
+尸体被烧伤
+尸体腿部多处骨折
+尸体粉碎性骨折
+尸体被烧毁
+尸体有被锋利利器刺伤
+尸体有小口径枪伤
+尸体有大口径枪伤
+尸体有铅弹枪伤
+尸体有电磁枪伤
+尸体上有明显枪伤
+死于不可逆转的精神伤害
+项目:
+项目名称:
+名字:
+任务:
+无效化收容失效
+撤离基金会人并遏制SCP收容失效
+消灭任何敌对势力并遏制SCP收容失效
+保卫火车营救设施内残余基金会人员
+听从上级指示,完成你的任务
+潜入设施,骇入电脑窃取资料
+进入设施,骇入电脑窃取资料
+进入设施,帮助基金会遏制收容失效
+夺取资料,篡改权限
+进入设施回收D级人员
+掩护侵入部队安全撤离
+拯救SCP
+营救D级人员,阻止基金会的疏散
+脆弱的防线已被我们撕碎,现在让这里变得更加混乱!
+执行仪式,帮助我们的王斩断最后一根锁链!
+距离收容失效发生的时间:
+状态:
+上一次汇报的时间:
+距离收容失效发生的时间:
+死亡
+地点:SITE-19
+在混沌分裂者的帮助下撤离
+通过直升机撤离
+卧底特工
+昵称:
+角色名字:
+血量
+血量
+最高等级
+杀害
+死亡
+新一轮回合将于
+新一轮还没有开始
+\nSite-19\n 欢迎你,
+\n 祝你好运!
+总死亡人数:
+逃脱:
+游戏结束
+回合结束
+回合结果
+离重启的回合数
+下一回合将在
+开始新的回合...
+重新启动服务器
+重启服务器...
+猩红之王降临:这个维度完蛋了!
+没有人幸存
+阿尔法核弹头爆炸
+阿尔法核弹头未爆炸
+阿尔法核弹头被未知权限引爆
+基金会重新控制了设施
+收容失效已结束
+核弹阻止了D级暴乱
+CI空输的恩情还不完┗( T__T )┛
+落锤特战分队: 忠!诚!('-'*ゞ
+纳粹德国获胜
+美国陆军获胜
+--下面这是？
+按 \"左键\" 摘下
+重型头盔
+重型防弹衣
+轻型头盔
+轻型防弹衣
+口袋
+背包
+目前没有管理员在线
+分钟
+天
+年
+月
+秒
+小时
+周
+分钟
+天
+年
+月
+秒
+小时
+周
+你有大规模封禁的嫌疑,你的管理权限已经剥夺,请通过QQ联系高级管理员
+给予您作为支援复活时,更换角色的功能(除去特定重要角色);\n服务器预留位;服务器内的特殊标签;双倍经验;\n访问游戏聊天中的自定义功能;D级人员的特殊模型;\n复活成为SCP时,更换SCP的功能;更换昵称颜色(观察者模式);\n拥有VIP时,设置中将会有VIP设置一栏
+包含:1个月的 VIP 资格以及15级游戏等级
+移除一次警告(您可以通过输入!warn查看您的警告个数)
+移除一次惩罚(您可以通过输入!checkpenalty查看您的惩罚个数)
+解除游戏内禁言封禁\n(您可以通过输入!getmuteinfo+您的64位ID查询您的封禁时长)
+解除游戏内禁音封禁\n(您可以通过输入!getgaginfo+您的64位ID查询您的封禁时长)
+解封
+给予您在设置中设置昵称前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+给予您在设置中设置昵称彩虹前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+
+VIP状态
+天
+其它
+移除一次警告
+移除一次惩罚
+新手礼包
+等级
+前缀
+彩虹前缀
+禁音
+禁言
+游戏封禁
+少于一周
+多于一周
+永久封禁
+价格:
+管理
+我们接受微信支付和支付宝进行付款,\n你可以通过联系QQ群内管理关于付款事宜,\n我们的交流群群号为:751285822.\n如果你是海外可点击此地方打开网站进行购买.
+交流群:
+您想购买多少等级?
+级将会花费你:
+>>拖我!<<
+角色名称
+身份
+阵营
+设置过滤器
+所有回合
+回合
+查看快照
+关闭快照
+关闭
+死亡
+资料
+详细信息
+聊天记录
+玩家 sender 说 message
+死亡
+玩家 victim 被门夹死
+玩家 victim 被 killer 击杀
+死于电梯
+玩家 user 被 killer 使用电梯击杀
+死于SCP(409/009)
+玩家 user 被 killer 使用409击杀
+玩家 user 受到409雕塑的影响,间接被 killer 击杀
+玩家 user 被 killer 使用009击杀
+死于\'尖啸\'
+玩家 user 被 killer 使用\'尖啸\'击杀
+断开连接
+玩家 user 断开连接.
+丢弃武器
+玩家 user 丢下了他的武器
+拾起武器
+玩家 user 捡起了武器
+复活
+玩家 user 被 reviver 复活了
+玩家 user 复活成为了一名支援
+玩家 user 被管理员复活了
+玩家 user 在回合开始时复活了
+由于你正在中扮演着该阵营中最重要的角色,所以你无法更换职业
+由于你是VIP,你现在可以更改你的角色职业了
+要取消选择,请按 \"BACKSPACE\"
+角色选择
+丢弃
+加载电击器
+您无法使用电击器,因为电量已耗尽.
+从列表中选择要扫描的阵营.点击BACKSPACE关闭窗口.
+阵营列表
+未知人员
+--成就
+你获得了成就:
+并获得了
+点经验、
+等级和
+点数!
 --体力
-english.stamina = "I need a breather"
+我需要喘口气
 --选角色
-english.role_menu = "CURRENT:"
-english.role_menu_1 = "REQUIRED LEVEL: "
-english.role_menu_2 = "ALREADY TAKEN"
-english.role_menu_3 = "Select SCP"
-english.role_menu_4 = "Task Selection"
-english.role_menu_5 = "Your role will change after the scene ends."
-english.role_menu_6 = "This role is occupied by another player, please select another role."
-english.role_menu_7 = "Your role has changed."
-english.role_menu_8 = "Faction List"
--- Penalty D
-english.desc_penalty_ts = "You can only wear a chemical protective suit."
-english.desc_penalty_cx = "Required escape attempts: "
-english.desc_penalty_cx_1 = "You do not have a penalty role status."
-english.desc_penalty_cx_2 = "Remaining penalty attempts: "
-english.desc_penalty_cx_3 = "Penalty removed"
-english.desc_penalty_cx_4 = "You have been granted the status."
-english.desc_penalty_cx_5 = "Non-penalized"
-english.desc_penalty_cx_6 = ", do not violate again."
-english.desc_penalty_cx_7 = "You have reached the warning limit and have been granted the status."
--- Other
-english.start_for_players_pt = " players are ready"
-english.start_for_players_pt_1 = "Current round time: "
-english.start_for_players_pt_2 = "The round will start in "
-english.start_for_players_pt_3 = " seconds."
-english.achievement_finish = "New achievement unlocked:"
-english.desc_djj = "Intercom Panel"
-english.desc_intercom = "Please send facility broadcast...\nOnly text can be transmitted."
-english.desc_intercom_1 = "Cooldown: "
-english.desc_intercom_2 = "Press E to start facility broadcast."
-english.desc_914 = "Current status: "
-english.desc_914_1 = "SCP-914 Control Panel"
-english.desc_914_2 = "Very Rough"
-english.desc_914_3 = "Rough"
-english.desc_914_4 = "Fine"
-english.desc_914_5 = "Very Fine"
-english.desc_914_6 = "Change Processing Status"
-english.desc_914_7 = "Start Processing"
-english.desc_vip = "Enable"
-english.desc_vip_1 = "Rainbow"
-english.desc_vip_2 = "Apply"
-english.desc_vip_3 = "Cancel"
-english.desc_vip_4 = "Edit"
-english.desc_lock = "Locked"
-english.desc_livetab = "MAIN INFO"
-english.desc_livetab_1 = "Foundation OS v 1.0"
-english.desc_livetab_2 = "Science Personnel: "
-english.desc_livetab_3 = "Military Personnel: "
-english.desc_livetab_4 = "Class-D Personnel: "
-english.desc_livetab_5 = "Unknown subjects: "
-english.desc_livetab_6 = "Emergency Info"
-english.desc_livetab_7 = "Total personnel in current area: "
-english.desc_livetab_8 = "Total science personnel: "
-english.desc_livetab_9 = "SCP Foundation"
-english.desc_livetab_10 = "Welcome to the SCP Foundation!"
-english.desc_livetab_11 = "Wishing you a safe and productive day!"
-english.desc_livetab_12 = ">> The containment decontamination procedure will begin in "
-english.desc_livetab_13 = ">> Immediately leave the current area!"
-english.desc_livetab_14 = "Alpha Warhead Emergency Detonation Procedure"
-english.desc_generator = "OFFLINE"
-english.desc_generator_1 = "ACTIVE"
-english.desc_obr = "SQR ready!"
-english.desc_radio_on = "On"
-english.desc_radio_off = "Off"
-english.desc_radio = "Channel:"
-english.desc_ci_scan = "Light containment Class-D personnel count: "
-english.desc_ci_scan_1 = "Heavy containment Class-D personnel count: "
-english.desc_ci_scan_2 = "Class-D personnel in office area: "
-english.desc_ci_scan_3 = "Class-D personnel on facility surface: "
-english.gru_hacking_time = "Hack Time: "
+当前:
+所需等级:
+已被选择
+选择 SCP
+任务选择
+您的角色将在场景结束后改变.
+该角色已被其他玩家占用,请选择其他角色
+您的角色已改变.
+阵营列表
+--惩罚D
+您只能穿戴化学防护服
+所需逃脱次数:
+您没有处罚角色状态.
+剩余惩罚数量:
+惩罚已移除
+您已被授予状态
+非惩罚者
+,不要再违规了哦.
+您已达到警告限额,并被授予状态
+--其他
+ 名玩家准备就绪
+当前回合时间:
+回合将在 
+ 后开始
+新成就已解锁:
+对讲机面板
+请发送设施广播...\n只能传输文字
+冷却中:
+按E键开始设施广播
+当前的状态:
+SCP-914 控制板
+超粗
+粗
+精
+超精
+更改加工状态
+开始加工
+启用
+彩虹色
+应用
+取消
+编辑
+已锁定
+设施面板
+基金会 OS v 1.0
+研究员单位:
+基金会武装单位:
+D级人员:
+未知单位:
+紧急信息
+当前区域总人数:
+科研人员总数:
+SCP基金会
+欢迎来到SCP基金会!
+祝你有一个非常安全和富有成就的一天!
+>> 清收容消毒程序将在 
+>> 立即离开当前区域!
+Alpha弹头紧急引爆程序
+离线
+激活
+快反小队 准备就绪!
+打开
+关闭
+频道:
+轻收容D级人员数量:
+重收容D级人员数量:
+办公区D级人员数量:
+设施地表D级人员数量:
+骇入时间:
 --O4壁纸名字
-english.wallpaper_apply = "Apply Wallpaper"
-english.wallpaperup = "Previous Page"
-english.wallpaperdown = "Next Page"
-english.normal_wallpaper_name = "Wallpaper"
-english.scpclassic = "Classic Background"
-english.mioself = "Mio's Personal Photo"
-english.bc1pic = "Bai Cai's Photo 1"
-english.supersex_1471 = "Super Sexy 1471 Image!"
+应用背景
+上一页
+下一页
+壁纸
+经典背景
+mio本人照
+白菜的照片1
+超绝1471色图!
 --NU7
-english.desc_o4_MTF = "NU-7 Hammer Down"
-english.desc_o4_MTF_1 = "Beta-7 Maz Hatters"
-english.desc_o4_status = "Forbidden"
-english.desc_o4_status_1 = "Ready"
-english.desc_o4_status_2 = "Sent"
-english.desc_o4_control = "O4 Command Room Door"
-english.desc_o4_control_1 = "Electromagnetic Cannon Checkpoint"
-english.desc_o4_control_2 = "General Checkpoint"
-english.desc_o4_control_3 = "SCP682 Checkpoint"
-english.desc_o4_control_4 = "One-way Checkpoint"
-english.desc_o4_control_5 = "One-way Door"
-english.desc_o4_call = "Emergency Call"
-english.desc_o4_call_2 = "MTF Name:"
-english.desc_o4_call_3 = "MTF Status:"
-english.desc_o4_call_4 = "Call MTF"
-english.desc_o4_call_5 = "Warning"
-english.desc_o4_call_6 = "Conditions not met or this MTF has already been dispatched"
-english.desc_o4_call_7 = "Dispatched"
-english.desc_o4_door = "Door Control"
-english.desc_o4_door_1 = "Remaining Power: "
-english.desc_o4_door_2 = "Open Door"
-english.desc_o4_door_3 = "Lock Door"
-english.desc_o4_wallpaper = "Wallpaper"
+NU-7 落锤
+Beta-7 疯帽商
+禁用
+准备好
+已发送
+O4指挥室门
+电磁炮检查点
+通用检查点
+SCP682检查点
+单向检查点
+单向门
+紧急呼叫
+MTF 名称:
+MTF 状态:
+呼叫 MTF
+警告
+条件未满足或该 MTF 已被派遣
+已派遣 
+门控
+电量剩余:
+开门
+锁门
+壁纸
 --摄像头扫描
-english.desc_camera = "[Secure.Contain.Protect] Security Camera V2"
-english.desc_camera_1 = "Video Output: ACTIVE"
-english.desc_camera_2 = "Audio Output: ACTIVE"
-english.desc_camera_3 = "ZOOM: "
-english.desc_camera_4 = "EXIT"
-english.desc_camera_5 = "NEXT"
-english.desc_camera_6 = "PREV"
-english.desc_camera_7 = "ZOOM IN"
-english.desc_camera_8 = "ZOOM OUT"
+[Secure.Contain.Protect] 安全摄像头 V2
+视频输出:激活
+音频输出:激活
+缩放:
+退出
+下一步
+上一步
+放大
+缩小
 --scoreboard
-english.desc_scoreboard_bilbil = "Bilibili Channel"
-english.desc_scoreboard_copy = "Copy"
-english.desc_scoreboard_achievement = "Open Achievements"
-english.desc_scoreboard_steam_url = "Open Steam Community URL"
+Bilibili 频道
+复制
+打开成就
+打开STEAM个人资料URL
 --scp物品
-english.desc_215 = "Your attachment to SCP-215 has become so high that you are no longer able to part with it."
+您对 SCP-215 的依恋已经到了无法割舍的地步.
 --DEMO
-english.menu_demo_settings = "DEMO Recording"
-english.menu_demo_enabled = "Enable DEMO Recording"
-english.menu_demo_chat_messages = "Enable DEMO Chat Messages"
--- Hitmarker Settings
-english.menu_hit_settings = "Hitmarker Settings"
-english.menu_hit_enabled = "Enable Hitmarker"
-english.menu_hitsound_enabled = "Enable Hitmarker Sound"
-english.menu_hitmarkercolor = "Hitmarker Color"
-english.menu_hitmarkertype = "Hitmarker Type"
-english.menu_hitmarkertype_line = "Line"
-english.menu_hitmarkertype_circle = "Circle"
-english.menu_hitmarkertype_dots = "Dots"
-english.menu_hitmarkertype_cross = "Cross"
-english.menu_hitmarkertype_triangle = "Triangle"
-english.menu_hitmarkertype_double_circle = "Double Circle"
-english.menu_hitmarkertype_pixel = "Pixel"
-english.menu_hitmarkertype_arrows = "Arrows"
-english.menu_hitmarkertype_star = "Star"
-english.menu_hitmarkertype_zigzag = "Zigzag"
-english.menu_hitnums_enabled = "Show Damage"
-english.menu_hitnums_debugmode = "Show Damage Debug Mode"
-ALLLANGUAGES.english = english
+DEMO录制
+开启DEMO录制
+开启DEMO提示
+--击中
+击中效果
+启用击中
+启用击中声音
+击中标记颜色
+击中标记类型
+线条
+圆形
+点状
+大交叉
+三角形
+双层圆形
+像素风
+箭头
+星形
+锯齿状
+显示伤害
+显示伤害调试模式
+ALLLANGUAGES.chinese = chinese
 --Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---English Translation By AI and Artificial
+--中文翻译by风子和[CN]RXSEND管理组

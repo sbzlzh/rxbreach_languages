@@ -1,1890 +1,2207 @@
 russian = {}
-russian.LangName = "Русский"
-russian.lang_pldied = "{num} игрока(-ов) умер(-ло)"
-russian.lang_descaped = "{num} класса(-ов) Д сбежал(-о)"
-russian.lang_sescaped = "{num} SCP сбежал(-о)"
-russian.lang_rescaped = "{num} ученый(-х) сбежал(-о)"
-russian.lang_dcaptured = "Хаос спас {num} класса(-ов) Д"
-russian.lang_rescorted = "MTF эвакуировало {num} ученый(-х)"
-russian.lang_teleported = "SCP - 106 отправил {num} игрока(-ов) на дачу"
-russian.lang_snapped = "{num} человеку(-м) помасажировал шею SCP - 173"
-russian.lang_zombies = "SCP - 049 'вылечик' {num} раз(-а)"
-russian.lang_secret_found = "Секрет найден"
-russian.lang_secret_nfound = "Секрет не найден"
-russian.unknown = "Неизвестно"
-russian.waiting_for_players = "Ожидание игроков..."
-russian.waiting_for_players_pt2 = "Нужно"
-russian.waiting_for_players_pt3 = "больше"
-russian.play = "Играть"
-russian.resume = "Продолжить"
-russian.settings = "Настройки"
-russian.leave = "Выйти"
-russian.credits = "Особая благодарность"
-russian.class_unknown = "Неизвестно"
-russian.select_weapon = "Выбор оружия"
+-- russian.chinese.LangName = "Chinese"
+-- russian.chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
+-- russian.chinese.lang_descaped = "{num} 等级(-ов) D级人员逃脱了(-о)"
+-- russian.chinese.lang_sescaped = "{num} SCP 逃脱了(-о)"
+-- russian.chinese.lang_rescaped = "{num} 科研人员(-х) 逃脱了(-о)"
+-- russian.chinese.lang_dcaptured = "混沌分裂者俘获了 {num} 等级(-ов)D级人员"
+-- russian.chinese.lang_rescorted = "机动特遣队疏散了 {num} 科研人员(-х)"
+-- russian.chinese.lang_teleported = "SCP - 106 吃了 {num} 玩家(-ов) 在老头空间"
+-- russian.chinese.lang_snapped = "{num} 人类(-м) 被扭断了脖子 SCP - 173"
+-- russian.chinese.lang_zombies = "SCP - 049 '治愈' {num} 患者(-а)"
+-- russian.chinese.lang_secret_found = "秘密被发现"
+-- russian.chinese.lang_secret_nfound = "秘密没有被发现"
+-- russian.chinese.unknown = "未知"
+-- russian.chinese.waiting_for_players = "正在等待玩家......"
+-- russian.chinese.waiting_for_players_pt2 = "需要"
+-- russian.chinese.waiting_for_players_pt3 = " 人才能开始"
+-- russian.chinese.play = "开始游戏"
+-- russian.chinese.resume = "继续游戏"
+-- russian.chinese.settings = "设置"
+-- russian.chinese.leave = "离开游戏"
+-- russian.chinese.credits = "特别鸣谢"
+-- russian.chinese.class_unknown = "未知"
+-- russian.chinese.select_weapon = "选择武器"
 russian.NRegistry = {
-    scpready = "Вы можете быть выбраны как SCP в следующем раунде",
-    scpwait = "Вам нужно подождать %s раунд(ов), чтобы стать SCP"
+你能在下一回合被选为SCP
+你还要等待 %s 回合才能被选为SCP
 }
 
-russian.NFailed = "Не удалось получить доступ к NRegistry с ключом: %s"
-russian.version_title = "RXSEND Breach 2.6.0"
-russian.version = "Тестовый сервер"
-russian.bugs = "Сообщить об ошибках!"
-russian.lang_end1 = "Игра окончена"
-russian.lang_end2 = "Время вышло"
-russian.lang_end3 = "Невозможно продолжить игру"
+-- russian.chinese.NFailed = "无法使用此钥匙卡进行访问:%s"
+-- russian.chinese.version_title = "[CN]RXSEND Breach 2.6.0"
+-- russian.chinese.version = "测试服"
+-- russian.chinese.bugs = "如果遇到BUG请报告BUG!"
+-- russian.chinese.lang_end1 = "游戏结束"
+-- russian.chinese.lang_end2 = "时不我待"
+-- russian.chinese.lang_end3 = "游戏无法进行"
 russian.escapemessages = {
-    {
-        main = "Вы сбежали",
-        txt = "Вы сбежали из комплекса за {t} минут, отличная работа!",
-        txt2 = "Если вас эвакуирует МТФ, это даст больше опыта.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "Вы сбежали",
-        txt = "Вы сбежали из комплекса за {t} минут, отличная работа!",
-        txt2 = "Если вас эвакуирует Хаос, это даст больше опыта.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "Вы эвакуированы",
-        txt = "Вы эвакуировались из комплекса за {t} минут, отличная работа!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "Вы сбежали",
-        txt = "Вы сбежали из комплекса за {t} минут, отличная работа!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被机动特遣队疏散,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+如果你被混沌分裂者俘获,你将会获得更多的经验.
+clr = Color(237, 28, 63),
+},
+{
+你已经被疏散
+你花费了 {t} 分钟从设施被疏散,干得好!
+
+clr = Color(237, 28, 63),
+},
+{
+你逃出去了
+你花费了 {t} 分钟从设施逃离,干得好!
+
+clr = Color(237, 28, 63),
+}
 }
 
 russian.role = {}
----SCP
-russian.SCP = "SCP"
-russian.role.SCP106 = "SCP-106"
-russian.role.SCP049 = "SCP-049"
-russian.role.SCP638 = "SCP-638"
-russian.role.SCP076 = "SCP-076-2"
-russian.role.SCP062DE = "SCP-062-DE"
-russian.role.SCP8602 = "SCP-860-2"
-russian.role.SCP062FR = "SCP-062-FR"
-russian.role.SCP096 = "SCP-096"
-russian.role.SCP542 = "SCP-542"
-russian.role.SCP1903 = "SCP-1903"
-russian.role.SCP973 = "SCP-973"
-russian.role.SCP457 = "SCP-457"
-russian.role.SCP173 = "SCP-173"
-russian.role.SCP2012 = "SCP-2012"
-russian.role.SCP082 = "SCP-082"
-russian.role.SCP999 = "SCP-999-2"
-russian.role.SCP939 = "SCP-939"
-russian.role.SCP811 = "SCP-811"
-russian.role.SCP682 = "SCP-682"
-russian.role.SCP912 = "SCP-912"
-russian.role.SCP3114 = "SCP-3114"
---Исследователь
-russian.SCI = "Научный отдел"
-russian.role.SCI_Assistant = "Ассистент"
-russian.role.SCI_Grunt = "Учёный"
-russian.role.SCI_Recruiter = "Этика"
-russian.role.SCI_Tester = "Исследователь"
-russian.role.SCI_Medic = "Медицинский доктор"
-russian.role.SCI_Cleaner = "Уборщик"
-russian.role.SCI_Head = "Руководитель персонала"
-russian.role.SCI_SpyUSA = "Шпион США"
---Охрана
-russian.SECURITY = "Охрана"
-russian.role.SECURITY_Recruit = "Новобранец"
-russian.role.SECURITY_Sergeant = "Сержант"
-russian.role.SECURITY_OFFICER = "Офицер охраны"
-russian.role.SECURITY_Shocktrooper = "Шок-трупер"
-russian.role.SECURITY_Heavy = "Сотрудник отдела безопасности по борьбе с беспорядками"
-russian.role.SECURITY_Warden = "Надзиратель"
-russian.role.SECURITY_IMVSOLDIER = "Специалист охраны"
-russian.role.SECURITY_Chief = "Начальник охраны"
-russian.role.SECURITY_Spy = "Шпион CI"
-russian.role.SECURITY_Corporal = "Капрал"
+--SCP
+SCP
+SCP-106
+SCP-049
+SCP-638
+SCP-076-2
+SCP-062-DE
+SCP-860-2
+SCP-062-FR
+SCP-096
+SCP-542
+SCP-1903
+SCP-973
+SCP-457
+SCP-173
+SCP-2012
+SCP-082
+SCP-999-2
+SCP-939
+SCP-811
+SCP-682
+SCP-912
+SCP-3114
+--研究员
+科研部门
+科研助手
+科研人员
+道德伦理检察官
+高级研究员
+医生
+清洁工
+人事主管
+UIU 间谍
+--安保部门
+安保部门
+安保部门 菜鸟
+安保部门 中士
+安保部门 警员
+安保部门 突击队员
+安保部门 镇暴队员
+安保部门 典狱长
+安保部门 特别专员
+安保部门 上尉
+混沌分裂者 间谍
+安保部门 下士
 --格鲁乌P部门
-russian.GRU = "Подразделение ГРУ-P (Постэпоха)"
-russian.role.GRU_Soldier = "Солдат ГРУ-P"
-russian.role.GRU_Specialist = "Боевой специалист ГРУ-P"
-russian.role.GRU_Jugg = "Тяжеловооружённый боец ГРУ-P"
-russian.role.GRU_Sapper = "Сапёр ГРУ-P"
-russian.role.GRU_Commander = "Командир ГРУ-P"
-russian.role.GRU_Political = "Младший лейтенант ГРУ-P"
-russian.GRU_Guard = "Гвардейская группа ГРУ-P"
-russian.role.GRU_Grunt = "Член гвардейской группы ГРУ-P"
-russian.role.GRU_Machinegunner = "Пулемётчик гвардейской группы ГРУ-P"
-russian.role.GRU_Marksman = "Меткий стрелок гвардейской группы ГРУ-P"
---Этот не знает, что это такое, во всяком случае, на сервере его нет
-russian.MINIGAMES = "Прочее"
-russian.role.USA = "Солдат США"
-russian.role.Nazi = "Солдат Рейха"
-russian.role.CTFCI = "CI Райдер"
-russian.role.CTFQRT = "QRT Защитник"
-russian.role.ArenaParticipant = "Участник арены"
---Старый университет
-russian.UIU = "Подразделение Необычных Инцидентов"
-russian.role.UIU_Soldier = "Солдат UIU"
-russian.role.UIU_Commander = "Командир UIU"
-russian.role.UIU_Specialist = "Специалист UIU"
-russian.role.UIU_Clocker = "Инфильтратор UIU"
-russian.role.UIU_Informator = "Информатор UIU"
+格鲁乌P部门(后时代)
+格鲁乌P 士兵
+格鲁乌P 作战专家
+格鲁乌P 重装
+格鲁乌P 战斗工兵
+格鲁乌P 指挥官
+格鲁乌P 少尉
+格鲁乌P部门 近卫小组
+格鲁乌P 近卫小组组员
+格鲁乌P 近卫小组机枪手
+格鲁乌P 近卫小组精确射手
+--这个不知道是什么反正服务器没有
+Other
+CI Raider
+QRT Defender
+Arena Participant
+--老UIU
+FBI特异事故处
+特异事故处 士兵
+特异事故处 指挥官
+特异事故处 战斗专家
+特异事故处 渗透者
+特异事故处 情报人员
 --新UIU
-russian.UIU_Agents = "Отряд агентов UIU"
-russian.role.UIU_Agent = "Агент UIU"
-russian.role.UIU_Agent_Commander = "Командир отряда UIU"
---russian.role.UIU_Agent_Sniper = "Снайпер UIU"
-russian.role.UIU_Agent_Specialist = "Специалист UIU"
-russian.role.UIU_Agent_Thunder = "UIU Агент \"Гроза\""
--- SKP
-russian.SKP = "Sonderkommando für Paranormales"
-russian.role.SKP_Soldat = "Солдат SKP"
-russian.role.SKP_Jager = "Охотник SKP"
-russian.role.SKP_Machinegunner = "Пулеметчик SKP"
-russian.role.SKP_Offizier = "Офицер SKP"
+UIU特工小组
+UIU特工小组 干员
+UIU特工小组 组长
+UIU特工小组 狙击手
+UIU特工小组 特种干员
+UIU特工小组 雷击
+--UIU收容小组
+UIU收容小组
+UIU收容小组 组员
+UIU收容小组 机枪手
+UIU收容小组 组长
+UIU收容小组 收容专家
+UIU收容小组 暗面
+--这个不知道是什么反正服务器没有
+Sonderkommando für Paranormales
+SKP Soldat
+SKP Jäger
+SKP Machinegunner
+SKP Offizier
 --蛇之手
-russian.DZ = "Рука Змеи"
-russian.role.DZ_Grunt = "Рядовой Руки Змеи"
-russian.role.SCI_SpyDZ = "Шпион Руки Змеи"
-russian.role.DZ_Gas = "Специальный агент Руки Змеи"
-russian.role.DZ_Psycho = "Псих Руки Змеи"
-russian.role.DZ_Commander = "Командир Руки Змеи"
--- GOC
-russian.Goc = "Глобальная организация по защите от аномалий"
-russian.role.Goc_Grunt = "Рядовой GOC"
-russian.role.Goc_Liq = "Лейтенант GOC"
-russian.role.Goc_Commander = "Командир GOC"
-russian.role.Goc_Jag = "Бесстрашный воин GOC"
-russian.role.Goc_Special = "Эксперт по бою GOC"
--- 快反
-russian.QRT = "Отряд быстрого реагирования"
-russian.role.QRT_Soldier = "Солдат Отряда быстрого реагирования"
-russian.role.QRT_Medic = "Медик Отряда быстрого реагирования"
-russian.role.QRT_ShockTrooper = "Штурмовик Отряда быстрого реагирования"
-russian.role.QRT_Commander = "Командир Отряда быстрого реагирования"
-russian.role.QRT_Machinegunner = "Пулеметчик Отряда быстрого реагирования"
-russian.role.QRT_Shield = "Щитоносец Отряда быстрого реагирования"
-russian.role.QRT_Marksmen = "Снайпер Отряда быстрого реагирования"
--- STS
-russian.STS = "Специальный отряд действий"
-russian.role.STS_Soldier = "Солдат STS"
-russian.role.STS_Shock = "Штурмовик STS"
-russian.role.STS_Special = "Специалист STS"
-russian.role.STS_Officer = "Офицер STS"
-russian.role.STS_Left = "Лейтенант STS"
--- OSN
-russian.OSN = "Специальный отряд"
-russian.role.OSN_Soldier = "Солдат OSN"
-russian.role.OSN_Specialist = "Специалист OSN"
-russian.role.OSN_Commander = "Командир OSN"
--- D级
-russian.ClassD = "Персонал класса D"
-russian.role.ClassD_Default = "Персонал класса D"
-russian.role.ClassD_Pron = "Класс-D Слай"
-russian.role.ClassD_Hack = "Персонал класса D Хакер"
-russian.role.ClassD_Bor = "Класс D - Рестлер"
-russian.role.ClassD_Fat = "Персонал класса D Толстяк"
-russian.role.ClassD_Probitiy = "Персонал класса D Кулинар"
-russian.role.ClassD_Thief = "Персонал класса D Вор"
-russian.role.ClassD_Cannibal = "Персонал класса D Каннибал"
-russian.role.ClassD_Fast = "Персонал класса D Спортсмен"
-russian.role.ClassD_Killer = "Персонал класса D Убийца"
-russian.role.ClassD_Hitman = "Персонал класса D Наемник"
-russian.role.ClassD_FartInhaler = "Персонал класса D Гоблин"
-russian.role.ClassD_Survivor = "Класс D - Выживший"
-russian.role.ClassD_GOCSpy = "Агент Г.О.К."
-russian.role.ClassD_Banned = "Класс-D (Пониженный допуск)"
-russian.role.ClassD_Mio = "MIO"
-russian.role.ClassD_Mio_NaiLong = "Най Лун (MIO)"
--- MTF
-russian.MTF = "Мобильная группа"
-russian.role.MTF_Security = "Охранник MTF"
-russian.role.MTF_Shock = "Штурмовик MTF"
-russian.role.MTF_Guard = "Солдат MTF"
-russian.role.MTF_Medic = "Медик MTF"
-russian.role.MTF_Left = "Лейтенант MTF"
-russian.role.MEG_Chem = "МОГ CBRN-специалист"
-russian.role.MTF_Specialist = "Специалист MTF"
-russian.role.MTF_Com = "Командир безопасности"
-russian.role.MTF_HOF = "Командир учреждения"
-russian.role.MTF_Engi = "Инженер MTF"
-russian.role.MTF_Jag = "Тяжелый солдат MTF"
-russian.role.O4Commander = "Командир O4"
--- 九尾狐
-russian.NTF = "Мобильная группа Epsilon-11 'Nine Tailed Fox'"
-russian.role.NTF_Soldier = "Солдат NTF"
-russian.role.NTF_Commander = "Командир NTF"
-russian.role.NTF_Specialist = "Специалист NTF"
-russian.role.NTF_Sniper = "Снайпер NTF"
-russian.role.NTF_Pilot = "Пилот NTF"
---NU7
-russian.NU7 = "Мобильная тактическая группа NU-7 'Молниеносный удар'"
-russian.role.NU7_Soldier = "Солдат NU-7"
-russian.role.NU7_Commander = "Командир NU-7"
-russian.role.NU7_Specialist = "Специалист NU-7"
-russian.role.NU7_Vanguard = "Авангард NU-7"
-russian.role.NU7_Juggernaut = "Джаггернаут NU-7"
--- CI
-russian.Chaos = "Хаос Инсургентс"
-russian.role.Chaos_Grunt = "Солдат Хаоса"
-russian.role.Chaos_Commander = "Командир Хаоса"
-russian.role.Chaos_Jugg = "Тяжелый солдат Хаоса"
-russian.role.Chaos_Demo = "Демон Хаоса"
-russian.role.Chaos_Claymore = "Охотник Хаоса"
-russian.role.Chaos_Recruit = "Новобранец Хаоса"
--- 特殊科研
-russian.SCI_SPECIAL = "Специальный исследователь"
-russian.role.SCI_SPECIAL_DAMAGE = "Келен"
-russian.role.SCI_SPECIAL_HEALER = "Матильда"
-russian.role.SCI_SPECIAL_SLOWER = "Спидвон"
-russian.role.SCI_SPECIAL_SPEED = "Ломао"
-russian.role.SCI_SPECIAL_MINE = "Фелон"
-russian.role.SCI_SPECIAL_BOOSTER = "Георг"
-russian.role.SCI_SPECIAL_SHIELD = "Щильдме"
-russian.role.SCI_SPECIAL_INVISIBLE = "Рупрехт"
-russian.role.SCI_SPECIAL_VISION = "Хедвиг"
--- 猩红之子
-russian.Cult = "Дети Алого Царя"
-russian.role.Cult_Commander = "Жрец Алого Царя"
-russian.role.Cult_Grunt = "Последователь Алого Царя"
-russian.role.Cult_Psycho = "Безумный последователь Алого Царя"
-russian.role.Cult_Specialist = "Помощник жреца Алого Царя"
--- Подрежимы и Роли случайных событий
+蛇之手
+蛇之手 士兵
+蛇之手 间谍
+蛇之手 特种探员
+蛇之手 疯子
+蛇之手 指挥官
+--GOC
+全球超自然联盟
+全球超自然联盟 士兵
+全球超自然联盟 中尉
+全球超自然联盟 指挥官
+全球超自然联盟 无畏勇士
+全球超自然联盟 战斗专家
+--快反
+快速反应部队
+快速反应部队 士兵
+快速反应部队 医疗兵
+快速反应部队 突击队员
+快速反应部队 指挥官
+快速反应部队 机枪手
+快速反应部队 盾牌手
+快速反应部队 精准射手
+--D级
+D级人员
+D级人员
+D级人员 盗贼
+D级人员 黑客
+D级人员 摔角手
+D级人员 胖逼
+D级人员 大兜哥
+D级人员 小偷
+D级人员 食人魔
+D级人员 运动员
+D级人员 杀手
+D级人员 职业杀手
+D级人员 哥布林
+D级人员 生存者
+D级人员 老兵
+全球超自然联盟 特工
+D级人员 低信誉人员
+MIO
+奶龙 MIO
+--MTF
+机动特遣队
+内部安全代理
+机动特遣队 突击队员
+机动特遣队 士兵
+机动特遣队 医疗兵
+机动特遣队 中尉
+机动特遣队 战斗专家
+安全主管
+设施主管
+机动特遣队 工程师
+机动特遣队 重装
+O4指挥官
+MTF 专家组
+MEG 生化专家
+MEG 九尾狐收容专家
+MEG 落锤特战教官
+--九尾狐
+机动特遣队 Epsilon-11 ''Nine Tailed Fox 九尾狐''
+九尾狐 士兵
+九尾狐 指挥官
+九尾狐 战斗专家
+九尾狐 狙击手
+九尾狐 飞行员
+--NU7 落锤
+机动特遣队 NU-7 '落锤' 肃杀营A连 
+落锤肃杀A连 士兵
+落锤肃杀A连 指挥官
+落锤肃杀A连 作战专家
+落锤肃杀A连 先锋
+落锤肃杀A连 无畏战士
+--CI
+Chaos Insurgency 混沌分裂者
+混沌分裂者 士兵
+混沌分裂者 指挥官
+混沌分裂者 重装
+混沌分裂者 恶魔
+混沌分裂者 猎人
+混沌分裂者 新兵
+--特殊科研感觉不用汉化他们的名字
+特殊科研人员
+Kelen
+Matilda
+Speedwone
+Lomao
+Feelon
+Georg
+Shieldmeh
+Ruprecht
+Hedwig
+--猩红之子
+Children of The Scarlet King 猩红之子
+猩红之子 祭祀
+猩红之子 教众
+猩红之子 狂信徒
+猩红之子 助祭
+--事件专属角色
+事件特殊角色
+UIU 联络专员
+混沌分裂者 特工
+--5K区域
+--奇术打击
+GOC奇术打击二组 护卫
+GOC奇术打击二组 指挥官
+GOC奇术打击二组 专家
+GOC奇术打击二组 学者
+--STS 5队
+STS-5队 士兵
+STS-5队 队长
+STS-5队 精英
+STS-5队 特种干员
+STS-5队 压制者
+--GRU-CI 突袭部队
+GRU-CI突袭部队 士兵
+GRU-CI突袭部队 医疗兵
+GRU-CI突袭部队 骇客
+GRU-CI突袭部队 副指挥
+GRU-CI突袭部队 指挥官
+GRU-CI突袭部队 机枪手
+--Nu-22
+Nu-22 \"火箭侠\" 士兵
+Nu-22 \"火箭侠\" 医疗兵
+Nu-22 \"火箭侠\" 指挥官
+SCP-1440
+--NU-7 Buck
+落锤肃杀B连 士兵
+落锤肃杀B连 医疗兵
+落锤肃杀B连 毒气专家
+落锤肃杀B连 技术员
+落锤肃杀B连 副指挥
+落锤肃杀B连 指挥官
+落锤肃杀B连 机枪手
+--子模式的角色
 ------------------------------------------------kongshu
--- Facility
-russian.role.ClassD_Rioter = "Бунтовщик Класса-D"
-russian.role.ClassD_Psycho = "Псих Класса-D"
-russian.role.ClassD_Executor = "Палач Класса-D"
-russian.role.ChaosAgentRioter = "Полевой Агент Хаоса" -- Лидер
-russian.role.Security_grunt = "Боец Подавления Охраны"
-russian.role.Security_faster = "Штурмовик Охраны"
-russian.role.Security_jugg = "Элитный Боец Разгона"
-russian.role.Security_protector = "Защитник Охраны" -- Лидер
--- Support
-russian.role.chaos_vdv_grunt = "Воздушный Солдат Хаоса"
-russian.role.chaos_vdv_marksman = "Воздушный Меткий Стрелок Хаоса"
-russian.role.chaos_vdv_machinegunner = "Воздушный Пулеметчик Хаоса"
-russian.role.chaos_vdv_commander = "Воздушный Командир Хаоса"
-russian.role.nu7_squad_grunt = "Солдат Отряда 'Молот Опущен'"
-russian.role.nu7_squad_shield = "Отряд Молота - Щитоносец"
-russian.role.nu7_squad_sniper = "Снайпер Отряда 'Молот Опущен'"
-russian.role.nu7_squad_machineunner = "Пулеметчик Отряда 'Молот Опущен'"
-russian.role.nu7_squad_commander = "Командир Отряда 'Молот Опущен'"
+--facility
+D级 暴动人员
+D级 精神病
+D级 处刑者
+CI 外勤特工
+安保 镇压队员
+安保 冲锋队员
+安保 镇暴精英
+安保 保卫者
+--support
+CI空输 士兵
+CI空输 精确射手
+CI空输 压制者
+CI空输 指挥官
+落锤特战分队 士兵
+落锤特战分队 盾兵
+落锤特战分队 狙击手
+落锤特战分队 压制者
+落锤特战分队 指挥官
+------------------------------------------------
+------------------------------------------------ww2
+--nazi
+纳粹德国 士兵
+纳粹德国 指挥官
+纳粹德国 机枪手
+--american
+美军 士兵
+美军 指挥官
+美军 机枪手
 ------------------------------------------------
 russian.weaponry = {}
-russian.weaponry["breach_keycard_1"] = "Карта доступа 1 уровня"
-russian.weaponry["breach_keycard_2"] = "Карта доступа 2 уровня"
-russian.weaponry["breach_keycard_3"] = "Карта доступа 3 уровня"
-russian.weaponry["breach_keycard_4"] = "Карта доступа 4 уровня"
-russian.weaponry["breach_keycard_5"] = "Карта доступа 5 уровня"
-russian.weaponry["breach_keycard_6"] = "Карта доступа Omni"
-russian.weaponry["breach_keycard_7"] = "Карта доступа O5"
-russian.weaponry["breach_keycard_crack"] = "? уровня доступа"
-russian.weaponry["breach_keycard_support"] = "? уровня поддержки"
-russian.weaponry["breach_keycard_sci_1"] = "Карта доступа 1 уровня для исследований"
-russian.weaponry["breach_keycard_sci_2"] = "Карта доступа 2 уровня для исследований"
-russian.weaponry["breach_keycard_sci_3"] = "Карта доступа 3 уровня для исследований"
-russian.weaponry["breach_keycard_sci_4"] = "Карта доступа 4 уровня для исследований"
-russian.weaponry["breach_keycard_security_1"] = "Карта доступа 1 уровня для безопасности"
-russian.weaponry["breach_keycard_security_2"] = "Карта доступа 2 уровня для безопасности"
-russian.weaponry["breach_keycard_security_3"] = "Карта доступа 3 уровня для безопасности"
-russian.weaponry["breach_keycard_security_4"] = "Карта доступа 4 уровня для безопасности"
-russian.weaponry["breach_keycard_guard_1"] = "Карта доступа 1 уровня для охраны"
-russian.weaponry["breach_keycard_guard_2"] = "Карта доступа 2 уровня для охраны"
-russian.weaponry["breach_keycard_guard_3"] = "Карта доступа 3 уровня для охраны"
-russian.weaponry["breach_keycard_guard_4"] = "Карта доступа 4 уровня для охраны"
-russian.weaponry["breach_keycard_ntf"] = "Ключ-карта NTF"
-russian.weaponry["breach_keycard_nu7"] = "Ключ-карта NU-7"
-russian.weaponry["item_drink_dado_fire"] = "Сок из ягод падуба \"Осторожно, горячо!\""
-russian.weaponry["item_drink_dado_radioactive"] = "Сок из змеиных ягод \"Вкус как радиация\""
-russian.weaponry["item_drink_energy"] = "Энергетический напиток"
-russian.weaponry["item_drink_soda"] = "Газировка"
-russian.weaponry["item_drink_water"] = "Вода"
-russian.weaponry["item_drink_coffee"] = "Кофе"
-russian.weaponry["item_eyedrops_1"] = "Глазные капли"
-russian.weaponry["item_eyedrops_2"] = "Улучшенные глазные капли"
-russian.weaponry["item_eyedrops_3"] = "Экспериментальные глазные капли"
-russian.weaponry["item_hamburger"] = "Крабовый бургер"
-russian.weaponry["item_keys"] = "Ключи от машины \"Большой Г\""
-russian.weaponry["item_knife"] = "Самодельный нож"
-russian.weaponry["item_medkit_1"] = "Медицинский комплект"
-russian.weaponry["item_medkit_2"] = "Офисный медицинский комплект"
-russian.weaponry["item_medkit_3"] = "Специальный медицинский комплект"
-russian.weaponry["item_medkit_4"] = "Универсальный медицинский комплект"
-russian.weaponry["item_pills"] = "Обезболивающие таблетки"
-russian.weaponry["item_nightvision_green"] = "Ночное видение (зеленое)"
-russian.weaponry["item_nightvision_blue"] = "Ночное видение (синие)"
-russian.weaponry["item_nightvision_red"] = "\"Чувствительность к убийству\""
-russian.weaponry["item_nightvision_goc"] = "Прототип ночного видения GOC"
-russian.weaponry["item_nightvision_white"] = "Прототип ночного видения"
-russian.weaponry["item_radio"] = "Радиостанция"
-russian.weaponry["item_chaos_radio"] = "Радиостанция CI"
-russian.weaponry["item_adrenaline"] = "Инъекция адреналина"
-russian.weaponry["item_syringe"] = "Инъекция для усиления функций"
-russian.weaponry["item_deffib_medic"] = "Переносной дефибриллятор"
-russian.weaponry["item_shield"] = "Броневой щит"
-russian.weaponry["item_special_document"] = "Специальный доступный документ"
-russian.weaponry["item_screwdriver"] = "Отвертка"
-russian.weaponry["item_tazer"] = "Тазер"
-russian.weaponry["item_toolkit"] = "Набор инструментов"
-russian.weaponry["copper_coin"] = "Медная монета"
-russian.weaponry["silver_coin"] = "Серебряная монета"
-russian.weaponry["gold_coin"] = "Золотая монета"
-russian.weaponry["weapon_special_gaus"] = "Гаусс-пушка"
-russian.weaponry["br_holster"] = "Руки свободны"
-russian.weaponry["weapon_flashlight"] = "Фонарик"
-russian.weaponry["weapon_pass_guard"] = "ID карта \"Военнослужащий\""
-russian.weaponry["weapon_pass_medic"] = "ID карта \"Медик\""
-russian.weaponry["weapon_pass_sci"] = "ID карта \"Исследователь\""
-russian.weaponry["weapon_breachmelee_crowbar"] = "Лом"
-russian.weaponry["weapon_breachmelee_pipe"] = "Трубный ключ"
-russian.weaponry["weapon_breachmelee_hammer"] = "Молоток"
-russian.weaponry["weapon_breachmelee_fireaxe"] = "Пожарный топор"
-russian.weaponry["weapon_breachmelee_axe"] = "Топор"
-russian.weaponry["weapon_breachmelee_tonfa"] = "Тонфа"
-russian.weaponry["weapon_breachmelee_stick"] = "Раздвижная Дубинка"
-russian.weaponry["weapon_cannibal"] = "Действие: Кушать труп"
-russian.weaponry["weapon_checker"] = "Действие: Проверка личности"
-russian.weaponry["weapon_cqc"] = "Тактические действия"
-russian.weaponry["weapon_goggles"] = "Действие: Использовать очки"
-russian.weaponry["breach_keycard_usa_spy"] = "Карта доступа внутреннего шпиона"
-russian.weaponry["weapon_usa_instruction"] = "Обучение"
-russian.weaponry["ritual_paper"] = "Священные слова бога"
-russian.weaponry["cw_rubber_shotgun"] = "Пневматический дробовик"
-russian.weaponry["hacking_doors"] = "Хакерское оборудование"
-russian.weaponry["item_ci_scan"] = "Простое сканирующее устройство"
-russian.weaponry["item_cheemer"] = "Cheemes"
-russian.weaponry["weapon_nu7_goggles"] = "Очки NU-7"
-russian.weaponry["item_top_document"] = "Специальный документ"
-russian.weaponry["cw_kk_ins2_toz66_sawed"] = "Самодельный дробовик"
-russian.weaponry["gasmask"] = "Противогаз"
-russian.weaponry["battery_1"] = "Крошечная батарея"
-russian.weaponry["battery_2"] = "Улучшенная батарейка"
-russian.weaponry["battery_3"] = "Батарейка"
-russian.weaponry["cw_kk_ins2_deagle_ntf"] = "妖狐之舞"
-russian.role.Spectator = "Наблюдатель"
+一级权限卡
+二级权限卡
+三级权限卡
+四级权限卡
+五级权限卡
+Omni权限卡
+O5权限卡
+?级权限卡
+?级权限卡
+一级科研权限卡
+二级科研权限卡
+三级科研权限卡
+四级科研权限卡
+一级安保权限卡
+二级安保权限卡
+三级安保权限卡
+四级安保权限卡
+一级警卫权限卡
+二级警卫权限卡
+三级警卫权限卡
+四级警卫权限卡
+九尾狐权限卡
+落锤权限卡
+紫苞果汁 «小心点,烫嘴»
+蝮蛇果汁 «尝起来像辐射»
+能量饮料
+苏打水
+饮用水
+咖啡
+眼药水
+改进型眼药水
+实验型眼药水
+蟹黄堡
+大G车钥匙
+自制小刀
+医疗包
+办公用医疗包
+特殊护理医疗包
+通用医疗包
+止痛药
+夜视仪
+蓝色夜视仪
+\"杀意感知\"
+GOC原型夜视仪
+原型夜视仪
+对讲机
+CI对讲机
+肾上腺素注射器
+机能强化注射器
+便携式除颤仪
+防弹盾牌
+特殊访问代码
+螺丝刀
+电击器
+工具箱
+铜币
+银币
+金币
+电磁炮
+空手
+手电筒
+ID卡 \"军事人员\"
+ID卡 \"医疗人员\"
+ID卡 \"科研人员\"
+撬棍
+扳手
+锤子
+消防斧
+斧头
+警棍
+甩棍
+动作:吃尸体
+动作:检查身份
+战术动作
+动作:操作目镜
+内部权限卡
+教诲
+王的福音
+豆弹枪
+妖狐之舞
+黑客设备
+简易扫描设备
+Cheemes
+特种夜视仪
+特别文件
+土质霰弹枪
+防毒面具
+微小电池
+改良电池
+电池
+一次性钥匙卡
+手铐
+医疗注射器
+断手
+PoS-9单兵伤害吸收装置
+观察者
 --提示
-russian.already_have_the_bag = "У тебя уже есть рюкзак!"
-russian.took_on_the_bag = "Ты успешно надел рюкзак!"
-russian.you_cant_wear_the_bag = "Ты не можешь носить этот рюкзак!"
-russian.has_uniform_already = "У тебя уже есть форма."
-russian.take_off_armor_to_wear_uniform = "Снимите броню, чтобы надеть форму!"
-russian.your_uniform_is = "Ты надел форму:"
-russian.has_helmet_already = "У тебя уже есть шлем."
-russian.take_off_uniform_to_wear_helmet = "Снимите форму, чтобы надеть шлем!"
-russian.put_on_helmet = "Ты успешно надел шлем!"
-russian.you_cant_wear_helmet = "Ты не можешь носить этот шлем!"
-russian.take_off_vest_to_wear_vest = "У тебя уже есть бронежилет."
-russian.take_off_uniform_to_wear_vest = "Снимите форму, чтобы надеть бронежилет!"
-russian.put_on_vest = "Ты успешно надел бронежилет!"
-russian.you_cant_wear_vest = "Ты не можешь носить бронежилет!"
-russian.goc_nuke_start = "Альфа-ядерная бомба была незаконно активирована. Всем бойцам – немедленно остановить её!"
-russian.repaired_generators_count = "Количество отремонтированных генераторов:"
-russian.you_ate_burger = "Ты съел крабовый бургер и восстановил здоровье."
-russian.you_ate_burger_hp_regenerated_pt1 = "Ты наелся и"
-russian.you_ate_burger_hp_regenerated_pt2 = "стал более здоровым."
-russian.dont_go_far_away_from_body = "Ты не можешь удаляться от тела слишком далеко."
-russian.scp427_regenerates_health = "SCP-427 медленно восстанавливает твоё здоровье."
-russian.you_took_off_scp427 = "Ты снял SCP-427. Лечение остановлено."
-russian.you_feel_healthy = "Ты чувствуешь себя здоровым."
-russian.exp = "Опыт"
-russian.evac_start = "Внимание! Альфа-ядерная бомба была активирована!"
-russian.ntf_enter = "Мобильная оперативная группа Epsilon-11 вошла в объект"
-russian.nu7_enter = "Мобильная оперативная группа Nu-7, спецназ 'Молот Дауна', вошла в объект"
-russian.evac_15min = "Внимание! Взрыв Альфа-ядерной бомбы через 15 минут!"
-russian.decont_5min = "Внимание! Очистка от радиации через 5 минут."
-russian.decont_1min = "Внимание! Очистка от радиации через 1 минуту!"
-russian.evac_10min = "Внимание! Взрыв Альфа-ядерной бомбы через 10 минут!"
-russian.evac_5min = "Внимание! Взрыв Альфа-ядерной бомбы через 5 минут!"
-russian.scp_cant_skill = "Вы не можете использовать свою способность"
-russian.gru_start_hacking = "Обнаружена несанкционированная попытка изменения уровня доступа. Последнее зафиксированное положение системы безопасности: Центральный контрольный зал"
-russian.gru_faild_hacking = "Модификация доступа заблокирована. Перезапуск всех систем"
-russian.gru_start_warhead = "ТРЕВОГА! Ядерная боеголовка 'Альфа' активирована [ДАННЫЕ УДАЛЕНЫ] уровнем доступа!"
-russian.gru_evac_warhead = "ТРЕВОГА! Обнаружены множественные модификации данных. [ДАННЫЕ УДАЛЕНЫ] инициирует активацию боеголовки 'Альфа'"
+你已经有背包了!
+你穿上了背包!
+你不能穿背包!
+你已经有衣服了.
+脱掉你的护甲才能穿上这件衣服!
+你穿上了:
+你已经有头盔了.
+脱下你的衣服才能戴上这个头盔!
+你戴上了头盔!
+你不能戴头盔!
+你已经有防弹衣了.
+脱下你的衣服才能传上这个防弹衣!
+你穿上了防弹衣!
+你不能穿防弹衣!
+Alpha核弹已被非法激活 所有战斗人员 - 立刻阻止!
+已被维修的发电机数量:
+你吃了个蟹黄堡,恢复了生命值.
+你吃饱了 
+ 你变健康了.
+你不能离尸体太远了
+SCP-427 缓慢地恢复了你的生命值.
+你卸下了 SCP-427. 治疗停止了.
+你感觉很健康
+经验
+警告!Alpha核弹已被激活!
+Mobile Task Force Epsilon-11 机动特遣队九尾狐进入了设施
+Mobile Task Force Nu-7 落锤特种部队进入了设施
+注意!距离Alpha核弹头起爆:15 分钟!
+注意!距离轻收容净化:5 分钟.
+注意!距离轻收容净化:1 分钟!
+注意!距离Alpha核弹头起爆:10 分钟!
+注意!距离Alpha核弹头起爆:5 分钟!
+你无法使用你的技能
+检测到未知权限正在强制更改设施内的权限,安全系统最后一次报告的位置在:中央控制室
+已阻断未知权限的强制修改,所有系统正在重新启动
+警告!Alpha核弹头被[数据删除]权限强制激活!
+警告!设施多处数据遭到修改,[数据删除]权限正在启动Alpha核弹头
+已被收容
 --进度条
-russian.progress_wait = "Ожидание..."
-russian.bismillah = "Чтение молитвы..."
-russian.stopscarletinvsion = "Закрытие Красной Книги..."
-russian.repairing_generator = "Ремонт генератора..."
-russian.picking_up_docs = "Сбор документов..."
-russian.medkit_healing = "Лечение..."
-russian.hacking_door = "Взлом двери..."
-russian.ressurecting_someone = "Воскрешение..."
-russian.opening_car_door = "Открытие двери машины..."
-russian.progress_using = "Использование..."
-russian.hacking_cell = "Открытие камеры..."
-russian.cannibal = "Пожирание тела..."
-russian.checking_class = "Проверка личности..."
-russian.disarming = "Разоружение..."
-russian.creating_zombie = "Лечение..."
-russian.drinking_blood = "Питье крови..."
-russian.sprint = "Бег"
-russian.ragemode = "Ярость"
-russian.throwing_grenade = "Бросок гранаты"
-russian.scp939_eating_body = "Приятного аппетита..."
-russian.scp999_healing = "Лечение..."
-russian.stealing = "Кража..."
-russian.giving_uniform = "Выдача формы..."
-russian.changing_identity = "Смена личности..."
-russian.becoming_invisible = "Становление невидимым..."
-russian.giving_equipment = "Выдача снаряжения..."
-russian.blocking_door = "Блокировка двери..."
-russian.planting_trap = "Установка ловушки..."
-russian.interrogation = "Допрос..."
-russian.breaking_door = "Взлом двери..."
-russian.looting_trash_can = "Поиск в мусорке..."
-russian.progress_stopped = "Остановлено!"
-russian.looting_body = "Обследование тела..."
-russian.nu7pickarmorbox = "Подбираю ящик с бронепластинами..."
-russian.nu7pickarmor = "Подбираю бронепластину..."
-russian.putupstability = "Разворачиваю стабилизатор реальности..."
-russian.pickupstability = "Сбираю стабилизатор реальности..."
-russian.putup_gru_shield = "Разворачиваю мобильный щит..."
-russian.pickup_gru_shield = "Сбираю мобильный щит..."
-russian.destroy_gru_shield = "Уничтожаю мобильный щит..."
-russian.scp3114_disguise = "Маскировка в процессе..."
-russian.progress_done = "Завершено!"
+等待中...
+阅读祷文中...
+合上猩红之书中...
+维修发电机中...
+收集文件中...
+治疗中
+骇入中...
+复活中...
+开门中...
+使用中...
+破坏挡板中...
+吃尸体中...
+检查身份中...
+缴械中...
+给目标戴手铐中...
+破坏手铐中...
+治愈中...
+饮血中...
+冲刺
+狂暴
+投掷手榴弹
+享用美味中...
+治疗中 
+偷窃中...
+给予制服中...
+更改身份中...
+消失不见中...
+给予装备中...
+锁门中...
+设置陷阱中...
+审讯中...
+破门中...
+搜索垃圾桶中...
+停止!
+搜索中...
+拾取防弹插板盒子中...
+拾取防弹插板中...
+部署现实稳定锚中...
+收起现实稳定锚中...
+放置机动护盾中...
+收起机动护盾中...
+摧毁机动护盾中...
+正在进行伪装中...
+完成!
 --ARMORS
 --вы переоделись во что? в кого?
-russian.armor_medic = "Медицинская форма"
-russian.armor_mtf = "Форма MTF"
-russian.armor_sci = "Форма учёного"
-russian.armor_goc = "Броня GOC"
-russian.armor_uiu = "Броня UIU"
-russian.armor_hazmat_blue = "Синий защитный костюм"
-russian.armor_hazmat_orange = "Оранжевый защитный костюм"
-russian.armor_hazmat_white = "Белый защитный костюм"
-russian.armor_hazmat_yellow = "Жёлтый защитный костюм"
-russian.armor_hazmat_black = "Чёрный защитный костюм"
-russian.armor_lighthazmat_white = "Белый лёгкий защитный костюм"
-russian.armor_lighthazmat_yellow = "Жёлтый лёгкий защитный костюм"
+医护人员制服
+MTF 制服
+科研 制服
+GOC 装甲
+UIU 陆军装甲
+蓝色防化服
+橘色防化服
+白色防化服
+黄色防化服
+黑色防化服
+白色轻型防化服
+黄色轻型防化服
 --DISEASES
-russian.diseases_appendicitis = "Острый аппендицит"
-russian.diseases_lungcancer = "Рак лёгких"
-russian.diseases_asthma = "Астма"
-russian.diseases_cardiacarrest = "Сердечный приступ"
-russian.diseases_spontaneouscombustion = "Самовозгорание"
-russian.diseases_chickenpox = "Ветрянка"
-russian.diseases_cold = "Простуда"
-russian.diseases_musclemutation = "Мутация мышц"
-russian.diseases_mitosis = "Митоз"
+急性阑尾炎
+肺癌
+哮喘
+心脏骤停
+自燃
+水痘
+感冒
+肌肉突变
+超细胞有丝分裂
 --聊天通知
-russian.you_cant_wear_this_uniform = "Ты не можешь надеть эту форму!"
-russian.your_current_exp = "Твой текущий опыт:"
-russian.scp914_change_mode = "Ты изменил режим SCP-914 на:"
-russian.quran_needed = "Необходимо взять бумагу для церемонии."
-russian.you_cant_repair_generator = "Ты не можешь отремонтировать генератор."
-russian.you_need_toolkit = "Тебе нужен набор инструментов."
-russian.scp294_sex = "Я не могу помочь тебе найти девушку."
-russian.scp294_fanta = "Это на вкус замечательно!"
-russian.scp294_water = "Это похоже на воду, ничего особенного."
-russian.scp294_out_of_order = "SCP-294 не может сделать этот напиток."
-russian.weaponry_cant_use = "Ты не можешь взаимодействовать с этим объектом!"
-russian.weaponry_took_ammo_already = "Ты уже взял патроны!"
-russian.weaponry_took_uniform_already = "У тебя уже есть снаряжение!"
-russian.weaponry_need_slots_pt1 = "Тебе нужно иметь"
-russian.weaponry_need_slots_pt2 = "свободных ячеек в инвентаре!"
-russian.weaponry_mtf_armor_pt1 = "Ты надел эту броню"
-russian.weaponry_mtf_armor_pt2 = "\"MTF\""
-russian.ci_choppa_down = "Ты уничтожил вертолёт и получил награду, теперь беги!"
-russian.ctf_docs_to_base = "Доставь документы в свою базу."
-russian.scp1025_you_read_about = "Ты прочитал об \""
-russian.scp294_nothing = "В стакане ничего нет."
-russian.scp294_bleach = "Ты выпил стакан отбеливателя. Твоё тело горит, а вкус как у воды из бассейна. Теперь только надеяться, что твой организм выдержит эту отраву."
-russian.scp294_refreshing_drink = "Освежающий напиток."
-russian.deffib_body_decayed_pt1 = "Это тело полностью разложилось,"
-russian.deffib_body_decayed_pt2 = "не возможно воскресить."
-russian.deffib_body_decayed_pt3 = "Ты с ума сошёл? Ты пытаешься реанимировать скелет!"
-russian.deffib_body_too_late_pt1 = "Тело пролежало слишком долго,"
-russian.deffib_body_too_late_pt2 = "не возможно воскресить."
-russian.deffib_headshot_pt1 = "Тело было сильно повреждено,"
-russian.deffib_headshot_pt2 = "не возможно воскресить."
-russian.scp049_too_late = "Это тело слишком долго пролежало, его невозможно вылечить."
-russian.scp049_time_out_pt1 = "К сожалению, ты пролежал слишком долго,"
-russian.scp049_time_out_pt2 = "ты не можешь быть вылечен."
-russian.scp062_new_stage_pt1 = "Поздравляю."
-russian.scp062_new_stage_pt2 = "Ты эволюционировал и получил новые способности!"
-russian.scp173_bad_zone = "Ты не можешь использовать способности в этой зоне."
-russian.scp939_look_on_body = "Ты должен смотреть на тело, чтобы поесть!"
-russian.scp999_healthy = "Он очень здоров."
-russian.thief_look_on_them = "Ты должен смотреть на цель, чтобы украсть."
-russian.thief_cant_steal = "Ты не можешь украсть этот предмет у этого игрока!"
-russian.thief_need_slot = "Тебе нужно освободить место в рюкзаке, чтобы украсть."
-russian.thief_has_already = "Ты уже взял этот предмет!"
-russian.uiuspy_doc_dist_pt1 = "До 'возлюбленного' на расстоянии:"
-russian.uiuspy_doc_dist_pt2 = "приблизительно"
-russian.uiu_locationunknown = "Местоположение неизвестно."
-russian.uiu_locationlcz = "В лёгком режиме."
-russian.uiu_locationhcz = "В тяжёлой зоне."
-russian.uiu_locationentrance = "В административной зоне."
-russian.uiu_locationoutside = "На поверхности объекта."
-russian.uiu_trap_forbidden = "Ты не можешь установить молнию здесь."
-russian.cicommander_conscripted_already = "Цель уже имеет снаряжение."
-russian.cicommander_need_to_take_off_smth = "Цель должна снять снаряжение."
-russian.cicommander_no_slots = "У игрока нет свободных ячеек для снаряжения."
-russian.dectector_no_right = "Вы не можете разместить это устройство в воздухе"
-russian.stayon_the_ground = "Вы должны быть на земле для развертывания"
-russian.MTF_Special_Goggles_Hint = "Нажмите R для переключения очков, левая/правая кнопка мыши для смены режимов"
-russian.feelon_no_ground = "Мины должны быть размещены на земле!"
-russian.heal_should_on_ground = "Медицинский пункт должен быть размещен на земле!"
-russian.armorbox_should_on_ground = "Ящик с бронепластинами должен быть размещен на земле!"
-russian.stability_should_on_ground = "Стабилизатор реальности должен быть размещен на земле!"
-russian.nu7_juggernaut_hint = "Это для ваших товарищей по команде, вы не можете использовать это"
-russian.armorbox_hint_already = "У вас уже есть бронепластина"
-russian.armorbox_hint_cant = "Вы не можете использовать бронепластину"
-russian.o4monitor_quit_hint = "При выходе нажмите BackSpace"
-russian.grushield_should_on_ground = "Мобильный щит должен быть размещен на земле!"
-russian.feelon_too_far = "Кажется, вы слишком далеко от точки, где хотите разместить мину"
-russian.teleport_device_destroyed = "Ваше устройство телепортации было уничтожено"
-russian.goc_cant_start_nuke = "По каким-то причинам система ядерного удара была принудительно отключена"
-russian.engi_no_ground = "Пушки должны быть установлены на землю!"
-russian.hitman_take_off_helmet = "Сними шлем."
-russian.hitman_take_off_vest = "Сними бронежилет!"
-russian.hitman_disguised = "Ты успешно сменил свою форму!"
-russian.strong_no_ground = "Тебе нужно стоять на земле."
-russian.strong_look_on_them = "Ты должен смотреть на цель, чтобы применить захват."
-russian.became_invisible = "Оптическая маскировка включена."
-russian.visibility_lost_due_to_shooting = "Оптическая маскировка потеряла эффект."
-russian.commitee_look_on_them = "Смотри на цель!"
-russian.commitee_cant_conscript = "Ты не можешь оснастить этого игрока!"
-russian.commitee_no_slots = "У игрока нет свободных ячеек для снаряжения!"
-russian.commitee_active_weapon = "Игрок должен убрать оружие из рук!"
-russian.scp3114_disguised = "Маскировка завершена. Время устраивать хаос!"
-russian.scp3114_confusion = "Вы озадачены этим телом"
-russian.scp3114_hating_bodies = "Вы испытываете отвращение к этому телу"
-russian.scp3114_tooboney = "Это тело слишком 'костистое' для маскировки"
-russian.ulx_still_alive = "Ещё жив"
-russian.arena_participating = "Ты участвуешь в арене."
-russian.arena_left = "Ты покинул арену."
-russian.ulx_ability_not_found_pt1 = "Способность"
-russian.ulx_ability_not_found_pt2 = "не найдена."
-russian.ulx_family_sharing_pt1 = "Игрок"
-russian.ulx_family_sharing_pt2 = "не использует Steam Sharing."
-russian.ulx_family_sharing_pt3 = "Использует Steam Sharing, SteamID64 владельца"
-russian.ulx_never = "Никогда."
-russian.ulx_after = "После"
-russian.ulx_not_gagged = "Этот игрок не заглушён."
-russian.ulx_gagged_by = "Заглушён администратором"
-russian.ulx_gag_reason = "Причина"
-russian.ulx_gag_expires = "Окончание срока действия"
-russian.ulx_not_muted = "Этот игрок не находится под запретом чата."
-russian.ulx_muted_by = "Заглушён администратором"
-russian.ulx_mute_reason = "Причина"
-russian.ulx_mute_expires = "Окончание срока действия"
-russian.ulx_global_banned = "Игрок заблокирован."
-russian.ulx_global_unbanned = "Игрок разблокирован."
-russian.ulx_has_been_muted = "Игрок заблокирован в чате."
-russian.ulx_has_been_muted_for = "Игрок заблокирован в чате на"
-russian.ulx_has_been_muted_permanently = "Игрок заблокирован в чате навсегда."
-russian.ulx_has_been_muted_by = "Заглушён"
-russian.ulx_you = "(Ты)"
-russian.ulx_player = "Игрок"
-russian.ulx_has_been_gagged = "Игрок заглушён в голосовом чате."
-russian.ulx_has_been_gagged_for = "Игрок заглушён в голосовом чате на"
-russian.ulx_has_been_gagged_permanently = "Игрок заглушён в голосовом чате навсегда."
-russian.ulx_has_been_gagged_by = "Заглушён"
-russian.ulx_prioritysupport = "Приоритет игрока:"
-russian.ulx_premium_expired = "У тебя нет VIP."
-russian.ulx_premium_will_expire_pt1 = "Твой"
-russian.ulx_premium_will_expire_pt2 = "VIP"
-russian.ulx_premium_will_expire_pt3 = "истекает:"
-russian.ulx_admin_expired = "У тебя нет прав администратора."
-russian.ulx_admin_will_expire_pt1 = "Твои"
-russian.ulx_admin_will_expire_pt2 = "права администратора"
-russian.ulx_admin_will_expire_pt3 = "закончатся в:"
-russian.ulx_has_been_successfully_muted = "Игрок заблокирован в чате."
-russian.ulx_has_been_successfully_gagged = "Игрок заблокирован в голосовом чате."
-russian.ulx_admin = "Администратор"
-russian.ulx_they_removed_mute_from_you = "Они сняли с тебя ограничение чата."
-russian.ulx_has_been_sucessfully_unmuted = "Ты восстановил доступ к чату."
-russian.ulx_they_removed_gag_from_you = "Они сняли с тебя ограничение голосового чата."
-russian.ulx_has_been_sucessfully_ungagged = "Ты восстановил доступ к голосовому чату."
-russian.ulx_unignore = "Теперь ты слышишь"
-russian.ulx_ignore = "Теперь ты не слышишь"
-russian.ulx_your_mute_expired = "Ты был размute, так как срок действия истек."
-russian.ulx_your_gag_expired = "Ты был размute в голосовом чате."
-russian.ulx_asay_cd = "Вам нужно подождать 30 секунд, прежде чем отправить новое сообщение администратору."
-russian.ulx_your_expired_unmuted = "Текстовый чат разблокирован:"
-russian.ulx_your_expired_ungagged = "Голосовой чат разблокирован:"
-russian.ulx_your_expired_un = "Срок наказания истёк."
-russian.player = "Игрок"
-russian.unlocked_achievement = "Достижение получено"
-russian.scp860_first_msg = "Вы нашли SCP-860-2 в своем лесу."
-russian.scp860_second_msg = "Вы видите выход на стене."
-russian.loudconnect_connecting = "ВНИМАНИЕ, ПОДКЛЮЧЕНИЕ LOUDCONNECTING" -- не используется
-russian.loudconnect_carpet = ", АПЛОДИСМЕНТЫ В СТУДИИ, РАСКАТЫВАЕМ КРАСНЫЙ КОВЕР!" -- не используется
-russian.loudconnect_hooray = ", АПЛОДИСМЕНТЫ В СТУДИИ! ОРУЖИЕ!" -- не используется
-russian.evac_disclosed = "К сожалению, ваша настоящая личность была раскрыта охраной. Вас отправили в другую установку."
-russian.dont_spawncamp = "Кемпинг на спауне не очень дружелюбно."
-russian.gru_task = "Задача:"
-russian.gru_sapper_rewards = "Вы получили дополнительный заряд RPG."
-russian.pmfrom = "PM от:"
-russian.pmto = "PM Кому:"
-russian.scp_occupied_pt1 = "Объект"
-russian.scp_occupied_pt2 = "занят другим игроком, выберите другого SCP."
-russian.temp_attach = "Редактирование оружейных аксессуаров в течение 30 секунд."
-russian.temp_attach_time_out = "Время для редактирования аксессуаров истекло."
-russian.uiuspy_docs_ready = "Отличная работа, необходимая информация была загружена. Ваша новая задача - покинуть установку с документами, не забудьте правильно использовать свою ключ-карту!"
-russian.premium_2x_bonus_pt1 = "Поскольку вы уже являетесь"
-russian.premium_2x_bonus_pt2 = "VIP"
-russian.premium_2x_bonus_pt3 = "вы получаете удвоенные очки опыта."
-russian.premium_2x_bonus_pt4 = "Полученный вами опыт удвоен."
-russian.nonpremium_bonus = "Вы получили дополнительные очки опыта"
-russian.levelup = "Поздравляем, вы достигли нового уровня: "
-russian.premium_unlocked_pt1 = "Вы получили VIP"
-russian.premium_unlocked_pt2 = "на день!"
-russian.player_connected = "Игрок подключен к серверу."
-russian.player_connected_first_time = "Игрок подключился к серверу, это его первый раз!"
-russian.player_connected_with_new_name = "Игрок подключился к серверу, его старый ID был"
-russian.prefix_unlocked = "Вы получили новый титул!"
-russian.levels_gifted_pt1 = "Вы получили"
-russian.levels_gifted_pt2 = "уровней!"
-russian.sins_cleansed = "Все ваши предупреждения очищены!"
-russian.you_are_not_supposed_to_be_here_pt1 = "Предупреждение, вы не должны быть здесь! Если вы не покинете это место за 5 секунд,"
-russian.you_are_not_supposed_to_be_here_pt2 = "вы умрете!"
-russian.premium_expired = "Ваш VIP истек. Вы можете продлить VIP, посетив [CN]RXSEND для получения дополнительной информации."
-russian.not_enough_players = "Не хватает игроков, ожидайте других игроков."
-russian.game_will_start_soon = "Раунд начнется через 2 минуты."
-russian.not_enough_players_for_round_start = "Не хватает игроков для начала раунда, ожидайте других."
-russian.you_are_muted = "Вы замучены."
-russian.no_radio = "У вас нет рации!"
-russian.turn_up_the_radio = "Включена рация!"
-russian.no_text_radio = "Введите сообщение!"
-russian.radio_in_chat = "[Рация]"
---russian.gru_friendly = "Союзник SCP-Фонда — GRU P отдел прибыл на объект."
---russian.gru_evil = "Внимание! Враждебная сила GRU P отдел вторгается на объект!"
-russian.looting_started = "Вы начали обыскивать трупы, это займет некоторое время..."
-russian.looting_end = "Обследование завершено."
-russian.looted_ammo_pt1 = "Вы взяли"
-russian.looted_ammo_pt2 = "патронов."
-russian.sport_run = "Скорость бега увеличена."
-russian.default_run = "Скорость бега установлена на стандартную."
-russian.cant_change_run = "Невозможно изменить скорость бега."
-russian.spyusainfo = "'Сердечная привязанность' система не может найти вашего возлюбленного, возможно, с ним случилось несчастье."
-russian.spyusa_toolate_for_hacking = "Слишком поздно для взлома, задание провалено, текущая основная цель: покинуть установку."
-russian.spyusa_cant_hacking = "Фонд в режиме ЧС. Взлом невозможен."
-russian.hacking_monitor_hint = "Обнаружен активный процесс взлома"
-russian.hacking_monitor_hint1 = "Доступ к терминалу запрещён"
-russian.spyusa_toolate_for_hacking_document = "Координаты отправлены в UIU, но подкрепление не успеет. Задание провалено. Основная цель: Эвакуация."
-russian.spyusa_hofnotdead = "Директор объекта жив."
-russian.spyusa_hacking = "Инициализация взлома..."
-russian.spyusa_hacking_notify = "ТРЕВОГА: Обнаружена попытка грубого взлома терминалов!"
-russian.spyusa_hacking_successful = "Терминал взломан. Координаты переданы в UIU. Права доступа обновлены."
-russian.spyusa_hacking_successful2 = "Взлом завершён. Координаты отправлены в штаб UIU. Выполняйте задание!"
-russian.spyusa_hacking_stopped = "Попытка взлома пресечена!"
-russian.spyusa_enemy_detected = "Обнаружена активность противника. Высадка задержана на 60 секунд."
-russian.ntf_searching_team_D = "Цель поиска: Класс-D"
-russian.ntf_searching_team_SCI = "Цель поиска: Научный отдел"
-russian.ntf_searching_team_SCP = "Цель поиска: SCP-объекты"
-russian.ntf_searching_team_unknown = "Цель поиска: Неизвестно"
-russian.ci_hackdenined = "Сканирование заблокировано системой"
-russian.hamburger_mio_1 = "До эволюции осталось: "
-russian.hamburger_mio_2 = " крабовых булочек"
-russian.hamburger_mio_3 = "Поздравляем! Эволюция провалилась :)"
-russian.hamburger_mio_4 = "Поздравляем! Эволюция успешна :>"
---AmmoChecking
-russian.ammochecking = "Проверка..."
-russian.ammo_full = "Боезапас полон"
-russian.almostfull = "Боезапас достаточен"
-russian.halfammo = "Половина"
-russian.littleammo = "Мало"
-russian.noammo = "Пусто"
-russian.gauss_full = "Энергия: 100%"
-russian.no_gauss_energy = "Энергия исчерпана"
-russian.medkit_left = "Зарядов осталось: "
--- Способности NU7
-russian.nu7_func_title = "Название функции: "
-russian.nu7_func_desc = "Описание функции: "
-russian.nu7_func_title_1 = "Поиск в базе данных"
-russian.nu7_func_desc_1 = "Доступ к данным персонала Фонда для идентификации целей.\n\nПерезарядка: 10с"
-russian.nu7_func_title_2 = "Радиопомехи"
-russian.nu7_func_desc_2 = "Блокирует связь врагов на 15 секунд.\n\nПерезарядка: 30с"
-russian.nu7_func_title_3 = "Детектор жизней SCP"
-russian.nu7_func_desc_3 = "Сканирует состояние SCP и их местоположение.\n\nПерезарядка: 45с"
-russian.nu7_func_title_4 = "Обнаружение врагов"
-russian.nu7_func_desc_4 = "Помечает вооружённых врагов на 15 секунд.\n\nПерезарядка: 60с"
-russian.nu7_noscp_alive = "SCP отсутствуют"
-russian.nu7_show_hp_state = "Состояние: "
-russian.nu7_scphp_good = "Хорошее"
-russian.nu7_scphp_normal = "Нормальное"
-russian.nu7_scphp_bad = "Критическое"
-russian.nu7_scphp_very_bad = "Терминальное"
-russian.nu7_scphp_gonna_die = "При смерти"
-russian.nu7_scphp_died = "Уничтожен"
-russian.nu7_show_scp_location = "Местоположение: "
-russian.nu7_unknown_location = "Неизвестно"
-russian.nu7_in_lcz = "Лёгкая зона"
-russian.nu7_in_hcz = "Тяжёлая зона"
-russian.nu7_in_entrance = "Офисный сектор"
-russian.nu7_on_surface = "Поверхность"
+你无法穿上这个衣服!
+你目前的经验为:
+你更改SCP914的模式为:
+你需要拿出祷文.
+你无法修理发电机.
+你需要一个工具箱.
+就连我也没办法给你找个女朋友.
+这尝起来真棒!
+这尝起来像水,没什么特别的
+SCP-294 无法制造出这种饮料 \"
+你无法与此对象交互!
+你已经拿过弹药了!
+你已经有装备了!
+你需要有
+空着的物品栏!
+你穿上了这套装备
+\"MTF\"
+你因为摧毁了直升机而被奖励,现在快跑.!
+将文档交付到你的基地.
+你读到了关于 \"
+杯子里什么都没有.
+你喝了一杯漂白剂. 你的体内在燃烧,尝起来像游泳池里的水. 现在只能祈祷你的身体能够承受住这种毒药.
+清凉的饮料.
+这具尸体已经完全腐烂了,
+没有复活的可能.
+你疯了? 你在尝试救一副骨架!
+这具尸体已经躺了一会了,
+没有复活的可能.
+这具尸体受到的伤害太过严重,
+没有复活的可能.
+这具尸体已经躺了一会了无法被治愈
+可惜的是,你已经躺了一会了
+你无法被治愈
+恭喜.
+你进化了,并获得了新能力!
+你无法在此区域中使用能力.
+你需要看着尸体才能进食!
+他非常健康.
+你需要看着目标才能进行偷窃.
+你无法从这个玩家身上偷窃这个物品!
+你需要给你的背包腾出空间才能行窃.
+你已经有这个物品了!
+距离[对讲机]有:
+未发现[对讲机]的存在
+你无法呼叫
+距离\'心上人\'有:
+大概
+位置未知
+在轻收容
+在重收容
+在办公区
+在设施地表
+你不能在这里放置闪电门
+目标已经有装备了.
+目标需要脱下装备.
+该玩家的装备库存中必须有空闲格.
+你无法在空中放置此设备
+你必须在地面上才能释放
+按R键开启或关闭目镜,左右键切换目镜模式
+地雷应该放在地上!
+医疗站应该被放在地上!
+防弹插板盒子应该被放在地上!
+现实稳定锚应该被部署在地面上!
+这是给你队友的,你无法使用
+你已经有了防弹插板
+你无法使用防弹插板
+退出的时候,请按BackSpace
+机动护盾应该被放在地面上!
+看起来,你离你想放地雷的地方太远了.
+你的传送装置被摧毁了
+你的时间节点被摧毁了
+因为某些原因,核弹系统被强制关闭了
+炮台应该被放在地上!
+脱下头盔.
+脱下防弹衣!
+你成功更换了你的服装!
+你需要站在地上.
+你需要看着目标才能擒拿.
+光学迷彩启动.
+光学迷彩失效
+看着目标!
+你不能给这个玩家装备!
+该玩家的装备库存中必须有空闲格!
+该玩家必须将物品从手中拿开!
+完成伪装,开始找点乐子吧!
+你对这具尸体感到困惑
+你对这具尸体感到恶心
+这具尸体太过'骨感',并不适合伪装
+ 还活着
+你参加了竞技场
+你离开了竞技场
+能力
+未被找到.
+玩家
+不在使用Steam Sharing.
+使用Steam Sharing,SteamID64 owner
+永不.
+之后
+这个玩家没有被抵押.
+被管理员惩罚
+理由
+抵押结束
+这个玩家没有被禁言.
+被管理员禁言
+理由
+禁言结束
+成功封禁.
+解禁 玩家
+文字聊天被封禁:
+对文字聊天的被限制为
+聊天被永久封禁
+by
+(You)
+玩家
+语音聊天受到封禁:
+对语音聊天的访问被限制为
+语音受到永久限制
+by
+当前玩家的优先级为:
+您没有vip.
+你的
+vip
+之后过期:
+你没有管理员权限
+你的
+管理员权限
+在这个时间后结束:
+成功限制文字聊天.
+成功限制语音聊天.
+管理员
+取消了您的静音限制
+获得了文字聊天权限.
+取消了对你的语音聊天的限制.
+获得语音聊天权限.
+现在你听的到
+现在你听不到
+您已被取消禁言,因为封禁期限已过.
+您已被取消禁音,因为封禁期限已过
+您需要再等待 30 秒才能向管理员发送新消息.
+已解除文字聊天:
+已解除语音静音:
+惩罚时间结束.
+玩家
+获得成就
+你 \"SCP-860-2\" 在你的森林中
+你能看到墙上的出口
+ATTENTION,LOUDCONNECTING
+,APPLAUSE IN THE STUDIO,LAY A RED CARPET!
+,APPLAUSE IN THE STUDIO!CHEER!
+你真倒霉,你的身份被安保人员查了出来,你被送到了接近南西伯利亚的贝加尔湖的一片区域
+你个[数据删除]!不去执行任务,在这里摸鱼？
+任务:
+你获得了额外的一发RPG弹药
+来自:
+发送至:
+Subject
+被其他玩家选中,请选择另一个SCP.
+武器配件编辑时间为 30 秒.
+编辑配件时间到了
+干得好,需要的情报已经全部被上传,你的新任务是带着情报逃离设施,别忘了妥善使用你的钥匙卡!
+因为已经是
+VIP
+了
+你获得的经验值已翻倍
+你获得了额外经验值
+恭喜你,你升级了,当前等级为:
+你获得了VIP
+天!
+连接到服务器
+连接到了服务器,他是第一次来游玩!
+连接到了服务器,他以前的id是
+你得到了一个头衔!
+你得到了
+ 等级!
+你的所有警告已全部清除!
+警告,你不应该出现在这里!如果你在 5 秒内不离开,
+你会死!
+你的VIP已过期,你可以选择延长VIP,请访问QQ群[CN]RXSEND 了解更多信息.
+玩家还不够,等待其他玩家.
+回合还有 2 分钟开始
+回合开始玩家不够,等待更多玩家
+你被禁言.
+你没有对讲机!
+打开了对讲机!
+输入文字!
+[对讲机]
+-- chinese.gru_friendly = "SCP基金会的盟友--GRU P 部门已抵达设施"
+-- chinese.gru_evil = "所有人注意敌对势力GRU P部门正在侵入设施!"
+你开始搜刮尸体,这需要一些时间......
+搜刮完毕
+你拿了
+弹药
+改变奔跑速度为快
+改变奔跑速度为普通
+无法改变奔跑速度
+\'心上人\'系统无法找到你的心上人,也许他已经遭遇不测了呢
+骇入为时已晚,任务失败,当前主要目标:逃离设施.
+基金会进入紧急状态,无法进行骇入操作
+已有电脑正在进行骇入程序
+你无法对这台电脑进行操作
+你没有任何文件
+你发送了设施坐标给UIU,但为时已晚,支援来不及到达. 任务失败. 当前主要目标:逃离设施.
+设施主管还活着.
+启动骇入过程...
+所有人员注意:控制终端检测到非法强硬访问手段!
+你成功入侵了终端,并将设施坐标发送给UIU,你重新刷新了你的权限卡,现在它能够开启大门.
+你成功入侵了终端,并将设施坐标发送给UIU总部,现在完成你的任务!
+尝试骇入已被阻止!
+在到达区域检测到敌对活动,到达延迟一分钟
+指挥官搜索阵营为:D级人员
+指挥官搜索阵营为:科研团队
+指挥官搜索阵营为:SCP
+指挥官搜索阵营为:未知
+扫描请求被安全系统拦截
+距离进化还有:
+ 个蟹黄包
+恭喜你!进化失败了 :)
+恭喜你!进化成功了 :>
+你背叛了D国!
+--重型现实稳定锚
+工作中...
+损坏
+破环稳定锚中...
+修复稳定锚中...
+你需要工具来修理
+修复重型现实稳定锚
+所有发电机未修复
+重型现实稳定锚已修复
+重型现实稳定锚被损坏
+--人员扫描器
+无法使用
+待命中...
+扫描冷却
+正在被使用
+设备正在冷却
+基金会武装
+基金会科研
+敌对武装
+请选择要扫描的目标
+--QRT召唤器
+QRT小队尚未准备完毕
+没有可用的QRT小队
+--单兵伤害吸收设备
+已启动PoS-9装置
+已关闭PoS-9装置
+PoS-9装置已损坏
+Pos-9剩余耐久: 
+--格鲁乌P撤离提醒
+装甲车将在
+秒后离开
+--实体提醒
+有人正在使用/互动
+你互动地太快了!
+--AmmoChecking lang
+检查中...
+弹药已满
+弹药充足
+大概还有一半
+不剩多少
+没有子弹
+能量充足
+能量耗尽
+可使用次数:
+--nu7 commander ability
+功能名称: 
+功能介绍: 
+人员数据库查询
+通过检索基金会数据库中的人员信息,能快捷的识别所面对目标的身份\n\n设备冷却时间: 10秒
+无线电干扰
+干扰任何非基金会武装单位的频道15秒同时让其对讲机发出异常声响\n并且能够有效预防任何非法的对讲机窃听\n\n设备冷却时间: 30秒
+SCP生命检测
+对设施所有SCP的生命状态进行检测并对其生命状态做出评估,同时显\n示其的所处的大概区域\n\n设备冷却时间: 45秒
+敌对武装单位侦测
+扫描一次以使用者为中心的一定范围的敌对武装单位以及任何持有致\n命武器的D级人员(包括一切冷兵器)并将他们标记; 被标记的目标会在你屏幕上存\n在15秒\n\n设备冷却时间: 60秒
+无任何SCP存活
+生命状态: 
+良好
+正常
+危险
+垂危
+濒死
+无效化
+大致位置: 
+未知
+轻收容
+重收容
+办公区
+地表
+对象已有手铐
+左键缴械, 右键给D级人员戴手铐
+你无法给人戴手铐/你需要先取得MTF制服/但你任然可以缴械他人
 --TEAMS
-russian["Not Set"] = "null"
-russian["SCPs"] = "SCP-объекты"
-russian["MTF Guards"] = "МОГ"
-russian["Class-Ds"] = "Класс-D"
-russian["Spectators"] = "Наблюдатели"
-russian["Scientists"] = "Учёные"
-russian["Chaos Insurgency"] = "Хаотический раскол"
-russian["Security Department"] = "Служба безопасности"
-russian["GRU"] = "Подразделение ГРУ-P (Постэпоха)"
-russian["GRU_Guard"] = "Гвардия ГРУ-P"
-russian["Nine Tailed Fox"] = "МОГ Ню-7 \"Девятихвостый лис\""
-russian["Serpents Hand"] = "Рука Змея"
-russian["Global Occult Coalition"] = "Глобальная оккультная коалиция"
-russian["Unusual Incidents Unit"] = "Отдел аномальных инцидентов"
-russian["Unusual Incidents Unit Main Force"] = "Штурмовая группа ОАИ"
-russian["Quick Response Team"] = "Группа быстрого реагирования"
-russian["Children of the Scarlet King"] = "Дети Алого Короля"
-russian["Specials"] = "Специсследования"
-russian["Spec. Task Force"] = "Спецгруппа"
-russian["Nazi Germany"] = "Нацистская Германия"
-russian["American Army"] = "Армия США"
-russian["Arena Participants"] = "Участники арены"
-russian["NU7 Hammer Down"] = "МОГ Ню-7 \"Молот\""
+null
+SCPs
+机动特遣队
+MTF 专家组
+D级人员
+观察者
+科研团队
+混沌分裂者
+设施安保部门
+格鲁乌P部门(后时代)
+格鲁乌P部门 近卫小组
+机动特遣队 \"九尾狐\"
+蛇之手
+全球超自然联盟
+特异事故处
+特异事故处-渗透小组
+快速反应部队
+猩红之子
+特殊科研
+Spec. Task Force
+机动特遣队 \"落锤\" 特种大队
+STS \"清理者\" 小队
+GRU-CI突袭部队
+机动特遣队 Nu-22 \"火箭侠\"
+纳粹德国
+美国陆军
+竞技场参与者
 --SCOREBOARD
-russian.scoreboard_ping = "Пинг"
-russian.scoreboard_level = "Уровень"
-russian.scoreboard_achievements = "Достижения"
-russian.scoreboard_country = "Страна"
-russian.scoreboard_score = "Очки"
-russian.scoreboard_rounds_left = "Раундов осталось"
+延迟
+等级
+成就.
+国家
+分数
+剩余回合数
 --BOTTOM MESSAGES
-russian.ammo_maximum = "Боезапас полон."
-russian.ammo_not_suitable = "Несовместимый боеприпас."
-russian.scp294_feeling_really_bad = "Состояние ухудшается..."
-russian.scp294_scp500 = "Все повреждения устранены."
-russian.vendor_no_money = "Недостаточно средств"
-russian.vendor_bought = "Товар приобретён"
-russian.scp1025_chickenpox = "Обнаружен кожный зуд"
-russian.scp1033_protect = "Браслет защитит тебя"
-russian.scp1033_depleted = "Браслет разряжен"
-russian.screwdriver_used = "Контрольная панель вскрыта"
-russian.scp409_1st_stage = "Температура тела падает"
-russian.scp409_2nd_stage = "Критическое переохлаждение"
-russian.inventory_full = "Инвентарь полон"
-russian.secondary_inventory_full = "Доп. слот занят"
-russian.trashbin_loot_end = "Осмотр завершён"
-russian.trashbin_empty = "Пусто"
-russian.access_denied = "ДОСТУП ЗАПРЕЩЁН"
-russian.access_granted = "ДОСТУП РАЗРЕШЁН"
-russian.keycard_needed = "Требуется ключ-карта"
-russian.scarlet_hurt_you = "Распространение влияния Алого Короля"
-russian.suppress_scp = "Подавляющее поле активно!"
-russian.water_doesnt_work = "Ты всё ещё чувствуешь тревогу"
-russian.scp109_defend_1903 = "Твой дух воспрянул!"
-russian.scp109_defend_1903_1 = "Цель сопротивлялась твоей атаке!"
---New content
-russian.missionbriefing = "Брифинг:"
-russian.uiutask_title = "Выбор задания"
-russian.uiutask_secret = "Секретная операция"
-russian.uiutask_intrude = "Силовой протокол"
-russian.secretwar_intro = "Скрытый взлом:\nТревога не сработает\nМинимум подкреплений"
-russian.intruder_intro = "Грубый взлом:\nАктивирует тревогу\nМаксимум подкреплений"
-russian.intruder_hack = "Силовой взлом инициирован. Тревога активирована."
-russian.secret_hack = "Скрытый взлом выполнен"
-russian.intruder_hack_special = "Коды директора: Системы безопасности отключены"
-russian.secret_hack_speical = "Коды директора: Внешние сканеры деактивированы"
-russian.shutdown_hacking = "Внешний процесс взлома остановлен"
-russian.spy_complete = "Взлом успешен! Подкрепление в пути."
-russian.scp127_1likeu = "SCP127-1 благосклонен"
-russian.scp127_1hateu = "SCP127-1 проявляет агрессию"
-russian.general_choose_title = "Требуется выбор"
-russian.d_shotgun_broken = "Это ружье сломано"
---GRU Marksman
-russian.marks_man_holo = "Голографический прицел"
-russian.marks_man_sniper = "Снайперский прицел"
+你的弹药已经满了.
+这种弹药不适配你的枪支.
+喝完这个之后,我感到很难受 
+喝下去之后,感觉浑身都舒服了
+你需要钱才能买
+你花钱买了杯喝的
+你感觉很痒
+手镯将会保护你
+手镯似乎没有作用了
+你使用了螺丝刀打开了检查点钢板
+你突然感到全身冷的发抖
+突然你觉得很冷
+你的物品栏满了
+你的副物品栏满了
+你完成了对垃圾桶的搜索
+垃圾桶是空的.
+访问拒绝
+访问许可
+需要一个权限卡才能开启此门.
+猩红的力量正在缓慢撕扯你的身体
+你正在被'压制'!
+你依旧感觉很焦虑
+你的精神感到振奋!
+目标抵御了你的攻击!
+箱子内空无一物
+你已经拥有箱内的物品
+--新东西 by someone
+介绍:
+任务选择
+秘密战争
+气势汹汹
+使用隐匿的方法骇入某台\n办公区的电脑,\n这不会触发警报,但支援来\n的人会很少
+强制骇入某台办公区的\n电脑,这会触发警报,但支援\n来的人会很多
+你强制骇入了电脑并触发了安全警报
+你使用更安全方法骇入了电脑
+你使用了主管的代码,关闭了安全警报
+你使用了主管的代码,关闭外部人员扫描系统
+未知的骇入程序已被关闭
+骇入成功,支援已经在路上来了!
+SCP127-1认可了你
+SCP127-1觉得你很恶心
+请选择
+这把枪坏掉了
+--格鲁乌近卫小组精确射手选择倍镜
+全息镜
+狙击镜
 --GOC特工的选项
-russian.goc_light_armor = "Портативная легкая броня"
-russian.goc_light_armor_desc = "Портативная версия легкой брони GOC\nдля опасных операций.\nПовышает скорость передвижения,\nно уступает по защите другим\nвариантам брони GOC.\n------\nСнаряжена штурмовой винтовкой R3K"
-russian.goc_standard_armor = "Портативная стандартная броня"
-russian.goc_standard_armor_desc = "Портативная версия стандартной\nброни GOC для опасных операций.\nСбалансированные характеристики.\n------\nСнаряжена боевой винтовкой ARX"
-russian.goc_heavy_armor = "Портативная штурмовая броня"
-russian.goc_heavy_armor_desc = "Портативная версия тяжелой брони\nGOC для опасных операций.\nЛучшая защита среди трёх вариантов,\nно уступает стандартной брони\nштурмовых отрядов.\n------\nСнаряжена подавляющей винтовкой Fate"
---角色介绍 --AI翻译
+便携轻型护甲
+便携版本的轻型GOC危险作\n战护甲\n能够使装备者拥有更快的\n奔跑速度\n但该护甲防护性能要低于\n所有GOC危险作战护甲\n------\n使用R3K突击步枪
+便携标准护甲
+便携版本的标准GOC危险作\n战护甲\n各方面数据相对均衡\n------\n使用ARX战斗步枪
+便携战斗护甲
+便携版本的战斗GOC危险作\n战护甲\n防护性能是三套护甲最强\n的\n但远远不及常规攻击小组\n的重型护甲\n------\n使用Fate压制步枪
+--是否相信079
+相信SCP-079
+不相信SCP-079
+--角色介绍 --FZ翻译
 BREACH = BREACH or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
-BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
-BREACH.Descriptions.russian[role.SCI_SpyUSA] = "Вы сотрудник Отдела Особых Происшествий - Шпион\n\nВаша цель: взломать компьютер в офисной зоне\n\nПолучить важную информацию и вызвать подкрепление\n\nКодовый жетон начальника объекта может быть полезен\n\nВаши данные загружены в базу, никто не узнает вашу личность\n\nНо по данным разведки, у кого-то есть компрометирующие материалы"
-BREACH.Descriptions.russian[role.Nazi] = "Your current objective is to kill all the Americans.\n\nDON'T LET THEM WIN!" --неактивно
-BREACH.Descriptions.russian[role.USA] = "Your current objective is to kill all the nazis.\n\nDON'T LET THEM WIN!" --неактивно
-BREACH.Descriptions.russian[SCP049] = "Вы SCP-049[Чумной Доктор]\nВнутри объекта 'эпидемия' усиливается, вам нужно лечить заражённых 'чумой' пациентов"
-BREACH.Descriptions.russian[SCP912] = "Вы SCP-912[Автономный SWAT-костюм]\nУничтожайте преступников на объекте"
-BREACH.Descriptions.russian[SCP062DE] = "Вы SCP-062-DE[Призрак Войны]\nПродолжайте выполнять миссию, данную вам фюрером!"
-BREACH.Descriptions.russian[SCP638] = "Вы SCP-638[Ревущий]\nВаш рёв вызывает страх у окружающих"
-BREACH.Descriptions.russian[SCP062FR] = "Вы SCP-062-FR[Идеальный Хищник]\nПожирайте их и эволюционируйте..."
-BREACH.Descriptions.russian[SCP076] = "Вы SCP-076[Авель]\nВаш клинок легко разрубает любые преграды"
-BREACH.Descriptions.russian[SCP106] = "Вы SCP-106[Старик-Ужас]\nХе-хе, хочешь попасть в мой Микки-Маус-дом?!"
-BREACH.Descriptions.russian[SCP096] = "Вы SCP-096[Стыдливый]\nБегство не решит проблему - уничтожьте всех, кто видел ваше лицо!"
-BREACH.Descriptions.russian[SCP542] = "Вы SCP-542[Мистер Хирургия]\nПохоже, на объекте слишком много пациентов"
-BREACH.Descriptions.russian[SCP973] = "Вы SCP-973[Дорожный Патруль]\nВам нужно навести порядок в 'дорожном движении' объекта"
-BREACH.Descriptions.russian[SCP2012] = "Вы SCP-2012[Затерянный во Времени Воин]\nВо славу Легиона!"
-BREACH.Descriptions.russian[SCP082] = "Вы SCP-082[Каннибал 'Фернандо']\nХотите узнать кое-что о 'человечности'?"
-BREACH.Descriptions.russian[SCP939] = "Вы SCP-939[Тысячеглот]\nКакие изящные звуки... Теперь они мои"
-BREACH.Descriptions.russian[SCP811] = "Вы SCP-811[Болотная Женщина]\nВаша кислота растворяет броню!"
-BREACH.Descriptions.russian[SCP682] = "Вы SCP-682[Неубиваемый Ящер]\nНенавидьте всё, уничтожайте всё"
-BREACH.Descriptions.russian[SCP999] = "Вы SCP-999-2[Несовершенный Побочный Продукт]\nСоздан Фондом в ходе экспериментов с SCP-999\nВы можете исцелять, но не так дружелюбны как оригинал"
-BREACH.Descriptions.russian[SCP3114] = "Вы SCP-3114[Не слишком ли холодно?]\n\nВы сущность 3114 из другой вселенной\n\nПо сравнению с местной версией, вы гораздо теплее..."
-BREACH.Descriptions.russian[role.Chaos_Grunt] = "Вы солдат Хаотичных Раскольников\n\nЗахватывайте персонал класса D\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.Chaos_Demo] = "Вы Демон Хаотичных Раскольников\n\nУ вас есть РПГ с двумя зарядами - используйте против вертолётов и врагов\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.Chaos_Claymore] = "Вы Охотник Хаотичных Раскольников\n\nМожете установить 3 мины-ловушки\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.Chaos_Jugg] = "Вы Тяжеловес Хаотичных Раскольников\n\nВооружены пулемётом M60 с тяжёлой бронёй\n\nУничтожайте всех врагов!\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.Chaos_Commander] = "Вы Командир Хаотичных Раскольников\n\nВооружены SCAR, можете вооружать персонал класса D\n\nОтдавайте приказы подчинённым!"
-BREACH.Descriptions.russian[role.NTF_Soldier] = "Вы солдат Отряда Девятихвостого Лиса\n\nСпасайте персонал объекта и выполняйте приказы!"
-BREACH.Descriptions.russian[role.NTF_Specialist] = "Вы Специалист Отряда Девятихвостого Лиса\n\nВаши сети могут обездвижить большинство SCP\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.NTF_Sniper] = "Вы Снайпер Отряда Девятихвостого Лиса\n\nВаш Barrett легко пробивает защиту SCP\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.NTF_Pilot] = "Вы Пилот Отряда Девятихвостого Лиса\n\nY!"
-BREACH.Descriptions.russian[role.NTF_Commander] = "Вы Командир Отряда Девятихвостого Лиса\n\nМожете сканировать персонал и SCP\n\nПодавляйте нарушения и защищайте объект!"
-BREACH.Descriptions.russian[role.NU7_Soldier] = "Вы солдат Отряда Молот\n\nСпасайте учёных, уничтожайте врагов, сдерживайте SCP"
-BREACH.Descriptions.russian[role.NU7_Commander] = "Вы Командир Отряда Молот\n\nСпасайте учёных, уничтожайте врагов, сдерживайте SCP"
-BREACH.Descriptions.russian[role.NU7_Specialist] = "Вы Специалист Отряда Молот\n\nПортативный стабилизатор реальности подавляет способности SCP\n\nСпасайте учёных, уничтожайте врагов, сдерживайте SCP"
-BREACH.Descriptions.russian[role.NU7_Vanguard] = "Вы Авангард Отряда Молот\n\nСпасайте учёных, уничтожайте врагов, сдерживайте SCP"
-BREACH.Descriptions.russian[role.NU7_Juggernaut] = "Вы Непоколебимый Воин Отряда Молот\n\nСпасайте учёных, уничтожайте врагов, сдерживайте SCP"
-BREACH.Descriptions.russian[role.Cult_Grunt] = "Вы Послушник Культа Алого Короля\n\nВыполняйте ритуалы по приказу Жреца!"
-BREACH.Descriptions.russian[role.Cult_Psycho] = "Вы Фанатик Культа Алого Короля\n\nВыполняйте ритуалы по приказу Жреца!"
-BREACH.Descriptions.russian[role.Cult_Commander] = "Вы Жрец Культа Алого Короля\n\nРуководите проведением ритуалов!"
-BREACH.Descriptions.russian[role.Cult_Specialist] = "Вы Диакон Культа Алого Короля\n\nВыполняйте ритуалы по приказу Жреца!"
-BREACH.Descriptions.russian[role.UIU_Agent] = "Вы Агент Спецотдела UIU\n\nВзламывайте компьютеры и выполняйте приказы!"
-BREACH.Descriptions.russian[role.UIU_Agent_Commander] = "Вы Руководитель Группы UIU\n\nВидите использующих рации\n\nОтдавайте приказы подчинённым!"
-BREACH.Descriptions.russian[role.UIU_Agent_Specialist] = "Вы Спецагент UIU\n\nВаша граната маркирует врагов в помещении\n\nВзламывайте компьютеры и выполняйте приказы!"
-BREACH.Descriptions.russian[role.UIU_Agent_Thunder] = "Вы – элитный оперативник Агентского отдела Специального управления – [Позывной: 'Громовой Удар']\n\nС вами 3 экспериментальных устройства 'Грозовые Врата', которые можно установить на двери. При попытке прохода через них человек будет поражён током и временно обездвижен.\n\nОднако устройства пока не способны работать долго...\n\nВзламывайте компьютеры для сбора данных, выполняйте приказы командира и достигайте целей!"
---BREACH.Descriptions.russian[role.FBI_Commander] = "Вы Командир Спецотдела UIU\n\nВидите использующих рации\n\nОтдавайте приказы подчинённым!"
-BREACH.Descriptions.russian[role.UIU_Soldier] = "Вы Солдат Спецотдела UIU\n\nВзламывайте компьютеры и выполняйте приказы!"
---BREACH.Descriptions.russian[role.UIU_Agent_Information] = "Вы Информационный Специалист UIU\n\nВзламывайте терминалы для вызова подкрепления"
-BREACH.Descriptions.russian[role.UIU_Specialist] = "Вы Специалист UIU\n\nМожете временно блокировать двери\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.UIU_Clocker] = "Вы Инфильтратор UIU\n\nВаш клинок режет даже SCP\n\nВыполняйте приказы командира!"
-BREACH.Descriptions.russian[role.UIU_Commander] = "Вы Командир UIU\n\nГраната 'Зелёный Туман' наносит урон через дыхание\n\nОтдавайте приказы подчинённым!"
-BREACH.Descriptions.russian[role.GRU_Soldier] = "Вы Солдат ГРУ\n\nВыполняйте приказы командира и лейтенанта!"
-BREACH.Descriptions.russian[role.GRU_Specialist] = "Вы Специалист ГРУ\n\nВыполняйте приказы командира и лейтенанта!"
-BREACH.Descriptions.russian[role.GRU_Jugg] = "Вы Тяжеловес ГРУ\n\nВыполняйте приказы командира и лейтенанта!"
-BREACH.Descriptions.russian[role.GRU_Sapper] = "Вы Сапёр ГРУ\n\nВыполняйте приказы командира и лейтенанта!"
-BREACH.Descriptions.russian[role.GRU_Commander] = "Вы Командир ГРУ\n\nКоординируйте действия с лейтенантом!"
-BREACH.Descriptions.russian[role.GRU_Political] = "Вы Лейтенант ГРУ\n\nКоординируйте действия с командиром!"
-BREACH.Descriptions.russian[role.GRU_Grunt] = "Вы Боец Группы Прикрытия ГРУ\n\nСоздавайте укрепления для прикрытия эвакуации"
-BREACH.Descriptions.russian[role.GRU_Machinegunner] = "Вы Пулемётчик Группы Прикрытия ГРУ\n\nСоздавайте укрепления для прикрытия эвакуации"
-BREACH.Descriptions.russian[role.GRU_Marksman] = "Вы Снайпер Группы Прикрытия ГРУ\n\nСоздавайте укрепления для прикрытия эвакуации"
-BREACH.Descriptions.russian[role.Goc_Grunt] = "Вы Солдат GOC\n\nАктивируйте ядерный заряд Alpha любой ценой!!"
-BREACH.Descriptions.russian[role.Goc_Special] = "Вы Специалист GOC\n\nМожете установить маяк для телепортации\n\nАктивируйте ядерный заряд Alpha любой ценой!"
-BREACH.Descriptions.russian[role.Goc_Jag] = "ГОК - Йотун\n\nМобильный энергощит\n\nПробивается только оружием ГОК\n\nПодорвите боеголовку \"Альфа\" любой ценой!"
-BREACH.Descriptions.russian[role.DZ_Grunt] = "Рука Змея - Солдат\n\nЭвакуируйте SCP!"
-BREACH.Descriptions.russian[role.DZ_Gas] = "Рука Змея - Газовик\n\nИммунитет к SCP-409\n\nЭвакуация SCP!"
-BREACH.Descriptions.russian[role.DZ_Psycho] = "Рука Змея - Безумец\n\nSCP-127-1 - аномальное оружие\n\nУничтожайте препятствия!"
-BREACH.Descriptions.russian[role.DZ_Commander] = "Рука Змея - Стражи\n\nПортальная телепортация\n\nНепредсказуемые координаты\n\nРуководство эвакуацией!"
-BREACH.Descriptions.russian[role.QRT_Soldier] = "ГБР - Стрелок\n\nЗащита объекта!"
-BREACH.Descriptions.russian[role.QRT_Medic] = "ГБР - Медик\n\nМедобеспечение!"
-BREACH.Descriptions.russian[role.QRT_ShockTrooper] = "ГБР - Штурмовик\n\nЗачистка территории!"
-BREACH.Descriptions.russian[role.QRT_Commander] = "ГБР - Командир\n\nКоординация обороны!"
-BREACH.Descriptions.russian[role.QRT_Machinegunner] = "ГБР - Пулемётчик\n\nРучной пулемёт M249!"
-BREACH.Descriptions.russian[role.QRT_Shield] = "ГБР - Щитоносец\n\nТактический щит!"
-BREACH.Descriptions.russian[role.QRT_Marksmen] = "ГБР - Снайпер\n\nMK14 EBR!"
-BREACH.Descriptions.russian[role.OSN_Soldier] = "Вы - грунт специального назначения\n\nЗащищайте и выполняйте приказы диспетчера!" --未启用
-BREACH.Descriptions.russian[role.OSN_Specialist] = "Вы - специалист по специальным заданиям\n\nЗащищайте и выполняйте приказы диспетчера!" --未启用
-BREACH.Descriptions.russian[role.OSN_Commander] = "Вы - командир специального отряда\n\nЗащищайте и выполняйте приказы диспетчера!" --未启用
-BREACH.Descriptions.russian[role.SECURITY_Recruit] = "Охрана - Рекрут\n\nПолучите боеприпасы!"
-BREACH.Descriptions.russian[role.SECURITY_Sergeant] = "Охрана - Сержант\n\nОтдавайте приказы!"
-BREACH.Descriptions.russian[role.SECURITY_Corporal] = "Охрана - Капрал\n\nСтандартный дозор!"
-BREACH.Descriptions.russian[role.SECURITY_OFFICER] = "Охрана - Офицер\n\nПатрулирование!"
-BREACH.Descriptions.russian[role.SECURITY_Warden] = "Охрана - Надзиратель\n\nПолный контроль!"
-BREACH.Descriptions.russian[role.SECURITY_Shocktrooper] = "Охрана - Штурмовик\n\nАвтоматический MP5K!"
-BREACH.Descriptions.russian[role.SECURITY_Heavy] = "Охрана - Рихтовщик\n\nРезиновые пули!"
-BREACH.Descriptions.russian[role.SECURITY_IMVSOLDIER] = "Охрана - Спецназ IMV"
-BREACH.Descriptions.russian[role.SECURITY_Chief] = "Охрана - Капитан\n\nКомандование!"
-BREACH.Descriptions.russian[role.SECURITY_Spy] = "Хаос - Шпион\n\nМаскировка под охрану\n\nПомощь D-классу!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_DAMAGE] = "Др. Келен\n\nУсиление урона по SCP!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_HEALER] = "Матильда\n\nЛечение области!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_SLOWER] = "Др. Спидвон\n\nЗамедление SCP!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_SPEED] = "Др. Ломао\n\nУскорение передвижения!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_MINE] = "Др. Филон\n\nПротиво-SCP мины!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_BOOSTER] = "Спецнаука\n\nУлучшение характеристик!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_SHIELD] = "Др. Шилдми\n\nСиловой щит!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_INVISIBLE] = "Др. Рупрехт\n\nНевидимость!"
-BREACH.Descriptions.russian[role.SCI_SPECIAL_VISION] = "Проф. Хедвиг\n\nТрекинг SCP!"
-BREACH.Descriptions.russian[role.SCI_Assistant] = "Лаборант\n\nЭвакуация!"
-BREACH.Descriptions.russian[role.SCI_SpyDZ] = "Рука Змея - Шпион\n\nПортал в Site-19\n\nКража SCP-объектов!"
-BREACH.Descriptions.russian[role.SCI_Grunt] = "Учёный\n\nЭвакуация!"
-BREACH.Descriptions.russian[role.SCI_Tester] = "Старший научный\n\nВысокий доступ!"
-BREACH.Descriptions.russian[role.SCI_Recruiter] = "Этический комитет\n\nВербовка D-класса!"
-BREACH.Descriptions.russian[role.SCI_Medic] = "Медперсонал\n\nЛечение!"
-BREACH.Descriptions.russian[role.SCI_Cleaner] = "Уборщик\n\nОсмотр мусора!"
-BREACH.Descriptions.russian[role.SCI_Head] = "Директор кадров\n\nУправление!"
-BREACH.Descriptions.russian[role.ClassD_Default] = "Класс-D\n\nПобег!"
-BREACH.Descriptions.russian[role.ClassD_GOCSpy] = "ГОК - Шпион\n\nИнфильтрация офиса!"
-BREACH.Descriptions.russian[role.ClassD_FartInhaler] = "D-класс - Аносмик\n\nИммунитет к газам!"
-BREACH.Descriptions.russian[role.ClassD_Survivor] = "Вы - Класс D - Выживший\n\nВаши навыки выживания не могут сравниться с другими\n\nХорошо используйте свой опыт выживания, чтобы остаться в живых!"
-BREACH.Descriptions.russian[role.ClassD_Pron] = "Вы Класс D - Вор\n\nУкрали ключ-карту у исследователя.\n\nСбегите с другими."
-BREACH.Descriptions.russian[role.ClassD_Thief] = "Вы Класс D - Карманник\n\nМожете воровать предметы.\n\nРаботайте в команде."
-BREACH.Descriptions.russian[role.ClassD_Fat] = "Вы Класс D - Танк\n\nЖир снижает урон.\n\nПомогите другим."
-BREACH.Descriptions.russian[role.ClassD_Bor] = "Вы Класс D - Рестлер\n\nЕжедневные тренировки.\n\nСбегите с другими."
-BREACH.Descriptions.russian[role.ClassD_Hack] = "Вы Класс D - Хакер\n\nВзломщик замков.\n\nРаботайте вместе."
-BREACH.Descriptions.russian[role.ClassD_Cannibal] = "Вы Класс D - Каннибал\n\nПсихическая травма.\n\n[ДАННЫЕ УДАЛЕНЫ].\n\nСбегите с другими."
-BREACH.Descriptions.russian[role.ClassD_Probitiy] = "Вы Класс D - Карманы\n\nБольшие карманы.\n\nПомогите команде."
-BREACH.Descriptions.russian[role.ClassD_Fast] = "Вы Класс D - Спортсмен\n\nБывший бегун.\n\nУбегите первым."
-BREACH.Descriptions.russian[role.ClassD_Killer] = "Вы Класс D - Убийца\n\nСамодельные ножи.\n\nРаботайте в команде."
-BREACH.Descriptions.russian[role.ClassD_Hitman] = "Вы Класс D - Наёмник\n\nСтарые навыки.\n\nСбегите с другими."
-BREACH.Descriptions.russian[role.MTF_Guard] = "МОГ - Охранник\n\nИсполнение приказов!"
-BREACH.Descriptions.russian[role.MTF_Medic] = "МОГ - Медик\n\nМедоперации!"
-BREACH.Descriptions.russian[role.MTF_Left] = "МОГ - Лейтенант\n\nКомандование!"
-BREACH.Descriptions.russian[role.MEG_Chem] = "МОГ - CBRN\n\nБоевой химкостюм!"
-BREACH.Descriptions.russian[role.MTF_Shock] = "МОГ - Поджигатель\n\nЗажигательные гранаты!"
-BREACH.Descriptions.russian[role.MTF_Specialist] = "МОГ - Спец\n\nШтурмовая винтовка!"
-BREACH.Descriptions.russian[role.MTF_Com] = "МОГ - Командир\n\nСтратегия!"
-BREACH.Descriptions.russian[role.MTF_Engi] = "МОГ - Инженер\n\nТурели против SCP!"
-BREACH.Descriptions.russian[role.MTF_HOF] = "Директор объекта\n\nПолные полномочия!"
-BREACH.Descriptions.russian[role.MTF_Security] = "Внутренняя безопасность\n\nОтслеживание персонала!"
-BREACH.Descriptions.russian[role.O4Commander] = "O4 Командир\n\nСтратегическое управление!"
-BREACH.Descriptions.russian[role.MTF_Jag] = "МОГ - Тяжеловооружённый\n\nM249 + броня!"
+BREACH.Descriptions.chinese = BREACH.Descriptions.chinese or {}
+你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑\n\n获取部分重要信息并呼叫支援\n\n设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报
+你是SCP-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人
+你是SCP-912[自主型SWAT装甲]\n击杀设施内的罪犯
+你是SCP-062-DE[战争的幽灵]\n继续完成元首赋予你的使命!
+你是SCP-638[狂吼之人]\n你的吼声能让周围的人感到恐惧
+你是SCP-062-FR[完美掠食者]\n吃掉他们,然后进化...
+你是SCP-076[亚伯]\n你的刀能轻易斩断任何阻挡你的事物
+你是SCP-106[恐怖老人]\n嘿嘿,想来我的快乐老家做客吗?!
+你是SCP-096[害羞的人]\n你憎恶那些看到你脸的施暴者!
+你是SCP-542[外科医学先生]\n设施内的病人疑似有点太多了
+你是SCP-973[公路巡警]\n设施内的\'交通\'需要你的管制
+你是SCP-2012[迷失时间的军灵]\n为了军团的荣耀!
+你是SCP-082[食人者“费尔南德”]\n想要了解一点\'做人\'的道理吗？
+你是SCP-939[千喉之兽]\n多么优雅的声音,现在,是我的了
+你是SCP-811[沼女]\n你的酸液能浸透装甲!
+你是SCP-682[不灭孽蜥]\n憎恶一切,毁灭一切
+你是SCP-999-2[不完美的副产物]\n是基金会对SCP-999实验所创造的生命体\n你虽然能够治愈别人但你似乎不像999那么友善
+你是SCP-3114[是不是太冷淡了?]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了...
+你是混沌分裂者 - 士兵\n\n俘虏D级人员\n\n遵循你指挥官的命令完成目标!
+你是混沌分裂者 - 恶魔\n\n你有RPG火箭发射器和两发弹药,用它摧毁直升机和一切你遇到的敌人\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者 - 猎人\n\n你能放置三枚阔剑地雷\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 重装\n\n你有一挺M60重机枪的同时还有非常厚重的护甲,杀掉所有你看到的敌人!\n\n遵循你指挥官的命令并完成目标!
+你是混沌分裂者的 - 指挥官\n\n你有一把SCAR突击步枪并且能够武装D级人员\n\n向你的士兵下达命令并完成任务!
+你是九尾狐小队的 - 士兵\n\n营救设施人员并遵循你指挥官的命令完成目标!
+你是九尾狐小队的 - 战斗专家\n\n你的特殊捕获网能控制住大部分的SCP\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 狙击手\n\n你有一挺巴雷特,它能够轻易撕开SCP的那脆弱的防御\n\n遵循你指挥官的命令并完成目标!
+你是九尾狐小队的 - 飞行员\n\nY!
+你是九尾狐小队的 - 指挥官\n\n你能够扫描设施人员包括SCP并看到他们\n\n遏制设施内的收容失效并保卫整个设施不受其他势力的侵扰!
+你是落锤肃杀营A连 - 士兵\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 指挥官\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 作战专家\n\n你所携带的由Kelen博士研发的便携式现实稳定锚,能够遏制住大部分SCP技能的使用\n\n营救设施内的研究人员,消灭所有外部势力,并遏制SCP的活动
+你是落锤肃杀营A连 - 先锋\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是落锤肃杀营A连 - 无畏战士\n\n营救设施内的研究人员,消灭所有外部势力,并且遏制SCP的活动
+你是教众 - 猩红之王的信徒\n\n遵循祭司的命令并完成仪式!
+你是狂信徒 - 猩红之王的狂热崇拜者\n\n遵循祭司的命令并完成仪式!
+你是祭祀 - 猩红之王最虔诚的崇拜者\n\n向其他教众下达命令并完成仪式!
+你是助祭 - 猩红之王的得力帮手\n\n遵循祭司的命令并完成仪式!
+你是特异事务处特工部的 - 干员\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 组长\n\n你能看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处特工部的 - 特种干员\n\n你有一枚特殊的手榴弹,它会在房间里产生回声,标记你和你的队友附近的每一个敌人.\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 精英干员[代号:'雷击']\n\n你所携带的3个实验性'闪电门'装置能够安放在门上,当有人类试图穿过它时就会被电击并失去瞬间的行动能力\n\n但该装置目前不能够长久的工作....\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你可以看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!
+你是特异事务处的 - 士兵\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!
+你是特异事务处特工部的 - 情报专员\n\n骇入设施终端电脑呼叫UIU主力部队
+你是特异事务处的 - 战斗专家\n\n你能够锁上任何门一段时间\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 渗透者\n\n你敏捷并致命,你的刀非常锋利,它甚至能切碎SCP\n\n遵循你指挥官的命令并完成目标!
+你是特异事务处的 - 指挥官\n\n你所携带的绿烟(\"Green Haze\")手雷,能够对吸入的人造成大量伤害,尽管这不符合交战规则\n\n向你的士兵下达命令并完成任务!
+你是格鲁乌 - 士兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 作战专家\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 重装\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 战斗工兵\n\n遵照指挥官和少尉的命令并完成任务!
+你是格鲁乌 - 指挥官\n\n与少尉合理分配人数,完成任务!
+你是格鲁乌 - 少尉\n\n与指挥官合理分配人数,完成任务!
+你是格鲁乌 - 近卫小组组员\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组机枪手\n\n快速构建防线,掩护侵入部队安全撤离
+你是格鲁乌 - 近卫小组精确射手\n\n快速构建防线,掩护侵入部队安全撤离
+你是全球超自然联盟的 - 士兵\n\n不惜一切代价引爆Alpha核弹!!
+你是全球超自然联盟的 - 战斗专家\n\n你可以放置一个信标并在将来传送过去\n\n不惜一切代价引爆Alpha核弹!
+你是全球超自然联盟的 - 无畏勇士\n\n你能生成一面跟随你移动的能量护盾\n\n仅有全球超自然联盟下发的武器才能击穿它\n\n不惜一切代价引爆Alpha核弹!
+你是蛇之手 - 士兵\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 特种探员\n\n你特制的防毒面具可以免疫SCP-409\n\n你的任务是帮助并疏散SCP!
+你是蛇之手 - 疯子\n\n你携带SCP-127-1是一把特殊SCP武器,它的伤害能够轻易撕裂任何挡路的人!\n\n你的任务是帮助并疏散SCP!
+你是蛇手 - 指挥官\n\n你有能力召唤一个传送门到任意位置\n\n小心没有人知道它会你传送到哪里\n\n你的任务是帮助并疏散SCP!
+你是快速反应部队 - 士兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 医疗兵\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 突击队员\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 指挥官\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 机枪手\n\n你有着M249轻机枪\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 盾牌手\n\n利用好你的防弹盾牌\n\n保护设施并遵守安全主管的命令!
+你是快速反应部队 - 精确射手\n\n你有着全自动的MK14战斗步枪\n\n保护设施并遵守安全主管的命令!
+You - are the Special Task Grunt\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Specialist\n\nProtect and follow the orders of the Dispatcher!
+You - are the Special Task Commander\n\nProtect and follow the orders of the Dispatcher!
+你是保安 - 菜鸟\n\n前往武器库获取子弹\n\n保护研究员并逃离设施
+你是保安 - 中士\n\n您可以向安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 下士\n\n保护研究员并逃离设施
+你是保安 - 警员\n\n保护研究员并逃离设施
+你是保安 - 典狱长\n\n您可以向中士以及其他安保人员发出命令\n\n保护研究员并逃离设施
+你是保安 - 突击队员\n\n与其他安保人员不同你有全自动的MP5K\n\n保护研究员并逃离设施
+你是保安 - 镇暴队员\n\n你拥有更厚的护甲和一把射击橡胶弹的枪\n\n保护研究员并逃离设施
+你是保安 - 特别专员\n\n保护研究员并逃离设施
+你是保安 - 上尉\n\n你可以向所有安保人员下达命令\n\n保护研究员并逃离设施
+你是混沌分裂者 - 间谍\n\n你通过伪装成一名还未进行审查的安保人员进入了设施\n\n运用一切资源帮助D级人员逃离设施
+您是异常处决部 - Kelen博士\n\n您的特殊技能是增加附近人员对SCP的伤害\n\n与研究员和保安一起逃离设施!
+您是特殊护理小组组长 - Matilda组长\n\n你的特殊技能是治愈附近的人\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Speedwone博士\n\n你的特殊技能是减缓附近SCP的速度\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Lomao博士\n\n你的特殊技能是为附近的人提高速度\n\n与研究员和保安一起逃离设施!
+您是异常处决部 - Feelon博士\n\n你的特殊技能是放置特殊的反SCP地雷\n\n与研究员和保安一起逃离设施!
+您是特殊科研\n\n你的特殊技能是增加附近人的特征\n\n与研究员和保安一起逃离设施!
+您是防卫设备研发部门 - Shieldmeh博士\n\n你的特殊技能是启用特殊的力场盾牌来防御子弹\n\n与研究员和保安一起逃离设施!
+您是异常应对部门 - Ruprecht博士\n\n你的特殊技能是让自己隐身\n\n与研究员和保安一起逃离设施
+您是异常应对部门 - Hedwig教授\n\n你拥有一副特殊眼镜,可以看到所有SCP的位置\n\n与研究员和保安一起逃离设施
+你是科学人员助手\n\n与研究员和保安一起逃离设施!
+你是蛇之手 - 间谍\n\n组织通过一个危险且隐秘传送虫洞将你精确传送进了site19的某个无人的角落\n\n尝试拿取尽可能多的SCP物品,并帮助其他SCP逃离设施!
+你是科研人员\n\n与研究员和保安一起逃离设施!
+你是高级科研人员\n\n你有着较高等级的权限卡\n\n与研究员和保安一起逃离设施!
+你是道德伦理委员会检察官\n\n你有能力将一些你认为有价值的D级人员招募为科研助手\n\n与研究员和保安一起逃离设施
+你是医务人员\n\n医者仁心\n\n与研究员和保安一起逃离设施!
+你是清洁工\n\n你可以'清洁'每一个垃圾桶,说不定会有以外收获呢\n\n与研究员和保安一起逃离设施!
+你是人事主管\n\n研究员和保安一起逃离设施
+你是D级人员\n\n与其他D级人员合作,逃离设施!
+你是全球超自然联盟 - 特工\n\n你伪装成D级人员进入了设施\n\n前往办公区找到自己的装备并引爆阿尔法核弹!
+你是D级员工....多年来,你一直在吸入胖子和大力士的屁味,因此你的鼻子已经无法感知任何气味.\n\n似乎连有毒气体也无法阻止你.\n\n请明智地利用这个优势.
+你是D级人员 - 生存者\n\n你的生存能力是其他人不可比拟的\n\n好好的利用你生存经验活下去!
+你是D级人员 - 窃贼\n\n你从某名研究员那里偷了一张权限卡\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 小偷\n\n你是个小偷,所以你技能可以从玩家那里偷东西\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 胖子\n\n你是个胖子,你可以使用你的肥肉抵挡伤害\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 摔角手\n\n你在这里没有向其他人一样浪费时间,所以你每天都在训练以锻炼肌肉\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 黑客\n\n你是个黑客,你在这里生活时从一个'好心'的安保人员那里\n\n得到一些电子元件和一张通用一级原型卡\n\n你用这些东西制作了一个简易电子锁骇入设备\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 食人魔\n\n曾经痛苦的家庭生活让你精神状态极其糟糕,久而久之,你对人表现得极其冷漠\n\n你依稀记得那个晚上,父亲和母亲做成的[数据删除]很美味\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 大兜哥\n\n看起来你的口袋比别人的大\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 运动员\n\n作为前省级一级运动员,你能够轻易超越其他人\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 杀手\n\n你靠着多日的收集,制作出了几把不怎么耐用但致命的小刀\n\n你认为自己无法有效地使用这么多把刀,因此分给了一些有杀人经验的D级人员\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 职业杀手\n\n你以前是职业杀手,看起来你没有失去你的旧习惯..\n\n与其他D级人员合作,逃离设施
+你是D级人员 - 老兵\n\n你曾是一名久经沙场的特种部队士兵,但是因为被指控犯下了\"反人类\"的罪行而被判无期徒刑,而事情的真相只有你知道...\n\n你并未忘记战场上磨砺出来的技能,好好利用这种能力逃离设施
+你是机动特遣队 - 士兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 医疗兵\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 中尉\n\n执行上级的命令,你可以命令士兵
+你是机动特遣队 - 突击队员,你有燃烧弹\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 战斗专家,你有 \"Blackout\" 突击步枪\n\n执行指挥官的命令,完成任务
+你是机动特遣队 - 指挥官,你可以向你的士兵下达命令\n\n执行设施主管的命令并完成您的任务
+你是机动特遣队 - 工程师,你有对付SCP的特殊炮塔\n\n修复所有5台发电机,恢复设施供电\n\n执行指挥官的命令,完成任务
+你是设施的主管\n\n除了九尾狐,你可以向任何人下达命令\n\n完成你的任务,并可选择召唤QRT小队
+你是内部安全代理\n\n你有一份整个设施人员的名单\n\n并且前不久你们从MTF Iota-10(\"该死的联邦探员\")那里获得了一份绝密情报\n\n执行指挥官的命令,完成任务
+你是O4指挥官\n\n通过监控支援队友并在适当的时候召唤对应支援\n\n帮助设施
+你是机动特遣队 - 重装士兵\n\nM249轻机枪与重型防弹衣让你成为了设施内最强的战士\n\n执行指挥官的命令,完成任务
+--专家组
+你是MEG - 生化专家\n\n作为Beta-7的退役老兵,你在对付具有化学危害的SCP时更加灵活自如\n\n而你身穿的战斗型防化服能够让你在完美防护大部分危险SCP的同时\n\n又有与其他敌对目标抗衡的实力\n\n执行指挥官的命令,完成任务
+你是MEG - 九尾狐收容专家\n\n你被指派到该设施内训练武装人员应对SCP的措施并选拔部分人加入到NTF的预备队伍之中\n\n你所持有的\"妖狐之舞\"是设施独一无二的特殊武器\n\n它能够对SCP造成不小的伤害,但可惜的是你只携带了三个弹匣...
+你是MEG - 落锤特战教官\n\n你是被该设施内的O4指挥官直接指派的特战教官\n\n作为现役落锤特种部队的你,被O4指挥官要求训练设施内的武装人员\n\n提高设施武装人员应对外部势力入侵的能力
+--事件专属角色
+你是UIU - 联络专员\n\n协助基金会遏制收容失效,并在必要时在广播室呼叫支援
+你是混沌分裂者 - 特工\n\n你拥有一张一次性的特殊钥匙卡你可以用它打开地下武器库的门
+--事件专属支援
+--UIU收容小组
+你是UIU收容小组 - 组员\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 机枪手\n\n你拥有强大的火力\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 收容专家\n\n你曾在NTF的训练基地中进行过为期[数据删除]的训练,因此你拥有一定的应对SCP的经验\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况
+你是UIU收容小组 - 暗面\n\n你是UIU收容小组最强大的战士\n\n你的特制匕首\"CK-101\"在你释放你的能力之后能够对SCP造成不俗的伤害\n\n而且在你能力期间你能够免疫一次伤害大于你的最大生命且小于500点的伤害
+你是UIU收容小组 - 组长\n\n领导你的组员帮助基金会收容SCP稳定设施内的情况\n\n你携带了阉割版的智能操作平台,其只能够侦测设施内SCP的状态
 --生涯专属任务
-BREACH.Descriptions.russian[role.ClassD_Mio] = "D-класс Мио\n\nРазжалован O5\n\nЭволюция в Най Лун!"
-BREACH.Descriptions.russian[role.ClassD_Mio_NaiLong] = "Най Лун MIO\n\nЭволюционная форма"
+你是Mio\n你因在多次向技术提出睿智问题且数次朝令夕改\n现在被O5议会降级为D级人员\n你可以通过某些手段进化成奶龙MIO\n与其他D级合作逃离设施
+你是奶龙MIO\n\n你是MIO的进化体
+--二战模式
+你是美军 - 士兵\n干掉所有德国鬼子!
+你是美军 - 指挥官\n领导你的士兵干掉所有反人类畜生!
+你是纳粹德国 - 士兵\n干掉所有美国混蛋!
+你是纳粹德国 - 士兵\n领导你的士兵为元首攻城略地!
 --CHATPRINT
-russian.sgoc_first_objective = "Вы нашли снаряжение, приступайте к основной задаче - активация боеголовки."
-russian.ammocrate_max_ammo = "Нельзя пополнить боеприпасы - достигнут максимум."
-russian.ammo_notfound = "Данный тип патронов отсутствует."
-russian.ammocrate_no_ammo = "Боеприпасы для этого оружия закончились"
-russian.ammocrate_weapon_needed = "Возьмите нужное оружие в руки."
-russian.cultbook_ritual_distrupted = "Ритуал прерван, требуется перезапуск."
-russian.cultbook_ritual_stopped = "Вторжение неизвестного объекта остановлено!"
-russian.cultbook_ritual_start_pt1 = "Тревога! Неизвестный объект вторгается в реальность!"
-russian.cultbook_ritual_start_pt2 = "Новая задача: предотвратить вторжение!"
-russian.generator_toolkit_abuse = "Нет инструментов для ремонта генераторов."
-russian.temp_attach_avaliable_pt1 = "Модификация оружия доступна! Нажмите"
-russian.temp_attach_avaliable_pt2 = "для изменения"
-russian.temp_attach_zone_left = "Вы покинули зону модификации."
-russian.uiu_remaining_computers = "Данные получены. Осталось компьютеров:"
-russian.uiu_mission_complete = "Все данные переданы - срочно эвакуируйтесь!"
-russian.gru_has_got = "Получено документов: "
-russian.gru_docu_remaining = "Требуется документов: "
-russian.gru_got_all = "Все документы получены!"
-russian.scp294_nospawn_destructive = "Этот напиток слишком опасен - я не буду это пить!"
-russian.scp294_nospawn_bad_idea = "Это плохая идея!"
-russian.take_off_nvg_first = "Сначала снимите ПНВ."
-russian.radio_edit_info = "Режим редактирования канала (ПКМ)."
-russian.radio_entered_edit = "Формат: NNN.N (N<10)"
-russian.radio_exit_info = "ПКМ - отмена/ENTER - подтвердить."
-russian.radio_bad_channel = "Недопустимая частота."
-russian.scp268_reloading = "Перезарядка SCP."
-russian.scp268_reload_when_pt1 = "Стелс доступен через"
-russian.scp268_reload_when_pt2 = "сек."
-russian.scp268_activated_first_pt1 = "Стелс активирован. Избегайте контактов."
-russian.scp268_activated_first_pt2 = "Стрельба отключит маскировку. Длительность: 20с"
-russian.scp268_activated = "Невидимость активна 20 секунд."
-russian.scp268_end = "Маскировка отключена."
-russian.scp106_1 = "Режим \"Скрытности\" активирован."
-russian.scp106_2 = "Скорость передвижения x2."
-russian.scp106_3 = "Атака невозможна. Невидим для других."
-russian.scp106_4 = "Нажмите R для выхода."
-russian.scp106_5 = "Вы в карманном измерении."
-russian.scp106_6 = "Нажмите H для возврата."
-russian.scp106_7 = "Нажмите T для телепорта."
-russian.mvp_scpkill = "Убийства как SCP"
-russian.mvp_headshot = "Хедшоты"
-russian.mvp_kill = "Убийства"
-russian.mvp_heal = "Лечение"
-russian.mvp_damage = "Урон"
-russian.scp106_ghost_pt1 = "Режим \"Призрак\" активирован."
-russian.scp106_ghost_pt2 = "Скорость повышена."
-russian.scp106_ghost_pt3 = "Атака отключена. Невидимость активна."
-russian.scp106_ghost_pt4 = "Нажмите R для выхода."
-russian.scp106_dimension_pt1 = "Вы в своем измерении."
-russian.scp106_dimension_pt2 = "Нажмите H для возврата."
-russian.scp106_dimension_pt3 = "Нажмите T для телепорта."
-russian.scp106_ghost_bad_pos = "Выход из режима здесь невозможен."
-russian.scp173_not_in_los = "Вы вне поля зрения своего тела."
-russian.scp973_frenzy = "Нажмите T для режима Ярости"
-russian.teamkill_killed = "Убит"
-russian.teamkill_you_have_been_teamkilled = "Вас убил союзник"
-russian.teamkill_report_if_rulebreaker = "Отправьте !report при нарушении"
-russian.teamkill_you_teamkilled = "Вы убили союзника:"
-russian.you_have_been_killed = "Убит:"
-russian.evac_start_leave_immediately = "ЭВАКУАЦИЯ! НЕМЕДЛЕННО ПОКИНЬТЕ ОБЪЕКТ!"
-russian.medkit_heal_ended = "Лечение завершено."
-russian.demo_stop = "Запись демо остановлена для обновления"
-russian.cantequipmtfuniform = "Нельзя надеть эту форму"
--- статистика
-russian.apc_destroyed = "БТР уничтожен"
-russian.sgoc_first_objective_completed = "Первая цель выполнена"
-russian.activated_warhead = "Активирована боеголовка Альфа"
-russian.escaped = "Побег осуществлён"
-russian.detonated_warhead_for_non_goc = "Детонация боеголовки Альфа"
-russian.scp914_death = "Погиб от SCP-914"
-russian.repair_bonus = "Ремонт"
-russian.choppa_bonus = "Вертолёт уничтожен"
-russian.gru_heli_bonus = "БТР ГРУ уничтожен"
-russian.cotsk_summon_bonus = "Призыв Алого Короля"
-russian.uiu_obj_bonus = "Цель выполнена"
-russian.gru_obj_bonus = "Документы получены"
-russian.gru_looting_scps = "Похищены ценные объекты SCP"
-russian.sh_scps_stolen = "SCP-объекты украдены"
-russian.sh_scps_evacuated = "SCP эвакуирован"
-russian.scp009_death = "Погиб от SCP-009"
-russian.checker_bonus = "Шпион обнаружен"
-russian.scp999_healing_bonus = "Исцеление"
-russian.psycho_bravery_bonus = "Храбрость"
-russian.interrogated_by_gru = "Допрос ГРУ"
-russian.teamkill = "Урон союзникам"
-russian.pacifist = "Пацифист"
-russian.enemykill = "Враг уничтожен"
-russian.headshot = "Хедшот"
-russian.scpkill = "SCP сдержан"
-russian.death = "Смерть"
-russian.ci_classd_evac = "Класс-D захвачен"
-russian.cheemer_rescue = "Чимеры спасены"
-russian.ci_scp_evac = "Ключевой SCP изъят"
-russian.sci_evac = "Учёные эвакуированы"
-russian.vip_evac = "VIP-учёный эвакуирован"
-russian.escape_fail = "Побег провален"
-russian.survival_bonus = "Время выживания"
-russian.scp409_death = "Погиб от SCP-409"
-russian.prem_bonus = "Бонусный опыт VIP"
-russian.crazythursday = "Безумный Четверг +50"
-russian.gru_mission_completed = "Миссия ГРУ выполнена"
-russian.gru_success_escape = "Успешный побег с объекта"
-russian.foundation_winnder = "Порядок восстановлен в Site-19"
--- Сообщения о победе
-russian.ci_vdv_winner = "Воздушные силы Хаоса захватили Site-19"
-russian.nu7_squad_winner = "Отряд 'Молот Опущен' успешно защитил Site-19"
--- END OF ROUND DISPLAY
-russian.ending_tp_to_unknown_loc = "Телепортация в неизвестное место."
-russian.ending_evac_apc = "Эвакуация на APC."
-russian.ending_ci_evac_apc_pt1 = "Захвачено и эвакуировано APC"
-russian.ending_ci_evac_apc_pt2 = "Персонал класса D."
-russian.ending_ci_evac_apc_pt2_many = "Много персонала класса D."
-russian.ending_evac_choppa = "Эвакуация на вертолете."
-russian.ending_evac_train = "Эвакуация поезда"
-russian.ending_captured_by_unknown = "Пойман неизвестной группой."
-russian.ending_escaped_site19_got_captured = "Побег из Site-19 и захват [данные удалены]"
-russian.ending_mission_complete = "Задача выполнена."
-russian.ending_mission_failed = "Задача провалена."
-russian.ending_escaped_site19 = "Побег из Site-19."
-russian.ending_car = "Автомобиль найден на выходе 48."
-russian.ending_o5 = "Объект использовал \"особый метод\" экстренной эвакуации O5... Монорельсовый побег."
-russian.ending_gru = "Побег на БТР"
-russian.ending_perfect = "Фонд успешно локализовал нарушение"
-russian.ending_uiu_spy_under = "Миссия провалена, продолжайте оставаться под прикрытием!"
-russian.ending_scp999 = "Побег не удался, вы остаётесь в камере Site-19"
--- Завершения в режиме Kongshu
-russian.ending_kongshu_1 = "Вы были телепортированы в неизвестное пространство. (Друг~ Хочешь почитать книги?)"
-russian.ending_kongshu_2 = "Почему-то в карманном измерении SCP-106 появилось ещё одно существо."
-russian.ending_kongshu_3 = "Вам повезло! Вы покинули Site-19... но где вы теперь?"
-russian.ending_kongshu_4 = "Вы были телепортированы на планету за [ДАННЫЕ УДАЛЕНЫ] световых лет отсюда."
-russian.ending_kongshu_5 = "Стены вокруг вас покрыты пожелтевшими обоями, а из ниоткуда доносится бесконечный гул."
-russian.ending_kongshu_6 = "Человек в костюме заинтересовался вами и 'нанял' вас."
--- VOICE/TEXT CHAT
-russian.whispers = "Шепот"
-russian.talks = "Говорит"
-russian.asks = "Спрашивает"
-russian.yells = "Кричит"
-russian.players_online = "Игроки онлайн"
-russian.speaks = "Говорит..."
-russian.talks_to_you = "(говорит с вами)"
-russian.chat_unknown = "Неизвестно"
-russian.intercom = "(Внутренний чат)"
-russian.copy_message = "Скопировать сообщение"
-russian.clientside_mute = "Отключить звук"
-russian.motivational_mute = "Мотивационный мут" -- не включено
-russian.clientside_mute_spec_only = "Вы можете отключить звук только в режиме наблюдателя или играя за SCP"
-russian.motivation_1 = "Не сдавайся!"
-russian.motivation_2 = "Глупый может сдвигать горы, ты тоже можешь справиться с этим!"
-russian.motivation_3 = "Сначала делай, потом думай!"
-russian.motivation_4 = "Как посеешь, так и пожнешь, всегда будь лучшей версией себя!" -- позже перевести
-russian.motivation_5 = "Если упал, встань и иди дальше!" -- позже перевести
-russian.motivation_6 = "Чем тяжелее битва, тем больше ты станешь!" -- позже перевести
-russian.motivation_7 = "Не зацикливайся на прошлом!"
-russian.motivation_8 = "Ты хочешь контролировать свою судьбу или пусть это сделает кто-то другой?" -- позже перевести
-russian.motivation_9 = "Дорога впереди, не решай свою судьбу за один день." -- позже перевести
-russian.motivation_10 = "Смотри на мир с оптимизмом каждый день!"
-russian.motivation_11 = "Ты лучший, ты самый сильный." -- позже перевести
-russian.motivation_12 = "Ты обладаешь всем, чтобы достичь успеха!"
-russian.motivation_13 = "Этот мир нуждается в тебе!"
-russian.newplayer = "новый игрок"
--- MENU
-russian.menu_scp_hud_left = "Отображать навыки SCP в левом нижнем углу"
-russian.menu_killfeed = "Показывать таблицу смертей"
-russian.menu_drawlegs = "Показать свои ноги"
-russian.menu_changelog = "Журнал обновлений"
-russian.menu_lead = "Ведущий"
-russian.menu_dev = "Разработчик"
-russian.menu_managers = "Менеджеры"
-russian.menu_xlk = "Главный администратор сервера"
-russian.menu_mio = "Персональный менеджер"
-russian.menu_coder = "Программист"
-russian.menu_en = "Дипломат"
-russian.menu_modeller = "Моделлер"
-russian.menu_head_admin = "Главный администратор"
-russian.menu_make_map = "Создатель карты"
-russian.menu_chemist = "Химик"
-russian.menu_admin_firstperson = "Включить режим наблюдателя от первого лица"
-russian.menu_weapon_fov = "Поле зрения оружия"
-russian.menu_weapon_z_offset = "Коррекция Z-оси оружия"
-russian.menu_no_role_desc = "Отключить описание персонажа"
-russian.menu_spawn_as_sup = "Респаун в роли поддержки"
-russian.menu_useability = "Горячие клавиши"
-russian.menu_inventory_key = "Инвентарь"
-russian.menu_lean_left = "Наклониться влево"
-russian.menu_lean_right = "Наклониться вправо"
-russian.menu_lang = "Язык"
-russian.menu_lang_b_chinese = "специальный выпуск"
-russian.menu_lang_chinese = "Упрощённый китайский"
-russian.menu_lang_traditional = "Традиционный китайский"
-russian.menu_lang_english = "Английский"
-russian.menu_lang_russian = "Русский"
-russian.menu_chat_voice = "Текстовый и голосовой чат"
-russian.menu_gradient_voice = "Градиентный голосовой чат"
-russian.menu_voice_show_alive = "Показывать живых игроков"
-russian.menu_disable_flashes = "Отключить мигание цветных префиксов"
-russian.menu_disable_avatars = "Отключить аватары в чате"
-russian.menu_roundavatars = "Круглые аватары чата (если FPS падает, отключите)"
-russian.menu_clearemoji = "Очистить папку эмодзи"
-russian.menu_clear_downloaded_images = "Очистить загруженные изображения"
-russian.menu_audio = "Аудио"
-russian.menu_mute_spec = "Отключить звук всем наблюдателям"
-russian.menu_mute_spec_if_alive = "Отключить звук всем живым игрокам в режиме наблюдателя"
-russian.menu_music_volume = "Громкость музыки"
-russian.menu_music_title = "Музыка"
-russian.menu_overall_music_volume = "Общий уровень громкости"
-russian.menu_panic_music_volume = "Громкость музыки погони"
-russian.menu_spawn_music_volume = "Громкость музыки респауна"
-russian.menu_ambience_music_volume = "Громкость окружающей музыки"
-russian.menu_misc_music_volume = "Громкость музыки для прочих событий"
-russian.menu_announcer_volume = "Громкость диктора"
-russian.menu_visual_settings = "Настройки графики"
-russian.menu_hide_title = "Скрыть имя внизу"
-russian.menu_scp_red_vision = "Видение SCP (в роли SCP)"
-russian.menu_screenshot_mode = "Отключить HUD (возможны ошибки)"
-russian.menu_screen_effects = "Глубина резкости и резкость"
-russian.menu_filter_textures = "Фильтрация текстур"
-russian.menu_filter_lightmaps = "Фильтрация теней"
-russian.menu_yellow_color_filter = "Желтый фильтр"
-russian.menu_blue_color_filter = "Синий фильтр"
-russian.menu_filter_outside = "Использовать фильтр на улице"
-russian.menu_filter_intensity = "Интенсивность фильтра"
-russian.menu_special_settings = "Особые настройки"
-russian.menu_chat_prefix = "Привилегии"
-russian.menu_premium_settings = "Настройки VIP"
-russian.menu_nick_grb_color = "Показать никнейм в формате RGB"
-russian.menu_display_premium_icon = "Показать иконку VIP"
-russian.menu_spawn_male_only = "Респаун только в роли мужчины"
-russian.menu_spawn_female_only = "Респаун только в роли женщины"
-russian.menu_current_lang = "Текущий язык:"
-russian.menu_press_any_key = "Нажмите любую клавишу"
--- MENU
-russian.menu_swap = "SWAP" -- не переводить, иначе не влезет в кнопку!
-russian.menu_cancel = "Нажмите \"END\", чтобы отменить"
-russian.menu_desc_premium = "Пожалуйста, свяжитесь с администратором через QQ-группу"
-russian.menu_prem_status = "VIP статус"
-russian.menu_days = "дней"
-russian.menu_forever = "Навсегда" -- не активировано
-russian.menu_other = "Прочее"
-russian.menu_decrease_active_warnings = "Уменьшить активные предупреждения"
-russian.menu_kit_start = "Установить \"Новичок\""
-russian.menu_kit_start_desc = "Включает: месяц VIP и уровень 15 (добавляется к текущему уровню)"
-russian.menu_1_level = "1 уровень"
-russian.menu_45_level = "45 уровень"
-russian.menu_ungag = "Ungag (голосовой чат)"
-russian.menu_less_than_a_week = "Менее недели"
-russian.menu_more_than_a_week = "Более недели"
-russian.menu_unmute = "Unmute (чат)"
-russian.menu_unban = "Разбанить"
-russian.menu_discount = "(скидка"
-russian.menu_seller = "Пожалуйста, свяжитесь с администратором через QQ-группу" -- барыга
-russian.precaching_resources = "Предзагрузка ресурсов..."
-russian.menu_play = "Начать игру"
-russian.menu_resume = "Продолжить"
-russian.menu_disconnect = "Отключиться"
-russian.menu_credits = "Благодарности"
-russian.menu_settings = "Настройки"
-russian.menu_discord = "Discord"
-russian.menu_donate = "Пожертвования"
-russian.menu_wiki = "Вики"
-russian.menu_my_life_my_rules = "Правила"
-russian.menu_sure = "Вы уверены?"
-russian.menu_yes = "Да"
-russian.menu_no = "Нет"
-russian.menu_do_precache_or_nah = "Предзагружать данные?"
-russian.menu_precache_hover = "Во время предзагрузки вы все еще можете возродиться"
-russian.menu_no_precache_hover = "Предзагрузку следует пропускать только если время загрузки превышает 4 минуты и вас из-за этого выкидывает\nПредупреждение: во время игры ожидаются большие лаги"
-russian.menu_quickchat = "Быстрый чат"
--- TASKS
-russian.tasks_evacuate_personnel_and_defend_comrades = "Эвакуировать объект, помогать союзникам"
-russian.tasks_cn_escape = "Вернуть активы и эвакуироваться"
-russian.tasks_escape_from_site19 = "Покинуть объект"
-russian.tasks_sgoc = "Найти броню GOC и взорвать боеголовку"
-russian.tasks_author = "АВТОР:"
-russian.tasks_suiu = "Взломать целевой компьютер и вызвать подкрепление"
-russian.tasks_evacuate_personnel_and_terminate_enemies = "Эвакуация персонала, ликвидация SCP и Класса-D"
-russian.tasks_coordinate_mtf_peasants = "Руководство отрядом"
-russian.tasks_coordinate_mtf = "Командование MTF"
-russian.tasks_hof = "Эвакуация персонала и руководство MTF/охраной"
-russian.tasks_mtf_checker = "Эвакуация, проверка персонала"
-russian.tasks_engi = "Установить турели"
-russian.tasks_support_teammates = "Вызов подкреплений по необходимости"
-russian.tasks_heal_teammates = "Лечение союзников"
-russian.tasks_recruitment = "Вербовка Класса-D"
-russian.tasks_coordinate_sci = "Главный научный сотрудник"
-russian.tasks_protect_sci = "Защита учёных"
-russian.tasks_help_d = "Помощь Классу-D"
-russian.tasks_help_teammates = "Поддержка союзников"
-russian.tasks_ntf = "Сдерживание SCP, ликвидация Класса-D, эвакуация"
-russian.tasks_nu7 = "Сдерживание SCP, устранение внешних сил"
-russian.tasks_coordinate_ntf = "Командование NTF"
-russian.tasks_skp = "Уничтожить всех на объекте"
-russian.tasks_goc = "Подрыв боеголовки до эвакуации"
-russian.tasks_coordinate_goc = "Командование GOC"
-russian.tasks_gru = "Захват документов, изменение доступа"
-russian.tasks_gru_guard = "Прикрытие отступающей группы"
-russian.tasks_coordinate_gru = "Руководство операцией ГРУ"
-russian.tasks_ci = "Координация эвакуации, извлечение Класса-D"
-russian.tasks_mines = "Установка мин"
-russian.tasks_destroy = "Уничтожение эвакуационного транспорта"
-russian.tasks_coordinate_ci = "Командование CI"
-russian.tasks_osn = "Поддержка союзников, помощь Главе Фонда" --неактивно
-russian.tasks_coordinate_osn = "руководство отрядом" --неактивно
-russian.tasks_sh = "Содействие побегу SCP, прикрытие"
-russian.tasks_coordinate_sh = "Командование Змеиным Ковчегом"
-russian.tasks_uiu = "Взлом систем и эвакуация"
-russian.tasks_coordinate_uiu = "Командование UIU"
-russian.tasks_cotsk = "Завершить ритуал призыва Алого Короля"
-russian.tasks_coordinate_cotsk = "Руководство культистами"
-russian.tasks_scp999 = "Лечение людей/SCP и побег"
-russian.tasks_terminate_enemies = "Уничтожение врагов"
-russian.tasks_arena = "Участие в аренных боях"
-russian.tasks_kill_everyone_except_sh = "Уничтожить всех вне Змеиного Ковчега"
--- ABILITIES
-russian.abilities_cd = "Время восстановления:"
-russian.abilities_name_thief = "Ловкость рук"
-russian.abilities_thief = "Крадет предметы у других"
-russian.abilities_name_bor = "Прием с захватом" -- в английском может быть "knockout"
-russian.abilities_bor = "Твое сильное тело позволяет\nзахватывать и бросать противников"
-russian.ability_name_fast = "Правильный бег"
-russian.ability_fast = "Меняет позу бега, увеличивая\nскорость при беге"
-russian.abilities_name_hitman = "Маскировка"
-russian.abilities_hitman = "Превращает тебя в подобие\nтела, на которое ты смотришь"
-russian.abilities_name_suiu = "Система \"Возлюбленный\""
-russian.abilities_suiu = "Обнаруживает местоположение твоего\n\"возлюбленного\" в радиусе"
-russian.abilities_name_scirecruit = "Набор"
-russian.abilities_scirecruit = "Превращает D-классов в ученых"
-russian.abilities_name_cispy = "Свой человек!"
-russian.abilities_cispy = "Знает, кто является D-классом"
-russian.abilities_name_matilda = "Массированное лечение" -- AOE Heal
-russian.abilities_matilda = "Массовая передозировка лечения"
-russian.abilities_name_speedwone = "Замедление"
-russian.abilities_speedwone = "Замедляет ближайшие SCP"
-russian.abilities_name_hedwig = "Линзы Хьюма"
-russian.abilities_hedwig = "Видеть SCP сквозь стены"
-russian.abilities_name_feelon = "Анти-SCP мины"
-russian.abilities_feelon = "Установка противо-SCP мин"
-russian.abilities_name_invis = "Скрытие следов"
-russian.abilities_invis = "Скрывает следы на 30 сек"
-russian.abilities_name_lomao = "Ускорение"
-russian.abilities_lomao = "Повышает скорость вам и союзникам"
-russian.abilities_name_shield = "Энергощит"
-russian.abilities_shield = "Создаёт защитный щит против SCP"
-russian.abilities_name_buster = "Усиление" --не используется
-russian.abilities_buster = "Усиление себя и окружающих" --не используется
-russian.abilities_name_kelen = "Возмездие"
-russian.abilities_kelen = "Увеличивает урон по SCP"
-russian.abilities_name_engi = "Турель"
-russian.abilities_engi = "Установка турели против SCP"
-russian.abilities_name_ntfspec = "ЭМ-сеть"
-russian.abilities_ntfspec = "Временно обездвиживает SCP"
-russian.abilities_name_ntfcom = "Сканирование камер"
-russian.abilities_ntfcom = "Поиск персонала через камеры"
-russian.abilities_name_cicom = "Вербовка!"
-russian.abilities_cicom = "Вооружает Класс-D и вербует в Хаос"
-russian.abilities_name_cimine = "Клеймор"
-russian.abilities_cimine = "Установка мощной мины"
-russian.abilities_name_cijugg = "Высокоэнергетические боеприпасы"
-russian.abilities_cijugg_desc = "Использует аномалию [ДАННЫЕ УДАЛЕНЫ]\nдля усиления пуль на 25 секунд."
-russian.abilities_name_grucom = "Допрос"
-russian.abilities_grucom = "Выявление целей через пытки"
-russian.abilities_gru_shield = "Мобильный щит"
-russian.abilities_gru_shield_desc = "Развёртывание подвижного защитного щита"
-russian.abilities_gru_fighting = "Боевой прорыв"
-russian.abilities_gru_fighting_desc = "+Урон по SCP (15 сек)"
-russian.abilities_gru_buff = "Красный прилив"
-russian.abilities_gru_buff_desc = "Лечение, броня и выносливость союзникам"
-russian.abilities_name_gocspec = "Телепорт GOC"
-russian.abilities_gocspec = "Установка телепорт-маяка"
-russian.abilities_name_goccom = "Невидимость"
-russian.abilities_goccom = "Полная невидимость без следов"
-russian.abilities_name_gocjag = "Энергобарьер"
-russian.abilities_gocjag = "Активирует щит для защиты себя и\nсоюзников"
-russian.abilities_name_skpjager = "Расширенные пули" -- не знаю, что это
-russian.abilities_skpjager = "Ты будешь использовать расширенные пули." -- не знаю, что это
-russian.abilities_name_shcom = "Черная дыра"
-russian.abilities_shcom = "Создает черную дыру, которая телепортирует\nвас в любое место комплекса"
-russian.abilities_name_shpsycho = "Плотоядный пистолет"
-russian.abilities_shpsycho_desc = "Активирует способность SCP-127-1 на 30 секунд.\nПопадания снарядами с зубами наносят дополнительный урон.\nУничтожение цели запускает эффект\nсамовосстановления SCP-127-1 у пользователя."
-russian.abilities_name_shpspecial = "Слёзы народа"
-russian.abilities_shpspecial_desc = "Активируйте свою таинственную способность\nИсцеляйте союзников поблизости и давайте пуленепробиваемость\nЧем больше союзников рядом, тем сильнее эффект\nНекоторые предметы SCP дают особый эффект при использовании этого навыка..."
-russian.abilities_name_uiucom = "Слушать по рации"
-russian.abilities_uiucom = "Показывает людей с активированной рацией"
-russian.abilities_name_uiuspec = "Запирание двери"
-russian.abilities_uiuspec = "Запирает дверь на некоторое время"
-russian.abilities_name_uiuclocker = "Усиление функций"
-russian.abilities_uiuclocker = "На некоторое время повышает твою\nскорость и сопротивление пулям\n(может иметь другие эффекты)"
-russian.abilities_name_cotskpsycho = "Последний шанс"
-russian.abilities_cotskpsycho = "Восстановите своё здоровье, увеличьте скорость,\nзатем умрите через 30 секунд"
-russian.abilities_name_scarlet_range = "Алый Поле"
-russian.abilities_scarlet_range_desc = "Выпустите поле урона в указанной точке; любой\nне-Ребёнок Алого Короля, входящий в поле,\nполучит урон, часть которого превращается в\nпитание для каждого преданного последователя"
-russian.abilities_name_uiuagentspec = "Эхолокация"
-russian.abilities_uiuagentspec = "Особая граната, создающая эхо\nв помещении, помечая каждого врага\nрядом с вами и вашими товарищами."
-russian.abilities_name_uiuagentcmd = "Токсичная граната"
-russian.abilities_uiuagentcmd = "Особая граната, которая после\nвзрыва выделяет токсичные газы,\nот которых вас защищает только\nваша противогаз."
-russian.abilities_name_uiuthunder = "Грозовые Врата"
-russian.abilities_name_uiuthunder_desc = "Установите устройство 'Грозовые Врата' на дверь.\nУстройство работает 35 секунды. Любой не из UIU,\nпроходящий через дверь, получит удар током\nи временно обездвижен"
-russian.abilities_name_hof = "Демотивация"
-russian.abilities_hof = "Вы считаете, что он не представляет\nпользы для Фонда"
-russian.abilities_name_ciedd = "Минное поле Claymore"
-russian.abilities_ciedd = "Разместить мину Claymore"
-russian.abilities_enemyscan = "Око охоты"
-russian.abilities_scaneye = "Царь Алых дарует вам способность\nвидеть души других."
-russian.abilities_mtf_detector = "Детектор движения"
-russian.abilities_mtf_detector_desc = "Установите детектор движения в\nнамеренном месте. Он будет\nобнаруживать всех, кто пройдет рядом,\nи отображать их позицию в течение\n3 секунд на ваших очках."
-russian.abilities_nu7_healing = "'Страж' Станция лечения"
-russian.abilities_nu7_healing_desc = "Каждые 15 секунд лечите самого\nбольного сотрудника Фонда (не\nслужбы безопасности). Приоритет —\nчлен МTF Hammer Down с наименьшим здоровьем."
-russian.abilities_nu7_armor = "Баллистические пластины"
-russian.abilities_nu7_armor_desc = "Разместите коробку с 10 баллистическими\nпластинами на земле. Любой вооруженный\nперсонал или сотрудники в форме MTF\nмогут использовать эти пластины."
-russian.abilities_nu7_stability = "Стабилизатор реальности"
-russian.abilities_nu7_stability_desc = "Разместите переносной стабилизатор\nреальности 'Скрантона' на земле. Все\nSCP, попавшие в его зону действия, будут\n'подавлены'."
-russian.abilities_nu7_device = "Тактическая платформа"
-russian.abilities_nu7_device_desc = "Планшет с функциями для ЧС."
--- Способности в режиме Kongshu
-russian.abilities_ciagent = "Милость!"
-russian.abilities_ciagent_desc = "Милость Воздушных сил Хаоса никогда не заканчивается~\nИсцеляет союзников и восстанавливает выносливость."
-russian.abilities_protector = "Верность!"
-russian.abilities_protector_desc = "Эта слава не только моя!\nИсцеляет союзников и восстанавливает выносливость."
-russian.abilities_ottospeedup = "Вперёд!"
-russian.abilities_ottospeedup_desc = "Союзники получают 3-й уровень ускорения на 15 секунд\nи 3-й уровень регенерации на 15 секунд."
---SCP способности
+你找到了装备,进行主要目标任务开启核弹.
+你不能为这种类型的武器补充已达到上限.
+弹药箱内没有这种弹药.
+弹药箱里已经没有这种武器的弹药了
+把需要弹药的武器拿出来.
+仪式被打断了,你需要重新开始
+未知对象的入侵被打断!
+警告!未知对象正在入侵我们的现实!
+设施武装力量接到新任务:阻止入侵!
+你没有工具来修理发电机.
+武器改装可用!按下按钮
+改装你的枪
+你离开了改枪范围.
+已收到数据.待破解的计算机:
+所有需要的数据已发送给技术部门,现在快速逃离设施!
+已获取到的文件数量:
+还需要获得的文件数量:
+所有文件已获取完毕!
+这种饮料不会在这里留下任何痕迹,我不会喝那个!
+这真是个坏主意!
+取下当前夜视仪.
+进入对讲机的手动频道编辑模式,按 \"RMB\".
+您进入了对讲机的手动频道编辑模式.请按照频道表进行操作. ( NNN.N,N = natural number,N < 10 )
+在不进行任何更改的情况下退出此模式,按 \"RMB\". 进行变更,按 \"ENTER\".
+不幸的是,我们无法更改无线电频道.按照频道表.
+等等,SCP正在冷却.
+隐身效果将在
+秒后才可以使用
+隐身激活.尽量避免与他人进行身体接触,因为隐身效果会消失.
+如果你使用武器,同样的事情也会发生;您的隐身将在 20 秒内消失.
+隐身激活.持续时间 - 20 秒s.
+隐身效果被移除.
+激活模式 \"潜行\".
+你的移动速度提高了一倍.
+在当前模式下,你不能攻击任何人,反过来其他人也看不到你.
+你可以通过按“R”键离开这个模式,你的角色将出现在当前位置.
+现在你在你的口袋维度.
+通过按键 \"H\" 你可以回到原来的位置,从刚刚进维度的地方.
+你可以继续传送到口袋的随机位置使用按键 \"T\".
+作为SCP击杀敌人
+爆头击杀
+击杀敌人
+治疗量
+造成伤害
+激活模式 \"幽灵\".
+你的移动速度已经提高.
+在这种模式下,你不能攻击任何人.人们将无法看到你.
+您可以通过按下按钮退出此模式 \"R\". 你的角色将出现在当前位置.
+现在你处于自己的维度.
+通过按下按钮 \"H\" 你可以回到你的第一个位置,在那里你进入了你自己的维度.
+您可以通过按下按钮传送到随机点 \"T\".
+您无法退出该模式 \"幽灵\" 在这里.
+You are not in the field of view of your body.
+现在你可以通过按下按钮进入狂热 \"T\"
+杀死
+你被队友杀死了
+如果你觉得你被杀存在疑问,那么你可以写一份!report
+你杀了一个队友
+你被杀了被:
+注意,设施紧急疏散已经开始,立即离开设施!
+治疗完成,你的健康状况已恢复.
+Demo recording has been stopped to perform full game update
+你无法穿上这套制服
+--统计数据
+APC被摧毁
+第一个目标完成
+激活阿尔法弹头
+逃离
+阿尔法弹头的引爆
+死于SCP-914
+修
+直升机被摧毁
+格鲁乌救援装甲车被毁
+绯红之王的召唤
+目标完成
+成功获取文件
+抢夺高价值SCP物品
+窃取SCP物品
+SCP撤离
+死于SCP-009
+死于\"尖啸\"
+发现间谍
+康复
+勇敢
+GRU Interrogation
+误伤队友
+和平主义者
+击杀敌人
+爆头
+SCP收容
+死亡
+俘虏 D级人员
+Cheemers 救援
+带走最重要的 SCP
+疏散 科研
+特殊研究员 疏散
+撤离失败
+幸存时间
+死于 SCP-409
+VIP额外经验
+疯狂星期四V你50
+格鲁乌任务完成
+成功逃离设施
+Site19重新恢复秩序
+--kongshu_胜利经验
+CI空输占领了Site19
+落锤特战分队保卫住了Site19
+--结束回合显示的东西
+传送到未知位置.
+在APC撤离.
+被APC俘虏和救援
+D级人员.
+更多D级人员.
+直升机撤离.
+火车撤离
+被不知名小队俘虏.
+从Site-19逃脱并被俘虏[数据已删除]
+任务完成.
+任务失败.
+逃脱Site-19.
+在 48 号口发现了汽车.
+对象使用了 \"特殊的方法\" O5紧急..单轨列车逃跑.
+成功乘坐BTR逃离设施
+基金会成功遏制了收容
+任务失败,继续潜伏下去!
+逃离失败,你被基金会继续关在了Site19
+奔跑着穿过了隧道
+--空输逃离
+你被传送到了一片未知空间(朋友~ 要不要读书)
+不知怎么的,106的空间突然多出了一个人
+你很幸运,传送出了site19,但是你的位置嘛....
+你被传送到了[数据删除]光年外的一个星球上
+你的周围的墙上全是泛黄的墙纸以及不知道从何处不停传来的嗡嗡声
+一名西装男子对你很感兴趣,并\"雇佣\"了你
+--蛇之手随机传送门
+进入传送门奖励
+你被传送到了site-[数据删除]
+你正在下落,狂风撕碎你的身体
+瞬间!强大压强将你压碎
+你回到你家的床上
+周围只剩下烦躁的白
+你回家了,但是在万米高空
+你被送到了一个全是SCP-173的现代都市里...
+对你的出现,收容间管理人员表现出困惑
+[数据删除]光年外,你漂浮在虚空中,停止了思考
+你被传进了图书馆,蛇之手对你的出现感到惊喜
+你被传进了图书馆,蛇之手正在思考如何把你从墙里弄出来
+你出现在了一片未知区域,这里只有死一样的寂静
+GOC的正在测试新的能量武器,而你刚好在武器的射程内
+--事件特殊结局和奖励
+你很幸运核弹头没有爆炸
+核弹幸运星
+--VOICE/TEXT CHAT
+轻语
+说
+问
+喊
+玩家在线
+说...
+(对你说)
+未知
+(内部通讯)
+复制
+禁言
+Motivational mute
+你只能在观察者模式或身为SCP时禁言他人
+再接再厉!
+愚公能移山,你也能完成这个任务!
+先做再想!
+种瓜得瓜,种果得果,永远做最好的自己!
+从哪里跌倒就从哪里爬起来!
+越是激烈的战斗也就越能成就自己!
+不要纠结于过往的失误!
+你会选择自己掌控自己的命运还是别人来掌控.
+以后的路还长不要在一天内就确定了自己的命运.
+用乐观的心态对待每一天!
+你是最棒的,最强的.
+你已经具备了成功的一切条件!
+这个世界需要你!
+小萌新
+--MENU
+在左下角显示SCP的技能
+显示死亡画面
+看到你的双腿
+更新日志
+服主
+开发者
+管理者
+服务器总主管
+人事主管
+技术人员
+外交人员
+模型制作者
+管理员主管
+地图制作者
+性感化学兵
+启用观察者第一人称
+武器视角范围
+持枪视角Z轴调整
+关闭人物说明
+以支援身份复活
+成为D级人员时自动转变成\"MIO\"
+不显示\"小萌新\"前缀
+技能按键
+物品栏
+向左倾
+向右倾
+语言
+特供版
+简体中文
+繁体中文
+英文
+俄语
+文字与语音聊天
+渐变语音聊天
+显示存活的玩家
+关闭彩色前缀闪烁
+禁用聊天头像
+聊天圆形头像(如果FPS下降,则禁用)
+清除表情符号文件夹
+清除下载的图像文件夹
+音频
+静音所有观察者
+在观察者模式下,静音所有活的玩家
+音乐音量
+音乐
+整体音量
+追逐音量
+复活音量
+场景音量
+杂项音量
+播报员音量
+画面设置
+隐藏底部的名字
+SCP透视(作为SCP)
+禁用HUD(可能存在Bug)
+景深与锐化
+纹理过滤
+阴影过滤
+黄色滤镜
+蓝色滤镜
+在外部使用滤镜
+滤镜强度
+特殊设置
+头衔
+VIP设定
+以RGB显示昵称
+显示VIP图标
+仅以男性角色复活
+仅以女性角色复活
+当前语言:
+按下任何键
+--тут просто длиннее нельзя,кириллица не влезет,а в английском можно press any key
+更改
+按下 \"END\" 以取消
+请访问QQ群询问管理员
+VIP状态
+天
+永久
+其它
+减少当前警告
+设置 \"新手\"
+包括:一个月的VIP和15级(等级加到当前等级之上)
+1 级
+45 级
+Ungag (语音聊天)
+少于一周
+多于一周
+Unmute (聊天)
+解除封禁
+(折扣
+请访问QQ群询问管理员
+正在预加载资源...
+开始游玩
+继续
+断开连接
+鸣谢名单
+设置
+Discord
+捐款
+维基
+规则
+你确定吗？
+是的
+不是
+要预加载内容吗？
+在预加载期间,你仍然有机会复活
+你仅应在加载时间大于4分钟且因此被踢出的情况下跳过预加载\n警告:游玩期间预计会有大量卡顿
+快速聊天
+--TASKS
+疏散设施,帮助队友
+夺回属于我们的东西,逃离设施
+逃离设施
+找到GOC装甲并引爆阿尔法弹头
+AUTHOR:
+找到目标电脑黑入它并呼叫支援
+帮助基金会遏制收容失效
+疏散人员,消灭SCP和D级
+领导自己的队员
+领导 MTF
+疏散设施人员并领导机动特遣队与安保部门
+疏散人员,检查人员信息
+放置炮台
+在适当时候呼叫支援帮助设施遏制混乱
+治疗队友
+招募D级
+首席科学人员
+保护科学家
+帮助D级
+帮助队友
+收容SCP,消灭D级,疏散人员
+收容SCP,清除外部势力
+清理掉所有受[感染]的人
+夺取控制权,封锁整个地下设施
+领导 NTF
+消灭现场的所有人
+撤离前引爆阿尔法弹头
+完成奇术的部署,消灭所有威胁
+领导 GOC
+夺取资料,篡改权限
+掩护侵入部队撤离
+带领小队完成任务
+站点人员的分散疏散,疏散D级
+设置地雷
+摧毁撤离飞机
+领导 CI
+Support teammates,help HoF
+lead squad
+帮助SCP逃脱,掩护SCP
+指挥其他蛇之手队员
+侵入设施电脑并且逃脱设施
+指挥其他UIU队员
+完成仪式并召猩红红之王
+指挥其他教众
+治愈人或SCP,逃脱
+消灭敌人
+参加竞技场
+杀死除了蛇之手之外的所有人
+--能力
+冷却时间:
+你无权使用该技能
+你的技能改变了
+精巧手法
+偷取他人手上的物品
+抱摔
+你强壮的身体让你可以抱\n摔他人
+正确跑势
+更改跑步姿势挺高跑步时\n的速度
+伪装
+将你自己伪装成你看着的\n尸体的模样
+\"心上人\"系统
+能探测到\"心上人\"距离你\n的位置
+招募
+将D级人员变为科学家
+自己人!
+知道谁是D级人员
+己方对讲机
+找到[对讲机]的位置
+范围治疗
+对你周围的人进行一次过\n量治疗
+减速
+使你周围的SCP减速
+休谟眼镜
+你能穿墙看到SCP
+反SCP地雷
+设置反SCP地雷
+隐匿踪迹
+能够让你隐藏自己的踪迹\n30秒
+加速
+使你与你周围的人加速
+护盾
+在你周围创造一个护盾,从\nSCP的攻击中保护你
+Boost
+Boost yourself and people around you.
+愤恨
+增加你和周围人对SCP的伤\n害
+炮台
+设置一个炮塔攻击SCP
+电磁捕获网
+可以将SCP定在原地几秒
+摄像头扫描
+在设施摄像头上查找人员
+入伍!
+武装D级,并将D级人员转换\n成混沌分裂者
+阔剑地雷
+放置一枚高伤害的阔剑\n地雷
+高能弹药
+通过使用携带的[数据删除]\n异常能够在25秒加强使用\n者所发射的子弹
+拷问
+拷问目标让其透露出同阵\n营人员的位置
+机动护盾
+在瞄准的位置部署一块可\n以抵挡攻击机动护盾
+战斗潮流
+加强周围队友攻击敌人和S\nCP的伤害15秒
+赤色浪潮
+恢复周围队友的生命值并\n获得一定护甲值,且短暂时\n间内不会消耗体力
+GOC 传送器
+放置传送设备并在使用时\n传送到它
+隐身斗篷
+能够使自身完全隐形,不留\n一丝痕迹...
+能量护盾
+激活能量护盾保护自己和\n队友
+Expansive bullets
+You will use expansive bullets.
+虫洞
+创建一个虫洞,它会把你们\n传送到设施的任意一处地\n点
+血肉之枪
+激活SCP-127-1的特殊能力\n30秒在这段时间内被攻击\n到的目标会被命中在身上\n的牙齿所啃食;并且当你击\n杀目标后会受到来自\nSCP-127-1自愈效果
+众人之血泪
+激活你的奇术能力\n让周围的己方恢复生命值\n和拥有子弹抗性\n周围的己方越多效果也就\n越强大\n当你持有某些SCP物品使\n用技能时会有特别的效果...
+对讲监听
+显示启用了对讲机的人员
+锁门
+把门上锁一段时间.
+机能强化
+短时间内挺高自身移速和\n子弹抗性(在某时可能会出\n现其他作用)
+最后的机会
+恢复你的健康,增强自己速\n度,然后在30秒后死亡
+猩红力场
+原地释放一个伤害力场,任\n何非猩红之子的生物进入\n力场都会受到伤害,而部分\n伤害会转换成养分滋润每\n一个虔诚的信徒
+回声探测
+一枚特殊的手榴弹,它会在\n房间里产生回声,标记你和\n你的队友附近的每一个敌\n人.
+\'绿烟\'手雷
+一枚特殊的手榴弹,它会在\n爆炸后产生有毒气体,只有\n你的防毒面具对这种气体\n免疫.
+闪电门
+在一扇普通的门上安放'闪\n电门'装置,该装置会存在3\n5秒,非UIU人员经过时会受\n到电击并失去瞬时的行动\n能力
+降职
+你认为他对基金会没有任何用处
+阔剑地雷
+放置阔剑地雷
+狩猎之眼
+猩红之王赐予你看见别人\n灵魂的能力.
+运动检测器
+布置一个运动探测器在你\n所瞄准的位置,当有人从它\n旁边经过时,会被它检测到\n并将3秒内的位置信息显示在\n你的目镜上
+\'守护者\'治疗站
+每15秒治疗范围内血量最\n少的基金会武装单位(非保\n安单位),优先选择MTF落锤\n中血量最少的队员
+防弹插板
+在地上放置一个装有10个防\n弹插板的盒子,任何武装单\n位或穿着MTF衣服的人员\n都能使用其中的防弹插板
+现实稳定锚
+在地上部署一个便携式的\n'斯克兰顿'现实稳定锚,任\n何走进其影响范围的SCP都\n将受到'压制'
+智能操作平台
+佩戴在手臂上的便携式的\n智能平板其搭载的四项功\n能能够辅助佩戴者应对收\n容失效时的危险情况
+寒冰毒雾
+掷出一个释放类似\"SCP-2\n44\"寒冷气体的投掷物,它\n能在极短时间内让目标受\n到强烈的干扰
+靶向失能
+发射一个微小的长方体特\n殊射弹,被击中的SCP将无\n法使用它的技能(某些SCP\n的技能不会受到影响)并\n且其获得二级\"易伤\"效果
+精准射击
+大幅度降低你的枪械后座\n力并给予你个3级\"子弹护\n盾\"效果,同时周围的己方\n单位也会小幅度降低枪械\n后座力
+生命侦测
+快速侦测设施内SCP的生\n命状态以及他们大致所处\n的位置
+快速稳定锚
+一种非常轻便小巧的现实稳定\n锚,能够快速部署\n但功能性上远不人其他类\n型的稳定锚,续航时间也有\n限...
+暗面
+激活你的特殊能力,让它\n们感受你的暗黑之面
+老兵本能
+开启技能后获得35秒的3\n级枪械后座降低效果和5\n级快速换弹效果
+冲击手雷
+WoA-G-3型异常手雷,掷出\n后能够对周围的人员造成\n15秒武器后座力提升和易\n伤效果和3秒头疼效果
+现实尖啸弹
+WoA-G-15型异常手雷,掷出\n后将在一秒内形成一片\n\"虚空\"区域,处在\"虚空\"内\n的玩家就会被杀死,并彻\n底消失
+信息探针
+向瞄准方向发射一根\"虚\n拟\"探针,其会探测周围一\n定范围的\"受影响\"对象
+狂躁抑郁
+你的刀存储的能量越多,\n开启技能后你就越强大
+--技能5K
+强化奇术
+给予自身和周围己方五级\n子弹抗性和七级SCP护盾\n以及三级生命恢复的效果
+幽冥化
+将自身完全幽冥化,任何\n攻击都无法伤害你,你也\n可以轻易穿过别人,但在\n此之间你无法攻击
+时间领域
+创造一个静止6.5秒时间的\n小范围球形时间静止区域\n这里面只有身穿GOC装甲\n的人可以活动
+存在于过去
+在当前位置创建一个属于\n你自己的时间节点,当你遭\n受到致命伤害时会自动重\n置你的时间并回到放置节\n点的位置上
+--kongshu mode技能
+恩!情!
+CI空输的恩情还不完~\n为周围的己方加血和体\n力
+忠!诚!
+这份荣光,我白帽不会独\n享\n为周围的己方加血和体\n力
+冲刺!冲!
+周围的己方获得一个15秒\n的3级加速效果和一个15\n秒的三级恢复效果
+--SCP能力
 --049
-russian.scp049curing = "Медицинская доброта"
-russian.scp049curing_desc = "Укрепляет все сущности SCP-049-2"
+医者仁心
+强化所有SCP-049-2实体
 --912
-russian.scp912smoke = "Смоковая граната"
-russian.scp912smoke_desc = "Бросьте смоковую гранату вперёд"
-russian.scp912knife = "Атака!"
-russian.scp912knife_desc = "Используйте тактический нож для атаки и временно увеличьте скорость передвижения"
+烟雾弹
+向前投掷一颗烟雾弹
+突进!
+使用战术匕首攻击并在短\n时间内提高移动速度
 --638
-russian.scp638bite = "Укус"
-russian.scp638bite_desc = "Укусите врага"
-russian.scp638scream = "Пронзительный крик"
-russian.scp638scream_desc = "Выпустите крик в ближней или средней дистанции"
-russian.scp638fearscream = "Ужасающий крик"
-russian.scp638fearscream_desc = "Издайте крик вблизи целей"
+撕咬
+用你的嘴巴咬别人
+凄厉尖叫
+在一个中近距离对目标进\n行尖叫
+恐惧尖叫
+对近距离的目标进行尖叫
 --062fr
-russian.scp062frconsume = "Выпить до последней капли"
-russian.scp062frconsume_desc = "Питается от мертвых тел, чтобы помогать себе эволюционировать"
-russian.scp062frrage = "Гнев хищника"
-russian.scp062frrage_desc = "Быстро двигайтесь вперёд, нанося огромный урон целям"
-russian.scp062frscreaming = "Резкий рычание"
-russian.scp062frscreaming_desc = "Издаёт яростный рычание, парализуя всех вокруг"
-russian.scp062frtracking = "Охотничий инстинкт"
-russian.scp062frtracking_desc = "Видит цели в определённом радиусе"
-russian.scp062frjumping = "Смертельный прыжок"
-russian.scp062frjumping_desc = "Прыжок на ближайшую цель"
+敲骨吸髓
+从死去的尸体汲取养分\n帮助自己进化
+捕食者的怒火
+向前冲刺并对目标施加巨\n大的伤害
+尖锐咆哮
+发出剧烈的咆哮让周围的\n目标暂时失去行动能力
+狩猎本能
+能够透视到周围一定范围\n的目标
+死亡飞扑
+跳起来飞扑向最近的目标
 --076
-russian.scp076throw = "Бросок метательного ножа"
-russian.scp076throw_desc = "Запустите метательный нож в выбранную цель"
-russian.scp076speedup = "Скорость"
-russian.scp076speedup_desc = "Увеличивает скорость и скорость атак на короткое время"
-russian.scp076kill = "Отрубить голову"
-russian.scp076kill_desc = "Используйте вращающийся удар, чтобы отрубить головы всех врагов в зоне поражения"
+投掷飞镖
+向瞄准的方向发射一枚飞\n镖
+迅捷
+短时间内提升速度和挥刀\n速度
+枭首
+向前冲刺使出一记回旋斩\n斩下区域内敌人的头颅
 --106
-russian.scp106ghost = "Скрытая Охота"
-russian.scp106ghost_desc = "Погрузитесь под землю и получите высокую\nскорость движения на 10 секунд.\nАвтоматически появитесь через 10 секунд"
-russian.scp106sweethome = "Карманное пространство"
-russian.scp106sweethome_desc = "Проникайте в карманное пространство"
-russian.scp106rottinghole = "Гниющий вихрь"
-russian.scp106rottinghole_desc = "Создайте чёрную дыру, которая притягивает людей в ваше карманное пространство"
-russian.scp106teleport = "Коррупционный Прыжок"
-russian.scp106teleport_desc = "Телепортироваться к отмеченной точке"
-russian.scp106teleport_0 = "Отметить точку телепортации"
-russian.scp106teleport_1 = "Телепортироваться к отметке"
-russian.scp106teleport_2 = "Телепортироваться в предыдущую позицию"
-russian.scp106cantmarked = "Здесь нельзя установить портал"
-russian.scp106cantback = "Нельзя вернуться обратно"
-russian.scp106markedpos = "Вы отметили точку телепортации"
-russian.scp106notpos = "Нет доступной позиции"
-russian.scp106markedally = "Вы отметили союзника"
-russian.scp106cantmarkedally = "Нельзя отметить его/её как союзника"
-russian.scp106current_ally = "Текущий союзник: "
-russian.scp106ending_recontained = "Вы повторно заперты...."
-russian.scp106recontained = "SCP-106 Повторно Содержится"
-russian.scp106recontained_by_serpent = "Ты сумасшедший? Ты [ДАННЫЕ УДАЛЕНЫ]!"
-russian.scp106recontainedman = "Как приманка для повторного сдерживания SCP-106"
-russian.scp106recontainedman_serpent = "Ты чем вообще занимаешься?!"
+隐匿追猎
+遁入地下后的10秒内移动\n速度将非常快,10秒后将自\n动从地底出来
+口袋空间
+进入口袋空间
+腐蚀黑洞
+从地面向瞄准方向放出紧\n贴地面的黑洞,所有碰到黑\n洞的人都会被传送到你的\n口袋空间内
+腐败传送
+传送到你标记的位置
+标记一处传送点
+传送至标记点
+传送至上一次传送的位置
+你不能在这里放置传送门
+你不能传送回去
+你标记了一处传送点
+没有位置,无法传送
+你标记了一个盟友
+你无法标记他/她作为你的盟友
+当前盟友:
+你被重新收容了....
+重新收容SCP-106
+你疯了? 你个[数据删除]!
+作为收容106的诱饵
+你是干什么吃的?!
 --542
-russian.scp542charge = "Экстренная диагностика"
-russian.scp542charge_desc = "542 начинает бег, чтобы 'лечить' первого человека, которого он касается"
-russian.scp542grab = "Диагностика на месте"
-russian.scp542grab_desc = "Ближе к телу для 'лечения' человека"
-russian.scp542tracking = "Чуткость врача"
-russian.scp542tracking_desc = "Способность видеть всех людей с уровнем здоровья ниже 60%"
+急诊断
+542进入奔跑模式并\'治疗\'\n第一个被触摸到的人类
+原地诊断
+近距离\'治疗\'一名人类
+医者的敏锐
+能够看见所有低于60%血量\n的人类
 --999
-russian.scp999recover = "Исцеление"
-russian.scp999recover_desc = "Полностью восстанавливает здоровье человеческих персонажей (SCP может только немного восстанавливать здоровье)"
-russian.scp999rangeheal = "Массовое лечение"
-russian.scp999rangeheal_desc = "Лечит всех людей в вашем окружении, включая вас"
-russian.scp999slimetrap = "Слизневая ловушка"
-russian.scp999slimetrap_desc = "Приклеивает человека на месте, лишая его движения"
-russian.scp999slimebilnd = "Слизневая слепота"
-russian.scp999slimebilnd_desc = "Бросает слизь вокруг, ослепляя людей"
+治愈
+完全治愈人类角色(SCP只\n能恢复少量的生命值)
+范围治疗
+治愈你周围的每一个人包\n括你自己
+黏黏陷阱
+将一个人黏在原地无法移\n动
+黏液障目
+向周围的人甩出黏液并使\n他们看不见东西
 --973
-russian.scp973stun = "Электрический шок"
-russian.scp973stun_desc = "Останавливает цель на несколько секунд"
+电击
+把目标定在原地几秒
 --2012
-russian.scp2012shield = "Поднять щит!"
-russian.scp2012shield_desc = "Поднимите щит"
-russian.scp2012charge = "Быстрый рывок"
-russian.scp2012charge_desc = "Получите кратковременное увеличение скорости"
-russian.scp2012crossbow = "Арбалет"
-russian.scp2012crossbow_desc = "Используйте арбалет для дальнобойной атаки"
-russian.scp2012sword = "Двуручный меч"
-russian.scp2012sword_desc = "Используйте двуручный меч для атаки"
-russian.scp2012shielddefence = "Щитовая защита"
-russian.scp2012shielddefence_desc = "Держите щит перед собой для защиты"
-russian.scp2012shieldsmash = "Тяжёлый удар щитом"
-russian.scp2012shieldsmash_desc = "Совершите удар щитом вперёд"
+举盾!
+举起盾牌
+英勇冲锋
+获得短时间的速度提升
+十字弩
+使用十字弩进行远程攻击
+巨剑
+使用巨剑进行攻击
+盾牌防御
+将盾牌挡在胸前进行防御
+沉重盾击
+使用盾牌向前进行一次撞\n击
 --939
-russian.scp939eatbody = "Пожиратель трупов"
-russian.scp939eatbody_desc = "Поедайте трупы для восстановления здоровья и увеличения скорости"
-russian.scp939sounddisguise = "Мимикрия звуков"
-russian.scp939sounddisguise_desc = "Кратковременно сбивает всех с толку, заставляя их думать, что ваши шаги — это обычные человеческие шаги"
-russian.scp939amnc227 = "Амнестическое облако"
-russian.scp939amnc227_desc = "Выпустите облако AMNC-227 на месте\nТе, кто случайно его вдохнёт, забудут о вашем существовании"
+食腐者
+吃掉尸体恢复血量和提升\n自身的移速
+声音模仿者
+短时间内所有人会错将你\n的脚步听成普通人类的脚\n步
+遗忘气团
+在原地释放一团AMNC-22\n7气体\n不小心吸入这种气体的人\n将会忘记你的存在
 --811
-russian.scp811acidbomb = "Кислотная граната"
-russian.scp811acidbomb_desc = "Выпускает кислотную гранату в выбранную цель"
-russian.scp811acidbombstrong = "Кислотная граната (усиленная)"
-russian.scp811acidbombstrong_desc = "Выпускает более мощную кислотную гранату"
-russian.scp811acidmine = "Кислотная мина"
-russian.scp811acidmine_desc = "Устанавливает кислотную мину на землю"
-russian.scp811vomit = "Кислотная рвота"
-russian.scp811vomit_desc = "Направляет сильную кислотную струю на выбранную цель"
-russian.scp811acidbigbomb = "Большая кислотная бомба"
-russian.scp811acidbigbomb_desc = "Взрывается в огромном радиусе, нанося значительный урон"
+酸液弹
+向瞄准方向吐出一发酸液\n弹
+酸液弹(强化)
+向瞄准方向吐出一发更强\n大的酸液弹
+酸液地雷
+在地上放置一枚酸液地雷
+酸液喷射
+向瞄准的方向喷射出大量\n的酸液
+酸液炸弹
+以自身为原点爆发出巨大\n伤害
 --682
-russian.scp682armor = "Чешуйчатая броня"
-russian.scp682armor_desc = "Укрепляет чешуи, уменьшая урон от пуль"
-russian.scp682speedup = "Ускорение"
-russian.scp682speedup_desc = "Кратковременное увеличение скорости"
-russian.scp682regeneration = "Неумирающий чудовищный организм"
-russian.scp682regeneration_desc = "Восстанавливает здоровье"
-russian.scp682screming = "Ненавистный рев"
-russian.scp682screming_desc = "Временно обездвиживает цели в округе"
+鳞片装甲
+让覆盖在自身的鳞片硬化\n使自身受到更少的子弹伤\n害
+速度提升
+短时间提升自身的移速
+不死孽物
+恢复一定的血量
+憎恶怒吼
+让周围的目标暂时失去行\n动能力
 --3114
-russian.scp3114strangle = "Удушение"
-russian.scp3114strangle_desc = "Удушение жертвы с нанесением\nудушающего урона"
-russian.scp3114disguise = "Маскировщик"
-russian.scp3114disguise_desc = "Принятие облика жертвы через\nношение её кожи (Эффективная маскировка)"
-russian.scp3114angry = "Костяная Ярость"
-russian.scp3114angry_desc = "Нанесите мощную серию из 4 ударов вперёд"
-russian.scp3114hint1 = "ПКМ для сброса маскировки"
+扼杀
+扼住目标的敌人咽喉并使\n其窒息
+伪装者
+剥下尸体的皮肤并覆盖在\n自己的身上(别人很难看出\n你的伪装!)
+骷髅怒焰
+向前打出一段高伤害的\n4连击
+按鼠标右键可以卸下伪装
 --1903
-russian.scp1903attack = "Психическая атака"
-russian.scp1903attack_desc = "Наносит небольшой урон цели и\nнакладывает один уровень 'Маскарада'"
-russian.scp1903attack_special = "Хрупкий разум"
-russian.scp1903attack_special_desc = "Требуется эффект 'Маскарад' на цели\nЧем больше уровней, тем выше урон"
-russian.scp1903mask = "Кроличья маска"
-russian.scp1903mask_desc = "Воздействует на цель, превращая её в\nносителя твоей силы. Через 60 секунд\nцель умирает, накладывая 5 уровней\n'Маскарада' на ближайших врагов"
-russian.scp1903range_special = "Психоз"
-russian.scp1903range_special_desc = "Наносит урон всем враждебным целям\nв радиусе. Цели с 'Маскарадом'\nполучают больше урона и страдают от головной боли"
-russian.scp1903secret = "Тайна 1903"
-russian.scp1903secret_desc = "Вызывает галлюцинации у всех целей\nс эффектом 'Маскарад'. Показывает\nих местоположение в течение 15 секунд\nГаллюцинации длятся 5 секунд"
---ROLEMENU --AI перевод
-russian.f2_name = "Имя:"
-russian.f2_objectives = "Цели:"
-russian.f2_char_stats = "Статистика персонажа"
-russian.f2_health = "Здоровье:"
-russian.f2_stamina = "Выносливость:"
-russian.f2_choose = "Выберите кампанию из списка слева"
+精神强击
+对目标造成小额伤害并附\n加一层\"舞会假面\"效果
+脆弱心灵
+目标必须有\"舞会假面\"效\n果才能释放此技能\n目标效果层数越高该技能\n造成的伤害也就越多
+兔子面具
+影响一个目标将其转变成\n承载你能力的个体,并在\n45秒后死亡,其死亡后会对\n周围的目标施加5层\"舞会\n假面\"效果
+心灵癫狂
+对范围内的所有敌对目标\n造成伤害\n拥有\"舞会假面\"效果的目\n标会受到更多的伤害\n并对其施加头疼效果
+1903的秘密
+对所有拥有\"舞会假面\"效\n果的目标造成幻觉影响\n透视其位置15秒\n幻觉时间5秒
+--ROLEMENU --FZ翻译
+名字:
+任务:
+人物统计
+血量:
+耐力:
+在左边的列表中选择一个阵营
+--更多阵营选择
+常规模式
+空输模式
+杂项
+事件 5K
+事件
+--f2模式--
+--占位符
+未知阵营
+会在未来上线的阵营
+--5K 伊始
+GRU-CI突袭部队
+混沌分裂者几乎所有的基地在SCP基金会\"揭开帷幕\"后\n受到了来自基金会致命的攻击,绝大多数基地已被完全摧毁\n而幸存下来的混沌分裂者部队受到来自藏在\"空泡\"里的格鲁乌P(后时代)的帮助下\n组建了一支由格鲁乌P和混沌分裂者的成员构成的突袭部队\n他们利用格鲁乌P的[超传]技术四处突击基金会的站点企图找到基金会\"发疯\"的原因...
+STS \"清理者\" 5队
+STS 5队是5支STS小队中最残忍无情的队伍, 他们被O5直接允许使用一些极端危险的异常作为武器\n相较于另外4支小队, 5队的选拔是最为残酷的, 除了最普通的特种部队训练以外,还要进行更多与拥有智能异常搏斗的训练\n以及恐怖的\"忠诚\"测试、[数据删除]等训练\n5队的队员都接受过小幅度身体改造和情感剥除手术, 因此他们是5支队伍中任务完成度最高最完美的小组\n更多信息已被[封锁]....
+GOC奇术打击2组
+GOC奇术打击部队是全球超自然联盟组建的一支使用\"奇术\"进行大范围攻击的部队\n其下分为4支攻击小组——0号行动组和奇术打击1、2、3组,并且每支小组所使用的\n大范围杀伤性\"奇术\"也各不相同\n其中,奇术打击二组所使用的是一种被称为\"达摩克里斯之剑\"(又称\"悬顶之剑\")的精确\n打击奇术\n该奇术需要使用者在打击范围内建立多个发生装置才能使用,因此二组的每一次任务\n都是异常艰巨的
+机动特遣队 Nu-22 \"火箭侠\"
+机动特遣队Nu-22\"火箭侠\"是一只临时组建的快速机动部队,\n他们的任务是快速转移SCP-1440到各个人口密集的城市、难民营等区域,\n以达到快速消灭人口的目的
+机动特遣队 Nu-7 \"落锤\" 肃杀营B连
+落锤肃杀营B连是落锤特种大队中第二大的连队\n该部队整体拥有极高的军事素养,在极端环境下依旧保持出色的作战能力\n无论是丛林、荒漠还是城市区域,该部队都能成功完成作战任务
+--空输模式
+暴乱D级
+这就是由CI组织的一群暴乱D级人员!\n\n设施主管:这已经不是普通的D级人员了,必须出重拳!
+安保镇暴组
+用于镇压设施内的一切暴乱而建立的团队
+落锤特战分队
+一支特战\"小分队\"
+CI空输部队
+千呼万唤始出来的最伟大的CI部队!
+--二战模式
+美国陆军
+一支二战的美利坚合众国陆军
+纳粹德国
+本服务器不认可任何跟纳粹以及法西斯相关的思想和理论
+--f2杂项--
+--彩蛋角色
+彩蛋角色
+服务器里的彩蛋角色,只有满足某些条件下才能出现的特别角色
+--坐牢SCP
+冷板凳SCP
+这些SCP因为某些原因尚未出现在游戏中,V奶龙50助力这些SCP早日出场 :)
 --заебался короче переводил переводчиком похуй
-russian.f2_ntf = "Мобильная оперативная группа Epsilon-11 «Кошка» защищает Фонд SCP изнутри.\n\nЭто специальная оперативная группа, \n\nкоторая часто развертывается при сбоях в содержании SCP. Поэтому \n\nих действия в основном связаны с содержанием SCP."
-russian.f2_nu7 = "MTF NU-7 'Hammer Down' — это специальное подразделение размером с батальон.\n\nПодразделение Hammer Down, размещенное рядом с Site-19, — это особое подразделение,\nсозданное специально для защиты от внешних вторжений и для ликвидации сбоев в содержании.\n\nВсе их действия могут быть приказываны только Советом O5 или Командованием O4."
-russian.f2_chaos = "Хаос-Разрушители (CI) — это организация, отколовшаяся от Фонда SCP в 1924 году.\n\nОна была основана группой персонала Фонда, который перешел на сторону врага с несколькими объектами SCP.\n\nОни используют аномалии для личных целей и укрепления мирового влияния."
-russian.f2_gru = "После распада Советского Союза, ГРУ не исчезло. Их остатки все еще активны по всему миру,\n\nи обладают значительными военными силами. Они активно налаживают связи с аномальными организациями,\n\nи часто вступают в конфликты с другими аномальными группами."
-russian.f2_gru_guard = "Группа прикрытия из 6 человек, обеспечивающая безопасную эвакуацию штурмовых групп"
-russian.f2_dz = "'Сад — логово змея' — Змеиная Рука\n\nМалая, но опасная аномальная группа. Фонд мало о них знает; данные от GOC.\n\nНенавидят Фонд и GOC, выступают за сосуществование с аномалиями. Избегают убийств."
-russian.f2_uiu = "Департамент аномальных происшествий был создан в начале Холодной войны,\n\nкогда правительство США сосредоточилось на использовании аномалий и предотвращении их использования силами, лояльными Советскому Союзу.\n\nЗатем было создано специальное подразделение ФБР для быстрого реагирования на сверхъестественные происшествия и преступления."
-russian.f2_goc = "Глобальный сверхъестественный альянс (GOC) был образован после Второй мировой войны из объединения различных стран.\n\nВ него вошли ученые, медиумы, священнослужители и исследователи, работающие над уничтожением сверхъестественных существ.\n\nМногие объекты SCP были уничтожены до того, как Фонд SCP восстановил их и начал обеспечивать их содержание."
-russian.f2_sci = "Сотрудники Фонда SCP, работающие на гражданских должностях, от исследователей до простых уборщиков.\n\nБольшинство из них — обычные люди, нанятые для работы в Фонде, но есть и исключения. Старшие научные сотрудники — это опытные специалисты, которые выделяются в своей повседневной работе."
-russian.f2_sci_speical = "Эксперты из различных исследовательских подразделений Фонда SCP, отличающиеся выдающимися достижениями в своей области.\n\nОни обладают особыми навыками, которые играют важную роль в боевых действиях и содержании SCP."
-russian.f2_security = "Отдел безопасности (SD) отвечает за защиту всех объектов Фонда и SCP-проектов, независимо от их приоритетности.\n\nСотрудники безопасности проходят тщательную подготовку и являются важной силой, которая может действовать при сбоях в содержании SCP или вторжении."
-russian.f2_mtf = "Мобильные оперативные группы (MTF) — это небольшие военные подразделения, ориентированные на выполнение задач в специфических или чрезвычайных ситуациях.\n\nЭти группы иногда располагаются на определенных объектах в режиме ожидания. Их основная задача — восстанавливать содержание SCP и эвакуировать сотрудников Фонда, хотя существуют и специализированные подразделения."
-russian.f2_osn = "Специальные силы - особые формирования службы безопасности, состоящие из специалистов по взаимодействию с аномальными объектами, а также обычных сотрудников других отделов безопасности в случае НУС (необычного события). Основная задача ОСН — противодействие и охрана аномальных объектов SCP."
-russian.f2_qrt = "Отряд быстрого реагирования (QRF) — это экспериментальное подразделение безопасности в Site-19 и [данные удалены].\n\nВ случае сбоя в содержании или нападения третьих сторон, администратор или контроллер объекта отправляют запрос в [данные удалены]. Если запрос утвержден, одно из подразделений быстрого реагирования немедленно отправляется на место."
-russian.f2_classd = "Персонал класса D — это люди, назначенные для тестирования опасных аномалий. Обычно они выбираются среди заключенных,\n\nособенно тех, кто осужден за насильственные преступления, в том числе смертников. В случае катастрофы,\n\nесли только местные силы безопасности не примут другого решения, все сотрудники класса D будут немедленно казнены."
-russian.f2_cult = "Культ Алого Короля (COTSK) — это культ, основанный [данные удалены], который поклоняется аномалии SCP-001 «Алый Король».\n\nЭтот культ является раскольнической ветвью другой организации «Рука Змеи».\n\nКоличество членов культа невелико, но есть доказательства того, что они владеют некоторыми неактивными и не исследованными аномальными объектами. Кроме того,\n\nнекоторые члены культа могут обладать аномальными способностями, но неизвестно, откуда они их получили."
-russian.f2_scp = "Объекты SCP — это аномалии, которые Фонд способен захватывать, содержать и классифицировать. Они представляют угрозу для человечества,\n\nпоэтому Фонд по всему миру их ловит и пытается контролировать в наиболее подходящих условиях.\n\nОднако многие живые SCP обладают агрессивными чертами, и они пытаются выбраться из-под контроля Фонда."
-russian.f2_minigames = "Роли для всех видов дополнительных режимов."
-russian.f2_skp = "Специальное паранормальное подразделение (SKP) — это исследовательская организация нацистской Германии, которая была расформирована после падения Рейха. В инциденте #028-DE/I2 SKP пыталась проникнуть в нашу реальность из реальности R-3378-DE, что было предотвращено благодаря цепочке удачных обстоятельств. SKP считается крайне враждебной организацией. Известно, что они снова попытаются проникнуть в нашу реальность, и на этот раз они будут намного лучше подготовлены. Если вторжение не будет предотвращено на ранних стадиях, остановить их будет невозможно."
-russian.f2_uiu_agent = "Этот отряд Особого отдела аномальных происшествий состоит из высококвалифицированных профессиональных агентов.\n\nИх задача — незаметно проникнуть в объект, выполнить задание и покинуть его, не будучи замеченными. Эти агенты обладают уникальными навыками, которые позволяют им работать там, где другие агенты даже не могут подойти.\n\nОни способны быстро реагировать на любые сверхъестественные происшествия и преступления, их работа зачастую связана с угрозой жизни, поэтому они всегда готовы к любым вызовам. Этот отряд — один из самых секретных и эффективных в Департаменте аномальных происшествий, выполняющий задачи, требующие высшего уровня конфиденциальности и профессионализма."
--- Быстрая команда
-russian.quickchat_request_id = "Предъявите ID-карту"
-russian.quickchat_take_off_suit = "Снимите костюм"
-russian.quickchat_put_weapon_away = "Уберите оружие"
-russian.quickchat_drop_the_weapon = "Брось оружие"
-russian.quickchat_friendly = "Свой"
-russian.quickchat_run = "Бегать"
-russian.quickchat_enemy_spotted = "Противник обнаружен"
-russian.quickchat_scp_spotted = "SCP обнаружен"
-russian.quickchat_stop = "Стоп"
-russian.quickchat_face_the_wall = "Повернитесь к стене"
-russian.quickchat_dont_follow_me = "Не следуй за мной"
-russian.quickchat_dont_approach = "Не подходить"
-russian.quickchat_crouch = "Пригнуться"
-russian.quickchat_jumping = "Прыгнуть"
-russian.quickchat_dontaimme = "Не направляй на меня оружие"
--- Прочее
---russian.gru_hud_task = "Цель:"
---russian.gru_hud_task_evacuation = "Помогите CI нарушить работу объекта"
---russian.gru_hud_task_militaryhelp = "Помогите Фонду сдержать сбой содержания"
---russian.gru_hud_task_destroy = "Уничтожьте все цели, которые видите"
-russian.gru_hud_task_none = "нет"
-russian.spectators = "Наблюдатели"
-russian.players = "Игроки"
-russian.alive = "Жив"
-russian.f2_only_for_specs = "Вы можете открыть меню персонажа только в режиме наблюдателя."
-russian.machinegun_ammo = "Калибр крупный"
-russian.teeth_ammo = "Зубы"
-russian.rubber_ammo = "Резиновые пули"
-russian.ntf_ammo = "Особые патроны"
-russian.gru_ammo = "Русский крупный калибр"
-russian.smg_ammo = "Пистолет-пулемет"
-russian.pistol_ammo = "Пистолет"
-russian.revolver_ammo = "Револьвер"
-russian.goc_ammo = "Энергия"
-russian.shotgun_ammo = "Дробовик"
-russian.sniper_ammo = "Снайперская винтовка"
-russian.body_cant_determine_death_time = "Невозможно определить время смерти"
-russian.body_died_right_now = "Только что умер"
--- в английском можно везде добавить "minutes ago"
-russian.body_minutes_ago = "Минуты назад"
-russian.body_1minute_ago = "Минуты назад"
-russian.body_2to4minutes_ago = "Минуты назад"
-russian.body_death_happened = "Время смерти примерно"
-russian.body_death_unknown = "Причина смерти неизвестна"
-russian.body_search = "Поиск"
-russian.body_headshot = "Смертельный выстрел в голову"
-russian.body_disconnected = "Тело без очевидных отрубленных частей"
-russian.body_gas = "Умер от ядовитого газа"
-russian.body_acid = "Тело с явными химическими ожогами"
-russian.body_exploded = "Тело с ожогами от взрыва"
-russian.body_fall = "Тело с многочисленными переломами ног"
-russian.body_crushed = "Тело с дроблеными переломами"
-russian.body_burned = "Тело с ожогами"
-russian.body_slashed = "Тело с ранами от острого предмета"
-russian.body_low_caliber = "Тело с ранением от мелкокалиберного оружия"
-russian.body_high_caliber = "Тело с ранением от крупнокалиберного оружия"
-russian.body_shotgun = "Тело с пулевыми ранами от дробовика"
-russian.body_goc = "Тело с ранами от электромагнитного оружия"
-russian.body_bullets = "Тело с явными следами от пуль"
-russian.body_scp1903 = "Умер от необратимого психического повреждения"
-russian.cutscene_subject = "Проект:"
-russian.cutscene_subject_name = "Название проекта:"
-russian.cutscene_name = "Имя:"
-russian.cutscene_objective = "Цель:"
-russian.cutscene_disaster_relief = "Ликвидация сбоя содержания"
-russian.cutscene_contain_scp = "Эвакуация сотрудников Фонда и сдерживание сбоя содержания SCP"
-russian.cutscene_mtf_nu7 = "Уничтожьте все враждебные силы и устраняйте сбои в содержании SCP" -- Введение в миссию Hammer Down
-russian.cutscene_uiu_agent = "Проникните в объект, взломайте компьютеры для кражи данных"
-russian.cutscene_follow_task = "Следуйте заданиям"
-russian.cutscene_gru_guard_task = "Прикрытие безопасной эвакуации штурмовой группы"
-russian.cutscene_scp_rescue = "Спасение SCP"
-russian.chaos_team_task = "Спасение персонала класса D"
-russian.cutscene_namaz = "Выполнение ритуала"
-russian.cutscene_time_after_disaster = "Время после сбоя содержания:"
-russian.cutscene_status = "Статус:"
-russian.cutscene_last_report_time = "Время последнего отчета:"
-russian.cutscene_time_after_disaster_for_last_report_time = "Время после сбоя содержания для последнего отчета:"
-russian.cutscene_kia = "Погиб"
-russian.cutscene_location_site19 = "Местоположение: SITE-19"
-russian.cutscene_evac_by_ci = "Эвакуация с помощью Хаос-Разрушителей"
-russian.cutscene_evac_by_heli = "Эвакуация вертолетом"
-russian.cutscene_undercover_agent = "Тайный агент"
-russian.hud_nick = "Никнейм:"
-russian.hud_charname = "Имя персонажа:"
-russian.hud_health = "Здоровье"
-russian.hud_health_capital = "Здоровье"
-russian.hud_max_level = "Максимальный уровень"
-russian.hud_killfeed_killed = "Убит"
-russian.hud_killfeed_died = "Умер"
-russian.startintro_round_will_begin = "Новый раунд начнется через"
-russian.startintro_no_round = "Новый раунд еще не начался"
-russian.startintro_welcome_pt1 = "\nSite-19\n Добро пожаловать,"
-russian.startintro_welcome_pt2 = "\n Удачи!"
-russian.roundend_totaldeaths = "Общее количество смертей:"
-russian.roundend_escaped = "Сбежавших:"
-russian.roundend_gameover = "Игра завершена"
-russian.roundend_roundcomplete = "Раунд завершен"
-russian.roundend_roundresult = "Результат раунда"
-russian.roundend_roundstillrestart = "До перезапуска раунда осталось"
-russian.roundend_nextroundin = "Следующий раунд начнется через"
-russian.roundend_restartinground = "Перезапуск раунда..."
-russian.roundend_restartingserverin = "Перезапуск сервера через"
-russian.roundend_restartingserver = "Перезагрузка сервера..."
-russian.roundend_scarletking = "Алый Король пришел: этот мир погиб!"
-russian.roundend_nopeoplealive = "Никто не выжил"
-russian.roundend_alphawarhead = "Взрыв ядерной боеголовки Альфа"
-russian.roundend_gru_warhead = "Боеголовка Альфа взорвана неизвестными"
-russian.roundend_foundation_win = "Фонд восстановил контроль над объектом"
-russian.roundend_cbended = "Сбой содержания завершен"
-russian.roundend_kongshu = "Ядерная боеголовка остановила бунт Класса-D."
-russian.kongshu_vdv_win = "Милость Воздушных сил Хаоса никогда не заканчивается ┗( T__T )┛"
-russian.kongshu_nu7_wind = "Отряд 'Молот Опущен': Верность! ('-'*ゞ"
-russian.take_off_hover = "Нажмите «ЛКМ» для снятия"
-russian.heavy_helmet = "Тяжелый шлем"
-russian.heavy_armor = "Тяжелая броня"
-russian.light_helmet = "Легкий шлем"
-russian.light_armor = "Легкая броня"
-russian.small_bag = "Маленькая сумка"
-russian.big_bag = "Большая сумка"
-russian.no_admins = "В данный момент нет администраторов онлайн"
-russian.nt_min = "Минуты"
-russian.nt_d = "День"
-russian.nt_y = "Год"
-russian.nt_m = "Месяц"
-russian.nt_s = "Секунда"
-russian.nt_h = "Час"
-russian.nt_w = "Неделя"
-russian.nt_mins = "Минуты"
-russian.nt_ds = "Дни"
-russian.nt_ys = "Года"
-russian.nt_ms = "Месяцы"
-russian.nt_ss = "Секунды"
-russian.nt_hs = "Часы"
-russian.nt_ws = "Недели"
-russian.donateadmin_protectionactivated = "У вас есть подозрения на массовое блокирование, ваши административные права были аннулированы. Пожалуйста, свяжитесь с старшим администратором через QQ."
-russian.desc_premium = "Предоставляет функции смены персонажа при поддержке возрождения (кроме некоторых важных ролей); резервное место на сервере; специальные метки на сервере; двойной опыт; доступ к пользовательским функциям в игровом чате; специальные модели для D-класса; возможность смены SCP при возрождении как SCP; смена цвета имени (режим наблюдателя); при наличии VIP настроек появится раздел для VIP."
-russian.desc_newbiekit = "Включает: 1 месяц VIP-статуса и 15 уровень в игре."
-russian.desc_activewarn = "Удаляет одно предупреждение (вы можете проверить количество ваших предупреждений, введя !warns)."
-russian.desc_penalty = "Удаляет одно наказание (вы можете проверить количество ваших наказаний, введя !checkpenalty)."
-russian.desc_unmute = "Снимает игровой мут (вы можете проверить длительность своего мота, введя !getmuteinfo + ваш 64-битный ID)."
-russian.desc_ungag = "Снимает заглушение голоса в игре (вы можете проверить длительность своего заглушения, введя !getgaginfo + ваш 64-битный ID)."
-russian.desc_unban = "Снимает бан."
-russian.desc_prefix = "Предоставляет возможность установить префикс к вашему имени в настройках, однако не допускаются никакие оскорбительные или неприемлемые символы, иначе ваш префикс будет аннулирован."
-russian.desc_prefix_rainbow = "Предоставляет возможность установить радужный префикс к вашему имени в настройках, однако не допускаются никакие оскорбительные или неприемлемые символы, иначе ваш префикс будет аннулирован."
-russian.desc_admin = ""
-russian.donationtitle_prem = "VIP статус"
-russian.donate_days = "Дней"
-russian.donate_other = "Прочее"
-russian.donate_awarn = "Удаляет одно предупреждение"
-russian.donate_penalty = "Удаляет одно наказание"
-russian.donate_newbiekit = "Набор новичка"
-russian.donate_level = "Уровень"
-russian.donate_prefix = "Префикс"
-russian.donate_gradientprefix = "Радужный префикс"
-russian.donate_vcb = "Запрещен звук"
-russian.donate_cb = "Запрещен чат"
-russian.donate_gb = "Запрещен доступ к игре"
-russian.donate_ltaw = "Менее недели"
-russian.donate_mtaw = "Более недели"
-russian.donate_perma = "Постоянный бан"
-russian.donate_price = "Цена:"
-russian.donate_admin = "Админ"
-russian.donate_paymenttype = "Мы принимаем оплату через WeChat Pay и Alipay.\nПо вопросам оплаты вы можете обратиться к администраторам QQ-группы.\nНомер нашей группы: 751285822.\nЕсли вы находитесь за границей, нажмите здесь для перехода на сайт и совершения покупок."
-russian.qqsex = "Группа QQ:"
-russian.donate_howmanylevels = "Сколько уровней вы хотите купить?"
-russian.donate_willcostyou = "Уровень обойдется вам в:"
-russian.donate_dragme = ">> Перетащите меня! <<"
-russian.shlogs_charname = "Имя персонажа"
-russian.shlogs_role = "Роль"
-russian.shlogs_team = "Команда"
-russian.shlogs_setfilter = "Настроить фильтр"
-russian.shlogs_allrounds = "Все раунды"
-russian.shlogs_round = "Раунд"
-russian.shlogs_checksnapshot = "Проверить снимок"
-russian.shlogs_closesnapshot = "Закрыть снимок"
-russian.shlogs_close = "Закрыть"
-russian.shlogs_dead = "Мертв"
-russian.shlogs_profile = "Профиль"
-russian.shlogs_details = "Подробности"
-russian.shlogs_chat = "Чат"
-russian.shlogs_chat_log1 = "Игрок sender сказал message" -- DO NOT TRANSLATE sender, message
-russian.shlogs_death = "Смерть"
-russian.shlogs_death_log1 = "Игрок victim был убит дверью" -- DO NOT TRANSLATE victim
-russian.shlogs_death_log2 = "Игрок victim был убит killer" -- DO NOT TRANSLATE victim, killer
-russian.shlogs_deathelev = "Смерть от лифта"
-russian.shlogs_deathelev_log1 = "Игрок user был убит killer с помощью лифта" -- DO NOT TRANSLATE user, victim
-russian.shlogs_icedev = "Смерть от SCP (409/009)"
-russian.shlogs_icedev_log1 = "Игрок user был убит killer с помощью 409" -- DO NOT TRANSLATE user, killer
-russian.shlogs_icedev_log2 = "Игрок user был воздействован SCP-409, косвенно убит killer" -- DO NOT TRANSLATE user, killer
-russian.shlogs_icedev_log3 = "Игрок user был убит killer с помощью 009" -- DO NOT TRANSLATE user, killer
-russian.shlogs_disconnection = "Отключение"
-russian.shlogs_disconnection_log1 = "Игрок user был отключен." -- DO NOT TRANSLATE user
-russian.shlogs_drop = "Бросить оружие"
-russian.shlogs_drop_log1 = "Игрок user бросил свое оружие" -- DO NOT TRANSLATE user, weapon
-russian.shlogs_pickup = "Подобрать оружие"
-russian.shlogs_pickup_log1 = "Игрок user подобрал оружие" -- DO NOT TRANSLATE user, weapon
-russian.shlogs_spawn = "Возрождение"
-russian.shlogs_spawn_log1 = "Игрок user был возрожден reviver" -- DO NOT TRANSLATE user, reviver
-russian.shlogs_spawn_log2 = "Игрок user возродился как поддержка" -- DO NOT TRANSLATE user
-russian.shlogs_spawn_log3 = "Игрок user был возрожден администратором" -- DO NOT TRANSLATE user
-russian.shlogs_spawn_log4 = "Игрок user возродился в начале раунда" -- DO NOT TRANSLATE user
-russian.supp_pick_cant = "Поскольку вы играете важную роль в этой команде, вы не можете сменить класс."
-russian.supp_canpick = "Поскольку вы VIP, вы можете теперь сменить свой класс."
-russian.supp_pickcancel = "Для отмены выбора нажмите \"BACKSPACE\""
-russian.roleswap = "Выбор роли"
-russian.inv_throw_away = "Бросить"
-russian.load_tazer = "Зарядить электрошокер"
-russian.load_tazer_desc = "Вы не можете использовать Электрошокер, ибо заряд закончился."
-russian.select_faction_ntfcmd = "Выберите фракцию из списка для сканирования. Нажмите BACKSPACE для закрытия окна."
-russian.ntfcmd_factionlist = "Список фракций"
-russian.ntfcmd_unknowns = "Неизвестные"
--- Достижения
-russian.achievement = "Вы получили достижение:"
-russian.achievement1 = "и заработали "
-russian.achievement2 = " очков опыта,"
-russian.achievement3 = " уровни и "
-russian.achievement4 = " очков!"
+机动特遣队Epsilon-11九尾狐从内部保护着SCP基金会.\n\n他们代表着一个特殊的行动小组,\n\n经常在收容失效的情况下被部署.因此,\n\n他们的大部分行动都可以归类为SCP收容.
+机动特遣队NU-7落锤是一支营级规模的特遣队.\n\n其中落锤特种大队的肃杀营的A连被秘密部署在Site-19的附近[详细位置未知],\n\n他们主要负责在设施处于极端危险时进行武力支援,帮助设施扫清一切外部威胁\n\n他们的任务通常由在设施内的O4指挥官指派
+混沌分裂者CI是从SCP基金会分裂出去的一个组织,\n\n在1924年由一伙携带数个SCP物品叛变的基金会人员所建立,\n\n他们一般为了自身利益和巩固全球权力基础而使用所占有的异常.
+苏联解体之后,格鲁乌P部门也随之消散.但在新时代的浪潮中,新的国际共运在帷幕\n\n之下悄然进行.曾经的格鲁乌P部门趁着这股赤色浪潮逐渐复苏,旧的格鲁乌P部门\n\n已经成为一个时代的符号,而新的格鲁乌P正成长为一个全球性的共产主义异常组织.\n\n因而为了新生的格鲁乌P,其组织成员将在全球范围内不惜一切代价获取尽可能多的\n\n资源使格鲁乌P重新强大起来.
+一支由6人组成的近卫小组,在侵入部队完成任务时接应并掩护他们安全撤离
+\'花园是毒蛇栖息之所\'蛇之手——\"Serpent's hand\"\n\n一个规模较小但难以对付的异常组织,基金会对该组织知之甚少,因此对该组织的认识大\n\n部分都来自GOC提供的资料\n\n而该组织对基金会和全球超自然联盟都抱有极大的恶意,尤其是在对付全球超自然联盟\n\n的成员时\n\n并且蛇之手提倡与异常和平相处,且极度厌恶任何毁灭异常和囚禁异常的行为,其成员\n\n通常不会采取任何致命的行动,但发现无法和平解决时便会采取极端的武力!
+异常事件部门是在冷战开始后成立的,\n\n当时美国政府专注于利用异常并防止它们被亲苏势力使用.\n\n随后成立了联邦调查局的一个特别部门,\n\n以处理对超自然事件和犯罪的快速反应.
+全球超自然联盟GOC是在第二次世界大战后由一个联盟组成的庞大组织.\n\n它由来自轴心国和同盟国的成员组成 - 超自然学者,\n\n通灵者,神职人员和科学家.他们以摧毁超自然生物为荣.\n\n在基金会恢复并保护它们之前,它们被摧毁了许多潜在的SCP.
+基金会人员是在该机构担任文职职位的人,\n\n从科研人员到简单的清洁工,他们大部分都是基金会雇用的普通人,\n\n但也有例外.高级科学家在他们的日常工作中中脱颖而出.\n\n这是长期为基金会工作的最有经验的工作人员.
+来自基金会各个研究部门的专家,他们在各自的领域拥有卓越的成就,\n\n并且他们拥有各种奇特的特殊技能,而且这些技能在战斗和收容\n\nSCP中发挥着重要的作用
+安保部门SD负责所有基金会设施和SCP项目的安全和保护,无论其优先级如何.\n\n安保人员经过培训和训练,是一支不可忽视的力量\n\n可以在SCP收容失效以及在入侵的情况下采取行动.
+机动特遣队MTF是小型的,以任务为重点的或特殊情况的军事单位.\n\n这些人员有时会驻扎在某些设施待命\n\n他们的主要任务包括恢复SCP收容和疏散基金会人员,尽管还有更多的专门单位.
+Special Forces - Special formations of the Security Service,consisting of security specialists in the field of interaction with anomalous objects,as well as ordinary employees of other security departments in the event of a N.U.S. at the time of the disaster. The main task of the OSN - countering and guarding ''SCP'' Anomalous Objects.
+快速反应部队QRF是Site-19和[数据删除]内的一个实验性安全部队单位.\n\n如果发生收容失效或第三方攻击\n\n站点管理员或站点控制器将向[数据删除] 发送请求.如果请求获得批准,则立即将其中一个快速反应小队派往现场.
+D级人员是专门被派去测试危险异常的人员.D级人员通常从囚犯中选拔,\n\n优先考虑那些被判犯有暴力罪行的人,\n\n尤其是那些死囚.如果机构发生灾难性事件,\n\n除非当地安全部门另有决定,否则所有D级人员将立即被处决.
+猩红之子COTSK - 由[数据删除]创立的邪教组织,\n\n崇拜异常对象SCP-001“猩红之王”.\n\n该邪教是另一个相关组织“蛇之手”的分裂组织.\n\n邪教人数不多,但有证据表明他们有一些尚未收容和未探索的异常物体.此外,\n\n一些邪教成员可能具有异常能力,\n\n他们从哪里获得这些能力尚不清楚.
+SCP项目是基金会能够捕获、\n\n收容和分类的异常.它们对人类构成威胁,\n\n因此,基金会一直在世界各地捕获它们,并试图将它们控制在最合适的条件下,\n\n但由于许多有生命的SCP具有攻击性,\n\n它们想要脱离基金会的控制.
+Roles for all kinds of extra modes.
+The Special Paranormal Unit is a Third Reich anomaly research organization that in our reality was disbanded after the fall of the Reich itself. In Incident #028-DE/I2,the SKP attempted to infiltrate our reality from R-3378-DE's reality which was only prevented due to a chain of fortunate circumstances.The SKP is considered to be extremely hostile.It is known that they will once again try to infiltrate our reality and then they will be much better prepared.It is assumed that if the invasion is not prevented in the initial stages,it will be possible to stop them impossible.
+这个特异事务处的小组是一\n\n个由训练有素的专业特工组成的精英单位.\n\n他们的任务是在不被注意的情况下潜入一个设施,\n\n并在完成任务后不被发现地离开.这些特工拥有独特的能力和技能,\n\n使他们能够在其他特工甚至无法接近的条件下工作.\n\n他们能够快速应对任何超自然事件和犯罪,他们的工作通常会威胁到生命,\n\n因此他们随时准备迎接任何挑战.该小组是异常事件部门中最秘密和最有效的小组之一,\n\n执行需要最大程度的机密性和专业性的任务.
+--专家组
+MTF专家组( 全称:\"机动特遣队 专家组\" ), 简称:\"MEG\"\n 驻扎在设施内来自其他MTF的专家(教官)\n他们训练设施内的MTF队员如何应对不同SCP和\n敌对人员\n有时他们会选拔一些具有潜力的MTF队员吸收进他们的MTF队伍中
+--随机事件
+--特殊角色
+某些事件发生时会出现的特殊角色
+--UIU收容小组
+属于[联邦基金会]事件下的支援阵营\nUIU收容小组是由基金会帮助美国政府训练的一支针对收容SCP的军事力量\n并且这支小组使用了部分由基金会提供的装备和科技能够更好的收容SCP
+--随机事件文本信息
+事件: 
+类型: 
+事件介绍:
+--事件类型
+大事件/世界观
+世界观
+常规
+战争
+隐匿
+--大事件
+--梦服
+收容失效之梦
+这是最美妙的梦,这也是最恐怖的梦
+--5K
+SCP-5000 \"为什么?\"
+保护常态, 遏制异常, 这是吾辈必行之路
+--常规事件
+--无阶段
+无事发生
+没有任何事件在此发生
+--开场事件
+--一阶段
+严阵以待
+本回合没有CI间谍,所有安保人员获\n得子弹,安保门禁时间延迟15秒\nD级中出现一名CI特工帮助D级
+现实不稳定
+当前场上所有SCP获得一个永久的\n2级\"异常生命恢复\"效果\n在修复所有发电机后恢复效果消失
+摆烂的内部审查
+内部安全代理无法查出UIU间谍,某个\n阵营将增加一个间谍\n(不包含GOC特工和蛇之手间谍)
+重型现实稳定锚
+修好所有电机后,任何人可在中控室\n维修稳定锚\n让处于办公区的SCP无限期获得一个3级\"脆弱\"\n效果
+动员兵政策
+本回合QRT可以刷新3波,任何设施高\n级职业均可召唤QRT,但QRT只有士兵、指挥官\n和盾兵
+联邦基金会
+UIU和基金会联合,UIU间谍转换成\"UIU\n联络专员\"可以在设施处于危险时呼叫UIU部队
+健康行动
+近几个月site19科研部门开展健身行\n动,所有科研人员的体质都得到了强化
+MTF特种训练
+设施内的MTF经过了落锤特种部队\n的训练,体质有了明显的强化\n(不包括设施主管)
+人员扫描设备
+中控室放置了一台\"人员扫描设备\"\n修好所有发电机之后可以使用其扫描设施内\n的人员,所有基金会武装单位可以看到目标人\n员的位置
+--二阶段
+强大的联合
+GOC和GRU成友好关系,GOC和CI以及D\n级同GRU一样为中立友好关系,GOC可以同GRU一\n起撤离\nGOC特工需要去帮助GRU守护中控室,本回合无\n法开启核弹
+故障传送门
+蛇之手的传送门因为未知事故随机\n出现在了设施内. 他们是怎么做到的?
+错误的坐标
+格鲁乌P的超传装置传送了部分装\n备到设施内. 他们是怎么知道我们的设施位置\n的?
+第四个SCP
+侦测到设施内某个收容间出现了未\n知能量波动\n那是...一个SCP!
+过早抵达
+某支武装势力将在50秒后抵达,正常\n第二波支援延后55秒
+脆弱的防线
+基金会的外部防线不堪一击, CI的大\n部队很快就会抵达设施
+盟友的请求
+格鲁乌P(后时代)接受了混沌分裂者\n的请求派出了一支小队回收D级人员,格鲁乌P\n成员可以从APC撤离
+--三阶段
+劣质核弹头
+核弹有极低概率不会爆炸
+直升机坠毁
+九尾狐的救援直升机在路上被未知\n力量摧毁了
+APC损坏
+CI装甲车转去接应的路上发动机损\n坏\n本回合没有CI装甲车接应
+健忘的O5
+某位O5似乎把一张O5权限卡落在O5\n办公室的某一处
+救援火车
+落锤的火车赶来救援并同时刷新五\n名落锤特种队员
+传送门失踪
+蛇之手的撤离传送门出现故障消失
+公路片
+现在可以靠自己的双腿穿过隧道逃\n出设施!
+--快速聊天
+出示ID卡
+脱掉衣服
+把武器收起来
+丢掉武器
+友军
+跑
+敌人
+SCP
+停下
+面向墙壁
+别跟着我
+别靠近我
+蹲下
+跳一下
+别瞄准我
+--屏幕信息提示
+硬着心
+--其他
+-- chinese.gru_hud_task = "任务目标:"
+-- chinese.gru_hud_task_evacuation = "协助CI扰乱设施"
+-- chinese.gru_hud_task_militaryhelp = "帮助基金会遏制收容失效"
+-- chinese.gru_hud_task_destroy = "消灭所有你看的目标"
+none
+观察者
+玩家
+生存
+你只能在观察者模式下打开角色菜单.
+大口径
+牙齿
+橡胶弹
+特制
+强化特制
+俄式大口径
+冲锋枪
+手枪
+左轮手枪
+能量
+超高能
+霰弹枪
+狙击枪
+无法确定死亡时间
+最近死亡
+--в английском можно везде запихнуть minutes ago
+几分钟前
+几分钟前
+几分钟前
+死亡发生时间大约为
+死亡原因不明
+搜索
+致命的爆头
+尸体没有明显的断肢
+死于致命气体
+尸体有明显化学烧伤
+尸体被烧伤
+尸体腿部多处骨折
+尸体粉碎性骨折
+尸体被烧毁
+尸体有被锋利利器刺伤
+尸体有小口径枪伤
+尸体有大口径枪伤
+尸体有铅弹枪伤
+尸体有电磁枪伤
+尸体上有明显枪伤
+死于不可逆转的精神伤害
+项目:
+项目名称:
+名字:
+任务:
+无效化收容失效
+撤离基金会人并遏制SCP收容失效
+消灭任何敌对势力并遏制SCP收容失效
+保卫火车营救设施内残余基金会人员
+听从上级指示,完成你的任务
+潜入设施,骇入电脑窃取资料
+进入设施,骇入电脑窃取资料
+进入设施,帮助基金会遏制收容失效
+夺取资料,篡改权限
+进入设施回收D级人员
+掩护侵入部队安全撤离
+拯救SCP
+营救D级人员,阻止基金会的疏散
+脆弱的防线已被我们撕碎,现在让这里变得更加混乱!
+执行仪式,帮助我们的王斩断最后一根锁链!
+距离收容失效发生的时间:
+状态:
+上一次汇报的时间:
+距离收容失效发生的时间:
+死亡
+地点:SITE-19
+在混沌分裂者的帮助下撤离
+通过直升机撤离
+卧底特工
+昵称:
+角色名字:
+血量
+血量
+最高等级
+杀害
+死亡
+新一轮回合将于
+新一轮还没有开始
+\nSite-19\n 欢迎你,
+\n 祝你好运!
+总死亡人数:
+逃脱:
+游戏结束
+回合结束
+回合结果
+离重启的回合数
+下一回合将在
+开始新的回合...
+重新启动服务器
+重启服务器...
+猩红之王降临:这个维度完蛋了!
+没有人幸存
+阿尔法核弹头爆炸
+阿尔法核弹头未爆炸
+阿尔法核弹头被未知权限引爆
+基金会重新控制了设施
+收容失效已结束
+核弹阻止了D级暴乱
+CI空输的恩情还不完┗( T__T )┛
+落锤特战分队: 忠!诚!('-'*ゞ
+纳粹德国获胜
+美国陆军获胜
+--下面这是？
+按 \"左键\" 摘下
+重型头盔
+重型防弹衣
+轻型头盔
+轻型防弹衣
+口袋
+背包
+目前没有管理员在线
+分钟
+天
+年
+月
+秒
+小时
+周
+分钟
+天
+年
+月
+秒
+小时
+周
+你有大规模封禁的嫌疑,你的管理权限已经剥夺,请通过QQ联系高级管理员
+给予您作为支援复活时,更换角色的功能(除去特定重要角色);\n服务器预留位;服务器内的特殊标签;双倍经验;\n访问游戏聊天中的自定义功能;D级人员的特殊模型;\n复活成为SCP时,更换SCP的功能;更换昵称颜色(观察者模式);\n拥有VIP时,设置中将会有VIP设置一栏
+包含:1个月的 VIP 资格以及15级游戏等级
+移除一次警告(您可以通过输入!warn查看您的警告个数)
+移除一次惩罚(您可以通过输入!checkpenalty查看您的惩罚个数)
+解除游戏内禁言封禁\n(您可以通过输入!getmuteinfo+您的64位ID查询您的封禁时长)
+解除游戏内禁音封禁\n(您可以通过输入!getgaginfo+您的64位ID查询您的封禁时长)
+解封
+给予您在设置中设置昵称前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+给予您在设置中设置昵称彩虹前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回
+
+VIP状态
+天
+其它
+移除一次警告
+移除一次惩罚
+新手礼包
+等级
+前缀
+彩虹前缀
+禁音
+禁言
+游戏封禁
+少于一周
+多于一周
+永久封禁
+价格:
+管理
+我们接受微信支付和支付宝进行付款,\n你可以通过联系QQ群内管理关于付款事宜,\n我们的交流群群号为:751285822.\n如果你是海外可点击此地方打开网站进行购买.
+交流群:
+您想购买多少等级?
+级将会花费你:
+>>拖我!<<
+角色名称
+身份
+阵营
+设置过滤器
+所有回合
+回合
+查看快照
+关闭快照
+关闭
+死亡
+资料
+详细信息
+聊天记录
+玩家 sender 说 message
+死亡
+玩家 victim 被门夹死
+玩家 victim 被 killer 击杀
+死于电梯
+玩家 user 被 killer 使用电梯击杀
+死于SCP(409/009)
+玩家 user 被 killer 使用409击杀
+玩家 user 受到409雕塑的影响,间接被 killer 击杀
+玩家 user 被 killer 使用009击杀
+死于\'尖啸\'
+玩家 user 被 killer 使用\'尖啸\'击杀
+断开连接
+玩家 user 断开连接.
+丢弃武器
+玩家 user 丢下了他的武器
+拾起武器
+玩家 user 捡起了武器
+复活
+玩家 user 被 reviver 复活了
+玩家 user 复活成为了一名支援
+玩家 user 被管理员复活了
+玩家 user 在回合开始时复活了
+由于你正在中扮演着该阵营中最重要的角色,所以你无法更换职业
+由于你是VIP,你现在可以更改你的角色职业了
+要取消选择,请按 \"BACKSPACE\"
+角色选择
+丢弃
+加载电击器
+您无法使用电击器,因为电量已耗尽.
+从列表中选择要扫描的阵营.点击BACKSPACE关闭窗口.
+阵营列表
+未知人员
+--成就
+你获得了成就:
+并获得了
+点经验、
+等级和
+点数!
 --体力
-russian.stamina = "Мне нужна передышка."
+我需要喘口气
 --选角色
-russian.role_menu = "ТЕКУЩИЙ:"
-russian.role_menu_1 = "ТРЕБУЕМЫЙ УРОВЕНЬ: "
-russian.role_menu_2 = "УЖЕ ЗАНЯТО"
-russian.role_menu_3 = "Выберите SCP"
-russian.role_menu_4 = "Выбор задания"
-russian.role_menu_5 = "Ваша роль изменится после окончания сцены."
-russian.role_menu_6 = "Эта роль занята другим игроком, пожалуйста, выберите другую роль."
-russian.role_menu_7 = "Ваша роль изменилась."
-russian.role_menu_8 = "Список фракций"
--- Пенальти D
-russian.desc_penalty_ts = "Вы можете носить только химический защитный костюм."
-russian.desc_penalty_cx = "Необходимое количество попыток побега: "
-russian.desc_penalty_cx_1 = "У вас нет статуса наказания."
-russian.desc_penalty_cx_2 = "Оставшееся количество наказаний: "
-russian.desc_penalty_cx_3 = "Наказание снято"
-russian.desc_penalty_cx_4 = "Вам был предоставлен статус."
-russian.desc_penalty_cx_5 = "Не наказанный"
-russian.desc_penalty_cx_6 = ", не нарушайте больше."
-russian.desc_penalty_cx_7 = "Вы достигли лимита предупреждений и получили статус."
--- Прочее
-russian.start_for_players_pt = " игроков готовы"
-russian.start_for_players_pt_1 = "Текущее время раунда: "
-russian.start_for_players_pt_2 = "Раунд начнется через "
-russian.start_for_players_pt_3 = " секунд."
-russian.achievement_finish = "Новые достижения открыты:"
-russian.desc_djj = "Панель связи"
-russian.desc_intercom = "Пожалуйста, отправьте вещание по объекту...\nМогут быть переданы только текстовые сообщения."
-russian.desc_intercom_1 = "Перезарядка: "
-russian.desc_intercom_2 = "Нажмите E, чтобы начать вещание по объекту."
-russian.desc_914 = "Текущий статус: "
-russian.desc_914_1 = "Панель управления SCP-914"
-russian.desc_914_2 = "Очень грубая"
-russian.desc_914_3 = "Грубая"
-russian.desc_914_4 = "Точная"
-russian.desc_914_5 = "Очень точная"
-russian.desc_914_6 = "Изменить статус обработки"
-russian.desc_914_7 = "Начать обработку"
-russian.desc_vip = "Включить"
-russian.desc_vip_1 = "Радужный"
-russian.desc_vip_2 = "Применить"
-russian.desc_vip_3 = "Отменить"
-russian.desc_vip_4 = "Редактировать"
-russian.desc_lock = "Заблокировано"
-russian.desc_livetab = "ОСНОВНАЯ ИНФОРМАЦИЯ"
-russian.desc_livetab_1 = "Foundation OS v 1.0"
-russian.desc_livetab_2 = "Научный персонал: "
-russian.desc_livetab_3 = "Военный персонал: "
-russian.desc_livetab_4 = "Персонал класса-D: "
-russian.desc_livetab_5 = "Неизвестные субъекты: "
-russian.desc_livetab_6 = "Экстренная информация"
-russian.desc_livetab_7 = "Общее количество персонала в текущей области: "
-russian.desc_livetab_8 = "Общее количество научного персонала: "
-russian.desc_livetab_9 = "Фонд SCP"
-russian.desc_livetab_10 = "Добро пожаловать в Фонд SCP!"
-russian.desc_livetab_11 = "Желаем вам безопасного и продуктивного дня!"
-russian.desc_livetab_12 = ">> Процедура дезактивации начнется через "
-russian.desc_livetab_13 = ">> Немедленно покиньте текущую область!"
-russian.desc_livetab_14 = "Аварийная процедура взрыва боеголовки Alpha"
-russian.desc_generator = "ВЫКЛЮЧЕНО"
-russian.desc_generator_1 = "АКТИВНО"
-russian.desc_obr = "SQR готов!"
-russian.desc_radio_on = "Включено"
-russian.desc_radio_off = "Выключено"
-russian.desc_radio = "Канал:"
-russian.desc_ci_scan = "Количество персонала класса-D в легком удержании: "
-russian.desc_ci_scan_1 = "Количество персонала класса-D в тяжелом удержании: "
-russian.desc_ci_scan_2 = "Количество персонала класса-D в офисной зоне: "
-russian.desc_ci_scan_3 = "Количество персонала класса-D на поверхности объекта: "
-russian.gru_hacking_time = "Время взлома: "
+当前:
+所需等级:
+已被选择
+选择 SCP
+任务选择
+您的角色将在场景结束后改变.
+该角色已被其他玩家占用,请选择其他角色
+您的角色已改变.
+阵营列表
+--惩罚D
+您只能穿戴化学防护服
+所需逃脱次数:
+您没有处罚角色状态.
+剩余惩罚数量:
+惩罚已移除
+您已被授予状态
+非惩罚者
+,不要再违规了哦.
+您已达到警告限额,并被授予状态
+--其他
+ 名玩家准备就绪
+当前回合时间:
+回合将在 
+ 后开始
+新成就已解锁:
+对讲机面板
+请发送设施广播...\n只能传输文字
+冷却中:
+按E键开始设施广播
+当前的状态:
+SCP-914 控制板
+超粗
+粗
+精
+超精
+更改加工状态
+开始加工
+启用
+彩虹色
+应用
+取消
+编辑
+已锁定
+设施面板
+基金会 OS v 1.0
+研究员单位:
+基金会武装单位:
+D级人员:
+未知单位:
+紧急信息
+当前区域总人数:
+科研人员总数:
+SCP基金会
+欢迎来到SCP基金会!
+祝你有一个非常安全和富有成就的一天!
+>> 清收容消毒程序将在 
+>> 立即离开当前区域!
+Alpha弹头紧急引爆程序
+离线
+激活
+快反小队 准备就绪!
+打开
+关闭
+频道:
+轻收容D级人员数量:
+重收容D级人员数量:
+办公区D级人员数量:
+设施地表D级人员数量:
+骇入时间:
 --O4壁纸名字
-russian.wallpaper_apply = "Применить обои"
-russian.wallpaperup = "Предыдущая страница"
-russian.wallpaperdown = "Следующая страница"
-russian.normal_wallpaper_name = "Обои"
-russian.scpclassic = "Классический фон"
-russian.mioself = "Личное фото Мио"
-russian.bc1pic = "Фото Бая Цая 1"
-russian.supersex_1471 = "Суперсексуальное изображение 1471!"
+应用背景
+上一页
+下一页
+壁纸
+经典背景
+mio本人照
+白菜的照片1
+超绝1471色图!
 --NU7
-russian.desc_o4_MTF = "NU-7 Hammer Down"
-russian.desc_o4_MTF_1 = "Beta-7 Maz Hatters"
-russian.desc_o4_status = "Запрещено"
-russian.desc_o4_status_1 = "Готово"
-russian.desc_o4_status_2 = "Отправлено"
-russian.desc_o4_control = "Дверь командного центра O4"
-russian.desc_o4_control_1 = "Контрольная точка электромагнитной пушки"
-russian.desc_o4_control_2 = "Общая контрольная точка"
-russian.desc_o4_control_3 = "Контрольная точка SCP682"
-russian.desc_o4_control_4 = "Контрольная точка с односторонним движением"
-russian.desc_o4_control_5 = "Односторонняя дверь"
-russian.desc_o4_call = "Экстренный вызов"
-russian.desc_o4_call_2 = "Имя MTF:"
-russian.desc_o4_call_3 = "Статус MTF:"
-russian.desc_o4_call_4 = "Вызов MTF"
-russian.desc_o4_call_5 = "Предупреждение"
-russian.desc_o4_call_6 = "Условия не выполнены или этот MTF уже был отправлен"
-russian.desc_o4_call_7 = "Отправлено"
-russian.desc_o4_door = "Управление дверью"
-russian.desc_o4_door_1 = "Оставшаяся энергия: "
-russian.desc_o4_door_2 = "Открыть дверь"
-russian.desc_o4_door_3 = "Заблокировать дверь"
-russian.desc_o4_wallpaper = "Обои"
+NU-7 落锤
+Beta-7 疯帽商
+禁用
+准备好
+已发送
+O4指挥室门
+电磁炮检查点
+通用检查点
+SCP682检查点
+单向检查点
+单向门
+紧急呼叫
+MTF 名称:
+MTF 状态:
+呼叫 MTF
+警告
+条件未满足或该 MTF 已被派遣
+已派遣 
+门控
+电量剩余:
+开门
+锁门
+壁纸
 --摄像头扫描
-russian.desc_camera = "[Безопасность.Изоляция.Защита] Камера безопасности V2"
-russian.desc_camera_1 = "Выход видео: АКТИВНО"
-russian.desc_camera_2 = "Выход аудио: АКТИВНО"
-russian.desc_camera_3 = "Масштабирование: "
-russian.desc_camera_4 = "ВЫХОД"
-russian.desc_camera_5 = "ДАЛЕЕ"
-russian.desc_camera_6 = "НАЗАД"
-russian.desc_camera_7 = "УВЕЛИЧИТЬ"
-russian.desc_camera_8 = "УМЕНЬШИТЬ"
+[Secure.Contain.Protect] 安全摄像头 V2
+视频输出:激活
+音频输出:激活
+缩放:
+退出
+下一步
+上一步
+放大
+缩小
 --scoreboard
-russian.desc_scoreboard_bilbil = "Канал Bilibili"
-russian.desc_scoreboard_copy = "Копировать"
-russian.desc_scoreboard_achievement = "Открыть достижения"
-russian.desc_scoreboard_steam_url = "Открыть URL сообщества Steam"
+Bilibili 频道
+复制
+打开成就
+打开STEAM个人资料URL
 --scp物品
-russian.desc_215 = "Ваша привязанность к SCP-215 стала настолько высока, что Вы уже не в состоянии с ним расстаться."
+您对 SCP-215 的依恋已经到了无法割舍的地步.
 --DEMO
-russian.menu_demo_settings = "Запись DEMO"
-russian.menu_demo_enabled = "Включить запись DEMO"
-russian.menu_demo_chat_messages = "Включить сообщения чата в DEMO"
--- Эффекты попаданий
-russian.menu_hit_settings = "Настройки попаданий"
-russian.menu_hit_enabled = "Включить индикатор попаданий"
-russian.menu_hitsound_enabled = "Включить звук попаданий"
-russian.menu_hitmarkercolor = "Цвет индикатора попаданий"
-russian.menu_hitmarkertype = "Тип индикатора попаданий"
-russian.menu_hitmarkertype_line = "Линия"
-russian.menu_hitmarkertype_circle = "Круг"
-russian.menu_hitmarkertype_dots = "Точки"
-russian.menu_hitmarkertype_cross = "Крест"
-russian.menu_hitmarkertype_triangle = "Треугольник"
-russian.menu_hitmarkertype_double_circle = "Двойной круг"
-russian.menu_hitmarkertype_pixel = "Пиксель"
-russian.menu_hitmarkertype_arrows = "Стрелки"
-russian.menu_hitmarkertype_star = "Звезда"
-russian.menu_hitmarkertype_zigzag = "Зигзаг"
-russian.menu_hitnums_enabled = "Показать урон"
-russian.menu_hitnums_debugmode = "Режим отладки урона"
-ALLLANGUAGES.russian = russian
+DEMO录制
+开启DEMO录制
+开启DEMO提示
+--击中
+击中效果
+启用击中
+启用击中声音
+击中标记颜色
+击中标记类型
+线条
+圆形
+点状
+大交叉
+三角形
+双层圆形
+像素风
+箭头
+星形
+锯齿状
+显示伤害
+显示伤害调试模式
+ALLLANGUAGES.chinese = chinese
 --Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---Перевод на английский AI
+--中文翻译by风子和[CN]RXSEND管理组
