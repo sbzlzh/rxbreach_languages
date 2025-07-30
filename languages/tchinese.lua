@@ -1888,5 +1888,3 @@ traditional.menu_hitmarkertype_zigzag = "鋸齒狀"
 traditional.menu_hitnums_enabled = "顯示傷害"
 traditional.menu_hitnums_debugmode = "顯示傷害調試模式"
 ALLLANGUAGES.traditional = traditional
---Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---繁体中文翻译by AI

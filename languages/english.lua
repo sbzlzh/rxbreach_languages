@@ -1894,5 +1894,3 @@ english.menu_hitmarkertype_zigzag = "Zigzag"
 english.menu_hitnums_enabled = "Show Damage"
 english.menu_hitnums_debugmode = "Show Damage Debug Mode"
 ALLLANGUAGES.english = english
---Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---English Translation By AI and Artificial

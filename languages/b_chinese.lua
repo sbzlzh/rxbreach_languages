@@ -1862,5 +1862,3 @@ b_chinese.menu_hitmarkertype_zigzag = "锯齿状"
 b_chinese.menu_hitnums_enabled = "显示伤害"
 b_chinese.menu_hitnums_debugmode = "显示伤害调试模式"
 ALLLANGUAGES.b_chinese = b_chinese
---Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---B站中文翻译by白菜_CAIN
