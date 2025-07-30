@@ -2203,5 +2203,3 @@ chinese.menu_hitmarkertype_zigzag = "锯齿状"
 chinese.menu_hitnums_enabled = "显示伤害"
 chinese.menu_hitnums_debugmode = "显示伤害调试模式"
 ALLLANGUAGES.chinese = chinese
---Да будет великий перевод отличным и могущественным. Бисмилляхи рахмани рахим. Аллаху акбар. Аминь.
---中文翻译by风子和[CN]RXSEND管理组
