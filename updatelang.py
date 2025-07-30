@@ -27,9 +27,17 @@ def extract_lang_var(array):
 				pass
 	return "L"  # fallback
 
+def normalize_code_line(line, prefix):
+	"""Return line content with leading prefix removed if present."""
+	if line.startswith(prefix):
+		return line[len(prefix):]
+	return line
+
+
 def updatelang(base, update, lang_file):
 	newlang = []
 	lang_var = extract_lang_var(update)  # e.g., english / chinese / traditional
+	base_var = extract_lang_var(base)
 
 	# copy header from old file
 	for i in range(0, getaliasline(update)):
@@ -49,8 +57,25 @@ def updatelang(base, update, lang_file):
 			newlang.append("-- " + line["content"] + "\n" if line["content"] != "" else "\n")
 			continue
 		if line["type"] == "code":
-			newlang.append(line["content"] + "\n")
-			continue
+		        # try to find matching code line in update
+		        found = None
+		        norm_base = normalize_code_line(line["content"], base_var)
+		        for uline in update:
+		                if uline["type"] != "code":
+		                        continue
+		                if normalize_code_line(uline["content"], lang_var) == norm_base:
+		                        found = uline["content"]
+		                        break
+		        if found:
+		                newlang.append(found + "\n")
+		        else:
+		                # default: copy from base but replace prefix
+		                content = line["content"]
+		                if content.startswith(base_var):
+		                        content = lang_var + content[len(base_var):]
+		                newlang.append(content + "\n")
+		        continue
+
 		transline = getelement(update, line["identifier"])
 
 		if transline is not None:
