@@ -94,15 +94,18 @@ def loadfile(path):
 
         # 单行字符串
         singleline_text_match = singleline_text_pattern.search(line)
+        matched_prefixed = True
         if not singleline_text_match:
             singleline_text_match = alt_singleline_text_pattern.search(line)
         if not singleline_text_match:
             singleline_text_match = unpref_singleline.search(line)
+            matched_prefixed = False if singleline_text_match else matched_prefixed
         if singleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "single",
                 "identifier": singleline_text_match.group(1),
-                "content": singleline_text_match.group(2)
+                "content": singleline_text_match.group(2),
+                "prefixed": matched_prefixed
             })
             data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
             line_counter += 1
@@ -110,13 +113,16 @@ def loadfile(path):
 
         # 多行但在一行内
         multisingleline_text_match = re.search(multiline_single_line, line)
+        matched_prefixed = True
         if not multisingleline_text_match:
             multisingleline_text_match = re.search(unpref_multiline_single, line)
+            matched_prefixed = False if multisingleline_text_match else matched_prefixed
         if multisingleline_text_match and line[0:2] != "--":
             data.append({
                 "type": "multi",
                 "identifier": multisingleline_text_match.group(1),
-                "content": multisingleline_text_match.group(2)
+                "content": multisingleline_text_match.group(2),
+                "prefixed": matched_prefixed
             })
             data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
             line_counter += 1
@@ -124,13 +130,16 @@ def loadfile(path):
 
         # 多行字符串开始
         multiline_text_match_open = re.search(multiline_text_pattern_open, line)
+        matched_prefixed = True
         if not multiline_text_match_open:
             multiline_text_match_open = re.search(unpref_multiline_open, line)
+            matched_prefixed = False if multiline_text_match_open else matched_prefixed
         if multiline_text_match_open and line[0:2] != "--":
             data.append({
                 "type": "multi",
                 "identifier": multiline_text_match_open.group(1),
-                "content": multiline_text_match_open.group(2)
+                "content": multiline_text_match_open.group(2),
+                "prefixed": matched_prefixed
             })
             is_multiline = True
             continue
