@@ -3,7 +3,7 @@ import re
 def getelement(haystack, needle):
     for line in haystack:
         try:
-            if line["identifier"] == needle:
+            if "identifier" in line and line["identifier"] == needle:
                 return line
         except KeyError:
             continue
@@ -11,10 +11,10 @@ def getelement(haystack, needle):
 
 def getaliasline(array):
     for i, line in enumerate(array):
-        if line["type"] == "single" and line["identifier"] == "__alias":
+        if line["type"] == "single" and "identifier" in line and line["identifier"] == "__alias":
             return i
     for i, line in enumerate(array):
-        if line["type"] in ["single", "multi"]:
+        if line["type"] in ["single", "multi"] and "identifier" in line:
             return i
     return 0
 
@@ -56,7 +56,6 @@ def updatelang(base, update, lang_file):
         # 检测表开始
         if line["type"] == "code" and "{" in line["content"]:
             in_table = True
-            current_table = line["identifier"] if "identifier" in line else None
             # 替换基础语言变量为目标语言变量
             table_line = line["content"].replace(f"{base_var}.", f"{lang_var}.").replace(f"{base_var}[", f"{lang_var}[")
             newlang.append(table_line + "\n")
@@ -71,6 +70,12 @@ def updatelang(base, update, lang_file):
         # 处理表中的内容
         if in_table:
             # 保持表内容不变
+            newlang.append(line["content"] + "\n")
+            continue
+        
+        # 检查是否有identifier键
+        if "identifier" not in line:
+            # 直接复制代码行
             newlang.append(line["content"] + "\n")
             continue
         
