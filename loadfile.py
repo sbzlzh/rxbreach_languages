@@ -133,8 +133,7 @@ def loadfile(path):
                 data[line_counter]["content"] += "\n" + multiline_text_match_close.group(1)
                 data[line_counter]["params"] = re.findall(text_param_pattern, data[line_counter]["content"])
                 line_counter += 1
-            else:
-                print(f"警告：line_counter {line_counter} 超出 data 长度 {len(data)}")
+
             is_multiline = False
             continue
 
@@ -143,11 +142,18 @@ def loadfile(path):
             data[line_counter]["content"] += "\n" + line
             continue
 
-        # 其余认为是空行
-        data.append({
-            "type": "empty",
-            "content": ""
-        })
+        # 其余内容处理
+        if line == "":
+            data.append({
+                "type": "empty",
+                "content": ""
+            })
+        else:
+            # treat unrecognized assignments or other code as literal code lines
+            data.append({
+                "type": "code",
+                "content": line
+            })
         line_counter += 1
 
     return data

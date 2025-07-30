@@ -48,7 +48,9 @@ def updatelang(base, update, lang_file):
 		if line["type"] == "comment" or line["type"] == "empty":
 			newlang.append("-- " + line["content"] + "\n" if line["content"] != "" else "\n")
 			continue
-
+		if line["type"] == "code":
+			newlang.append(line["content"] + "\n")
+			continue
 		transline = getelement(update, line["identifier"])
 
 		if transline is not None:
