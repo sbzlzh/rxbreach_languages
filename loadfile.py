@@ -10,8 +10,8 @@ multiline_text_pattern_close = r'(.*?)\]\]'
 multiline_single_line_fmt = r'{prefix}([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*\[\[(.*?)\]\]'
 text_param_pattern = r'{([^{}]+)}'
 
-array_index_pattern = re.compile(r'^(\s*)([A-Za-z0-9_.]+\[[^\]]+\])\s*=\s*"((?:\\"|[^"])*)"(\s*,?)')
-array_index_multi_pattern = re.compile(r'^(\s*)([A-Za-z0-9_.]+\[[^\]]+\])\s*=\s*\[\[(.*?)\]\](\s*,?)', re.DOTALL)
+array_index_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*"((?:\\"|[^"])*)"')
+array_index_multi_pattern = re.compile(r'(\w+)\.(\w+)\[(.*?)\]\s*=\s*\[\[(.*?)\]\]', re.DOTALL)
 
 def loadfile(path):
     lines = []
@@ -56,14 +56,11 @@ def loadfile(path):
         # 数组式赋值解析
         array_index_match = array_index_pattern.match(line)
         if array_index_match:
-            indent, lhs, value, comma = array_index_match.groups()
+            _, table, index, value = array_index_match.groups()
             data.append({
                 'type': 'single',
-                'indent': indent,
-                'identifier': lhs,
-                'content': value,
-                'comma': comma,
-                'prefixed': False
+                'identifier': f'{table}[{index}]',
+                'content': value
             })
             data[line_counter]['params'] = re.findall(text_param_pattern, value)
             line_counter += 1
@@ -71,14 +68,11 @@ def loadfile(path):
 
         array_multi_match = array_index_multi_pattern.match(line)
         if array_multi_match:
-            indent, lhs, value, comma = array_multi_match.groups()
+            _, table, index, value = array_multi_match.groups()
             data.append({
                 'type': 'multi',
-                'indent': indent,
-                'identifier': lhs,
-                'content': value,
-                'comma': comma,
-                'prefixed': False
+                'identifier': f'{table}[{index}]',
+                'content': value
             })
             data[line_counter]['params'] = re.findall(text_param_pattern, value)
             line_counter += 1
