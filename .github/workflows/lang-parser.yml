@@ -10,6 +10,7 @@ on:
       - master
     paths:
       - 'languages/*.lua'
+      - 'sync_missing_from_chinese.py'
   workflow_dispatch:
 
 jobs:
@@ -25,8 +26,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run language parser
-        run: python3 parse.py --in ./languages --out ./languages --base chinese --ignore chinese
+      - name: Sync missing entries from chinese.lua
+        run: python3 sync_missing_from_chinese.py --dir ./languages --base chinese.lua
 
       - name: Generate GitHub App token
         uses: actions/create-github-app-token@v1
