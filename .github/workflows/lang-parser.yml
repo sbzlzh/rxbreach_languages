@@ -9,8 +9,7 @@ on:
     branches:
       - master
     paths:
-      - 'languages/*.lua'
-      - 'sync_missing_from_chinese.py'
+      - 'languages/chinese.lua'
   workflow_dispatch:
 
 jobs:
