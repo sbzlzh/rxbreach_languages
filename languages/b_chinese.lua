@@ -23,33 +23,6 @@ b_chinese.bugs = "如果遇到BUG请报告BUG!"
 b_chinese.lang_end1 = "游戏结束"
 b_chinese.lang_end2 = "时不我待"
 b_chinese.lang_end3 = "游戏无法进行"
-b_chinese.escapemessages = {
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被黑山特遣部队疏散,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被俄罗斯武装部队俘获,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你已经被疏散",
-        txt = "你花费了 {t} 分钟从基地被疏散,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
-}
-
 b_chinese.role = {}
 --SCP
 b_chinese.SCP = "Xen生物"
