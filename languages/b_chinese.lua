@@ -1,16 +1,5 @@
 b_chinese = {}
 b_chinese.LangName = "Bilili Chinese"
-b_chinese.lang_pldied = "{num} 玩家(-ов) 死了(-ло)"
-b_chinese.lang_descaped = "{num} 等级(-ов) 囚犯人员逃脱了(-о)"
-b_chinese.lang_sescaped = "{num} Xen 逃脱了(-о)"
-b_chinese.lang_rescaped = "{num} 科研人员(-х) 逃脱了(-о)"
-b_chinese.lang_dcaptured = "俄罗斯武装部队俘获了 {num} 等级(-ов)囚犯人员"
-b_chinese.lang_rescorted = "黑山特遣队疏散了 {num} 科研人员(-х)"
-b_chinese.lang_teleported = "Xen - 106 吃了 {num} 玩家(-ов) 在老头空间"
-b_chinese.lang_snapped = "{num} 人类(-м) 被扭断了脖子 xen - 173"
-b_chinese.lang_zombies = "Xen - 049 '治愈' {num} 患者(-а)"
-b_chinese.lang_secret_found = "秘密被发现"
-b_chinese.lang_secret_nfound = "秘密没有被发现"
 b_chinese.unknown = "未知"
 b_chinese.waiting_for_players = "正在等待玩家......"
 b_chinese.waiting_for_players_pt2 = "需要"
@@ -34,33 +23,6 @@ b_chinese.bugs = "如果遇到BUG请报告BUG!"
 b_chinese.lang_end1 = "游戏结束"
 b_chinese.lang_end2 = "时不我待"
 b_chinese.lang_end3 = "游戏无法进行"
-b_chinese.escapemessages = {
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被黑山特遣部队疏散,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从基地撤离,干得好!",
-        txt2 = "如果你被俄罗斯武装部队俘获,你将会获得更多的经验.",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你已经被疏散",
-        txt = "你花费了 {t} 分钟从基地被疏散,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    },
-    {
-        main = "你逃出去了",
-        txt = "你花费了 {t} 分钟从设施逃离,干得好!",
-        txt2 = "",
-        clr = Color(237, 28, 63),
-    }
-}
-
 b_chinese.role = {}
 --SCP
 b_chinese.SCP = "Xen生物"
