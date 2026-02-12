@@ -49,7 +49,7 @@ english.role.SCP912 = "SCP-912"
 english.role.SCP3114 = "SCP-3114"
 english.role.SCP610Infected = "SCP-610 Infected"
 english.role.SCP610Bloodiness = "SCP-610 Bloodiness"
---研究员
+--Scientists
 english.SCI = "Science Department"
 english.role.SCI_Assistant = "Research Assistant"
 english.role.SCI_Grunt = "Scientist"
@@ -59,7 +59,7 @@ english.role.SCI_Medic = "Doctor"
 english.role.SCI_Cleaner = "Janitor"
 english.role.SCI_Head = "Personnel Director"
 english.role.SCI_SpyUSA = "UIU Spy"
---安保部门
+--Security Department
 english.SECURITY = "Security Department"
 english.role.SECURITY_Recruit = "Security Recruit"
 english.role.SECURITY_Sergeant = "Security Sergeant"
@@ -71,7 +71,7 @@ english.role.SECURITY_IMVSOLDIER = "Security Special Agent"
 english.role.SECURITY_Chief = "Security Captain"
 english.role.SECURITY_Spy = "Chaos Insurgency Spy"
 english.role.SECURITY_Corporal = "Security Corporal"
---格鲁乌P部门
+--GRU P Division
 english.GRU = "GRU P Division (Post-Era)"
 english.role.GRU_Soldier = "GRU P Soldier"
 english.role.GRU_Specialist = "GRU P Combat Specialist"
@@ -88,37 +88,30 @@ english.MINIGAMES = "Other"
 english.role.CTFCI = "CI Raider"
 english.role.CTFQRT = "QRT Defender"
 english.role.ArenaParticipant = "Arena Participant"
---老UIU
+--Old UIU
 english.UIU = "FBI Unusual Incidents Unit"
 english.role.UIU_Soldier = "UIU Soldier"
 english.role.UIU_Commander = "UIU Commander"
 english.role.UIU_Specialist = "UIU Combat Specialist"
 english.role.UIU_Clocker = "UIU Infiltrator"
 english.role.UIU_Informator = "UIU Intelligence Officer"
---新UIU
+--New UIU
 english.UIU_Agents = "UIU Agent Team"
 english.role.UIU_Agent = "UIU Agent"
 english.role.UIU_Agent_Commander = "UIU Agent Team Leader"
--- --english.role.UIU_Agent_Sniper = "UIU特工小组 狙击手"
 english.role.UIU_Agent_Echo = "UIU Agent Echo"
 english.role.UIU_Agent_Thunder = "UIU Agent Thunder"
 english.role.UIU_Agent_Rhinoceros = "UIU Agent Rhinoceros"
 --UIU特工小组 特殊干员
 english.UIU_Agent_Special = "UIU Special Agents"
---UIU收容小组
+--UIU Containment Team
 english.UIU_Contain = "UIU Containment Team"
 english.role.UIU_Control_Grunt = "UIU Containment Team Member"
 english.role.UIU_Control_MachineGunner = "UIU Containment Team Machine Gunner"
 english.role.UIU_Control_Commander = "UIU Containment Team Leader"
 english.role.UIU_Control_Specialist = "UIU Containment Specialist"
 english.role.UIU_Control_Darkside = "UIU Containment Team Shadow" --English and Russian both translate to "Shadow"
---异常特遣队
--- english.SKP = "异常特遣队"
--- english.role.SKP_Soldier = "SKP 异界探索C组 士兵"
--- english.role.SKP_Commander = "SKP 异界探索C组 指挥官"
--- english.role.SKP_Warriors = "SKP 异界探索C组 狂战士"
--- english.role.SKP_Agent = "SKP 异界探索C组 特工"
---蛇之手
+--Serpent's Hand
 english.DZ = "Serpent's Hand"
 english.role.DZ_Grunt = "Serpent's Hand Soldier"
 english.role.SCI_SpyDZ = "Serpent's Hand Spy"
@@ -132,7 +125,7 @@ english.role.Goc_Liq = "GOC Lieutenant"
 english.role.Goc_Commander = "GOC Commander"
 english.role.Goc_Jag = "GOC Fearless Warrior"
 english.role.Goc_Special = "GOC Combat Specialist"
---GOC 危险环境作战部队 Hazardous Environment Operational Forces
+--GOC Hazardous Environment Operational Forces
 english.UNGOC = "GOC Hazardous Environment Operational Forces"
 english.role.UNGOC_Soldier = "GOC HEOF Soldier"
 english.role.UNGOC_Ranger = "GOC HEOF Breacher"
@@ -140,7 +133,7 @@ english.role.UNGOC_Detector = "GOC HEOF Detection Spec."
 english.role.UNGOC_Specialist = "GOC HEOF Containment Spec."
 english.role.UNGOC_Commander = "GOC HEOF Commander"
 english.role.UNGOC_Support = "GOC HEOF Support Trooper"
---快反
+--Quick Response Team
 english.QRT = "Quick Response Team"
 english.role.QRT_Soldier = "QRT Soldier"
 english.role.QRT_Medic = "QRT Medic"
@@ -149,13 +142,7 @@ english.role.QRT_Commander = "QRT Commander"
 english.role.QRT_Machinegunner = "QRT Machine Gunner"
 english.role.QRT_Shield = "QRT Shield Bearer"
 english.role.QRT_Marksmen = "QRT Marksman"
--- Elite QRT
--- english.role.Elite_QRT_Soldier = "精锐快反 士兵"
--- english.role.Elite_QRT_Medic = "精锐快反 医疗兵"
--- english.role.Elite_QRT_Machinegunner = "精锐快反 机枪手"
--- english.role.Elite_QRT_Engineer = "精锐快反 工程师"
--- english.role.Elite_QRT_Com = "精锐快反 指挥官"
---D级
+--Class-D
 english.ClassD = "Class-D Personnel"
 english.role.ClassD_Default = "Class-D Personnel"
 english.role.ClassD_Pron = "Class-D Thief"
@@ -197,36 +184,30 @@ english.role.MEG_NTFExpert = "MEG NTF Containment Specialist"
 english.role.MEG_NU7Instructor = "MEG Hammer Down Instructor"
 english.role.MEG_BETA1Security = "MEG Scorcher Security Specialist"
 english.role.MEG_OMEGA1Officer = "MEG Omega-1 Investigator"
---MTF 重收支援
--- english.role.MTF_SEC_Guard = "战术应对二部 士兵"
--- english.role.MTF_SEC_Machine = "战术应对二部 机枪手"
--- english.role.MTF_SEC_Medic = "战术应对二部 医疗兵"
--- english.role.MTF_SEC_Engi = "战术应对二部 工程师"
--- english.role.MTF_SEC_Com = "战术应对二部 指挥官"
---律法左手
+--Omega-1 Law Left Hand
 english.OMEGA1 = "Mobile Task Force Omega-1 'Law Left Hand' Investigation Team"
 english.role.omega1_assistant = "Omega-1 Investigation Team Assistant"
 english.role.omega1_officer = "Omega-1 Investigation Team Capture Specialist"
 english.role.omega1_captain = "Omega-1 Investigation Team Enforcer"
---九尾狐
+--Nine Tailed Fox
 english.NTF = "Mobile Task Force Epsilon-11 ''Nine Tailed Fox''"
 english.role.NTF_Soldier = "NTF Soldier"
 english.role.NTF_Commander = "NTF Commander"
 english.role.NTF_Specialist = "NTF Combat Specialist"
 english.role.NTF_Sniper = "NTF Sniper"
---NU7 落锤
+--NU7 Hammer Down
 english.NU7 = "Mobile Task Force NU-7 'Hammer Down' Special Forces Battalion Alpha Company"
 english.role.NU7_Soldier = "NU-7 Alpha Company Soldier"
 english.role.NU7_Commander = "NU-7 Alpha Company Commander"
 english.role.NU7_Specialist = "NU-7 Alpha Company Combat Specialist"
 english.role.NU7_Vanguard = "NU-7 Alpha Company Vanguard"
 english.role.NU7_Juggernaut = "NU-7 Alpha Company Juggernaut"
---NU7 维修小组
+--NU7 Maintenance Team
 english.NU7_SF = "Mobile Task Force NU-7 'Hammer Down' Special Forces Battalion Bravo Company Maintenance Team 3"
 english.role.NU7_SF_Soldier = "NU-7 Maintenance Team 3 Member"
 english.role.NU7_SF_Captain = "NU-7 Maintenance Team 3 Leader"
 english.role.NU7_SF_Specialist = "NU-7 Maintenance Team 3 Maintenance Specialist"
---CI
+--Chaos Insurgency
 english.Chaos = "Chaos Insurgency"
 english.role.Chaos_Grunt = "CI Soldier"
 english.role.Chaos_Commander = "CI Commander"
@@ -468,10 +449,8 @@ english.weaponry["item_syringe_scarlet_b"] = "Blood of Scarlet - Polluted"
 english.weaponry["breach_keycard_omega1"] = "Omega-1 Keycard"
 english.weaponry["item_scp_tourist_suitcase"] = "tourist's suitcase"
 english.weaponry["item_novel"] = "Novel"
--- english.weaponry["item_skp_checker"] = "检查器"
--- english.weaponry["item_skp_decision"] = "决策设备"
 english.role.Spectator = "Spectator"
---提示
+--Hints
 english.already_have_the_bag = "You already have a bag!"
 english.took_on_the_bag = "You put on the bag!"
 english.you_cant_wear_the_bag = "You can't wear this bag!"
@@ -511,7 +490,7 @@ english.gru_start_warhead = "Warning! Alpha Warhead has been forcibly activated 
 english.gru_evac_warhead = "Warning! Multiple facility data breaches detected. [DATA EXPUNGED] access is activating the Alpha Warhead"
 english.scp_contained = "Contained"
 english.gruci_device_upgrade = "Your information terminal has been upgraded"
---进度条
+--Progress Bars
 english.progress_wait = "Waiting..."
 english.bismillah = "Reading prayer..."
 english.stopscarletinvsion = "Closing the Scarlet Book..."
@@ -566,7 +545,7 @@ english.skp_checking = "Checking value..."
 english.picking_up_crystal = "Picking up crystal..."
 english.progress_done = "Done!"
 --ARMORS
---вы переоделись во что? в кого?
+--What did you change into?
 english.armor_medic = "Medical Personnel Uniform"
 english.armor_mtf = "MTF Uniform"
 english.armor_sci = "Science Uniform"
@@ -591,7 +570,7 @@ english.diseases_randtele = "Spatial Disorientation"
 english.diseases_musclemutation = "Muscle Mutation"
 english.diseases_mitosis = "Hypercellular Mitosis"
 english.diseases_hardskull = "Cranial Bone Reinforcement"
---聊天通知
+--Chat Notifications
 english.you_cant_wear_this_uniform = "You can't wear this uniform!"
 english.your_current_exp = "Your current experience is:"
 english.scp914_change_mode = "You changed SCP-914's mode to:"
@@ -647,8 +626,6 @@ english.uiu_locationlcz = "In LCZ"
 english.uiu_locationhcz = "In HCZ"
 english.uiu_locationentrance = "In EZ"
 english.uiu_locationoutside = "On Surface"
--- english.location_dist = "目标距离: "
--- english.location_not_found = "目标未找到"
 english.uiu_trap_forbidden = "You can't place lightning doors here"
 english.cicommander_conscripted_already = "Target already has equipment."
 english.cicommander_need_to_take_off_smth = "Target needs to remove equipment."
@@ -681,15 +658,12 @@ english.visibility_lost_due_to_shooting = "Optical camouflage deactivated due to
 english.commitee_look_on_them = "Look at the target!"
 english.commitee_cant_conscript = "You can't equip this player!"
 english.commitee_no_slots = "This player must have empty slots in their equipment inventory!"
--- english.player_is_too_fat = "该玩家太胖了!"
 english.commitee_active_weapon = "This player must put away their item!"
 english.scp3114_disguised = "Disguise complete, let's have some fun!"
 english.scp3114_confusion = "You are confused by this body"
 english.scp3114_hating_bodies = "You feel disgusted by this body"
 english.scp3114_tooboney = "This body is too 'bony' and not suitable for disguise"
 english.ability_remove_hint = "Your ability has been removed"
--- english.megbeta1_forgetcode = "你似乎忘记了你的密码"
--- english.megbeta1_remindcode = "你记起了你的密码!"
 english.ulx_still_alive = " is still alive"
 english.arena_participating = "You joined the arena"
 english.arena_left = "You left the arena"
@@ -822,8 +796,7 @@ english.hamburger_mio_3 = "Congratulations! Evolution failed :)"
 english.hamburger_mio_4 = "Congratulations! Evolution successful :>"
 english.hamburger_mio_5 = "You betrayed country D!"
 english.cant_select_twice = "You can't select the weapon twice"
--- english.skp_scp_hint = "你现在将效忠于SKP"
---重型现实稳定锚
+--Heavy Reality Anchor
 english.hs_state_worked = "Working..."
 english.hs_state_damaged = "Damaged"
 english.hs_damaging = "Damaging reality anchor..."
@@ -833,7 +806,7 @@ english.hs_repaired_bonus = "Repair Heavy Reality Anchor"
 english.hs_needgenerator = "All generators not repaired"
 english.hs_activity = "Heavy Reality Anchor repaired"
 english.hs_damaged = "Heavy Reality Anchor damaged"
---人员扫描器
+--Personnel Scanner
 english.fs_down = "Unavailable"
 english.fs_waiting = "Standing by..."
 english.fs_cooling = "Scan cooling"
@@ -843,18 +816,18 @@ english.fs_foundation_force = "Foundation Forces"
 english.fs_science_team = "Foundation Science"
 english.fs_enemy_team = "Hostile Forces"
 english.fs_user_hint = "Please select a target to scan"
---QRT召唤器
+--QRT Caller
 english.qrtcaller_notready = "QRT team not ready yet"
 english.qrtcaller_notsquad = "No available QRT team"
---GRUCI 信息终端
+--GRUCI Information Terminal
 english.info_device_1 = "Personnel Scan"
 english.info_device_2 = "SCP Suppression"
---单兵伤害吸收设备
+--Personal Damage Absorption Device
 english.pos9_active = "PoS-9 device activated"
 english.pos9_shutdown = "PoS-9 device deactivated"
 english.pos9_broken = "PoS-9 device damaged"
 english.pos9_remaining = "Pos-9 remaining durability: "
---GOC 奇术终端
+--GOC Magic Terminal
 english.gocm_tml_name = "GOC Magic Terminal"
 english.gocm_tml_hint1 = "Please enter the correct form of the following encrypted text"
 english.gocm_tml_hint2 = "Remember to press \"Enter\" after each input"
@@ -864,7 +837,7 @@ english.gocm_tml_caesarhint = "The correct letter is 3 positions before the curr
 english.gocm_tml_fence = "Rail Fence Cipher"
 english.gocm_tml_cantuse = "Magic terminal locked"
 english.gocm_tml_done = "Magic terminal deployed"
---GOC 设施评估终端
+--GOC Facility Assessment Terminal
 english.goc_support_caller = "GOC-Facility Assessment Terminal"
 english.goc_caller_res = "Dispatch Result"
 english.goc_caller_success = "Dispatch Successful!"
@@ -878,8 +851,6 @@ english.support_teams = "Dispatchable Teams"
 english.dispatch = "Dispatch"
 english.cant_dispatch = "Cannot dispatch"
 english.stability_range = "Stability Range: "
--- english.goc_checked_right = "这是GOC方面的人"
--- english.goc_checked_wrong = "他不是GOC方面的人"
 --深红牺牲者
 english.cant_get_soul_back = "He's soul cannot be found"
 english.health_not_enough = "Your health is not enough"
@@ -907,15 +878,15 @@ english.warning_status = "Warning"
 english.danger_status = "Danger"
 english.decided = "Decided"
 english.decidsion = "Decision"
---格鲁乌P撤离提醒
+--GRU P Evacuation Reminder
 english.grubtf_leavehint1 = "Armored vehicle will leave in"
 english.grubtf_leavehint2 = "seconds"
---SCP500?效果提示
+--SCP500? Effect Hints
 english.scp500weird_hint1 = "A bit cold"
 english.scp500weird_hint2 = "Sprint forward!"
 english.scp500weird_hint3 = "This is your final chapter..."
 english.scp500weird_hint4 = "You will be reborn"
---实体提醒
+--Entity Reminders
 english.ent_using = "Someone is using/interacting"
 english.ent_too_fast = "You're interacting too fast!"
 english.ent_condition_not_satis = "Conditions not met!"
@@ -923,16 +894,16 @@ english.ent_no_access = "You don't have permission to operate"
 english.ent_nosignal = "No signal"
 english.ent_signal = "Good signal"
 english.ent_losing_signal = "Hacking signal lost"
---SCP-914实体提醒
+--SCP-914 Entity Reminder
 english.scp914_working_hint = "Processing"
---死神灾厄
+--Death Calamity
 english.thedeath_event_1 = "I like this amount of health"
 english.thedeath_event_2 = "Hey, did you bring any nitroglycerin?"
 english.thedeath_event_3 = "Your legs hurt, don't they"
 english.thedeath_event_4 = "This is really exciting"
 english.thedeath_event_5 = "Your skin seems sensitive"
 english.thedeath_event_lucky = "You got lucky, kid"
---蛇之手奇术传送设备
+--Serpent's Hand Magic Teleportation Device
 english.sh_teleporter_forbidden = "Cannot deploy teleportation magic in current state"
 english.sh_teleporter_deployed = "Teleportation magic has been deployed on the target"
 --Doro!!
@@ -949,7 +920,7 @@ english.DoroHomeBonus = "Go home, back to the original beauty"
 english.c4plantHint = "You can't freely place C4 at this time, you must destroy all target positions first"
 english.c4hasbeenplanted = "The area already has C4, you can't place it again"
 english.c4plantmissionhint = "You have C4, new target: Destroy the broadcast room and SCP-006 containment room"
---杂项
+--Miscellaneous
 english.ent_canthacked = "Other programs are hacking"
 english.ent_timetoolate = "No time to close it"
 english.ent_newobject = "Execute latest target"
@@ -958,10 +929,10 @@ english.serious_sec = "Security system has entered strict mode, please try again
 english.c4remaining = "C4 Left: "
 english.ent_ischecking = "Device is being checked"
 english.ent_waschecked = "Device has been checked"
---落锤
+--Hammer Down
 english.nu7alpha_come = "Hammer Down Alpha Company is coming"
 english.nu7alpha_came = "Hammer Down Alpha Company has been called"
---任务提醒
+--Mission Reminders
 english.hint_task = "New objective:"
 english.hint_task_found079 = "Find SCP-079"
 english.hint_task_goto_helipad = "Go to the helipad to evacuate"
@@ -976,7 +947,7 @@ english.hint_task_sts_killing2 = "They can't disable the nuke, free to act"
 english.hint_found_gruci_device = "Find and activate the memetic weapon"
 english.hint_task_helping_scp1440 = "Stop evacuation or help SCP-1440"
 english.hint_task_stoping_scp1440 = "Evacuate or stop SCP-1440"
---聊天栏提醒
+--Chat Bar Reminders
 english.scp079decodinghint = "SCP-079 is decoding, you can continue to help 079"
 english.scp079transmission = "It's too late, but you risk downloading data and transferring SCP-079"
 --106
@@ -1022,8 +993,6 @@ english.nu7_on_surface = "Surface"
 english.handcuff_hint1 = "Target already has handcuffs"
 english.handcuff_hint2 = "Left click to disarm, right click to handcuff Class-D personnel"
 english.handcuff_hint3 = "You can't handcuff people/You need to obtain MTF uniform first/But you can still disarm others"
--- english.handcuff_hint4 = "你是律法左手的一员，你能在某些时候逮捕高层（如果他们心甘情愿被抓的话）"
--- english.handcuff_hint5 = "现在已掌握充分的证据，去逮捕他们！"
 --TEAMS
 english["Not Set"] = "null"
 english["SCPs"] = "SCPs"
@@ -1052,8 +1021,6 @@ english["GRU-CI Froce"] = "GRU-CI Assault Force"
 english["NU22 Rocketmen"] = "NU-22 Rocketmen"
 english["Nazi Germany"] = "Nazi Germany"
 english["American Army"] = "American Army"
--- english["SKP"] = "异常特遣队"
--- english["Corrupt Foundation"] = "贪腐人员"
 english["Arena Participants"] = "Arena Participants"
 --SCOREBOARD
 english.scoreboard_ping = "Ping"
@@ -1166,7 +1133,6 @@ BREACH.Descriptions.english[role.UIU_Agent] = "You are a UIU Agent Division - Op
 BREACH.Descriptions.english[role.UIU_Agent_Commander] = "You are a UIU Agent Division - Team Leader\n\nYou can see nearby people using radios\n\nGive orders to your soldiers and complete the mission!"
 BREACH.Descriptions.english[role.UIU_Agent_Echo] = "You are a UIU Agent Echo\n\nYou have a special grenade that creates echoes in the room, marking every enemy near you and your teammates.\n\nHack computers to gather intelligence, follow your commander's orders and complete the objective!"
 BREACH.Descriptions.english[role.UIU_Agent_Thunder] = "You are a UIU Agent Thunder\n\nThe 3 experimental 'Lightning Doors' you carry can be placed on doors, and when a human tries to pass through, they will be electrocuted and temporarily lose mobility\n\nBut this device currently cannot work for long....\n\nHack computers to gather intelligence, follow your commander's orders and complete the objective!"
--- BREACH.Descriptions.english[role.UIU_Agent_Rhinoceros] = "你是特异事务处特工部 - 犀牛\n\n你所携带的实验性装备——'犀'式装具,能够在室内战斗中提供帮助\n\n骇入电脑收集情报,遵循你指挥官的命令并完成目标!"
 --BREACH.Descriptions.english[role.FBI_Commander] = "你是特异事务处的 - 指挥官\n\n你可以看到附近使用对讲机的人\n\n向你的士兵下达命令并完成任务!"
 BREACH.Descriptions.english[role.UIU_Soldier] = "You are a UIU - Soldier\n\nHack computers to gather intelligence, follow your commander's orders and complete the objective!"
 --BREACH.Descriptions.english[role.UIU_Agent_Information] = "你是特异事务处特工部的 - 情报专员\n\n骇入设施终端电脑呼叫UIU主力部队"
@@ -1243,7 +1209,6 @@ BREACH.Descriptions.english[role.ClassD_Fast] = "You are a Class-D Personnel - A
 BREACH.Descriptions.english[role.ClassD_Killer] = "You are a Class-D Personnel - Killer\n\nThrough days of collection, you have made several not very durable but deadly knives\n\nYou don't think you can effectively use so many knives, so you gave some to Class-D personnel with killing experience\n\nCooperate with other Class-D personnel to escape the facility"
 BREACH.Descriptions.english[role.ClassD_Hitman] = "You are a Class-D Personnel - Hitman\n\nYou used to be a professional hitman, it seems you haven't lost your old habits..\n\nCooperate with other Class-D personnel to escape the facility"
 BREACH.Descriptions.english[role.ClassD_Soldier] = "You are a Class-D Personnel - Veteran\n\nYou were once a battle-hardened special forces soldier\nBut you were sentenced to life imprisonment for being accused of committing \"crimes against humanity\"\nOnly you know the truth of what happened...\n\nYou haven't forgotten the skills honed on the battlefield, make good use of this ability to escape the facility"
---战术应对一部
 BREACH.Descriptions.english[role.MTF_Guard] = "You are a Mobile Task Force - Soldier\n\nExecute the commander's orders and complete the mission"
 BREACH.Descriptions.english[role.MTF_Medic] = "You are a Mobile Task Force - Medic\n\nExecute the commander's orders and complete the mission"
 BREACH.Descriptions.english[role.MTF_Left] = "You are a Mobile Task Force - Lieutenant\n\nExecute orders from superiors, you can command soldiers"
@@ -1255,35 +1220,23 @@ BREACH.Descriptions.english[role.MTF_HOF] = "You are the facility director\n\nYo
 BREACH.Descriptions.english[role.MTF_Security] = "You are an Internal Security Agent\n\nYou have a list of all facility personnel\n\nAnd recently you obtained a top-secret intelligence from MTF Iota-10 (\"Those damn Feds\")\n\nExecute the commander's orders and complete the mission"
 BREACH.Descriptions.english[role.O4Commander] = "You are the O4 Commander\n\nSupport teammates through monitoring and summon corresponding support at the appropriate time\n\nHelp the facility"
 BREACH.Descriptions.english[role.MTF_Jag] = "You are a Mobile Task Force - Heavy Trooper\n\nThe M249 light machine gun and heavy ballistic armor make you the strongest warrior in the facility\n\nExecute the commander's orders and complete the mission"
---战术应对二部
--- BREACH.Descriptions.english[role.MTF_SEC_Guard] = "你是战术应对二部 - 士兵\n\n执行指挥官的命令,完成任务"
--- BREACH.Descriptions.english[role.MTF_SEC_Medic] = "你是战术应对二部 - 医疗兵\n\n执行指挥官的命令,完成任务"
--- BREACH.Descriptions.english[role.MTF_SEC_Engi] = "你是战术应对二部 - 工程师\n\n执行指挥官的命令,完成任务"
--- BREACH.Descriptions.english[role.MTF_SEC_Com] = "你是战术应对二部 - 指挥官\n\n指挥你的士兵完成任务"
--- BREACH.Descriptions.english[role.MTF_SEC_Machine] = "你是战术应对二部 - 机枪兵\n\n执行指挥官的命令,完成任务"
---律法左手
+--Law's Left Hand
 BREACH.Descriptions.english[role.omega1_assistant] = "You are a Law's Left Hand Investigation Team - Assistant\n\nFollow the instructions of the Enforcement Officer to complete the mission"
 BREACH.Descriptions.english[role.omega1_officer] = "You are a Law's Left Hand Investigation Team - Capture Officer\n\nFollow the instructions of the Enforcement Officer to complete the mission"
 BREACH.Descriptions.english[role.omega1_captain] = "You are a Law's Left Hand Investigation Team - Enforcement Officer\n\nCommand your team members to complete the mission"
---专家组
+--Expert Group
 BREACH.Descriptions.english[role.MEG_Chem] = "You are a MEG - Chemical Expert\n\nAs a retired veteran of Beta-7, you are more flexible when dealing with chemically hazardous SCPs\n\nThe combat hazmat suit you wear allows you to perfectly protect against most dangerous SCPs while\n\nalso having the ability to counter other hostile targets\n\nExecute the commander's orders and complete the mission"
 BREACH.Descriptions.english[role.MEG_NTFExpert] = "You are a MEG - Nine Tailed Fox Containment Expert\n\nYou are assigned to this facility to train armed personnel in measures to deal with SCPs and select some people to join the NTF reserve team\n\nThe \"Dancing Fox\" you hold is a unique special weapon in the facility\n\nIt can cause considerable damage to SCPs, but unfortunately you only brought three magazines..."
 BREACH.Descriptions.english[role.MEG_NU7Instructor] = "You are a MEG - Nu-7 Special Operations Instructor\n\nYou are a special operations instructor directly assigned by the O4 Commander in this facility\n\nAs an active-duty Hammer Down special forces soldier, you are requested by the O4 Commander to train the armed personnel in the facility\n\nImprove the ability of facility armed personnel to respond to external force invasions"
 BREACH.Descriptions.english[role.MEG_BETA1Security] = "You are a MEG - Beta-1 Security Specialist\n\nYou are assigned by the O4 Command to this facility to eliminate all latent spies and agents\n\nYour special panel can count certain hostile personnel in the facility"
 BREACH.Descriptions.english[role.MEG_OMEGA1Officer] = "You are a MEG - Omega-1 Investigator\n\nThe Ethics Committee assigned you to this facility\n\nMonitor whether moral regulations are violated in the facility\n\nAt the same time, they also asked you to secretly investigate some dirty secrets..."
---SKP 异界探索C组
--- BREACH.Descriptions.english[role.SKP_Soldier] = "你是SKP 异界探索C组 - 士兵\n尽可能地搜集信息和俘虏人员\n执行指挥官的命令,完成任务"
--- BREACH.Descriptions.english[role.SKP_Commander] = "你是SKP 异界探索C组 - 指挥官\n尽可能地搜集信息和俘虏人员\n指挥队员,完成任务"
--- BREACH.Descriptions.english[role.SKP_Warriors] = "你是SKP 异界探索C组 - 狂战士\n作为\"帝国超级战士\"计划万千人员中的一个\n已经年过70的你身体机能和外貌却依旧与30岁的人相差不大\n你钟爱那把的MG-42陪伴你经历过多少场战役..."
--- BREACH.Descriptions.english[role.SKP_Agent] = "你是SKP 异界探索C组 - 特工\n你是团队中精锐，你的仿生机械义肢让你拥有更快的奔跑速度以及其他能力"
---特殊角色
-BREACH.Descriptions.english[role.sus_scientist] = "You are a Suspect - Scientist\n\nGo collect evidence to find the truth\n\nTry to clear your name or...."
---事件专属角色
+--Event Exclusive Roles
 BREACH.Descriptions.english[role.UIU_Special_Officer] = "You are a UIU - Liaison Officer\n\nAssist the Foundation in containing containment breaches and call for support in the broadcast room when necessary"
 BREACH.Descriptions.english[role.chaos_agent] = "You are a Chaos Insurgency - Agent\n\nYou have a one-time special keycard that you can use to open the door to the underground armory"
 BREACH.Descriptions.english[role.ClsssD_stronug] = "You are Strong? Class-D Personnel\n\nYou are the strongest Class-D personnel!\n\nOr are you?"
---事件专属支援
---UIU收容小组
+BREACH.Descriptions.english[role.sus_scientist] = "You are a Suspect - Scientist\n\nGo collect evidence to find the truth\n\nTry to clear your name or...."
+--Event Exclusive Support
+--UIU Containment Team
 BREACH.Descriptions.english[role.UIU_Control_Grunt] = "You are a UIU Containment Team - Member\n\nFollow the team leader's commands to help the Foundation contain SCPs and stabilize the situation in the facility"
 BREACH.Descriptions.english[role.UIU_Control_MachineGunner] = "You are a UIU Containment Team - Machine Gunner\n\nYou have powerful firepower\n\nFollow the team leader's commands to help the Foundation contain SCPs and stabilize the situation in the facility"
 BREACH.Descriptions.english[role.UIU_Control_Specialist] = "You are a UIU Containment Team - Containment Specialist\n\nYou have undergone [DATA EXPUNGED] training at the NTF training base, so you have some experience dealing with SCPs\n\nFollow the team leader's commands to help the Foundation contain SCPs and stabilize the situation in the facility"
@@ -1426,7 +1379,6 @@ english.evac_start_leave_immediately = "Attention, facility emergency evacuation
 english.medkit_heal_ended = "Treatment completed, your health has been restored."
 english.demo_stop = "Demo recording has been stopped to perform full game update"
 english.cantequipmtfuniform = "You cannot wear this uniform"
---统计数据
 english.apc_destroyed = "APC destroyed"
 english.sgoc_first_objective_completed = "First objective completed"
 english.activated_warhead = "Activated Alpha Warhead"
@@ -1613,7 +1565,6 @@ english.menu_head_admin = "Head Administrator"
 english.menu_make_map = "Map Maker"
 english.menu_chemist = "Sexy Chemist"
 english.menu_admin_firstperson = "Enable spectator first-person"
--- english.menu_no_role_desc_admin = "启用不以任何身份复活"
 english.menu_weapon_fov = "Weapon FOV"
 english.menu_weapon_z_offset = "Weapon view Z-axis adjustment" --z offset,координаты z,есть абсцисса,ордината,а это называется аппликатом
 english.menu_no_role_desc = "Disable character descriptions"
@@ -1829,12 +1780,11 @@ english.abilities_name_goccom = "Invisibility Cloak"
 english.abilities_goccom = "Can make yourself completely invisible, leaving no trace..."
 english.abilities_name_gocjag = "Energy Shield"
 english.abilities_gocjag = "Activate an energy shield to protect yourself and teammates"
--- english.abilities_name_goc_agent_inv = "轻型隐身斗篷"
+english.abilities_name_goc_agent_boost = "Battle Boost"
+english.abilities_goc_agent_boost = "Get 15 seconds of damage boost and reload reduction effect"
 english.abilities_goc_agent_inv = "Can hide yourself completely for 8 seconds"
 english.abilities_name_goc_agent_shield = "Light Shield"
 english.abilities_goc_agent_shield = "Deploy a light shield at the aimed location that can block attacks from enemies"
-english.abilities_name_goc_agent_boost = "Battle Boost"
-english.abilities_goc_agent_boost = "Get 15 seconds of damage boost and reload reduction effect"
 english.abilities_name_shcom = "Wormhole"
 english.abilities_shcom = "Create a wormhole that will teleport you to any location in the facility"
 english.abilities_name_shpsycho = "Flesh Gun"
@@ -1889,8 +1839,6 @@ english.abilities_meg_beta1 = "Information Defense"
 english.abilities_meg_beta1_desc = "Show the number of remaining spies and UIU/GRU in the facility"
 english.abilities_meg_omega1 = "Temporary Member"
 english.abilities_meg_omega1_desc = "Recruit a scientist or security personnel as a temporary Omega-1 member"
--- english.abilities_omega1bodysearch = "尸体搜索"
--- english.abilities_omega1bodysearch_desc = "你已经锁定了那位\"科研\"\n你现在能锁定他的尸体到\n你的位置(如果他死亡了的话)"
 english.abilities_uiu_contain_com = "Life Detection"
 english.abilities_uiu_contain_com_desc = "Quickly detect the life status and approximate location of SCPs in the facility"
 english.abilities_uiu_contain_specialist = "Quick Anchor"
@@ -1947,12 +1895,6 @@ english.abilities_name_ungoc_specialist = "Mania Suppression"
 english.abilities_ungoc_specialist = "For 15 seconds, make SCPs within a certain range lose most of their attack capabilities"
 english.abilities_name_ungoc_detector = "Anomaly Detection"
 english.abilities_ungoc_detector = "Use the special goggles on your head to see SCP positions through walls for an extended period"
--- english.abilities_skp_agent = "机械义肢"
--- english.abilities_skp_agent_desc = "机械义肢"
--- english.abilities_skp_warriors = "狂热时刻"
--- english.abilities_skp_warriors_desc = "狂热时刻"
--- english.abilities_skp_commander = "单兵能量护盾"
--- english.abilities_skp_commander_desc = "单兵能量护盾"
 --杂项技能区域
 english.abilities_scarlet_ab_1 = "Sacrifice"
 english.abilities_scarlet_ab_1_desc = "Can be used multiple times, if you survive. After activating the skill, you become immune to all damage, but you cannot attack, and after a period of time, the damage will be returned to you multiplied"
@@ -2234,8 +2176,6 @@ english.f2_sci = "Foundation personnel are individuals who hold civilian positio
 english.f2_sci_speical = "Experts from various research departments of the Foundation, they have outstanding achievements in their respective fields,\n\nand they possess various unique special skills, which play an important role in combat and containment\n\nof SCPs"
 english.f2_security = "Security Department (SD) is responsible for the safety and protection of all Foundation facilities and SCP projects, regardless of their priority.\n\nSecurity personnel are trained and disciplined, forming a force that cannot be ignored\n\nThey can take action during SCP containment breaches and invasion situations."
 english.f2_mtf = "Mobile Task Forces (MTF) are small, mission-focused or special situation military units.\n\nThese personnel are sometimes stationed at certain facilities on standby\n\nTheir main tasks include restoring SCP containment and evacuating Foundation personnel, although there are more specialized units."
--- english.f2_mtf_hcz = "Site-19战术应对二部是驻守在Site-19重收区域的未开放区域内\n负责监督其管理区域内[数据删除]的安全\n他们通常不会主动参与，仅在某些时刻才会返回到Site-19主要区域\n帮助其他武装部队完成任务"
--- english.f2_elite_qrt = "精锐快速反应小队是一支要优于常规快速反应小队的特殊部队\n\n他们通常会在SCP收容失效或第三方攻击时被派往现场"
 english.f2_qrt = "Quick Response Force (QRF) is an experimental security force unit within Site-19 and [DATA EXPUNGED].\n\nIn the event of a containment breach or third-party attack\n\nthe Site Administrator or Site Controller will send a request to [DATA EXPUNGED]. If approved, one of the quick response teams will be immediately dispatched to the scene."
 english.f2_classd = "Class-D personnel are individuals specifically assigned to test dangerous anomalies. Class-D personnel are usually selected from prisoners,\n\nprioritizing those convicted of violent crimes,\n\nespecially death row inmates. In the event of a catastrophic incident at the facility,\n\nall Class-D personnel will be immediately executed unless otherwise determined by local security."
 english.f2_cult = "Children of the Scarlet King - An anomalous cult founded by [DATA EXPUNGED],\nworshipping the anomalous entity SCP-001 \"The Scarlet King\"\nThis organization is a splinter group from another related organization \"Serpent's Hand\".\nThe cult has been declining under the joint crackdown of the Foundation and GOC\nBut some cult members remain at large, with rumors that they have received [revelations] from \"The Scarlet King\"......\n\"Oh Supreme Scarlet King! You have finally shown mercy to us, your humble children, granting us divine favor!\nWe bathe in your oracle, devoutly receiving your enlightenment and teachings. We swear eternal loyalty and sacrifice\nTo welcome your glorious return, descending upon this mortal world!\"————███"
@@ -2274,7 +2214,7 @@ english.bigevent_dream_desc = "This is the most wonderful dream, and also the mo
 english.bigevent_5k = "SCP-5000 \"WHY?\""
 english.bigevent_5k_desc = "Protect normality, contain anomalies, this is our inevitable path"
 --常规事件
---全事件
+--无阶段
 english.event0_nothing = "Nothing Happened"
 english.event0_nothing_desc = "No events occurred here"
 --开场事件
@@ -2307,27 +2247,22 @@ english.event_famine_classd = "Famine"
 english.event_famine_classd_desc = "Due to the unsustainable overexploitation by Security Captain and Warden, most Class-D are malnourished and have cannibalistic tendencies. Maximum health decreases, cannibalism speed increases, and corpses can be eaten twice"
 english.event_hammer_insite = "Stationed Hammer Down Team"
 english.event_hammer_insite_desc = "Most MTF personnel from Site-19 have been pulled for training. Temporarily replaced by MTF-NU7 Hammer Down Alpha Company"
--- english.event_elite_qrt = "精锐小队"
--- english.event_elite_qrt_desc = "设施主管外出开会，多数QRT小队\n队员被指派保护设施主管及其随行人员\n因此从其他地区调来一支精锐QRT小队以防万\n一"
 --二阶段
-english.event_the_fourth_scp = "Fourth SCP"
-english.event_the_fourth_scp_desc = "Unknown energy fluctuations detected in a containment chamber. It's... an SCP!"
--- english.event_department_support = "战术应对二部"
--- english.event_department_support_desc = "战术应对二部接到指令正在从其他\n区域赶来帮助处理SCP收容失效"
-english.event_weakness_defense = "Fragile Defenses"
-english.event_weakness_defense_desc = "Foundation's external defenses are vulnerable. CI's main force will arrive at the facility soon"
-english.event_friendly_gru = "Ally's Request"
-english.event_friendly_gru_desc = "GRU P (Post-Era) has accepted Chaos Insurgency's request to send a team to recover Class-D personnel. GRU P members can evacuate from APC. They can also prevent Foundation evacuation"
---三阶段
 english.event_gru_and_goc = "Powerful Alliance"
 english.event_gru_and_goc_desc = "GOC and GRU become friendly. GOC, CI, and Class-D have friendly relations like GRU. GOC can evacuate with GRU. GOC agents need to help GRU defend Central Control. Alpha Warhead cannot be activated this round"
 english.event_glitch_portal = "Glitch Portal"
 english.event_glitch_portal_desc = "Serpent's Hand portals have randomly appeared in the facility due to unknown accidents. How did they do that?"
 english.event_wrong_pos = "Wrong Coordinates"
 english.event_wrong_pos_desc = "GRU P's hyper-transmission device has sent some equipment into the facility. How did they know our facility's location?"
+english.event_the_fourth_scp = "Fourth SCP"
+english.event_the_fourth_scp_desc = "Unknown energy fluctuations detected in a containment chamber. It's... an SCP!"
 english.event_early_arrived = "Early Arrival"
 english.event_early_arrived_desc = "An armed force will arrive in 50 seconds. Normal second wave support is delayed by 55 seconds"
---四阶段
+english.event_weakness_defense = "Fragile Defenses"
+english.event_weakness_defense_desc = "Foundation's external defenses are vulnerable. CI's main force will arrive at the facility soon"
+english.event_friendly_gru = "Ally's Request"
+english.event_friendly_gru_desc = "GRU P (Post-Era) has accepted Chaos Insurgency's request to send a team to recover Class-D personnel. GRU P members can evacuate from APC. They can also prevent Foundation evacuation"
+--三阶段
 english.event_bad_warhead = "Defective Warhead"
 english.event_bad_warhead_desc = "Nuclear warhead has a very low probability of not exploding"
 english.event_ntf_out = "Helicopter Crash"
@@ -2451,7 +2386,6 @@ english.gruci_5k_task = "Blockade the underground facility, find the truth, this
 english.gruci_supp_5k_task = "Help the assault force complete their mission"
 english.ntf_revolter_5k_task = "Contain anomalies and help GRU-CI complete their mission"
 english.omega1_support_task = "Help investigators arrest suspects and uncover the truth"
--- english.skp_squad_task = "尽可能获取信息和人才，为帝国下一次行动做准备!"
 english.nu7buck_5k_task = "Eliminate all [infected] humans, this is our only objective"
 english.sts_5k_task = "You have been granted highest authority, activate the nuclear bomb, this facility no longer needs to exist..."
 english.nu7alpha_5k_task = "Remember, your mission is destruction, not salvation"
@@ -2519,7 +2453,6 @@ english.sus_active_omega1 = "Message sent"
 english.sus_active_omega1_2 = "Come find me if you want the truth"
 english.sus_active_omega1_3 = "Tip: Use radio to call for backup"
 english.sus_active_omega1_negative = "Omega-1 has locked your position"
--- english.sus_active_omega_dead = "无法呼叫律法左手"
 english.sus_active_chaos = "The Foundation is no longer trustworthy, I need your help"
 english.sus_active_chaos_negative = "Time is running out, good luck"
 english.sus_active_chaos_event = "Just in time, a chaos squad has arrived, you can contact them"
@@ -2538,10 +2471,6 @@ english.judgement_success1 = "Your evidence is convincing, we will clear your na
 english.judgement_success2 = "These evidences have fully exposed the evil of some people"
 english.judgement_success3 = "Excellent, come with us, justice will protect you"
 english.judgement_success4 = "You won't suffer injustice in vain, trust us"
---成功延申——抓捕
--- english.judgement_catchbadguy1 = "我们已经提前切断他们的联系"
--- english.judgement_catchbadguy2 = "现在，逮捕他们！"
--- english.qrt_betrayal = "保护设施主管，杀光所有律法左手成员"
 --僵持
 english.judgement_stalemate1 = "Your evidence is not sufficient, you need to come with us"
 english.judgement_stalemate2 = "Missing key points in evidence, come with us first"
@@ -2550,12 +2479,6 @@ english.judgement_stalemate4 = "Missing some information in evidence, come with 
 --相关提示
 english.omega1_meg_newgoal_find = "Current Objective: Contact the suspect"
 english.omega1_meg_newgoal_execute = "Current Objective: The suspect has defected, execute them before the location disappears!"
--- english.omega1_evidence_bag_need = "你需要一个证据袋才能搜集该证据"
--- english.sussci_ci_hint = "你可以再次呼叫，但只能呼叫CI"
---被污蔑叛变
--- english.omega1_be_slandered_1 = "SCP基金会武装注意! MTF Omega-1 \"律法左手\"已经叛变, 一旦发现其相关人员的行踪立即击毙!"
--- english.omega1_be_slandered_2 = "\"快速反应部队\"你们将配合Site-19武装人员击杀MTF Omega-1 \"律法左手\"叛变人员"
--- english.omega1_be_slandered_2 = "MTF NU-7\"落锤\"你们将配合Site-19武装人员击杀MTF Omega-1 \"律法左手\"叛变人员"
 --Omega1相关撤离文本
 english.escape_by_omega1jeep = "Evacuate by Omega-1 Jeep"
 english.escape_omega1_mission = "Successfully evacuated suspect scientist"
@@ -2564,15 +2487,12 @@ english.escape_sus_stalemate = "Stalemate"
 english.escape_sus_bad = "Died in prison"
 english.escape_sus_chaos = "Became a member of the Chaos Insurgency"
 english.escape_sus_chaos_bad = "Chaos believes you have little value"
--- english.escape_omega1_arrested = "你被律法左手带走调查"
 --Omega1相关奖励文本
 english.bonus_sus_chaos_bad = "Executed by Chaos"
 english.bonus_sus_chaos_good = "Member of Chaos Insurgency"
 english.bonus_sci_sus_evac = "Evacuate Suspect Scientist"
--- english.bonus_sci_corrupts_evac = "逮捕 贪腐人员"
 english.bonus_sci_sus = "The Price of Justice"
 english.bonus_omega1_kill = "Omega Execution of High Command"
--- english.bonus_omega1_arrested = "逮捕贪腐人员"
 --下面这是？
 english.take_off_hover = "Press \"Left Click\" to remove"
 english.heavy_helmet = "Heavy Helmet"
@@ -2814,6 +2734,7 @@ english.button = "Button"
 english.change = "Change"
 english.drop = "Drop"
 english.error = "Error"
+english.fire_rate = "Fire Rate"
 english.changeWep = "Change Weapon"
 english.health = "Health"
 english.speed = "Speed"
@@ -2824,11 +2745,8 @@ english.no_weapon_replace = "No Weapons to Replace"
 english.data = "Data"
 english.clip_size = "Clip Size"
 english.damage = "Damage"
-english.fire_rate = "Fire Rate"
 english.uiuchange = "UIU-Agents Change"
 english.not_agent = "You're not UIU Normal Agent"
--- english.level_not_enough = "等级不足"
--- english.equipment_not_compare = "装备不匹配"
 english.agent_not_enough = "Agents not enough"
 english.agent_max = "Agents have reached the maximum limit"
 --基金会电脑
