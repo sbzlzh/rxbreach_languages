@@ -23,3 +23,5 @@
 2. Modify `languages/chinese.lua` (base language file).
 3. After pushing to `master`, GitHub Actions will trigger `Lang Parser Auto PR` automatically.
 4. Review the generated language changes and formatting.
+
+总结：就翻译除chinese和bilbil特供版的就好了其他就不用管了
