@@ -927,7 +927,7 @@ english.ent_signal = "Good signal"
 english.ent_losing_signal = "Hacking signal lost"
 --SCP-914实体提醒
 english.scp914_working_hint = "Processing"
---SKP黑箱实体
+--SKP黑箱实体/招募装备
 english.skp_cur_crystals = "Current crystals: "
 english.skp_cant_recruit_scp = "You can't recruit SCPs in this state"
 --死神灾厄
@@ -2389,6 +2389,7 @@ english.quickchat_dontaimme = "Don't Aim at Me"
 --屏幕信息提示
 english.harduheart = "Hardened Heart"
 english.gruci_meme_death = "Stop Right Here"
+-- english.scp_helper = "帝国需要你"
 --其他
 -- english.gru_hud_task = "任务目标:"
 -- english.gru_hud_task_evacuation = "协助CI扰乱设施"
@@ -2882,6 +2883,8 @@ english.skp_foucs_2 = "Teleport"
 english.skp_foucs_2_desc = "Teleport all non-friendly players to a random location\n(Consumes 2 crystals)"
 english.skp_foucs_3 = "Ghost Team"
 english.skp_foucs_3_desc = "Give all friendly players the ghost ability\n(Consumes 6 crystals)"
+-- english.skp_focus_4 = "异常盟友"
+-- english.skp_focus_4_desc = "SKP成员可以招募部分异常作\n为盟友"
 english.scployaltyteam = "Friendly Team"
 --DEMO
 english.menu_demo_settings = "DEMO Recording"

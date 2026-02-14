@@ -927,8 +927,9 @@ b_chinese.hamburger_mio_4 = "恭喜你!进化成功了 :>"
 -- b_chinese.ent_losing_signal = "骇入信号丢失"
 --SCP-914实体提醒
 -- b_chinese.scp914_working_hint = "正在加工"
---SKP黑箱实体
+--SKP黑箱实体/招募装备
 -- b_chinese.skp_cur_crystals = "当前晶体数量: "
+-- b_chinese.skp_cant_recruit_scp = "当前无法招募SCP"
 --死神灾厄
 -- b_chinese.thedeath_event_1 = "我喜欢这个血量"
 -- b_chinese.thedeath_event_2 = "那个,你带速效救心丸了吗?"
@@ -2388,6 +2389,7 @@ b_chinese.quickchat_dontaimme = "别瞄准我"
 --屏幕信息提示
 -- b_chinese.harduheart = "硬着心"
 -- b_chinese.gruci_meme_death = "停在这里"
+-- b_chinese.scp_helper = "帝国需要你"
 --其他
 -- b_chinese.gru_hud_task = "任务目标:"
 -- b_chinese.gru_hud_task_evacuation = "协助els武装部队扰乱设施"
@@ -2881,6 +2883,8 @@ b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步.
 -- b_chinese.skp_foucs_2_desc = "当前所有非己方玩家将进行一\n次随机移动\n(消耗2颗晶体)"
 -- b_chinese.skp_foucs_3 = "幽灵部队"
 -- b_chinese.skp_foucs_3_desc = "让在场的所有己方人类角色获\n得隐身技能\n(耗费6颗晶体)"
+-- b_chinese.skp_focus_4 = "异常盟友"
+-- b_chinese.skp_focus_4_desc = "SKP成员可以招募部分异常作\n为盟友"
 -- b_chinese.scployaltyteam = "友方团队"
 --DEMO
 b_chinese.menu_demo_settings = "DEMO录制"

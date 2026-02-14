@@ -927,8 +927,9 @@ russian.hamburger_mio_4 = "Поздравляем! Эволюция успешн
 -- russian.ent_losing_signal = "骇入信号丢失"
 --SCP-914实体提醒
 -- russian.scp914_working_hint = "正在加工"
---SKP黑箱实体
+--SKP黑箱实体/招募装备
 -- russian.skp_cur_crystals = "当前晶体数量: "
+-- russian.skp_cant_recruit_scp = "当前无法招募SCP"
 --死神灾厄
 -- russian.thedeath_event_1 = "我喜欢这个血量"
 -- russian.thedeath_event_2 = "那个,你带速效救心丸了吗?"
@@ -2388,6 +2389,7 @@ russian.quickchat_dontaimme = "Не направляй на меня оружи�
 --屏幕信息提示
 -- russian.harduheart = "硬着心"
 -- russian.gruci_meme_death = "停在这里"
+-- russian.scp_helper = "帝国需要你"
 --其他
 --russian.gru_hud_task = "Цель:"
 --russian.gru_hud_task_evacuation = "Помогите CI нарушить работу объекта"
@@ -2881,6 +2883,8 @@ russian.desc_215 = "Ваша привязанность к SCP-215 стала н
 -- russian.skp_foucs_2_desc = "当前所有非己方玩家将进行一\n次随机移动\n(消耗2颗晶体)"
 -- russian.skp_foucs_3 = "幽灵部队"
 -- russian.skp_foucs_3_desc = "让在场的所有己方人类角色获\n得隐身技能\n(耗费6颗晶体)"
+-- russian.skp_focus_4 = "异常盟友"
+-- russian.skp_focus_4_desc = "SKP成员可以招募部分异常作\n为盟友"
 -- russian.scployaltyteam = "友方团队"
 --DEMO
 russian.menu_demo_settings = "Запись DEMO"
