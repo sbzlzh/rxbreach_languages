@@ -927,8 +927,9 @@ chinese.ent_signal = "信号良好"
 chinese.ent_losing_signal = "骇入信号丢失"
 --SCP-914实体提醒
 chinese.scp914_working_hint = "正在加工"
---SKP黑箱实体
+--SKP黑箱实体/招募装备
 chinese.skp_cur_crystals = "当前晶体数量: "
+chinese.skp_cant_recruit_scp = "当前无法招募SCP"
 --死神灾厄
 chinese.thedeath_event_1 = "我喜欢这个血量"
 chinese.thedeath_event_2 = "那个,你带速效救心丸了吗?"
@@ -2388,6 +2389,7 @@ chinese.quickchat_dontaimme = "别瞄准我"
 --屏幕信息提示
 chinese.harduheart = "硬着心"
 chinese.gruci_meme_death = "停在这里"
+chinese.scp_helper = "帝国需要你"
 --其他
 -- chinese.gru_hud_task = "任务目标:"
 -- chinese.gru_hud_task_evacuation = "协助CI扰乱设施"
@@ -2881,6 +2883,8 @@ chinese.skp_foucs_2 = "空间扰动"
 chinese.skp_foucs_2_desc = "当前所有非己方玩家将进行一\n次随机移动\n(消耗2颗晶体)"
 chinese.skp_foucs_3 = "幽灵部队"
 chinese.skp_foucs_3_desc = "让在场的所有己方人类角色获\n得隐身技能\n(耗费6颗晶体)"
+chinese.skp_focus_4 = "异常盟友"
+chinese.skp_focus_4_desc = "SKP成员可以招募部分异常作\n为盟友"
 chinese.scployaltyteam = "友方团队"
 --DEMO
 chinese.menu_demo_settings = "DEMO录制"
