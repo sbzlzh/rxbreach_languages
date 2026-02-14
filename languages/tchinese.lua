@@ -927,8 +927,9 @@ traditional.ent_no_access = "你無權進行操作"
 -- traditional.ent_losing_signal = "骇入信号丢失"
 --SCP-914实体提醒
 -- traditional.scp914_working_hint = "正在加工"
---SKP黑箱实体
+--SKP黑箱实体/招募装备
 -- traditional.skp_cur_crystals = "当前晶体数量: "
+-- traditional.skp_cant_recruit_scp = "当前无法招募SCP"
 --死神灾厄
 traditional.thedeath_event_1 = "我喜歡這個血量"
 traditional.thedeath_event_2 = "那個,你帶速效救心丸了嗎?"
@@ -2388,6 +2389,7 @@ traditional.quickchat_dontaimme = "別瞄準我"
 --屏幕信息提示
 traditional.harduheart = "硬著心"
 traditional.gruci_meme_death = "停在這裡"
+-- traditional.scp_helper = "帝国需要你"
 --其他
 -- traditional.gru_hud_task = "任務目標:"
 -- traditional.gru_hud_task_evacuation = "協助CI擾亂設施"
@@ -2881,6 +2883,8 @@ traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地�
 -- traditional.skp_foucs_2_desc = "当前所有非己方玩家将进行一\n次随机移动\n(消耗2颗晶体)"
 -- traditional.skp_foucs_3 = "幽灵部队"
 -- traditional.skp_foucs_3_desc = "让在场的所有己方人类角色获\n得隐身技能\n(耗费6颗晶体)"
+-- traditional.skp_focus_4 = "异常盟友"
+-- traditional.skp_focus_4_desc = "SKP成员可以招募部分异常作\n为盟友"
 -- traditional.scployaltyteam = "友方团队"
 --DEMO
 traditional.menu_demo_settings = "DEMO錄製"
