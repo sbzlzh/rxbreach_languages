@@ -564,6 +564,8 @@ russian.scp3114_disguise = "Кража личности в процессе..."
 -- russian.refreshing_keycard = "刷新权限卡中..."
 -- russian.skp_checking = "评估价值中..."
 -- russian.picking_up_crystal = "收集晶体中..."
+-- russian.skp_start_builder = "启动构建装置中..."
+-- russian.skp_stop_builder = "关闭构建装置中..."
 russian.progress_done = "Завершено!"
 --ARMORS
 --вы переоделись во что? в кого?
@@ -2874,6 +2876,7 @@ russian.desc_215 = "Ваша привязанность к SCP-215 стала н
 -- russian.skp_goal_2 = "在重收寻找晶体"
 -- russian.skp_goal_3 = "找到黑箱"
 -- russian.skp_goal_4 = "找到传送门返回"
+-- russian.skp_goal_5 = "重新构建传送门"
 -- russian.goal_waiting_leave = "等待撤离"
 --Focus
 --skp focus
