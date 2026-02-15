@@ -564,6 +564,8 @@ english.sh_warlock_chant = "Chanting..."
 english.refreshing_keycard = "Refreshing keycard..."
 english.skp_checking = "Checking value..."
 english.picking_up_crystal = "Picking up crystal..."
+english.skp_start_builder = "Starting builder..."
+english.skp_stop_builder = "Stopping builder..."
 english.progress_done = "Done!"
 --ARMORS
 --вы переоделись во что? в кого?
@@ -2874,6 +2876,7 @@ english.skp_goal_1 = "Recruit valuable personnel and SCP"
 english.skp_goal_2 = "Find information in the office and research"
 english.skp_goal_3 = "Find the black box"
 english.skp_goal_4 = "Return to the door"
+english.skp_goal_5 = "Rebuild the portal"
 english.goal_waiting_leave = "Waiting to leave"
 --Focus
 --skp focus

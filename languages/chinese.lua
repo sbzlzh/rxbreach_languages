@@ -564,6 +564,8 @@ chinese.sh_warlock_chant = "吟唱中..."
 chinese.refreshing_keycard = "刷新权限卡中..."
 chinese.skp_checking = "评估价值中..."
 chinese.picking_up_crystal = "收集晶体中..."
+chinese.skp_start_builder = "启动构建装置中..."
+chinese.skp_stop_builder = "关闭构建装置中..."
 chinese.progress_done = "完成!"
 --ARMORS
 --вы переоделись во что? в кого?
@@ -2874,6 +2876,7 @@ chinese.skp_goal_1 = "招募有价值的人员和SCP"
 chinese.skp_goal_2 = "在重收寻找晶体"
 chinese.skp_goal_3 = "找到黑箱"
 chinese.skp_goal_4 = "找到传送门返回"
+chinese.skp_goal_5 = "重新构建传送门"
 chinese.goal_waiting_leave = "等待撤离"
 --Focus
 --skp focus
