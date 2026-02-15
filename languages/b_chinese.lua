@@ -564,6 +564,8 @@ b_chinese.scp3114_disguise = "正在进行伪装中..."
 -- b_chinese.refreshing_keycard = "刷新权限卡中..."
 -- b_chinese.skp_checking = "评估价值中..."
 -- b_chinese.picking_up_crystal = "收集晶体中..."
+-- b_chinese.skp_start_builder = "启动构建装置中..."
+-- b_chinese.skp_stop_builder = "关闭构建装置中..."
 b_chinese.progress_done = "完成!"
 --ARMORS
 --вы переоделись во что? в кого?
@@ -2874,6 +2876,7 @@ b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步.
 -- b_chinese.skp_goal_2 = "在重收寻找晶体"
 -- b_chinese.skp_goal_3 = "找到黑箱"
 -- b_chinese.skp_goal_4 = "找到传送门返回"
+-- b_chinese.skp_goal_5 = "重新构建传送门"
 -- b_chinese.goal_waiting_leave = "等待撤离"
 --Focus
 --skp focus

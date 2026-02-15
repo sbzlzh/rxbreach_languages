@@ -564,6 +564,8 @@ traditional.sh_warlock_chant = "吟唱中..."
 traditional.refreshing_keycard = "刷新許可權卡中..."
 -- traditional.skp_checking = "评估价值中..."
 -- traditional.picking_up_crystal = "收集晶体中..."
+-- traditional.skp_start_builder = "启动构建装置中..."
+-- traditional.skp_stop_builder = "关闭构建装置中..."
 traditional.progress_done = "完成!"
 --ARMORS
 --вы переоделись во что? в кого?
@@ -2874,6 +2876,7 @@ traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地�
 -- traditional.skp_goal_2 = "在重收寻找晶体"
 -- traditional.skp_goal_3 = "找到黑箱"
 -- traditional.skp_goal_4 = "找到传送门返回"
+-- traditional.skp_goal_5 = "重新构建传送门"
 -- traditional.goal_waiting_leave = "等待撤离"
 --Focus
 --skp focus
