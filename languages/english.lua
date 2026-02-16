@@ -258,6 +258,8 @@ english.Events_roles = "Event Special Roles"
 english.role.UIU_Special_Officer = "UIU Liaison Officer"
 english.role.chaos_agent = "Chaos Insurgency Agent"
 english.role.ClsssD_stronug = "Strong? Class-D Personnel"
+-- english.role.caishen = "财神爷"
+--回合特殊角色
 english.role.sus_scientist = "Suspicious Scientist"
 --5K区域
 --奇术打击
@@ -1294,6 +1296,7 @@ BREACH.Descriptions.english[role.sus_scientist] = "You are a Suspect - Scientist
 BREACH.Descriptions.english[role.UIU_Special_Officer] = "You are a UIU - Liaison Officer\n\nAssist the Foundation in containing containment breaches and call for support in the broadcast room when necessary"
 BREACH.Descriptions.english[role.chaos_agent] = "You are a Chaos Insurgency - Agent\n\nYou have a one-time special keycard that you can use to open the door to the underground armory"
 BREACH.Descriptions.english[role.ClsssD_stronug] = "You are Strong? Class-D Personnel\n\nYou are the strongest Class-D personnel!\n\nOr are you?"
+-- BREACH.Descriptions.english[role.caishen] = "你是财神爷\n\n至此佳节，为他人带去好运吧！"
 --事件专属支援
 --UIU收容小组
 BREACH.Descriptions.english[role.UIU_Control_Grunt] = "You are a UIU Containment Team - Member\n\nFollow the team leader's commands to help the Foundation contain SCPs and stabilize the situation in the facility"
@@ -1991,6 +1994,9 @@ english.abilities_protector = "Loyalty!"
 english.abilities_protector_desc = "I, White Hat, will not hoard this glory alone. Heal and restore stamina for nearby allies"
 english.abilities_ottospeedup = "Charge! Rush!"
 english.abilities_ottospeedup_desc = "Nearby allies gain 15 seconds of level 3 speed boost and 15 seconds of level 3 regeneration"
+--节日技能
+-- english.abilities_caishen = "财源滚滚"
+-- english.abilities_caishen_desc = "给予他人财富"
 --升级系统文本
 english.upgrade_current_points = "Current Skill Points: "
 english.upgrade_required = "Prerequisite Upgrade:"
@@ -2297,6 +2303,8 @@ english.bigevent_5k_desc = "Protect normality, contain anomalies, this is our in
 --全事件
 english.event0_nothing = "Nothing Happened"
 english.event0_nothing_desc = "No events occurred here"
+-- english.event_caishen_xinchun = "财神到!"
+-- english.event_caishen_xinchun_desc = "新春佳节，SCP-CN-█████ \"财神\"\n降临在Site-19中为所有人带来欢乐和幸福"
 --开场事件
 --一阶段
 english.event_ron = "On High Alert"

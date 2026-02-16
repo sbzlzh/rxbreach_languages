@@ -258,6 +258,8 @@ russian.role.Cult_Specialist = "Специалист ДАК"
 -- russian.role.UIU_Special_Officer = "UIU 联络专员"
 -- russian.role.chaos_agent = "混沌分裂者 特工"
 -- russian.role.ClsssD_stronug = "强壮? D级人员"
+-- russian.role.caishen = "财神爷"
+--回合特殊角色
 -- russian.role.sus_scientist = "嫌疑 科研"
 --5K区域
 --奇术打击
@@ -470,6 +472,7 @@ russian.weaponry["battery_3"] = "Батарейка"
 -- russian.weaponry["item_novel"] = "小说"
 -- russian.weaponry["item_skp_checker"] = "检查器"
 -- russian.weaponry["item_nightvision_green_old"] = "旧式夜视仪"
+-- russian.weaponry["item_caishen_coin"] = "财神金币"
 russian.role.Spectator = "Наблюдатель"
 --提示
 russian.already_have_the_bag = "Вы уже одели рюкзак!!"
@@ -890,13 +893,13 @@ russian.hamburger_mio_4 = "Поздравляем! Эволюция успешн
 --SKP检查器
 -- russian.skp_checked_valuable_1 = "这是一名有价值的人员"
 -- russian.skp_checked_valuable_2 = "你对帝国很有用"
--- russian.skp_checked_valuable_3 = "Es ist Eure Ehre"
--- russian.skp_checked_valuable_4 = "Es ist Ihr Glück, dem Imperium zu dienen."
+-- russian.skp_checked_valuable_3 = "帝国需要你！"
+-- russian.skp_checked_valuable_4 = "加入帝国是你的荣耀"
 -- russian.skp_checked_unvaluable_1 = "你没有用处"
 -- russian.skp_checked_unvaluable_2 = "你对帝国没有用"
 -- russian.skp_checked_unvaluable_3 = "你不配待在帝国"
--- russian.skp_checked_unvaluable_4 = "你TM就应该██████"
--- russian.skp_checked_unvaluable_5 = "Ihr minderwertige Rasse!"
+-- russian.skp_checked_unvaluable_4 = "你应该为此感到惭愧！"
+-- russian.skp_checked_unvaluable_5 = "你为什么觉得你可以加入帝国"
 -- russian.skp_checked_valuable_scp_1 = "我们欢迎你为帝国效力"
 -- russian.skp_checked_valuable_scp_2 = "帝国很高兴你的加入"
 -- russian.skp_checked_valuable_scp_3 = "加入帝国是你最好的选择"
@@ -911,6 +914,9 @@ russian.hamburger_mio_4 = "Поздравляем! Эволюция успешн
 -- russian.danger_status = "危险"
 -- russian.decided = "已决定"
 -- russian.decidsion = "决议"
+--财神
+-- russian.become_caishen = "恭喜！你成为了财神"
+-- russian.goxifacai = "恭喜发财！"
 --格鲁乌P撤离提醒
 -- russian.grubtf_leavehint1 = "装甲车将在"
 -- russian.grubtf_leavehint2 = "秒后离开"
@@ -1061,6 +1067,7 @@ russian["Nazi Germany"] = "Нацистская Германия"
 russian["American Army"] = "Армия США"
 -- russian["SKP"] = "异常特遣队"
 -- russian["Corrupt Foundation"] = "贪腐人员"
+-- russian["Event Team"] = "事件"
 russian["Arena Participants"] = "Участники арены"
 --SCOREBOARD
 russian.scoreboard_ping = "Пинг"
@@ -1289,6 +1296,7 @@ BREACH.Descriptions.russian[role.MEG_Chem] = "Вы Химик Мобильной
 -- BREACH.Descriptions.russian[role.UIU_Special_Officer] = "你是UIU - 联络专员\n\n协助基金会遏制收容失效,并在必要时在广播室呼叫支援"
 -- BREACH.Descriptions.russian[role.chaos_agent] = "你是混沌分裂者 - 特工\n\n你拥有一张一次性的特殊钥匙卡你可以用它打开地下武器库的门"
 -- BREACH.Descriptions.russian[role.ClsssD_stronug] = "你是强壮? D级人员\n\n你是最强壮的D级人员!\n\n应该是的吧?"
+-- BREACH.Descriptions.russian[role.caishen] = "你是财神爷\n\n至此佳节，为他人带去好运吧！"
 --事件专属支援
 --UIU收容小组
 -- BREACH.Descriptions.russian[role.UIU_Control_Grunt] = "你是UIU收容小组 - 组员\n\n听从组长的指挥帮助基金会收容SCP,稳定设施内的情况"
@@ -1469,6 +1477,7 @@ russian.ci_classd_evac = "Класс-D захвачен"
 russian.cheemer_rescue = "Чимеры спасены"
 -- russian.doro_rescue = "解救Doro"
 -- russian.take_novel = "带走小说"
+-- russian.take_caishen_coin = "恭喜发财！！"
 russian.ci_scp_evac = "Ключевой SCP изъят"
 russian.sci_evac = "Учёные эвакуированы"
 russian.vip_evac = "VIP-учёный эвакуирован"
@@ -1770,6 +1779,7 @@ russian.tasks_scp999 = "Лечение людей/SCP и побег"
 russian.tasks_terminate_enemies = "Уничтожение врагов"
 russian.tasks_arena = "Участие в аренных боях"
 russian.tasks_kill_everyone_except_sh = "Уничтожить всех вне ДЗ"
+-- russian.tasks_caishen = "为他人带去财富和幸福!"
 --能力
 russian.abilities_cd = "Время восстановления:"
 -- russian.abilities_block = "你无权使用该技能"
@@ -1984,6 +1994,9 @@ russian.abilities_protector = "Верность!"
 russian.abilities_protector_desc = "Эта слава не только моя!\nИсцеляет союзников и восстанавливает выносливость."
 russian.abilities_ottospeedup = "Вперёд!"
 russian.abilities_ottospeedup_desc = "Союзники получают 3-й уровень ускорения на 15 секунд\nи 3-й уровень регенерации на 15 секунд."
+--节日技能
+-- russian.abilities_caishen = "财源滚滚"
+-- russian.abilities_caishen_desc = "给予他人财富"
 --升级系统文本
 -- russian.upgrade_current_points = "当前技能点数: "
 -- russian.upgrade_required = "前置升级:"
@@ -2290,6 +2303,8 @@ russian.f2_uiu_agent = "Этот отряд Особого отдела аном
 --全事件
 -- russian.event0_nothing = "无事发生"
 -- russian.event0_nothing_desc = "没有任何事件在此发生"
+-- russian.event_caishen_xinchun = "财神到!"
+-- russian.event_caishen_xinchun_desc = "新春佳节，SCP-CN-█████ \"财神\"\n降临在Site-19中为所有人带来欢乐和幸福"
 --开场事件
 --一阶段
 -- russian.event_ron = "严阵以待"
