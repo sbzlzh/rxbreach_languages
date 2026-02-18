@@ -2850,6 +2850,7 @@ russian.desc_215 = "Ваша привязанность к SCP-215 стала н
 -- russian.drop = "丢弃"
 -- russian.error = "错误"
 -- russian.changeWep = "更换武器"
+-- russian.abilitylearn = "技能学习"
 -- russian.health = "生命值"
 -- russian.speed = "速度"
 -- russian.ability = "技能"
@@ -2862,6 +2863,7 @@ russian.desc_215 = "Ваша привязанность к SCP-215 стала н
 -- russian.fire_rate = "射速"
 -- russian.uiuchange = "UIU探员更换"
 -- russian.not_agent = "你不是UIU基础探员"
+-- russian.not_dz = "你不是蛇之手成员"
 -- russian.level_not_enough = "等级不足"
 -- russian.equipment_not_compare = "装备不匹配"
 -- russian.agent_not_enough = "探员不足"
@@ -2870,6 +2872,12 @@ russian.desc_215 = "Ваша привязанность к SCP-215 стала н
 -- russian.taskintro = "任务简介"
 -- russian.has_been_used = "该选项已被使用"
 -- russian.cant_cost = "点数不足"
+-- russian.not_open = "暂时未开放"
+
+-- russian.name = "名称"
+-- russian.enable_limits = "次数限制"
+-- russian.ability_hasbeen_learn = "该技能已被学习"
+
 --基金会电脑
 -- russian.desc_foundation_computer = "基金会内部安全系统"
 -- russian.decode_hint1 = "请在"

@@ -2850,6 +2850,7 @@ b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步.
 -- b_chinese.drop = "丢弃"
 -- b_chinese.error = "错误"
 -- b_chinese.changeWep = "更换武器"
+-- b_chinese.abilitylearn = "技能学习"
 -- b_chinese.health = "生命值"
 -- b_chinese.speed = "速度"
 -- b_chinese.ability = "技能"
@@ -2862,6 +2863,7 @@ b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步.
 -- b_chinese.fire_rate = "射速"
 -- b_chinese.uiuchange = "UIU探员更换"
 -- b_chinese.not_agent = "你不是UIU基础探员"
+-- b_chinese.not_dz = "你不是蛇之手成员"
 -- b_chinese.level_not_enough = "等级不足"
 -- b_chinese.equipment_not_compare = "装备不匹配"
 -- b_chinese.agent_not_enough = "探员不足"
@@ -2870,6 +2872,12 @@ b_chinese.desc_215 = "您对 Xen-215 的依恋已经到了无法割舍的地步.
 -- b_chinese.taskintro = "任务简介"
 -- b_chinese.has_been_used = "该选项已被使用"
 -- b_chinese.cant_cost = "点数不足"
+-- b_chinese.not_open = "暂时未开放"
+
+-- b_chinese.name = "名称"
+-- b_chinese.enable_limits = "次数限制"
+-- b_chinese.ability_hasbeen_learn = "该技能已被学习"
+
 --基金会电脑
 -- b_chinese.desc_foundation_computer = "基金会内部安全系统"
 -- b_chinese.decode_hint1 = "请在"

@@ -2872,6 +2872,12 @@ english.goalarea = "Goal Area"
 english.taskintro = "Task Introduction"
 english.has_been_used = "Option has been used"
 english.cant_cost = "Not enough points"
+-- english.not_open = "暂时未开放"
+
+-- english.name = "名称"
+-- english.enable_limits = "次数限制"
+-- english.ability_hasbeen_learn = "该技能已被学习"
+
 --基金会电脑
 english.desc_foundation_computer = "Foundation Computer"
 english.decode_hint1 = "Please decode in"

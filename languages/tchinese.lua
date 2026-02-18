@@ -2850,6 +2850,7 @@ traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地�
 -- traditional.drop = "丢弃"
 -- traditional.error = "错误"
 -- traditional.changeWep = "更换武器"
+-- traditional.abilitylearn = "技能学习"
 -- traditional.health = "生命值"
 -- traditional.speed = "速度"
 -- traditional.ability = "技能"
@@ -2862,6 +2863,7 @@ traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地�
 -- traditional.fire_rate = "射速"
 -- traditional.uiuchange = "UIU探员更换"
 -- traditional.not_agent = "你不是UIU基础探员"
+-- traditional.not_dz = "你不是蛇之手成员"
 -- traditional.level_not_enough = "等级不足"
 -- traditional.equipment_not_compare = "装备不匹配"
 -- traditional.agent_not_enough = "探员不足"
@@ -2870,6 +2872,12 @@ traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地�
 -- traditional.taskintro = "任务简介"
 -- traditional.has_been_used = "该选项已被使用"
 -- traditional.cant_cost = "点数不足"
+-- traditional.not_open = "暂时未开放"
+
+-- traditional.name = "名称"
+-- traditional.enable_limits = "次数限制"
+-- traditional.ability_hasbeen_learn = "该技能已被学习"
+
 --基金会电脑
 -- traditional.desc_foundation_computer = "基金会内部安全系统"
 -- traditional.decode_hint1 = "请在"
