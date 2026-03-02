@@ -2800,7 +2800,7 @@ russian.achievement2 = "единиц опыта,"
 russian.achievement3 = "уровня и"
 russian.achievement4 = "очков!"
 --体力
-russian.stamina = "Стамина"
+russian.stamina = "Мне нужно переодохнуть..."
 --选角色
 russian.role_menu = "Текущая роль:"
 russian.role_menu_1 = "Требуемый уровень:"
