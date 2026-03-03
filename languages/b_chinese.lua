@@ -2722,7 +2722,6 @@ b_chinese.desc_ungag = "解除游戏内禁音封禁\n(您可以通过输入!getg
 b_chinese.desc_unban = "解封"
 b_chinese.desc_prefix = "给予您在设置中设置昵称前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回"
 b_chinese.desc_prefix_rainbow = "给予您在设置中设置昵称彩虹前缀的功能,\n然而您不能包含任何敏感内容,否则您的前缀将被收回"
-b_chinese.desc_admin = ""
 b_chinese.donationtitle_prem = "VIP状态"
 b_chinese.donate_days = "天"
 b_chinese.donate_other = "其它"

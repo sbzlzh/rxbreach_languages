@@ -2722,7 +2722,6 @@ traditional.desc_ungag = "解除遊戲內禁音封禁\n(您可以通過輸入!ge
 traditional.desc_unban = "解封"
 traditional.desc_prefix = "給予您在設置中設置昵稱首碼的功能,\n然而您不能包含任何敏感內容,否則您的首碼將被收回"
 traditional.desc_prefix_rainbow = "給予您在設置中設置昵稱彩虹首碼的功能,\n然而您不能包含任何敏感內容,否則您的首碼將被收回"
-traditional.desc_admin = ""
 traditional.donationtitle_prem = "VIP狀態"
 traditional.donate_days = "天"
 traditional.donate_other = "其它"
