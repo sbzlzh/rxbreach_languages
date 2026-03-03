@@ -3031,4 +3031,3 @@ chinese.medic_no_pills = "你没有储存的止痛药!"
 chinese.medic_pills_full = "止痛药储存已满!"
 chinese.medic_pills_stored = "你储存了一份止痛药!"
 ALLLANGUAGES.chinese = chinese
-
