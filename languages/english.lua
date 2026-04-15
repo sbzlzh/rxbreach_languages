@@ -154,7 +154,7 @@ english.UNGOC_SCOUT = "GOC-HEOF Scout Squad"
 english.role.UNGOC_SCOUT_Soldier = "GOC Scout Squad Soldier"
 english.role.UNGOC_SCOUT_Commander = "GOC Scout Squad Commander"
 --GOC HEOF 支援小队
-english.UNGOC_SUP = "GOC-HEOF Support Squad”"
+english.UNGOC_SUP = "GOC-HEOF Support Squad"
 english.role.UNGOC_Sup_Soldier = "GOC Support Squad Soldier"
 english.role.UNGOC_Sup_Machinegunner = "GOC Support Squad Juggernaut"
 english.role.UNGOC_Sup_Commander = "GOC Support Squad Commander"
@@ -168,11 +168,11 @@ english.role.QRT_Machinegunner = "QRT Machine Gunner"
 english.role.QRT_Shield = "QRT Shield Bearer"
 english.role.QRT_Marksmen = "QRT Marksman"
 -- Elite QRT
-english.role.Elite_QRT_Soldier = “Elite QRT Soldier”
-english.role.Elite_QRT_Medic = “Elite QRT Medic”
-english.role.Elite_QRT_Machinegunner = “Elite QRT Machine Gunner”
-english.role.Elite_QRT_Engineer = “Elite QRT Engineer”
-english.role.Elite_QRT_Com = “Elite QRT Commander”
+english.role.Elite_QRT_Soldier = "Elite QRT Soldier"
+english.role.Elite_QRT_Medic = "Elite QRT Medic"
+english.role.Elite_QRT_Machinegunner = "Elite QRT Machine Gunner"
+english.role.Elite_QRT_Engineer = "Elite QRT Engineer"
+english.role.Elite_QRT_Com = "Elite QRT Commander"
 --D级
 english.ClassD = "Class-D Personnel"
 english.role.ClassD_Default = "Class-D Personnel"
@@ -197,11 +197,11 @@ english.role.ClassD_Mio = "MIO"
 english.role.ClassD_Mio_NaiLong = "Milk Dragon MIO"
 english.role.ClassD_BaiCai_Strong = "Steroid Cabbage"
 --D级转生 Class D Reincarnation
-english.ClassD_Rebirth = “Reborn Class D Personnel”
-english.role.ClassD_Hack_Rebirth = “Class D Hacker Reborn”
-english.role.ClassD_Abnormal = “Class D Abnormal”
-english.role.ClassD_Pefect = “Class D Perfect”
-english.role.ClassD_Opportunist = “Class D Fence Sitter”
+english.ClassD_Rebirth = "Reborn Class D Personnel"
+english.role.ClassD_Hack_Rebirth = "Class D Hacker Reborn"
+english.role.ClassD_Abnormal = "Class D Abnormal"
+english.role.ClassD_Pefect = "Class D Perfect"
+english.role.ClassD_Opportunist = "Class D Fence Sitter"
 --MTF
 english.MTF = "Mobile Task Force"
 english.role.MTF_Security = "Internal Security Agent"
@@ -835,7 +835,7 @@ english.no_radio = "You don't have a radio!"
 english.turn_up_the_radio = "Turned on the radio!"
 english.no_text_radio = "Enter text!"
 english.radio_in_chat = "[Radio]"
-english.gru_friendly = Allies of the SCP Foundation—GRU P Division has arrived at the facility"
+english.gru_friendly = "Allies of the SCP Foundation—GRU P Division has arrived at the facility"
 english.gru_evil = "Attention all personnel: Hostile forces from the GRU P Division are breaching the facility!"
 english.looting_started = "You started looting the body, this will take some time......"
 english.looting_end = "Looting completed"
@@ -1198,7 +1198,6 @@ english.distrustscp079 = "Distrust SCP-079"
 english.scp062de_mp40_desc = "The MP40 has a high rate of fire, allowing it to take down large numbers of enemies in a short amount of time, but it lacks damage compensation"
 english.scp062de_k98k_desc = "The Kar98K deals devastating damage; almost no one survives a hit from it."
 english.scp062de_g43_desc = "The G43 is a semi-automatic rifle with decent damage compensation, but it has significant recoil."
-
 --角色介绍 --FZ翻译
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.english = BREACH.Descriptions.english or {}
@@ -2710,7 +2709,7 @@ english.bonus_sci_sus_evac = "Evacuate Suspect Scientist"
 english.bonus_sci_corrupts_evac = "Arrest corrupt officials"
 english.bonus_sci_sus = "The Price of Justice"
 english.bonus_omega1_kill = "Omega Execution of High Command"
- english.bonus_omega1_arrested = "Arrest corrupt officials"
+english.bonus_omega1_arrested = "Arrest corrupt officials"
 --下面这是？
 english.take_off_hover = "Press \"Left Click\" to remove"
 english.heavy_helmet = "Heavy Helmet"
