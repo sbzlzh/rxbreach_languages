@@ -64,7 +64,7 @@ english.role.SCI_SpyUSA = "UIU Spy"
 english.SCI_Rebirth = "Reborn Scientists"
 english.role.SCI_Rebirth_Researcher = "Research Assistant"
 english.role.SCI_Human_Cell_Gastroenterologist = "Fat Doctor"
--- english.role.SCI_Opportunist = "Opportunist Researcher"   --强调投机这个行为
+english.role.SCI_Opportunist = "Opportunist Researcher"
 --安保部门
 english.SECURITY = "Security Department"
 english.role.SECURITY_Recruit = "Security Recruit"
@@ -75,11 +75,11 @@ english.role.SECURITY_Heavy = "Security Riot Control"
 english.role.SECURITY_Warden = "Security Warden"
 english.role.SECURITY_IMVSOLDIER = "Security Special Agent"
 english.role.SECURITY_Chief = "Security Captain"
--- english.role.SECURITY_Spy = "CI Spy" -与其余CI阵营翻译一致
+english.role.SECURITY_Spy = "CI Spy" -与其余CI阵营翻译一致
 english.role.SECURITY_Corporal = "Security Corporal"
 --转生安保
 english.SECURITY_Rebirth = "Reborn Security"
--- english.role.SECURITY_Instructor = "Security Instructor"   --删除部门，翻译有点过长
+english.role.SECURITY_Instructor = "Security Instructor"
 --格鲁乌P部门
 --格鲁乌P部门
 english.GRU = "GRU P Division (Post-Era)"
@@ -195,15 +195,15 @@ english.role.ClassD_Madman = "Class-D Madman"
 english.role.ClassD_Soldier = "Class-D Veteran"
 english.role.ClassD_GOCSpy = "GOC Agent"
 english.role.ClassD_Banned = "Class-D Low Reputation"
--- english.role.ClassD_Banned_Temporary = "Class-D Minor Low Reputation" --强调程度较轻
+english.role.ClassD_Banned_Temporary = "Class-D Minor Low Reputation"
 english.role.ClassD_Mio = "MIO"
 english.role.ClassD_Mio_NaiLong = "Milk Dragon MIO"
 english.role.ClassD_BaiCai_Strong = "Steroid Cabbage"
 --D级转生
 english.ClassD_Rebirth = "Reborn Class-D Personnel"
--- english.role.ClassD_Hack_Rebirth = "Class-D Hacker Reborn" --添加“-”,使格式统一
--- english.role.ClassD_Abnormal = "Class-D Abnormal" --添加“-”,使格式统一
--- english.role.ClassD_Pefect = "Class-D Perfect" --添加“-”,使格式统一
+english.role.ClassD_Hack_Rebirth = "Class-D Hacker Reborn"
+english.role.ClassD_Abnormal = "Class-D Abnormal"
+english.role.ClassD_Pefect = "Class-D Perfect"
 --MTF
 english.MTF = "Mobile Task Force"
 english.role.MTF_Security = "Internal Security Agent"
@@ -229,7 +229,7 @@ english.role.MTF_Medic_Rebirth = "Reborn MTF Medic"
 english.role.MTF_Engi_Rebirth = "Reborn MTF Engineer"
 --MTF 重收支援
 english.role.MTF_SEC_Guard = "MTF SEC Guard"
--- english.role.MTF_SEC_Machine = "MTF SEC Machine Gunner" -原有的重装背离了游戏内的机枪手的防护，在此定位改为纯粹的机枪手
+english.role.MTF_SEC_Machine = "MTF SEC Machine Gunner"
 english.role.MTF_SEC_Medic = "MTF SEC Medic"
 english.role.MTF_SEC_Engi = "MTF SEC Engineer"
 english.role.MTF_SEC_Com = "MTF SEC Commander"
@@ -262,20 +262,20 @@ english.role.NU7_SF_Specialist = "NU-7 Maintenance Team 3 Maintenance Specialist
 english.Chaos = "Chaos Insurgency"
 english.role.Chaos_Grunt = "CI Soldier"
 english.role.Chaos_Commander = "CI Commander"
--- english.role.Chaos_Jugg = "CI Heavy Trooper" -统一翻译加上“Trooper”,Unified Translation,add "trooper"
+english.role.Chaos_Jugg = "CI Heavy Trooper"
 english.role.Chaos_Demo = "CI Demon"
 english.role.Chaos_Claymore = "CI Hunter"
 -- CI 突袭部队
--- english.ChaosRaidFroce = "CI Assault Unit"
--- english.role.Chaos_Raid_Grunt = "CI Assault Unit Soldier"
--- english.role.Chaos_Raid_Commander = "CI Assault Unit Commander"
--- english.role.Chaos_Raid_Jugg = "CI Assault Unit Heavy Trooper"
--- english.role.Chaos_Raid_Specialist = "CI Assault Unit Combat Specialist"
--- english.role.Chaos_Raid_ExplosionExpert = "CI Assault Unit Breaching Specialist"
+english.ChaosRaidFroce = "CI Assault Unit"
+english.role.Chaos_Raid_Grunt = "CI Assault Unit Soldier"
+english.role.Chaos_Raid_Commander = "CI Assault Unit Commander"
+english.role.Chaos_Raid_Jugg = "CI Assault Unit Heavy Trooper"
+english.role.Chaos_Raid_Specialist = "CI Assault Unit Combat Specialist"
+english.role.Chaos_Raid_ExplosionExpert = "CI Assault Unit Breaching Specialist"
 --CI 护送小组
--- english.ChaosEscortSquad = "CI-Escort Unit"
--- english.role.Chaos_Escort_Grunt = "CI-Escort Unit Soldier"
--- english.role.Chaos_Escort_Commander = "CI-Escort Unit Commander" 
+english.ChaosEscortSquad = "CI-Escort Unit"
+english.role.Chaos_Escort_Grunt = "CI-Escort Unit Soldier"
+english.role.Chaos_Escort_Commander = "CI-Escort Unit Commander" 
 --特殊科研感觉不用汉化他们的名字
 english.SCI_SPECIAL = "Special Scientists"
 english.role.SCI_SPECIAL_DAMAGE = "Kelen"
@@ -390,19 +390,19 @@ english.role.usa_commander = "US Army Commander"
 english.role.usa_machinegunner = "US Army Machine Gunner"
 ------------------------------------------------battlesite
 --落锤AB联合部队
--- english.role.battlesite_nu7_grunt = "Nu-7 Joint Task Force A&B Soldier"
--- english.role.battlesite_nu7_sniper = "Nu-7 Joint Task Force A&B Sniper"
--- english.role.battlesite_nu7_vanguard = "Nu-7 Joint Task Force A&B Vanguard"
--- english.role.battlesite_nu7_jugg = "Nu-7 Joint Task Force A&B Juggernaut" -使用Juggernaut区别于非基金会武装
--- english.role.battlesite_nu7_medic = "Nu-7 Joint Task Force A&B Medic"
--- english.role.battlesite_nu7_tech = "Nu-7 Joint Task Force A&B Technician"
--- english.role.battlesite_nu7_commander = "Nu-7 Joint Task Force A&B Commander"
+english.role.battlesite_nu7_grunt = "Nu-7 Joint Task Force A&B Soldier"
+english.role.battlesite_nu7_sniper = "Nu-7 Joint Task Force A&B Sniper"
+english.role.battlesite_nu7_vanguard = "Nu-7 Joint Task Force A&B Vanguard"
+english.role.battlesite_nu7_jugg = "Nu-7 Joint Task Force A&B Juggernaut"
+english.role.battlesite_nu7_medic = "Nu-7 Joint Task Force A&B Medic"
+english.role.battlesite_nu7_tech = "Nu-7 Joint Task Force A&B Technician"
+english.role.battlesite_nu7_commander = "Nu-7 Joint Task Force A&B Commander"
 --深红王之子-军团
--- english.role.battlesite_cult_grunt = "COTSK Legion Soldier"
--- english.role.battlesite_cult_madman = "COTSK Legion Madman"
--- english.role.battlesite_cult_Psycho = "COTSK Legion Zealot"
--- english.role.battlesite_cult_hunter = "COTSK Legion Reaper"
--- english.role.battlesite_cult_commander = "COTSK Legion Commander"
+english.role.battlesite_cult_grunt = "COTSK Legion Soldier"
+english.role.battlesite_cult_madman = "COTSK Legion Madman"
+english.role.battlesite_cult_Psycho = "COTSK Legion Zealot"
+english.role.battlesite_cult_hunter = "COTSK Legion Reaper"
+english.role.battlesite_cult_commander = "COTSK Legion Commander"
 ------------------------------------------------
 english.weaponry = {}
 english.weaponry["breach_keycard_1"] = "Level 1 Keycard"
@@ -532,7 +532,7 @@ english.weaponry["item_novel"] = "Novel"
 english.weaponry["item_skp_checker"] = "SKP Checker"
 english.weaponry["item_nightvision_green_old"] = "Old NVG"
 english.weaponry["item_caishen_coin"] = "Super Gold Coin"
--- english.weaponry["item_qrt_code"] = "QRT Call Sign" -使用call sign体现为呼号
+english.weaponry["item_qrt_code"] = "QRT Call Sign"
 english.role.Spectator = "Spectator"
 --提示
 english.already_have_the_bag = "You already have a bag!"
@@ -999,7 +999,7 @@ english.decidsion = "Decision"
 english.opportunist_words_1 = "I have drifted through life for half a lifetime, regretting only that I have yet to meet a wise ruler. If you will not reject me, I would like to ask you to be my adoptive father."
 english.opportunist_words_2 = "A true man living under heaven cannot remain long in the shadow of others!"
 english.opportunist_words_3 = "Don’t worry, I brought my own clothes. Don’t ask where they came from."
--- english.opportunist_words_4 = "Your anomalous ability has failed. There's no turning back." -适用于旁白一类
+english.opportunist_words_4 = "Your anomalous ability has failed. There's no turning back."
 --财神
 english.become_caishen = "Congratulations! you have become a Cai Shen!"
 english.goxifacai = "Go Xi Fa Cai!"
@@ -1154,7 +1154,7 @@ english["American Army"] = "American Army"
 english["SKP"] = "SKP"
 english["Corrupt Foundation"] = "Corrupts"
 english["Event Team"] = "Events"
--- english["Anders Robotics"] = "Anders Robots" -通过GOI直译
+english["Anders Robotics"] = "Anders Robots"
 english["Arena Participants"] = "Arena Participants"
 --SCOREBOARD
 english.scoreboard_ping = "Ping"
@@ -1608,8 +1608,8 @@ english.skp_evaluate = "High-value personnel evaluation"
 english.ci_vdv_winner = "CI Airborne has occupied Site19"
 english.nu7_squad_winner = "Hammer Down Special Forces Team defended Site19"
 --BattleSite结局
--- english.roundend_nu7ab = "The joint force has eliminated the legion."
--- english.roundend_scarlet = "The Legion has successfully summoned the Scarlet King."
+english.roundend_nu7ab = "The joint force has eliminated the legion."
+english.roundend_scarlet = "The Legion has successfully summoned the Scarlet King."
 --5K 奖励
 english.gruci_winner1 = "Successfully blocked the underground facility"
 english.foundation5k_winner = "Foundation victory"
@@ -1706,7 +1706,7 @@ english.ending_bad_warhead_bonus = "Nuke Lucky Star"
 english.hind_thedeath_bonus = "Dodged the Reaper"
 --新的经验奖励
 english.uiuspy_hackedtab = "Hacked personnel panel"
--- english.battlesiteWinBonus = "BattleSite19 Victory Bonus" -强调为加成
+english.battlesiteWinBonus = "BattleSite19 Victory Bonus"
 --VOICE/TEXT CHAT
 english.whispers = "Whispers"
 english.talks = "Talks"
@@ -1751,7 +1751,7 @@ english.menu_modeller = "3D Modeler"
 english.menu_head_admin = "Head Administrator"
 english.menu_make_map = "Map Maker"
 english.menu_chemist = "Sexy Chemist"
--- english.menu_ulx_adverts = "Display Left Announcement"
+english.menu_ulx_adverts = "Display Left Announcement"
 english.menu_admin_firstperson = "Enable spectator first-person"
 english.menu_no_role_desc_admin = "Enable \"Do not resurrect in any form\""
 english.menu_weapon_fov = "Weapon FOV"
@@ -1836,7 +1836,7 @@ english.menu_resume = "Resume"
 english.menu_disconnect = "Disconnect"
 english.menu_credits = "Credits"
 english.menu_settings = "Settings"
--- english.menu_personal_center = "My Profile"
+english.menu_personal_center = "My Profile"
 english.menu_discord = "Discord"
 english.menu_donate = "Donate"
 english.menu_wiki = "Wiki"
@@ -1888,7 +1888,7 @@ english.tasks_gru = "Seize data, tamper with permissions"
 english.tasks_gru_guard = "Cover the withdrawal of invasion forces"
 english.tasks_coordinate_gru = "Lead the team to complete the mission"
 english.tasks_ci = "Dispersedly evacuate site personnel, evacuate Class-D"
--- english.tasks_escort_ci = "Evacuate the target personnel"
+english.tasks_escort_ci = "Rescue the target personnel"
 english.tasks_mines = "Place mines"
 english.tasks_destroy = "Destroy evacuation aircraft"
 english.tasks_coordinate_ci = "Lead CI"
@@ -2132,8 +2132,8 @@ english.abilities_protector_desc = "I, White Hat, will not hoard this glory alon
 english.abilities_ottospeedup = "Charge! Rush!"
 english.abilities_ottospeedup_desc = "Nearby allies gain 15 seconds of level 3 speed boost and 15 seconds of level 3 regeneration"
 --BattleSite19
--- english.abilities_battlesite_cult_commander = "Blessing of the Scarlet King"
--- english.abilities_battlesite_cult_commander_desc = "Grants a buff to nearby \nScarlet Legion members."
+english.abilities_battlesite_cult_commander = "Blessing of the Scarlet King"
+english.abilities_battlesite_cult_commander_desc = "Grants a buff to nearby \nScarlet Legion members."
 --节日技能
 english.abilities_caishen = "Endless Wealth"
 english.abilities_caishen_desc = "Bestows wealth upon others"
@@ -2337,7 +2337,7 @@ english.f2_stamina = "Stamina:"
 english.f2_choose = "Choose a faction from the list on the left"
 --更多阵营选择
 english.f2menu_normalmode = "Normal Mode"
--- english.f2menu_normalmode_supp = "More Support" -这个另类在此翻译为更多
+english.f2menu_normalmode_supp = "More Support"
 english.f2menu_kongshu = "Airborne Mode"
 english.f2menu_misc = "Miscellaneous"
 english.f2menu_5k = "Event 5K"
@@ -2383,10 +2383,10 @@ english.f2ww2_american_desc = "A World War II United States Army unit"
 english.f2ww2_nazi_title = "Nazi Germany"
 english.f2ww2_nazi_desc = "This server does not endorse any ideology or theory related to Nazism or fascism"
 --BattleSite19
--- english.f2menu_battlesite_nu7ab_title = "NU-7 \"Hammer Down\" Joint Force"
--- english.f2menu_battlesite_nu7ab_desc = "A joint force of Hammer Down's A and B Companies."
--- english.f2menu_battlesite_scarletarmy_title = "COTSK Legion"
--- english.f2menu_battlesite_scarletarmy_desc = "A legion of the Scarlet King's Children, sworn to bring the King down to the world."
+english.f2menu_battlesite_nu7ab_title = "NU-7 \"Hammer Down\" Joint Force"
+english.f2menu_battlesite_nu7ab_desc = "A joint force of Hammer Down's A and B Companies."
+english.f2menu_battlesite_scarletarmy_title = "COTSK Legion"
+english.f2menu_battlesite_scarletarmy_desc = "A legion of the Scarlet King's Children, sworn to bring the King down to the world."
 --f2杂项--
 --彩蛋角色
 english.f2misc_egg_title = "Easter Egg Roles"
@@ -2432,9 +2432,9 @@ english.f2_ungoc = "Support faction under the [Alliance Assistance] event | Will
 english.f2_ungoc_scout = "GOC Hazardous Environment Operational Forces - Reconnaissance Unit\nComposed of the unit's elite personnel, they typically carry out reconnaissance missions"
 english.f2_ungoc_sup = "GOC Hazardous Environment Operational Forces – Support Unit\nComposed of a small number of personnel, it is primarily assigned to support other GOC-affiliated organizations in carrying out support missions"
 --CI-突袭部队
--- english.f2_ciraidforce_desc = "Chaos Insurgency Support Faction under the [Fragile Defense] event."
+english.f2_ciraidforce_desc = "Chaos Insurgency Support Faction under the [Fragile Defenses] event."
 --CI 护送小组
--- english.f2_chaosEscortSquad_desc = "An operation team tasked with escorting special personnel."
+english.f2_chaosEscortSquad_desc = "An operation team tasked with escorting special personnel."
 --随机事件文本信息
 english.event_name = "Event: "
 english.event_style = "Type: "
@@ -2694,7 +2694,7 @@ english.evidences_delinquency = "This is Omega-1 Investigator, ID DON3975, I con
 english.evidences_evil = "This is Omega-1 Investigator, ID DON3975, I confirm there are personnel with extremely malicious behavior in the facility, request additional personnel to assist me, over"
 english.evidences_negotiation = "This is Omega-1 Investigator, ID DON3975, a scientist has allegedly obtained evidence of illegal activities by high-ranking personnel, request a team to assist me, over"
 english.omega_cantlocate = "Unable to locate target"
--- english.omega_cantlocate_2 = "Communications are being heavily jammed." -强调为对讲机通讯内容
+english.omega_cantlocate_2 = "Communications are being heavily jammed."
 --改造对讲机
 english.sus_whistleblower = "Whistleblower"
 english.sus_whistleblower_desc = "You still believe justice exists within the Foundation,\nactively contact Omega-1 investigators,\nbecome a whistleblower to expose the darkness at the top!"
@@ -2862,7 +2862,7 @@ english.load_tazer = "Load Taser"
 english.load_tazer_desc = "You cannot use the taser because the battery is depleted."
 english.select_faction_ntfcmd = "Select the faction to scan from the list. Press BACKSPACE to close the window."
 english.ntfcmd_searchsys = "Personnel Search System"
--- english.megbeta1_security = "Beta-1 Security System"
+english.megbeta1_security = "Beta-1 Security System"
 english.ntfcmd_unknowns = "Unknown Personnel"
 --成就
 english.achievement = "You have unlocked an achievement:"
@@ -3036,21 +3036,21 @@ english.ability_learned_scptalking = "You have acquired the ability to communica
 english.select = "Select"
 english.submit = "Submit"
 english.dispatch = "Dispatch"
--- english.people_counts = "Member"
+english.people_counts = "Member"
 --指挥官介绍任务
--- english.nailong_selfdesc = "Hello everyone,I'm MIO\n here is RXSEND MIO Server，指挥官介绍任务功能\n这是一个非常牛逼的功能"
--- english.battlesite_o4desc = "\"Nu-7\"Your mission has been confirmed.\nStop the COTSK Legion's invasion.\nDon't let them succeed in breaking the seal of \"The Scarlet King\".\nOr everything is lost!"
--- english.battlesite_o4desc_2 = "Stand firm, comrades!\nSpecial backup is on the way!"
--- english.battlesite_scarletkingdesc = "My faithful followers, you have broken most of the chains that imprisoned me.\nNow, only the final seal remains to be broken. Then, I shall return to this world.\nFear not, my loyal servants, for you have already received my blessing."
+-- english.nailong_selfdesc = "大家好,我是Mio\n这里是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
+english.battlesite_o4desc = "\"Nu-7\"Your mission has been confirmed.\nStop the COTSK Legion's invasion.\nDon't let them succeed in breaking the seal of \"The Scarlet King\".\nOr everything is lost!"
+english.battlesite_o4desc_2 = "Stand firm, comrades!\nSpecial backup is on the way!"
+english.battlesite_scarletkingdesc = "My faithful followers, you have broken most of the chains that imprisoned me.\nNow, only the final seal remains to be broken. Then, I shall return to this world.\nFear not, my loyal servants, for you have already received my blessing."
 --BattleSite19
 -- english.nailongmio_egg = "我是MIO，你能看到我说明你来得太晚了\n你没有复活成任何一方的角色，所以你看到了我\n该说你是幸运还是倒霉呢..."
--- english.battlesite_nu7win = "Well done, soldiers! You have saved humanity!\nThough they may never know... Keep up the good work, soldiers. There are more challenges ahead."
--- english.battlesite_nu7failure = "It's all over....\nWe'll meet again in the next reality, soldiers.\n....."
--- english.battlesite_scarletwin = "Hahahaha, you have succeeded in breaking my chains.\nI will return.\nMy children\nYe shall bathe in a new world."
--- english.battlesite_scarletfailure = "Curse them! These abominations are a hundred times more putrid than the filth of sewers and dung heaps!\nYe need not lose heart.\nYe must leave this place at once, and await the next opportunity.\n....."
+english.battlesite_nu7win = "Well done, soldiers! You have saved humanity!\nThough they may never know... Keep up the good work, soldiers. There are more challenges ahead."
+english.battlesite_nu7failure = "It's all over....\nWe'll meet again in the next reality, soldiers.\n....."
+english.battlesite_scarletwin = "Hahahaha, you have succeeded in breaking my chains.\nI will return.\nMy children\nYe shall bathe in a new world."
+english.battlesite_scarletfailure = "Curse them! These abominations are a hundred times more putrid than the filth of sewers and dung heaps!\nYe need not lose heart.\nYe must leave this place at once, and await the next opportunity.\n....."
 --指挥官
--- english.desc_commander = "Commander"
--- english.desc_commander_o4 = "O4 Commander"
+english.desc_commander = "Commander"
+english.desc_commander_o4 = "O4 Commander"
 -- english.desc_commander_mio = "指挥官MIO"
 --基金会电脑
 english.desc_foundation_computer = "Foundation Computer"
@@ -3092,11 +3092,11 @@ english.skp_focus_4 = "Mind Control"
 english.skp_focus_4_desc = "“Convert an anomalous SCP into an allied SCP\nThe following SCPs cannot be recruited as allied SCPs:\n1. SCP-106\n2. SCP-682\n3. SCP-457\n4. SCP-096\n(Cost: 4 Crystals)"
 english.scployaltyteam = "Friendly Team"
 --娱乐模式——BattleSite19
--- english.control_point = "Point Captured"
--- english.losing_point = "Point Lost"
--- english.battlesite_nu7 = "Joint Force"
--- english.battlesite_cotsk = "Legion"
--- english.point_not_completed = "You need to capture the previous point first."
+english.control_point = "Point Captured"
+english.losing_point = "Point Lost"
+english.battlesite_nu7 = "Joint Force"
+english.battlesite_cotsk = "Legion"
+english.point_not_completed = "You need to capture the previous point first."
 --DEMO
 english.menu_demo_settings = "DEMO Recording"
 english.menu_demo_enabled = "Enable DEMO Recording"
