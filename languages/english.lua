@@ -398,11 +398,11 @@ english.role.usa_machinegunner = "US Army Machine Gunner"
 -- english.role.battlesite_nu7_tech = "Nu-7 Joint Task Force A&B Technician"
 -- english.role.battlesite_nu7_commander = "Nu-7 Joint Task Force A&B Commander"
 --深红王之子-军团
--- english.role.battlesite_cult_grunt = "COSTK Legion Soldier"
--- english.role.battlesite_cult_madman = "COSTK Legion Madman"
--- english.role.battlesite_cult_Psycho = "COSTK Legion Zealot"
--- english.role.battlesite_cult_hunter = "COSTK Legion Reaper"
--- english.role.battlesite_cult_commander = "COSTK Legion Commander"
+-- english.role.battlesite_cult_grunt = "COTSK Legion Soldier"
+-- english.role.battlesite_cult_madman = "COTSK Legion Madman"
+-- english.role.battlesite_cult_Psycho = "COTSK Legion Zealot"
+-- english.role.battlesite_cult_hunter = "COTSK Legion Reaper"
+-- english.role.battlesite_cult_commander = "COTSK Legion Commander"
 ------------------------------------------------
 english.weaponry = {}
 english.weaponry["breach_keycard_1"] = "Level 1 Keycard"
@@ -2385,7 +2385,7 @@ english.f2ww2_nazi_desc = "This server does not endorse any ideology or theory r
 --BattleSite19
 -- english.f2menu_battlesite_nu7ab_title = "NU-7 \"Hammer Down\" Joint Force"
 -- english.f2menu_battlesite_nu7ab_desc = "A joint force of Hammer Down's A and B Companies."
--- english.f2menu_battlesite_scarletarmy_title = "COSTK Legion"
+-- english.f2menu_battlesite_scarletarmy_title = "COTSK Legion"
 -- english.f2menu_battlesite_scarletarmy_desc = "A legion of the Scarlet King's Children, sworn to bring the King down to the world."
 --f2杂项--
 --彩蛋角色
@@ -3039,7 +3039,7 @@ english.dispatch = "Dispatch"
 -- english.people_counts = "Member"
 --指挥官介绍任务
 -- english.nailong_selfdesc = "Hello everyone,I'm MIO\n here is RXSEND MIO Server，指挥官介绍任务功能\n这是一个非常牛逼的功能"
--- english.battlesite_o4desc = "\"Nu-7\"Your mission has been confirmed.\nStop the COSTK Legion's invasion.\nDon't let them succeed in breaking the seal of \"The Scarlet King\".\nOr everything is lost!"
+-- english.battlesite_o4desc = "\"Nu-7\"Your mission has been confirmed.\nStop the COTSK Legion's invasion.\nDon't let them succeed in breaking the seal of \"The Scarlet King\".\nOr everything is lost!"
 -- english.battlesite_o4desc_2 = "Stand firm, comrades!\nSpecial backup is on the way!"
 -- english.battlesite_scarletkingdesc = "My faithful followers, you have broken most of the chains that imprisoned me.\nNow, only the final seal remains to be broken. Then, I shall return to this world.\nFear not, my loyal servants, for you have already received my blessing."
 --BattleSite19
