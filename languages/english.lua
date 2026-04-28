@@ -56,7 +56,7 @@ english.role.SCI_Grunt = "Scientist"
 english.role.SCI_Recruiter = "Ethics Committee Inspector"
 english.role.SCI_Tester = "Senior Researcher"
 english.role.SCI_Medic = "Doctor"
-english.role.SCI_Cleaner = "Janitor"
+english.role.SCI_Cleaner = "Cleaner" --Janitor有背离单纯的清洁工
 english.role.SCI_Head = "Personnel Director"
 english.role.SCI_Medic_Head = "Medical Director"
 english.role.SCI_SpyUSA = "UIU Spy"
@@ -75,10 +75,10 @@ english.role.SECURITY_Heavy = "Security Riot Control"
 english.role.SECURITY_Warden = "Security Warden"
 english.role.SECURITY_IMVSOLDIER = "Security Special Agent"
 english.role.SECURITY_Chief = "Security Captain"
-english.role.SECURITY_Spy = "CI Spy" -与其余CI阵营翻译一致
+english.role.SECURITY_Spy = "CI Spy"
 english.role.SECURITY_Corporal = "Security Corporal"
 --转生安保
-english.SECURITY_Rebirth = "Reborn Security"
+english.SECURITY_Rebirth = "Reborn Security Department" --加上部门的翻译
 english.role.SECURITY_Instructor = "Security Instructor"
 --格鲁乌P部门
 --格鲁乌P部门
@@ -88,7 +88,7 @@ english.role.GRU_Specialist = "GRU P Combat Specialist"
 english.role.GRU_Jugg = "GRU P Heavy Trooper"
 english.role.GRU_Sapper = "GRU P Combat Engineer"
 english.role.GRU_Commander = "GRU P Commander"
-english.role.GRU_Political = "GRU P Lieutenant"
+english.role.GRU_Political = "GRU P Junior Lieutenant" --怎么平白无故给人家升官了
 english.GRU_Guard = "GRU P Division Honor Guard"
 english.role.GRU_Grunt = "GRU P Honor Guard Member"
 english.role.GRU_Machinegunner = "GRU P Honor Guard Machine Gunner"
@@ -197,11 +197,11 @@ english.role.ClassD_GOCSpy = "GOC Agent"
 english.role.ClassD_Banned = "Class-D Low Reputation"
 english.role.ClassD_Banned_Temporary = "Class-D Minor Low Reputation"
 english.role.ClassD_Mio = "MIO"
-english.role.ClassD_Mio_NaiLong = "Milk Dragon MIO"
-english.role.ClassD_BaiCai_Strong = "Steroid Cabbage"
+english.role.ClassD_Mio_NaiLong = "Nailong MIO" --Tiktok也用nailong表示中文语境中的奶龙
+english.role.ClassD_BaiCai_Strong = "Steroid Neuro-SaMa" --遵循白菜sama之意
 --D级转生
 english.ClassD_Rebirth = "Reborn Class-D Personnel"
-english.role.ClassD_Hack_Rebirth = "Class-D Hacker Reborn"
+english.role.ClassD_Hack_Rebirth = "Class-D Legendary Hacker" --直译
 english.role.ClassD_Abnormal = "Class-D Abnormal"
 english.role.ClassD_Pefect = "Class-D Perfect"
 --MTF
@@ -228,14 +228,14 @@ english.MTF_Rebirth = "Reborn MTF"
 english.role.MTF_Medic_Rebirth = "Reborn MTF Medic"
 english.role.MTF_Engi_Rebirth = "Reborn MTF Engineer"
 --MTF 重收支援
-english.role.MTF_SEC_Guard = "MTF SEC Guard"
-english.role.MTF_SEC_Machine = "MTF SEC Machine Gunner"
+english.role.MTF_SEC_Guard = "MTF SEC Soldier" --与其他大头一样
+english.role.MTF_SEC_Machine = "MTF SEC Machine Gunner" --原来的Juggernaut太搞了，老外一看原来是重装觉得很强，然后出门被打飞了
 english.role.MTF_SEC_Medic = "MTF SEC Medic"
 english.role.MTF_SEC_Engi = "MTF SEC Engineer"
 english.role.MTF_SEC_Com = "MTF SEC Commander"
 --律法左手
 english.OMEGA1 = "Mobile Task Force Omega-1 'Law Left Hand' Investigation Team"
-english.role.omega1_assistant = "Omega-1 Investigation Team Assistant"
+english.role.omega1_assistant = "Omega-1 Investigation Team Aide" --和科研助手区分开来，Aide更能表现有武装战斗力的助手
 english.role.omega1_officer = "Omega-1 Investigation Team Capture Specialist"
 english.role.omega1_captain = "Omega-1 Investigation Team Enforcer"
 --九尾狐
@@ -246,13 +246,13 @@ english.role.NTF_Specialist = "NTF Combat Specialist"
 english.role.NTF_Sniper = "NTF Sniper"
 --NU7 落锤
 english.NU7 = "Mobile Task Force NU-7 'Hammer Down' Special Forces Battalion Alpha Company"
-english.role.NU7_Soldier = "NU-7 Alpha Company Soldier"
-english.role.NU7_Commander = "NU-7 Alpha Company Commander"
-english.role.NU7_MedicExpert = "NU-7 Alpha Company Expert Medic"
-english.role.NU7_Specialist = "NU-7 Alpha Company Combat Specialist"
-english.role.NU7_Vanguard = "NU-7 Alpha Company Vanguard"
-english.role.NU7_Support = "NU-7 Alpha Company Support"
-english.role.NU7_Juggernaut = "NU-7 Alpha Company Juggernaut"
+english.role.NU7_Soldier = "NU-7 Alpha Co. Soldier"
+english.role.NU7_Commander = "NU-7 Alpha Co. Commander"
+english.role.NU7_MedicExpert = "NU-7 Alpha Co. Expert Medic"
+english.role.NU7_Specialist = "NU-7 Alpha Co. Combat Specialist"
+english.role.NU7_Vanguard = "NU-7 Alpha Co. Vanguard"
+english.role.NU7_Support = "NU-7 Alpha Co. Support"
+english.role.NU7_Juggernaut = "NU-7 Alpha Co. Juggernaut" --蛤蟆档的连"Company"改为缩写，让其在左下角尽量显示的下完整内容
 --NU7 维修小组
 english.NU7_SF = "Mobile Task Force NU-7 'Hammer Down' Special Forces Battalion Bravo Company Maintenance Team 3"
 english.role.NU7_SF_Soldier = "NU-7 Maintenance Team 3 Member"
@@ -339,13 +339,13 @@ english.role.nu22_medic = "Nu-22 \"Rocketmen\" Medic"
 english.role.nu22_commander = "Nu-22 \"Rocketmen\" Commander"
 english.role.nu22_scp1440 = "SCP-1440"
 --NU-7 Buck
-english.role.nu7_b_grunt = "NU-7 Company B Soldier"
-english.role.nu7_b_medic = "NU-7 Company B Medic"
-english.role.nu7_b_gas = "NU-7 Company B Gas Specialist"
-english.role.nu7_b_expert = "NU-7 Company B Technician"
-english.role.nu7_b_adjutant = "NU-7 Company B Adjutant"
-english.role.nu7_b_commander = "NU-7 Company B Commander"
-english.role.nu7_b_machine = "NU-7 Company B Machine Gunner"
+english.role.nu7_b_grunt = "NU-7 Co. B Soldier"
+english.role.nu7_b_medic = "NU-7 Co. B Medic"
+english.role.nu7_b_gas = "NU-7 Co. B Gas Specialist"
+english.role.nu7_b_expert = "NU-7 Co. B Technician"
+english.role.nu7_b_adjutant = "NU-7 Co. B Adjutant"
+english.role.nu7_b_commander = "NU-7 Co. B Commander"
+english.role.nu7_b_machine = "NU-7 Co. B Machine Gunner" --修改同A连
 --蛇之手折跃小队
 english.role.sh_tele_grunt = "Serpent's Hand Teleportation Team Soldier"
 english.role.sh_tele_witch = "Serpent's Hand Teleportation Team Witch Doctor"
@@ -535,9 +535,9 @@ english.weaponry["item_caishen_coin"] = "Super Gold Coin"
 english.weaponry["item_qrt_code"] = "QRT Call Sign"
 english.role.Spectator = "Spectator"
 --提示
-english.already_have_the_bag = "You already have a bag!"
-english.took_on_the_bag = "You put on the bag!"
-english.you_cant_wear_the_bag = "You can't wear this bag!"
+english.already_have_the_bag = "You already have a backpack!"
+english.took_on_the_bag = "You put on the backpack!"
+english.you_cant_wear_the_bag = "You can't wear this backpack!" --小修改，改为背包
 english.has_uniform_already = "You already have a uniform."
 english.take_off_armor_to_wear_uniform = "Take off your armor to wear this uniform!"
 english.your_uniform_is = "You are wearing:"
@@ -1047,7 +1047,7 @@ english.DoroHomeBonus = "Go home, back to the original beauty"
 --混沌C4提醒
 english.c4plantHint = "You can't freely place C4 at this time, you must destroy all target positions first"
 english.c4hasbeenplanted = "The area already has C4, you can't place it again"
-english.c4plantmissionhint = "You have C4, new target: Destroy the broadcast room and SCP-006 containment room"
+english.c4plantmissionhint = "You have C4, new target: Destroy the intercom room and SCP-006 containment room" --更正广播室翻译为intercom room
 --杂项
 english.ent_canthacked = "Other programs are hacking"
 english.ent_timetoolate = "No time to close it"
@@ -3061,7 +3061,7 @@ english.decode_hint4 = " chances, be careful!"
 english.decode_failed = "Decode Failed"
 english.decode_success = "Decode Success"
 --目标提示
-english.omega1_meg_goal_1 = "Collect Evidence on 1st floor"
+english.omega1_meg_goal_1 = "Collect Evidences on 1st floor"
 english.omega1_meg_goal_2 = "Call Support"
 english.omega1_meg_goal_3 = "Contact Suspect"
 english.omega1_mtf_goal_1 = "Evacuate Suspect Scientist"
@@ -3070,7 +3070,7 @@ english.omega1_mtf_goal_extra1 = "Notice all non-Lawful Left Hand Units in the f
 english.omega1_mtf_goal_extra2 = "Notice all Foundation Armed Units\nand QRT"
 english.omega1_mtf_goal_extra3 = "Notice all Foundation Armed Units\nand and Hammer"
 english.omega1_mtf_goal_catch = "Catch the following personnel:\nFacility Command\nO4 Command\nSecurity Command\nSecurity Agent\nSecurity Officer"
-english.sus_sci_goal_1 = "Collect Evidence on 2nd floor"
+english.sus_sci_goal_1 = "Collect Evidences on 2nd floor"
 english.sus_sci_goal_2 = "Become LAW or CHAOSE"
 english.sus_sci_goal_3 = "Keep trust Omega1 or leave"
 english.facility_military_goal_bad = "Killing Omega1 members"
