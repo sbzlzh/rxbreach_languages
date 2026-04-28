@@ -75,7 +75,7 @@ english.role.SECURITY_Heavy = "Security Riot Control"
 english.role.SECURITY_Warden = "Security Warden"
 english.role.SECURITY_IMVSOLDIER = "Security Special Agent"
 english.role.SECURITY_Chief = "Security Captain"
-english.role.SECURITY_Spy = "CI Spy"
+english.role.SECURITY_Spy = "CI Spy" --与其余CI阵营翻译一致
 english.role.SECURITY_Corporal = "Security Corporal"
 --转生安保
 english.SECURITY_Rebirth = "Reborn Security Department" --加上部门的翻译
@@ -275,7 +275,7 @@ english.role.Chaos_Raid_ExplosionExpert = "CI Assault Unit Breaching Specialist"
 --CI 护送小组
 english.ChaosEscortSquad = "CI-Escort Unit"
 english.role.Chaos_Escort_Grunt = "CI-Escort Unit Soldier"
-english.role.Chaos_Escort_Commander = "CI-Escort Unit Commander" 
+english.role.Chaos_Escort_Commander = "CI-Escort Unit Commander"
 --特殊科研感觉不用汉化他们的名字
 english.SCI_SPECIAL = "Special Scientists"
 english.role.SCI_SPECIAL_DAMAGE = "Kelen"
