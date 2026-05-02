@@ -10,6 +10,8 @@ on:
       - master
     paths:
       - 'languages/chinese.lua'
+      - 'languages/chinese_extra.lua'
+      - 'sync_missing_from_chinese.py'
   workflow_dispatch:
 
 jobs:

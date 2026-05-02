@@ -2,11 +2,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import lzma
 import re
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-PREFIX_DECL_RE = re.compile(r"^\s*([A-Za-z_]\w*)\s*=\s*\{\s*\}\s*(?:--.*)?$")
+PREFIX_DECL_RE = re.compile(
+    r"^\s*(?P<prefix>[A-Za-z_]\w*)\s*=\s*(?:(?P=prefix)\s+or\s+)?\{\s*\}\s*(?:--.*)?$"
+)
+INCLUDE_RE = re.compile(r"^\s*include\(\s*[\"'](?P<file>[^\"']+\.lua)[\"']\s*\)\s*(?:--.*)?$")
+DEFAULT_MAX_LZMA_BYTES = 64 * 1024
+EXTRA_SUFFIX = "_extra"
 
 
 AUTO_APPENDED_HEADER_RE = re.compile(r"^\s*--\s*=====\s*AUTO\s+ADDED\s+FROM\s+chinese\.lua", re.IGNORECASE)
@@ -22,10 +28,68 @@ def detect_prefix(lines: List[str], fallback: str | None = None) -> str:
     for line in lines:
         match = PREFIX_DECL_RE.match(line)
         if match:
-            return match.group(1)
+            return match.group("prefix")
     if fallback:
         return fallback
     raise ValueError("无法检测语言前缀（例如 english = {}）")
+
+
+def extra_file_name(path: Path) -> str:
+    return f"{path.stem}{EXTRA_SUFFIX}.lua"
+
+
+def is_extra_file(path: Path) -> bool:
+    return path.stem.endswith(EXTRA_SUFFIX)
+
+
+def _include_file_name(line: str) -> str | None:
+    match = INCLUDE_RE.match(line)
+    if not match:
+        return None
+    return match.group("file")
+
+
+def _include_basename(include_name: str) -> str:
+    return include_name.replace("\\", "/").rsplit("/", 1)[-1]
+
+
+def _resolve_include(path: Path, include_name: str) -> Path:
+    return path.parent / include_name.replace("\\", "/")
+
+
+def is_managed_extra_include(path: Path, line: str) -> bool:
+    include_name = _include_file_name(line)
+    if include_name is None:
+        return False
+    return _include_basename(include_name) == extra_file_name(path)
+
+
+def read_language_lines(path: Path) -> List[str]:
+    """读取语言主文件，并把同名 *_extra.lua 的 include 展开到当前位置。"""
+    lines = normalize_lines(path.read_text(encoding="utf-8"))
+    output: List[str] = []
+
+    for line in lines:
+        if not is_managed_extra_include(path, line):
+            output.append(line)
+            continue
+
+        include_name = _include_file_name(line)
+        if include_name is None:
+            output.append(line)
+            continue
+
+        include_path = _resolve_include(path, include_name)
+        if not include_path.exists():
+            raise FileNotFoundError(f"include 文件不存在: {include_path}")
+
+        output.extend(normalize_lines(include_path.read_text(encoding="utf-8")))
+
+    return output
+
+
+def lzma_size(lines: List[str]) -> int:
+    return len(lzma.compress("".join(lines).encode("utf-8")))
 
 
 def count_braces(text: str) -> int:
@@ -189,6 +253,9 @@ def transform_prefix_declaration(line: str, src_prefix: str, dst_prefix: str) ->
     stripped = _strip_ending(line)
     indent_match = re.match(r"^(\s*)", stripped)
     indent = indent_match.group(1) if indent_match else ""
+    uses_or = re.search(rf"=\s*{re.escape(src_prefix)}\s+or\s+\{{\s*\}}", stripped) is not None
+    if uses_or:
+        return f"{indent}{dst_prefix} = {dst_prefix} or {{}}{ending}"
     return f"{indent}{dst_prefix} = {{}}{ending}"
 
 
@@ -301,14 +368,98 @@ def rebuild_from_template(
     return output, missing, removed, mismatched
 
 
+def split_language_lines(
+    target_path: Path,
+    lines: List[str],
+    max_lzma_bytes: int | None,
+) -> Tuple[List[str], List[str] | None, int, int]:
+    if max_lzma_bytes is None or max_lzma_bytes <= 0:
+        return lines, None, lzma_size(lines), 0
+
+    full_size = lzma_size(lines)
+    if full_size <= max_lzma_bytes:
+        return lines, None, full_size, 0
+
+    target_prefix = detect_prefix(lines, fallback=target_path.stem)
+    include_line = f'include("{extra_file_name(target_path)}")\n'
+    cursor = 0
+    candidates: List[int] = []
+
+    for _kind, _key, block in parse_template(lines, target_prefix):
+        cursor += len(block)
+        if cursor >= len(lines):
+            continue
+        candidates.append(cursor)
+
+    found_index: int | None = None
+    left = 0
+    right = len(candidates) - 1
+
+    while left <= right:
+        middle = (left + right) // 2
+        candidate = candidates[middle]
+        main_size = lzma_size([include_line] + lines[candidate:])
+
+        if main_size <= max_lzma_bytes:
+            found_index = middle
+            right = middle - 1
+        else:
+            left = middle + 1
+
+    if found_index is None:
+        raise ValueError(
+            f"{target_path.name} 超过 {max_lzma_bytes} 字节 LZMA 限制，且无法安全拆出 main 文件"
+        )
+
+    for candidate in candidates[found_index:]:
+        extra_lines = lines[:candidate]
+        main_lines = [include_line] + lines[candidate:]
+        main_size = lzma_size(main_lines)
+        extra_size = lzma_size(extra_lines)
+
+        if main_size <= max_lzma_bytes and extra_size <= max_lzma_bytes:
+            return main_lines, extra_lines, main_size, extra_size
+
+    raise ValueError(
+        f"{target_path.name} 超过 {max_lzma_bytes} 字节 LZMA 限制，且无法安全拆成一个 extra 文件"
+    )
+
+
+def write_language_files(
+    target_path: Path,
+    lines: List[str],
+    dry_run: bool,
+    max_lzma_bytes: int | None,
+) -> Tuple[int, int, int, bool]:
+    main_lines, extra_lines, main_size, extra_size = split_language_lines(
+        target_path,
+        lines,
+        max_lzma_bytes,
+    )
+
+    if dry_run:
+        written_lines = 0
+    else:
+        target_path.write_text("".join(main_lines), encoding="utf-8")
+        if extra_lines is not None:
+            target_path.with_name(extra_file_name(target_path)).write_text(
+                "".join(extra_lines),
+                encoding="utf-8",
+            )
+        written_lines = len(main_lines) + (len(extra_lines) if extra_lines is not None else 0)
+
+    return written_lines, main_size, extra_size, extra_lines is not None
+
+
 def process_one_file_append(
     base_path: Path,
     target_path: Path,
     note: str,
     dry_run: bool,
-) -> Tuple[int, int]:
-    base_lines = normalize_lines(base_path.read_text(encoding="utf-8"))
-    target_lines = normalize_lines(target_path.read_text(encoding="utf-8"))
+    max_lzma_bytes: int | None,
+) -> Tuple[int, int, int, int, bool]:
+    base_lines = read_language_lines(base_path)
+    target_lines = read_language_lines(target_path)
 
     src_prefix = detect_prefix(base_lines, fallback="chinese")
     dst_prefix = detect_prefix(target_lines)
@@ -320,16 +471,24 @@ def process_one_file_append(
     patch_lines = build_missing_patch(base_entries, existing_keys, src_prefix, dst_prefix, note)
 
     if not patch_lines:
-        return (0, 0)
+        written_lines, main_size, extra_size, was_split = write_language_files(
+            target_path,
+            target_lines,
+            dry_run,
+            max_lzma_bytes,
+        )
+        return (0, written_lines, main_size, extra_size, was_split)
 
     missing_added = sum(1 for line in patch_lines if line.startswith(f"-- {note}: "))
 
-    if dry_run:
-        return (missing_added, 0)
-
     output = "".join(target_lines + patch_lines)
-    target_path.write_text(output, encoding="utf-8")
-    return (missing_added, len(patch_lines))
+    written_lines, main_size, extra_size, was_split = write_language_files(
+        target_path,
+        normalize_lines(output),
+        dry_run,
+        max_lzma_bytes,
+    )
+    return (missing_added, written_lines, main_size, extra_size, was_split)
 
 
 def process_one_file_template(
@@ -337,23 +496,26 @@ def process_one_file_template(
     target_path: Path,
     note: str,
     dry_run: bool,
-) -> Tuple[int, int, int, int]:
-    base_lines = normalize_lines(base_path.read_text(encoding="utf-8"))
-    target_lines = normalize_lines(target_path.read_text(encoding="utf-8"))
+    max_lzma_bytes: int | None,
+) -> Tuple[int, int, int, int, int, int, bool]:
+    base_lines = read_language_lines(base_path)
+    target_lines = read_language_lines(target_path)
 
     output, missing, removed, mismatched = rebuild_from_template(base_lines, target_lines, note)
 
-    if dry_run:
-        return missing, removed, mismatched, 0
-
-    target_path.write_text("".join(output), encoding="utf-8")
-    return missing, removed, mismatched, len(output)
+    written_lines, main_size, extra_size, was_split = write_language_files(
+        target_path,
+        output,
+        dry_run,
+        max_lzma_bytes,
+    )
+    return missing, removed, mismatched, written_lines, main_size, extra_size, was_split
 
 
 def find_default_targets(folder: Path, base_name: str) -> List[Path]:
     targets = []
     for path in sorted(folder.glob("*.lua")):
-        if path.name == base_name:
+        if path.name == base_name or is_extra_file(path):
             continue
         targets.append(path)
     return targets
@@ -385,6 +547,13 @@ def main() -> None:
         default="template",
         help="同步模式：template=按基准顺序重建(推荐)；append=仅在末尾追加缺失键(旧模式)",
     )
+    parser.add_argument(
+        "--max-lzma-bytes",
+        type=int,
+        default=DEFAULT_MAX_LZMA_BYTES,
+        help="主文件/extra 文件允许的最大 LZMA 压缩后字节数，默认 65536（GMod AddCSLuaFile 限制）",
+    )
+    parser.add_argument("--no-split", action="store_true", help="不按大小自动拆分 *_extra.lua")
     parser.add_argument("--dry-run", action="store_true", help="仅显示将补齐的数量，不写文件")
 
     args = parser.parse_args()
@@ -406,42 +575,59 @@ def main() -> None:
     total_missing = 0
     total_removed = 0
     total_mismatched = 0
+    max_lzma_bytes = None if args.no_split else args.max_lzma_bytes
     for target in targets:
         if not target.exists():
             print(f"[跳过] 文件不存在: {target.name}")
             continue
 
         if args.mode == "append":
-            added, written_lines = process_one_file_append(
+            added, written_lines, main_size, extra_size, was_split = process_one_file_append(
                 base_path=base_path,
                 target_path=target,
                 note=args.note,
                 dry_run=args.dry_run,
+                max_lzma_bytes=max_lzma_bytes,
             )
             total_missing += added
+            split_note = (
+                f"，拆出 {extra_file_name(target)} LZMA {extra_size}B"
+                if was_split
+                else ""
+            )
             if args.dry_run:
-                print(f"[DRY-RUN] {target.name}: 将在末尾补齐 {added} 项")
+                print(
+                    f"[DRY-RUN] {target.name}: 将在末尾补齐 {added} 项，主文件 LZMA {main_size}B{split_note}"
+                )
             else:
-                print(f"[OK] {target.name}: 已在末尾补齐 {added} 项，写入 {written_lines} 行")
+                print(
+                    f"[OK] {target.name}: 已在末尾补齐 {added} 项，写入 {written_lines} 行，主文件 LZMA {main_size}B{split_note}"
+                )
             continue
 
-        missing, removed, mismatched, written_lines = process_one_file_template(
+        missing, removed, mismatched, written_lines, main_size, extra_size, was_split = process_one_file_template(
             base_path=base_path,
             target_path=target,
             note=args.note,
             dry_run=args.dry_run,
+            max_lzma_bytes=max_lzma_bytes,
         )
         total_missing += missing
         total_removed += removed
         total_mismatched += mismatched
+        split_note = (
+            f"，拆出 {extra_file_name(target)} LZMA {extra_size}B"
+            if was_split
+            else ""
+        )
 
         if args.dry_run:
             print(
-                f"[DRY-RUN] {target.name}: 缺失占位 {missing} 项，移除多余 {removed} 项，结构不一致 {mismatched} 项"
+                f"[DRY-RUN] {target.name}: 缺失占位 {missing} 项，移除多余 {removed} 项，结构不一致 {mismatched} 项，主文件 LZMA {main_size}B{split_note}"
             )
         else:
             print(
-                f"[OK] {target.name}: 缺失占位 {missing} 项，移除多余 {removed} 项，结构不一致 {mismatched} 项，写入 {written_lines} 行"
+                f"[OK] {target.name}: 缺失占位 {missing} 项，移除多余 {removed} 项，结构不一致 {mismatched} 项，写入 {written_lines} 行，主文件 LZMA {main_size}B{split_note}"
             )
 
     if args.mode == "append":
