@@ -297,6 +297,24 @@ def transform_prefix_declaration(line: str, src_prefix: str, dst_prefix: str) ->
     return f"{indent}{dst_prefix} = {{}}{ending}"
 
 
+def transform_raw_line(
+    line: str,
+    base_prefix: str,
+    target_prefix: str,
+    base_path: Path | None = None,
+    target_path: Path | None = None,
+) -> str:
+    if base_path is not None and target_path is not None and is_managed_extra_include(base_path, line):
+        ending = _line_ending(line) or "\n"
+        return f'include("{extra_file_name(target_path)}"){ending}'
+
+    return replace_lang_tokens(
+        transform_prefix_declaration(line, base_prefix, target_prefix),
+        base_prefix,
+        target_prefix,
+    )
+
+
 def comment_block(block: List[str], src_prefix: str, dst_prefix: str) -> List[str]:
     out: List[str] = []
     for original_line in block:
@@ -356,6 +374,9 @@ def rebuild_from_template(
     base_lines: List[str],
     target_lines: List[str],
     note: str,
+    base_path: Path | None = None,
+    target_path: Path | None = None,
+    target_prefix_override: str | None = None,
 ) -> Tuple[List[str], int, int, int]:
     """使用 chinese.lua 的结构/顺序重建目标文件。
 
@@ -364,7 +385,7 @@ def rebuild_from_template(
     - 多余的 key：不输出（等价于删除）
     """
     base_prefix = detect_prefix(base_lines, fallback="chinese")
-    target_prefix = detect_prefix(target_lines)
+    target_prefix = target_prefix_override or detect_prefix(target_lines)
 
     base_template = parse_template(base_lines, base_prefix)
     base_keys = [key for kind, key, _ in base_template if kind == "entry"]
@@ -379,7 +400,7 @@ def rebuild_from_template(
     removed = sum(
         1
         for key in target_key_set
-        if key not in base_key_set and active_key_for_comment(key) not in base_key_set
+        if not has_existing_entry(base_key_set, key)
     )
     mismatched = 0
 
@@ -388,7 +409,7 @@ def rebuild_from_template(
     for kind, key, block in base_template:
         if kind == "raw":
             line = block[0]
-            output.append(replace_lang_tokens(transform_prefix_declaration(line, base_prefix, target_prefix), base_prefix, target_prefix))
+            output.append(transform_raw_line(line, base_prefix, target_prefix, base_path, target_path))
             continue
 
         # entry
@@ -549,18 +570,63 @@ def process_one_file_template(
     dry_run: bool,
     max_lzma_bytes: int | None,
 ) -> Tuple[int, int, int, int, int, int, bool]:
-    base_lines = read_language_lines(base_path)
-    target_lines = read_language_lines(target_path)
+    base_lines = normalize_lines(base_path.read_text(encoding="utf-8"))
+    target_lines = normalize_lines(target_path.read_text(encoding="utf-8"))
+    target_prefix = detect_prefix(target_lines)
 
-    output, missing, removed, mismatched = rebuild_from_template(base_lines, target_lines, note)
-
-    written_lines, main_size, extra_size, was_split = write_language_files(
-        target_path,
-        output,
-        dry_run,
-        max_lzma_bytes,
+    output, missing, removed, mismatched = rebuild_from_template(
+        base_lines,
+        target_lines,
+        note,
+        base_path=base_path,
+        target_path=target_path,
+        target_prefix_override=target_prefix,
     )
-    return missing, removed, mismatched, written_lines, main_size, extra_size, was_split
+
+    base_extra_path = base_path.with_name(extra_file_name(base_path))
+    target_extra_path = target_path.with_name(extra_file_name(target_path))
+    extra_output: List[str] = []
+    extra_missing = 0
+    extra_removed = 0
+    extra_mismatched = 0
+
+    if base_extra_path.exists():
+        base_extra_lines = normalize_lines(base_extra_path.read_text(encoding="utf-8"))
+        if target_extra_path.exists():
+            target_extra_lines = normalize_lines(target_extra_path.read_text(encoding="utf-8"))
+        else:
+            ending = _line_ending(base_extra_lines[0]) if base_extra_lines else "\n"
+            target_extra_lines = [f"{target_prefix} = {target_prefix} or {{}}{ending}"]
+
+        extra_output, extra_missing, extra_removed, extra_mismatched = rebuild_from_template(
+            base_extra_lines,
+            target_extra_lines,
+            note,
+            base_path=base_extra_path,
+            target_path=target_extra_path,
+            target_prefix_override=target_prefix,
+        )
+
+    main_size = lzma_size(output)
+    extra_size = lzma_size(extra_output) if extra_output else 0
+
+    if dry_run:
+        written_lines = 0
+    else:
+        target_path.write_text("".join(output), encoding="utf-8")
+        if base_extra_path.exists():
+            target_extra_path.write_text("".join(extra_output), encoding="utf-8")
+        written_lines = len(output) + len(extra_output)
+
+    return (
+        missing + extra_missing,
+        removed + extra_removed,
+        mismatched + extra_mismatched,
+        written_lines,
+        main_size,
+        extra_size,
+        False,
+    )
 
 
 def find_default_targets(folder: Path, base_name: str) -> List[Path]:
@@ -602,9 +668,10 @@ def main() -> None:
         "--max-lzma-bytes",
         type=int,
         default=DEFAULT_MAX_LZMA_BYTES,
-        help="主文件/extra 文件允许的最大 LZMA 压缩后字节数，默认 65536（GMod AddCSLuaFile 限制）",
+        help="启用 --split 时，主文件/extra 文件允许的最大 LZMA 压缩后字节数，默认 65536",
     )
-    parser.add_argument("--no-split", action="store_true", help="不按大小自动拆分 *_extra.lua")
+    parser.add_argument("--split", action="store_true", help="按大小自动拆分目标语言的 *_extra.lua")
+    parser.add_argument("--no-split", action="store_true", help="不按大小自动拆分 *_extra.lua（默认行为）")
     parser.add_argument("--dry-run", action="store_true", help="仅显示将补齐的数量，不写文件")
 
     args = parser.parse_args()
@@ -626,7 +693,7 @@ def main() -> None:
     total_missing = 0
     total_removed = 0
     total_mismatched = 0
-    max_lzma_bytes = None if args.no_split else args.max_lzma_bytes
+    max_lzma_bytes = args.max_lzma_bytes if args.split and not args.no_split else None
     for target in targets:
         if not target.exists():
             print(f"[跳过] 文件不存在: {target.name}")
