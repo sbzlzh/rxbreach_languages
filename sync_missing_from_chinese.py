@@ -18,9 +18,10 @@ EXTRA_SUFFIX = "_extra"
 AUTO_APPENDED_HEADER_RE = re.compile(r"^\s*--\s*=====\s*AUTO\s+ADDED\s+FROM\s+chinese\.lua", re.IGNORECASE)
 
 VAR_ASSIGN_RE_TEMPLATE = r"^\s*__PREFIX__(?P<key>(?:\.[A-Za-z_]\w+|\[[^\]]+\])+?)\s*=\s*(?P<rhs>.*)$"
-COMMENTED_VAR_ASSIGN_RE_TEMPLATE = r"^\s*--\s*__PREFIX__(?P<key>(?:\.[A-Za-z_]\w+|\[[^\]]+\])+?)\s*=\s*(?P<rhs>.*)$"
+COMMENTED_VAR_ASSIGN_RE_TEMPLATE = r"^\s*--\s*(?:--\s*)?__PREFIX__(?P<key>(?:\.[A-Za-z_]\w+|\[[^\]]+\])+?)\s*=\s*(?P<rhs>.*)$"
 DESC_INIT_RE_TEMPLATE = r"^\s*BREACH\.Descriptions\.__PREFIX__\s*=\s*BREACH\.Descriptions\.__PREFIX__\s*or\s*\{\s*\}\s*(?:--.*)?$"
 DESC_LINE_RE_TEMPLATE = r"^\s*BREACH\.Descriptions\.__PREFIX__\[(?P<role>[^\]]+)\]\s*=\s*(?P<rhs>.*)$"
+COMMENTED_DESC_LINE_RE_TEMPLATE = r"^\s*--\s*(?:--\s*)?BREACH\.Descriptions\.__PREFIX__\[(?P<role>[^\]]+)\]\s*=\s*(?P<rhs>.*)$"
 ALLLANG_RE_TEMPLATE = r"^\s*ALLLANGUAGES\.__PREFIX__\s*=\s*__PREFIX__\s*(?:--.*)?$"
 
 
@@ -142,6 +143,7 @@ def _try_parse_entry(lines: List[str], index: int, prefix: str) -> Tuple[str, Li
     cvar_re = re.compile(COMMENTED_VAR_ASSIGN_RE_TEMPLATE.replace("__PREFIX__", escaped_prefix))
     desc_init_re = re.compile(DESC_INIT_RE_TEMPLATE.replace("__PREFIX__", escaped_prefix))
     desc_line_re = re.compile(DESC_LINE_RE_TEMPLATE.replace("__PREFIX__", escaped_prefix))
+    cdesc_line_re = re.compile(COMMENTED_DESC_LINE_RE_TEMPLATE.replace("__PREFIX__", escaped_prefix))
     alllang_re = re.compile(ALLLANG_RE_TEMPLATE.replace("__PREFIX__", escaped_prefix))
 
     match = var_re.match(line)
@@ -162,6 +164,11 @@ def _try_parse_entry(lines: List[str], index: int, prefix: str) -> Tuple[str, Li
     match = cvar_re.match(line)
     if match:
         key = f"cvar:{match.group('key')}"
+        return key, [line], index + 1
+
+    match = cdesc_line_re.match(line)
+    if match:
+        key = f"cdesc:{match.group('role').strip()}"
         return key, [line], index + 1
 
     match = desc_line_re.match(line)
@@ -200,6 +207,37 @@ def parse_entries(lines: List[str], prefix: str) -> List[Tuple[str, List[str]]]:
         index = next_index
 
     return entries
+
+
+def active_key_for_comment(key: str) -> str:
+    if key.startswith("cvar:"):
+        return f"var:{key[len('cvar:') :]}"
+    if key.startswith("cdesc:"):
+        return f"desc:{key[len('cdesc:') :]}"
+    return key
+
+
+def comment_key_for_active(key: str) -> str | None:
+    if key.startswith("var:"):
+        return f"cvar:{key[len('var:') :]}"
+    if key.startswith("desc:"):
+        return f"cdesc:{key[len('desc:') :]}"
+    return None
+
+
+def has_existing_entry(existing_keys: set[str], key: str) -> bool:
+    if key in existing_keys:
+        return True
+
+    comment_key = comment_key_for_active(key)
+    if comment_key is not None and comment_key in existing_keys:
+        return True
+
+    active_key = active_key_for_comment(key)
+    if active_key != key and active_key in existing_keys:
+        return True
+
+    return False
 
 
 TemplateItem = Tuple[str, str, List[str]]
@@ -292,7 +330,7 @@ def build_missing_patch(
     missing_count = 0
 
     for key, source_block in base_entries:
-        if key in existing_keys:
+        if has_existing_entry(existing_keys, key):
             continue
 
         missing_count += 1
@@ -338,7 +376,11 @@ def rebuild_from_template(
     target_key_set = set(target_map.keys())
 
     missing = 0
-    removed = len(target_key_set - base_key_set)
+    removed = sum(
+        1
+        for key in target_key_set
+        if key not in base_key_set and active_key_for_comment(key) not in base_key_set
+    )
     mismatched = 0
 
     output: List[str] = []
@@ -351,6 +393,15 @@ def rebuild_from_template(
 
         # entry
         existing = target_map.get(key)
+        if existing is None:
+            comment_key = comment_key_for_active(key)
+            if comment_key is not None:
+                existing = target_map.get(comment_key)
+        if existing is None:
+            active_key = active_key_for_comment(key)
+            if active_key != key:
+                existing = target_map.get(active_key)
+
         if existing is None:
             missing += 1
             output.extend(comment_block(block, base_prefix, target_prefix))

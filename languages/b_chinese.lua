@@ -1,4 +1,5 @@
-b_chinese = {}
+include("b_chinese_extra.lua")
+b_chinese = b_chinese or {}
 b_chinese.LangName = "Bilili Chinese"
 b_chinese.unknown = "未知"
 b_chinese.waiting_for_players = "正在等待玩家......"

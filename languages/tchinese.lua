@@ -1,4 +1,5 @@
-traditional = {}
+include("traditional.lua")
+traditional = traditional or {}
 traditional.LangName = "Traditional Chinese"
 traditional.unknown = "未知"
 traditional.waiting_for_players = "正在等待玩家......"

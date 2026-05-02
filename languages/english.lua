@@ -1,4 +1,5 @@
-english = {}
+include("english_extra.lua")
+english = english or {}
 english.LangName = "English"
 english.unknown = "Unknown"
 english.waiting_for_players = "Waiting for players......"
