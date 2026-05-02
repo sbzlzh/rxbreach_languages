@@ -1,0 +1,14 @@
+traditional = traditional or {}
+--目标提示
+-- traditional.omega1_meg_goal_1 = "前往重收一层搜集证据"
+-- traditional.omega1_meg_goal_2 = "证据足够后呼叫支援"
+-- traditional.omega1_meg_goal_3 = "与嫌疑人交涉"
+-- traditional.omega1_mtf_goal_1 = "护送嫌疑人离开"
+-- traditional.omega1_mtf_goal_2 = "小心他变节"
+-- traditional.omega1_mtf_goal_extra1 = "注意设施内的所有非律法左手\n的战斗单位"
+-- traditional.omega1_mtf_goal_extra2 = "注意设施内的基金会战斗单位\n和QRT"
+-- traditional.omega1_mtf_goal_extra3 = "注意设施内的基金会战斗单位\n和落锤"
+-- traditional.omega1_mtf_goal_catch = "抓捕以下人员:\n设施主管\nO4指挥官\n安全主管\n安全代理\n安保上尉"
+-- traditional.sus_sci_goal_1 = "前往重收二层搜集证据"
+-- traditional.sus_sci_goal_2 = "证据足够后选择律法\n还是混沌"
+-- traditional.sus_sci_goal_3 = "继续相信律法左手\n或者乘机离开堕入混沌"
