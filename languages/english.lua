@@ -1712,6 +1712,7 @@ english.ending_in_scp106dimension1 = "You are slowly rotting away in the pocket 
 english.ending_in_scp106dimension2 = "You were re-contained by the Foundation"
 english.ending_backtothe_jail = "You were sent back to the prison by the Foundation"
 english.ending_escape_failure = "You failed to escape in time"
+-- english.ending_in_ruin = "你被废墟掩埋..."
 --空输逃离
 english.ending_kongshu_1 = "You were teleported to an unknown space (Friend~ Do you want to read a book?)"
 english.ending_kongshu_2 = "Somehow, an extra person suddenly appeared in 106's pocket dimension"
@@ -3141,6 +3142,7 @@ english.dispatch = "Dispatch"
 english.people_counts = "Member"
 -- english.amount = "数量"
 -- english.equipment_hasbeen_equip = "你已经拥有该装备"
+-- english.button_hasbeen_locked = "按钮已被锁定"
 --指挥官
 english.desc_commander = "Commander"
 english.desc_commander_o4 = "O4 Commander"
