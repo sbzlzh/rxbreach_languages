@@ -2327,7 +2327,7 @@ english.scp973_ab_shotgun_desc = "Equips a high-damage shotgun"
 english.scp973_ab_carbine = "Carbine"
 english.scp973_ab_carbine_desc = "Equips a high-damage carbine"
 english.scp973_ab_intimidation = "Intimidation"
- english.scp973_ab_intimidation_desc = "Applies a 10-second Level 2 slow and 13-second Level 4 trembling effect to nearby hostile targets"
+english.scp973_ab_intimidation_desc = "Applies a 10-second Level 2 slow and 13-second Level 4 trembling effect to nearby hostile targets"
 --走地流
 english.scp973_police_stick = "Baton"
 english.scp973_police_stick_desc = "Use baton as primary weapon"
