@@ -52,3 +52,54 @@ b_chinese = b_chinese or {}
 -- b_chinese.foundation_serverinfo_aic = "人工智能项目-\"██\""
 -- b_chinese.grup_btr_coming = "BTR正在前往B门进行火力掩护"
 -- b_chinese.grup_btr_cant_come = "BTR已经没有时间赶去支援"
+--指挥官
+-- b_chinese.desc_commander = "指挥官"
+-- b_chinese.desc_commander_o4 = "O4指挥官"
+-- b_chinese.desc_commander_grup = "行动总指挥"
+-- b_chinese.desc_commander_mio = "指挥官MIO"
+--指挥官介绍任务
+-- b_chinese.nailong_selfdesc = "大家好，我是MIO\n这是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
+-- b_chinese.battlesite_o4desc = "\"落锤\"你们的任务已被确认\n阻止深红王之子-军团的入侵\n不要让他们成功解开\"深红之王\"的封印\n否则一切都完蛋了！"
+-- b_chinese.battlesite_o4desc_2 = "坚持住，战友们\n特殊增援部队已经在路上了！"
+-- b_chinese.battlesite_scarletkingdesc = "吾虔诚的信徒们，汝等已打破囚禁吾身之多数枷锁\n如今，只需破除最后一道封印，吾便将重临此世\n无需恐惧，吾之忠仆，汝等早已蒙受吾之恩赐。"
+--GRU-P总指挥
+-- b_chinese.grup_comm_desc1 = "干得好，同志们\n近卫小组的同志已经在来的路上\n他们会在设施B门附近的停机坪接应你们\n继续完成你们的任务，然后安全撤离"
+-- b_chinese.grup_comm_desc_999 = "同志们，我们侦测到了SCP-999的信号\n用你们携带的实验性\"超传\"装置把它带回来"
+-- b_chinese.grup_comm_desc_evacuation = "同志们，你们已经挖取到了足够的资料\n赶快撤离!"
+-- b_chinese.grup_comm_desc_telefailure = "同志们，你们还好吗？\n传送出现故障，你们被传进了Site-19里\n幸好这里发生混乱了，我们的一支小队正在前往Site-19部署传送节点\n接应的BTR会很快到达B门附近\n我们也通知了最近的混沌分裂者单位\n你们也可以坐他们的APC离开"
+--BattleSite19
+-- b_chinese.nailongmio_egg = "我是MIO，你能看到我说明你来得太晚了\n你没有复活成任何一方的角色，所以你看到了我\n该说你是幸运还是倒霉呢..."
+-- b_chinese.battlesite_nu7win = "干得漂亮！士兵们\n你们成功拯救了人类！\n尽管他们并不知情\n继续努力吧，士兵们，未来还有更多挑战"
+-- b_chinese.battlesite_nu7failure = "一切都完了....\n士兵们，下个世界再见吧\n....."
+-- b_chinese.battlesite_scarletwin = "哈哈哈哈哈，汝等成功破除吾之枷锁\n吾将重现\n吾之子\n汝等将会沐浴于一个崭新的世界"
+-- b_chinese.battlesite_scarletfailure = "可恶啊！这群比污水粪便还要肮脏百倍的东西\n汝等不必灰心\n汝等速速离开此地，等待下一次的机遇\n....."
+--基金会电脑
+-- b_chinese.desc_foundation_computer = "基金会内部安全系统"
+-- b_chinese.decode_hint1 = "请在"
+-- b_chinese.decode_hint2 = "秒内完成操作"
+-- b_chinese.decode_hint3 = "点击开始后你仅有"
+-- b_chinese.decode_hint4 = "次机会,请谨慎操作"
+-- b_chinese.decode_failed = "解码失败"
+-- b_chinese.decode_success = "解码成功"
+--娱乐模式——BattleSite19
+-- b_chinese.control_point = "已经占领点"
+-- b_chinese.losing_point = "丢失占领点"
+-- b_chinese.battlesite_nu7 = "联合部队"
+-- b_chinese.battlesite_cotsk = "军团"
+-- b_chinese.point_not_completed = "你需要先占领前一个点"
+--galRX对话内容和选项
+--对话人员
+-- b_chinese.grup_pilot = "GRU-P 飞行员"
+-- b_chinese.grup_btr = "GRU-P BTR驾驶员"
+--GRUP飞行员内容
+-- b_chinese.grup_pilot_start = "什么事？同志"
+-- b_chinese.grup_pilot_confirmleave = "还有其他同志在设施内部，真的要现在离开吗？"
+-- b_chinese.grup_pilot_leaving = "明白了，同志"
+-- b_chinese.grup_hint_others = "已经提醒其他同志了"
+--通用结束
+-- b_chinese.normal_end = "一会儿见"
+--GRUP飞行员选项
+-- b_chinese.grup_pilot_leave_option = "离开设施"
+-- b_chinese.grup_hint_others_option = "提醒其他同志"
+--通用选项
+-- b_chinese.end_conversation = "结束对话"
