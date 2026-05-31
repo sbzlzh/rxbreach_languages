@@ -3008,6 +3008,7 @@ english.load_tazer_desc = "You cannot use the taser because the battery is deple
 english.select_faction_ntfcmd = "Select the faction to scan from the list. Press BACKSPACE to close the window."
 english.ntfcmd_searchsys = "Personnel Search System"
 english.megbeta1_security = "Beta-1 Security System"
+-- english.people_counts = "人员数量"
 english.ntfcmd_unknowns = "Unknown Personnel"
 --成就
 english.achievement = "You have unlocked an achievement:"
