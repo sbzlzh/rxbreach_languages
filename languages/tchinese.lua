@@ -3008,6 +3008,7 @@ traditional.load_tazer_desc = "您無法使用電擊器,因為電量已耗盡."
 traditional.select_faction_ntfcmd = "從清單中選擇要掃描的陣營.點擊BACKSPACE關閉窗口."
 -- traditional.ntfcmd_searchsys = "人员搜索系统"
 -- traditional.megbeta1_security = "Beta-1 安全系统"
+-- traditional.people_counts = "人员数量"
 traditional.ntfcmd_unknowns = "未知人員"
 --成就
 traditional.achievement = "你獲得了成就:"
