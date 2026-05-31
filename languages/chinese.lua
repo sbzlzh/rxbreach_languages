@@ -3008,6 +3008,7 @@ chinese.load_tazer_desc = "您无法使用电击器,因为电量已耗尽."
 chinese.select_faction_ntfcmd = "从列表中选择要扫描的阵营.点击BACKSPACE关闭窗口."
 chinese.ntfcmd_searchsys = "人员搜索系统"
 chinese.megbeta1_security = "Beta-1 安全系统"
+chinese.people_counts = "人员数量"
 chinese.ntfcmd_unknowns = "未知人员"
 --成就
 chinese.achievement = "你获得了成就:"
