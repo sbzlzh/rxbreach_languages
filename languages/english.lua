@@ -145,7 +145,7 @@ english.role.AR_Falcon_elite = "AR Falcon \"Undertaker\""
 english.role.AR_Falcon_heavy = "AR Falcon \"Thunderbolt\""
 english.role.AR_Falcon_range = "AR Falcon \"Raider\""
 english.role.AR_Sleeper_Robot = "AR Sleeper Robot"
-english.role.AR_Employee = "AR Employee"
+english.role.AR_Employee = "AR Captured Employee"
 --蛇之手
 english.DZ = "Serpent's Hand"
 english.role.DZ_Grunt = "Serpent's Hand Soldier"
@@ -2551,7 +2551,7 @@ english.f2_uiu_agent = "This UIU team is an elite unit\n\ncomposed of highly tra
 english.f2_uiu_agent_special = "UIU Special Agents"
 english.f2_omega1 = "Mobile Task Force Omega-1 Law's Left Hand is an MTF armed force that only answers to the \"Ethics Committee\"\nTheir operations are usually \"legal actions\" aimed at removing or executing high-ranking Foundation personnel when they violate ethical conduct\nBecause they are rarely responsible for \"containment operations\"\nThey have very high operational authority, and no one can command them without explicit orders from the Committee\nTheir existence corresponds to the O5 Council's \"Red Right Hand"
 english.f2_ar_support = "Anderson Robotics, led by Vincent Anderson, specializes in the sale of anomalous androids, robots, artificial intelligence, and neuroelectronic technology, quickly gaining significant attention in the field of anomalous technology.\nIn recent years, the SCP Foundation has successfully raided multiple Anderson Robotics-related strongholds, arresting many of its employees and seizing various products, a small number of which are now stored within Site-19."
-english.f2_ar_falcon = "Four Anderson Robotics units confiscated by the SCP Foundation."
+ english.f2_ar_falcon = "Four Anderson Robotics units confiscated by the SCP Foundation."
 --专家组
 english.f2_meg = "MTF Expert Group (Full name: \"Mobile Task Force Expert Group\"), abbreviation: \"MEG\"\n  Experts (instructors) from other MTFs stationed in the facility\nThey train MTF members in the facility on how to deal with different SCPs and\nhostile personnel\nSometimes they will select some promising MTF members to join their MTF teams"
 --随机事件
