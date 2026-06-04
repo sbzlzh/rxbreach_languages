@@ -2,6 +2,8 @@
 
 本仓库用于维护 RXSEND Breach 的多语言文本。普通翻译贡献者只需要修改目标语言文件，不需要处理同步脚本或中文基准文件。
 
+English version: [README_EN.md](README_EN.md)
+
 ![翻译贡献流程](docs/images/translation-flow.svg)
 
 ## 快速开始
@@ -77,41 +79,3 @@ fix(lang): improve english scoreboard text
 - 没有修改 key 路径。
 - `%s`、`%d`、`\n` 和日志变量名都保留了。
 - 文件末尾仍然保留 `ALLLANGUAGES.xxx = xxx`。
-
-## 维护者同步流程
-
-如果维护者在 `languages/chinese.lua` 或 `languages/chinese_extra.lua` 添加了新中文 key，推送到 `master` 后会触发 GitHub Actions：
-
-- Workflow 名称：`Lang Parser Auto PR`
-- 执行脚本：`python3 sync_missing_from_chinese.py --dir ./languages --base chinese.lua`
-- 自动创建 PR：`Language: Update language files`
-- 自动分支：`ci-update-language-files`
-
-本地手动检查可以运行：
-
-```powershell
-python sync_missing_from_chinese.py --dir ./languages --base chinese.lua --dry-run
-```
-
-本地实际同步可以运行：
-
-```powershell
-python sync_missing_from_chinese.py --dir ./languages --base chinese.lua
-```
-
-只同步指定语言文件：
-
-```powershell
-python sync_missing_from_chinese.py --dir ./languages --base chinese.lua --targets english.lua russian.lua
-```
-
-## English Quick Guide
-
-This repository stores translation files for RXSEND Breach. Translators usually only edit non-Chinese language files under `languages/`.
-
-1. Fork this repository.
-2. Create a branch in your fork.
-3. Edit your target language file, such as `languages/english.lua` or `languages/russian.lua`.
-4. Translate commented missing lines by changing only the text inside quotes and removing the leading `-- `.
-5. Keep keys, placeholders like `%s` / `%d`, escaped newlines `\n`, and log variables unchanged.
-6. Open a Pull Request back to this repository's `master` branch.

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-labelledby="title desc">
+  <title id="title">Translation contribution flow</title>
+  <desc id="desc">A numbered flow chart for forking the repository, creating a branch, translating target language files, checking syntax, and opening a pull request.</desc>
+  <rect width="980" height="260" fill="#f7f8fa"/>
+  <text x="490" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#24292f">Translation Contribution Flow</text>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(38 74)">
+      <rect width="160" height="122" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="28" cy="28" r="16" fill="#0969da"/>
+      <text x="28" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">1</text>
+      <text x="80" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#24292f">Fork Repo</text>
+      <text x="80" y="86" text-anchor="middle" font-size="14" fill="#57606a">Copy to your account</text>
+    </g>
+
+    <path d="M210 135 H246" stroke="#8c959f" stroke-width="2"/>
+    <path d="M246 135 l-8 -6 v12 z" fill="#8c959f"/>
+
+    <g transform="translate(258 74)">
+      <rect width="160" height="122" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="28" cy="28" r="16" fill="#0969da"/>
+      <text x="28" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">2</text>
+      <text x="80" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#24292f">Create Branch</text>
+      <text x="80" y="86" text-anchor="middle" font-size="14" fill="#57606a">Work outside master</text>
+    </g>
+
+    <path d="M430 135 H466" stroke="#8c959f" stroke-width="2"/>
+    <path d="M466 135 l-8 -6 v12 z" fill="#8c959f"/>
+
+    <g transform="translate(478 74)">
+      <rect width="160" height="122" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="28" cy="28" r="16" fill="#0969da"/>
+      <text x="28" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">3</text>
+      <text x="80" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#24292f">Translate</text>
+      <text x="80" y="84" text-anchor="middle" font-size="14" fill="#57606a">Edit target language</text>
+      <text x="80" y="104" text-anchor="middle" font-size="14" fill="#57606a">Keep keys and tokens</text>
+    </g>
+
+    <path d="M650 135 H686" stroke="#8c959f" stroke-width="2"/>
+    <path d="M686 135 l-8 -6 v12 z" fill="#8c959f"/>
+
+    <g transform="translate(698 74)">
+      <rect width="160" height="122" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="28" cy="28" r="16" fill="#0969da"/>
+      <text x="28" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">4</text>
+      <text x="80" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#24292f">Check Format</text>
+      <text x="80" y="84" text-anchor="middle" font-size="14" fill="#57606a">Quotes, commas, lines</text>
+      <text x="80" y="104" text-anchor="middle" font-size="14" fill="#57606a">Keep Lua syntax valid</text>
+    </g>
+
+    <path d="M858 135 H894" stroke="#8c959f" stroke-width="2"/>
+    <path d="M894 135 l-8 -6 v12 z" fill="#8c959f"/>
+
+    <g transform="translate(806 204)">
+      <text x="80" y="30" text-anchor="middle" font-size="14" fill="#57606a">Commit, then open a Pull Request</text>
+    </g>
+
+    <g transform="translate(906 74)">
+      <rect width="36" height="122" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="18" cy="28" r="16" fill="#0969da"/>
+      <text x="18" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">5</text>
+      <text x="18" y="78" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f" transform="rotate(90 18 78)">PR</text>
+    </g>
+  </g>
+</svg>
