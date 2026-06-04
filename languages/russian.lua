@@ -1967,6 +1967,7 @@ russian.tasks_arena = "Участвовать на арене"
 russian.tasks_kill_everyone_except_sh = "Убить всех, кроме ДЗ"
 russian.tasks_caishen = "Раздать свои богатства!"
 -- russian.tasks_awaken_robots = "激活被基金会收缴的机器人"
+-- russian.tasks_by_actual = "根据实际任务而定"
 --能力
 russian.abilities_cd = "Время:"
 russian.abilities_block = "У вас нет прав использовать этот навык"
