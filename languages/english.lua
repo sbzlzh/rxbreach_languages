@@ -145,7 +145,7 @@ english.role.AR_Falcon_elite = "AR Falcon \"Undertaker\""
 english.role.AR_Falcon_heavy = "AR Falcon \"Thunderbolt\""
 english.role.AR_Falcon_range = "AR Falcon \"Raider\""
 english.role.AR_Sleeper_Robot = "AR Sleeper Robot"
-english.role.AR_Employee = "AR Employee"
+english.role.AR_Employee = "AR Captured Employee"
 --蛇之手
 english.DZ = "Serpent's Hand"
 english.role.DZ_Grunt = "Serpent's Hand Soldier"
