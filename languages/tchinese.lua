@@ -1967,6 +1967,7 @@ traditional.tasks_arena = "參加競技場"
 traditional.tasks_kill_everyone_except_sh = "殺死除了蛇之手之外的所有人"
 -- traditional.tasks_caishen = "为他人带去财富和幸福!"
 -- traditional.tasks_awaken_robots = "激活被基金会收缴的机器人"
+-- traditional.tasks_by_actual = "根据实际任务而定"
 --能力
 traditional.abilities_cd = "CD:"
 traditional.abilities_block = "你無權使用該技能"

@@ -1967,6 +1967,7 @@ b_chinese.tasks_arena = "参加竞技场"
 b_chinese.tasks_kill_everyone_except_sh = "杀死除了图书爱好者之外的所有人"
 -- b_chinese.tasks_caishen = "为他人带去财富和幸福!"
 -- b_chinese.tasks_awaken_robots = "激活被基金会收缴的机器人"
+-- b_chinese.tasks_by_actual = "根据实际任务而定"
 --能力
 b_chinese.abilities_cd = "冷却时间:"
 -- b_chinese.abilities_block = "你无权使用该技能"
