@@ -62,7 +62,7 @@ chinese.desc_commander_o4 = "O4指挥官"
 chinese.desc_commander_grup = "行动总指挥"
 chinese.desc_commander_mio = "指挥官MIO"
 --指挥官介绍任务
-chinese.nailong_selfdesc = "大家好，我是MIO\n这是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
+chinese.nailong_selfdesc = "a大家好，我是MIO\n这是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
 chinese.battlesite_o4desc = "\"落锤\"你们的任务已被确认\n阻止深红王之子-军团的入侵\n不要让他们成功解开\"深红之王\"的封印\n否则一切都完蛋了！"
 chinese.battlesite_o4desc_2 = "坚持住，战友们\n特殊增援部队已经在路上了！"
 chinese.battlesite_scarletkingdesc = "吾虔诚的信徒们，汝等已打破囚禁吾身之多数枷锁\n如今，只需破除最后一道封印，吾便将重临此世\n无需恐惧，吾之忠仆，汝等早已蒙受吾之恩赐。"

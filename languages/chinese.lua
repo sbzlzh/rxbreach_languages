@@ -1,7 +1,7 @@
 include("chinese_extra.lua")
 chinese = chinese or {}
 chinese.LangName = "Chinese"
-chinese.unknown = "未知"
+chinese.unknown = "a未知"
 chinese.waiting_for_players = "正在等待玩家......"
 chinese.waiting_for_players_pt2 = "需要"
 chinese.waiting_for_players_pt3 = " 人才能开始"
