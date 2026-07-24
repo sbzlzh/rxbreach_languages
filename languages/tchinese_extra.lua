@@ -164,6 +164,7 @@ traditional = traditional or {}
 -- traditional.translucent = "半透明"
 -- traditional.visible = "现形"
 -- traditional.needsPower = "需要电力"
+-- traditional.failureToPerfect = "无法达成完美回合"
 --律法左手玩法相关
 --律法左手对讲机
 -- traditional.not_enough_evidences = "目前证据不足，还需要搜集"

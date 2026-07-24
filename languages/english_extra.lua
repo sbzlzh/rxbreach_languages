@@ -164,6 +164,7 @@ english.stealth = "Stealth"
 english.translucent = "Translucent"
 english.visible = "Visible"
 english.needsPower = "Requires Power"
+-- english.failureToPerfect = "无法达成完美回合"
 --律法左手玩法相关
 --律法左手对讲机
 english.not_enough_evidences = "Insufficient evidence. Further collection is required."

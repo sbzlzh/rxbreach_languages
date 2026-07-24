@@ -164,6 +164,7 @@ russian = russian or {}
 -- russian.translucent = "半透明"
 -- russian.visible = "现形"
 -- russian.needsPower = "需要电力"
+-- russian.failureToPerfect = "无法达成完美回合"
 --律法左手玩法相关
 --律法左手对讲机
 -- russian.not_enough_evidences = "目前证据不足，还需要搜集"

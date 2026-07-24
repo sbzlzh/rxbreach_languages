@@ -164,6 +164,7 @@ b_chinese = b_chinese or {}
 -- b_chinese.translucent = "半透明"
 -- b_chinese.visible = "现形"
 -- b_chinese.needsPower = "需要电力"
+-- b_chinese.failureToPerfect = "无法达成完美回合"
 --律法左手玩法相关
 --律法左手对讲机
 -- b_chinese.not_enough_evidences = "目前证据不足，还需要搜集"
