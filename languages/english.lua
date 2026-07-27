@@ -252,10 +252,10 @@ english.role.MTF_Medic_Rebirth = "TRD-I Medical Ecologist"
 english.role.MTF_Engi_Rebirth = "TRD-I Defense Analyst"
 --MTF 重收支援
 english.role.MTF_SEC_Guard = "TRD-II Soldier" --与其他大头一样
-english.role.MTF_SEC_Machine = "TRD-II SEC Machine Gunner" --原来的Juggernaut太搞了，老外一看原来是重装觉得很强，然后出门被打飞了
-english.role.MTF_SEC_Medic = "TRD-II SEC Medic"
-english.role.MTF_SEC_Engi = "TRD-II SEC Engineer"
-english.role.MTF_SEC_Com = "TRD-II SEC Commander"
+english.role.MTF_SEC_Machine = "TRD-II Machine Gunner" --原来的Juggernaut太搞了，老外一看原来是重装觉得很强，然后出门被打飞了
+english.role.MTF_SEC_Medic = "TRD-II Medic"
+english.role.MTF_SEC_Engi = "TRD-II Engineer"
+english.role.MTF_SEC_Com = "TRD-II Commander"
 --律法左手
 english.OMEGA1 = "Mobile Task Force Omega-1 'Law Left Hand' Investigation Team"
 english.role.omega1_assistant = "Omega-1 Investigation Team Aide" --和科研助手区分开来，Aide更能表现有武装战斗力的助手
