@@ -164,7 +164,7 @@ english.stealth = "Stealth"
 english.translucent = "Translucent"
 english.visible = "Visible"
 english.needsPower = "Requires Power"
--- english.failureToPerfect = "无法达成完美回合"
+english.failureToPerfect = "Unable to achieve a perfect round."
 --律法左手玩法相关
 --律法左手对讲机
 english.not_enough_evidences = "Insufficient evidence. Further collection is required."
@@ -262,7 +262,7 @@ english.event0_nothing_desc = "No events occurred here."
 english.event_caishen_xinchun = "The God of Wealth has arrived!"
 english.event_caishen_xinchun_desc = "During the Spring Festival, SCP-CN-█████ \"God of Wealth\" has descended upon Site-19 to bring joy and happiness to everyone."
 english.event_woa32 = "Sins of the Past - Part One"
-english.event_woa32_desc = "WOA-32 has breached the containment measures of Tactical Response Division II and made its way to the main area of the facility. It will randomly attack anyone. Stay alert!"
+english.event_woa32_desc = "WOA-32 has breached the containment measures of Tactical Response Division II and made its way to the main\narea of the facility. It will randomly attack anyone.\nStay alert!"
 --开场事件
 --一阶段
 english.event_ron = "On High Alert"
@@ -318,7 +318,7 @@ english.event_nu7_rescure_train_desc = "Hammer Down train arrives for rescue and
 english.event_grup_wrong_teleport = "Partially Failed Teleportation"
 english.event_grup_wrong_teleport_desc = "A malfunction occurred in \"P\" Department's live teleportation system, sending the test squad into the facility..."
 english.event_scp999_dropped = "SCP-999 has been left behind!"
-english.event_scp999_dropped_desc = "SCP-999 has been forgotten in its room. Foundation staff, go rescue it!"
+english.event_scp999_dropped_desc = "SCP-999 has been forgotten in its room.\nFoundation staff, go rescue it!"
 english.event_gifts_of_079 = "SCP-079's Blessing"
 english.event_gifts_of_079_desc = "SCP-079 has compromised the access permissions for the SCP-006 door and the checkpoint between Heavy Containment and the Entrance Zone."
 --四阶段
@@ -337,7 +337,7 @@ english.event_road_film_desc = "Now you can escape the facility by running throu
 english.event_light_fog = "Light Fog"
 english.event_light_fog_desc = "Facility surface is covered with a thin layer of fog."
 english.event_kindness_of_079 = "SCP-079's Kindness"
-english.event_kindness_of_079_desc = "SCP-079 has been authorized ABCD gate access by unknown personnel. It will now randomly open one of the ABCD gates at irregular intervals."
+english.event_kindness_of_079_desc = "SCP-079 has been authorized ABCD gate access by unknown personnel. It will now randomly open\none of the ABCD gates at irregular intervals."
 --大事件的子事件
 --------------5K区域--------------
 --一阶段
