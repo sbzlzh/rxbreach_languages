@@ -304,6 +304,8 @@ english.event_weakness_defense = "Fragile Defenses"
 english.event_weakness_defense_desc = "The Foundation's external defenses are vulnerable. CI's main force will arrive at the facility soon."
 english.event_friendly_gru = "Ally's Request"
 english.event_friendly_gru_desc = "\"P\" Department has accepted the Chaos Insurgency's request to send a team to recover Class-D personnel. \"P\" Department members can evacuate via APC. They can also prevent Foundation evacuation."
+-- english.event_periphery_warfare = "外围战事"
+-- english.event_periphery_warfare_desc = "Site-19的外围基地受到CI机动部队的袭击，激战过后，他们剩余的人员将展开最后的厮杀...."
 english.event_mio_arrival = "The Derp God Mio Descends"
 english.event_mio_arrival_desc = "The Mio Derp Cult has appeared inside the facility. They will unleash Mio and derpify everyone!"
 --三阶段
