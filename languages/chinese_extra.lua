@@ -304,6 +304,8 @@ chinese.event_weakness_defense = "脆弱的防线"
 chinese.event_weakness_defense_desc = "基金会的外部防线不堪一击, CI的大部队很快就会抵达设施"
 chinese.event_friendly_gru = "盟友的请求"
 chinese.event_friendly_gru_desc = "\"P\"部门接受了混沌分裂者的请求派出了一支小队回收D级人员,\"P\"部门的成员可以从APC撤离同样他们可以阻止基金会撤离"
+chinese.event_periphery_warfare = "外围战事"
+chinese.event_periphery_warfare_desc = "Site-19的外围基地受到CI机动部队的袭击，激战过后，他们剩余的人员将展开最后的厮杀...."
 chinese.event_mio_arrival = "MIO之神降临"
 chinese.event_mio_arrival_desc = "MIO之神教派出现在设施内，他们将释放MIO，并糖化所有人!"
 --三阶段
