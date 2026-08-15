@@ -132,7 +132,7 @@ traditional.role.QRT_Marksmen = "快速反應部隊 精准射手"
 -- traditional.role.Elite_QRT_Com = "精锐快反 指挥官"
 -- QRT德尔塔防御部队
 -- traditional.QRT_Def = "QRT-德尔塔防御部队"
--- traditional.role.QRT_Def_Tankman = "QRT-德尔塔 坦克车组组员"
+-- traditional.role.QRT_Def_TankCrew = "QRT-德尔塔 坦克车组组员"
 -- traditional.role.QRT_Def_Machinegunner = "QRT-德尔塔 机枪手"
 -- traditional.role.QRT_Def_GrenadeLauncher = "QRT-德尔塔 榴弹手"
 -- traditional.role.QRT_Def_Medic = "QRT-德尔塔 医疗兵"
