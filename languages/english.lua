@@ -132,7 +132,7 @@ english.role.Elite_QRT_Engineer = "Elite QRT Engineer"
 english.role.Elite_QRT_Com = "Elite QRT Commander"
 -- QRT德尔塔防御部队
 -- english.QRT_Def = "QRT-德尔塔防御部队"
--- english.role.QRT_Def_Tankman = "QRT-德尔塔 坦克车组组员"
+-- english.role.QRT_Def_TankCrew = "QRT-德尔塔 坦克车组组员"
 -- english.role.QRT_Def_Machinegunner = "QRT-德尔塔 机枪手"
 -- english.role.QRT_Def_GrenadeLauncher = "QRT-德尔塔 榴弹手"
 -- english.role.QRT_Def_Medic = "QRT-德尔塔 医疗兵"
