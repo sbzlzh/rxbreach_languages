@@ -61,6 +61,8 @@ english.desc_commander = "Commander"
 english.desc_commander_o4 = "O4 Commander"
 english.desc_commander_grup = "Operation Commander"
 english.desc_commander_mio = "Commander MIO"
+-- english.desc_commander_qrt = "QRT总指挥"
+-- english.desc_commander_chaos = "CI总指挥"
 --指挥官介绍任务
 -- english.nailong_selfdesc = "大家好,我是Mio\n这里是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
 english.battlesite_o4desc = "\"Nu-7\"Your mission has been confirmed.\nStop the COTSK Legion's invasion.\nDon't let them succeed in breaking the seal of \"The Scarlet King\".\nOr everything is lost!"
@@ -71,6 +73,9 @@ english.grup_comm_desc1 = "Good work, comrades.\nThe Honor Guard is already on t
 english.grup_comm_desc_999 = "Comrades, we have detected a signal from SCP-999.\nUse the experimental hyper-transmission device you're carrying to bring it back."
 english.grup_comm_desc_evacuation = "Comrades, you have extracted enough data.\nEvacuate immediately!"
 english.grup_comm_desc_telefailure = "Comrades, are you alright?\nA teleportation malfunction has sent you into Site-19.\nFortunately, chaos has broken out here. One of our squads is on its way to deploy a teleportation node.\nThe BTR will arrive near Gate B shortly.\nWe have also notified the nearest Chaos Insurgency unit.\nYou may leave with their APC as well."
+--RHD联动
+-- english.rhd_qrt1 = "你们是Alpha营地仅剩的武装力量\n另外的QRT队员正在前哨站阻击其他敌人\n你们的任务就是消灭Alpha营地内的敌人\n之后抢夺直升机前往Site-19"
+-- english.rhd_chaos1 = "你们是机动部队仅剩的武装力量\n唯二的武装力量正在攻击Site-19的前哨站\n你们的任务就是消灭Alpha营地内残余的QRT武装\n之后抢夺直升机前往Site-19"
 --BattleSite19
 -- english.nailongmio_egg = "我是MIO，你能看到我说明你来得太晚了\n你没有复活成任何一方的角色，所以你看到了我\n该说你是幸运还是倒霉呢..."
 english.battlesite_nu7win = "Well done, soldiers! You have saved humanity!\nThough they may never know... Keep up the good work, soldiers. There are more challenges ahead."

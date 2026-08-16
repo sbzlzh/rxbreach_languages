@@ -61,6 +61,8 @@ b_chinese = b_chinese or {}
 -- b_chinese.desc_commander_o4 = "O4指挥官"
 -- b_chinese.desc_commander_grup = "行动总指挥"
 -- b_chinese.desc_commander_mio = "指挥官MIO"
+-- b_chinese.desc_commander_qrt = "QRT总指挥"
+-- b_chinese.desc_commander_chaos = "CI总指挥"
 --指挥官介绍任务
 -- b_chinese.nailong_selfdesc = "大家好，我是MIO\n这是RXSEND MIO服，指挥官介绍任务功能\n这是一个非常牛逼的功能"
 -- b_chinese.battlesite_o4desc = "\"落锤\"你们的任务已被确认\n阻止深红王之子-军团的入侵\n不要让他们成功解开\"深红之王\"的封印\n否则一切都完蛋了！"
@@ -71,6 +73,9 @@ b_chinese = b_chinese or {}
 -- b_chinese.grup_comm_desc_999 = "同志们，我们侦测到了SCP-999的信号\n用你们携带的实验性\"超传\"装置把它带回来"
 -- b_chinese.grup_comm_desc_evacuation = "同志们，你们已经挖取到了足够的资料\n赶快撤离!"
 -- b_chinese.grup_comm_desc_telefailure = "同志们，你们还好吗？\n传送出现故障，你们被传进了Site-19里\n幸好这里发生混乱了，我们的一支小队正在前往Site-19部署传送节点\n接应的BTR会很快到达B门附近\n我们也通知了最近的混沌分裂者单位\n你们也可以坐他们的APC离开"
+--RHD联动
+-- b_chinese.rhd_qrt1 = "你们是Alpha营地仅剩的武装力量\n另外的QRT队员正在前哨站阻击其他敌人\n你们的任务就是消灭Alpha营地内的敌人\n之后抢夺直升机前往Site-19"
+-- b_chinese.rhd_chaos1 = "你们是机动部队仅剩的武装力量\n唯二的武装力量正在攻击Site-19的前哨站\n你们的任务就是消灭Alpha营地内残余的QRT武装\n之后抢夺直升机前往Site-19"
 --BattleSite19
 -- b_chinese.nailongmio_egg = "我是MIO，你能看到我说明你来得太晚了\n你没有复活成任何一方的角色，所以你看到了我\n该说你是幸运还是倒霉呢..."
 -- b_chinese.battlesite_nu7win = "干得漂亮！士兵们\n你们成功拯救了人类！\n尽管他们并不知情\n继续努力吧，士兵们，未来还有更多挑战"
