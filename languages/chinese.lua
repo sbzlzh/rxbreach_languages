@@ -1313,7 +1313,7 @@ chinese.scp062de_g43_desc = "G43是一把半自动步枪，有着不错的伤害
 --角色介绍 --FZ翻译
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.chinese = BREACH.Descriptions.chinese or {}
-BREACH.Descriptions.chinese[role.SCI_SpyUSA] = "你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑获取部分重要信息并呼叫支援,设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n你拥有一张"?"权限卡，可以打开某些地方的大门\n\n但根据情报显示某人有一份对你不利的情报"
+BREACH.Descriptions.chinese[role.SCI_SpyUSA] = "你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑获取部分重要信息并呼叫支援,设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n你拥有一张'?'权限卡，可以打开某些地方的大门\n\n但根据情报显示某人有一份对你不利的情报"
 BREACH.Descriptions.chinese[SCP049] = "你是SCP-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人"
 BREACH.Descriptions.chinese[SCP912] = "你是SCP-912[自主型SWAT装甲]\n击杀设施内的罪犯"
 BREACH.Descriptions.chinese[SCP062DE] = "你是SCP-062-DE[战争的幽灵]\n继续完成元首赋予你的使命!"
