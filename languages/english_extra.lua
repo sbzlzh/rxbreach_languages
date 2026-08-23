@@ -92,7 +92,7 @@ english.decode_failed = "Decode Failed"
 english.decode_success = "Decode Successful"
 --娱乐模式——BattleSite19
 english.control_point = "Point Captured"
-english.losing_point = "Point Lost"    
+english.losing_point = "Point Lost"
 english.battlesite_nu7 = "Joint Forces"
 english.battlesite_cotsk = "Legion"
 english.point_not_completed = "You must capture the previous point first"

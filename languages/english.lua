@@ -73,11 +73,11 @@ english.role.ClassD_GOCSpy = "GOC Agent"
 english.role.ClassD_Banned = "Class-D Low Reputation"
 english.role.ClassD_Banned_Temporary = "Class-D Minor Low Reputation"
 english.role.ClassD_Mio = "MIO"
-english.role.ClassD_Mio_NaiLong = "Nailong MIO"
-english.role.ClassD_BaiCai_Strong = "Steroid Neuro-SaMa"
+english.role.ClassD_Mio_NaiLong = "Nailong MIO" --Tiktok也用nailong表示中文语境中的奶龙
+english.role.ClassD_BaiCai_Strong = "Steroid Neuro-SaMa" --遵循白菜sama之意
 --D级转生
 english.ClassD_Rebirth = "Reborn Class-D Personnel"
-english.role.ClassD_Hack_Rebirth = "Class-D Legendary Hacker"
+english.role.ClassD_Hack_Rebirth = "Class-D Legendary Hacker" --直译
 english.role.ClassD_Abnormal = "Class-D Abnormal"
 english.role.ClassD_Pefect = "Class-D Perfect"
 english.role.ClassD_SprintChampion = "Class-D Sprint Champion"
@@ -90,7 +90,7 @@ english.role.SCI_Grunt = "Scientist"
 english.role.SCI_Recruiter = "Ethics Committee Inspector"
 english.role.SCI_Tester = "Senior Researcher"
 english.role.SCI_Medic = "Doctor"
-english.role.SCI_Cleaner = "Cleaner"
+english.role.SCI_Cleaner = "Cleaner" --Janitor有背离单纯的清洁工
 english.role.SCI_Head = "Personnel Director"
 english.role.SCI_Medic_Head = "Medical Director"
 english.role.SCI_SpyUSA = "UIU Spy"
@@ -109,10 +109,10 @@ english.role.SECURITY_Heavy = "Security Riot Control"
 english.role.SECURITY_Warden = "Security Warden"
 english.role.SECURITY_IMVSOLDIER = "Security Special Agent"
 english.role.SECURITY_Chief = "Security Captain"
-english.role.SECURITY_Spy = "CI Spy"
+english.role.SECURITY_Spy = "CI Spy" --与其余CI阵营翻译一致
 english.role.SECURITY_Corporal = "Security Corporal"
 --转生安保
-english.SECURITY_Rebirth = "Reborn Security Department"
+english.SECURITY_Rebirth = "Reborn Security Department" --加上部门的翻译
 english.role.SECURITY_Instructor = "Security Instructor"
 --快反
 english.QRT = "Quick Response Team"
