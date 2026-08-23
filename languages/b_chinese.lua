@@ -1144,6 +1144,7 @@ b_chinese.hamburger_mio_4 = "恭喜你!进化成功了 :>"
 --任务提醒
 -- b_chinese.hint_task = "新的目标:"
 -- b_chinese.hint_task_found079 = "去找SCP-079"
+-- b_chinese.hint_task_take_heli_to_site19 = "乘坐直升机前往Site-19"
 -- b_chinese.hint_task_goto_helipad = "去往停机坪撤离"
 -- b_chinese.hint_task_kill_foundation = "剿灭所有敌对武装单位"
 -- b_chinese.hint_task_help_goc_ornot = "撤离或帮助GOC亦或者继续完成你的使命"
