@@ -1144,6 +1144,7 @@ english.nu7alpha_came = "Hammer Down Alpha Company has been called"
 --任务提醒
 english.hint_task = "New objective:"
 english.hint_task_found079 = "Find SCP-079"
+-- english.hint_task_take_heli_to_site19 = "乘坐直升机前往Site-19"
 english.hint_task_goto_helipad = "Go to the helipad to evacuate"
 english.hint_task_kill_foundation = "Eliminate all hostile armed units"
 english.hint_task_help_goc_ornot = "Evacuate, help GOC, or continue your mission"

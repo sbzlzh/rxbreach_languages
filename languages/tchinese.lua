@@ -1144,6 +1144,7 @@ traditional.nu7alpha_came = "落錘A連已經被呼叫"
 --任务提醒
 traditional.hint_task = "新的目標:"
 traditional.hint_task_found079 = "去找SCP-079"
+-- traditional.hint_task_take_heli_to_site19 = "乘坐直升机前往Site-19"
 traditional.hint_task_goto_helipad = "去往停機坪撤離"
 traditional.hint_task_kill_foundation = "剿滅所有敵對武裝單位"
 traditional.hint_task_help_goc_ornot = "撤離或幫助GOC亦或者繼續完成你的使命"
