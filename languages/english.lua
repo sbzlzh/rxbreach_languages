@@ -1813,7 +1813,7 @@ english.ending_random_scp3 = "You were teleported into the library, and the Serp
 english.ending_random_scp4 = "You were teleported into the library, and the Serpent's Hand is figuring out how to get you out of the wall"
 english.ending_random_scp5 = "You appeared in an unknown area, where there is only deathly silence"
 english.ending_random_scp6 = "The GOC is testing a new energy weapon, and you happen to be within the weapon's range"
--- english.ending_ar_rescue_heli = "乘坐AR救援直升机逃离设施"
+english.ending_ar_rescue_heli = "Escaped the facility by rescue helicopter"
 --事件特殊结局和奖励
 english.ending_bad_warhead = "You were lucky that the nuke didn't explode"
 english.ending_bad_warhead_bonus = "Nuke Lucky Star"
