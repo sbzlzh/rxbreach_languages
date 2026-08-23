@@ -1144,6 +1144,7 @@ russian.nu7alpha_came = "НЮ-7 уже вызван."
 --任务提醒
 russian.hint_task = "Новая цель:"
 russian.hint_task_found079 = "Отправляйтесь к SCP-079"
+-- russian.hint_task_take_heli_to_site19 = "乘坐直升机前往Site-19"
 russian.hint_task_goto_helipad = "Направляйтесь к ВП для эвакуации"
 russian.hint_task_kill_foundation = "Уничтожьте все враждебные вооружённые силы."
 russian.hint_task_help_goc_ornot = "Эвакуируйтесь, помогите ГОК или продолжайте выполнять свою задачу"
