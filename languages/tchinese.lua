@@ -51,7 +51,7 @@ traditional.role.SCP3114 = "SCP-3114"
 traditional.role.SCP610Infected = "SCP-610 感染者"
 traditional.role.SCP610Bloodiness = "SCP-610 血污"
 traditional.role.SCP999Real = "SCP-999"
---D級
+--D级
 traditional.ClassD = "D級人員"
 traditional.role.ClassD_Default = "D級人員"
 traditional.role.ClassD_Pron = "D級人員 盜賊"
@@ -75,7 +75,7 @@ traditional.role.ClassD_Banned_Temporary = "D級人員 輕型低信譽"
 traditional.role.ClassD_Mio = "MIO"
 traditional.role.ClassD_Mio_NaiLong = "奶龍 MIO"
 traditional.role.ClassD_BaiCai_Strong = "類固醇 白菜"
---D級轉生
+--D级转生
 traditional.ClassD_Rebirth = "轉生D級人員"
 traditional.role.ClassD_Hack_Rebirth = "D級人員 傳奇駭客"
 traditional.role.ClassD_Abnormal = "D級人員 受試者"
@@ -83,7 +83,7 @@ traditional.role.ClassD_Pefect = "完美D級"
 traditional.role.ClassD_SprintChampion = "D級人員 短跑冠軍"
 traditional.role.ClassD_Vagrant = "D級人員 流浪漢"
 traditional.role.ClassD_Addict = "D級人員 癮君子"
---研究員
+--研究员
 traditional.SCI = "科研部門"
 traditional.role.SCI_Assistant = "科研助手"
 traditional.role.SCI_Grunt = "科研人員"
@@ -94,12 +94,12 @@ traditional.role.SCI_Cleaner = "清潔工"
 traditional.role.SCI_Head = "人事主管"
 traditional.role.SCI_Medic_Head = "設施醫藥部主管"
 traditional.role.SCI_SpyUSA = "UIU 間諜"
---轉生科研
+--转生科研
 traditional.SCI_Rebirth = "轉生科研部門"
 traditional.role.SCI_Rebirth_Researcher = "跨運動學研究人員"
 traditional.role.SCI_Human_Cell_Gastroenterologist = "人體細胞胃科醫生"
 traditional.role.SCI_Opportunist = "科研 牆頭草"
---安保部門
+--安保部门
 traditional.SECURITY = "安保部門"
 traditional.role.SECURITY_Recruit = "安保部門 菜鳥"
 traditional.role.SECURITY_Sergeant = "安保部門 中士"
@@ -111,7 +111,7 @@ traditional.role.SECURITY_IMVSOLDIER = "安保部門 特別專員"
 traditional.role.SECURITY_Chief = "安保部門 上尉"
 traditional.role.SECURITY_Spy = "混沌分裂者 間諜"
 traditional.role.SECURITY_Corporal = "安保部門 下士"
---轉生安保
+--转生安保
 traditional.SECURITY_Rebirth = "轉生安保部門"
 traditional.role.SECURITY_Instructor = "安保部門 教官"
 --快反
@@ -130,7 +130,7 @@ traditional.role.Elite_QRT_Medic = "精銳快反 醫療兵"
 traditional.role.Elite_QRT_Machinegunner = "精銳快反 機槍手"
 traditional.role.Elite_QRT_Engineer = "精銳快反 工程師"
 traditional.role.Elite_QRT_Com = "精銳快反 指揮官"
--- QRT德爾塔防禦部隊
+-- QRT德尔塔防御部队
 traditional.QRT_Def = "QRT-德爾塔防禦部隊"
 traditional.role.QRT_Def_TankCrew = "QRT-德爾塔 坦克車組組員"
 traditional.role.QRT_Def_Machinegunner = "QRT-德爾塔 機槍手"
@@ -158,7 +158,7 @@ traditional.role.MEG_NTFExpert = "MEG 九尾狐收容專家"
 traditional.role.MEG_NU7Instructor = "MEG 落錘特戰教官"
 traditional.role.MEG_BETA1Security = "MEG 灼燒器安全專員"
 traditional.role.MEG_OMEGA1Officer = "MEG 律法左手調查員"
---MTF級轉生
+--MTF级转生
 traditional.MTF_Rebirth = "轉生戰術應對一部"
 traditional.role.MTF_Medic_Rebirth = "戰術應對一部 醫療生態專家"
 traditional.role.MTF_Engi_Rebirth = "戰術應對一部 防禦分析師"
@@ -179,7 +179,7 @@ traditional.role.NTF_Soldier = "九尾狐 士兵"
 traditional.role.NTF_Commander = "九尾狐 指揮官"
 traditional.role.NTF_Specialist = "九尾狐 戰鬥專家"
 traditional.role.NTF_Sniper = "九尾狐 狙擊手"
---NU7 落錘
+--NU7 落锤
 traditional.NU7 = "機動特遣隊 NU-7 '落錘' 特戰營A連 "
 traditional.role.NU7_Soldier = "落錘特戰A連 士兵"
 traditional.role.NU7_Commander = "落錘特戰A連 指揮官"
@@ -188,7 +188,7 @@ traditional.role.NU7_Specialist = "落錘特戰A連 作戰專家"
 traditional.role.NU7_Vanguard = "落錘特戰A連 先鋒"
 traditional.role.NU7_Support = "落錘特戰A連 支援兵"
 traditional.role.NU7_Juggernaut = "落錘特戰A連 無畏戰士"
---NU7 維修小組
+--NU7 维修小组
 traditional.NU7_SF = "機動特遣隊 NU-7 '落錘' 特戰B連 維修3組"
 traditional.role.NU7_SF_Soldier = "落錘特戰B連3組 組員"
 traditional.role.NU7_SF_Captain = "落錘特戰B連3組 組長"
@@ -218,22 +218,22 @@ traditional.role.UIU_Agent_Sniper = "UIU特工小組 狙擊手"
 traditional.role.UIU_Agent_Echo = "UIU特工小組 回聲"
 traditional.role.UIU_Agent_Thunder = "UIU特工小組 雷擊"
 traditional.role.UIU_Agent_Rhinoceros = "UIU特工小組 犀牛"
---UIU特工小組 特殊幹員
+--UIU特工小组 特殊干员
 traditional.UIU_Agent_Special = "UIU特工小組 特種幹員"
---UIU收容小組
+--UIU收容小组
 traditional.UIU_Contain = "UIU收容小組"
 traditional.role.UIU_Control_Grunt = "UIU收容小組 組員"
 traditional.role.UIU_Control_MachineGunner = "UIU收容小組 機槍手"
 traditional.role.UIU_Control_Commander = "UIU收容小組 組長"
 traditional.role.UIU_Control_Specialist = "UIU收容小組 收容專家"
 traditional.role.UIU_Control_Darkside = "UIU收容小組 暗面" --英文和俄文都翻譯成 "暗影"
---異常特遣隊
+--异常特遣队
 traditional.SKP = "Sonderkommando für Paranormales"
 traditional.role.SKP_Soldier = "SKP 異界探索C組 士兵"
 traditional.role.SKP_Commander = "SKP 異界探索C組 指揮官"
 traditional.role.SKP_Warriors = "SKP 異界探索C組 狂戰士"
 traditional.role.SKP_Agent = "SKP 異界探索C組 特工"
---安德森機器人
+--安德森机器人
 traditional.AR = "安德森機器人"
 traditional.role.AR_Operator = "AR 操作員"
 traditional.role.AR_Mechanician = "AR 機械師"
@@ -259,7 +259,7 @@ traditional.role.Goc_Liq = "全球超自然聯盟 中尉"
 traditional.role.Goc_Commander = "全球超自然聯盟 指揮官"
 traditional.role.Goc_Jag = "全球超自然聯盟 無畏勇士"
 traditional.role.Goc_Special = "全球超自然聯盟 戰鬥專家"
---GOC 危險環境作戰部隊 Hazardous Environment Operational Forces
+--GOC 危险环境作战部队 Hazardous Environment Operational Forces
 traditional.UNGOC = "GOC 危險環境作戰部隊"
 traditional.role.UNGOC_Soldier = "GOC HEOF 士兵"
 traditional.role.UNGOC_Ranger = "GOC HEOF 突破手"
@@ -267,16 +267,16 @@ traditional.role.UNGOC_Detector = "GOC HEOF 探測專家"
 traditional.role.UNGOC_Specialist = "GOC HEOF 收容專家"
 traditional.role.UNGOC_Commander = "GOC HEOF 指揮官"
 traditional.role.UNGOC_Support = "GOC HEOF 支援兵"
---GOC HEOF 偵察小隊
+--GOC HEOF 侦察小队
 traditional.UNGOC_SCOUT = "GOC-HEOF 偵察小隊"
 traditional.role.UNGOC_SCOUT_Soldier = "GOC偵察小隊 士兵"
 traditional.role.UNGOC_SCOUT_Commander = "GOC偵察小隊 隊長"
---GOC HEOF 支援小隊
+--GOC HEOF 支援小队
 traditional.UNGOC_SUP = "GOC-HEOF 支援小隊"
 traditional.role.UNGOC_Sup_Soldier = "GOC支援小隊 士兵"
 traditional.role.UNGOC_Sup_Machinegunner = "GOC支援小隊 機槍手"
 traditional.role.UNGOC_Sup_Commander = "GOC支援小隊 指揮官"
---\"P\"部門
+--\"P\"部门
 traditional.PD = "\"P\"部門"
 traditional.role.PD_Soldier = "P-055 \"鋼鐵\" 士兵"
 traditional.role.PD_Specialist = "P-055 \"鋼鐵\" 作戰專家"
@@ -301,18 +301,18 @@ traditional.role.Chaos_Commander = "混沌分裂者 指揮官"
 traditional.role.Chaos_Jugg = "混沌分裂者 重裝"
 traditional.role.Chaos_Demo = "混沌分裂者 惡魔"
 traditional.role.Chaos_Claymore = "混沌分裂者 獵人"
--- CI 突襲部隊
+-- CI 突袭部队
 traditional.ChaosRaidFroce = "CI-突襲部隊"
 traditional.role.Chaos_Raid_Grunt = "CI-突襲部隊 士兵"
 traditional.role.Chaos_Raid_Commander = "CI-突襲部隊 指揮官"
 traditional.role.Chaos_Raid_Jugg = "CI-突襲部隊 重裝"
 traditional.role.Chaos_Raid_Specialist = "CI-突襲部隊 戰鬥專家"
 traditional.role.Chaos_Raid_ExplosionExpert = "CI-突襲部隊 爆破專家"
---CI 護送小組
+--CI 护送小组
 traditional.ChaosEscortSquad = "CI-護送小組"
 traditional.role.Chaos_Escort_Grunt = "CI-護送小組 士兵"
 traditional.role.Chaos_Escort_Commander = "CI-護送小組 指揮官"
---CI 機動部隊
+--CI 机动部队
 traditional.CI_MobileForce = "CI-機動部隊"
 traditional.role.CI_MF_Marksman = "CI-機動部隊 射手"
 traditional.role.CI_MF_Machinegunner = "CI-機動部隊 機槍手"
@@ -320,7 +320,7 @@ traditional.role.CI_MF_GrenadeLauncher = "CI-機動部隊 榴彈手"
 traditional.role.CI_MF_Medic = "CI-機動部隊 醫療兵"
 traditional.role.CI_MF_HeliCrew = "CI-機動部隊 直升機乘員"
 traditional.role.CI_MF_Soldier = "CI-機動部隊 士兵"
---特殊科研感覺不用漢化他們的名字
+--特殊科研感觉不用汉化他们的名字
 traditional.SCI_SPECIAL = "特殊科研人員"
 traditional.role.SCI_SPECIAL_DAMAGE = "Kelen"
 traditional.role.SCI_SPECIAL_HEALER = "Matilda"
@@ -331,7 +331,7 @@ traditional.role.SCI_SPECIAL_BOOSTER = "Georg"
 traditional.role.SCI_SPECIAL_SHIELD = "Shieldmeh"
 traditional.role.SCI_SPECIAL_INVISIBLE = "Ruprecht"
 traditional.role.SCI_SPECIAL_VISION = "Hedwig"
---深紅王之子
+--深红王之子
 traditional.Cult = "猩紅之子"
 traditional.role.Cult_Commander = "猩紅之子 祭祀"
 traditional.role.Cult_Grunt = "猩紅之子 教眾"
@@ -339,7 +339,7 @@ traditional.role.Cult_Psycho = "猩紅之子 狂信徒"
 traditional.role.Cult_Specialist = "猩紅之子 助祭"
 traditional.role.Cult_Knight = "深紅王之子 深紅鐵騎"
 traditional.role.Cult_Sacrificer = "深紅王之子 獻祭者"
---事件專屬角色
+--事件专属角色
 traditional.Events_roles = "事件特殊角色"
 traditional.role.UIU_Special_Officer = "UIU 聯絡專員"
 traditional.role.chaos_agent = "混沌分裂者 特工"
@@ -353,19 +353,19 @@ traditional.role.mio_psycho = "MIO之神教派 糖人"
 traditional.role.mio_commander = "MIO之神教派 主教"
 --回合特殊角色
 traditional.role.sus_scientist = "嫌疑 科研"
---5K區域
---奇術打擊
+--5K区域
+--奇术打击
 traditional.role.GocMagic_guard = "GOC奇術打擊二組 護衛"
 traditional.role.GocMagic_com = "GOC奇術打擊二組 指揮官"
 traditional.role.GocMagic_speicalist = "GOC奇術打擊二組 專家"
 traditional.role.GocMagic_scholar = "GOC奇術打擊二組 學者"
---STS 5隊
+--STS 5队
 traditional.role.sts5_grunt = "STS-5隊 士兵"
 traditional.role.sts5_captain = "STS-5隊 隊長"
 traditional.role.sts5_elite = "STS-5隊 精英"
 traditional.role.sts5_specialist = "STS-5隊 特種幹員"
 traditional.role.sts5_heavy = "STS-5隊 壓制者"
---GRU-CI 突襲部隊
+--GRU-CI 突袭部队
 traditional.role.gru_ci_soldider = "GRU-CI突襲部隊 士兵"
 traditional.role.gru_ci_medic = "GRU-CI突襲部隊 醫療兵"
 traditional.role.gru_ci_hacker = "GRU-CI突襲部隊 駭客"
@@ -386,13 +386,13 @@ traditional.role.nu7_b_expert = "落錘特戰B連 技術員"
 traditional.role.nu7_b_adjutant = "落錘特戰B連 副指揮"
 traditional.role.nu7_b_commander = "落錘特戰B連 指揮官"
 traditional.role.nu7_b_machine = "落錘特戰B連 機槍手"
---蛇之手折躍小隊
+--蛇之手折跃小队
 traditional.role.sh_tele_grunt = "蛇之手折躍小隊 士兵"
 traditional.role.sh_tele_witch = "蛇之手折躍小隊 巫醫"
 traditional.role.sh_tele_augur = "蛇之手折躍小隊 占卜師"
 traditional.role.sh_tele_warlock = "蛇之手折躍小隊 禦獸術士"
 traditional.role.sh_tele_commander = "蛇之手折躍小隊 指揮官"
---反叛九尾狐小隊
+--反叛九尾狐小队
 traditional.role.NTF_Revolt_Grunt = "反叛之狐 士兵"
 traditional.role.NTF_Revolt_com = "反叛之狐 指揮官"
 traditional.role.NTF_Revolt_Spec = "反叛之狐 收容專家"
@@ -429,7 +429,7 @@ traditional.role.usa_soldier = "美軍 士兵"
 traditional.role.usa_commander = "美軍 指揮官"
 traditional.role.usa_machinegunner = "美軍 機槍手"
 ------------------------------------------------battlesite
---落錘AB聯合部隊
+--落锤AB联合部队
 traditional.role.battlesite_nu7_grunt = "落錘AB聯合部隊 士兵"
 traditional.role.battlesite_nu7_sniper = "落錘AB聯合部隊 狙擊手"
 traditional.role.battlesite_nu7_vanguard = "落錘AB聯合部隊 先鋒"
@@ -437,14 +437,14 @@ traditional.role.battlesite_nu7_jugg = "落錘AB聯合部隊 重裝"
 traditional.role.battlesite_nu7_medic = "落錘AB聯合部隊 醫療兵"
 traditional.role.battlesite_nu7_tech = "落錘AB聯合部隊 技術員"
 traditional.role.battlesite_nu7_commander = "落錘AB聯合部隊 指揮官"
---深紅王之子-軍團
+--深红王之子-军团
 traditional.role.battlesite_cult_grunt = "深紅王之子-軍團 士兵"
 traditional.role.battlesite_cult_madman = "深紅王之子-軍團 狂人"
 traditional.role.battlesite_cult_Psycho = "深紅王之子-軍團 狂信徒"
 traditional.role.battlesite_cult_hunter = "深紅王之子-軍團 獵殺者"
 traditional.role.battlesite_cult_commander = "深紅王之子-軍團 指揮官"
 ------------------------------------------------
---競技場角色
+--竞技场角色
 traditional.role.arena_mtf = "競技場 戰術應對一部士兵"
 traditional.role.arena_ci = "競技場 混沌分裂者士兵"
 traditional.weaponry = {}
@@ -555,9 +555,10 @@ traditional.weaponry["item_gruci_hack_device"] = "駭客面板"
 traditional.weaponry["item_sh_teleporter"] = "折躍奇術卷軸"
 traditional.weaponry["breach_keycard_beta1"] = "Beta-1 特別訪問卡"
 traditional.weaponry["item_beta1_checker"] = "Beta-1 安全系統"
-traditional.weaponry["item_syringe_posion"] = "? 針劑"
+-- traditional.weaponry["item_syringe_poison"] = "? 针剂"
 traditional.weaponry["item_syringe_heal"] = "治癒針劑"
 traditional.weaponry["item_syringe_speed"] = "速度針劑"
+-- traditional.weaponry["item_syringe_shield"] = "护盾针剂"
 traditional.weaponry["item_candy330_teleport"] = "糖果-彩虹暈眩"
 traditional.weaponry["item_candy330_speedup"] = "糖果-急速藍莓"
 traditional.weaponry["item_candy330_heal"] = "糖果-治癒草莓"
@@ -629,7 +630,7 @@ traditional.gru_start_warhead = "警告!Alpha核彈頭被[資料刪除]權限強
 traditional.gru_evac_warhead = "警告!設施多處資料遭到修改,[資料刪除]權限正在啟動Alpha核彈頭"
 traditional.scp_contained = "已被收容"
 traditional.gruci_device_upgrade = "你的資訊終端得到加強"
---進度條
+--进度条
 traditional.progress_wait = "等待中..."
 traditional.bismillah = "閱讀禱文中..."
 traditional.stopscarletinvsion = "合上猩紅之書中..."
@@ -749,8 +750,10 @@ traditional.deffib_body_too_late_pt2 = "沒有復活的可能."
 traditional.deffib_headshot_pt1 = "這具屍體受到的傷害太過嚴重," --改一下
 traditional.deffib_headshot_pt2 = "沒有復活的可能."
 traditional.scp049_too_late = "這具屍體已經躺了一會了無法被治癒"
+-- traditional.scp049_cant_cure = "你无法治愈这个尸体"
 traditional.scp049_time_out_pt1 = "可惜的是,你已經躺了一會了"
 traditional.scp049_time_out_pt2 = "你無法被治癒"
+-- traditional.scp049_syringe_upgrade_max = "该种类加强已经强化至最高"
 traditional.scp062_new_stage_pt1 = "恭喜."
 traditional.scp062_new_stage_pt2 = "你進化了,並獲得了新能力!"
 traditional.scp173_bad_zone = "你無法在此區域中使用能力."
@@ -963,7 +966,7 @@ traditional.skp_crystal_notfound = "未找到晶體"
 traditional.releases_too_late = "你來得太晚了，釋放程序已經鎖定"
 traditional.ar_cant_disguise_with_suit = "你無法在穿著其他衣服的情況下進行偽裝"
 traditional.battle_did_not_end = "戰鬥還沒有結束！"
---AR對講機
+--AR对讲机
 traditional.ar_radio_use_hint = "左鍵呼叫救援直升機，右鍵撤離"
 traditional.ar_radio_call_forbidden = "你無法呼叫救援直升機"
 traditional.ar_radio_rescue_destroyed = "救援直升機已被摧毀"
@@ -973,7 +976,7 @@ traditional.ar_plane_b_rooftop = "地表B大門附近露臺"
 traditional.ar_plane_step_out = "AR直升機暫時離開"
 traditional.ar_radio_call_too_frequent = "你呼叫的太頻繁了，稍等"
 traditional.ar_radio_emergency_leave = "AR救援無人機已經離開了"
---重型現實穩定錨
+--重型现实稳定锚
 traditional.hs_state_worked = "工作中..."
 traditional.hs_state_damaged = "損壞"
 traditional.hs_damaging = "破環穩定錨中..."
@@ -983,7 +986,7 @@ traditional.hs_repaired_bonus = "修復重型現實穩定錨"
 traditional.hs_needgenerator = "所有發電機未修復"
 traditional.hs_activity = "重型現實穩定錨已修復"
 traditional.hs_damaged = "重型現實穩定錨被損壞"
---人員掃描器
+--人员扫描器
 traditional.fs_down = "無法使用"
 traditional.fs_waiting = "待命中..."
 traditional.fs_cooling = "掃描冷卻"
@@ -993,18 +996,18 @@ traditional.fs_foundation_force = "基金會武裝"
 traditional.fs_science_team = "基金會科研"
 traditional.fs_enemy_team = "敵對武裝"
 traditional.fs_user_hint = "請選擇要掃描的目標"
---QRT召喚器
+--QRT召唤器
 traditional.qrtcaller_notready = "QRT小隊尚未準備完畢"
 traditional.qrtcaller_notsquad = "沒有可用的QRT小隊"
---GRUCI 資訊終端
+--GRUCI 信息终端
 traditional.info_device_1 = "人員掃描"
 traditional.info_device_2 = "SCP壓制"
---單兵傷害吸收裝置
+--单兵伤害吸收设备
 traditional.pos9_active = "已啟動PoS-9裝置"
 traditional.pos9_shutdown = "已關閉PoS-9裝置"
 traditional.pos9_broken = "PoS-9裝置已損壞"
 traditional.pos9_remaining = "Pos-9剩餘耐久: "
---GOC 奇術終端
+--GOC 奇术终端
 traditional.gocm_tml_name = "GOC 奇術終端"
 traditional.gocm_tml_hint1 = "請輸入以下加密文本的正確形式"
 traditional.gocm_tml_hint2 = "每個輸入完畢後記得按\"回車\""
@@ -1014,7 +1017,7 @@ traditional.gocm_tml_caesarhint = "正確的字母是當前字母在字母表上
 traditional.gocm_tml_fence = "柵欄密碼"
 traditional.gocm_tml_cantuse = "奇術終端已鎖定"
 traditional.gocm_tml_done = "奇術終端部署完畢"
---GOC 設施評估終端
+--GOC 设施评估终端
 traditional.goc_support_caller = "GOC-設施評估終端"
 traditional.goc_assessment_team = "全球超自然聯盟危險評估團隊"
 traditional.goc_attitude = "聯盟態度: "
@@ -1045,10 +1048,10 @@ traditional.goc_heof_army = "GOC-HEOF 主力部隊"
 traditional.goc_heof_army_task = "消滅優先，消滅一切與基金會敵對的人員"
 traditional.goc_heof_attack_squad = "GOC 攻擊小隊"
 traditional.goc_heof_attack_squad_task = "毀滅優先，攻擊所有人員，炸燬設施"
---深紅犧牲者
+--深红牺牲者
 traditional.cant_get_soul_back = "他的靈魂已經無法尋回"
 traditional.health_not_enough = "你的生命值不足"
---SKP檢查器
+--SKP检查器
 traditional.skp_checked_valuable_1 = "這是一名有價值的人員"
 traditional.skp_checked_valuable_2 = "你對帝國很有用"
 traditional.skp_checked_valuable_3 = "帝國需要你！"
@@ -1072,15 +1075,15 @@ traditional.warning_status = "警告"
 traditional.danger_status = "危險"
 traditional.decided = "已決定"
 traditional.decidsion = "決議"
---D級 牆頭草
+--D级 墙头草
 traditional.opportunist_words_1 = "某飄零半生，只恨未逢明主，公若不棄，某願拜為義父。"
 traditional.opportunist_words_2 = "大丈夫生居天地之間，豈能鬱鬱久居人下！"
 traditional.opportunist_words_3 = "別擔心我自帶衣服了，別問我的衣服從哪來的"
 traditional.opportunist_words_4 = "你的異常能力失效了，已無法回頭"
---財神
+--财神
 traditional.become_caishen = "恭喜！你成為了財神"
 traditional.goxifacai = "恭喜發財！"
---格魯烏P撤離提醒
+--格鲁乌P撤离提醒
 traditional.grubtf_leavehint1 = "裝甲車將在"
 traditional.grubtf_leavehint2 = "秒後離開"
 traditional.grup_leave_hint = "即將離開，你無需對話"
@@ -1090,7 +1093,7 @@ traditional.scp500weird_hint1 = "有點火辣辣的冰"
 traditional.scp500weird_hint2 = "向前衝刺吧!"
 traditional.scp500weird_hint3 = "這是你的終章..."
 traditional.scp500weird_hint4 = "你將重獲新生"
---實體提醒
+--实体提醒
 traditional.ent_using = "有人正在使用/互動"
 traditional.ent_too_fast = "你互動地太快了!"
 traditional.ent_condition_not_satis = "條件未滿足!"
@@ -1098,19 +1101,19 @@ traditional.ent_no_access = "你無權進行操作"
 traditional.ent_nosignal = "無訊號"
 traditional.ent_signal = "訊號良好"
 traditional.ent_losing_signal = "駭入訊號丟失"
---SCP-914實體提醒
+--SCP-914实体提醒
 traditional.scp914_working_hint = "正在加工"
---SKP黑箱實體/招募裝備
+--SKP黑箱实体/招募装备
 traditional.skp_cur_crystals = "當前晶體數量: "
 traditional.skp_cant_recruit_scp = "無法招募SCP"
---死神災厄
+--死神灾厄
 traditional.thedeath_event_1 = "我喜歡這個血量"
 traditional.thedeath_event_2 = "那個,你帶速效救心丸了嗎?"
 traditional.thedeath_event_3 = "腿很疼,是吧"
 traditional.thedeath_event_4 = "這真讓人熱血沸騰啊"
 traditional.thedeath_event_5 = "看起來你的皮膚比較敏感"
 traditional.thedeath_event_lucky = "算你走運,小子"
---蛇之手奇術傳送裝置
+--蛇之手奇术传送设备
 traditional.sh_teleporter_forbidden = "當前狀態無法部署折躍奇術"
 traditional.sh_teleporter_deployed = "目標已被施加折躍奇術"
 --Doro!!
@@ -1127,7 +1130,7 @@ traditional.DoroHomeBonus = "回家吧，回到最初的美好"
 traditional.c4plantHint = "你當前無法自由安放C4，你必須爆破完所有目標地點後才能自由安放C4"
 traditional.c4hasbeenplanted = "當前區域已經安放C4, 你不能重複安放C4"
 traditional.c4plantmissionhint = "你已獲取C4，新的目標：炸燬廣播室和SCP-006收容間"
---雜項
+--杂项
 traditional.ent_canthacked = "其他程式正在執行駭入"
 traditional.ent_timetoolate = "已經沒有時間關閉了"
 traditional.ent_newobject = "執行最新目標"
@@ -1138,13 +1141,12 @@ traditional.ent_ischecking = "裝置正在被檢查"
 traditional.ent_waschecked = "裝置已被檢查"
 traditional.you_cant_help = "你救不了他"
 traditional.you_cant_leave = "你無法離開"
---落錘
+--落锤
 traditional.nu7alpha_come = "落錘A連正在趕來"
 traditional.nu7alpha_came = "落錘A連已經被呼叫"
---任務提醒
+--任务提醒
 traditional.hint_task = "新的目標:"
 traditional.hint_task_found079 = "去找SCP-079"
-traditional.hint_task_take_heli_to_site19 = "乘坐直升機前往Site-19"
 traditional.hint_task_goto_helipad = "去往停機坪撤離"
 traditional.hint_task_kill_foundation = "剿滅所有敵對武裝單位"
 traditional.hint_task_help_goc_ornot = "撤離或幫助GOC亦或者繼續完成你的使命"
@@ -1157,7 +1159,8 @@ traditional.hint_task_sts_killing2 = "他們無法關閉核彈,自由行動"
 traditional.hint_found_gruci_device = "找到並開啟模因武器"
 traditional.hint_task_helping_scp1440 = "阻止撤離或幫助SCP-1440"
 traditional.hint_task_stoping_scp1440 = "撤離或阻止SCP-1440"
---聊天欄提醒
+traditional.hint_task_take_heli_to_site19 = "乘坐直升機前往Site-19"
+--聊天栏提醒
 traditional.scp079decodinghint = "SCP-079正在進行解碼,你可以繼續幫助079"
 traditional.scp079transmission = "為時已晚,但你冒險下載資料並轉移SCP-079"
 --106
@@ -1253,7 +1256,7 @@ traditional.scoreboard_achievements = "成就." --достижения
 traditional.scoreboard_country = "國家"
 traditional.scoreboard_score = "分數"
 traditional.scoreboard_rounds_left = "剩餘回合數"
---底部訊息
+--底部消息
 traditional.ammo_maximum = "你的彈藥已經滿了."
 traditional.ammo_not_suitable = "這種彈藥不適配你的槍支."
 traditional.scp294_feeling_really_bad = "喝完這個之後,我感到很難受 "
@@ -1282,9 +1285,9 @@ traditional.scp109_defend_1903_1 = "目標抵禦了你的攻擊!"
 traditional.nothing_in_grubox = "箱子內空無一物"
 traditional.have_grubox_item = "你已經擁有箱內的物品"
 traditional.anderson_drone_found_hint = "我感覺我應該去尋找什麼"
---底部訊息-通用
+--底部消息-通用
 traditional.no_permission = "沒有權限"
---新東西 by someone
+--新东西 by someone
 traditional.missionbriefing = "介紹:"
 traditional.uiutask_title = "任務選擇"
 traditional.uiutask_secret = "秘密戰爭"
@@ -1301,7 +1304,7 @@ traditional.scp127_1likeu = "SCP127-1認可了你"
 traditional.scp127_1hateu = "SCP127-1覺得你很噁心"
 traditional.general_choose_title = "請選擇"
 traditional.d_shotgun_broken = "這把槍壞掉了"
---GOC特工的選項
+--GOC特工的选项
 traditional.goc_light_armor = "便攜輕型護甲"
 traditional.goc_light_armor_desc = "便攜版本的輕型GOC危險作\n戰護甲\n能夠使裝備者擁有更快的\n奔跑速度\n但該護甲防護性能要低於\n所有GOC危險作戰護甲\n------\n使用R3K突擊步槍"
 traditional.goc_standard_armor = "便攜標準護甲"
@@ -1311,11 +1314,11 @@ traditional.goc_heavy_armor_desc = "便攜版本的戰鬥GOC危險作\n戰護甲
 --是否相信079
 traditional.trustscp079 = "相信SCP-079"
 traditional.distrustscp079 = "不相信SCP-079"
---SCP-062DE選槍介紹
+--SCP-062DE选枪介绍
 traditional.scp062de_mp40_desc = "MP40擁有較快的射速，能夠在短時間內擊殺大量敵人，但沒有傷害補償"
 traditional.scp062de_k98k_desc = "Kar98K有著極其恐怖傷害，幾乎無人能夠在被擊中後生還"
 traditional.scp062de_g43_desc = "G43是一把半自動步槍，有著不錯的傷害補償，但後座力較大"
---角色介紹 --FZ翻譯
+--角色介绍 --FZ翻译
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.traditional = BREACH.Descriptions.traditional or {}
 BREACH.Descriptions.traditional[role.SCI_SpyUSA] = "你是特異事故處 - 間諜\n\n你的目標:駭入辦公區的某台電腦\n\n獲取部分重要資訊並呼叫支援\n\n設施主管隨身攜帶的密令可能對你有説明\n\n並且你的資料已經上傳進資料庫,沒有人會知道你的真實身份\n\n但根據情報顯示某人有一份對你不利的情報"
@@ -1342,7 +1345,7 @@ BREACH.Descriptions.traditional[SCP610Infected] = "你是SCP-610 感染者\n\n�
 BREACH.Descriptions.traditional[SCP610Bloodiness] = "你是SCP-610 血污\n\n嘗試感染你遇到的每一個生物"
 --SCP999
 BREACH.Descriptions.traditional[SCP999Real] = "你是SCP-999[癢癢怪]\n\n你是SCP-999，你是一個非常友好的異常實體\n\n你對待任何人都很友善"
---娛樂SCP
+--娱乐SCP
 BREACH.Descriptions.traditional[role.Chaos_Grunt] = "你是混沌分裂者 - 士兵\n\n俘虜D級人員\n\n遵循你指揮官的命令完成目標!"
 BREACH.Descriptions.traditional[role.Chaos_Demo] = "你是混沌分裂者 - 惡魔\n\n你有RPG火箭發射器和兩發彈藥,用它摧毀直升機和一切你遇到的敵人\n\n遵循你指揮官的命令並完成目標!"
 BREACH.Descriptions.traditional[role.Chaos_Claymore] = "你是混沌分裂者 - 獵人\n\n你能放置三枚闊劍地雷\n\n遵循你指揮官的命令並完成目標!"
@@ -1453,7 +1456,7 @@ BREACH.Descriptions.traditional[role.ClassD_Fast] = "你是D級人員 - 運動�
 BREACH.Descriptions.traditional[role.ClassD_Killer] = "你是D級人員 - 殺手\n\n你靠著多日的收集,製作出了幾把不怎麼耐用但致命的小刀\n\n你認為自己無法有效地使用這麼多把刀,因此分給了一些有殺人經驗的D級人員\n\n與其他D級人員合作,逃離設施"
 BREACH.Descriptions.traditional[role.ClassD_Hitman] = "你是D級人員 - 職業殺手\n\n你以前是職業殺手,看起來你沒有失去你的舊習慣..\n\n與其他D級人員合作,逃離設施"
 BREACH.Descriptions.traditional[role.ClassD_Soldier] = "你是D級人員 - 老兵\n\n你曾是一名久經沙場的特種部隊士兵\n但是因為被指控犯下了\"反人類\"的罪行而被判無期徒刑\n而事情的真相只有你知道...\n\n你並未忘記戰場上磨礪出來的技能,好好利用這種能力逃離設施"
---戰術應對一部
+--战术应对一部
 BREACH.Descriptions.traditional[role.MTF_Guard] = "你是機動特遣隊 - 士兵\n\n執行指揮官的命令,完成任務"
 BREACH.Descriptions.traditional[role.MTF_Medic] = "你是機動特遣隊 - 醫療兵\n\n執行指揮官的命令,完成任務"
 BREACH.Descriptions.traditional[role.MTF_Medic_Rebirth] = "你是機動特遣隊 - 醫療生態專家\n\n你獲得了額外的醫療技能\n\n執行指揮官的命令,完成任務"
@@ -1468,7 +1471,7 @@ BREACH.Descriptions.traditional[role.MTF_Security] = "你是內部安全代理\n
 BREACH.Descriptions.traditional[role.O4Commander] = "你是O4指揮官\n\n通過監控支援隊友並在適當的時候召喚對應支援\n\n幫助設施"
 BREACH.Descriptions.traditional[role.o4_dispatcher] = "你是O4指令部下屬調度員\n你是O4指令部下屬的一名普通調度員，作為一名文官你並不擅長戰鬥\n因此你的任務是透過監控支援隊友並在適當的時候召喚對應支援\n但因為你的權限有限，你只能呼叫一些特殊的機動特遣隊"
 BREACH.Descriptions.traditional[role.MTF_Jag] = "你是機動特遣隊 - 重裝士兵\n\nM249輕機槍與重型防彈衣讓你成為了設施內最強的戰士\n\n執行指揮官的命令,完成任務"
---戰術應對二部
+--战术应对二部
 BREACH.Descriptions.traditional[role.MTF_SEC_Guard] = "你是戰術應對二部 - 士兵\n\n執行指揮官的命令,完成任務"
 BREACH.Descriptions.traditional[role.MTF_SEC_Medic] = "你是戰術應對二部 - 醫療兵\n\n執行指揮官的命令,完成任務"
 BREACH.Descriptions.traditional[role.MTF_SEC_Engi] = "你是戰術應對二部 - 工程師\n\n執行指揮官的命令,完成任務"
@@ -1478,36 +1481,36 @@ BREACH.Descriptions.traditional[role.MTF_SEC_Machine] = "你是戰術應對二�
 BREACH.Descriptions.traditional[role.omega1_assistant] = "你是律法左手調查小組 - 助手\n\n聽從執法官的指揮完成任務"
 BREACH.Descriptions.traditional[role.omega1_officer] = "你是律法左手調查小組 - 抓捕手\n\n聽從執法官的指揮完成任務"
 BREACH.Descriptions.traditional[role.omega1_captain] = "你是律法左手調查小組 - 執法官\n\n指揮你的隊員完成任務"
---專家組
+--专家组
 BREACH.Descriptions.traditional[role.MEG_Chem] = "你是MEG - 生化專家\n\n作為Beta-7的退役老兵,你在對付具有化學危害的SCP時更加靈活自如\n\n而你身穿的戰鬥型防化服能夠讓你在完美防護大部分危險SCP的同時\n\n又有與其他敵對目標抗衡的實力\n\n執行指揮官的命令,完成任務"
 BREACH.Descriptions.traditional[role.MEG_NTFExpert] = "你是MEG - 九尾狐收容專家\n\n你被指派到該設施內訓練武裝人員應對SCP的措施並選拔部分人加入到NTF的預備隊伍之中\n\n你所持有的\"妖狐之舞\"是設施獨一無二的特殊武器\n\n它能夠對SCP造成不小的傷害,但可惜的是你只攜帶了三個彈匣..."
 BREACH.Descriptions.traditional[role.MEG_NU7Instructor] = "你是MEG - 落錘特戰教官\n\n你是被該設施內的O4指揮官直接指派的特戰教官\n\n作為現役落錘特種部隊的你,被O4指揮官要求訓練設施內的武裝人員\n\n提高設施武裝人員應對外部勢力入侵的能力"
 BREACH.Descriptions.traditional[role.MEG_BETA1Security] = "你是MEG - 灼燒器安全專員\n\n你被O4指令部指派到該設施清理所有潛伏的間諜和特工\n\n你的特殊面板能夠統計設施內的某些敵對人員"
 BREACH.Descriptions.traditional[role.MEG_OMEGA1Officer] = "你是MEG - 律法左手調查員\n\n倫理道德委員會指派你到該設施\n\n監督設施內是否違反道德條例\n\n同時他們也讓你在暗處調查某些骯髒的秘密...\n\n前往重收容蒐集資訊"
---SKP 異界探索C組
+--SKP 异界探索C组
 BREACH.Descriptions.traditional[role.SKP_Soldier] = "你是SKP 異界探索C組 - 士兵\n你是帝國忠誠的士兵\n完成帝國所給予你的任務!"
 BREACH.Descriptions.traditional[role.SKP_Commander] = "你是SKP 異界探索C組 - 指揮官\n你的單兵能量護盾能夠抵擋部分傷害\n指揮隊員,完成任務"
 BREACH.Descriptions.traditional[role.SKP_Warriors] = "你是SKP 異界探索C組 - 狂戰士\n作為\"帝國超級戰士\"計劃萬千人員中的一個\n你的身體機能要強於一般的人類"
 BREACH.Descriptions.traditional[role.SKP_Agent] = "你是SKP 異界探索C組 - 特工\n你是團隊中精銳，你的仿生機械義肢讓你擁有更快的奔跑速度以及其他能力\n聽從指揮官的命令,完成任務"
---安德森機器人
+--安德森机器人
 BREACH.Descriptions.traditional[role.AR_Employee] = "你是安德森機器人 - 員工\n在SCP基金會針對公司的突襲中被逮捕\n得益於公司對你的改造，記憶刪除並沒有對你產生嚴重效果\n設施內的科研人員中可能存在一名沉睡的間諜機器人，利用你的技能找到他\n利用你的知識，抓住機會逃出設施"
 BREACH.Descriptions.traditional[role.AR_Sleeper_Robot] = "你是安德森機器人 - 臥底機器人\n你是公司安插在基金會設施內的高階臥底機器人\n現在你已經被喚醒了，這意味著公司需要你去完成某些任務\n最新指示：啟用被基金會收繳的戰鬥機器人"
 --特殊角色
 BREACH.Descriptions.traditional[role.sus_scientist] = "你是???科研\n\n前往重收容新區域蒐集證據找到真相\n\n嘗試洗清自身的嫌疑或者...."
---事件專屬角色
+--事件专属角色
 BREACH.Descriptions.traditional[role.UIU_Special_Officer] = "你是UIU - 聯絡專員\n\n協助基金會遏制收容失效,並在必要時在廣播室呼叫支援"
 BREACH.Descriptions.traditional[role.chaos_agent] = "你是混沌分裂者 - 特工\n\n你擁有一張一次性的特殊鑰匙卡你可以用它打開地下武器庫的門"
 BREACH.Descriptions.traditional[role.ClsssD_stronug] = "你是強壯? D級人員\n\n你是最強壯的D級人員!\n\n應該是的吧?"
 BREACH.Descriptions.traditional[role.caishen] = "你是財神爺\n\n至此佳節，為他人帶去好運吧！"
 BREACH.Descriptions.traditional[role.UNGOC_Evaluator] = "你是GOC-實地評估特工\n根據上級指示，你被指派到該設施評估危險情況\n評估裝置被放在了辦公區的某個位置\n你需要評估設施內的情況,並根據評估結果,呼叫相應的支援"
---事件專屬支援
---UIU收容小組
+--事件专属支援
+--UIU收容小组
 BREACH.Descriptions.traditional[role.UIU_Control_Grunt] = "你是UIU收容小組 - 組員\n\n聽從組長的指揮幫助基金會收容SCP,穩定設施內的情況"
 BREACH.Descriptions.traditional[role.UIU_Control_MachineGunner] = "你是UIU收容小組 - 機槍手\n\n你擁有強大的火力\n\n聽從組長的指揮幫助基金會收容SCP,穩定設施內的情況"
 BREACH.Descriptions.traditional[role.UIU_Control_Specialist] = "你是UIU收容小組 - 收容專家\n\n你曾在NTF的訓練基地中進行過為期[資料刪除]的訓練,因此你擁有一定的應對SCP的經驗\n\n聽從組長的指揮幫助基金會收容SCP,穩定設施內的情況"
 BREACH.Descriptions.traditional[role.UIU_Control_Darkside] = "你是UIU收容小組 - 暗面\n\n你是UIU收容小組最強大的戰士\n\n你的特製匕首\"CK-101\"在你釋放你的能力之後能夠對SCP造成不俗的傷害\n\n而且在你能力期間你能夠免疫一次傷害大於你的最大生命且小於500點的傷害"
 BREACH.Descriptions.traditional[role.UIU_Control_Commander] = "你是UIU收容小組 - 組長\n\n領導你的組員幫助基金會收容SCP穩定設施內的情況\n\n你攜帶了閹割版的智慧操作平臺,其只能夠偵測設施內SCP的狀態"
---NU-7落錘 維修小組
+--NU-7落锤 维修小组
 BREACH.Descriptions.traditional[role.NU7_SF_Soldier] = "你是NU-7落錘特戰營B連維修3組 - 組員\n聽從組長的指揮修復所有發電機開啟重型現實穩定錨"
 BREACH.Descriptions.traditional[role.NU7_SF_Captain] = "你是NU-7落錘特戰營B連維修3組 - 組長\n你修復發電機速度比其他人更快\n指揮你的組員修復所有發電機開啟重型現實穩定錨"
 BREACH.Descriptions.traditional[role.NU7_SF_Specialist] = "你是NU-7落錘特戰營B連維修3組 - 維修專家\n你擁有一個便攜炮塔並且你能夠在較短時間內修復發電機\n聽從組長的指揮修復所有發電機開啟重型現實穩定錨"
@@ -1518,20 +1521,20 @@ BREACH.Descriptions.traditional[role.UNGOC_Detector] = "你是UNGOC - 探測專�
 BREACH.Descriptions.traditional[role.UNGOC_Specialist] = "你是UNGOC - 收容專家\n你能裝備的特殊力場發生器能夠抑制SCP的大部分攻擊手段\n聽從指揮官的命令完成任務"
 BREACH.Descriptions.traditional[role.UNGOC_Support] = "你是UNGOC - 支援兵\n你是HEOF部隊中火力最強大的作戰人員，好好利用這一優勢\n聽從指揮官的命令完成任務"
 BREACH.Descriptions.traditional[role.UNGOC_Commander] = "你是UNGOC - 指揮官\n你能夠為周圍的GOC單位提供一定的加成\n指揮你的隊員完成任務"
---生涯專屬任務
+--生涯专属任务
 BREACH.Descriptions.traditional[role.ClassD_Mio] = "你是Mio\n你因在多次向技術提出睿智問題且數次朝令夕改\n現在被O5議會降級為D級人員\n你可以通過某些手段進化成奶龍MIO\n與其他D級合作逃離設施"
 BREACH.Descriptions.traditional[role.ClassD_Mio_NaiLong] = "你是奶龍MIO\n\n你是MIO的進化體"
 --MIO之神教派
 BREACH.Descriptions.traditional[role.mio_grunt] = "你是MIO之神教派 - 教徒\n聽從主教的指揮讓MIO重臨世間"
 BREACH.Descriptions.traditional[role.mio_psycho] = "你是MIO之神教派 - 糖人\n聽從主教的指揮讓MIO重臨世間"
 BREACH.Descriptions.traditional[role.mio_commander] = "你是MIO之神教派 - 主教\n指揮你的隊員釋放MIO之神！！"
---二戰模式
+--二战模式
 BREACH.Descriptions.traditional[role.usa_soldier] = "你是美軍 - 士兵\n幹掉所有德國鬼子!"
 BREACH.Descriptions.traditional[role.usa_commander] = "你是美軍 - 指揮官\n領導你的士兵幹掉所有反人類畜生!"
 BREACH.Descriptions.traditional[role.nazi_soldier] = "你是納粹德國 - 士兵\n幹掉所有美國混蛋!"
 BREACH.Descriptions.traditional[role.nazi_commander] = "你是納粹德國 - 士兵\n領導你的士兵為元首攻城掠地!"
 --SCP5K角色
---GRUCI 突襲部隊
+--GRUCI 突袭部队
 BREACH.Descriptions.traditional[role.gru_ci_soldider] = "你是GRU-CI \"突襲部隊\" 士兵\n聽從指揮官的指揮,找出事件的真相"
 BREACH.Descriptions.traditional[role.gru_ci_medic] = "你是GRU-CI \"突襲部隊\" 醫療兵\n聽從指揮官的指揮,找出事件的真相"
 BREACH.Descriptions.traditional[role.gru_ci_marksman] = "你是GRU-CI \"突襲部隊\" 精確射手\n聽從指揮官的指揮,找出事件的真相"
@@ -1539,22 +1542,22 @@ BREACH.Descriptions.traditional[role.gru_ci_adjutant] = "你是GRU-CI \"突襲�
 BREACH.Descriptions.traditional[role.gru_ci_commander] = "你是GRU-CI \"突襲部隊\" 指揮官\n帶領你的隊員找出事件的真相\n最後的機會..."
 BREACH.Descriptions.traditional[role.gru_ci_hacker] = "你是GRU-CI \"突襲部隊\" 駭客\n你比別人擁有更快駭入速度\n聽從指揮官的指揮,找出事件的真相"
 BREACH.Descriptions.traditional[role.gru_ci_machine] = "你是GRU-CI \"突襲部隊\" 機槍手\n你擁有強大的火力,好好利用這一點\n聽從指揮官的指揮,找出事件的真相"
---GRUCI 支援部隊
+--GRUCI 支援部队
 BREACH.Descriptions.traditional[role.gru_ci_supp_soldier] = "你是GRU-CI \"償還者\" 士兵\n聽從指揮官的指揮,幫助突襲部隊找到真相"
 BREACH.Descriptions.traditional[role.gru_ci_supp_speciailist] = "你是GRU-CI \"償還者\" 戰鬥專家\n聽從指揮官的指揮,幫助突襲部隊找到真相"
 BREACH.Descriptions.traditional[role.gru_ci_supp_marksman] = "你是GRU-CI \"償還者\" 精確射手\n聽從指揮官的指揮,幫助突襲部隊找到真相"
 BREACH.Descriptions.traditional[role.gru_ci_supp_com] = "你是GRU-CI \"償還者\" 指揮官\n你擁有仿製的舊式電磁炮,合理使用它\n帶領你的隊員,幫助突襲部隊找到真相"
 BREACH.Descriptions.traditional[role.gru_ci_supp_jugg] = "你是GRU-CI \"償還者\" 重裝\n你擁有一發RPG,合理使用它\n聽從指揮官的指揮,幫助突襲部隊找到真相"
---GRUCI 救援小隊
+--GRUCI 救援小队
 BREACH.Descriptions.traditional[role.gru_ci_resc_grunt] = "你是GRU-CI 救援小隊 隊員\n救援直升機很快抵達,聽從隊長的指揮\n奪取停機坪,接應己方人員"
 BREACH.Descriptions.traditional[role.gru_ci_resc_marksman] = "你是GRU-CI 救援小隊 精確射手\n救援直升機很快抵達,聽從隊長的指揮\n奪取停機坪,接應己方人員"
 BREACH.Descriptions.traditional[role.gru_ci_resc_captain] = "你是GRU-CI 救援小隊 隊長\n救援直升機很快抵達,指揮你的隊員\n奪取停機坪,接應己方人員"
---九尾狐反叛小隊
+--九尾狐反叛小队
 BREACH.Descriptions.traditional[role.NTF_Revolt_Grunt] = "你是九尾狐 反叛小隊 隊員\n聽從指揮官的指揮收容SCP,幫助GRU-CI完成任務"
 BREACH.Descriptions.traditional[role.NTF_Revolt_Spec] = "你是九尾狐 反叛小隊 收容專家\n你的可擕式穩定錨能夠穩定一定範圍的現實\n好好地使用它收容異常!\n聽從指揮官的指揮收容SCP,幫助GRU-CI完成任務"
 BREACH.Descriptions.traditional[role.NTF_Revolt_Expert] = "你是九尾狐 反叛小隊 戰鬥專家\n你是小隊中與其他敵對目標作戰的專家\n你所攜帶C-7傷害彈藥能對目標造成有效殺傷\n聽從指揮官的指揮收容SCP,幫助GRU-CI完成任務"
 BREACH.Descriptions.traditional[role.NTF_Revolt_com] = "你是九尾狐 反叛小隊 指揮官\n你是小隊的指揮官,你所攜帶了能夠有效捕獲SCP的裝備\n指揮你的隊員收容SCP,幫助GRU-CI完成任務"
---GOC 奇術打擊二組
+--GOC 奇术打击二组
 BREACH.Descriptions.traditional[role.GocMagic_guard] = "你是GOC \"奇術打擊二組\" 護衛\n你的奇術能力能為周圍的己方提供不小幫助\n聽從指揮官的指揮,完成奇術的部署消滅SCP-610"
 BREACH.Descriptions.traditional[role.GocMagic_com] = "你是GOC \"奇術打擊二組\" 指揮官\n你攜帶的特殊武器能對異常造成巨大傷害\n但是小心使用,你所攜帶彈藥量不多\n帶領你的小隊完成奇術的部署消滅SCP-610"
 BREACH.Descriptions.traditional[role.GocMagic_speicalist] = "你是GOC \"奇術打擊二組\" 專家\n你擁有讓一定範圍內時間停止的特殊能力\n好好利用這點為隊伍創造奇跡\n聽從指揮官的指揮,完成奇術的部署消滅SCP-610"
@@ -1578,7 +1581,7 @@ BREACH.Descriptions.traditional[role.nu22_grunt] = "你是NU-22 \"火箭俠\" �
 BREACH.Descriptions.traditional[role.nu22_medic] = "你是NU-22 \"火箭俠\" 醫療兵\n聽從指揮官的指揮,殺光所有\"受感染\"的人"
 BREACH.Descriptions.traditional[role.nu22_commander] = "你是NU-22 \"火箭俠\" 指揮官\n帶領你的小隊成員協助SCP-1440讓災厄降臨"
 BREACH.Descriptions.traditional[role.nu22_scp1440] = "你是SCP-1440\n你的目標是在該設施待滿3分鐘,隨後災厄就會降臨"
---蛇之手折躍小隊
+--蛇之手折跃小队
 BREACH.Descriptions.traditional[role.sh_tele_grunt] = "你是蛇之手 \"折躍小隊\" 士兵\n聽從指揮官的指揮,放逐SCP-1440!"
 BREACH.Descriptions.traditional[role.sh_tele_commander] = "你是蛇之手 \"折躍小隊\" 指揮官\n你能隱匿於世界之中,並在適當時候給予敵人致命一擊\n指揮你的隊員,放逐SCP-1440!"
 BREACH.Descriptions.traditional[role.sh_tele_witch] = "你是蛇之手 \"折躍小隊\" 巫醫\n你的奇術能夠奪取周圍敵對目標的生命力,並強化周圍的己方人員\n聽從指揮官的指揮,放逐SCP-1440!"
@@ -1651,7 +1654,7 @@ traditional.evac_start_leave_immediately = "注意,設施緊急疏散已經開�
 traditional.medkit_heal_ended = "治療完成,你的健康狀況已恢復."
 traditional.demo_stop = "Demo recording has been stopped to perform full game update"
 traditional.cantequipmtfuniform = "你無法穿上這套制服"
---經驗資料/統計資料
+--经验数据/统计数据
 traditional.apc_destroyed = "APC被摧毀"
 traditional.sgoc_first_objective_completed = "第一個目標完成"
 traditional.activated_warhead = "啟動阿爾法彈頭"
@@ -1714,13 +1717,13 @@ traditional.reboot_ar_robot = "重新啟動機器人"
 traditional.destroyed_ar_rescue_heli = "摧毀AR救援直升機"
 traditional.rescued_ar_falcon = "回收公司機器人"
 traditional.rescued_ar_employee = "救援公司員工"
---kongshu_勝利經驗
+--kongshu_胜利经验
 traditional.ci_vdv_winner = "CI空輸佔領了Site19"
 traditional.nu7_squad_winner = "落錘特戰分隊保衛住了Site19"
---BattleSite結局
+--BattleSite结局
 traditional.roundend_nu7ab = "聯合部隊消滅了軍團"
 traditional.roundend_scarlet = "軍團成功召喚深紅之王"
---5K 獎勵
+--5K 奖励
 traditional.gruci_winner1 = "成功封鎖地下設施"
 traditional.foundation5k_winner = "基金會勝利"
 traditional.foundation5k_winner_2 = "反封鎖成功"
@@ -1737,7 +1740,7 @@ traditional.sts_mission_complete = "成功引爆核彈"
 traditional.gruci_device_cant = "裝置被核彈系統干擾,快去關閉核彈!"
 traditional.sh_tele_bonus = "放逐死神"
 traditional.scp610_win_reward = "憎恨的血肉"
---5K 顯示在螢幕上的東西
+--5K 显示在屏幕上的东西
 traditional.facility_lockdown_onsurface = "你被困在了地表"
 traditional.normal_escape_5k = "你乘坐飛機離開了Site-19"
 traditional.successfully_transfer_079 = "我們尚未失敗,真相近在咫尺"
@@ -1748,7 +1751,7 @@ traditional.gruci_totally_lose = "我們失敗了...徹底的"
 traditional.scp5k_escape_normal = "外面只剩下白茫茫的一片"
 traditional.scp5k_escape_tunnel = "隧道盡頭傳來數個雕像的摩擦聲"
 traditional.scp5k_escape_hand = "道路漸漸被黑暗吞噬"
---5K 結局
+--5K 结局
 traditional.roundend_5k_gruci = "另一種可能"
 traditional.roundend_5k_truth = "戰鬥仍將繼續"
 traditional.roundend_5k_gocm = "風與雪,見證我們的史詩"
@@ -1758,7 +1761,7 @@ traditional.roundend_5k_sts = "核輻射下的秘密"
 traditional.roundend_5k_foundation = "一切按照計畫進行"
 traditional.roundend_5k_lockdownfail = "設施封鎖失敗"
 traditional.roundend_5k_sh_win = "希望的黎明"
---結束回合顯示的東西
+--结束回合显示的东西
 traditional.ending_tp_to_unknown_loc = "傳送到未知位置."
 traditional.ending_evac_apc = "在APC撤離."
 traditional.ending_ci_evac_apc_pt1 = "被APC俘虜和救援"
@@ -1791,14 +1794,15 @@ traditional.ending_backtothe_jail = "你被基金會重新送進了牢房"
 traditional.ending_escape_failure = "你未能及時逃離"
 traditional.ending_in_ruin = "你被廢墟掩埋..."
 traditional.ending_by_heli = "乘坐直升機逃離設施"
---空輸逃離
+-- traditional.ending_still_in_supportarea = "摸鱼？挂机？"
+--空输逃离
 traditional.ending_kongshu_1 = "你被傳送到了一片未知空間(朋友~ 要不要讀書)"
 traditional.ending_kongshu_2 = "不知怎麼的,106的空間突然多出了一個人"
 traditional.ending_kongshu_3 = "你很幸運,傳送出了site19,但是你的位置嘛...."
 traditional.ending_kongshu_4 = "你被傳送到了[資料刪除]光年外的一個星球上"
 traditional.ending_kongshu_5 = "你的周圍的牆上全是泛黃的牆紙以及不知道從何處不停傳來的嗡嗡聲"
 traditional.ending_kongshu_6 = "一名西裝男子對你很感興趣,並\"僱用\"了你"
---蛇之手隨機傳送門
+--蛇之手随机传送门
 traditional.ending_random_bonus = "進入傳送門獎勵"
 traditional.ending_random_1 = "你被傳送到了site-[資料刪除]"
 traditional.ending_random_2 = "你正在下落,狂風撕碎你的身體"
@@ -1814,12 +1818,12 @@ traditional.ending_random_scp4 = "你被傳進了圖書館,蛇之手正在思考
 traditional.ending_random_scp5 = "你出現在了一片未知區域,這裡只有死一樣的寂靜"
 traditional.ending_random_scp6 = "GOC的正在測試新的能量武器,而你剛好在武器的射程內"
 traditional.ending_ar_rescue_heli = "乘坐AR救援直升機逃離設施"
---事件特殊結局和獎勵
+--事件特殊结局和奖励
 traditional.ending_bad_warhead = "你很幸運核彈頭沒有爆炸"
 traditional.ending_bad_warhead_bonus = "核彈幸運星"
---躲過死神
+--躲过死神
 traditional.hind_thedeath_bonus = "躲過死神"
---新的經驗獎勵
+--新的经验奖励
 traditional.uiuspy_hackedtab = "黑掉人員面板"
 traditional.battlesiteWinBonus = "BattleSite19勝利獎勵"
 --VOICE/TEXT CHAT
@@ -2284,10 +2288,10 @@ traditional.abilities_ottospeedup_desc = "周圍的己方獲得一個15秒\n的3
 --BattleSite19
 traditional.abilities_battlesite_cult_commander = "深紅賜福"
 traditional.abilities_battlesite_cult_commander_desc = "給予周圍深紅軍團成員增\n益BUFF"
---節日技能
+--节日技能
 traditional.abilities_caishen = "財源滾滾"
 traditional.abilities_caishen_desc = "給予他人財富"
---升級系統文字
+--升级系统文本
 traditional.upgrade_current_points = "當前技能點數: "
 traditional.upgrade_required = "前置升級:"
 traditional.upgrade_required_l = "任一前置升級:"
@@ -2295,45 +2299,71 @@ traditional.upgrade_blocked = "相斥升級:"
 traditional.upgrade_points_needed = "耗費點數: "
 traditional.upgrade_done = "已升級"
 traditional.upgrade_point_got = "獲得升級點數: "
+-- traditional.upgrade_tree_title = "升级树"
+-- traditional.upgrade_unlocked = "已解锁"
+-- traditional.upgrade_buy = "购买"
+-- traditional.upgrade_blocked_reason = "被互斥"
+-- traditional.upgrade_locked_reason = "需要前置"
+-- traditional.upgrade_select_hint = "点击节点查看详情"
 --SCP能力
 --049
+---------------------------------scp049升级---------------------------------
 traditional.scp049curing = "醫者仁心"
 traditional.scp049curing_desc = "強化所有SCP-049-2實體"
-traditional.scp049healing = "治癒藥劑"
-traditional.scp049healing_desc = "拿出一支能夠恢復生命的\n藥劑"
+-- traditional.scp049syringe_bag = "药剂包"
+-- traditional.scp049syringe_bag_desc = "打开药剂包"
+-- traditional.scp049hand = "空手"
+-- traditional.scp049hand_desc = "SCP-049自己的手"
+-- traditional.scp049heal = "治愈药剂"
+-- traditional.scp049heal_desc = "注射后获得获得生命恢复的效果"
 traditional.scp049speed = "速度藥劑"
 traditional.scp049speed_desc = "使用後能夠獲得一段速度\n增益"
-traditional.scp049posion = "特殊藥劑"
-traditional.scp049posion_desc = "對非SCP玩家使用有機率\n會讓他們變成強化版\nSCP049-2\n同時這個藥劑也可以強化\n其他SCP049-2個體"
+-- traditional.scp049shield = "护盾药剂"
+-- traditional.scp049shield_desc = "注射后获得一个子弹护盾效果"
+-- traditional.scp049poison = "?药剂"
+-- traditional.scp049poison_desc = "注射后会发生什么呢？"
 traditional.scp049book = "醫生手記"
 traditional.scp049book_desc = "SCP049用於記錄他研究\n\"瘟疫\"所獲得的一些成果"
----------------------------------scp049升級---------------------------------
-traditional.scp049_researcher1 = "研究者一"
-traditional.scp049_researcher1_desc = "研究屍體獲得升級點的機率提升10%"
-traditional.scp049_researcher2 = "研究者二"
-traditional.scp049_researcher2_desc = "研究屍體獲得升級點的機率提升20%"
-traditional.scp049_researcher3 = "研究者三"
-traditional.scp049_researcher3_desc = "研究屍體獲得升級點的機率提升30%"
-traditional.scp049_zombie1 = "醫術強化一"
-traditional.scp049_zombie1_desc = "加強復活的SCP-049-2個體的血量"
-traditional.scp049_zombie2 = "醫術強化二"
-traditional.scp049_zombie2_desc = "進一步加強復活的SCP-049-2個體的血\n量"
-traditional.scp049_zombie3 = "醫術強化三"
-traditional.scp049_zombie3_desc = "大幅度加強復活的SCP-049-2個體的血\n量"
-traditional.scp049_stronger = "硬化軀體"
-traditional.scp049_stronger_desc = "新復活的SCP-049-2個體將擁有更強大\n的子彈抗性"
-traditional.scp049_faster = "極速"
-traditional.scp049_faster_desc = "新復活的SCP-049-2個體將擁有更快的\n移動速度"
-traditional.scp049_pharmacist1 = "藥劑師一"
-traditional.scp049_pharmacist1_desc = "研究屍體時有小機率獲得治療和加速\n藥劑"
-traditional.scp049_pharmacist2 = "藥劑師二"
-traditional.scp049_pharmacist2_desc = "研究屍體時有中等機率獲得治療和加速\n藥劑，並有小機率獲得特殊藥劑"
-traditional.scp049_pharmacist3 = "藥劑師三"
-traditional.scp049_pharmacist3_desc = "研究屍體時有高機率獲得治療和加速\n藥劑，並有中等機率獲得特殊藥劑"
-traditional.scp049_combatmedic = "戰地醫生"
-traditional.scp049_combatmedic_desc = "獲得更多的子彈抗性,並加強R技\n能"
-traditional.scp049_gooddocotr = "良醫"
-traditional.scp049_gooddocotr_desc = "血量提升30%,提高針劑的儲備上\n限"
+--升级
+--药剂升级
+-- traditional.scp049_syringe1 = "药剂提取"
+-- traditional.scp049_syringe1_desc = "研究尸体有80%几率获得升级点，60%几率随机获得一种药剂"
+-- traditional.scp049_syringe2 = "药剂师"
+-- traditional.scp049_syringe2_desc = "药剂存储上限增加2格，研究尸体时有75%几率随机获得一种药剂；所有药剂将会对SCP-049-2产生特殊效果，每种药剂特殊效果对同一SCP-049-2个体最多叠加三层"
+-- traditional.scp049_syringe3 = "老练药剂师"
+-- traditional.scp049_syringe3_desc = "研究尸体时有90%几率随机获得一种药剂，药剂强化层数增加1层"
+--精英线
+-- traditional.scp049_skillful = "精益求精"
+-- traditional.scp049_skillful_desc = "SCP-049-2生命提升至自身角色的1.85倍，并获得25%的基础子弹抗性"
+-- traditional.scp049_cured1 = "我已治愈I"
+-- traditional.scp049_cured1_desc = "SCP-049-2获得40%的基础子弹抗性和10点额外攻击伤害，5%的奔跑速度加成"
+-- traditional.scp049_cured2 = "我已治愈II"
+-- traditional.scp049_cured2_desc = "SCP-049-2生命提升至自身角色的2.15倍，并获得8%的奔跑速度加成"
+-- traditional.scp049_cured3 = "我已治愈III"
+-- traditional.scp049_cured3_desc = "SCP-049-2生命提升至自身角色的2.85倍，并获得20点额外攻击伤害"
+--尸群线
+-- traditional.scp049_zombies = "妙手回春"
+-- traditional.scp049_zombies_desc = "复活尸体时间减少1秒，并允许复活非你击杀的尸体（死亡时间不能太长），但丧失研究尸体的能力。50%几率从复活尸体上获得升级点和30%几率获得随机一种药剂"
+-- traditional.scp049_unity1 = "医患团结I"
+-- traditional.scp049_unity1_desc = "增加一次复活尸体次数；在你周围的SCP-049-2每3秒恢复1点生命"
+-- traditional.scp049_unity2 = "医患团结II"
+-- traditional.scp049_unity2_desc = "增加一次复活尸体次数；在你周围的SCP-049-2每2秒恢复1点生命"
+-- traditional.scp049_unity3 = "医患团结III"
+-- traditional.scp049_unity3_desc = "增加一次复活尸体次数；在你周围的SCP-049-2每1秒恢复2点生命"
+--技能辅助线
+-- traditional.scp049_order1 = "医生指令I"
+-- traditional.scp049_order1_desc = "R技能百分百恢复SCP-049-2的生命值，并提供35秒的2级子弹抗性效果"
+-- traditional.scp049_order2 = "医生指令II"
+-- traditional.scp049_order2_desc = "子弹抗性效果提升至4级，增加35秒的2级速度效果"
+-- traditional.scp049_order3 = "医生指令III"
+-- traditional.scp049_order3_desc = "子弹抗性效果提升至6级，增加35秒4级增伤效果"
+--额外升级
+-- traditional.scp049_strongbody = "强健体魄"
+-- traditional.scp049_strongbody_desc = "最大生命值提升至3200"
+-- traditional.scp049_hurry = "急切问诊"
+-- traditional.scp049_hurry_desc = "移动速度提升至160"
+-- traditional.scp049_quick = "快速手术"
+-- traditional.scp049_quick_desc = "复活尸体时间减少2秒"
 -----------------------------------------------------------------------------
 --912
 traditional.scp912smoke = "煙霧彈"
@@ -2348,6 +2378,10 @@ traditional.scp638scream_desc = "在一個中近距離對目標進\n行尖叫"
 traditional.scp638fearscream = "恐懼尖叫"
 traditional.scp638fearscream_desc = "對近距離的目標進行尖叫"
 --062fr
+---------------------------------scp062fr升级---------------------------------
+--技能
+-- traditional.scp062frevolution = "进化"
+-- traditional.scp062frevolution_desc = "打开进化升级面板"
 traditional.scp062frconsume = "敲骨吸髓"
 traditional.scp062frconsume_desc = "從死去的屍體汲取養分\n幫助自己進化"
 traditional.scp062frrage = "捕食者的怒火"
@@ -2358,6 +2392,21 @@ traditional.scp062frtracking = "狩獵本能"
 traditional.scp062frtracking_desc = "能夠透視到周圍一定範圍\n的目標"
 traditional.scp062frjumping = "死亡飛撲"
 traditional.scp062frjumping_desc = "跳起來飛撲向最近的目標"
+--升级
+-- traditional.scp062fr_ability1 = "技能解锁1"
+-- traditional.scp062fr_ability1_desc = "解锁技能\"捕食者的怒火\""
+-- traditional.scp062fr_ability2 = "技能解锁2"
+-- traditional.scp062fr_ability2_desc = "解锁技能\"狩猎本能\""
+-- traditional.scp062fr_ability3 = "技能解锁3"
+-- traditional.scp062fr_ability3_desc = "解锁技能\"死亡飞扑\""
+-- traditional.scp062fr_ability4 = "技能解锁4"
+-- traditional.scp062fr_ability4_desc = "解锁技能\"尖锐咆哮\""
+--杂项升级
+-- traditional.scp062fr_notwaste = "不浪费"
+-- traditional.scp062fr_notwaste_desc = "吃尸体时获得额外100HP恢复，且有小概率获得额外的升级点"
+-- traditional.scp062fr_better_perception = "感知提升"
+-- traditional.scp062fr_better_perception_desc = "延长技能\"狩猎本能\"的感知时间，6秒提升至12秒"
+-----------------------------------------------------------------------------
 --076
 traditional.scp076throw = "投擲飛鏢"
 traditional.scp076throw_desc = "向瞄準的方向發射一枚飛\n鏢"
@@ -2415,7 +2464,7 @@ traditional.scp999real_shield_desc = "讓周圍的人獲得20秒的子\n彈護�
 traditional.scp999real_clean = "淨化"
 traditional.scp999real_clean_desc = "給予周圍己方一個3秒的淨化BUFF"
 --973
----------------------------------scp973升級---------------------------------
+---------------------------------scp973升级---------------------------------
 --技能
 traditional.scp973_ab_alertness = "警戒提升"
 traditional.scp973_ab_alertness_desc = "SCP-973選擇自身升級的方向"
@@ -2452,7 +2501,7 @@ traditional.scp973_police_taser = "電擊禁錮"
 traditional.scp973_police_taser_desc = "解鎖技能\"泰瑟打擊\""
 traditional.scp973_police_chaser = "追擊者"
 traditional.scp973_police_chaser_desc = "解鎖技能\"追擊\""
---槍械流
+--枪械流
 traditional.scp973_police_m1911 = "M1911"
 traditional.scp973_police_m1911_desc = "將M1911作為主要武器"
 traditional.scp973_police_alert = "戒備提升"
@@ -2484,6 +2533,20 @@ traditional.scp939sounddisguise = "聲音模仿者"
 traditional.scp939sounddisguise_desc = "短時間內所有人會錯將你\n的腳步聽成普通人類的腳\n步"
 traditional.scp939amnc227 = "遺忘氣團"
 traditional.scp939amnc227_desc = "在原地釋放一團AMNC-22\n7氣體\n不小心吸入這種氣體的人\n將會忘記你的存在"
+-- traditional.scp939voice = "语音"
+-- traditional.scp939voice_desc = "选择要使用的语音"
+-- traditional.scp939voice_rifle = "步枪"
+-- traditional.scp939voice_rifle_desc = "模仿突击步枪的声音"
+-- traditional.scp939voice_gauss = "电磁炮"
+-- traditional.scp939voice_gauss_desc = "模仿电磁炮的声音"
+-- traditional.scp939voice_anger682 = "SCP-682怒吼"
+-- traditional.scp939voice_anger682_desc = "模仿SCP-682怒吼"
+-- traditional.scp939voice_medkit = "医疗包"
+-- traditional.scp939voice_medkit_desc = "模仿使用医疗包的声音"
+-- traditional.scp939voice_062fr = "SCP-062-FR"
+-- traditional.scp939voice_062fr_desc = "模仿SCP-062-FR的声音"
+-- traditional.scp939voice_yummy = "食腐"
+-- traditional.scp939voice_yummy_desc = "模仿吞噬尸体的声音"
 --811
 traditional.scp811acidbomb = "酸液彈"
 traditional.scp811acidbomb_desc = "向瞄準方向吐出一發酸液\n彈"
@@ -2535,14 +2598,16 @@ traditional.scp457burntoashes_desc = "在自身周圍釋放大量高溫\n火焰\
 --610
 traditional.scp610spitblood = "血腥膿液"
 traditional.scp610spitblood_desc = "向前噴射一團凝固的血液"
---ROLEMENU --FZ翻譯
+--096
+-- traditional.scp096victims = "SCP-096锁定目标："
+--ROLEMENU --FZ翻译
 traditional.f2_name = "名字:"
 traditional.f2_objectives = "任務:"
 traditional.f2_char_stats = "人物統計"
 traditional.f2_health = "血量:"
 traditional.f2_stamina = "耐力:"
 traditional.f2_choose = "在左邊的列表中選擇一個陣營"
---更多陣營選擇
+--更多阵营选择
 traditional.f2menu_normalmode = "常規模式"
 traditional.f2menu_normalmode_supp = "另類支援"
 traditional.f2menu_kongshu = "空輸模式"
@@ -2551,7 +2616,7 @@ traditional.f2menu_5k = "事件 5K"
 traditional.f2menu_events = "事件"
 traditional.f2menu_rebirth = "轉生角色"
 --f2模式--
---佔位符
+--占位符
 traditional.f2menu_team_unknown = "未知陣營"
 traditional.f2menu_team_unknown_dsec = "會在未來上線的陣營"
 --5K
@@ -2579,7 +2644,7 @@ traditional.scp610_team = "可控生化武器 \"The Flesh\""
 traditional.scp610_team_desc = "The Flesh專案於████年獲監督者議會批准，作為生化武器專案推行,\n同時期還有在南極開展的███姊妹專案\n該專案旨在將\"SCP-610\"開發成一種可控且易於消滅的異常生化武器\n████年，\"The Flesh\"專案團隊在Dr.████帶領下取得了巨大成功\n改造後的SCP-610感染能力明顯下降，並且能被輕型火力有效擊退\n但SCP-610母巢擁有極強的再生能力；即使消滅數個SCP-610個體，母巢也能在短時間\n內產生同等數量的SCP-610個體\n專案團隊同時觀察到，改造後的SCP-610群體不再有明顯的擴張慾望,\n它們通常擴張到一定規模後便會停止,\n每個SCP-610個體都不會離自己的\"領地\"太遠\n"
 traditional.sh_teleporter_team = "蛇之手 折躍小隊"
 traditional.sh_teleporter_team_desc = "SCP基金會執行清理任務的██小時後,一度被認為已經消失的組織\"蛇之手\"向外界\n發出了一封\"信件\"\n\"信件\"發送後第█小時,幽綠色的傳送門頻繁出現在世界各地,一支擁有強大奇術能力的\n蛇之手武裝小隊自綠光中顯現\n\"蛇之手-折躍小隊\"一支由蛇之手精英成員組成的精銳小隊,他們頻繁穿越在世界各個\n角落重新\"收容\"一些SCP的同時也在追蹤SCP-1440的位置,他們勢必要將SCP-1440放逐到\n另一個世界\n\"我們的世界正在走向滅亡,而我們不能再置身事外任由世界崩塌,至少這一次不能。\"\n——領導者███\n特別鳴謝:茗羽夢哉(QQ名)所提供的一切素材以及想法"
---空輸模式
+--空输模式
 traditional.f2kongshu_classd = "暴亂D級"
 traditional.f2kongshu_classd_desc = "這就是由CI組織的一群暴亂D級人員!\n\n設施主管:這已經不是普通的D級人員了,必須出重拳!"
 traditional.f2kongshu_security = "安保鎮暴組"
@@ -2588,7 +2653,7 @@ traditional.f2kongshu_hammerdown = "落錘特戰分隊"
 traditional.f2kongshu_hammerdown_desc = "一支特戰\"小分隊\""
 traditional.f2kongshu_chaos_vdv = "CI空輸部隊"
 traditional.f2kongshu_chaos_vdv_desc = "千呼萬喚始出來的最偉大的CI部隊!"
---二戰模式
+--二战模式
 traditional.f2ww2_american_title = "美國陸軍"
 traditional.f2ww2_american_desc = "一支二戰的美利堅合眾國陸軍"
 traditional.f2ww2_nazi_title = "納粹德國"
@@ -2598,7 +2663,7 @@ traditional.f2menu_battlesite_nu7ab_title = "NU-7 \"落錘\" 聯合部隊"
 traditional.f2menu_battlesite_nu7ab_desc = "一支聯合部隊,由落錘特種大隊的A連和B連組成"
 traditional.f2menu_battlesite_scarletarmy_title = "深紅王之子-軍團"
 traditional.f2menu_battlesite_scarletarmy_desc = "一支由深紅王之子組成的軍團,他們的任務是幫助王降臨世間"
---f2雜項--
+--f2杂项--
 --彩蛋角色
 traditional.f2misc_egg_title = "彩蛋角色"
 traditional.f2misc_egg_desc = "伺服器裡的彩蛋角色,只有滿足某些條件下才能出現的特別角色"
@@ -2609,11 +2674,11 @@ traditional.f2misc_jailedscp_desc = "這些SCP因為某些原因尚未出現在�
 traditional.f2_ntf = "機動特遣隊Epsilon-11九尾狐從內部保護著SCP基金會.\n\n他們代表著一個特殊的行動小組,\n\n經常在收容失效的情況下被部署.因此,\n\n他們的大部分行動都可以歸類為SCP收容."
 traditional.f2_nu7 = "機動特遣隊NU-7落錘是一支營級規模的特遣隊.\n\n其中落錘特種大隊的特戰營的A連被秘密部署在Site-19的附近[詳細位置未知],\n\n他們主要負責在設施處於極端危險時進行武力支援,幫助設施掃清一切外部威脅\n\n他們的任務通常由在設施內的O4指揮官指派"
 traditional.f2_chaos = "混沌分裂者CI是從SCP基金會分裂出去的一個組織,\n\n在1924年由一夥攜帶數個SCP物品叛變的基金會人員所建立,\n\n他們一般為了自身利益和鞏固全球權力基礎而使用所佔有的異常."
---P-055 \"鋼鐵\" 分遣隊
+--P-055 \"钢铁\" 分遣队
 traditional.f2_gru = "蘇聯解體之後,格魯烏P部門也隨之消散.但在新時代的浪潮中,新的國際共運在帷幕\n\n之下悄然進行.曾經的格魯烏P部門趁著這股赤色浪潮逐漸復蘇,舊的格魯烏P部門\n\n已經成為一個時代的符號,而新的格魯烏P正成長為一個全球性的共產主義異常組織.\n\n因而為了新生的格魯烏P,其組織成員將在全球範圍內不惜一切代價獲取盡可能多的\n\n資源使格魯烏P重新強大起來."
---P-035 \"近衛\" 分遣隊
+--P-035 \"近卫\" 分遣队
 traditional.f2_gru_guard = "一支由6人組成的近衛小組,在侵入部隊完成任務時接應並掩護他們安全撤離"
---P-422 \"傳送石\" 分遣隊
+--P-422 \"传送石\" 分遣队
 traditional.f2_grup_p422_desc = "P-422 \"傳送石\"分遣隊是\"P\"部門組建的一支特種作戰部隊，使用\"超傳\"技術滲透目標設施，擅長運用組織研發的各類空間武器與裝備，破壞目標設施的正常運作。\n但由於\"活體超傳技術\"尚不成熟，他們執行任務時通常都會消耗一輛經過\"超傳\"技術改造的載具..."
 traditional.f2_dz = "\'花園是毒蛇棲息之所\'蛇之手——\"Serpent's hand\"\n\n一個規模較小但難以對付的異常組織,基金會對該組織知之甚少,因此對該組織的認識大\n\n部分都來自GOC提供的資料\n\n而該組織對基金會和全球超自然聯盟都抱有極大的惡意,尤其是在對付全球超自然聯盟\n\n的成員時\n\n並且蛇之手提倡與異常和平相處,且極度厭惡任何毀滅異常和囚禁異常的行為,其成員\n\n通常不會採取任何致命的行動,但發現無法和平解決時便會採取極端的武力!"
 traditional.f2_uiu = "異常事件部門是在冷戰開始後成立的,\n\n當時美國政府專注於利用異常並防止它們被親蘇勢力使用.\n\n隨後成立了聯邦調查局的一個特別部門,\n\n以處理對超自然事件和犯罪的快速反應."
@@ -2636,26 +2701,26 @@ traditional.f2_ar_support = "安德森機器人由\"Vincent Anderson\"領導，�
 traditional.f2_ar_falcon = "四名被SCP基金會收繳的安德森機器人."
 traditional.f2_gamma13 = "機動特遣隊Gamma-13專門負責對與GoI-1115(安德森機器人)相關異常物品、人員、實體的調查、追蹤及尋獲。這包括識別安德森公司的顧客、安德森產品位置、以及對安德森辦公地的突襲等。最近幾年，他們突襲安德森機器人相關據點成果斐然，繳獲了大量優質的安德森機器人產品，這對SCP基金會發展機器人科技具有重要意義。"
 traditional.f2_gamma13_qrt = "由O4指令部指派給機動特遣隊 Gamma-13 \"阿西莫夫執法隊\"充當掩護角色的快速反應部隊隊員，他們任務旨在保護Gamma-13的成員，阻擊敵對人員，幫助Gamma-13的成員完成他們的任務。他們擁有較為優良的武器裝備和與Gamma-13同等的行動權限"
---專家組
+--专家组
 traditional.f2_meg = "MTF專家組( 全稱:\"機動特遣隊 專家組\" ), 簡稱:\"MEG\"\n 駐紮在設施內來自其他MTF的專家(教官)\n他們訓練設施內的MTF隊員如何應對不同SCP和\n敵對人員\n有時他們會選拔一些具有潛力的MTF隊員吸收進他們的MTF隊伍中"
---隨機事件
+--随机事件
 --特殊角色
 traditional.f2_events = "某些事件發生時會出現的特殊角色"
---UIU收容小組
+--UIU收容小组
 traditional.f2_uiucontain = "屬於[聯邦基金會]事件下的支援陣營\nUIU收容小組是由基金會幫助美國政府訓練的一支針對收容SCP的軍事力量\n並且這支小組使用了部分由基金會提供的裝備和科技能夠更好的收容SCP"
---NU7落錘維修小組
+--NU7落锤维修小组
 traditional.f2_nu7sf = "屬於[極限維修]事件下的支援陣營\n落錘特戰B連3組是B連的一支維修小組\n他們主要負責在目標設施發生收容失效後\n前往該設施修復電力並重啟重型現實穩定錨\n(該事件下B連的某支部隊臨時駐紮site-19附近)"
---GOC危險環境作戰部隊
+--GOC危险环境作战部队
 traditional.f2_ungoc = "屬於[聯盟的幫助]事件下的支援陣營 | 未來也將出現5K中\n全球超自然聯盟-危險環境作戰部隊是GOC常規作戰部隊下屬的一支精銳戰鬥部隊\n該部隊通常被部署在大規模戰爭或者應對大量的危險異常實體\n他們總是能夠完成組織賦予他們的使命，儘管他們經常損失慘重\n雖然他們沒有攻擊小組的科技裝甲和奇術打擊小組的奇術\n但是經過聯盟改造的武器和裝備也足夠超過世界各國的準軍事武裝力量"
 traditional.f2_ungoc_scout = "GOC危險環境作戰部隊-偵察部隊\n他們部隊中精銳人員，通常執行偵察任務"
 traditional.f2_ungoc_sup = "GOC危險環境作戰部隊-支援部隊\n有一小部分人員組成，多數時間被指派支援其他與GOC友好的組織執行支援任務"
---CI-突襲部隊
+--CI-突袭部队
 traditional.f2_ciraidforce_desc = "屬於[脆弱的防線]事件下的混沌分裂者支援陣營"
---CI 護送小組
+--CI 护送小组
 traditional.f2_chaosEscortSquad_desc = "用於執行護送特殊人員的作戰小組"
 --MIO教派
 traditional.f2_mio_cult_desc = "MIO之神教派 \n\nMIO是胖的、MIO是糖的、MIO是通人性的\n七罐可樂，七個漢堡，七個奶龍，召喚MIO之王\n這是一個娛樂陣營，用來惡搞MIO的\n但是在製作過程中被MIO發現了，導致這個陣營失去了它整蠱的價值，我真是個笨B\n————某隨波豬流留...."
---外圍戰事
+--外围战事
 traditional.f2_ci_mobileforce_desc = "屬於聯動事件[外圍戰事]下的混沌分裂者陣營"
 traditional.f2_qrt_defense_desc = "屬於聯動事件[外圍戰事]下的SCP基金會支援陣營"
 --快速聊天
@@ -2677,7 +2742,7 @@ traditional.quickchat_dontaimme = "別瞄準我"
 traditional.quickchat_step_aside = "讓開"
 traditional.quickchat_stop_fire = "停火！"
 traditional.quickchat_open_fire = "開火！"
---螢幕資訊提示
+--屏幕信息提示
 traditional.harduheart = "硬著心"
 traditional.gruci_meme_death = "停在這裡"
 traditional.scp_helper = "我們需要一名SCP"
@@ -2757,7 +2822,7 @@ traditional.cutscene_gru_guard_task = "掩護侵入部隊安全撤離"
 traditional.cutscene_scp_rescue = "拯救SCP"
 traditional.cutscene_ci_mf_task = "消滅殘餘QRT隊員，奪取直升機"
 traditional.cutscene_qrt_delta_task = "消滅殘餘CI機動部隊隊員，保衛直升機"
--- P部門空泡空間
+-- P部门空泡空间
 traditional.pd_1991_name = "PD-1991"
 traditional.pd_1991_sub = "最高指令中心"
 traditional.pd_0108_name = "PD-0108"
@@ -2837,7 +2902,7 @@ traditional.kongshu_nu7_wind = "落錘特戰分隊: 忠!誠!('-'*ゞ"
 traditional.ww2_nazi_win = "納粹德國獲勝"
 traditional.ww2_american_win = "美國陸軍獲勝"
 traditional.roundend_mio_cult_win = "天無二日，我心中只有mio一個太陽"
---下面這是？
+--下面这是？
 traditional.take_off_hover = "按 \"左鍵\" 摘下"
 traditional.heavy_helmet = "重型頭盔"
 traditional.heavy_armor = "重型防彈衣"
@@ -2981,10 +3046,10 @@ traditional.achievement1 = "並獲得了"
 traditional.achievement2 = "點經驗、"
 traditional.achievement3 = "等級和"
 traditional.achievement4 = "點數!"
---體力
+--体力
 traditional.stamina = "我需要喘口氣"
 traditional.stamina_to_melee = "我沒有力氣揮動武器了"
---選角色
+--选角色
 traditional.role_menu = "當前:"
 traditional.role_menu_1 = "所需等級:"
 traditional.role_menu_2 = "已被選擇"
@@ -2994,7 +3059,7 @@ traditional.role_menu_5 = "您的角色將在場景結束後改變."
 traditional.role_menu_6 = "該角色已被其他玩家佔用,請選擇其他角色"
 traditional.role_menu_7 = "您的角色已改變."
 traditional.role_menu_8 = "陣營列表"
---懲罰D
+--惩罚D
 traditional.desc_penalty_ts = "您只能穿戴化學防護服"
 traditional.desc_penalty_cx = "所需逃脫次數:"
 traditional.desc_penalty_cx_1 = "您沒有處罰角色狀態."
@@ -3071,7 +3136,7 @@ traditional.desc_ci_scan_1 = "重收容D級人員數量:"
 traditional.desc_ci_scan_2 = "辦公區D級人員數量:"
 traditional.desc_ci_scan_3 = "設施地表D級人員數量:"
 traditional.gru_hacking_time = "駭入時間:"
---O4桌布名字
+--O4壁纸名字
 traditional.wallpaper_apply = "應用背景"
 traditional.wallpaperup = "上一頁"
 traditional.wallpaperdown = "下一頁"
@@ -3080,7 +3145,7 @@ traditional.scpclassic = "經典背景"
 traditional.mioself = "mio本人照"
 traditional.bc1pic = "白菜的照片1"
 traditional.supersex_1471 = "超絕1471色圖!"
---O4監控
+--O4监控
 traditional.reset_view = "重置視角"
 traditional.camera_operation_hint = "左鍵拖動: 旋轉視角 | 滾輪: 縮放視野"
 --NU7
@@ -3123,7 +3188,7 @@ traditional.desc_scoreboard_steam_url = "打開STEAM個人資料URL"
 traditional.menu_demo_settings = "DEMO錄製"
 traditional.menu_demo_enabled = "開啟DEMO錄製"
 traditional.menu_demo_chat_messages = "開啟DEMO提示"
---擊中
+--击中
 traditional.menu_hit_settings = "擊中效果"
 traditional.menu_hit_enabled = "啟用擊中"
 traditional.menu_hitsound_enabled = "啟用擊中聲音"
@@ -3141,13 +3206,13 @@ traditional.menu_hitmarkertype_star = "星形"
 traditional.menu_hitmarkertype_zigzag = "鋸齒狀"
 traditional.menu_hitnums_enabled = "顯示傷害"
 traditional.menu_hitnums_debugmode = "顯示傷害調試模式"
---轉生技能
+--转生技能
 traditional.abilities_name_rebirth = "儲藥技能"
 traditional.abilities_medic_rebirth = "拾取止痛藥可儲存,最多可存 2 次,按技能鍵使用止痛藥效果"
 traditional.medic_no_pills = "你沒有儲存的止痛藥!"
 traditional.medic_pills_full = "止痛藥儲存已滿!"
 traditional.medic_pills_stored = "你儲存了一份止痛藥!"
---互動系統
+--交互系统
 traditional.interaction_default_name = "預設模式"
 traditional.interaction_default_desc = "預設模式"
 traditional.interaction_close = "關閉"
@@ -3155,12 +3220,12 @@ traditional.interaction_close_desc = "關閉選單"
 traditional.interaction_pickup = "收起"
 traditional.interaction_pickup_desc = "拾取並收起"
 traditional.interaction_unknown = "未知"
---NU7治療站
+--NU7治疗站
 traditional.healingstation_mode1_name = "普通模式"
 traditional.healingstation_mode1_desc = "蓄力8秒，單體治療90-120HP"
 traditional.healingstation_mode2_name = "快速模式"
 traditional.healingstation_mode2_desc = "蓄力3秒，範圍治療25-35HP"
---NU7穩定錨
+--NU7稳定锚
 traditional.stability_mode_highenergy = "高能模式"
 traditional.stability_mode_highenergy_desc = "不減速，高傷害15%，耗電最快"
 traditional.stability_mode_balanced = "均衡模式"

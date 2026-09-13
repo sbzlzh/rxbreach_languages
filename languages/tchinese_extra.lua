@@ -1,5 +1,5 @@
 traditional = traditional or {}
---目標提示
+--目标提示
 traditional.omega1_meg_goal_1 = "前往重收一層蒐集證據"
 traditional.omega1_meg_goal_2 = "證據足夠後呼叫支援"
 traditional.omega1_meg_goal_3 = "與嫌疑人交涉"
@@ -40,7 +40,7 @@ traditional.skp_foucs_8 = "粉碎一切"
 traditional.skp_foucs_8_desc = "獲得120秒的4級傷害提升效果\n(耗費3顆晶體)"
 traditional.skp_crystals_spawned = "晶體已出現在部分SCP的收容間內"
 traditional.scployaltyteam = "友方團隊"
---P部門駭入所獲得的資料
+--P部门骇入所获得的资料
 traditional.grup_got_secret_info = "已獲得機密檔案: "
 traditional.grup_gotinfo_default = "已獲得資料"
 traditional.grup_gotinfo = "已獲得資料: "
@@ -56,24 +56,24 @@ traditional.foundation_serverinfo_broken = "資料已損壞 :>"
 traditional.foundation_serverinfo_aic = "人工智慧計畫-\"██\""
 traditional.grup_btr_coming = "BTR正在前往B門進行火力掩護"
 traditional.grup_btr_cant_come = "BTR已經沒有時間趕去支援"
---指揮官
+--指挥官
 traditional.desc_commander = "指揮官"
 traditional.desc_commander_o4 = "O4指揮官"
 traditional.desc_commander_grup = "行動總指揮"
 traditional.desc_commander_mio = "指揮官MIO"
 traditional.desc_commander_qrt = "QRT總指揮"
 traditional.desc_commander_chaos = "CI總指揮"
---指揮官介紹任務
+--指挥官介绍任务
 traditional.nailong_selfdesc = "大家好，我是MIO\n這是RXSEND MIO服，指揮官介紹任務功能\n這是一個非常牛逼的功能"
 traditional.battlesite_o4desc = "\"落錘\"你們的任務已被確認\n阻止深紅王之子-軍團的入侵\n不要讓他們成功解開\"深紅之王\"的封印\n否則一切都完蛋了！"
 traditional.battlesite_o4desc_2 = "堅持住，戰友們\n特殊增援部隊已經在路上了！"
 traditional.battlesite_scarletkingdesc = "吾虔誠的信徒們，汝等已打破囚禁吾身之多數枷鎖\n如今，只需破除最後一道封印，吾便將重臨此世\n無需恐懼，吾之忠僕，汝等早已蒙受吾之恩賜。"
---GRU-P總指揮
+--GRU-P总指挥
 traditional.grup_comm_desc1 = "幹得好，同志們\n近衛小組的同志已經在來的路上\n他們會在設施B門附近的停機坪接應你們\n繼續完成你們的任務，然後安全撤離"
 traditional.grup_comm_desc_999 = "同志們，我們偵測到了SCP-999的訊號\n用你們攜帶的實驗性\"超傳\"裝置把它帶回來"
 traditional.grup_comm_desc_evacuation = "同志們，你們已經挖取到了足夠的資料\n趕快撤離!"
 traditional.grup_comm_desc_telefailure = "同志們，你們還好嗎？\n傳送出現故障，你們被傳進了Site-19裡\n幸好這裡發生混亂了，我們的一支小隊正在前往Site-19部署傳送節點\n接應的BTR會很快到達B門附近\n我們也通知了最近的混沌分裂者單位\n你們也可以坐他們的APC離開"
---RHD聯動
+--RHD联动
 traditional.rhd_qrt1 = "你們是Alpha營地僅剩的武裝力量\n另外的QRT隊員正在前哨站阻擊其他敵人\n你們的任務就是消滅Alpha營地內的敵人\n之後搶奪直升機前往Site-19"
 traditional.rhd_chaos1 = "你們是機動部隊僅剩的武裝力量\n唯二的武裝力量正在攻擊Site-19的前哨站\n你們的任務就是消滅Alpha營地內殘餘的QRT武裝\n之後搶奪直升機前往Site-19"
 --BattleSite19
@@ -82,7 +82,7 @@ traditional.battlesite_nu7win = "幹得漂亮！士兵們\n你們成功拯救了
 traditional.battlesite_nu7failure = "一切都完了....\n士兵們，下個世界再見吧\n....."
 traditional.battlesite_scarletwin = "哈哈哈哈哈，汝等成功破除吾之枷鎖\n吾將重現\n吾之子\n汝等將會沐浴於一個嶄新的世界"
 traditional.battlesite_scarletfailure = "可惡啊！這群比汙水糞便還要骯髒百倍的東西\n汝等不必灰心\n汝等速速離開此地，等待下一次的機遇\n....."
---基金會電腦
+--基金会电脑
 traditional.desc_foundation_computer = "基金會內部安全系統"
 traditional.decode_hint1 = "請在"
 traditional.decode_hint2 = "秒內完成操作"
@@ -90,31 +90,31 @@ traditional.decode_hint3 = "點選開始後你僅有"
 traditional.decode_hint4 = "次機會,請謹慎操作"
 traditional.decode_failed = "解碼失敗"
 traditional.decode_success = "解碼成功"
---娛樂模式——BattleSite19
+--娱乐模式——BattleSite19
 traditional.control_point = "已佔領據點"
 traditional.losing_point = "失去據點"
 traditional.battlesite_nu7 = "聯合部隊"
 traditional.battlesite_cotsk = "軍團"
 traditional.point_not_completed = "你需要先佔領前一個點"
---galRX對話內容和選項
---對話人員
+--galRX对话内容和选项
+--对话人员
 traditional.grup_pilot = "GRU-P 飛行員"
 traditional.grup_btr = "GRU-P BTR駕駛員"
---GRUP飛行員內容
+--GRUP飞行员内容
 traditional.grup_pilot_start = "什麼事？同志"
 traditional.grup_pilot_confirmleave = "還有其他同志在設施內部，真的要現在離開嗎？"
 traditional.grup_pilot_leaving = "明白了，同志"
 traditional.grup_hint_others = "已經提醒其他同志了"
---通用結束
+--通用结束
 traditional.normal_end = "一會兒見"
---GRUP飛行員選項
+--GRUP飞行员选项
 traditional.grup_pilot_leave_option = "離開設施"
 traditional.grup_hint_others_option = "提醒其他同志"
---通用選項
+--通用选项
 traditional.end_conversation = "結束對話"
 --scp物品
 traditional.desc_215 = "您對 SCP-215 的依戀已經到了無法割捨的地步."
---通用文字區域
+--通用文本区域
 traditional.takeaway = "拿走"
 traditional.confirm = "確認"
 traditional.cancel = "取消"
@@ -170,8 +170,8 @@ traditional.translucent = "半透明"
 traditional.visible = "現形"
 traditional.needsPower = "需要電力"
 traditional.failureToPerfect = "無法達成完美回合"
---律法左手玩法相關
---律法左手對講機
+--律法左手玩法相关
+--律法左手对讲机
 traditional.not_enough_evidences = "目前證據不足，還需要蒐集"
 traditional.not_enough_time = "時間已經不夠"
 traditional.not_enough_time_omega = "沒有足夠的時間支援你，帶著目標從原計畫中的隧道撤離"
@@ -180,7 +180,7 @@ traditional.evidences_evil = "這裡是Omega-1調查員，識別編號DON3975，
 traditional.evidences_negotiation = "這裡是Omega-1調查員，識別編號DON3975。一名研究人員疑似取得部分高層人員違法行為的證據，請求派遣一支小隊協助我，完畢"
 traditional.omega_cantlocate = "無法定位目標"
 traditional.omega_cantlocate_2 = "受到強烈的訊號干擾"
---改造對講機
+--改造对讲机
 traditional.sus_whistleblower = "吹哨人"
 traditional.sus_whistleblower_desc = "你依然相信基金會中存在\n正義，主動聯絡律法左手\n的調查員，成為吹哨人揭\n露上層的黑暗！"
 traditional.sus_intochaos = "墮入混沌"
@@ -193,12 +193,12 @@ traditional.sus_active_omega_dead = "無法呼叫律法左手"
 traditional.sus_active_chaos = "基金會已經不值得我信任，我需要你們的幫助"
 traditional.sus_active_chaos_negative = "時間不夠了，你自求多福吧"
 traditional.sus_active_chaos_event = "正好，我們有一支大部隊來了，你去聯絡他們吧"
---證據袋
+--证据袋
 traditional.evidence_bag_hint1 = "左鍵檢查證據"
 traditional.evidence_bag_hint2 = "右鍵檢視證據"
 traditional.evidence_bag_hint3 = "R鍵遞出證據"
---證據談判結果
---失敗
+--证据谈判结果
+--失败
 traditional.judgement_failure1 = "你的證據存在虛假內容!"
 traditional.judgement_failure2 = "你是在和我開玩笑嗎?"
 traditional.judgement_failure3 = "你的證據幾乎沒有說服力!"
@@ -217,16 +217,16 @@ traditional.judgement_stalemate1 = "你的證據還不夠充分，你需要跟�
 traditional.judgement_stalemate2 = "證據仍缺少一些關鍵內容，你先跟我們走一趟"
 traditional.judgement_stalemate3 = "證據稍顯不足，跟我們走，還需要進一步的調查"
 traditional.judgement_stalemate4 = "證據缺乏一些資訊，跟我們走一趟"
---相關提示
+--相关提示
 traditional.omega1_meg_newgoal_find = "當前目標:接觸嫌疑人"
 traditional.omega1_meg_newgoal_execute = "當前目標:嫌疑人已經叛變，趁定位消失前，處決嫌疑人!"
 traditional.omega1_evidence_bag_need = "你需要一個證據袋才能蒐集該證據"
 traditional.sussci_ci_hint = "你可以再次呼叫，但只能呼叫CI"
---被汙衊叛變
+--被污蔑叛变
 traditional.omega1_be_slandered_1 = "SCP基金會武裝注意! MTF Omega-1 \"律法左手\"已經叛變, 一旦發現其相關人員的行蹤立即擊斃!"
 traditional.omega1_be_slandered_2 = "\"快速反應部隊\"你們將配合Site-19武裝人員擊殺MTF Omega-1 \"律法左手\"叛變人員"
 traditional.omega1_be_slandered_3 = "MTF NU-7\"落錘\"你們將配合Site-19武裝人員擊殺MTF Omega-1 \"律法左手\"叛變人員"
---Omega1相關撤離文字
+--Omega1相关撤离文本
 traditional.escape_by_omega1jeep = "乘坐律法左手吉普撤離"
 traditional.escape_omega1_mission = "成功撤離嫌疑研究員"
 traditional.escape_sus_good = "沉冤昭雪"
@@ -235,7 +235,7 @@ traditional.escape_sus_bad = "病亡獄中"
 traditional.escape_sus_chaos = "成為混沌分裂者的一員"
 traditional.escape_sus_chaos_bad = "混沌認為你沒有太大利用價值"
 traditional.escape_omega1_arrested = "你被律法左手帶走調查"
---Omega1相關獎勵文字
+--Omega1相关奖励文本
 traditional.bonus_sus_chaos_bad = "被混沌處決"
 traditional.bonus_sus_chaos_good = "混沌分裂者的一員"
 traditional.bonus_sci_sus_evac = "撤離 嫌疑研究員"
@@ -243,33 +243,33 @@ traditional.bonus_sci_corrupts_evac = "逮捕 貪腐人員"
 traditional.bonus_sci_sus = "正義的代價"
 traditional.bonus_omega1_kill = "律法處決高層"
 traditional.bonus_omega1_arrested = "逮捕貪腐人員"
---隨機事件文字資訊
+--随机事件文本信息
 traditional.event_name = "事件: "
 traditional.event_style = "類型: "
 traditional.event_description = "事件介紹:"
---事件類型
+--事件类型
 traditional.event_big = "大事件/世界觀"
 traditional.event_worldview = "世界觀"
 traditional.event_normal = "常規"
 traditional.event_warfare = "戰爭"
 traditional.event_secret = "隱匿"
 --大事件
---夢服
+--梦服
 traditional.bigevent_dream = "收容失效之夢"
 traditional.bigevent_dream_desc = "這是最美妙的夢,這也是最恐怖的夢"
 --5K
 traditional.bigevent_5k = "SCP-5000 \"為什麼?\""
 traditional.bigevent_5k_desc = "保護常態, 遏制異常, 這是吾輩必行之路"
---常規事件
---全階段
+--常规事件
+--全阶段
 traditional.event0_nothing = "無事發生"
 traditional.event0_nothing_desc = "沒有任何事件在此發生"
 traditional.event_caishen_xinchun = "財神到!"
 traditional.event_caishen_xinchun_desc = "新春佳節，SCP-CN-█████ \"財神\"降臨在Site-19中為所有人帶來歡樂和幸福"
 traditional.event_woa32 = "從前的罪惡 一"
 traditional.event_woa32_desc = "WOA-32突破了二部的收容措施，來到了設施的主要區域。它會隨機攻擊任何人，小心!"
---開場事件
---一階段
+--开场事件
+--一阶段
 traditional.event_ron = "嚴陣以待"
 traditional.event_ron_desc = "本回合沒有CI間諜，所有安保人員獲得子彈，安保門禁延後15秒；D級人員中會出現一名CI特工協助D級人員"
 traditional.event_limit_fixing = "極限維修"
@@ -302,7 +302,7 @@ traditional.event_mtf_new_suit = "新式制服"
 traditional.event_mtf_new_suit_desc = "戰術應對一部換上了新式作戰服。這批制服採用基金會自行研發的材料，能提升穿戴者的人體工學效能"
 traditional.event_more_heavy_weapon = "我們需要重火力武器"
 traditional.event_more_heavy_weapon_desc = "重收容區、辦公區及避難所的武器庫會隨機生成數量不定的M240B機槍和AT4"
---二階段
+--二阶段
 traditional.event_the_fourth_scp = "第四個SCP"
 traditional.event_the_fourth_scp_desc = "偵測到設施內某個收容間出現未知能量波動。那是……一個SCP!"
 traditional.event_weakness_defense = "脆弱的防線"
@@ -313,7 +313,7 @@ traditional.event_periphery_warfare = "外圍戰事"
 traditional.event_periphery_warfare_desc = "Site-19的外圍基地受到CI機動部隊的襲擊，激戰過後，他們剩餘的人員將展開最後的廝殺...."
 traditional.event_mio_arrival = "MIO之神降臨"
 traditional.event_mio_arrival_desc = "MIO之神教派出現在設施內，他們將釋放MIO，並糖化所有人!"
---三階段
+--三阶段
 traditional.event_glitch_portal = "故障傳送門"
 traditional.event_glitch_portal_desc = "蛇之手的傳送門因不明事故隨機出現在設施內。他們是怎麼做到的?"
 traditional.event_wrong_pos = "錯誤的座標"
@@ -328,7 +328,7 @@ traditional.event_scp999_dropped = "SCP-999被丟下啦！"
 traditional.event_scp999_dropped_desc = "SCP-999被遺忘在其房間裡，基金會的員工快去救它！"
 traditional.event_gifts_of_079 = "SCP-079的恩賜"
 traditional.event_gifts_of_079_desc = "SCP-079破壞了SCP-006門的權限和重收容與辦公區之間檢查點的權限"
---四階段
+--四阶段
 traditional.event_bad_warhead = "劣質核彈頭"
 traditional.event_bad_warhead_desc = "核彈有極低機率不會爆炸"
 traditional.event_ntf_out = "直升機墜毀"
@@ -346,13 +346,13 @@ traditional.event_light_fog_desc = "設施地表覆蓋一片薄薄的霧"
 traditional.event_kindness_of_079 = "SCP-079的仁慈"
 traditional.event_kindness_of_079_desc = "未知人員授予了SCP-079開啟ABCD大門的權限，現在它會不定時隨機開啟其中一扇門"
 --大事件的子事件
---------------5K區域--------------
---一階段
+--------------5K区域--------------
+--一阶段
 traditional.scarlet_gift = "深紅恩澤"
 traditional.scarlet_gift_desc = "深紅王之子的殘餘人員突襲了Site-███\n破壞了SCP-████的收容，導致世界各地\n隨機出現可能蘊含\"邪惡\"力量的物體"
---二階段
+--二阶段
 traditional.event_the_flesh = "憎恨之血肉"
 traditional.event_the_flesh_desc = "SCP-610已被釋放，它們將感染或殺死\n設施內的所有人。下一波支援固定為\n\"GOC奇術打擊2組\""
---三階段
+--三阶段
 traditional.event_scp1440 = "災厄洪流"
 traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n設施。SCP-1440抵達設施三分鐘後，設施將\n被\"災厄\"吞噬\n但絕望之中仍然存在著一絲希望"
