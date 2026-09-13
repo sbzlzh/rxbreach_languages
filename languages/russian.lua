@@ -2533,6 +2533,20 @@ russian.scp939sounddisguise = "Ловушка"
 russian.scp939sounddisguise_desc = "Вы можете разговаривать с людьми и имитировать шаги"
 russian.scp939amnc227 = "Газ"
 russian.scp939amnc227_desc = "Высвобождает на месте облако газа\nте, кто случайно вдохнёт этот газ, забудут о твоём существовании" -- ВОЗМОЖНО ТЕКСТ ОГРОМЕН ДЛЯ ВИЗУАЛА!11!!111!!!111
+-- russian.scp939voice = "语音"
+-- russian.scp939voice_desc = "选择要使用的语音"
+-- russian.scp939voice_rifle = "步枪"
+-- russian.scp939voice_rifle_desc = "模仿突击步枪的声音"
+-- russian.scp939voice_gauss = "电磁炮"
+-- russian.scp939voice_gauss_desc = "模仿电磁炮的声音"
+-- russian.scp939voice_anger682 = "SCP-682怒吼"
+-- russian.scp939voice_anger682_desc = "模仿SCP-682怒吼"
+-- russian.scp939voice_medkit = "医疗包"
+-- russian.scp939voice_medkit_desc = "模仿使用医疗包的声音"
+-- russian.scp939voice_062fr = "SCP-062-FR"
+-- russian.scp939voice_062fr_desc = "模仿SCP-062-FR的声音"
+-- russian.scp939voice_yummy = "食腐"
+-- russian.scp939voice_yummy_desc = "模仿吞噬尸体的声音"
 --811
 russian.scp811acidbomb = "Слабый шар"
 russian.scp811acidbomb_desc = "Выплёвывает шар кислоты"
@@ -2584,6 +2598,8 @@ russian.scp457burntoashes_desc = "Высвобождает вокруг себя
 --610
 russian.scp610spitblood = "Кровавая слизь"
 russian.scp610spitblood_desc = "Выплёвывает вперёд сгусток крови"
+--096
+-- russian.scp096victims = "SCP-096锁定目标："
 --ROLEMENU --FZ翻译
 russian.f2_name = "Имя:"
 russian.f2_objectives = "Задачи:"
