@@ -2325,14 +2325,14 @@ english.scp049poison_desc = "What happens after injection?"
 english.scp049book = "Doctor's Notes"
 english.scp049book_desc = "SCP-049's notes on his research into the \"Pestilence\""
 --升级
--- Serum Upgrades
+--药剂升级
 english.scp049_syringe1 = "Serum Extraction"
 english.scp049_syringe1_desc = "60% chance to gain an upgrade point from researching corpses, 30% chance to randomly obtain a serum."
 english.scp049_syringe2 = "Pharmacist"
 english.scp049_syringe2_desc = "Serum storage limit increased by 2 slots. 50% chance to randomly obtain a serum when researching corpses. All serums grant special effects to SCP-049-2; each serum's special effect stacks up to 3 layers on the same SCP-049-2 instance."
 english.scp049_syringe3 = "Veteran Pharmacist"
 english.scp049_syringe3_desc = "80% chance to randomly obtain a serum when researching corpses. Serum enhancement stack limit increased by 1."
--- Elite Path
+--精英线
 english.scp049_skillful = "Refinement"
 english.scp049_skillful_desc = "SCP-049-2 health increased to 1.85x of your own character, and gains 25% base bullet resistance."
 english.scp049_cured1 = "I Have Cured I"
@@ -2341,7 +2341,7 @@ english.scp049_cured2 = "I Have Cured II"
 english.scp049_cured2_desc = "SCP-049-2 health increased to 2.15x of your own character, and gains 8% sprint speed bonus."
 english.scp049_cured3 = "I Have Cured III"
 english.scp049_cured3_desc = "SCP-049-2 health increased to 2.85x of your own character, and gains 20 extra attack damage."
--- Horde Path
+--尸群线
 english.scp049_zombies = "Miracle Worker"
 english.scp049_zombies_desc = "Corpse revival time reduced by 1 second, and allows reviving corpses not killed by you (death time must not be too long), but loses the ability to research corpses. 40% chance to gain an upgrade point from revived corpses and 10% chance to obtain a random serum."
 english.scp049_unity1 = "Doctor-Patient Unity I"
@@ -2350,14 +2350,14 @@ english.scp049_unity2 = "Doctor-Patient Unity II"
 english.scp049_unity2_desc = "Increases corpse revival count by 1. SCP-049-2 entities around you restore 1 HP every 2 seconds."
 english.scp049_unity3 = "Doctor-Patient Unity III"
 english.scp049_unity3_desc = "Increases corpse revival count by 1. SCP-049-2 entities around you restore 2 HP every 1 second."
--- Ability Support Path
+--技能辅助线
 english.scp049_order1 = "Doctor's Orders I"
 english.scp049_order1_desc = "R ability fully restores SCP-049-2 health and grants a level 2 bullet resistance effect for 30 seconds."
 english.scp049_order2 = "Doctor's Orders II"
 english.scp049_order2_desc = "Bullet resistance effect increased to level 3, and grants a level 2 speed effect for 30 seconds."
 english.scp049_order3 = "Doctor's Orders III"
 english.scp049_order3_desc = "Bullet resistance effect increased to level 4, and grants a level 2 damage boost effect for 30 seconds."
--- Additional Upgrades
+--额外升级
 english.scp049_strongbody = "Strong Physique"
 english.scp049_strongbody_desc = "Maximum health increased to 3200."
 english.scp049_hurry = "Urgent Consultation"
@@ -2401,7 +2401,7 @@ english.scp062fr_ability3 = "Ability Unlock 3"
 english.scp062fr_ability3_desc = "Unlocks the ability \"Death Leap\""
 english.scp062fr_ability4 = "Ability Unlock 4"
 english.scp062fr_ability4_desc = "Unlocks the ability \"Sharp Roar\""
--- Misc Upgrades
+--杂项升级
 english.scp062fr_notwaste = "No Waste"
 english.scp062fr_notwaste_desc = "Gain an additional 100 HP recovery when eating corpses, with a small chance to gain an extra upgrade point."
 english.scp062fr_better_perception = "Enhanced Perception"
