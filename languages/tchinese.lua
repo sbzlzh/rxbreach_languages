@@ -555,7 +555,7 @@ traditional.weaponry["item_gruci_hack_device"] = "駭客面板"
 traditional.weaponry["item_sh_teleporter"] = "折躍奇術卷軸"
 traditional.weaponry["breach_keycard_beta1"] = "Beta-1 特別訪問卡"
 traditional.weaponry["item_beta1_checker"] = "Beta-1 安全系統"
-traditional.weaponry["item_syringe_posion"] = "? 針劑"
+traditional.weaponry["item_syringe_poison"] = "? 針劑"
 traditional.weaponry["item_syringe_heal"] = "治癒針劑"
 traditional.weaponry["item_syringe_speed"] = "速度針劑"
 traditional.weaponry["item_candy330_teleport"] = "糖果-彩虹暈眩"
@@ -1315,7 +1315,7 @@ traditional.distrustscp079 = "不相信SCP-079"
 traditional.scp062de_mp40_desc = "MP40擁有較快的射速，能夠在短時間內擊殺大量敵人，但沒有傷害補償"
 traditional.scp062de_k98k_desc = "Kar98K有著極其恐怖傷害，幾乎無人能夠在被擊中後生還"
 traditional.scp062de_g43_desc = "G43是一把半自動步槍，有著不錯的傷害補償，但後座力較大"
---角色介紹 --FZ翻譯
+--角色介紹
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.traditional = BREACH.Descriptions.traditional or {}
 BREACH.Descriptions.traditional[role.SCI_SpyUSA] = "你是特異事故處 - 間諜\n\n你的目標:駭入辦公區的某台電腦\n\n獲取部分重要資訊並呼叫支援\n\n設施主管隨身攜帶的密令可能對你有説明\n\n並且你的資料已經上傳進資料庫,沒有人會知道你的真實身份\n\n但根據情報顯示某人有一份對你不利的情報"
@@ -2535,7 +2535,7 @@ traditional.scp457burntoashes_desc = "在自身周圍釋放大量高溫\n火焰\
 --610
 traditional.scp610spitblood = "血腥膿液"
 traditional.scp610spitblood_desc = "向前噴射一團凝固的血液"
---ROLEMENU --FZ翻譯
+--ROLEMENU
 traditional.f2_name = "名字:"
 traditional.f2_objectives = "任務:"
 traditional.f2_char_stats = "人物統計"

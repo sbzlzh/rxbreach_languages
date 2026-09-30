@@ -1318,7 +1318,7 @@ russian.distrustscp079 = "Не доверять SCP-079"
 -- russian.scp062de_mp40_desc = "MP40拥有较快的射速，能够在短时间内击杀大量敌人，但没有伤害补偿"
 -- russian.scp062de_k98k_desc = "Kar98K有着极其恐怖伤害，几乎无人能够在被击中后生还"
 -- russian.scp062de_g43_desc = "G43是一把半自动步枪，有着不错的伤害补偿，但后座力较大"
---角色介绍 --FZ翻译
+--角色介绍
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 BREACH.Descriptions.russian[role.SCI_SpyUSA] = "Вы сотрудник Отдела Особых Происшествий - Шпион\n\nВаша цель: взломать компьютер в офисной зоне\n\nПолучить важную информацию и вызвать подкрепление\n\nДанные начальника объекта могут быть полезны\n\nВаши данные загружены в базу, никто не узнает вашу личность\n\nНо по данным разведки, у кого-то есть компрометирующие материалы"
@@ -2600,7 +2600,7 @@ russian.scp610spitblood = "Кровавая слизь"
 russian.scp610spitblood_desc = "Выплёвывает вперёд сгусток крови"
 --096
 -- russian.scp096victims = "SCP-096锁定目标："
---ROLEMENU --FZ翻译
+--ROLEMENU
 russian.f2_name = "Имя:"
 russian.f2_objectives = "Задачи:"
 russian.f2_char_stats = "Статистики роли"
