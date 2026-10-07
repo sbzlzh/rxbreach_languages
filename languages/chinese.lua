@@ -1318,7 +1318,7 @@ chinese.distrustscp079 = "不相信SCP-079"
 chinese.scp062de_mp40_desc = "MP40拥有较快的射速，能够在短时间内击杀大量敌人，但没有伤害补偿"
 chinese.scp062de_k98k_desc = "Kar98K有着极其恐怖伤害，几乎无人能够在被击中后生还"
 chinese.scp062de_g43_desc = "G43是一把半自动步枪，有着不错的伤害补偿，但后座力较大"
---角色介绍 --FZ翻译
+--角色介绍
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.chinese = BREACH.Descriptions.chinese or {}
 BREACH.Descriptions.chinese[role.SCI_SpyUSA] = "你是特异事故处 - 间谍\n\n你的目标:骇入办公区的某台电脑获取部分重要信息并呼叫支援,设施主管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报"
@@ -2600,7 +2600,7 @@ chinese.scp610spitblood = "血腥脓汁"
 chinese.scp610spitblood_desc = "向前喷射一团凝固的血液"
 --096
 chinese.scp096victims = "SCP-096锁定目标："
---ROLEMENU --FZ翻译
+--ROLEMENU
 chinese.f2_name = "名字:"
 chinese.f2_objectives = "任务:"
 chinese.f2_char_stats = "人物统计"

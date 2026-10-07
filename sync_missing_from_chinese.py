@@ -266,6 +266,38 @@ def parse_template(lines: List[str], prefix: str) -> List[TemplateItem]:
     return items
 
 
+RawGapKey = Tuple[str | None, str | None]
+
+
+def raw_gaps_by_neighboring_keys(items: List[TemplateItem]) -> Dict[RawGapKey, List[str]]:
+    """用相邻翻译键定位原始行，供目标语言保留自己的章节注释。"""
+    gaps: Dict[RawGapKey, List[str]] = {}
+    previous_key: str | None = None
+    raw_lines: List[str] = []
+
+    for kind, key, block in items:
+        if kind == "raw":
+            raw_lines.extend(block)
+            continue
+
+        current_key = active_key_for_comment(key)
+        gaps[(previous_key, current_key)] = raw_lines
+        raw_lines = []
+        previous_key = current_key
+
+    gaps[(previous_key, None)] = raw_lines
+    return gaps
+
+
+def raw_code_lines(lines: List[str]) -> List[str]:
+    """比较非注释代码，避免沿用目标文件中过时的结构行。"""
+    return [
+        _strip_ending(line)
+        for line in lines
+        if line.strip() and not line.lstrip().startswith("--")
+    ]
+
+
 def replace_prefix(line: str, src_prefix: str, dst_prefix: str) -> str:
     return replace_lang_tokens(line, src_prefix, dst_prefix)
 
@@ -393,6 +425,12 @@ def rebuild_from_template(
 
     target_lines = strip_auto_appended_section(target_lines)
     target_entries = parse_entries(target_lines, target_prefix)
+    target_raw_gaps = raw_gaps_by_neighboring_keys(parse_template(target_lines, target_prefix))
+    target_raw_before_key = {
+        next_key: lines
+        for (_, next_key), lines in target_raw_gaps.items()
+        if next_key is not None
+    }
     target_map: Dict[str, List[str]] = {key: block for key, block in target_entries}
     target_key_set = set(target_map.keys())
 
@@ -405,12 +443,37 @@ def rebuild_from_template(
     mismatched = 0
 
     output: List[str] = []
+    previous_key: str | None = None
+    pending_raw: List[str] = []
+
+    def append_raw_gap(next_key: str | None) -> None:
+        transformed = [
+            transform_raw_line(line, base_prefix, target_prefix, base_path, target_path)
+            for line in pending_raw
+        ]
+        existing = target_raw_gaps.get((previous_key, next_key))
+        if existing is None and next_key is not None:
+            # 新键可能插在章节注释前；仍按后一个旧键找回目标语言的注释。
+            existing = target_raw_before_key.get(next_key)
+        if (
+            existing is not None
+            and any(line.lstrip().startswith("--") for line in transformed)
+            and any(line.lstrip().startswith("--") for line in existing)
+            and raw_code_lines(existing) == raw_code_lines(transformed)
+        ):
+            output.extend(existing)
+        else:
+            output.extend(transformed)
 
     for kind, key, block in base_template:
         if kind == "raw":
-            line = block[0]
-            output.append(transform_raw_line(line, base_prefix, target_prefix, base_path, target_path))
+            pending_raw.extend(block)
             continue
+
+        current_key = active_key_for_comment(key)
+        append_raw_gap(current_key)
+        pending_raw = []
+        previous_key = current_key
 
         # entry
         existing = target_map.get(key)
@@ -436,6 +499,8 @@ def rebuild_from_template(
             continue
 
         output.extend(existing)
+
+    append_raw_gap(None)
 
     return output, missing, removed, mismatched
 
