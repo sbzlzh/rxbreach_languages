@@ -294,16 +294,16 @@ b_chinese.event_style_4 = "联动"
 b_chinese.event_style_5 = "其他"
 b_chinese.event_style_6 = "大事件"
 --子类型——联动事件
-b_chinese.event_style_4_uiu = "UIU服"
+b_chinese.event_style_4_uiu = "神秘的HECU服"
 b_chinese.event_style_4_rhd = "RHD服"
 --子类型——其他事件
 b_chinese.event_style_5_accident = "事故"
 b_chinese.event_style_5_5k = "5K"
 --子类型——大事件
-b_chinese.event_style_6_5k = "SCP-5K"
+b_chinese.event_style_6_5k = "Xen-5K"
 b_chinese.event_style_6_dream = "梦"
 b_chinese.event_style_6_broadcast = "污染的广播"
-b_chinese.event_style_6_usa = "联邦基金会"
+b_chinese.event_style_6_usa = "联邦黑山"
 --大事件
 --梦服
 b_chinese.bigevent_dream = "收容失效之梦"
