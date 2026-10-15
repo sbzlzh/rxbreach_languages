@@ -1,8 +1,8 @@
 english = english or {}
--- english.role = chinese.role or {}
+english.role = chinese.role or {}
 english = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
--- BREACH.Descriptions.english = BREACH.Descriptions.english or {}
+BREACH.Descriptions.english = BREACH.Descriptions.english or {}
 --目标提示
 english.skp_goal_1 = "Recruit valuable personnel"
 english.skp_goal_2 = "Search for crystals in Heavy Containment Zone"

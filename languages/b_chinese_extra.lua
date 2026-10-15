@@ -1,8 +1,8 @@
 b_chinese = b_chinese or {}
--- b_chinese.role = chinese.role or {}
+b_chinese.role = chinese.role or {}
 b_chinese = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
--- BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
+BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
 --目标提示
 b_chinese.skp_goal_1 = "招募有价值的人员"
 b_chinese.skp_goal_2 = "在重收容寻找晶体"

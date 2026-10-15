@@ -1,8 +1,8 @@
 traditional = traditional or {}
--- traditional.role = chinese.role or {}
+traditional.role = chinese.role or {}
 traditional = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
--- BREACH.Descriptions.traditional = BREACH.Descriptions.traditional or {}
+BREACH.Descriptions.traditional = BREACH.Descriptions.traditional or {}
 --目标提示
 traditional.skp_goal_1 = "招募有價值的人員"
 traditional.skp_goal_2 = "在重收容尋找晶體"
