@@ -1302,6 +1302,7 @@ russian.scp109_defend_1903_1 = "Цель сопротивлялась твоей
 russian.nothing_in_grubox = "В ящике ничего нет."
 russian.have_grubox_item = "У вас уже есть предметы из ящика."
 -- russian.anderson_drone_found_hint = "我感觉我应该去寻找什么"
+-- russian.scp409_defend = "它的皮肤太硬，SCP-409无法刺入"
 --底部消息-通用
 -- russian.no_permission = "没有权限"
 --新东西 by someone
@@ -3187,6 +3188,7 @@ russian.desc_o4_control_2 = "Общий контрольно-пропускно�
 russian.desc_o4_control_3 = "Контрольно-пропускной пункт SCP-682"
 russian.desc_o4_control_4 = "Односторонний контрольно-пропускной пункт"
 russian.desc_o4_control_5 = "Односторонняя дверь"
+-- russian.desc_o4_control_special = "O4安全大门"
 russian.desc_o4_call = "Экстренный вызов"
 russian.desc_o4_call_2 = "Название МОГ:"
 russian.desc_o4_call_3 = "Статус МОГ:"
@@ -3198,6 +3200,7 @@ russian.desc_o4_door = "Управление дверьми"
 russian.desc_o4_door_1 = "Оставшийся заряд:"
 russian.desc_o4_door_2 = "Открыть дверь"
 russian.desc_o4_door_3 = "Заблокировать дверь"
+-- russian.desc_o4_door_4 = "关门"
 russian.desc_o4_wallpaper = "Обои"
 russian.desc_o4_camera = "Камеры наблюдения"
 -- russian.desc_o4_life = "生命检测"
