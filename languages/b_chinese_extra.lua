@@ -182,7 +182,7 @@ b_chinese.mtf_agent_found_sts = "他是自己人，其他的我不到啊"
 b_chinese.mtf_agent_found_nu22 = "这是火箭侠小队的战士"
 b_chinese.mtf_agent_found_meg = "这是专家组的专家"
 b_chinese.mtf_agent_found_mtf = "这是我们黑山特战部队的成员"
--- b_chinese.mtf_agent_found_maynard = "你是乔治...梅纳德？！你怎么还有脸面回来这个设施的！"
+b_chinese.mtf_agent_found_maynard = "你是乔治...梅纳德？！你怎么还有脸回来黑山的！"
 --律法左手玩法相关
 --律法左手对讲机
 --文件夹板
@@ -262,7 +262,7 @@ b_chinese.ending_lawhand_success = "你们成功完成任务，逮捕了贪污�
 b_chinese.ending_lawhand_sci = "因为你的正直，你得到了委员会的青睐，你或许将拥有一个更好的未来"
 b_chinese.ending_corrupt = "你刚一下载具，就看见威严法则的调查人员，他们早已等候你多时了...."
 b_chinese.ending_arrested = "因你认罪态度良好，对自己贪腐渎职供认不讳，委员会和O5议会并未过多为难你。你的违法财产被没收后，你将作为一个普通人继续活下去"
-b_chinese.ending_newlife = "将功补过，上层没收你了的违法财产后，你被发配到某个设施内当一个普通档案管理员"
+b_chinese.ending_newlife = "将功补过，上层没收你了的违法财产后，你被发配到其他黑山设施内当一个普通档案管理员"
 --交互系统
 b_chinese.interaction_default_name = "默认模式"
 b_chinese.interaction_default_desc = "默认模式"
@@ -314,8 +314,8 @@ b_chinese.event_style_6_usa = "联邦黑山"
 b_chinese.bigevent_dream = "收容失效之梦"
 b_chinese.bigevent_dream_desc = "这是最美妙的梦,这也是最恐怖的梦"
 --5K
-b_chinese.bigevent_5k = "Xen-5000 \"为什么?\""
-b_chinese.bigevent_5k_desc = "保护常态, 遏制异常, 这是吾辈必行之路"
+b_chinese.bigevent_5k = "Xen-5000 \"咋事儿啊?\""
+b_chinese.bigevent_5k_desc = "保护鸡蛋, 遏制破烂, 这是吾辈必行之路"
 --常规事件
 --全阶段
 b_chinese.event0_nothing = "无事发生"
@@ -405,25 +405,25 @@ b_chinese.event_kindness_of_079_desc = "Xen-079被未知人员授权了ABCD大�
 --------------5K区域--------------
 --一阶段
 b_chinese.scarlet_gift = "拾荒恩泽"
-b_chinese.scarlet_gift_desc = "残余狂热信徒突击了黑山基地-███\n破坏了XEN-████的收容，导致在世界范围内\n会随机出现可能蕴含\"邪恶\"力量的物体"
+b_chinese.scarlet_gift_desc = "残余狂热信徒突击了黑山基地-███破坏了XEN-████的收容，导致在世界范围内会随机出现可能蕴含\"邪恶\"力量的物体"
 --二阶段
 b_chinese.event_the_flesh = "憎恨之血肉"
-b_chinese.event_the_flesh_desc = "Xen-610被释放,它们将感染或杀死设\n施内的所有人,下一波支援固定为\"联合国先进打\n击2组\""
+b_chinese.event_the_flesh_desc = "Xen-610被释放,它们将感染或杀死设施内的所有人,下一波支援固定为\"联合国先进打击2组\""
 --三阶段
 b_chinese.event_scp1440 = "灾厄洪流"
-b_chinese.event_scp1440_desc = "Xen-1440已被BTF \"火箭侠\" 送抵\n设施, 一但Xen-1440抵达设施内三分钟后设施将\n会被\"灾厄\"吞噬\n但绝望之中仍然存在着一丝希望"
+b_chinese.event_scp1440_desc = "Xen-1440已被BTF \"火箭侠\" 送抵设施, 一但Xen-1440抵达设施内三分钟后设施将会被\"灾厄\"吞噬\n但绝望之中仍然存在着一丝希望"
 --Alpha-9 最后的希望
--- b_chinese.role.A9_Anderson = "Alpha-9 SCP-1360"
--- b_chinese.role.A9_Cain = "Alpha-9 SCP-073"
--- b_chinese.role.A9_Ghost = "Alpha-9 SCP-4496"
--- b_chinese.role.A9_Iris = "Alpha-9 SCP-105"
--- b_chinese.tasks_a9 = "清理掉所有受[感染]的人，已无法回头"
--- b_chinese.alpha9_last_hope = "机动特遣队 Alpha-9 \"最后的希望\""
--- b_chinese["Alpha-9 Last Hope"] = "机动特遣队 Alpha-9 \"最后的希望\""
--- b_chinese.alpha9_last_hope_desc = "他们曾经被叫做希望。现在只剩下\"最后\"两个字。\n当基金会决定不再拯救任何人，\"最后的希望\"反而成了最适合执行这件事的单位。\n\n处决令上没有姓名，只有一行编号和日期。她的相机与全部相片依规销毁；档案馆那张 Alpha-9 全员合影里，她原本站的位置被涂抹。剩下的队员被告知：不要打听涂掉了什么\n\n属于白藏服联动事件[最后的希望]下的SCP基金会支援阵营"
--- BREACH.Descriptions.b_chinese[role.A9_Anderson] = "你是Alpha-9 \"最后的希望\" SCP-1360\n"
--- BREACH.Descriptions.b_chinese[role.A9_Cain] = "你是Alpha-9 \"最后的希望\" SCP-073\n"
--- BREACH.Descriptions.b_chinese[role.A9_Ghost] = "你是Alpha-9 \"最后的希望\" SCP-4496\n"
--- BREACH.Descriptions.b_chinese[role.A9_Iris] = "你是Alpha-9 \"最后的希望\" SCP-105\n带着相机与真相同行，记录下这个世界不愿被看见的部分。\n当基金会的命令与人性的底线冲突时，她选择按下快门。"
--- b_chinese.maynard_upload_done = "设施坐标已上传，护送小组即将抵达"
--- b_chinese.maynard_already_done = "支援已抵达，无需重复呼叫"
+b_chinese.role.A9_Anderson = "往日之息 Xen-1360"
+b_chinese.role.A9_Cain = "往日之息 Xen-073"
+b_chinese.role.A9_Ghost = "往日之息 Xen-4496"
+b_chinese.role.A9_Iris = "往日之息 Xen-105"
+b_chinese.tasks_a9 = "清理掉所有受[感染]的人，已无法回头"
+b_chinese.alpha9_last_hope = "黑山特遣队 \"往日之息\""
+b_chinese["Alpha-9 Last Hope"] = "黑山特遣队 \"往日之息\""
+b_chinese.alpha9_last_hope_desc = "他们曾经被叫做希望。现在只剩下\"往日\"两个字。\n当黑山决定不再拯救任何人，\"往日之息\"反而成了最适合执行这件事的单位。\n\n处决令上没有姓名，只有一行编号和日期。她的相机与全部相片依规销毁；档案馆那张队伍的全员合影里，她原本站的位置被涂抹。剩下的队员被告知：不要打听涂掉了什么\n\n属于白藏服联动事件[最后的希望]下的黑山基地支援阵营"
+BREACH.Descriptions.b_chinese[role.A9_Anderson] = "你是黑山特遣队 \"往日之息\" Xen-1360\n"
+BREACH.Descriptions.b_chinese[role.A9_Cain] = "你是黑山特遣队 \"往日之息\" Xen-073\n"
+BREACH.Descriptions.b_chinese[role.A9_Ghost] = "你是黑山特遣队 \"往日之息\" Xen-4496\n"
+BREACH.Descriptions.b_chinese[role.A9_Iris] = "你是黑山特遣队 \"往日之息\" Xen-105\n带着相机与真相同行，记录下这个世界不愿被看见的部分。\n当黑山基地的命令与人性的底线冲突时，她选择按下快门。"
+b_chinese.maynard_upload_done = "黑山坐标已上传，护送小组即将抵达"
+b_chinese.maynard_already_done = "支援已抵达，无需重复呼叫"
