@@ -182,6 +182,7 @@ english.failureToPerfect = "Unable to achieve a perfect round."
 -- english.mtf_agent_found_nu22 = "这是火箭侠小队的战士"
 -- english.mtf_agent_found_meg = "这是专家组的专家"
 -- english.mtf_agent_found_mtf = "这是我们战术应对部门的成员"
+-- english.mtf_agent_found_alpha9 = "Alpha-9？他们这会儿应该在别的地方才对"
 -- english.mtf_agent_found_maynard = "你是乔治...梅纳德？！你怎么还有脸面回来这个设施的！"
 --律法左手玩法相关
 --律法左手对讲机
@@ -301,6 +302,7 @@ english.event_description = "Event Description:"
 --子类型——联动事件
 -- english.event_style_4_uiu = "UIU服"
 -- english.event_style_4_rhd = "RHD服"
+-- english.event_style_4_bz = "白藏服"
 --子类型——其他事件
 -- english.event_style_5_accident = "事故"
 -- english.event_style_5_5k = "5K"
@@ -406,6 +408,9 @@ english.event_kindness_of_079_desc = "SCP-079 has been authorized ABCD gate acce
 --一阶段
 english.scarlet_gift = "Scarlet Blessing"
 english.scarlet_gift_desc = "Remaining Children of the Scarlet King personnel raided Site-███\nThey breached SCP-████ containment, causing objects potentially containing \"evil\" power to randomly appear worldwide"
+--一阶段2
+-- english.underwater_photography = "海底摄影"
+-- english.underwater_photography_desc = "SCP-105回SITE-19取相机时候发生了收容失效，本回合场上存在SCP-105"
 --二阶段
 english.event_the_flesh = "Hateful Flesh"
 english.event_the_flesh_desc = "SCP-610 has been released. They will infect or kill everyone in the facility. The next wave of support is fixed as \"GOC MST-2\"."
@@ -427,3 +432,11 @@ english.event_scp1440_desc = "SCP-1440 has been delivered to the facility by MTF
 -- BREACH.Descriptions.english[role.A9_Iris] = "你是Alpha-9 \"最后的希望\" SCP-105\n带着相机与真相同行，记录下这个世界不愿被看见的部分。\n当基金会的命令与人性的底线冲突时，她选择按下快门。"
 -- english.maynard_upload_done = "设施坐标已上传，护送小组即将抵达"
 -- english.maynard_already_done = "支援已抵达，无需重复呼叫"
+-- english.maynard_wrong_password = "密码错误"
+--Alpha-9 鸢尾技能
+-- english.abilities_name_iris_phase_anchor = "相位折返"
+-- english.abilities_iris_phase_anchor = "传送至已拍摄的照片位置，并获得 10 秒：50% 减伤、50% 移速提升、受击不减速。需要先用 SCP-105-b 右键拍摄照片。"
+-- english.a9_iris_traversal_active = "穿梭已激活"
+-- english.a9_iris_need_camera = "你需要先持有 SCP-105-b 相机"
+-- english.a9_iris_need_photo = "需要先拍摄一张照片（相机右键记录）"
+-- english.item_scp_105b_instructions = "左键异常摄影，右键记录并覆盖唯一照片，R 打开档案，E 接通照片链路，使用相位折返技能传送。"
