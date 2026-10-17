@@ -182,6 +182,7 @@ b_chinese.mtf_agent_found_sts = "他是自己人，其他的我不到啊"
 b_chinese.mtf_agent_found_nu22 = "这是火箭侠小队的战士"
 b_chinese.mtf_agent_found_meg = "这是专家组的专家"
 b_chinese.mtf_agent_found_mtf = "这是我们黑山特战部队的成员"
+-- b_chinese.mtf_agent_found_alpha9 = "Alpha-9？他们这会儿应该在别的地方才对"
 b_chinese.mtf_agent_found_maynard = "你是乔治...梅纳德？！你怎么还有脸回来黑山的！"
 --律法左手玩法相关
 --律法左手对讲机
@@ -301,6 +302,7 @@ b_chinese.event_style_6 = "大事件"
 --子类型——联动事件
 b_chinese.event_style_4_uiu = "神秘的HECU服"
 b_chinese.event_style_4_rhd = "RHD服"
+-- b_chinese.event_style_4_bz = "白藏服"
 --子类型——其他事件
 b_chinese.event_style_5_accident = "事故"
 b_chinese.event_style_5_5k = "5K"
@@ -406,6 +408,9 @@ b_chinese.event_kindness_of_079_desc = "Xen-079被未知人员授权了ABCD大�
 --一阶段
 b_chinese.scarlet_gift = "拾荒恩泽"
 b_chinese.scarlet_gift_desc = "残余狂热信徒突击了黑山基地-███破坏了XEN-████的收容，导致在世界范围内会随机出现可能蕴含\"邪恶\"力量的物体"
+--一阶段2
+-- b_chinese.underwater_photography = "海底摄影"
+-- b_chinese.underwater_photography_desc = "SCP-105回SITE-19取相机时候发生了收容失效，本回合场上存在SCP-105"
 --二阶段
 b_chinese.event_the_flesh = "憎恨之血肉"
 b_chinese.event_the_flesh_desc = "Xen-610被释放,它们将感染或杀死设施内的所有人,下一波支援固定为\"联合国先进打击2组\""
@@ -427,3 +432,11 @@ BREACH.Descriptions.b_chinese[role.A9_Ghost] = "你是黑山特遣队 \"往日�
 BREACH.Descriptions.b_chinese[role.A9_Iris] = "你是黑山特遣队 \"往日之息\" Xen-105\n带着相机与真相同行，记录下这个世界不愿被看见的部分。\n当黑山基地的命令与人性的底线冲突时，她选择按下快门。"
 b_chinese.maynard_upload_done = "黑山坐标已上传，护送小组即将抵达"
 b_chinese.maynard_already_done = "支援已抵达，无需重复呼叫"
+-- b_chinese.maynard_wrong_password = "密码错误"
+--Alpha-9 鸢尾技能
+-- b_chinese.abilities_name_iris_phase_anchor = "相位折返"
+-- b_chinese.abilities_iris_phase_anchor = "传送至已拍摄的照片位置，并获得 10 秒：50% 减伤、50% 移速提升、受击不减速。需要先用 SCP-105-b 右键拍摄照片。"
+-- b_chinese.a9_iris_traversal_active = "穿梭已激活"
+-- b_chinese.a9_iris_need_camera = "你需要先持有 SCP-105-b 相机"
+-- b_chinese.a9_iris_need_photo = "需要先拍摄一张照片（相机右键记录）"
+-- b_chinese.item_scp_105b_instructions = "左键异常摄影，右键记录并覆盖唯一照片，R 打开档案，E 接通照片链路，使用相位折返技能传送。"
