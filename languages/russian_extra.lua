@@ -411,6 +411,12 @@ BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 --一阶段2
 -- russian.underwater_photography = "海底摄影"
 -- russian.underwater_photography_desc = "SCP-105回SITE-19取相机时候发生了收容失效，本回合场上存在SCP-105"
+--一阶段3
+-- russian.event_ntf_revolter = "归乡"
+-- russian.event_ntf_revolter_desc = "曾被基金会判定\"已损失\"的九尾狐小队现身于设施上空，他们已掌握基金会的秘密,并选择继续执行\"正确\"的选择"
+--一阶段4
+-- russian.event_department_support_5k = "清扫作业"
+-- russian.event_department_support_5k_desc = "战术应对二部接到指令正在从其他区域赶来协助清扫"
 --二阶段
 -- russian.event_the_flesh = "憎恨之血肉"
 -- russian.event_the_flesh_desc = "SCP-610被释放,它们将感染或杀死设\n施内的所有人,下一波支援固定为\"GOC奇术打\n击2组\""
@@ -440,3 +446,24 @@ BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 -- russian.a9_iris_need_camera = "你需要先持有 SCP-105-b 相机"
 -- russian.a9_iris_need_photo = "需要先拍摄一张照片（相机右键记录）"
 -- russian.item_scp_105b_instructions = "左键异常摄影，右键记录并覆盖唯一照片，R 打开档案，E 接通照片链路，使用相位折返技能传送。"
+-- russian.iris_goal_camera = "前往轻收容区拿回相机"
+--Gru&Ci 骇客技能
+-- russian.abilities_gruci_hacker = "骇入强制"
+-- russian.abilities_gruci_hacker_desc = "立即骇入450码内所有工程师炮塔并使其失效10秒，你骇入终端与设备的速度也远快于他人"
+--5K窃皮技能
+-- russian.abilities_advanced_disguise = "高阶伪装"
+-- russian.abilities_advanced_disguise_desc = "伪装为指定单位的外观，直到再次使用技能。"
+-- russian.advanced_disguise_revert = "还原初始模样"
+-- russian.advanced_disguise_mtf = "MTF 士兵"
+-- russian.advanced_disguise_qrt = "快速反应部队 指挥官"
+-- russian.advanced_disguise_nu7 = "落锤B连-士兵"
+-- russian.advanced_disguise_not_active = "当前没有进行伪装"
+--Alpha-9 该隐技能
+-- russian.a9_cain_lifezone_enter = "你踏入了该隐的生命禁区"
+-- russian.a9_cain_lifezone_exit = "你离开了生命禁区"
+-- russian.a9_cain_wither = "枯萎：生命持续流失"
+--Alpha-9 幽灵技能
+-- russian.abilities_name_a9_ghost_soul = "正义之魂"
+-- russian.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
+-- russian.abilities_name_a9_ghost_scatter = "双发散射"
+-- russian.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
