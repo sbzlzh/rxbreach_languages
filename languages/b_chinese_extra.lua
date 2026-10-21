@@ -1,6 +1,5 @@
 b_chinese = b_chinese or {}
 b_chinese.role = chinese.role or {}
-BREACH = BREACH or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
 --目标提示
@@ -411,6 +410,12 @@ b_chinese.scarlet_gift_desc = "残余狂热信徒突击了黑山基地-███
 --一阶段2
 b_chinese.underwater_photography = "海底摄影"
 b_chinese.underwater_photography_desc = "Xen-105回黑山基地取相机时候发生了收容失效，本回合场上存在Xen-105"
+--一阶段3
+-- b_chinese.event_ntf_revolter = "归乡"
+-- b_chinese.event_ntf_revolter_desc = "曾被基金会判定\"已损失\"的九尾狐小队现身于设施上空，他们已掌握基金会的秘密,并选择继续执行\"正确\"的选择"
+--一阶段4
+-- b_chinese.event_department_support_5k = "清扫作业"
+-- b_chinese.event_department_support_5k_desc = "战术应对二部接到指令正在从其他区域赶来协助清扫"
 --二阶段
 b_chinese.event_the_flesh = "憎恨之血肉"
 b_chinese.event_the_flesh_desc = "Xen-610被释放,它们将感染或杀死设施内的所有人,下一波支援固定为\"联合国先进打击2组\""
@@ -440,3 +445,24 @@ b_chinese.a9_iris_traversal_active = "穿梭已激活"
 b_chinese.a9_iris_need_camera = "你需要先持有 Xen-105-b 相机"
 b_chinese.a9_iris_need_photo = "需要先拍摄一张照片（相机右键记录）"
 b_chinese.item_scp_105b_instructions = "左键异常摄影，右键记录并覆盖唯一照片，R 打开档案，E 接通照片链路，使用相位折返技能传送。"
+-- b_chinese.iris_goal_camera = "前往轻收容区拿回相机"
+--Gru&Ci 骇客技能
+-- b_chinese.abilities_gruci_hacker = "骇入强制"
+-- b_chinese.abilities_gruci_hacker_desc = "立即骇入450码内所有工程师炮塔并使其失效10秒，你骇入终端与设备的速度也远快于他人"
+--5K窃皮技能
+-- b_chinese.abilities_advanced_disguise = "高阶伪装"
+-- b_chinese.abilities_advanced_disguise_desc = "伪装为指定单位的外观，直到再次使用技能。"
+-- b_chinese.advanced_disguise_revert = "还原初始模样"
+-- b_chinese.advanced_disguise_mtf = "MTF 士兵"
+-- b_chinese.advanced_disguise_qrt = "快速反应部队 指挥官"
+-- b_chinese.advanced_disguise_nu7 = "落锤B连-士兵"
+-- b_chinese.advanced_disguise_not_active = "当前没有进行伪装"
+--Alpha-9 该隐技能
+-- b_chinese.a9_cain_lifezone_enter = "你踏入了该隐的生命禁区"
+-- b_chinese.a9_cain_lifezone_exit = "你离开了生命禁区"
+-- b_chinese.a9_cain_wither = "枯萎：生命持续流失"
+--Alpha-9 幽灵技能
+-- b_chinese.abilities_name_a9_ghost_soul = "正义之魂"
+-- b_chinese.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
+-- b_chinese.abilities_name_a9_ghost_scatter = "双发散射"
+-- b_chinese.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"

@@ -1,6 +1,5 @@
 english = english or {}
 english.role = chinese.role or {}
-english = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.english = BREACH.Descriptions.english or {}
 --目标提示
@@ -411,6 +410,12 @@ english.scarlet_gift_desc = "Remaining Children of the Scarlet King personnel ra
 --一阶段2
 english.underwater_photography = "Underwater Photography"
 english.underwater_photography_desc = "SCP-105 was at Site-19 retrieving her camera when the containment breach occurred. SCP-105 will be present this round."
+--一阶段3
+-- english.event_ntf_revolter = "归乡"
+-- english.event_ntf_revolter_desc = "曾被基金会判定\"已损失\"的九尾狐小队现身于设施上空，他们已掌握基金会的秘密,并选择继续执行\"正确\"的选择"
+--一阶段4
+-- english.event_department_support_5k = "清扫作业"
+-- english.event_department_support_5k_desc = "战术应对二部接到指令正在从其他区域赶来协助清扫"
 --二阶段
 english.event_the_flesh = "Hateful Flesh"
 english.event_the_flesh_desc = "SCP-610 has been released. They will infect or kill everyone in the facility. The next wave of support is fixed as \"GOC MST-2\"."
@@ -440,3 +445,24 @@ english.a9_iris_traversal_active = "Traversal activated"
 english.a9_iris_need_camera = "You must first be holding the SCP-105-B camera"
 english.a9_iris_need_photo = "You must take a photograph first (right-click with the camera to record)"
 english.item_scp_105b_instructions = "Left-click for anomalous photography, right-click to record and overwrite the single photograph, press R to open the archive, press E to connect the photo link, and use the Phase Return ability to teleport."
+-- english.iris_goal_camera = "前往轻收容区拿回相机"
+--Gru&Ci 骇客技能
+-- english.abilities_gruci_hacker = "骇入强制"
+-- english.abilities_gruci_hacker_desc = "立即骇入450码内所有工程师炮塔并使其失效10秒，你骇入终端与设备的速度也远快于他人"
+--5K窃皮技能
+-- english.abilities_advanced_disguise = "高阶伪装"
+-- english.abilities_advanced_disguise_desc = "伪装为指定单位的外观，直到再次使用技能。"
+-- english.advanced_disguise_revert = "还原初始模样"
+-- english.advanced_disguise_mtf = "MTF 士兵"
+-- english.advanced_disguise_qrt = "快速反应部队 指挥官"
+-- english.advanced_disguise_nu7 = "落锤B连-士兵"
+-- english.advanced_disguise_not_active = "当前没有进行伪装"
+--Alpha-9 该隐技能
+-- english.a9_cain_lifezone_enter = "你踏入了该隐的生命禁区"
+-- english.a9_cain_lifezone_exit = "你离开了生命禁区"
+-- english.a9_cain_wither = "枯萎：生命持续流失"
+--Alpha-9 幽灵技能
+-- english.abilities_name_a9_ghost_soul = "正义之魂"
+-- english.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
+-- english.abilities_name_a9_ghost_scatter = "双发散射"
+-- english.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
