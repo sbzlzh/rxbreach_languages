@@ -407,20 +407,26 @@ chinese.event_kindness_of_079_desc = "SCP-079被未知人员授权了ABCD大门�
 --------------5K区域--------------
 --一阶段
 chinese.scarlet_gift = "深红恩泽"
-chinese.scarlet_gift_desc = "残余深红王之子的人员突击了Site-███\n破坏了SCP-████的收容，导致在世界范围内\n会随机出现可能蕴含\"邪恶\"力量的物体"
+chinese.scarlet_gift_desc = "残余深红王之子的人员突击了Site-███破坏了SCP-████的收容，导致在世界范围内会随机出现可能蕴含\"邪恶\"力量的物体"
 --一阶段2
 chinese.underwater_photography = "海底摄影"
-chinese.underwater_photography_desc = "SCP-105回SITE-19取相机时候发生了收容失效，本回合场上存在SCP-105"
+chinese.underwater_photography_desc = "收容失效开始前，SCP‑105位于重收容区二层会客室，正在接受常规心理评估。她需前往轻收容区取回SCP-105-B。同时她可以呼叫快速反应部队"
+--一阶段3
+chinese.event_ntf_revolter = "归乡"
+chinese.event_ntf_revolter_desc = "曾被基金会判定\"已损失\"的九尾狐小队现身于设施上空，他们已掌握基金会的秘密,并选择继续执行\"正确\"的选择"
+--一阶段4
+chinese.event_department_support_5k = "清扫作业"
+chinese.event_department_support_5k_desc = "战术应对二部接到指令正在从其他区域赶来协助清扫"
 --二阶段
 chinese.event_the_flesh = "憎恨之血肉"
-chinese.event_the_flesh_desc = "SCP-610被释放,它们将感染或杀死设\n施内的所有人,下一波支援固定为\"GOC奇术打\n击2组\""
+chinese.event_the_flesh_desc = "SCP-610被释放,它们将感染或杀死设施内的所有人,下一波支援固定为\"GOC奇术打击2组\""
 --三阶段
 chinese.event_scp1440 = "灾厄洪流"
-chinese.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭侠\" 送抵\n设施, 一但SCP-1440抵达设施内三分钟后设施将\n会被\"灾厄\"吞噬\n但绝望之中仍然存在着一丝希望"
+chinese.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭侠\" 送抵设施, 一但SCP-1440抵达设施内三分钟后设施将会被\"灾厄\"吞噬但绝望之中仍然存在着一丝希望"
 --Alpha-9 最后的希望
 chinese.role.A9_Anderson = "Alpha-9 SCP-1360"
 chinese.role.A9_Cain = "Alpha-9 SCP-073"
-chinese.role.A9_Ghost = "Alpha-9 SCP-4496"
+chinese.role.A9_Ghost = "Alpha-9 SCP-4494"
 chinese.role.A9_Iris = "Alpha-9 SCP-105"
 chinese.tasks_a9 = "清理掉所有受[感染]的人，已无法回头"
 chinese.alpha9_last_hope = "机动特遣队 Alpha-9 \"最后的希望\""
@@ -429,7 +435,7 @@ chinese.alpha9_last_hope_desc = "他们曾经被叫做希望。现在只剩下\"
 BREACH.Descriptions.chinese[role.A9_Anderson] = "你是Alpha-9 \"最后的希望\" SCP-1360\n"
 BREACH.Descriptions.chinese[role.A9_Cain] = "你是Alpha-9 \"最后的希望\" SCP-073\n"
 BREACH.Descriptions.chinese[role.A9_Ghost] = "你是Alpha-9 \"最后的希望\" SCP-4496\n"
-BREACH.Descriptions.chinese[role.A9_Iris] = "你是Alpha-9 \"最后的希望\" SCP-105\n你是SITE-17收容的异常，你在回SITE-19拿取SCP-105-B时，发生了收容失效。\n疏散研究员，撤离设施，并可选择召唤QRT小队。"
+BREACH.Descriptions.chinese[role.A9_Iris] = "你是Alpha-9 \"最后的希望\" SCP-105\n你是SITE-17收容的异常，你在访问SITE-19取回SCP-105-B时，发生了收容失效。\n疏散研究员，撤离设施，并可选择召唤快速反应部队。"
 chinese.maynard_upload_done = "设施坐标已上传，护送小组即将抵达"
 chinese.maynard_already_done = "支援已抵达，无需重复呼叫"
 chinese.maynard_wrong_password = "密码错误"
@@ -440,3 +446,24 @@ chinese.a9_iris_traversal_active = "穿梭已激活"
 chinese.a9_iris_need_camera = "你需要先持有 SCP-105-b 相机"
 chinese.a9_iris_need_photo = "需要先拍摄一张照片（相机右键记录）"
 chinese.item_scp_105b_instructions = "左键异常摄影，右键记录并覆盖唯一照片，R 打开档案，E 接通照片链路，使用相位折返技能传送。"
+chinese.iris_goal_camera = "前往轻收容区拿回相机"
+--Gru&Ci 骇客技能
+chinese.abilities_gruci_hacker = "骇入强制"
+chinese.abilities_gruci_hacker_desc = "立即骇入450码内所有工程师炮塔并使其失效10秒，你骇入终端与设备的速度也远快于他人"
+--5K窃皮技能
+chinese.abilities_advanced_disguise = "高阶伪装"
+chinese.abilities_advanced_disguise_desc = "伪装为指定单位的外观，直到再次使用技能。"
+chinese.advanced_disguise_revert = "还原初始模样"
+chinese.advanced_disguise_mtf = "MTF 士兵"
+chinese.advanced_disguise_qrt = "快速反应部队 指挥官"
+chinese.advanced_disguise_nu7 = "落锤B连-士兵"
+chinese.advanced_disguise_not_active = "当前没有进行伪装"
+--Alpha-9 该隐技能
+chinese.a9_cain_lifezone_enter = "你踏入了该隐的生命禁区"
+chinese.a9_cain_lifezone_exit = "你离开了生命禁区"
+chinese.a9_cain_wither = "枯萎：生命持续流失"
+--Alpha-9 幽灵技能
+chinese.abilities_name_a9_ghost_soul = "正义之魂"
+chinese.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
+chinese.abilities_name_a9_ghost_scatter = "双发散射"
+chinese.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
