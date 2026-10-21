@@ -1,6 +1,5 @@
 b_chinese = b_chinese or {}
 b_chinese.role = chinese.role or {}
-b_chinese = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
 --目标提示

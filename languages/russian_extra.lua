@@ -1,6 +1,5 @@
 russian = russian or {}
 russian.role = chinese.role or {}
-russian = {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 --目标提示
