@@ -1,5 +1,5 @@
 english = english or {}
-english.role = chinese.role or {}
+english.role = english.role or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.english = BREACH.Descriptions.english or {}
 --目标提示

@@ -1,5 +1,5 @@
 traditional = traditional or {}
-traditional.role = chinese.role or {}
+traditional.role = traditional.role or {}
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.traditional = BREACH.Descriptions.traditional or {}
 --目标提示
