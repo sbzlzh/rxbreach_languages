@@ -24,7 +24,7 @@ chinese.bugs = "如果遇到BUG请报告BUG!"
 chinese.lang_end1 = "游戏结束"
 chinese.lang_end2 = "时不我待"
 chinese.lang_end3 = "游戏无法进行"
-chinese.role = chinese.role or {}
+chinese.role = {}
 --SCP
 chinese.SCP = "SCP"
 chinese.role.SCP106 = "SCP-106"
