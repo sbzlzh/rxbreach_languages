@@ -329,6 +329,8 @@ english.event_woa32_desc = "WOA-32 has breached the containment measures of Tact
 --一阶段
 english.event_ron = "On High Alert"
 english.event_ron_desc = "No CI spies this round. All security personnel receive ammunition. Security access delay increased by 15 seconds. One CI agent appears among Class-D to assist them."
+-- english.event_security_ron_5k = "严阵以待"
+-- english.event_security_ron_5k_desc = "安保部门上尉得知了基金会的计划，并提前行动，所有安保人员获得额外装备"
 english.event_limit_fixing = "Extreme Maintenance"
 english.event_limit_fixing_desc = "Generators are severely damaged due to anomalous reasons. SCPs gain permanent level 2 anomalous health regeneration. Generators cannot be repaired by ordinary personnel. MTF engineer repair time increased. NU-7 Hammer Down maintenance team is en route to the facility."
 english.event_bad_security = "Lax Internal Review"
@@ -353,6 +355,7 @@ english.event_famine_classd = "Famine"
 english.event_famine_classd_desc = "Due to unsustainable overexploitation by the Security Captain and Warden, most Class-D personnel are malnourished and have developed cannibalistic tendencies. Maximum health decreased, cannibalism speed increased, and corpses can be eaten twice."
 english.event_hammer_insite = "Stationed Hammer Down Team"
 english.event_hammer_insite_desc = "Most MTF personnel from Site-19 have been pulled for training. Temporarily replaced by MTF-NU7 Hammer Down Alpha Company."
+-- english.event_hammer_insite_5k_desc = "Site-19战术应对部门的大部分单位因拒绝服用[解药]已被处决，设施内务由落锤肃杀A连代替"
 english.event_elite_qrt = "Elite QRT"
 english.event_elite_qrt_desc = "The Facility Director is away at a meeting, and most QRT team members have been assigned to protect the Facility Director and their entourage. Therefore, an elite QRT team has been deployed from another region as a precaution. Any senior facility staff member may summon them."
 english.event_mtf_new_suit = "New Uniforms"
@@ -466,3 +469,6 @@ english.item_scp_105b_instructions = "Left-click for anomalous photography, righ
 -- english.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
 -- english.abilities_name_a9_ghost_scatter = "双发散射"
 -- english.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
+--MEG九尾-5K
+-- english.abilities_meg_ntf_5k = "实验型-5000\"稳定锚\""
+-- english.abilities_meg_ntf_5k_desc = "自身获得20秒6级后座降低与3级子弹护盾；范围内所有友军(含SCP)获得13秒2级后座降低、2级增伤与2级子弹护盾。"

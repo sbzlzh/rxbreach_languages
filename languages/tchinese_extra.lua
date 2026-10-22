@@ -329,6 +329,8 @@ traditional.event_woa32_desc = "WOA-32突破了二部的收容措施，來到了
 --一階段
 traditional.event_ron = "嚴陣以待"
 traditional.event_ron_desc = "本回合沒有CI間諜，所有安保人員獲得子彈，安保門禁延後15秒；D級人員中會出現一名CI特工協助D級人員"
+-- traditional.event_security_ron_5k = "严阵以待"
+-- traditional.event_security_ron_5k_desc = "安保部门上尉得知了基金会的计划，并提前行动，所有安保人员获得额外装备"
 traditional.event_limit_fixing = "極限維修"
 traditional.event_limit_fixing_desc = "發電機因異常原因嚴重損壞，SCP獲得永久的2級異常生命恢復效果。普通人無法維修發電機，MTF工程師的維修時間延長，NU-7落錘維修小組正在趕往設施"
 traditional.event_bad_security = "擺爛的內部審查"
@@ -353,6 +355,7 @@ traditional.event_famine_classd = "飢荒"
 traditional.event_famine_classd_desc = "因為安保上尉和典獄長的可持續性竭澤而漁，導致大部分D級營養不良，有了食人傾向\n最大血量下降，食人速度加快，屍體能被吃兩遍"
 traditional.event_hammer_insite = "駐站落錘小隊"
 traditional.event_hammer_insite_desc = "Site-19的大部分MTF人員被拉去集訓\n臨時由MTF-NU7 落錘 A連代替"
+-- traditional.event_hammer_insite_5k_desc = "Site-19战术应对部门的大部分单位因拒绝服用[解药]已被处决，设施内务由落锤肃杀A连代替"
 traditional.event_elite_qrt = "精銳小隊"
 traditional.event_elite_qrt_desc = "設施主管外出開會，多數QRT隊員被指派保護設施主管及其隨行人員，因此從其他地區調來一支精銳QRT小隊以防萬一\n任何設施高階職業均可召喚"
 traditional.event_mtf_new_suit = "新式制服"
@@ -466,3 +469,6 @@ traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n�
 -- traditional.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
 -- traditional.abilities_name_a9_ghost_scatter = "双发散射"
 -- traditional.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
+--MEG九尾-5K
+-- traditional.abilities_meg_ntf_5k = "实验型-5000\"稳定锚\""
+-- traditional.abilities_meg_ntf_5k_desc = "自身获得20秒6级后座降低与3级子弹护盾；范围内所有友军(含SCP)获得13秒2级后座降低、2级增伤与2级子弹护盾。"

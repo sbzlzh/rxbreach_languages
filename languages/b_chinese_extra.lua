@@ -329,6 +329,8 @@ b_chinese.event_woa32_desc = "WOA-32突破了二部的收容措施，来到了�
 --一阶段
 b_chinese.event_ron = "严阵以待"
 b_chinese.event_ron_desc = "本回合没有ELS间谍,所有安保人员获得子弹,安保门禁时间延迟15秒囚犯中出现一名ELS特工帮助囚犯"
+-- b_chinese.event_security_ron_5k = "严阵以待"
+-- b_chinese.event_security_ron_5k_desc = "安保部门上尉得知了基金会的计划，并提前行动，所有安保人员获得额外装备"
 b_chinese.event_limit_fixing = "极限维修"
 b_chinese.event_limit_fixing_desc = "发电机因为异常原因被严重损坏状态，Xen获得永久的二级异常生命恢复效果发电机不能够被普通人维修，BTF工程师维修时间加长，战锤维修小组正在赶往设施"
 b_chinese.event_bad_security = "摆烂的安全特工"
@@ -353,6 +355,7 @@ b_chinese.event_famine_classd = "饥荒"
 b_chinese.event_famine_classd_desc = "因为安保上尉和典狱长的可持续性竭泽而渔，导致大部分囚犯营养不良，有了食人倾向\n最大血量下降，食人速度加快，尸体能被吃两遍"
 b_chinese.event_hammer_insite = "驻站战锤小队"
 b_chinese.event_hammer_insite_desc = "黑山的大部分武装人员被拉去集训\n临时由BTF- 战锤 A连代替"
+-- b_chinese.event_hammer_insite_5k_desc = "Site-19战术应对部门的大部分单位因拒绝服用[解药]已被处决，设施内务由落锤肃杀A连代替"
 b_chinese.event_elite_qrt = "精锐小队"
 b_chinese.event_elite_qrt_desc = "黑山主管外出开会，多数QRT小队队员被指派保护黑山主管及其随行人员因此从其他地区调来一支精锐QRT小队以防万一\n任何设施高级职业均可召唤"
 b_chinese.event_mtf_new_suit = "新式制服"
@@ -466,3 +469,6 @@ b_chinese.item_scp_105b_instructions = "左键异常摄影，右键记录并覆�
 -- b_chinese.abilities_desc_a9_ghost_soul = "8秒内免疫全部伤害，开火立即解除。冷却期间击杀目标回复10%最大生命。"
 -- b_chinese.abilities_name_a9_ghost_scatter = "双发散射"
 -- b_chinese.abilities_desc_a9_ghost_scatter = "持手枪时消耗2发弹药，对前方320单位、90度锥形内的敌人造成60点伤害并击退、减速30%持续6秒。"
+--MEG九尾-5K
+-- b_chinese.abilities_meg_ntf_5k = "实验型-5000\"稳定锚\""
+-- b_chinese.abilities_meg_ntf_5k_desc = "自身获得20秒6级后座降低与3级子弹护盾；范围内所有友军(含SCP)获得13秒2级后座降低、2级增伤与2级子弹护盾。"
