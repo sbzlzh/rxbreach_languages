@@ -352,7 +352,7 @@ b_chinese.role.UIU_Special_Officer = "HECU 联络专员"
 b_chinese.role.chaos_agent = "ELS 特工"
 b_chinese.role.ClsssD_stronug = "强壮? 囚犯"
 b_chinese.role.caishen = "财神爷"
-b_chinese.role.UNGOC_Evaluator = "UN ESF评估特工"
+b_chinese.role.UNGOC_Evaluator = "联合国 评估特工"
 b_chinese.role.GRUCI_Maynard = "乔治·梅纳德博士"
 --MIO教派
 b_chinese.MIO_CULT = "奶龙追随者"
@@ -1105,7 +1105,7 @@ b_chinese.goxifacai = "恭喜发财！"
 b_chinese.grubtf_leavehint1 = "装甲车将在"
 b_chinese.grubtf_leavehint2 = "秒后离开"
 b_chinese.grup_leave_hint = "即将离开，你无需对话"
-b_chinese.grup_heli_hint = "还在设施内的同志们，赶快离开设施，我们在B门附近等你们"
+b_chinese.grup_heli_hint = "还在黑山内的同志们，赶快撤离，我们在B门附近等你们"
 --SCP500?效果提示
 b_chinese.scp500weird_hint1 = "有点火辣辣的冰"
 b_chinese.scp500weird_hint2 = "向前冲刺吧!"
@@ -1233,7 +1233,7 @@ b_chinese.handcuff_hint3 = "你无法给人戴手铐/你需要先取得黑山武
 b_chinese.handcuff_hint4 = "你是威严法则的一员，你能在某些时候逮捕高层（如果他们心甘情愿被抓的话）"
 b_chinese.handcuff_hint5 = "现在已掌握充分的证据，去逮捕他们！"
 --TEAMS
-b_chinese["Not Set"] = "null"
+b_chinese["Not Set"] = "滚木"
 b_chinese["SCPs"] = "Xens"
 b_chinese["MTF Guards"] = "黑山基地 战术应对部门"
 b_chinese["MTF Expert Group"] = "黑山武装 专家组"
@@ -1738,7 +1738,7 @@ b_chinese.rescued_ar_falcon = "回收公司机器人"
 b_chinese.rescued_ar_employee = "救援公司员工"
 b_chinese.uiu_spy_hacked = "终端骇入完成"
 --kongshu_胜利经验
-b_chinese.ci_vdv_winner = "俄罗斯空输部队占领了黑山基地"
+b_chinese.ci_vdv_winner = "ELS空输部队占领了黑山基地"
 b_chinese.nu7_squad_winner = "战锤特战分队保卫住了黑山基地"
 --BattleSite结局
 b_chinese.roundend_nu7ab = "联合部队消灭了军团"
@@ -1841,7 +1841,7 @@ b_chinese.ending_random_scp5 = "你出现在了一片未知区域,这里只有�
 b_chinese.ending_random_scp6 = "联合国部队正在测试新的能量武器,而你刚好在武器的射程内"
 b_chinese.ending_ar_rescue_heli = "乘坐AR救援直升机逃离设施"
 --事件特殊结局和奖励
-b_chinese.ending_bad_warhead = "你很幸运核弹头没有爆炸"
+b_chinese.ending_bad_warhead = "你很幸运 核弹头没有爆炸"
 b_chinese.ending_bad_warhead_bonus = "核弹幸运星"
 --躲过死神
 b_chinese.hind_thedeath_bonus = "躲过死神"
