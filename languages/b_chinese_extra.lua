@@ -425,10 +425,10 @@ b_chinese.event_the_flesh_desc = "Xen-610被释放,它们将感染或杀死设�
 --三阶段
 b_chinese.event_scp1440 = "灾厄洪流"
 b_chinese.event_scp1440_desc = "Xen-1440已被BTF \"火箭侠\" 送抵设施, 一但Xen-1440抵达设施内三分钟后设施将会被\"灾厄\"吞噬\n但绝望之中仍然存在着一丝希望"
--- b_chinese.event_woa32_5k = "不可直视之物"
--- b_chinese.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将无差别攻击所有人"
--- b_chinese.event_alpha9 = "长日将尽，长夜将明"
--- b_chinese.event_alpha9_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
+b_chinese.event_woa32_5k = "不可直视之物"
+b_chinese.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被黑山特战二部释放，祂将无差别攻击所有人"
+b_chinese.event_alpha9 = "长日将尽，长夜将明"
+b_chinese.event_alpha9_desc = "黑山基地的暴动已超出可控阈值，黑山内部的叛乱与渗透以及各种势力的攻击让黑山疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"往日之息\""
 --Alpha-9 最后的希望
 b_chinese.role.A9_Anderson = "往日之息 Xen-1360"
 b_chinese.role.A9_Cain = "往日之息 Xen-073"
