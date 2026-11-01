@@ -425,6 +425,10 @@ traditional.event_the_flesh_desc = "SCP-610已被釋放，它們將感染或殺�
 --三階段
 traditional.event_scp1440 = "災厄洪流"
 traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n設施。SCP-1440抵達設施三分鐘後，設施將\n被\"災厄\"吞噬\n但絕望之中仍然存在著一絲希望"
+-- traditional.event_woa32_5k = "不可直视之物"
+-- traditional.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将无差别攻击所有人"
+-- traditional.event_alpha9 = "长日将尽，长夜将明"
+-- traditional.event_alpha9_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
 --Alpha-9 最后的希望
 -- traditional.role.A9_Anderson = "Alpha-9 SCP-1360"
 -- traditional.role.A9_Cain = "Alpha-9 SCP-073"

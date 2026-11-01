@@ -425,6 +425,10 @@ english.event_the_flesh_desc = "SCP-610 has been released. They will infect or k
 --三阶段
 english.event_scp1440 = "Calamity Flood"
 english.event_scp1440_desc = "SCP-1440 has been delivered to the facility by MTF NU-22 \"Rocketmen\". Once SCP-1440 arrives in the facility for three minutes, the facility will be consumed by \"calamity\". But there is still a glimmer of hope in despair."
+-- english.event_woa32_5k = "不可直视之物"
+-- english.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将无差别攻击所有人"
+-- english.event_alpha9 = "长日将尽，长夜将明"
+-- english.event_alpha9_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
 --Alpha-9 最后的希望
 english.role.A9_Anderson = "Alpha-9 SCP-1360"
 english.role.A9_Cain = "Alpha-9 SCP-073"

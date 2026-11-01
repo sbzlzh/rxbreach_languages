@@ -425,6 +425,10 @@ BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 --三阶段
 -- russian.event_scp1440 = "灾厄洪流"
 -- russian.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭侠\" 送抵\n设施, 一但SCP-1440抵达设施内三分钟后设施将\n会被\"灾厄\"吞噬\n但绝望之中仍然存在着一丝希望"
+-- russian.event_woa32_5k = "不可直视之物"
+-- russian.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将无差别攻击所有人"
+-- russian.event_alpha9 = "长日将尽，长夜将明"
+-- russian.event_alpha9_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
 --Alpha-9 最后的希望
 -- russian.role.A9_Anderson = "Alpha-9 SCP-1360"
 -- russian.role.A9_Cain = "Alpha-9 SCP-073"
