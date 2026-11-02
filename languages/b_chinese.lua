@@ -1109,7 +1109,7 @@ b_chinese.grup_heli_hint = "还在黑山内的同志们，赶快撤离，我们�
 --SCP500?效果提示
 b_chinese.scp500weird_hint1 = "有点火辣辣的冰"
 b_chinese.scp500weird_hint2 = "向前冲刺吧!"
-b_chinese.scp500weird_hint3 = "这是你的终章..."
+b_chinese.scp500weird_hint3 = "你要掉了..."
 b_chinese.scp500weird_hint4 = "你将重获新生"
 --实体提醒
 b_chinese.ent_using = "有人正在使用/互动"
@@ -1342,29 +1342,29 @@ b_chinese.scp062de_g43_desc = "G43是一把半自动步枪，有着不错的伤�
 BREACH.Descriptions = BREACH.Descriptions or {}
 BREACH.Descriptions.b_chinese = BREACH.Descriptions.b_chinese or {}
 BREACH.Descriptions.b_chinese[role.SCI_SpyUSA] = "你是HECU - 间谍\n\n你的目标:骇入办公区的某台电脑\n\n获取部分重要信息并呼叫支援\n\n黑山总管随身携带的密令可能对你有帮助\n\n并且你的资料已经上传进数据库,没有人会知道你的真实身份\n\n但根据情报显示某人有一份对你不利的情报"
-BREACH.Descriptions.b_chinese[SCP049] = "你是Xen-049[疫医]\n设施内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人"
-BREACH.Descriptions.b_chinese[SCP912] = "你是Xen-912[自主型SWAT装甲]\n击杀设施内的罪犯"
+BREACH.Descriptions.b_chinese[SCP049] = "你是Xen-049[西医]\n黑山内'瘟疫'逐渐严重,你需要去治愈那些感染'瘟疫'的病人"
+BREACH.Descriptions.b_chinese[SCP912] = "你是Xen-912[99新SWAT装甲]\n击杀设施内的罪犯"
 BREACH.Descriptions.b_chinese[SCP062DE] = "你是Xen-062-DE[战争的幽灵]\n继续完成你的使命!"
 BREACH.Descriptions.b_chinese[SCP638] = "你是Xen-638[狂吼之人]\n你的吼声能让周围的人感到恐惧"
 BREACH.Descriptions.b_chinese[SCP062FR] = "你是Xen-062-FR[完美掠食者]\n吃掉他们,然后进化..."
 BREACH.Descriptions.b_chinese[SCP076] = "你是Xen-076[亚伯]\n你的刀能轻易斩断任何阻挡你的事物"
 BREACH.Descriptions.b_chinese[SCP106] = "你是Xen-106[恐怖老人]\n嘿嘿,想来我的快乐老家做客吗?!"
-BREACH.Descriptions.b_chinese[SCP096] = "你是Xen-096[害羞的人]\n你憎恶那些看到你脸的施暴者!"
-BREACH.Descriptions.b_chinese[SCP542] = "你是Xen-542[外科医学先生]\n设施内的病人疑似有点太多了"
-BREACH.Descriptions.b_chinese[SCP973] = "你是Xen-973[公路巡警]\n设施内的\'交通\'需要你的管制"
+BREACH.Descriptions.b_chinese[SCP096] = "你是Xen-096[胆小的人]\n你讨厌那些看你的施暴者!"
+BREACH.Descriptions.b_chinese[SCP542] = "你是Xen-542[外科医学专家]\n黑山内的病人疑似有点太多了"
+BREACH.Descriptions.b_chinese[SCP973] = "你是Xen-973[巡警]\n黑山内的\'交通\'需要你的管制"
 BREACH.Descriptions.b_chinese[SCP2012] = "你是Xen-2012[迷失时间的军灵]\n为了军团的荣耀!"
-BREACH.Descriptions.b_chinese[SCP082] = "你是Xen-082[食人者“费尔南德”]\n想要了解一点\'做人\'的道理吗？"
-BREACH.Descriptions.b_chinese[SCP939] = "你是Xen-939[千喉之兽]\n多么优雅的声音,现在,是我的了"
+BREACH.Descriptions.b_chinese[SCP082] = "你是Xen-082[“费尔南德”]\n想要了解一点\'做人\'的道理吗？"
+BREACH.Descriptions.b_chinese[SCP939] = "你是Xen-939[小狗狗]\n多么优雅的声音,现在,是我的了"
 BREACH.Descriptions.b_chinese[SCP811] = "你是Xen-811[沼女]\n你的酸液能浸透装甲!"
-BREACH.Descriptions.b_chinese[SCP682] = "你是Xen-682[不灭孽蜥]\n憎恶一切,毁灭一切"
+BREACH.Descriptions.b_chinese[SCP682] = "你是Xen-682[大狗狗]\n憎恶一切,毁灭一切"
 BREACH.Descriptions.b_chinese[SCP999] = "你是Xen-999-2[不完美的副产物]\n是黑山基地对Xen-999实验所创造的生命体\n你虽然能够治愈别人但你似乎不像999那么友善"
-BREACH.Descriptions.b_chinese[SCP3114] = "你是Xen-3114[是不是太冷淡了?]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了..."
+BREACH.Descriptions.b_chinese[SCP3114] = "你是Xen-3114[医学骷髅模型]\n\n你是一个来自其他宇宙的3114实体\n\n相较于这个宇宙的3114来说,你可比她热情多了..."
 BREACH.Descriptions.b_chinese[SCP457] = "你是Xen-457[炎魔]\n\n燃料，更多的燃料"
 --SCP610
 BREACH.Descriptions.b_chinese[SCP610Infected] = "你是Xen-610 感染者\n\n尝试感染你遇到的每一个生物"
 BREACH.Descriptions.b_chinese[SCP610Bloodiness] = "你是Xen-610 血污\n\n尝试感染你遇到的每一个生物"
 --SCP999
-BREACH.Descriptions.b_chinese[SCP999Real] = "你是Xen-999[痒痒怪]\n\n你是Xen-999，你是一个非常友好的异常实体\n\n你对待任何人都很友善"
+BREACH.Descriptions.b_chinese[SCP999Real] = "你是Xen-999[小可爱!]\n\n你是Xen-999，你是一个非常友好的实体\n\n你对待任何人都很友善"
 --娱乐SCP
 BREACH.Descriptions.b_chinese[role.Chaos_Grunt] = "你是ELS武装部队 - 士兵\n\n俘虏囚犯\n\n遵循你指挥官的命令完成目标!"
 BREACH.Descriptions.b_chinese[role.Chaos_Demo] = "你是ELS武装部队 - 恶魔\n\n你有RPG火箭发射器和两发弹药,用它摧毁直升机和一切你遇到的敌人\n\n遵循你指挥官的命令并完成目标!"
