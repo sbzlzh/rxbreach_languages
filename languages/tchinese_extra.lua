@@ -559,6 +559,8 @@ traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n�
 -- traditional.desc_livetab_12 = ">> 清收容消毒程序将在 "
 -- traditional.desc_livetab_13 = ">> 立即离开当前区域!"
 -- traditional.desc_livetab_14 = "Alpha弹头紧急引爆程序"
+-- traditional.desc_livetab_15 = "未知顶点实体降临警报"
+-- traditional.desc_livetab_16 = "非法核弹进程中..."
 --scp5k的livetab--
 -- traditional.desc_5k_livetab_1 = "SCP基金会单位:"
 -- traditional.desc_5k_livetab_2 = "受影响单位:"
@@ -592,3 +594,10 @@ traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n�
 -- traditional.tasks_uiu_5k = "潜入设施，调查SCP基金会静默的真相"
 -- traditional.event_faultline = "断层线协定"
 -- traditional.event_faultline_desc = "UIU侦测到了SITE-19的静默行为，现已派出一队精英小组突袭SITE-19"
+--长日将尽，长夜将明
+-- traditional.event_long_night = "长日将尽，长夜将明"
+-- traditional.event_long_night_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
+-- traditional.long_night_5k_task = "开启OMEGA核弹头，消灭所有阻挡你们的人员"
+-- traditional.hint_task_long_night_warhead = "阻击反抗者撤离"
+-- traditional.roundend_5k_alpha9 = "余烬即是破晓"
+-- traditional.scp079_locked_forever = "你被锁在了079的收容室内...永远"
