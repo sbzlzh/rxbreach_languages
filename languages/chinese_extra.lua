@@ -324,7 +324,7 @@ chinese.event0_nothing_desc = "没有任何事件在此发生"
 chinese.event_caishen_xinchun = "财神到!"
 chinese.event_caishen_xinchun_desc = "新春佳节，SCP-CN-█████ \"财神\"降临在Site-19中为所有人带来欢乐和幸福"
 chinese.event_woa32 = "从前的罪恶 一"
-chinese.event_woa32_desc = "WOA-32突破了二部的收容措施，来到了设施的主要区域。它会随机攻击任何人，小心!"
+chinese.event_woa32_desc = "WOA-32突破了二部的收容措施，来到了设施的重收容区域。它会随机攻击任何人，小心!"
 --开场事件
 --一阶段
 chinese.event_ron = "严阵以待"
@@ -344,7 +344,7 @@ chinese.event_health_action_desc = "近几个月site19科研部门开展健身�
 chinese.event_nu7_trainning = "MTF特种训练"
 chinese.event_nu7_trainning_desc = "设施内的MTF经过了落锤特种部队的训练,体质有了明显的强化\n(不包括设施主管)"
 chinese.event_good_security = "资深警长"
-chinese.event_good_security_desc = "外出学习归来的内部安全代理，检查人身份的速度更快，同时获新的技能——\n\"紧急反击\" \n安全代理顺便还穿了一件\"防刺服\""
+chinese.event_good_security_desc = "外出学习归来的内部安全特工，检查人身份的速度更快，同时获新的技能——\n\"紧急反击\" \n安全代理顺便还穿了一件\"防刺服\""
 chinese.event_nice_meals = "味真族"
 chinese.event_nice_meals_desc = "Site-19的伙食太好，导致某些D级人员变成了肥胖D级"
 chinese.event_steroid_planet = "类固醇星球"
