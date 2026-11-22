@@ -324,7 +324,7 @@ chinese.event0_nothing_desc = "没有任何事件在此发生"
 chinese.event_caishen_xinchun = "财神到!"
 chinese.event_caishen_xinchun_desc = "新春佳节，SCP-CN-█████ \"财神\"降临在Site-19中为所有人带来欢乐和幸福"
 chinese.event_woa32 = "从前的罪恶 一"
-chinese.event_woa32_desc = "WOA-32突破了二部的收容措施，来到了设施的重收容区域。它会随机攻击任何人，小心!"
+chinese.event_woa32_desc = "WOA-32突破了二部的收容措施，来到了设施的主要区域。它会追踪开启对讲机的人员，小心!"
 --开场事件
 --一阶段
 chinese.event_ron = "严阵以待"
@@ -426,7 +426,7 @@ chinese.event_the_flesh_desc = "SCP-610被释放,它们将感染或杀死设施�
 chinese.event_scp1440 = "灾厄洪流"
 chinese.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭侠\" 送抵设施, 一但SCP-1440抵达设施内三分钟后设施将会被\"灾厄\"吞噬但绝望之中仍然存在着一丝希望"
 chinese.event_woa32_5k = "不可直视之物"
-chinese.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将无差别攻击所有人"
+chinese.event_woa32_5k_desc = "根据O4指令部的指令，\"不可直视之物\"WoA-32已被战术应对二部释放，祂将追踪开启对讲机的人员"
 chinese.event_alpha9 = "长日将尽，长夜将明"
 chinese.event_alpha9_desc = "Site-19的暴动已超出可控阈值，设施内部的叛乱与渗透以及各种势力的攻击让基金会疲于应对，投入的增员无法平息混乱，防线正被从内向外逐段撕开。决策室与O5议会已重新审议是否重新信任\"最后的希望\""
 --Alpha-9 最后的希望
@@ -666,3 +666,9 @@ chinese.archives_cat_weapons = "武器介绍"
 chinese.archives_cat_events = "事件"
 chinese.archives_events_multislot = "跨槽事件"
 chinese.archives_events_untyped = "未分类"
+-- F2 角色解锁条件
+chinese.f2_unlock_none = "解锁条件：无等级或转生要求"
+chinese.f2_unlock_level = "解锁条件：%d 级"
+chinese.f2_unlock_rebirth = "解锁条件：%d 转"
+chinese.f2_unlock_either = "解锁条件：%d 级或 %d 转"
+chinese.f2_unlock_both = "解锁条件：%d 级且 %d 转"
