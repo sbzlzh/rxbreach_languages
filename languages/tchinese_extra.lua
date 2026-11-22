@@ -666,3 +666,9 @@ traditional.event_scp1440_desc = "SCP-1440已被MTF NU-22 \"火箭俠\"送抵\n�
 -- traditional.archives_cat_events = "事件"
 -- traditional.archives_events_multislot = "跨槽事件"
 -- traditional.archives_events_untyped = "未分类"
+-- F2 角色解锁条件
+-- traditional.f2_unlock_none = "解锁条件：无等级或转生要求"
+-- traditional.f2_unlock_level = "解锁条件：%d 级"
+-- traditional.f2_unlock_rebirth = "解锁条件：%d 转"
+-- traditional.f2_unlock_either = "解锁条件：%d 级或 %d 转"
+-- traditional.f2_unlock_both = "解锁条件：%d 级且 %d 转"

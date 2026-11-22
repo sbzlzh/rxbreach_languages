@@ -666,3 +666,9 @@ BREACH.Descriptions.russian = BREACH.Descriptions.russian or {}
 -- russian.archives_cat_events = "事件"
 -- russian.archives_events_multislot = "跨槽事件"
 -- russian.archives_events_untyped = "未分类"
+-- F2 角色解锁条件
+-- russian.f2_unlock_none = "解锁条件：无等级或转生要求"
+-- russian.f2_unlock_level = "解锁条件：%d 级"
+-- russian.f2_unlock_rebirth = "解锁条件：%d 转"
+-- russian.f2_unlock_either = "解锁条件：%d 级或 %d 转"
+-- russian.f2_unlock_both = "解锁条件：%d 级且 %d 转"
